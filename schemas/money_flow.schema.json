@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Money Flow Artifact",
+  "type": "object",
+  "required": [
+    "flow_id",
+    "source",
+    "intermediary",
+    "destination",
+    "amount",
+    "fund_type",
+    "fiscal_year",
+    "restrictions",
+    "statutory_basis",
+    "editor_status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "flow_id": { "type": "string" },
+    "source": { "type": "string" },
+    "intermediary": { "type": "string" },
+    "destination": { "type": "string" },
+    "amount": { "type": "number", "minimum": 0 },
+    "fund_type": {
+      "type": "string",
+      "enum": ["state", "federal", "settlement"]
+    },
+    "fiscal_year": {
+      "type": "string",
+      "pattern": "^[0-9]{4}(-[0-9]{4})?$"
+    },
+    "restrictions": {
+      "type": "object",
+      "required": ["medicaid", "dhs_controlled"],
+      "additionalProperties": false,
+      "properties": {
+        "medicaid": { "type": "boolean" },
+        "dhs_controlled": { "type": "boolean" }
+      }
+    },
+    "statutory_basis": { "type": "string" },
+    "editor_status": {
+      "type": "string",
+      "enum": ["pending", "accepted", "corrected", "nullified"]
+    }
+  }
+}

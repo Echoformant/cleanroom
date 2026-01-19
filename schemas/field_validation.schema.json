@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Field Validation Artifact",
+  "type": "object",
+  "required": [
+    "fv_id",
+    "jurisdiction",
+    "validating_entity",
+    "alignment_status",
+    "evidence_basis",
+    "disclosure_level",
+    "editor_status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "fv_id": { "type": "string" },
+    "jurisdiction": { "type": "string" },
+    "validating_entity": { "type": "string" },
+    "corroborator": { "type": "string" },
+    "alignment_status": {
+      "type": "string",
+      "enum": ["open", "mixed", "captured"]
+    },
+    "evidence_basis": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "disclosure_level": {
+      "type": "string",
+      "enum": ["restricted"]
+    },
+    "editor_status": {
+      "type": "string",
+      "enum": ["pending", "accepted", "corrected", "nullified"]
+    }
+  }
+}

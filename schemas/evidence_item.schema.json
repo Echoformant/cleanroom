@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evidence Item Artifact",
+  "type": "object",
+  "required": [
+    "evidence_id",
+    "section",
+    "claim_summary",
+    "evidence_type",
+    "source",
+    "confidence_level",
+    "editor_status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "evidence_id": { "type": "string" },
+    "section": { "type": "string" },
+    "claim_summary": { "type": "string" },
+    "evidence_type": {
+      "type": "string",
+      "enum": ["statute", "budget", "grant", "administrative_rule", "field_validation"]
+    },
+    "source": {
+      "type": "object",
+      "required": ["title", "issuing_body"],
+      "additionalProperties": false,
+      "properties": {
+        "title": { "type": "string" },
+        "issuing_body": { "type": "string" },
+        "url": { "type": "string", "format": "uri" }
+      }
+    },
+    "confidence_level": {
+      "type": "string",
+      "enum": ["high", "medium", "low"]
+    },
+    "editor_status": {
+      "type": "string",
+      "enum": ["pending", "accepted", "corrected", "nullified"]
+    }
+  }
+}

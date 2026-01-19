@@ -1,0 +1,42 @@
+  {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Authority Reference Artifact",
+    "type": "object",
+    "required": [
+      "authority_id",
+      "authority_type",
+      "citation",
+      "administering_body",
+      "governs",
+      "effects",
+      "editor_status"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "authority_id": { "type": "string" },
+      "authority_type": {
+        "type": "string",
+        "enum": ["statute", "regulation", "policy"]
+      },
+      "citation": { "type": "string" },
+      "administering_body": { "type": "string" },
+      "governs": {
+        "type": "array",
+        "items": { "type": "string" },
+        "minItems": 1
+      },
+      "effects": {
+        "type": "object",
+        "required": ["access_limiting", "appeal_mechanism"],
+        "additionalProperties": false,
+        "properties": {
+          "access_limiting": { "type": "boolean" },
+          "appeal_mechanism": { "type": "boolean" }
+        }
+      },
+      "editor_status": {
+        "type": "string",
+        "enum": ["pending", "accepted", "corrected", "nullified"]
+      }
+    }
+  }
