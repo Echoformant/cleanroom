@@ -1,0 +1,7 @@
+stages:
+  - test
+
+ping:
+  stage: test
+  script:
+    - echo "GitLab CI pipeline triggered successfully"
