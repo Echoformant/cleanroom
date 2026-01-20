@@ -1,0 +1,45 @@
+- authority_id: AR-AUTH-20-77-107
+  authority_type: statute
+  citation: "Ark. Code Ann. § 20-77-107 (Program for indigent medical care — Rules)."
+  administering_body: "Arkansas Department of Human Services (DHS) – Division of Medical Services (DMS)"
+  governs:
+    - "Authority for DHS to establish and maintain an indigent medical care program (Arkansas Medicaid)"
+    - "Rulemaking for the indigent medical care program"
+  effects:
+    access_limiting: false
+    appeal_mechanism: false
+  editor_status: pending
+
+- authority_id: AR-AUTH-25-10-129
+  authority_type: statute
+  citation: "Ark. Code Ann. § 25-10-129(b) (DHS authorized/directed to promulgate rules necessary to conform DHS programs to federal law to receive federal funds)."
+  administering_body: "Arkansas Department of Human Services (DHS) and its divisions (including DMS and DAABHS/OSAMH)"
+  governs:
+    - "Rulemaking to conform DHS-administered or DHS-funded programs to federal statutes, rules, and regulations"
+    - "Federal funding compliance for DHS programs"
+  effects:
+    access_limiting: false
+    appeal_mechanism: false
+  editor_status: pending
+
+- authority_id: AR-AUTH-25-10-131
+  authority_type: statute
+  citation: "Ark. Code Ann. § 25-10-131 (Match transfer authority for DHS Secretary with approval of the Chief Fiscal Officer of the State)."
+  administering_body: "DHS Secretary (with approval of Arkansas Chief Fiscal Officer of the State)"
+  governs:
+    - "Interagency fund transfers to provide state matching share for federally reimbursable services across DHS divisions/offices"
+  effects:
+    access_limiting: false
+    appeal_mechanism: false
+  editor_status: pending
+
+- authority_id: AR-AUTH-25-10-133
+  authority_type: statute
+  citation: "Ark. Code Ann. § 25-10-133 (Mental health services transfer/reallocation provisions requested by DHS Secretary; subject to approvals)."
+  administering_body: "DHS Secretary (subject to required approvals referenced in statute and associated budget controls)"
+  governs:
+    - "Reallocations/transfers affecting mental health services funding within DHS"
+  effects:
+    access_limiting: false
+    appeal_mechanism: false
+  editor_status: pending
