@@ -1,0 +1,108 @@
+[
+  {
+    "authority_id": "AUTH-AR-ACT776-2025-AOC-Appropriations-SpecialLanguage",
+    "authority_type": "statute",
+    "citation": "Arkansas Act 776 of 2025 (SB72), §§25, 27, 30-32, 34, 36",
+    "administering_body": "Administrative Office of the Courts (AOC); Chief Fiscal Officer of the State (for fund designation); Arkansas State Police (for §36 transfer)",
+    "governs": [
+      "AR_FY2026_AOC_DRUG_COURT_ENHANCEMENT_SPECIALTY_COURT_PROGRAM_FUND_ACT776_SEC27",
+      "AR_FY2026_AOC_ACCOUNTABILITY_COURT_FUND_ACT776_SEC29",
+      "AR_FY2026_AOC_ADULT_DRUG_COURT_EXPENSES_CASH_FUND_ACT776_SEC30",
+      "AR_FY2026_AOC_SPECIALTY_COURTS_STATE_CENTRAL_SERVICES_ACT776_SEC31",
+      "AR_FY2026_AOC_BYRNE_JAG_BEHAVIORAL_HEALTH_COLLAB_FEDERAL_FUNDS_ACT776_SEC34",
+      "AR_FY2026_ASP_TO_AOC_FEDERAL_DOT_SAFETY_FUNDS_PASS_THROUGH_ACT776_SEC36"
+    ],
+    "effects": {
+      "access_limiting": true,
+      "appeal_mechanism": false
+    },
+    "editor_status": "pending"
+  },
+  {
+    "authority_id": "AUTH-AR-SB472-S1-2015-SpecialtyCourtProgramFund",
+    "authority_type": "statute",
+    "citation": "Arkansas SB472-S1 (2015 amendment) — Specialty Court Program Fund / specialty court and drug court user fee provisions",
+    "administering_body": "Administrative Office of the Courts (AOC) / specialty court programs",
+    "governs": [
+      "AR_FY2026_AOC_DRUG_COURT_ENHANCEMENT_SPECIALTY_COURT_PROGRAM_FUND_ACT776_SEC27",
+      "AR_FY2026_AOC_SPECIALTY_COURTS_STATE_CENTRAL_SERVICES_ACT776_SEC31"
+    ],
+    "effects": {
+      "access_limiting": true,
+      "appeal_mechanism": false
+    },
+    "editor_status": "pending"
+  },
+  {
+    "authority_id": "AUTH-AR-ACT58-2021-AccountabilityCourtFund-19-5-1144",
+    "authority_type": "statute",
+    "citation": "Arkansas Act 58 of 2021, Section 3 (amending Ark. Code Ann. § 19-5-1144 — Accountability Court Fund)",
+    "administering_body": "Administrative Office of the Courts (AOC); Arkansas Judicial Council; Specialty Court Program Advisory Committee; Legislative Council",
+    "governs": [
+      "AR_FY2026_AOC_ACCOUNTABILITY_COURT_FUND_ACT776_SEC29"
+    ],
+    "effects": {
+      "access_limiting": true,
+      "appeal_mechanism": false
+    },
+    "editor_status": "pending"
+  },
+  {
+    "authority_id": "AUTH-AR-ACT538-2025-ADH-Operations-TraumaSystem",
+    "authority_type": "statute",
+    "citation": "Arkansas Act 538 of 2025, §§8-9 (ADH Operations; Trauma System)",
+    "administering_body": "Arkansas Department of Health (ADH)",
+    "governs": [
+      "AR_FY2026_ADH_OPERATIONS_ACT538_SEC8",
+      "AR_FY2026_ADH_TRAUMA_EMS_ACT538_SEC9"
+    ],
+    "effects": {
+      "access_limiting": true,
+      "appeal_mechanism": false
+    },
+    "editor_status": "pending"
+  },
+  {
+    "authority_id": "AUTH-AR-ACT1004-2025-DHS-Secretary-StateOperations-PurchaseOfServices",
+    "authority_type": "statute",
+    "citation": "Arkansas Act 1004 of 2025, §§5 & 8 (DHS Secretary's Office — State Operations; Purchase of Services)",
+    "administering_body": "Arkansas Department of Human Services (DHS) — Secretary's Office",
+    "governs": [
+      "AR_FY2026_DHS_SECRETARY_OFFICE_STATE_OPERATIONS_ACT1004_SEC5",
+      "AR_FY2026_DHS_SECRETARY_OFFICE_GRANTS_PAYING_PURCHASE_OF_SERVICES_ACT1004_SEC8"
+    ],
+    "effects": {
+      "access_limiting": true,
+      "appeal_mechanism": false
+    },
+    "editor_status": "pending"
+  },
+  {
+    "authority_id": "AUTH-AR-ACT890-2025-DHS-DAABHS-CrisisServices",
+    "authority_type": "statute",
+    "citation": "Arkansas Act 890 of 2025, §9 (DHS DAABHS — Crisis Services appropriation)",
+    "administering_body": "Arkansas Department of Human Services (DHS) — Division of Aging, Adult, and Behavioral Health Services (DAABHS)",
+    "governs": [
+      "AR_FY2026_DHS_DAABHS_CRISIS_SERVICES_ACT890_ITEM"
+    ],
+    "effects": {
+      "access_limiting": true,
+      "appeal_mechanism": false
+    },
+    "editor_status": "pending"
+  },
+  {
+    "authority_id": "AUTH-US-SAMHSA-SUBG-PrimaryPrevention-20percent",
+    "authority_type": "policy",
+    "citation": "SAMHSA SUBG requirement: spend no less than 20% of SUBG allotment on substance use primary prevention",
+    "administering_body": "Substance Abuse and Mental Health Services Administration (SAMHSA)",
+    "governs": [
+      "MF-AR-SAMHSA-DHS-ROUTING-2026"
+    ],
+    "effects": {
+      "access_limiting": true,
+      "appeal_mechanism": false
+    },
+    "editor_status": "pending"
+  }
+]
