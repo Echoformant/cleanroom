@@ -42,5 +42,6 @@
   effects:
     access_limiting: false
     appeal_mechanism: false
-  editor_status: accepted 
+  editor_status: pending
+  
   
