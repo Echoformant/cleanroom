@@ -1,0 +1,14 @@
+{
+  "authority_id": "AR-AUTH-25-10-131",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 25-10-131 (Match transfer authority for DHS Secretary with approval of the Chief Fiscal Officer of the State).",
+  "administering_body": "DHS Secretary (with approval of Arkansas Chief Fiscal Officer of the State)",
+  "governs": [
+    "Interagency fund transfers to provide state matching share for federally reimbursable services across DHS divisions/offices"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted"
+}

@@ -1,0 +1,14 @@
+{
+  "authority_id": "AR-AUTH-25-10-133",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 25-10-133 (Mental health services transfer/reallocation provisions requested by DHS Secretary; subject to approvals).",
+  "administering_body": "DHS Secretary (subject to required approvals referenced in statute and associated budget controls)",
+  "governs": [
+    "Reallocations/transfers affecting mental health services funding within DHS"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted"
+}

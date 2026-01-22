@@ -1,0 +1,15 @@
+{
+  "authority_id": "AR-AUTH-20-77-107",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 20-77-107 (Program for indigent medical care — Rules).",
+  "administering_body": "Arkansas Department of Human Services (DHS) – Division of Medical Services (DMS)",
+  "governs": [
+    "Authority for DHS to establish and maintain an indigent medical care program (Arkansas Medicaid)",
+    "Rulemaking for the indigent medical care program"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted"
+}
