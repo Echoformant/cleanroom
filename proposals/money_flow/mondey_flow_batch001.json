@@ -1,0 +1,77 @@
+[
+  {
+    "flow_id": "MF-AR-RHTP-Y1-2026",
+    "source": "Centers for Medicare & Medicaid Services (CMS), U.S. Department of Health and Human Services (HHS)",
+    "intermediary": "Not specified in award list (states receive first-year awards from CMS)",
+    "destination": "State of Arkansas",
+    "amount": 208779396,
+    "fund_type": "federal",
+    "fiscal_year": "2026",
+    "restrictions": {
+      "medicaid": false,
+      "dhs_controlled": false
+    },
+    "statutory_basis": "HHS press release dated December 29, 2025 lists Arkansas FY26 Rural Health Transformation Program award amount as $208,779,396.",
+    "editor_status": "pending"
+  },
+  {
+    "flow_id": "MF-AR-RHTP-PACT-2026",
+    "source": "Arkansas Rural Health Transformation (RHT) Program proposal (as summarized by Arkansas Senate, Nov 25, 2025)",
+    "intermediary": "State of Arkansas (proposal)",
+    "destination": "Promoting Access, Coordination, and Transformation (PACT) initiative (proposal budget)",
+    "amount": 400000000,
+    "fund_type": "federal",
+    "fiscal_year": "2026-2030",
+    "restrictions": {
+      "medicaid": false,
+      "dhs_controlled": false
+    },
+    "statutory_basis": "Arkansas Senate summary (Nov 25, 2025) describes the PACT initiative as costing $400 million within Arkansas' RHT proposal.",
+    "editor_status": "pending"
+  },
+  {
+    "flow_id": "MF-AR-RHTP-HEART-2026",
+    "source": "Arkansas Rural Health Transformation (RHT) Program proposal (as summarized by Arkansas Senate, Nov 25, 2025)",
+    "intermediary": "State of Arkansas (proposal)",
+    "destination": "Healthy Eating, Active Recreation, and Transformation (HEART) initiative (proposal budget)",
+    "amount": 150000000,
+    "fund_type": "federal",
+    "fiscal_year": "2026-2030",
+    "restrictions": {
+      "medicaid": false,
+      "dhs_controlled": false
+    },
+    "statutory_basis": "Arkansas Senate summary (Nov 25, 2025) describes the HEART initiative as costing approximately $150 million within Arkansas' RHT proposal.",
+    "editor_status": "pending"
+  },
+  {
+    "flow_id": "MF-AR-RHTP-RISEAR-2026",
+    "source": "Arkansas Rural Health Transformation (RHT) Program proposal (as summarized by Arkansas Senate, Nov 25, 2025)",
+    "intermediary": "State of Arkansas (proposal)",
+    "destination": "Recruitment, Innovation, Skills, and Education for Arkansas (RISE AR) initiative (proposal budget)",
+    "amount": 161000000,
+    "fund_type": "federal",
+    "fiscal_year": "2026-2030",
+    "restrictions": {
+      "medicaid": false,
+      "dhs_controlled": false
+    },
+    "statutory_basis": "Arkansas Senate summary (Nov 25, 2025) describes the RISE AR initiative as costing approximately $161 million within Arkansas' RHT proposal.",
+    "editor_status": "pending"
+  },
+  {
+    "flow_id": "MF-AR-RHTP-THRIVE-2026",
+    "source": "Arkansas Rural Health Transformation (RHT) Program proposal (as summarized by Arkansas Senate, Nov 25, 2025)",
+    "intermediary": "State of Arkansas (proposal)",
+    "destination": "Telehealth, Health-monitoring, and Response Innovation for Vital Expansion (THRIVE) strategy (proposal budget)",
+    "amount": 267000000,
+    "fund_type": "federal",
+    "fiscal_year": "2026-2030",
+    "restrictions": {
+      "medicaid": false,
+      "dhs_controlled": false
+    },
+    "statutory_basis": "Arkansas Senate summary (Nov 25, 2025) describes the THRIVE strategy as funded at approximately $267 million within Arkansas' RHT proposal.",
+    "editor_status": "pending"
+  }
+]
