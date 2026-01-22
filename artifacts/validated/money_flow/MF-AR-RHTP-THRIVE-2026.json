@@ -1,0 +1,15 @@
+{
+  "flow_id": "MF-AR-RHTP-THRIVE-2026",
+  "source": "Arkansas Rural Health Transformation (RHT) Program proposal (as summarized by Arkansas Senate, Nov 25, 2025)",
+  "intermediary": "State of Arkansas (proposal)",
+  "destination": "Telehealth, Health-monitoring, and Response Innovation for Vital Expansion (THRIVE) strategy (proposal budget)",
+  "amount": 267000000,
+  "fund_type": "federal",
+  "fiscal_year": "2026-2030",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Arkansas Senate summary (Nov 25, 2025) describes the THRIVE strategy as funded at approximately $267 million within Arkansas' RHT proposal.",
+  "editor_status": "accepted"
+}
