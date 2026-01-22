@@ -16,7 +16,7 @@
       "access_limiting": true,
       "appeal_mechanism": false
     },
-    "editor_status": "pending"
+    "editor_status": "accepted"
   },
   {
     "authority_id": "AUTH-AR-SB472-S1-2015-SpecialtyCourtProgramFund",
@@ -31,7 +31,7 @@
       "access_limiting": true,
       "appeal_mechanism": false
     },
-    "editor_status": "pending"
+    "editor_status": "accepted"
   },
   {
     "authority_id": "AUTH-AR-ACT58-2021-AccountabilityCourtFund-19-5-1144",
@@ -45,7 +45,7 @@
       "access_limiting": true,
       "appeal_mechanism": false
     },
-    "editor_status": "pending"
+    "editor_status": "accepted"
   },
   {
     "authority_id": "AUTH-AR-ACT538-2025-ADH-Operations-TraumaSystem",
@@ -60,7 +60,7 @@
       "access_limiting": true,
       "appeal_mechanism": false
     },
-    "editor_status": "pending"
+    "editor_status": "accepted"
   },
   {
     "authority_id": "AUTH-AR-ACT1004-2025-DHS-Secretary-StateOperations-PurchaseOfServices",
@@ -75,7 +75,7 @@
       "access_limiting": true,
       "appeal_mechanism": false
     },
-    "editor_status": "pending"
+    "editor_status": "accepted"
   },
   {
     "authority_id": "AUTH-AR-ACT890-2025-DHS-DAABHS-CrisisServices",
@@ -89,7 +89,7 @@
       "access_limiting": true,
       "appeal_mechanism": false
     },
-    "editor_status": "pending"
+    "editor_status": "accepted"
   },
   {
     "authority_id": "AUTH-US-SAMHSA-SUBG-PrimaryPrevention-20percent",
@@ -103,6 +103,6 @@
       "access_limiting": true,
       "appeal_mechanism": false
     },
-    "editor_status": "pending"
+    "editor_status": "accepted"
   }
 ]
