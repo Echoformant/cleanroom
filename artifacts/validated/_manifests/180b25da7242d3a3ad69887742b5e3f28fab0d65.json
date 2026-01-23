@@ -1,0 +1,66 @@
+{
+  "cleanroom_sha": "180b25da7242d3a3ad69887742b5e3f28fab0d65",
+  "generated_at": "2026-01-23T14:59:12.312Z",
+  "outputs": [
+    {
+      "kind": "authority_reference",
+      "id": "AR-AUTH-20-77-107",
+      "source": "proposals/authority_reference/proposal_authority_reference_batch_001.yaml",
+      "output": "artifacts/validated/authority_reference/AR-AUTH-20-77-107.json"
+    },
+    {
+      "kind": "authority_reference",
+      "id": "AR-AUTH-25-10-129",
+      "source": "proposals/authority_reference/proposal_authority_reference_batch_001.yaml",
+      "output": "artifacts/validated/authority_reference/AR-AUTH-25-10-129.json"
+    },
+    {
+      "kind": "authority_reference",
+      "id": "AR-AUTH-25-10-131",
+      "source": "proposals/authority_reference/proposal_authority_reference_batch_001.yaml",
+      "output": "artifacts/validated/authority_reference/AR-AUTH-25-10-131.json"
+    },
+    {
+      "kind": "authority_reference",
+      "id": "AR-AUTH-25-10-133",
+      "source": "proposals/authority_reference/proposal_authority_reference_batch_001.yaml",
+      "output": "artifacts/validated/authority_reference/AR-AUTH-25-10-133.json"
+    },
+    {
+      "kind": "field_validation",
+      "id": "FV-AR-LegAudit-AOC-FY2022-AppropriationPurposeFinding",
+      "source": "proposals/field_validation/fv_arlegalaudit.json",
+      "output": "artifacts/validated/field_validation/FV-AR-LegAudit-AOC-FY2022-AppropriationPurposeFinding.json"
+    },
+    {
+      "kind": "money_flow",
+      "id": "MF-AR-RHTP-Y1-2026",
+      "source": "proposals/money_flow/mondey_flow_batch001.json",
+      "output": "artifacts/validated/money_flow/MF-AR-RHTP-Y1-2026.json"
+    },
+    {
+      "kind": "money_flow",
+      "id": "MF-AR-RHTP-PACT-2026",
+      "source": "proposals/money_flow/mondey_flow_batch001.json",
+      "output": "artifacts/validated/money_flow/MF-AR-RHTP-PACT-2026.json"
+    },
+    {
+      "kind": "money_flow",
+      "id": "MF-AR-RHTP-HEART-2026",
+      "source": "proposals/money_flow/mondey_flow_batch001.json",
+      "output": "artifacts/validated/money_flow/MF-AR-RHTP-HEART-2026.json"
+    },
+    {
+      "kind": "money_flow",
+      "id": "MF-AR-RHTP-RISEAR-2026",
+      "source": "proposals/money_flow/mondey_flow_batch001.json",
+      "output": "artifacts/validated/money_flow/MF-AR-RHTP-RISEAR-2026.json"
+    },
+    {
+      "kind": "money_flow",
+      "id": "MF-AR-RHTP-THRIVE-2026",
+      "source": "proposals/money_flow/mondey_flow_batch001.json",
+      "output": "artifacts/validated/money_flow/MF-AR-RHTP-THRIVE-2026.json"
+    }
+  ]
+}
