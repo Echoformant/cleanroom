@@ -1,0 +1,15 @@
+{
+  "flow_id": "MF-AR-MEDICAID-PEER-ROUTING-2026",
+  "source": "Medicaid (Title XIX)",
+  "intermediary": "Arkansas DHS Division of Medical Services (Medicaid)",
+  "destination": "Peer support specialist reimbursement (CPT H0038)",
+  "amount": 8330000000,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": true,
+    "dhs_controlled": true
+  },
+  "statutory_basis": "Ark. Code § 20-77-135; DHS OBHS Provider Manual",
+  "editor_status": "accepted"
+}
