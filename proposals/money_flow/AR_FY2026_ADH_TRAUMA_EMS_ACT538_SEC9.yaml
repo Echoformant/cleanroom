@@ -1,0 +1,12 @@
+flow_id: AR_FY2026_ADH_TRAUMA_EMS_ACT538_SEC9
+source: "Arkansas General Assembly"
+intermediary: "Governor of Arkansas"
+destination: "Arkansas Department of Health (ADH)"
+amount: 26215247
+fund_type: state
+fiscal_year: "2026"
+restrictions:
+  medicaid: false
+  dhs_controlled: false
+statutory_basis: "Act 538 of 2025 (HB1091), Section 9 (Appropriation — Trauma System and Emergency Medical Services)"
+editor_status: pending
