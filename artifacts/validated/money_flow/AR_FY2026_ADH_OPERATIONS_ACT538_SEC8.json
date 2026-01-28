@@ -1,0 +1,15 @@
+{
+  "flow_id": "AR_FY2026_ADH_OPERATIONS_ACT538_SEC8",
+  "source": "Arkansas General Assembly",
+  "intermediary": "Governor of Arkansas; Chief Fiscal Officer of the State",
+  "destination": "Arkansas Department of Health (ADH)",
+  "amount": 330969878,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Act 538 of 2025 (HB1091), Section 8 (Appropriation — Operations)",
+  "editor_status": "accepted"
+}
