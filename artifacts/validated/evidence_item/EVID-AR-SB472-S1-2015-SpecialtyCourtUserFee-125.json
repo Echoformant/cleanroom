@@ -1,0 +1,13 @@
+{
+  "evidence_id": "EVID-AR-SB472-S1-2015-SpecialtyCourtUserFee-125",
+  "section": "AR_FY2026_AOC_SPECIALTY_COURTS_STATE_CENTRAL_SERVICES_ACT776_SEC31 (Quantified constraint: participant fee)",
+  "claim_summary": "SB472-S1 (2015) includes language stating a specialty court program user fee of $125 shall be assessed on a specialty court program participant at the time of admittance into the program (for deposit into the specialty court program fund).",
+  "evidence_type": "statute",
+  "source": {
+    "title": "SB472-S1 (2015) — Amendment (specialty court user fee)",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://arkleg.state.ar.us/Home/FTPDocument?path=%2FAMEND%2F2015%2FPublic%2FSB472-S1.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted"
+}

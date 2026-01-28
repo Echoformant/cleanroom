@@ -1,0 +1,13 @@
+{
+  "evidence_id": "EVID-US-HHS-CMS-RHTP-FY26-Arkansas-Award-208779396",
+  "section": "MF-AR-RHTP-Y1-2026",
+  "claim_summary": "An HHS press release (Dec 29, 2025) lists Arkansas' FY26 Rural Health Transformation Program award amount as $208,779,396.",
+  "evidence_type": "grant",
+  "source": {
+    "title": "CMS Announces $50 Billion in Awards to Strengthen Rural Health in All 50 States",
+    "issuing_body": "U.S. Department of Health and Human Services (HHS) / Centers for Medicare & Medicaid Services (CMS)",
+    "url": "https://www.hhs.gov/press-room/cms-announces-50-billion-in-awards-to-strengthen-rural-health-in-all-50-states.html"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted"
+}

@@ -1,0 +1,13 @@
+{
+  "evidence_id": "EVID-AR-SB472-S1-2015-SpecialtyCourtProgramFund-ExclusiveUses",
+  "section": "AR_FY2026_AOC_DRUG_COURT_ENHANCEMENT_SPECIALTY_COURT_PROGRAM_FUND_ACT776_SEC27 (Statutory fund-use constraint)",
+  "claim_summary": "An Arkansas legislative amendment (SB472-S1, 2015) states that the Specialty Court Program Fund shall be used exclusively for specified purposes, including treatment services and supervision services for specialty court program participants and drug and mental health crisis intervention centers.",
+  "evidence_type": "statute",
+  "source": {
+    "title": "SB472-S1 (2015) — Amendment (Specialty Court Program Fund language)",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://arkleg.state.ar.us/Home/FTPDocument?path=%2FAMEND%2F2015%2FPublic%2FSB472-S1.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted"
+}
