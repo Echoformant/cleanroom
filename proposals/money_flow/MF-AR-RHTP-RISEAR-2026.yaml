@@ -1,0 +1,12 @@
+flow_id: MF-AR-RHTP-RISEAR-2026
+source: CMS (Rural Health Transformation Program)
+intermediary: Arkansas Department of Health (ADH)
+destination: RISE AR initiative subawards
+amount: 33600000
+fund_type: federal
+fiscal_year: "2026"
+restrictions:
+  medicaid: false
+  dhs_controlled: false
+statutory_basis: Arkansas RHTP implementation framework (RISE AR category, FY2026)
+editor_status: accepted

@@ -1,0 +1,12 @@
+flow_id: MF-AR-SAMHSA-DHS-ROUTING-2026
+source: SAMHSA (SUPTRS and MHBG Block Grants)
+intermediary: Arkansas Department of Human Services (DHS)
+destination: State behavioral health allocations (OSAMH-managed)
+amount: 21544116
+fund_type: federal
+fiscal_year: "2026"
+restrictions:
+  medicaid: false
+  dhs_controlled: true
+statutory_basis: 42 U.S.C. § 300x-21 (SUPTRS) and 42 U.S.C. § 300x-1 (MHBG)
+editor_status: accepted
