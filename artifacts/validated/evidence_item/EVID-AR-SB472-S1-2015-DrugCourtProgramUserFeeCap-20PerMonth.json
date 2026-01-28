@@ -1,0 +1,13 @@
+{
+  "evidence_id": "EVID-AR-SB472-S1-2015-DrugCourtProgramUserFeeCap-20PerMonth",
+  "section": "AR_FY2026_AOC_DRUG_COURT_ENHANCEMENT_SPECIALTY_COURT_PROGRAM_FUND_ACT776_SEC27 (Quantified constraint: monthly fee cap)",
+  "claim_summary": "SB472-S1 (2015) includes language that a drug court program user fee may be assessed but shall not exceed $20 per month.",
+  "evidence_type": "statute",
+  "source": {
+    "title": "SB472-S1 (2015) — Amendment (drug court user fee cap)",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://arkleg.state.ar.us/Home/FTPDocument?path=%2FAMEND%2F2015%2FPublic%2FSB472-S1.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted"
+}
