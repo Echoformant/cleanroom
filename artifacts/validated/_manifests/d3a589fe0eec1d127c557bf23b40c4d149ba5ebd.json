@@ -1,0 +1,216 @@
+{
+  "cleanroom_sha": "d3a589fe0eec1d127c557bf23b40c4d149ba5ebd",
+  "generated_at": "2026-01-28T16:41:29.618Z",
+  "outputs": [
+    {
+      "kind": "authority_reference",
+      "id": "AR-AUTH-20-77-107",
+      "source": "proposals/authority_reference/proposal_authority_reference_batch_001.yaml",
+      "output": "artifacts/validated/authority_reference/AR-AUTH-20-77-107.json"
+    },
+    {
+      "kind": "authority_reference",
+      "id": "AR-AUTH-25-10-129",
+      "source": "proposals/authority_reference/proposal_authority_reference_batch_001.yaml",
+      "output": "artifacts/validated/authority_reference/AR-AUTH-25-10-129.json"
+    },
+    {
+      "kind": "authority_reference",
+      "id": "AR-AUTH-25-10-131",
+      "source": "proposals/authority_reference/proposal_authority_reference_batch_001.yaml",
+      "output": "artifacts/validated/authority_reference/AR-AUTH-25-10-131.json"
+    },
+    {
+      "kind": "authority_reference",
+      "id": "AR-AUTH-25-10-133",
+      "source": "proposals/authority_reference/proposal_authority_reference_batch_001.yaml",
+      "output": "artifacts/validated/authority_reference/AR-AUTH-25-10-133.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-AR-ACT776-2025-S25-SpecialtyCourtProgram-300000-FY2026",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-AR-ACT776-2025-S25-SpecialtyCourtProgram-300000-FY2026.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-AR-ACT776-2025-S27-DrugCourtEnhancement-9190880-FY2026",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-AR-ACT776-2025-S27-DrugCourtEnhancement-9190880-FY2026.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-AR-ACT776-2025-S30-AccountabilityCourtFund-400000-FY2026",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-AR-ACT776-2025-S30-AccountabilityCourtFund-400000-FY2026.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-AR-ACT776-2025-S31-AdultDrugCourt-1000000-FY2026",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-AR-ACT776-2025-S31-AdultDrugCourt-1000000-FY2026.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-AR-ACT776-2025-S32-SpecialtyCourts-4500000-FY2026",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-AR-ACT776-2025-S32-SpecialtyCourts-4500000-FY2026.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-AR-ACT776-2025-S34-ByrneJAG-150000-FY2026",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-AR-ACT776-2025-S34-ByrneJAG-150000-FY2026.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-AR-ACT776-2025-S36-ASP-AOC-DOT402-FundTransfer-MatchRestriction",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-AR-ACT776-2025-S36-ASP-AOC-DOT402-FundTransfer-MatchRestriction.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-AR-ACT538-2025-S8-ADH-Operations-349686818-FY2026",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-AR-ACT538-2025-S8-ADH-Operations-349686818-FY2026.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-AR-ACT538-2025-S9-ADH-TraumaSystem-4474344-FY2026",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-AR-ACT538-2025-S9-ADH-TraumaSystem-4474344-FY2026.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-AR-ACT1004-2025-S5-DHS-Secretary-StateOperations-135455033-FY2026",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-AR-ACT1004-2025-S5-DHS-Secretary-StateOperations-135455033-FY2026.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-AR-ACT1004-2025-S8-DHS-Secretary-PurchaseOfServices-129084-FY2026",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-AR-ACT1004-2025-S8-DHS-Secretary-PurchaseOfServices-129084-FY2026.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-AR-ACT890-2025-S9-DAABHS-CrisisServices-5000000-FY2026",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-AR-ACT890-2025-S9-DAABHS-CrisisServices-5000000-FY2026.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-AR-ALC-2025-02-26-DHS-GrantsReview-ARM180-FaithBasedTreatment-A04-100000",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-AR-ALC-2025-02-26-DHS-GrantsReview-ARM180-FaithBasedTreatment-A04-100000.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-US-SAMHSA-SUBG-PrimaryPrevention-20percent",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-US-SAMHSA-SUBG-PrimaryPrevention-20percent.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-AR-SB472-S1-2015-SpecialtyCourtProgramFund-ExclusiveUses",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-AR-SB472-S1-2015-SpecialtyCourtProgramFund-ExclusiveUses.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-AR-SB472-S1-2015-SpecialtyCourtUserFee-125",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-AR-SB472-S1-2015-SpecialtyCourtUserFee-125.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-AR-SB472-S1-2015-DrugCourtProgramUserFeeCap-20PerMonth",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-AR-SB472-S1-2015-DrugCourtProgramUserFeeCap-20PerMonth.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-AR-ACT58-2021-AccountabilityCourtFund-UseAndFormula",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-AR-ACT58-2021-AccountabilityCourtFund-UseAndFormula.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-US-HHS-CMS-RHTP-FY26-Arkansas-Award-208779396",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-US-HHS-CMS-RHTP-FY26-Arkansas-Award-208779396.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-AR-Senate-2025-11-25-RHTP-Proposal-TotalRequest-1B-5Years",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-AR-Senate-2025-11-25-RHTP-Proposal-TotalRequest-1B-5Years.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-AR-Senate-2025-11-25-RHTP-PACT-400M",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-AR-Senate-2025-11-25-RHTP-PACT-400M.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-AR-Senate-2025-11-25-RHTP-HEART-Approx150M",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-AR-Senate-2025-11-25-RHTP-HEART-Approx150M.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-AR-Senate-2025-11-25-RHTP-RISEAR-Approx161M",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-AR-Senate-2025-11-25-RHTP-RISEAR-Approx161M.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-AR-Senate-2025-11-25-RHTP-THRIVE-Approx267M-EMS-Telehealth-Remote92M",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-AR-Senate-2025-11-25-RHTP-THRIVE-Approx267M-EMS-Telehealth-Remote92M.json"
+    },
+    {
+      "kind": "evidence_item",
+      "id": "EVID-AR-LegAudit-2025-BudgetHearings-AOC-FY2022-Finding-AppropriationMisuse",
+      "source": "proposals/evidence_item/evidence_batch_001.yaml",
+      "output": "artifacts/validated/evidence_item/EVID-AR-LegAudit-2025-BudgetHearings-AOC-FY2022-Finding-AppropriationMisuse.json"
+    },
+    {
+      "kind": "field_validation",
+      "id": "FV-AR-LegAudit-AOC-FY2022-AppropriationPurposeFinding",
+      "source": "proposals/field_validation/fv_arlegalaudit.json",
+      "output": "artifacts/validated/field_validation/FV-AR-LegAudit-AOC-FY2022-AppropriationPurposeFinding.json"
+    },
+    {
+      "kind": "money_flow",
+      "id": "MF-AR-RHTP-Y1-2026",
+      "source": "proposals/money_flow/mondey_flow_batch001.json",
+      "output": "artifacts/validated/money_flow/MF-AR-RHTP-Y1-2026.json"
+    },
+    {
+      "kind": "money_flow",
+      "id": "MF-AR-RHTP-PACT-2026",
+      "source": "proposals/money_flow/mondey_flow_batch001.json",
+      "output": "artifacts/validated/money_flow/MF-AR-RHTP-PACT-2026.json"
+    },
+    {
+      "kind": "money_flow",
+      "id": "MF-AR-RHTP-HEART-2026",
+      "source": "proposals/money_flow/mondey_flow_batch001.json",
+      "output": "artifacts/validated/money_flow/MF-AR-RHTP-HEART-2026.json"
+    },
+    {
+      "kind": "money_flow",
+      "id": "MF-AR-RHTP-RISEAR-2026",
+      "source": "proposals/money_flow/mondey_flow_batch001.json",
+      "output": "artifacts/validated/money_flow/MF-AR-RHTP-RISEAR-2026.json"
+    },
+    {
+      "kind": "money_flow",
+      "id": "MF-AR-RHTP-THRIVE-2026",
+      "source": "proposals/money_flow/mondey_flow_batch001.json",
+      "output": "artifacts/validated/money_flow/MF-AR-RHTP-THRIVE-2026.json"
+    }
+  ]
+}
