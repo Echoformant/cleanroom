@@ -8,12 +8,16 @@ name: Fix Invalidated Files
 # The workflow uses multiple triggers:
 # 1. workflow_dispatch - Manual triggering via GitHub UI or API
 # 2. schedule - Runs every 30 minutes to catch files committed with [skip ci]
-# 3. push - Runs on direct pushes to invalidated/ (only works without [skip ci])
+# 3. push - Runs on direct pushes to invalidated/ (excluding invalidated/pending/)
+#            Only triggers without [skip ci] in commit message
 #
 # Note: When commits include [skip ci], [ci skip], [no ci], [skip actions], or
 # [actions skip] in the commit message, GitHub Actions skips ALL workflows,
 # including this one, regardless of path filters. The schedule trigger ensures
 # files are still processed within 30 minutes.
+#
+# The push trigger excludes invalidated/pending/** to prevent the workflow from
+# triggering on its own commits (belt-and-suspenders with [skip ci]).
 
 on:
   # Manual trigger - can be run anytime via GitHub UI or API
@@ -25,9 +29,11 @@ on:
     - cron: '*/30 * * * *'
 
   # Push trigger - runs immediately on push (only if commit doesn't have [skip ci])
+  # Only triggers for files in invalidated/ but NOT in invalidated/pending/
   push:
     paths:
       - 'invalidated/**'
+      - '!invalidated/pending/**'
     branches:
       - '**'
 
