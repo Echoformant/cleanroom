@@ -1,0 +1,12 @@
+flow_id: AR_FY2026_DHS_DAABHS_STATE_OPERATIONS_ACT890_SEC3
+source: "Arkansas General Assembly"
+intermediary: "Governor of Arkansas; Chief Fiscal Officer of the State"
+destination: "DHS — Division of Aging, Adult, and Behavioral Health Services (DAABHS)"
+amount: 148485553
+fund_type: state
+fiscal_year: "2026"
+restrictions:
+  medicaid: false
+  dhs_controlled: true
+statutory_basis: "Act 890 of 2025 (SB36), Section 3 (Appropriation — State Operations)"
+editor_status: pending

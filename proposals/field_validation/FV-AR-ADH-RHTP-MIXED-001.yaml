@@ -1,0 +1,11 @@
+fv_id: FV-AR-ADH-RHTP-MIXED-001
+jurisdiction: Arkansas
+validating_entity: STRATA / GLE Dossier Governance
+corroborator: Arkansas Department of Health (ADH)
+alignment_status: mixed
+evidence_basis:
+  - "authority_reference: FED-PL-119-21-71401-RHTP"
+  - "authority_reference: AR-POL-RHTP-implementation-2026"
+  - "rule: ADH-administered funding may be DHS-independent, but each category must be screened for dhs_controlled triggers in the RFA language."
+disclosure_level: restricted
+editor_status: accepted

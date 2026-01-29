@@ -1,0 +1,10 @@
+authority_id: AR-POL-RHTP-implementation-2026
+authority_type: policy
+citation: Arkansas RHTP implementation framework (FY2026) — HEART/PACT/RISE AR/THRIVE administered by Arkansas Department of Health (ADH)
+administering_body: Arkansas Department of Health (ADH)
+governs:
+  - RHTP subaward categories, application process, and oversight routing (state implementation)
+effects:
+  access_limiting: true
+  appeal_mechanism: false
+editor_status: accepted

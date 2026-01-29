@@ -1,0 +1,12 @@
+flow_id: AR_FY2026_DHS_DAABHS_SPECIAL_ALLOWANCE_APPROVAL_CAP_ACT890_SEC15
+source: "Professional income and external support"
+intermediary: "Chief Fiscal Officer of the State; Arkansas Legislative Council Personnel Committee or Joint Budget Committee"
+destination: "DHS — DAABHS physician/chief psychologist compensation (special allowances)"
+amount: 0
+fund_type: state
+fiscal_year: "2026"
+restrictions:
+  medicaid: false
+  dhs_controlled: true
+statutory_basis: "Act 890 of 2025 (SB36), Section 15 (Special Language — Behavioral Health Services)"
+editor_status: pending

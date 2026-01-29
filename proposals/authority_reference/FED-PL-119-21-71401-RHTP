@@ -1,0 +1,10 @@
+authority_id: FED-PL-119-21-71401-RHTP
+authority_type: statute
+citation: Pub. L. 119-21 § 71401 (2025) — Rural Health Transformation Program (RHTP)
+administering_body: Centers for Medicare & Medicaid Services (CMS) with state implementation via Arkansas Department of Health (ADH)
+governs:
+  - Rural Health Transformation Program funding authorization and state implementation constraints
+effects:
+  access_limiting: true
+  appeal_mechanism: false
+editor_status: accepted

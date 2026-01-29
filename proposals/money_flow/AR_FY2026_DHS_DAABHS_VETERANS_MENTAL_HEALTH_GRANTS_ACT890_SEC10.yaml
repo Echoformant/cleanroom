@@ -1,0 +1,12 @@
+flow_id: AR_FY2026_DHS_DAABHS_VETERANS_MENTAL_HEALTH_GRANTS_ACT890_SEC10
+source: "Arkansas General Assembly"
+intermediary: "Governor of Arkansas; Chief Fiscal Officer of the State; DHS — DAABHS"
+destination: "Veterans service organizations (grant recipients)"
+amount: 5000000
+fund_type: state
+fiscal_year: "2026"
+restrictions:
+  medicaid: false
+  dhs_controlled: true
+statutory_basis: "Act 890 of 2025 (SB36), Section 10 (Appropriation — Veterans Mental Health Grant Program)"
+editor_status: pending

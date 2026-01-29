@@ -1,0 +1,9 @@
+evidence_id: EVI-NAMI-ART1-SAMHSA-DHS
+section: Money Flow — DHS Capture Risk
+claim_summary: Internal note states SAMHSA dollars in Arkansas flow through DHS, creating policy gatekeeping and low downstream visibility; recommended to treat as contextual signal rather than an actionable pipeline.
+evidence_type: field_validation
+source:
+  title: Artifact 1 NAMI
+  issuing_body: NAMI (internal)
+confidence_level: high
+editor_status: accepted
