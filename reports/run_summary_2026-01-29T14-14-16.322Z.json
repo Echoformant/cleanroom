@@ -1,0 +1,53 @@
+{
+  "run_id": "12914617272",
+  "timestamp": "2026-01-29T14:14:16.322Z",
+  "cleanroom_sha": "",
+  "totals": {
+    "processed": 5,
+    "validated": 2,
+    "invalidated": 3
+  },
+  "validated": [
+    {
+      "kind": "evidence_item",
+      "file": "EV-AR-RHTP-SUB-MAP.yaml",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-DHS-APAC-DESCRIPTION.yaml",
+      "item": 0
+    }
+  ],
+  "invalidated": [
+    {
+      "kind": "evidence_item",
+      "file": "EV-NAADAC-APSP-INTRO.yaml",
+      "item": null,
+      "errors": []
+    },
+    {
+      "kind": "field_validation",
+      "file": "FV-AR-AOC-SPECIALTY-COURT-OPEN-001.yaml",
+      "item": 0,
+      "errors": [
+        "/tmp/FV-AR-AOC-SPECIALTY-COURT-OPEN-001.yaml.0.json invalid\n[\n  {\n    instancePath: '/evidence_basis/0',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/1',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/2',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "field_validation",
+      "file": "FV-AR-DHS-PEER-CAPTURED-001.yaml",
+      "item": 0,
+      "errors": [
+        "/tmp/FV-AR-DHS-PEER-CAPTURED-001.yaml.0.json invalid\n[\n  {\n    instancePath: '/evidence_basis/0',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/1',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/2',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/3',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/4',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    }
+  ],
+  "retired": [
+    "proposals/evidence_item/EV-AR-RHTP-SUB-MAP.yaml",
+    "proposals/evidence_item/EV-DHS-APAC-DESCRIPTION.yaml",
+    "proposals/evidence_item/EV-NAADAC-APSP-INTRO.yaml",
+    "proposals/field_validation/FV-AR-AOC-SPECIALTY-COURT-OPEN-001.yaml",
+    "proposals/field_validation/FV-AR-DHS-PEER-CAPTURED-001.yaml"
+  ]
+}

@@ -1,0 +1,38 @@
+/tmp/FV-AR-AOC-SPECIALTY-COURT-OPEN-001.yaml.0.json invalid
+[
+  {
+    instancePath: '/evidence_basis/0',
+    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',
+    keyword: 'type',
+    params: { type: 'string' },
+    message: 'must be string'
+  },
+  {
+    instancePath: '/evidence_basis/1',
+    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',
+    keyword: 'type',
+    params: { type: 'string' },
+    message: 'must be string'
+  },
+  {
+    instancePath: '/evidence_basis/2',
+    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',
+    keyword: 'type',
+    params: { type: 'string' },
+    message: 'must be string'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/oneOf/1/type',
+    keyword: 'type',
+    params: { type: 'array' },
+    message: 'must be array'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/oneOf',
+    keyword: 'oneOf',
+    params: { passingSchemas: null },
+    message: 'must match exactly one schema in oneOf'
+  }
+]
