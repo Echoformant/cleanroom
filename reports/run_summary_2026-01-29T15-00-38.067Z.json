@@ -1,0 +1,13 @@
+{
+  "run_id": "12915478123",
+  "timestamp": "2026-01-29T15:00:38.067Z",
+  "cleanroom_sha": "",
+  "totals": {
+    "processed": 0,
+    "validated": 0,
+    "invalidated": 0
+  },
+  "validated": [],
+  "invalidated": [],
+  "retired": []
+}
