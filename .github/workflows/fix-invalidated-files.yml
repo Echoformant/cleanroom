@@ -1,6 +1,30 @@
 name: Fix Invalidated Files
 
+# This workflow processes files in the invalidated/ directory.
+# 
+# IMPORTANT: This workflow is designed to run even when commits contain [skip ci]
+# because automated processes may commit to invalidated/ with [skip ci] tags.
+#
+# The workflow uses multiple triggers:
+# 1. workflow_dispatch - Manual triggering via GitHub UI or API
+# 2. schedule - Runs every 30 minutes to catch files committed with [skip ci]
+# 3. push - Runs on direct pushes to invalidated/ (only works without [skip ci])
+#
+# Note: When commits include [skip ci], [ci skip], [no ci], [skip actions], or
+# [actions skip] in the commit message, GitHub Actions skips ALL workflows,
+# including this one, regardless of path filters. The schedule trigger ensures
+# files are still processed within 30 minutes.
+
 on:
+  # Manual trigger - can be run anytime via GitHub UI or API
+  workflow_dispatch:
+
+  # Scheduled trigger - runs every 30 minutes to process files
+  # This ensures files committed with [skip ci] are still processed
+  schedule:
+    - cron: '*/30 * * * *'
+
+  # Push trigger - runs immediately on push (only if commit doesn't have [skip ci])
   push:
     paths:
       - 'invalidated/**'
@@ -21,18 +45,33 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Check for files to process
+        id: check_files
+        run: |
+          # Check if there are any YAML/JSON files in invalidated/ (excluding pending/)
+          if find invalidated -type f \( -name "*.yaml" -o -name "*.yml" -o -name "*.json" \) ! -path "*/pending/*" 2>/dev/null | grep -q .; then
+            echo "has_files=true" >> $GITHUB_OUTPUT
+            echo "Found files to process in invalidated/"
+          else
+            echo "has_files=false" >> $GITHUB_OUTPUT
+            echo "No files to process in invalidated/"
+          fi
+
       - name: Set up Python
+        if: steps.check_files.outputs.has_files == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
       - name: Install dependencies
+        if: steps.check_files.outputs.has_files == 'true'
         run: |
           pip install pyyaml
           sudo apt-get update
           sudo apt-get install -y jq
 
       - name: Process invalidated files
+        if: steps.check_files.outputs.has_files == 'true'
         run: |
           # Create pending directory if it doesn't exist
           mkdir -p invalidated/pending
@@ -139,6 +178,7 @@ jobs:
           done
 
       - name: Commit and push changes
+        if: steps.check_files.outputs.has_files == 'true'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
