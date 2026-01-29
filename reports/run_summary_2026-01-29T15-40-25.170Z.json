@@ -1,0 +1,105 @@
+{
+  "run_id": "12916315761",
+  "timestamp": "2026-01-29T15:40:25.170Z",
+  "cleanroom_sha": "",
+  "totals": {
+    "processed": 15,
+    "validated": 15,
+    "invalidated": 0
+  },
+  "validated": [
+    {
+      "kind": "authority_reference",
+      "file": "AR-POL-RCO-designation-AARCO.yaml",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-NAMI-ART1-SAMHSA-DHS.yaml",
+      "item": 0
+    },
+    {
+      "kind": "field_validation",
+      "file": "FV-AR-ADH-RHTP-MIXED-001.yaml",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "AR_FY2025_DHS_DAABHS_SUBGRANTS_FAITH_BASED_TREATMENT_INITIATIVES_FEDERAL_FUNDS_GRANTS_REVIEW_2025_02_26.yaml",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "AR_FY2026_AOC_ADULT_DRUG_COURT_EXPENSES_CASH_FUND_ACT776_SEC30.yaml",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "AR_FY2026_AOC_BYRNE_JAG_BEHAVIORAL_HEALTH_COLLAB_FEDERAL_FUNDS_ACT776_SEC34.yaml",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "AR_FY2026_AOC_DRUG_COURT_ENHANCEMENT_SPECIALTY_COURT_PROGRAM_FUND_ACT776_SEC27.yaml",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "AR_FY2026_ASP_TO_AOC_FEDERAL_DOT_SAFETY_FUNDS_PASS_THROUGH_ACT776_SEC36.yaml",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "AR_FY2026_DHS_DAABHS_CRISIS_SERVICES_ACT890_ITEM.yaml",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "AR_FY2026_DHS_DAABHS_SPECIAL_ALLOWANCE_APPROVAL_CAP_ACT890_SEC15.yaml",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "AR_FY2026_DHS_DAABHS_STATE_OPERATIONS_ACT890_SEC3.yaml",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "AR_FY2026_DHS_DAABHS_VETERANS_MENTAL_HEALTH_GRANTS_ACT890_SEC10.yaml",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "AR_FY2026_DHS_RENOVATION_FUND_TRANSFERS_REQUIRING_GOV_APPROVAL_ACT1004_SEC10.yaml",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "AR_FY2026_DHS_SECRETARY_OFFICE_BUILDING_CONSTRUCTION_ACT1004_SEC6.yaml",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "AR_FY2026_DHS_SECRETARY_OFFICE_CONSOLIDATED_COST_REVOLVING_ACT1004_SEC7.yaml",
+      "item": 0
+    }
+  ],
+  "invalidated": [],
+  "retired": [
+    "proposals/authority_reference/AR-POL-RCO-designation-AARCO.yaml",
+    "proposals/evidence_item/EV-NAMI-ART1-SAMHSA-DHS.yaml",
+    "proposals/field_validation/FV-AR-ADH-RHTP-MIXED-001.yaml",
+    "proposals/money_flow/AR_FY2025_DHS_DAABHS_SUBGRANTS_FAITH_BASED_TREATMENT_INITIATIVES_FEDERAL_FUNDS_GRANTS_REVIEW_2025_02_26.yaml",
+    "proposals/money_flow/AR_FY2026_AOC_ADULT_DRUG_COURT_EXPENSES_CASH_FUND_ACT776_SEC30.yaml",
+    "proposals/money_flow/AR_FY2026_AOC_BYRNE_JAG_BEHAVIORAL_HEALTH_COLLAB_FEDERAL_FUNDS_ACT776_SEC34.yaml",
+    "proposals/money_flow/AR_FY2026_AOC_DRUG_COURT_ENHANCEMENT_SPECIALTY_COURT_PROGRAM_FUND_ACT776_SEC27.yaml",
+    "proposals/money_flow/AR_FY2026_ASP_TO_AOC_FEDERAL_DOT_SAFETY_FUNDS_PASS_THROUGH_ACT776_SEC36.yaml",
+    "proposals/money_flow/AR_FY2026_DHS_DAABHS_CRISIS_SERVICES_ACT890_ITEM.yaml",
+    "proposals/money_flow/AR_FY2026_DHS_DAABHS_SPECIAL_ALLOWANCE_APPROVAL_CAP_ACT890_SEC15.yaml",
+    "proposals/money_flow/AR_FY2026_DHS_DAABHS_STATE_OPERATIONS_ACT890_SEC3.yaml",
+    "proposals/money_flow/AR_FY2026_DHS_DAABHS_VETERANS_MENTAL_HEALTH_GRANTS_ACT890_SEC10.yaml",
+    "proposals/money_flow/AR_FY2026_DHS_RENOVATION_FUND_TRANSFERS_REQUIRING_GOV_APPROVAL_ACT1004_SEC10.yaml",
+    "proposals/money_flow/AR_FY2026_DHS_SECRETARY_OFFICE_BUILDING_CONSTRUCTION_ACT1004_SEC6.yaml",
+    "proposals/money_flow/AR_FY2026_DHS_SECRETARY_OFFICE_CONSOLIDATED_COST_REVOLVING_ACT1004_SEC7.yaml"
+  ]
+}
