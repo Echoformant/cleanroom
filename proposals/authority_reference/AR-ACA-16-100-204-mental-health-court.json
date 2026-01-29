@@ -1,0 +1,10 @@
+authority_id: AR-ACA-16-100-204-mental-health-court
+authority_type: statute
+citation: Ark. Code § 16-100-204
+administering_body: Arkansas judiciary (local mental health specialty courts) under AOC/Supreme Court oversight
+governs:
+  - Administration of mental health specialty court programs and program-design authority
+effects:
+  access_limiting: false
+  appeal_mechanism: false
+editor_status: accepted
