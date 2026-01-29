@@ -186,7 +186,7 @@ jobs:
           # Check if there are changes to commit
           if [[ -n $(git status -s) ]]; then
             git add invalidated/
-            git commit -m "Auto-fix: Move corrected files from invalidated/ to invalidated/pending/"
+            git commit -m "Auto-fix: Move corrected files from invalidated/ to invalidated/pending/ [skip ci]"
             git push
             echo "Changes committed and pushed"
           else
