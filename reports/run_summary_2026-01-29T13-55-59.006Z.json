@@ -1,0 +1,297 @@
+{
+  "run_id": "12914247450",
+  "timestamp": "2026-01-29T13:55:59.006Z",
+  "cleanroom_sha": "",
+  "totals": {
+    "processed": 20,
+    "validated": 49,
+    "invalidated": 2
+  },
+  "validated": [
+    {
+      "kind": "authority_reference",
+      "file": "AR-ACA-20-77-135-peer-support.yaml",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "proposal_authority_reference_batch_001.yaml",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "proposal_authority_reference_batch_001.yaml",
+      "item": 1
+    },
+    {
+      "kind": "authority_reference",
+      "file": "proposal_authority_reference_batch_001.yaml",
+      "item": 2
+    },
+    {
+      "kind": "authority_reference",
+      "file": "proposal_authority_reference_batch_001.yaml",
+      "item": 3
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AR-ACA-16-100-204-mental-health-court.json",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-AARCO-RCO-DESIGNATION.yaml",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-AR-ACA-16-100-204.yaml",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 1
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 2
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 3
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 4
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 5
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 6
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 7
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 8
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 9
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 10
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 11
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 12
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 13
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 14
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 15
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 16
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 17
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 18
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 19
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 20
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 21
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 22
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 23
+    },
+    {
+      "kind": "evidence_item",
+      "file": "evidence_batch_001.yaml",
+      "item": 24
+    },
+    {
+      "kind": "field_validation",
+      "file": "fv_arlegalaudit.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "AR_FY2026_ADH_OPERATIONS_ACT538_SEC8.yaml",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "AR_FY2026_ADH_TRAUMA_EMS_ACT538_SEC9.yaml",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "AR_FY2026_AOC_ACCOUNTABILITY_COURT_FUND_ACT776_SEC29.yaml",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "AR_FY2026_AOC_SPECIALTY_COURTS_STATE_CENTRAL_SERVICES_ACT776_SEC31.yaml",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-AR-MEDICAID-PEER-ROUTING-2026.yaml",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-AR-RHTP-HEART-2026.yaml",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-AR-RHTP-PACT-2026.yaml",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-AR-RHTP-RISEAR-2026.yaml",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-AR-RHTP-THRIVE-2026.yaml",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-AR-SAMHSA-DHS-ROUTING-2026.yaml",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "mondey_flow_batch001.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "mondey_flow_batch001.json",
+      "item": 1
+    },
+    {
+      "kind": "money_flow",
+      "file": "mondey_flow_batch001.json",
+      "item": 2
+    },
+    {
+      "kind": "money_flow",
+      "file": "mondey_flow_batch001.json",
+      "item": 3
+    },
+    {
+      "kind": "money_flow",
+      "file": "mondey_flow_batch001.json",
+      "item": 4
+    }
+  ],
+  "invalidated": [
+    {
+      "kind": "evidence_item",
+      "file": "AR-IMPL-16-100-204-specialty-court.yaml",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/AR-IMPL-16-100-204-specialty-court.yaml.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'source' },\n    message: \"must have required property 'source'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'confidence_level' },\n    message: \"must have required property 'confidence_level'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'parent_authority' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'jurisdiction' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'scope' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'status' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'sources' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'notes' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '/evidence_type',\n    schemaPath: '#/$defs/evidence_item/properties/evidence_type/enum',\n    keyword: 'enum',\n    params: { allowedValues: [Array] },\n    message: 'must be equal to one of the allowed values'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-AR-RHTP-Y1-2026.yaml",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-AR-RHTP-Y1-2026.yaml.0.json invalid\n[\n  {\n    instancePath: '/restrictions/dhs_controlled',\n    schemaPath: '#/$defs/money_flow/properties/restrictions/properties/dhs_controlled/type',\n    keyword: 'type',\n    params: { type: 'boolean' },\n    message: 'must be boolean'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    }
+  ],
+  "retired": [
+    "proposals/authority_reference/AR-ACA-20-77-135-peer-support.yaml",
+    "proposals/authority_reference/proposal_authority_reference_batch_001.yaml",
+    "proposals/authority_reference/AR-ACA-16-100-204-mental-health-court.json",
+    "proposals/evidence_item/AR-IMPL-16-100-204-specialty-court.yaml",
+    "proposals/evidence_item/EV-AARCO-RCO-DESIGNATION.yaml",
+    "proposals/evidence_item/EV-AR-ACA-16-100-204.yaml",
+    "proposals/evidence_item/evidence_batch_001.yaml",
+    "proposals/field_validation/fv_arlegalaudit.json",
+    "proposals/money_flow/AR_FY2026_ADH_OPERATIONS_ACT538_SEC8.yaml",
+    "proposals/money_flow/AR_FY2026_ADH_TRAUMA_EMS_ACT538_SEC9.yaml",
+    "proposals/money_flow/AR_FY2026_AOC_ACCOUNTABILITY_COURT_FUND_ACT776_SEC29.yaml",
+    "proposals/money_flow/AR_FY2026_AOC_SPECIALTY_COURTS_STATE_CENTRAL_SERVICES_ACT776_SEC31.yaml",
+    "proposals/money_flow/MF-AR-MEDICAID-PEER-ROUTING-2026.yaml",
+    "proposals/money_flow/MF-AR-RHTP-HEART-2026.yaml",
+    "proposals/money_flow/MF-AR-RHTP-PACT-2026.yaml",
+    "proposals/money_flow/MF-AR-RHTP-RISEAR-2026.yaml",
+    "proposals/money_flow/MF-AR-RHTP-THRIVE-2026.yaml",
+    "proposals/money_flow/MF-AR-RHTP-Y1-2026.yaml",
+    "proposals/money_flow/MF-AR-SAMHSA-DHS-ROUTING-2026.yaml",
+    "proposals/money_flow/mondey_flow_batch001.json"
+  ]
+}
