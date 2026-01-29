@@ -1,0 +1,11 @@
+fv_id: FV-AR-AOC-SPECIALTY-COURT-OPEN-001
+jurisdiction: Arkansas
+validating_entity: STRATA / GLE Dossier Governance
+corroborator: Administrative Office of the Courts (AOC)
+alignment_status: open
+evidence_basis:
+  - authority_reference: AR-ACA-16-10-139-specialty-court
+  - authority_reference: AR-ACA-16-100-204-mental-health-court
+  - rule: Define support roles as court-adjacent navigation/education functions; avoid DHS-defined titles that imply Medicaid peer service billing.
+disclosure_level: restricted
+editor_status: accepted
