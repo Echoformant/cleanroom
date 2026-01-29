@@ -1,0 +1,154 @@
+name: Fix Invalidated Files
+
+on:
+  push:
+    paths:
+      - 'invalidated/**'
+    branches:
+      - '**'
+
+permissions:
+  contents: write
+
+jobs:
+  fix-and-move:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install pyyaml
+          sudo apt-get update
+          sudo apt-get install -y jq
+
+      - name: Process invalidated files
+        run: |
+          # Create pending directory if it doesn't exist
+          mkdir -p invalidated/pending
+
+          # Find all YAML and JSON files in invalidated directory (excluding pending)
+          find invalidated -type f \( -name "*.yaml" -o -name "*.yml" -o -name "*.json" \) ! -path "*/pending/*" | while read -r file; do
+            echo "Processing: $file"
+
+            # Get file extension
+            ext="${file##*.}"
+
+            # Determine target path in pending directory
+            relative_path="${file#invalidated/}"
+            target_file="invalidated/pending/$relative_path"
+            target_dir=$(dirname "$target_file")
+
+            mkdir -p "$target_dir"
+
+            # Try to fix the file based on type
+            if [[ "$ext" == "json" ]]; then
+              # Fix JSON using jq
+              if jq empty "$file" 2>/dev/null; then
+                # Valid JSON, just prettify
+                jq '.' "$file" > "$target_file"
+                echo "✓ Fixed JSON: $file -> $target_file"
+              else
+                # Invalid JSON, try to fix common issues with Python
+                python3 -c "
+          import json
+          import sys
+          import re
+
+          try:
+              with open('$file', 'r') as f:
+                  content = f.read()
+
+              # Try to parse as-is
+              try:
+                  data = json.loads(content)
+                  with open('$target_file', 'w') as f:
+                      json.dump(data, f, indent=2)
+                  print('✓ Fixed JSON: $file -> $target_file')
+              except json.JSONDecodeError:
+                  # Try common fixes
+                  # Remove trailing commas
+                  fixed = re.sub(r',(\s*[}\]])', r'\1', content)
+                  # Fix single quotes to double quotes
+                  fixed = fixed.replace(\"'\", '\"')
+
+                  try:
+                      data = json.loads(fixed)
+                      with open('$target_file', 'w') as f:
+                          json.dump(data, f, indent=2)
+                      print('✓ Fixed JSON with corrections: $file -> $target_file')
+                  except:
+                      # If still can't fix, copy as-is
+                      with open('$target_file', 'w') as f:
+                          f.write(content)
+                      print('⚠ Could not auto-fix JSON, copied as-is: $file -> $target_file')
+          except Exception as e:
+              print(f'✗ Error processing $file: {e}', file=sys.stderr)
+              sys.exit(1)
+          " || {
+                  # Fallback: just copy the file
+                  cp "$file" "$target_file"
+                  echo "⚠ Could not fix JSON, copied as-is: $file -> $target_file"
+                }
+              fi
+            elif [[ "$ext" == "yaml" || "$ext" == "yml" ]]; then
+              # Fix YAML using Python's PyYAML
+              python3 -c "
+          import yaml
+          import sys
+
+          try:
+              with open('$file', 'r') as f:
+                  content = f.read()
+
+              try:
+                  # Try to load and dump YAML to fix formatting
+                  data = yaml.safe_load(content)
+                  with open('$target_file', 'w') as f:
+                      yaml.dump(data, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
+                  print('✓ Fixed YAML: $file -> $target_file')
+              except yaml.YAMLError as e:
+                  # If can't parse, try to fix common issues
+                  print(f'⚠ YAML parse error in $file: {e}', file=sys.stderr)
+                  # Copy as-is if can't fix
+                  with open('$target_file', 'w') as f:
+                      f.write(content)
+                  print('⚠ Could not auto-fix YAML, copied as-is: $file -> $target_file')
+          except Exception as e:
+              print(f'✗ Error processing $file: {e}', file=sys.stderr)
+              sys.exit(1)
+          " || {
+                # Fallback: just copy the file
+                cp "$file" "$target_file"
+                echo "⚠ Could not fix YAML, copied as-is: $file -> $target_file"
+              }
+            fi
+
+            # Remove original file after successful processing
+            rm -f "$file"
+          done
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Check if there are changes to commit
+          if [[ -n $(git status -s) ]]; then
+            git add invalidated/
+            git commit -m "Auto-fix: Move corrected files from invalidated/ to invalidated/pending/"
+            git push
+            echo "Changes committed and pushed"
+          else
+            echo "No changes to commit"
+          fi
