@@ -1,0 +1,27 @@
+{
+  "run_id": "12916233240",
+  "timestamp": "2026-01-29T15:35:33.052Z",
+  "cleanroom_sha": "",
+  "totals": {
+    "processed": 2,
+    "validated": 2,
+    "invalidated": 0
+  },
+  "validated": [
+    {
+      "kind": "money_flow",
+      "file": "AR_FY2026_DHS_SECRETARY_OFFICE_GRANTS_PAYING_PURCHASE_OF_SERVICES_ACT1004_SEC8.yaml",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "AR_FY2026_DHS_SECRETARY_OFFICE_STATE_OPERATIONS_ACT1004_SEC5.yaml",
+      "item": 0
+    }
+  ],
+  "invalidated": [],
+  "retired": [
+    "proposals/money_flow/AR_FY2026_DHS_SECRETARY_OFFICE_GRANTS_PAYING_PURCHASE_OF_SERVICES_ACT1004_SEC8.yaml",
+    "proposals/money_flow/AR_FY2026_DHS_SECRETARY_OFFICE_STATE_OPERATIONS_ACT1004_SEC5.yaml"
+  ]
+}
