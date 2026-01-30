@@ -150,5 +150,42 @@
         ]
       }
     ]
+  },
+  {
+    "timestamp": "2026-01-30T16:57:03.134005+00:00",
+    "processed_files": [
+      {
+        "source": "invalidated/field_validation/FV-AR-AOC-SPECIALTY-COURT-OPEN-001.json/0.json",
+        "items_extracted": 1,
+        "target_dir": "proposals/field_validation",
+        "output_files": [
+          "proposals/field_validation/FV-AR-AOC-SPECIALTY-COURT-OPEN-001.json"
+        ]
+      },
+      {
+        "source": "invalidated/field_validation/FV-AR-DHS-PEER-CAPTURED-001.json/0.json",
+        "items_extracted": 1,
+        "target_dir": "proposals/field_validation",
+        "output_files": [
+          "proposals/field_validation/FV-AR-DHS-PEER-CAPTURED-001.json"
+        ]
+      },
+      {
+        "source": "invalidated/money_flow/MF-AR-RHTP-Y1-2026.json/0.json",
+        "items_extracted": 1,
+        "target_dir": "proposals/money_flow",
+        "output_files": [
+          "proposals/money_flow/MF-AR-RHTP-Y1-2026.json"
+        ]
+      },
+      {
+        "source": "invalidated/evidence_item/AR-IMPL-16-100-204-specialty-court.json/0.json",
+        "items_extracted": 1,
+        "target_dir": "proposals/evidence_item",
+        "output_files": [
+          "proposals/evidence_item/AR-IMPL-16-100-204-specialty-court.json"
+        ]
+      }
+    ]
   }
 ]
