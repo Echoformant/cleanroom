@@ -1,0 +1,770 @@
+﻿[
+    {
+        "authority_id":  "AR-ACA-16-100-204-mental-health-court",
+        "authority_type":  "statute",
+        "citation":  "Ark. Code Â§ 16-100-204",
+        "administering_body":  "Arkansas judiciary (local mental health specialty courts) under AOC/Supreme Court oversight",
+        "governs":  [
+                        "Administration of mental health specialty court programs and program-design authority"
+                    ],
+        "effects":  {
+                        "access_limiting":  false,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "accepted"
+    },
+    {
+        "authority_id":  "AR-AUTH-16-10-701-SPECIALTY-COURT-USER-FEES",
+        "authority_type":  "statute",
+        "citation":  "Ark. Code Ann. Â§ 16-10-701 â€” Specialty court program user fees",
+        "administering_body":  "Arkansas courts; Administration of Justice Funds Section",
+        "governs":  [
+                        "Assessment and remittance of $125 specialty court program user fee"
+                    ],
+        "effects":  {
+                        "access_limiting":  false,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AR-AUTH-19-5-1144-ACCOUNTABILITY-COURT-FUND",
+        "authority_type":  "statute",
+        "citation":  "Ark. Code Ann. Â§ 19-5-1144 â€” Accountability Court Fund",
+        "administering_body":  "Arkansas Judicial Council; AOC; Legislative Council",
+        "governs":  [
+                        "Accountability Court Fund allocation by formula",
+                        "Judicial Council and SCPAC review process"
+                    ],
+        "effects":  {
+                        "access_limiting":  false,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AR-AUTH-19-6-489-SPECIALTY-COURT-PROGRAM-FUND",
+        "authority_type":  "statute",
+        "citation":  "Ark. Code Ann. Â§ 19-6-489 â€” Specialty Court Program Fund",
+        "administering_body":  "Arkansas Administrative Office of the Courts; Arkansas Treasurer of State",
+        "governs":  [
+                        "Revenue sources for Specialty Court Program Fund",
+                        "Exclusive statutory uses of Specialty Court Program Fund"
+                    ],
+        "effects":  {
+                        "access_limiting":  false,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AR-AUTH-ACT776-2025-AOC-APPROPRIATION",
+        "authority_type":  "statute",
+        "citation":  "Act 776 of 2025 (SB72) â€” Administrative Office of the Courts Appropriation for FY ending June 30, 2026",
+        "administering_body":  "Arkansas Administrative Office of the Courts (AOC)",
+        "governs":  [
+                        "Appropriations for AOC operations and programs for FY2026",
+                        "Specialty Court Program Fund expenditures",
+                        "Drug Court Enhancement expenditures",
+                        "Accountability Court Fund expenditures"
+                    ],
+        "effects":  {
+                        "access_limiting":  false,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AUTH-AR-ACA-19-5-1011-DRUG-COURT-ENHANCEMENT-SPECIALTY-COURT-PROGRAM-FUND",
+        "authority_type":  "statute",
+        "citation":  "Arkansas Code Annotated Â§19-5-1011",
+        "administering_body":  "Arkansas Administrative Office of the Courts (AOC)",
+        "governs":  [
+                        "AR_FY2026_AOC_SPECIALTY_COURT_JUVENILE_DRUG_PROGRAMS_STATE_FUNDS_ACT776_SEC31"
+                    ],
+        "effects":  {
+                        "access_limiting":  false,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AUTH-AR-ACA-19-5-1033-CRIME-VICTIMS-REPARATIONS-REVOLVING-FUND",
+        "authority_type":  "statute",
+        "citation":  "Arkansas Code Annotated Â§19-5-1033",
+        "administering_body":  "NOT_PROVIDED_IN_THREAD",
+        "governs":  [
+                        "AR_FY2026_AOC_SPECIALTY_COURT_JUVENILE_DRUG_PROGRAMS_STATE_FUNDS_ACT776_SEC31"
+                    ],
+        "effects":  {
+                        "access_limiting":  false,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AUTH-AR-ACA-19-5-1144-ACCOUNTABILITY-COURT-FUND",
+        "authority_type":  "statute",
+        "citation":  "Arkansas Code Annotated Â§19-5-1144",
+        "administering_body":  "Arkansas Administrative Office of the Courts (AOC)",
+        "governs":  [
+                        "AR_FY2026_AOC_SPECIALTY_COURT_JUVENILE_DRUG_PROGRAMS_STATE_FUNDS_ACT776_SEC31"
+                    ],
+        "effects":  {
+                        "access_limiting":  false,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AUTH-AR-ACA-19-5-1146-ADULT-DRUG-COURT-EXPENSE-CASH-FUND",
+        "authority_type":  "statute",
+        "citation":  "Arkansas Code Annotated Â§19-5-1146",
+        "administering_body":  "Arkansas Administrative Office of the Courts (AOC)",
+        "governs":  [
+                        "AR_FY2026_AOC_SPECIALTY_COURT_JUVENILE_DRUG_PROGRAMS_STATE_FUNDS_ACT776_SEC31"
+                    ],
+        "effects":  {
+                        "access_limiting":  false,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AUTH-AR-ACA-19-5-1147-SPECIALTY-COURT-STATE-CENTRAL-SERVICES-FUND",
+        "authority_type":  "statute",
+        "citation":  "Arkansas Code Annotated Â§19-5-1147",
+        "administering_body":  "Arkansas Administrative Office of the Courts (AOC)",
+        "governs":  [
+                        "AR_FY2026_AOC_SPECIALTY_COURT_JUVENILE_DRUG_PROGRAMS_STATE_FUNDS_ACT776_SEC31"
+                    ],
+        "effects":  {
+                        "access_limiting":  false,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AUTH-AR-ACA-19-5-1148-COURT-TECHNOLOGY-IMPROVEMENT-FUND",
+        "authority_type":  "statute",
+        "citation":  "Arkansas Code Annotated Â§19-5-1148",
+        "administering_body":  "Arkansas Administrative Office of the Courts (AOC)",
+        "governs":  [
+                        "AR_FY2026_AOC_SPECIALTY_COURT_JUVENILE_DRUG_PROGRAMS_STATE_FUNDS_ACT776_SEC31"
+                    ],
+        "effects":  {
+                        "access_limiting":  false,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AUTH-AR-ACA-19-5-304-COMMUNITY-CORRECTION-REVOLVING-FUND",
+        "authority_type":  "statute",
+        "citation":  "Arkansas Code Annotated Â§19-5-304",
+        "administering_body":  "NOT_PROVIDED_IN_THREAD",
+        "governs":  [
+                        "AR_FY2026_AOC_SPECIALTY_COURT_JUVENILE_DRUG_PROGRAMS_STATE_FUNDS_ACT776_SEC31"
+                    ],
+        "effects":  {
+                        "access_limiting":  false,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AUTH-AR-ACA-19-5-306",
+        "authority_type":  "statute",
+        "citation":  "Arkansas Code Annotated Â§19-5-306",
+        "administering_body":  "NOT_PROVIDED_IN_THREAD",
+        "governs":  [
+                        "AR_FY2026_DHS_DAABHS_ALCOHOL_DRUG_ABUSE_COORD_COUNCIL_STATE_FUNDS_ACT890_SEC8_ITEM33"
+                    ],
+        "effects":  {
+                        "access_limiting":  false,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AUTH-AR-ACA-20-46-301-SUBSTANCE-ABUSE-PREVENTION-FUND",
+        "authority_type":  "statute",
+        "citation":  "Arkansas Code Annotated Â§20-46-301 (Substance Abuse Prevention Fund)",
+        "administering_body":  "Arkansas Department of Human Services (DHS)",
+        "governs":  [
+                        "AR_FY2026_DHS_DAABHS_SUBSTANCE_ABUSE_PREVENTION_STATE_FUNDS_ACT890_SEC8_ITEM34"
+                    ],
+        "effects":  {
+                        "access_limiting":  false,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AUTH-AR-ACA-20-76-201-ACCOUNTABILITY-COURT-PROGRAM",
+        "authority_type":  "statute",
+        "citation":  "Arkansas Code Annotated Â§20-76-201 (Accountability Court Program)",
+        "administering_body":  "Arkansas Administrative Office of the Courts (AOC)",
+        "governs":  [
+                        "AR_FY2026_AOC_SPECIALTY_COURT_JUVENILE_DRUG_PROGRAMS_STATE_FUNDS_ACT776_SEC31"
+                    ],
+        "effects":  {
+                        "access_limiting":  false,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AUTH-AR-ACT58-2021-DHS-SUBSTANCE-ABUSE-PREVENTION-FUND-ESTABLISHMENT",
+        "authority_type":  "statute",
+        "citation":  "Arkansas Act 58 of 2021 (establishing Substance Abuse Prevention Fund in DHS)",
+        "administering_body":  "Arkansas Department of Human Services (DHS)",
+        "governs":  [
+                        "AR_FY2026_DHS_DAABHS_SUBSTANCE_ABUSE_PREVENTION_STATE_FUNDS_ACT890_SEC8_ITEM34"
+                    ],
+        "effects":  {
+                        "access_limiting":  false,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AUTH-AR-ACT776-2025-AOC-APPROPRIATIONS-SPECIAL-LANGUAGE",
+        "authority_type":  "statute",
+        "citation":  "Arkansas Act 776 of 2025 (AOC Appropriations) â€” Special Language Sections 1â€“3",
+        "administering_body":  "Arkansas Administrative Office of the Courts (AOC)",
+        "governs":  [
+                        "AR_FY2026_AOC_SPECIALTY_COURT_JUVENILE_DRUG_PROGRAMS_STATE_FUNDS_ACT776_SEC31"
+                    ],
+        "effects":  {
+                        "access_limiting":  false,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AUTH-AR-SB472-S1-2015-ACCOUNTABILITY-COURT-FUND",
+        "authority_type":  "statute",
+        "citation":  "Arkansas SB472 (S1) of 2015 (Accountability Court Fund)",
+        "administering_body":  "Arkansas Administrative Office of the Courts (AOC)",
+        "governs":  [
+                        "AR_FY2026_AOC_SPECIALTY_COURT_JUVENILE_DRUG_PROGRAMS_STATE_FUNDS_ACT776_SEC31"
+                    ],
+        "effects":  {
+                        "access_limiting":  false,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AUTH-AR-SB472-S1-2015-ACCOUNTABILITY-COURT-PROGRAM",
+        "authority_type":  "statute",
+        "citation":  "Arkansas SB472 (S1) of 2015 (Accountability Court Program)",
+        "administering_body":  "Arkansas Administrative Office of the Courts (AOC)",
+        "governs":  [
+                        "AR_FY2026_AOC_SPECIALTY_COURT_JUVENILE_DRUG_PROGRAMS_STATE_FUNDS_ACT776_SEC31"
+                    ],
+        "effects":  {
+                        "access_limiting":  false,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AUTH-US-34USC-10152-BYRNE-JAG",
+        "authority_type":  "statute",
+        "citation":  "34 U.S.C. Â§10152 (Byrne JAG)",
+        "administering_body":  "U.S. Department of Justice (DOJ)",
+        "governs":  [
+                        "AR_FY2026_AOC_BYRNE_JAG_BEHAVIORAL_HEALTH_COLLAB_FEDERAL_FUNDS_ACT776_SEC34"
+                    ],
+        "effects":  {
+                        "access_limiting":  false,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AUTH-US-42USC-300X-14-SABG-PRIMARY-PREVENTION-20PCT",
+        "authority_type":  "statute",
+        "citation":  "42 U.S.C. Â§300X-14 (SABG primary prevention set-aside)",
+        "administering_body":  "U.S. Department of Health and Human Services (HHS) / SAMHSA",
+        "governs":  [
+                        "MF-AR-SAMHSA-DHS-ROUTING-2026"
+                    ],
+        "effects":  {
+                        "access_limiting":  true,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AUTH-US-42USC-300X-24B-SABG-PPW-5PCT",
+        "authority_type":  "statute",
+        "citation":  "42 U.S.C. Â§300X-24b (SABG PPW set-aside)",
+        "administering_body":  "U.S. Department of Health and Human Services (HHS) / SAMHSA",
+        "governs":  [
+                        "MF-AR-SAMHSA-DHS-ROUTING-2026"
+                    ],
+        "effects":  {
+                        "access_limiting":  true,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AUTH-US-42USC-300X-38-PABG",
+        "authority_type":  "statute",
+        "citation":  "42 U.S.C. Â§300X-38 (PABG)",
+        "administering_body":  "U.S. Department of Health and Human Services (HHS) / SAMHSA",
+        "governs":  [
+                        "MF-AR-SAMHSA-DHS-ROUTING-2026"
+                    ],
+        "effects":  {
+                        "access_limiting":  false,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AUTH-US-SAMHSA-PABG-SET-ASIDE-METHODOLOGY-GUIDANCE",
+        "authority_type":  "policy",
+        "citation":  "SAMHSA PABG guidance / methodology reference",
+        "administering_body":  "U.S. Department of Health and Human Services (HHS) / SAMHSA",
+        "governs":  [
+                        "MF-AR-SAMHSA-DHS-ROUTING-2026"
+                    ],
+        "effects":  {
+                        "access_limiting":  false,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AUTH-US-SAMHSA-SABG-PPW-5PCT-GUIDANCE",
+        "authority_type":  "policy",
+        "citation":  "SAMHSA SABG guidance/statutory set-aside (5% PPW)",
+        "administering_body":  "U.S. Department of Health and Human Services (HHS) / SAMHSA",
+        "governs":  [
+                        "MF-AR-SAMHSA-DHS-ROUTING-2026"
+                    ],
+        "effects":  {
+                        "access_limiting":  true,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "AUTH-US-SAMHSA-SABG-PRIMARY-PREVENTION-20PCT-GUIDANCE",
+        "authority_type":  "policy",
+        "citation":  "SAMHSA SABG guidance/statutory set-aside (20% primary prevention)",
+        "administering_body":  "U.S. Department of Health and Human Services (HHS) / SAMHSA",
+        "governs":  [
+                        "MF-AR-SAMHSA-DHS-ROUTING-2026"
+                    ],
+        "effects":  {
+                        "access_limiting":  true,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "authority_id":  "FED-REG-45-CFR-96-124-SUBG",
+        "authority_type":  "regulation",
+        "citation":  "45 C.F.R. Â§ 96.124 â€” Substance Use Prevention, Treatment, and Recovery Services Block Grant allocations",
+        "administering_body":  "SAMHSA / U.S. Department of Health and Human Services",
+        "governs":  [
+                        "Requirement that not less than 20% of SUBG funds be spent on primary prevention"
+                    ],
+        "effects":  {
+                        "access_limiting":  false,
+                        "appeal_mechanism":  false
+                    },
+        "editor_status":  "pending"
+    },
+    {
+        "evidence_id":  "AR-IMPL-16-100-204-specialty-court",
+        "evidence_type":  "authority_implementation",
+        "parent_authority":  "AR-ACA-16-100-204-mental-health-court",
+        "jurisdiction":  "Arkansas",
+        "scope":  "specialty_court_programs",
+        "status":  "active",
+        "sources":  [
+                        {
+                            "instrument_id":  "AR-SC-AO-14",
+                            "instrument_type":  "administrative_order",
+                            "issuing_body":  "Arkansas Supreme Court",
+                            "role":  "circuit_plan_requirement"
+                        },
+                        {
+                            "instrument_id":  "AR-SC-AO-18",
+                            "instrument_type":  "administrative_order",
+                            "issuing_body":  "Arkansas Supreme Court",
+                            "role":  "district_judge_designation_framework"
+                        },
+                        {
+                            "instrument_id":  "AR-AOC-CIRCUIT-ADMIN-PLANS-AO14",
+                            "instrument_type":  "administrative_plan_corpus",
+                            "issuing_body":  "Administrative Office of the Courts",
+                            "role":  "program_expression_and_approval"
+                        }
+                    ],
+        "notes":  [
+                      "Operational control of Â§16-100-204 resides in AO14 plan approval and AOC-administered plan intake."
+                  ],
+        "editor_status":  "pending"
+    },
+    {
+        "evidence_id":  "EV-ADMIN-ORDER-2012-ARK-468",
+        "section":  "IX. Legal / Regulatory Context \u003e Implementing Policy",
+        "claim_summary":  "Arkansas Supreme Court Administrative Orders 14 and 18 require specialty court programs to be approved through administrative plans.",
+        "evidence_type":  "administrative_rule",
+        "source":  {
+                       "title":  "In re Admin. Order Nos. 14 \u0026 18, 2012 Ark. 468",
+                       "issuing_body":  "Arkansas Supreme Court",
+                       "url":  "https://law.justia.com/cases/arkansas/supreme-court/2012/2012-ark-468.html"
+                   },
+        "confidence_level":  "high",
+        "editor_status":  "pending"
+    },
+    {
+        "evidence_id":  "EV-BUDGET-ACT776-2025-SPECIALTY-COURT-300000",
+        "section":  "IX. Legal / Regulatory Context \u003e Act 776 of 2025",
+        "claim_summary":  "Act 776 of 2025 appropriates $300,000 from the Specialty Court Program Fund to the AOC for Specialty Court Program costs and Advisory Committee support.",
+        "evidence_type":  "budget",
+        "source":  {
+                       "title":  "Act 776 of 2025 (SB72) â€” AOC Appropriation",
+                       "issuing_body":  "Arkansas General Assembly",
+                       "url":  "https://arkleg.state.ar.us/Acts/FTPDocument?ddBienniumSession=2025%2F2025R\u0026file=776.pdf\u0026path=%2FACTS%2F2025R%2FPublic%2F"
+                   },
+        "confidence_level":  "high",
+        "editor_status":  "pending"
+    },
+    {
+        "evidence_id":  "EV-BUDGET-ACT890-2025-DAABHS-CRISIS-5000000",
+        "section":  "IX. Legal / Regulatory Context \u003e Act 890 of 2025",
+        "claim_summary":  "Act 890 of 2025 appropriates $5,000,000 for DHS DAABHS Crisis Services.",
+        "evidence_type":  "budget",
+        "source":  {
+                       "title":  "Act 890 of 2025 (SB36) â€” DAABHS Appropriation",
+                       "issuing_body":  "Arkansas General Assembly",
+                       "url":  "https://arkleg.state.ar.us/Acts/FTPDocument?ddBienniumSession=2025%2F2025R\u0026file=890.pdf\u0026path=%2FACTS%2F2025R%2FPublic%2F"
+                   },
+        "confidence_level":  "high",
+        "editor_status":  "pending"
+    },
+    {
+        "evidence_id":  "EV-NAADAC-APSP-INTRO",
+        "section":  "Authority Map: APSP Credentialing",
+        "claim_summary":  "APSP is described as a three-tier credentialing process (PR/APR/PRPS) with training, education, experience, and supervision requirements.",
+        "evidence_type":  "administrative_rule",
+        "source":  {
+                       "title":  "Introducing the Arkansas Peer Specialist Program",
+                       "issuing_body":  "NAADAC",
+                       "url":  "https://www.naadac.org/assets/2416/aa\u0026r_spring2021_introducing_the_arkansas_peer_specialist_program.pdf"
+                   },
+        "confidence_level":  "high",
+        "editor_status":  "accepted"
+    },
+    {
+        "evidence_id":  "EVID-AR-ACT1004-2025-DHS-SECRETARY-OFFICE-APPROPRIATIONS",
+        "section":  "Act 1004 of 2025 â€” DHS Secretaryâ€™s Office appropriation sections",
+        "claim_summary":  "Arkansas Act 1004 of 2025 contains FY2026 DHS Secretaryâ€™s Office appropriations; referenced in-thread as part of DHS budget evidence supporting the dossier.\n",
+        "evidence_type":  "budget",
+        "source":  {
+                       "title":  "Arkansas Act 1004 of 2025 (DHS Secretaryâ€™s Office Appropriations)",
+                       "issuing_body":  "Arkansas General Assembly",
+                       "url":  "https://arkleg.state.ar.us/Acts/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2F\u0026file=1004.pdf\u0026ddBienniumSession=2025%2F2025R"
+                   },
+        "confidence_level":  "high",
+        "editor_status":  "pending"
+    },
+    {
+        "evidence_id":  "EVID-AR-ACT538-2025-ADH-OPERATIONS-TRAUMA-SYSTEM",
+        "section":  "Act 538 of 2025 â€” ADH Operations; Trauma System appropriation items",
+        "claim_summary":  "Arkansas Act 538 of 2025 contains FY2026 Arkansas Department of Health (ADH) appropriation items for Trauma System operations, supporting the ADH trauma-related funds referenced in-thread.\n",
+        "evidence_type":  "budget",
+        "source":  {
+                       "title":  "Arkansas Act 538 of 2025 (ADH Operations)",
+                       "issuing_body":  "Arkansas General Assembly",
+                       "url":  "https://arkleg.state.ar.us/Acts/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2F\u0026file=538.pdf\u0026ddBienniumSession=2025%2F2025R"
+                   },
+        "confidence_level":  "high",
+        "editor_status":  "pending"
+    },
+    {
+        "evidence_id":  "EVID-AR-ACT776-2025-AOC-APPROPRIATIONS-SECTIONS",
+        "section":  "Act 776 of 2025 â€” Sec. 31; Sec. 34; Special Language Sec. 1â€“3",
+        "claim_summary":  "Arkansas Act 776 of 2025 contains FY2026 AOC appropriation line-items for \u0027Specialty Court/Juvenile Drug Programs\u0027 and references Byrne JAG behavioral health collaboration in federal funds sections; special language sections govern conditions/allowable use for these appropriations.\n",
+        "evidence_type":  "budget",
+        "source":  {
+                       "title":  "Arkansas Act 776 of 2025 (AOC Appropriations)",
+                       "issuing_body":  "Arkansas General Assembly",
+                       "url":  "https://arkleg.state.ar.us/Acts/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2F\u0026file=776.pdf\u0026ddBienniumSession=2025%2F2025R"
+                   },
+        "confidence_level":  "high",
+        "editor_status":  "pending"
+    },
+    {
+        "evidence_id":  "EVID-AR-ACT890-2025-DHS-DAABHS-CRISIS-SERVICES",
+        "section":  "Act 890 of 2025 â€” DHS DAABHS appropriation items incl. crisis services and related line-items",
+        "claim_summary":  "Arkansas Act 890 of 2025 contains FY2026 DHS Division of Aging, Adult, and Behavioral Health Services (DAABHS) appropriations, including items referenced in-thread such as Substance Abuse Prevention and Alcohol and Drug Abuse Coordinating Council state funds line-items.\n",
+        "evidence_type":  "budget",
+        "source":  {
+                       "title":  "Arkansas Act 890 of 2025 (DHS DAABHS Appropriations)",
+                       "issuing_body":  "Arkansas General Assembly",
+                       "url":  "https://arkleg.state.ar.us/Acts/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2F\u0026file=890.pdf\u0026ddBienniumSession=2025%2F2025R"
+                   },
+        "confidence_level":  "high",
+        "editor_status":  "pending"
+    },
+    {
+        "evidence_id":  "EVID-US-DOJ-OJJDP-RHTP-FY23-AWARDS-PACT-AR",
+        "section":  "RHTP FY23 awards list â€” Arkansas PACT award entry",
+        "claim_summary":  "U.S. DOJ OJJDP RHTP FY23 awards document lists a $3,099,792 award to Arkansas for the PACT program (referenced in-thread as NAMI Arkansas + DHS DAABHS involvement).\n",
+        "evidence_type":  "grant",
+        "source":  {
+                       "title":  "OJJDP RHTP FY23 Awards",
+                       "issuing_body":  "U.S. Department of Justice â€” Office of Juvenile Justice and Delinquency Prevention (OJJDP)",
+                       "url":  "https://ojjdp.ojp.gov/sites/g/files/xyckuh176/files/media/document/rhtp-fy23-awards.pdf"
+                   },
+        "confidence_level":  "high",
+        "editor_status":  "pending"
+    },
+    {
+        "fv_id":  "FV-AR-ADH-TRAUMA-SYSTEM-OPEN-001",
+        "jurisdiction":  "Arkansas",
+        "validating_entity":  "Dossier Compiler",
+        "alignment_status":  "open",
+        "evidence_basis":  [
+                               "EVID-AR-ACT538-2025-ADH-OPERATIONS-TRAUMA-SYSTEM"
+                           ],
+        "disclosure_level":  "restricted",
+        "editor_status":  "pending"
+    },
+    {
+        "fv_id":  "FV-AR-AOC-SPECIALTY-COURT-OPEN-001",
+        "jurisdiction":  "Arkansas",
+        "validating_entity":  "STRATA / GLE Dossier Governance",
+        "corroborator":  "Administrative Office of the Courts (AOC)",
+        "alignment_status":  "open",
+        "evidence_basis":  [
+                               {
+                                   "authority_reference":  "AR-ACA-16-10-139-specialty-court"
+                               },
+                               {
+                                   "authority_reference":  "AR-ACA-16-100-204-mental-health-court"
+                               },
+                               {
+                                   "rule":  "Define support roles as court-adjacent navigation/education functions; avoid DHS-defined titles that imply Medicaid peer service billing."
+                               }
+                           ],
+        "disclosure_level":  "restricted",
+        "editor_status":  "accepted"
+    },
+    {
+        "fv_id":  "FV-AR-DHS-PEER-CAPTURED-001",
+        "jurisdiction":  "Arkansas",
+        "validating_entity":  "STRATA / GLE Dossier Governance",
+        "corroborator":  "DHS OSAMH / NAADAC (per statutory mandate)",
+        "alignment_status":  "captured",
+        "evidence_basis":  [
+                               {
+                                   "authority_reference":  "AR-ACA-20-64-602-b19"
+                               },
+                               {
+                                   "authority_reference":  "AR-ACA-20-77-135-peer-support"
+                               },
+                               {
+                                   "authority_reference":  "AR-POL-APSP-arkansas-model"
+                               },
+                               {
+                                   "authority_reference":  "AR-POL-RCO-designation-AARCO"
+                               },
+                               {
+                                   "rule":  "DHS-approved peer recovery certification is an eligibility gate for Medicaid-recognized peer support specialist status in Arkansas."
+                               }
+                           ],
+        "disclosure_level":  "restricted",
+        "editor_status":  "accepted"
+    },
+    {
+        "fv_id":  "FV-AR-DHS-RHTP-PACT-CAPTURED-001",
+        "jurisdiction":  "Arkansas",
+        "validating_entity":  "Dossier Compiler",
+        "alignment_status":  "captured",
+        "evidence_basis":  [
+                               "EVID-US-DOJ-OJJDP-RHTP-FY23-AWARDS-PACT-AR"
+                           ],
+        "disclosure_level":  "restricted",
+        "editor_status":  "pending"
+    },
+    {
+        "fv_id":  "FV-AR-DHS-SABG-ALLOC-MIXED-001",
+        "jurisdiction":  "Arkansas",
+        "validating_entity":  "Dossier Compiler",
+        "alignment_status":  "mixed",
+        "evidence_basis":  [
+                               "EVID-AR-ACT890-2025-DHS-DAABHS-CRISIS-SERVICES",
+                               "EVID-AR-ACT1004-2025-DHS-SECRETARY-OFFICE-APPROPRIATIONS"
+                           ],
+        "disclosure_level":  "restricted",
+        "editor_status":  "pending"
+    },
+    {
+        "fv_id":  "FV-AR-IX-GAP-SPECIALTY-COURT-IMPLEMENTATION-001",
+        "jurisdiction":  "Arkansas",
+        "validating_entity":  "Arkansas Administrative Office of the Courts",
+        "corroborator":  "Arkansas Supreme Court",
+        "alignment_status":  "open",
+        "evidence_basis":  [
+                               "No implementing regulations or policies appended for Specialty Court Program Fund uses",
+                               "No SCPAC-promulgated rules appended under Ark. Code Ann. Â§ 16-10-139"
+                           ],
+        "disclosure_level":  "restricted",
+        "editor_status":  "pending"
+    },
+    {
+        "fv_id":  "FV-AR-IX-GAP-SUBG-20-PREVENTION-001",
+        "jurisdiction":  "Arkansas",
+        "validating_entity":  "Arkansas DHS (SUBG Administering Entity)",
+        "alignment_status":  "open",
+        "evidence_basis":  [
+                               "Federal SUBG 20% prevention requirement evidenced",
+                               "State implementation or tracking documentation not appended"
+                           ],
+        "disclosure_level":  "restricted",
+        "editor_status":  "pending"
+    },
+    {
+        "fv_id":  "FV-AR-LegAudit-AOC-FY2022-AppropriationPurposeFinding",
+        "jurisdiction":  "Arkansas",
+        "validating_entity":  "Arkansas Legislative Audit",
+        "alignment_status":  "mixed",
+        "evidence_basis":  [
+                               "Audit Findings for Budget Hearings â€” 2025 Regular Session (AOC report for year ended June 30, 2022) â€” describes miscoding/misuse of appropriations and references Ark. Const. art. 16, Â§ 12 and Ark. Code Ann. Â§ 16-10-310(d)(1) transfer cap; URL: https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FAssembly%2F2025%2FSummary+Budget+Manuals%2FAudit+Findings+for+Budget+Hearings+-+2025+Regular+Session.pdf"
+                           ],
+        "disclosure_level":  "restricted",
+        "editor_status":  "pending"
+    },
+    {
+        "flow_id":  "MF-AR-RHTP-Y1-2026",
+        "source":  "CMS (Rural Health Transformation Program)",
+        "intermediary":  "Arkansas Department of Health (ADH)",
+        "destination":  "RHTP Year 1 subawards (HEART/PACT/RISE AR/THRIVE)",
+        "amount":  208779396,
+        "fund_type":  "federal",
+        "fiscal_year":  "2026",
+        "restrictions":  {
+                             "medicaid":  false,
+                             "dhs_controlled":  "conditional (operational/staffing only)"
+                         },
+        "statutory_basis":  "Pub. L. 119-21 Â§ 71401 (2025) â€” RHTP",
+        "editor_status":  "accepted"
+    },
+    {
+        "flow_id":  "MF-AR-SPECIALTY-COURT-FUND-2026",
+        "source":  "Specialty Court Program user fees and other statutory sources",
+        "intermediary":  "Arkansas Administrative Office of the Courts",
+        "destination":  "Specialty Court Program operations and support",
+        "amount":  300000,
+        "fund_type":  "state",
+        "fiscal_year":  "2026",
+        "restrictions":  {
+                             "medicaid":  false,
+                             "dhs_controlled":  false
+                         },
+        "statutory_basis":  "Ark. Code Ann. Â§ 19-6-489; Act 776 of 2025",
+        "editor_status":  "pending"
+    },
+    {
+        "flow_id":  "MF-AR-SUBG-PREVENTION-REQUIREMENT",
+        "source":  "U.S. HHS / SAMHSA",
+        "intermediary":  "Arkansas DHS",
+        "destination":  "Primary substance use prevention programs",
+        "amount":  0,
+        "fund_type":  "federal",
+        "fiscal_year":  "2025-2026",
+        "restrictions":  {
+                             "medicaid":  false,
+                             "dhs_controlled":  true
+                         },
+        "statutory_basis":  "45 C.F.R. Â§ 96.124",
+        "editor_status":  "pending"
+    },
+    {
+        "flow_id":  "MF-AR-RHTP-Y1-2026",
+        "source":  "Centers for Medicare \u0026 Medicaid Services (CMS), U.S. Department of Health and Human Services (HHS)",
+        "intermediary":  "Not specified in award list (states receive first-year awards from CMS)",
+        "destination":  "State of Arkansas",
+        "amount":  208779396,
+        "fund_type":  "federal",
+        "fiscal_year":  "2026",
+        "restrictions":  {
+                             "medicaid":  false,
+                             "dhs_controlled":  false
+                         },
+        "statutory_basis":  "HHS press release dated December 29, 2025 lists Arkansas FY26 Rural Health Transformation Program award amount as $208,779,396.",
+        "editor_status":  "pending"
+    },
+    {
+        "flow_id":  "MF-AR-RHTP-PACT-2026",
+        "source":  "Arkansas Rural Health Transformation (RHT) Program proposal (as summarized by Arkansas Senate, Nov 25, 2025)",
+        "intermediary":  "State of Arkansas (proposal)",
+        "destination":  "Promoting Access, Coordination, and Transformation (PACT) initiative (proposal budget)",
+        "amount":  400000000,
+        "fund_type":  "federal",
+        "fiscal_year":  "2026-2030",
+        "restrictions":  {
+                             "medicaid":  false,
+                             "dhs_controlled":  false
+                         },
+        "statutory_basis":  "Arkansas Senate summary (Nov 25, 2025) describes the PACT initiative as costing $400 million within Arkansas\u0027 RHT proposal.",
+        "editor_status":  "pending"
+    },
+    {
+        "flow_id":  "MF-AR-RHTP-HEART-2026",
+        "source":  "Arkansas Rural Health Transformation (RHT) Program proposal (as summarized by Arkansas Senate, Nov 25, 2025)",
+        "intermediary":  "State of Arkansas (proposal)",
+        "destination":  "Healthy Eating, Active Recreation, and Transformation (HEART) initiative (proposal budget)",
+        "amount":  150000000,
+        "fund_type":  "federal",
+        "fiscal_year":  "2026-2030",
+        "restrictions":  {
+                             "medicaid":  false,
+                             "dhs_controlled":  false
+                         },
+        "statutory_basis":  "Arkansas Senate summary (Nov 25, 2025) describes the HEART initiative as costing approximately $150 million within Arkansas\u0027 RHT proposal.",
+        "editor_status":  "pending"
+    },
+    {
+        "flow_id":  "MF-AR-RHTP-RISEAR-2026",
+        "source":  "Arkansas Rural Health Transformation (RHT) Program proposal (as summarized by Arkansas Senate, Nov 25, 2025)",
+        "intermediary":  "State of Arkansas (proposal)",
+        "destination":  "Recruitment, Innovation, Skills, and Education for Arkansas (RISE AR) initiative (proposal budget)",
+        "amount":  161000000,
+        "fund_type":  "federal",
+        "fiscal_year":  "2026-2030",
+        "restrictions":  {
+                             "medicaid":  false,
+                             "dhs_controlled":  false
+                         },
+        "statutory_basis":  "Arkansas Senate summary (Nov 25, 2025) describes the RISE AR initiative as costing approximately $161 million within Arkansas\u0027 RHT proposal.",
+        "editor_status":  "pending"
+    },
+    {
+        "flow_id":  "MF-AR-RHTP-THRIVE-2026",
+        "source":  "Arkansas Rural Health Transformation (RHT) Program proposal (as summarized by Arkansas Senate, Nov 25, 2025)",
+        "intermediary":  "State of Arkansas (proposal)",
+        "destination":  "Telehealth, Health-monitoring, and Response Innovation for Vital Expansion (THRIVE) strategy (proposal budget)",
+        "amount":  267000000,
+        "fund_type":  "federal",
+        "fiscal_year":  "2026-2030",
+        "restrictions":  {
+                             "medicaid":  false,
+                             "dhs_controlled":  false
+                         },
+        "statutory_basis":  "Arkansas Senate summary (Nov 25, 2025) describes the THRIVE strategy as funded at approximately $267 million within Arkansas\u0027 RHT proposal.",
+        "editor_status":  "pending"
+    }
+]
