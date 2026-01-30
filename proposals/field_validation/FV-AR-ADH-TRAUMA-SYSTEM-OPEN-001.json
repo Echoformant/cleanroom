@@ -1,0 +1,11 @@
+{
+  "fv_id": "FV-AR-ADH-TRAUMA-SYSTEM-OPEN-001",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Dossier Compiler",
+  "alignment_status": "open",
+  "evidence_basis": [
+    "EVID-AR-ACT538-2025-ADH-OPERATIONS-TRAUMA-SYSTEM"
+  ],
+  "disclosure_level": "restricted",
+  "editor_status": "pending"
+}

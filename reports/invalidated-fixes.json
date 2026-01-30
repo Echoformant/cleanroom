@@ -1,0 +1,154 @@
+[
+  {
+    "timestamp": "2026-01-30T05:40:14.890118+00:00",
+    "processed_files": [
+      {
+        "source": "invalidated/pending/authority_reference/AR-AUTH-batch-202.yaml/0.json",
+        "items_extracted": 21,
+        "target_dir": "proposals/authority_reference",
+        "output_files": [
+          "proposals/authority_reference/AUTH-AR-ACA-19-5-306.json",
+          "proposals/authority_reference/AUTH-AR-ACA-20-76-201-ACCOUNTABILITY-COURT-PROGRAM.json",
+          "proposals/authority_reference/AUTH-AR-ACA-20-46-301-SUBSTANCE-ABUSE-PREVENTION-FUND.json",
+          "proposals/authority_reference/AUTH-US-42USC-300X-14-SABG-PRIMARY-PREVENTION-20PCT.json",
+          "proposals/authority_reference/AUTH-US-42USC-300X-24B-SABG-PPW-5PCT.json",
+          "proposals/authority_reference/AUTH-US-42USC-300X-38-PABG.json",
+          "proposals/authority_reference/AUTH-AR-ACA-19-5-1144-ACCOUNTABILITY-COURT-FUND.json",
+          "proposals/authority_reference/AUTH-AR-ACA-19-5-1011-DRUG-COURT-ENHANCEMENT-SPECIALTY-COURT-PROGRAM-FUND.json",
+          "proposals/authority_reference/AUTH-AR-ACA-19-5-1146-ADULT-DRUG-COURT-EXPENSE-CASH-FUND.json",
+          "proposals/authority_reference/AUTH-AR-ACA-19-5-1147-SPECIALTY-COURT-STATE-CENTRAL-SERVICES-FUND.json",
+          "proposals/authority_reference/AUTH-AR-ACA-19-5-1148-COURT-TECHNOLOGY-IMPROVEMENT-FUND.json",
+          "proposals/authority_reference/AUTH-US-34USC-10152-BYRNE-JAG.json",
+          "proposals/authority_reference/AUTH-AR-ACA-19-5-1033-CRIME-VICTIMS-REPARATIONS-REVOLVING-FUND.json",
+          "proposals/authority_reference/AUTH-AR-ACA-19-5-304-COMMUNITY-CORRECTION-REVOLVING-FUND.json",
+          "proposals/authority_reference/AUTH-AR-ACT776-2025-AOC-APPROPRIATIONS-SPECIAL-LANGUAGE.json",
+          "proposals/authority_reference/AUTH-AR-ACT58-2021-DHS-SUBSTANCE-ABUSE-PREVENTION-FUND-ESTABLISHMENT.json",
+          "proposals/authority_reference/AUTH-US-SAMHSA-SABG-PRIMARY-PREVENTION-20PCT-GUIDANCE.json",
+          "proposals/authority_reference/AUTH-US-SAMHSA-SABG-PPW-5PCT-GUIDANCE.json",
+          "proposals/authority_reference/AUTH-US-SAMHSA-PABG-SET-ASIDE-METHODOLOGY-GUIDANCE.json",
+          "proposals/authority_reference/AUTH-AR-SB472-S1-2015-ACCOUNTABILITY-COURT-PROGRAM.json",
+          "proposals/authority_reference/AUTH-AR-SB472-S1-2015-ACCOUNTABILITY-COURT-FUND.json"
+        ]
+      },
+      {
+        "source": "invalidated/pending/authority_reference/AR-AUTH-batch-001.yaml/0.json",
+        "items_extracted": 5,
+        "target_dir": "proposals/authority_reference",
+        "output_files": [
+          "proposals/authority_reference/AR-AUTH-ACT776-2025-AOC-APPROPRIATION.json",
+          "proposals/authority_reference/AR-AUTH-19-6-489-SPECIALTY-COURT-PROGRAM-FUND.json",
+          "proposals/authority_reference/AR-AUTH-19-5-1144-ACCOUNTABILITY-COURT-FUND.json",
+          "proposals/authority_reference/AR-AUTH-16-10-701-SPECIALTY-COURT-USER-FEES.json",
+          "proposals/authority_reference/FED-REG-45-CFR-96-124-SUBG.json"
+        ]
+      },
+      {
+        "source": "invalidated/pending/field_validation/FV-batch-200.yaml/0.json",
+        "items_extracted": 2,
+        "target_dir": "proposals/field_validation",
+        "output_files": [
+          "proposals/field_validation/FV-AR-IX-GAP-SPECIALTY-COURT-IMPLEMENTATION-001.json",
+          "proposals/field_validation/FV-AR-IX-GAP-SUBG-20-PREVENTION-001.json"
+        ]
+      },
+      {
+        "source": "invalidated/pending/field_validation/FV-AR-DHS-PEER-CAPTURED-001.yaml/0.json",
+        "items_extracted": 1,
+        "target_dir": "proposals/field_validation",
+        "output_files": [
+          "proposals/field_validation/FV-AR-DHS-PEER-CAPTURED-001.json"
+        ]
+      },
+      {
+        "source": "invalidated/pending/field_validation/FV-batch-204.yaml/0.json",
+        "items_extracted": 4,
+        "target_dir": "proposals/field_validation",
+        "output_files": [
+          "proposals/field_validation/FV-AR-AOC-SPECIALTY-COURT-OPEN-001.json",
+          "proposals/field_validation/FV-AR-DHS-SABG-ALLOC-MIXED-001.json",
+          "proposals/field_validation/FV-AR-DHS-RHTP-PACT-CAPTURED-001.json",
+          "proposals/field_validation/FV-AR-ADH-TRAUMA-SYSTEM-OPEN-001.json"
+        ]
+      },
+      {
+        "source": "invalidated/pending/field_validation/FV-AR-AOC-SPECIALTY-COURT-OPEN-001.yaml/0.json",
+        "items_extracted": 1,
+        "target_dir": "proposals/field_validation",
+        "output_files": [
+          "proposals/field_validation/FV-AR-AOC-SPECIALTY-COURT-OPEN-001.json"
+        ]
+      },
+      {
+        "source": "invalidated/pending/money_flow/MF-AR-RHTP-Y1-2026.yaml/json.json",
+        "items_extracted": 1,
+        "target_dir": "proposals/money_flow",
+        "output_files": [
+          "proposals/money_flow/MF-AR-RHTP-Y1-2026.json"
+        ]
+      },
+      {
+        "source": "invalidated/pending/money_flow/MF-AR-RHTP-Y1-2026.yaml/0.json",
+        "items_extracted": 1,
+        "target_dir": "proposals/money_flow",
+        "output_files": [
+          "proposals/money_flow/MF-AR-RHTP-Y1-2026.json"
+        ]
+      },
+      {
+        "source": "invalidated/pending/money_flow/MF-batch-201.yaml/0.json",
+        "items_extracted": 2,
+        "target_dir": "proposals/money_flow",
+        "output_files": [
+          "proposals/money_flow/MF-AR-SPECIALTY-COURT-FUND-2026.json",
+          "proposals/money_flow/MF-AR-SUBG-PREVENTION-REQUIREMENT.json"
+        ]
+      },
+      {
+        "source": "invalidated/pending/evidence_item/AR-IMPL-16-100-204-specialty-court.yaml/json.json",
+        "items_extracted": 1,
+        "target_dir": "proposals/evidence_item",
+        "output_files": [
+          "proposals/evidence_item/AR-IMPL-16-100-204-specialty-court.json"
+        ]
+      },
+      {
+        "source": "invalidated/pending/evidence_item/AR-IMPL-16-100-204-specialty-court.yaml/0.json",
+        "items_extracted": 1,
+        "target_dir": "proposals/evidence_item",
+        "output_files": [
+          "proposals/evidence_item/AR-IMPL-16-100-204-specialty-court.json"
+        ]
+      },
+      {
+        "source": "invalidated/pending/evidence_item/EV-batch-001.yaml/0.json",
+        "items_extracted": 3,
+        "target_dir": "proposals/evidence_item",
+        "output_files": [
+          "proposals/evidence_item/EV-BUDGET-ACT776-2025-SPECIALTY-COURT-300000.json",
+          "proposals/evidence_item/EV-BUDGET-ACT890-2025-DAABHS-CRISIS-5000000.json",
+          "proposals/evidence_item/EV-ADMIN-ORDER-2012-ARK-468.json"
+        ]
+      },
+      {
+        "source": "invalidated/pending/evidence_item/EV-batch-203.yaml/0.json",
+        "items_extracted": 5,
+        "target_dir": "proposals/evidence_item",
+        "output_files": [
+          "proposals/evidence_item/EVID-AR-ACT776-2025-AOC-APPROPRIATIONS-SECTIONS.json",
+          "proposals/evidence_item/EVID-AR-ACT538-2025-ADH-OPERATIONS-TRAUMA-SYSTEM.json",
+          "proposals/evidence_item/EVID-AR-ACT1004-2025-DHS-SECRETARY-OFFICE-APPROPRIATIONS.json",
+          "proposals/evidence_item/EVID-AR-ACT890-2025-DHS-DAABHS-CRISIS-SERVICES.json",
+          "proposals/evidence_item/EVID-US-DOJ-OJJDP-RHTP-FY23-AWARDS-PACT-AR.json"
+        ]
+      },
+      {
+        "source": "invalidated/pending/evidence_item/EV-NAADAC-APSP-INTRO.yaml/source.yaml",
+        "items_extracted": 1,
+        "target_dir": "proposals/evidence_item",
+        "output_files": [
+          "proposals/evidence_item/EV-NAADAC-APSP-INTRO.json"
+        ]
+      }
+    ]
+  }
+]

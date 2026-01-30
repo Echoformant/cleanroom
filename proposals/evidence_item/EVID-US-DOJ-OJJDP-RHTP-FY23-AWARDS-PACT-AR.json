@@ -1,0 +1,13 @@
+{
+  "evidence_id": "EVID-US-DOJ-OJJDP-RHTP-FY23-AWARDS-PACT-AR",
+  "section": "RHTP FY23 awards list — Arkansas PACT award entry",
+  "claim_summary": "U.S. DOJ OJJDP RHTP FY23 awards document lists a $3,099,792 award to Arkansas for the PACT program (referenced in-thread as NAMI Arkansas + DHS DAABHS involvement).\n",
+  "evidence_type": "grant",
+  "source": {
+    "title": "OJJDP RHTP FY23 Awards",
+    "issuing_body": "U.S. Department of Justice — Office of Juvenile Justice and Delinquency Prevention (OJJDP)",
+    "url": "https://ojjdp.ojp.gov/sites/g/files/xyckuh176/files/media/document/rhtp-fy23-awards.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "pending"
+}

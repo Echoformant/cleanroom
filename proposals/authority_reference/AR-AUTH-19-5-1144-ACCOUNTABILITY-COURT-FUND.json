@@ -1,0 +1,15 @@
+{
+  "authority_id": "AR-AUTH-19-5-1144-ACCOUNTABILITY-COURT-FUND",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 19-5-1144 — Accountability Court Fund",
+  "administering_body": "Arkansas Judicial Council; AOC; Legislative Council",
+  "governs": [
+    "Accountability Court Fund allocation by formula",
+    "Judicial Council and SCPAC review process"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "pending"
+}

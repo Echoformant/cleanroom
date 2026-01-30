@@ -1,0 +1,15 @@
+{
+  "authority_id": "AR-AUTH-19-6-489-SPECIALTY-COURT-PROGRAM-FUND",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 19-6-489 — Specialty Court Program Fund",
+  "administering_body": "Arkansas Administrative Office of the Courts; Arkansas Treasurer of State",
+  "governs": [
+    "Revenue sources for Specialty Court Program Fund",
+    "Exclusive statutory uses of Specialty Court Program Fund"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "pending"
+}

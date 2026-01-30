@@ -1,0 +1,14 @@
+{
+  "authority_id": "AUTH-AR-ACA-19-5-1144-ACCOUNTABILITY-COURT-FUND",
+  "authority_type": "statute",
+  "citation": "Arkansas Code Annotated §19-5-1144",
+  "administering_body": "Arkansas Administrative Office of the Courts (AOC)",
+  "governs": [
+    "AR_FY2026_AOC_SPECIALTY_COURT_JUVENILE_DRUG_PROGRAMS_STATE_FUNDS_ACT776_SEC31"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "pending"
+}

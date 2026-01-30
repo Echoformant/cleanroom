@@ -1,0 +1,14 @@
+{
+  "authority_id": "AUTH-AR-ACT776-2025-AOC-APPROPRIATIONS-SPECIAL-LANGUAGE",
+  "authority_type": "statute",
+  "citation": "Arkansas Act 776 of 2025 (AOC Appropriations) — Special Language Sections 1–3",
+  "administering_body": "Arkansas Administrative Office of the Courts (AOC)",
+  "governs": [
+    "AR_FY2026_AOC_SPECIALTY_COURT_JUVENILE_DRUG_PROGRAMS_STATE_FUNDS_ACT776_SEC31"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "pending"
+}

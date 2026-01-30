@@ -1,0 +1,11 @@
+{
+  "fv_id": "FV-AR-DHS-RHTP-PACT-CAPTURED-001",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Dossier Compiler",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "EVID-US-DOJ-OJJDP-RHTP-FY23-AWARDS-PACT-AR"
+  ],
+  "disclosure_level": "restricted",
+  "editor_status": "pending"
+}

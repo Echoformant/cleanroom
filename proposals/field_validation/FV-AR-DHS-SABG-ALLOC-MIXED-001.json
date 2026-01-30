@@ -1,0 +1,12 @@
+{
+  "fv_id": "FV-AR-DHS-SABG-ALLOC-MIXED-001",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Dossier Compiler",
+  "alignment_status": "mixed",
+  "evidence_basis": [
+    "EVID-AR-ACT890-2025-DHS-DAABHS-CRISIS-SERVICES",
+    "EVID-AR-ACT1004-2025-DHS-SECRETARY-OFFICE-APPROPRIATIONS"
+  ],
+  "disclosure_level": "restricted",
+  "editor_status": "pending"
+}
