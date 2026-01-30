@@ -1,0 +1,22 @@
+{
+  "run_id": "12933698050",
+  "timestamp": "2026-01-30T17:30:10.564Z",
+  "cleanroom_sha": "",
+  "totals": {
+    "processed": 1,
+    "validated": 0,
+    "invalidated": 1
+  },
+  "validated": [],
+  "invalidated": [
+    {
+      "kind": "money_flow",
+      "file": "MF-AR-BATCH-130-1.yaml",
+      "item": null,
+      "errors": []
+    }
+  ],
+  "retired": [
+    "proposals/money_flow/MF-AR-BATCH-130-1.yaml"
+  ]
+}
