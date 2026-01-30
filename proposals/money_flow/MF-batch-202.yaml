@@ -1,0 +1,12 @@
+- flow_id: MF-US-DOJ-OJJDP-RHTP-FY2023-AR-PACT
+  source: U.S. Department of Justice (DOJ) — Office of Juvenile Justice and Delinquency Prevention (OJJDP)
+  intermediary: State of Arkansas (pass-through entity NOT_PROVIDED_IN_THREAD)
+  destination: PACT program (referenced as NAMI Arkansas + DHS DAABHS)
+  amount: 3099792.0
+  fund_type: federal
+  fiscal_year: '2023'
+  restrictions:
+    medicaid: false
+    dhs_controlled: true
+  statutory_basis: OJJDP RHTP FY23 Awards document (see evidence item EVID-US-DOJ-OJJDP-RHTP-FY23-AWARDS-PACT-AR).
+  editor_status: pending

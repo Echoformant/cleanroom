@@ -1,0 +1,37 @@
+field_validation:
+  - fv_id: FV-AR-AOC-SPECIALTY-COURT-OPEN-001
+    jurisdiction: Arkansas
+    validating_entity: Dossier Compiler
+    alignment_status: open
+    evidence_basis:
+      - EVID-AR-ACT776-2025-AOC-APPROPRIATIONS-SECTIONS
+    disclosure_level: restricted
+    editor_status: pending
+
+  - fv_id: FV-AR-DHS-SABG-ALLOC-MIXED-001
+    jurisdiction: Arkansas
+    validating_entity: Dossier Compiler
+    alignment_status: mixed
+    evidence_basis:
+      - EVID-AR-ACT890-2025-DHS-DAABHS-CRISIS-SERVICES
+      - EVID-AR-ACT1004-2025-DHS-SECRETARY-OFFICE-APPROPRIATIONS
+    disclosure_level: restricted
+    editor_status: pending
+
+  - fv_id: FV-AR-DHS-RHTP-PACT-CAPTURED-001
+    jurisdiction: Arkansas
+    validating_entity: Dossier Compiler
+    alignment_status: captured
+    evidence_basis:
+      - EVID-US-DOJ-OJJDP-RHTP-FY23-AWARDS-PACT-AR
+    disclosure_level: restricted
+    editor_status: pending
+
+  - fv_id: FV-AR-ADH-TRAUMA-SYSTEM-OPEN-001
+    jurisdiction: Arkansas
+    validating_entity: Dossier Compiler
+    alignment_status: open
+    evidence_basis:
+      - EVID-AR-ACT538-2025-ADH-OPERATIONS-TRAUMA-SYSTEM
+    disclosure_level: restricted
+    editor_status: pending
