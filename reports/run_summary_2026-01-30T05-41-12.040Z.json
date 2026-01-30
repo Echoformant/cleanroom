@@ -1,0 +1,304 @@
+{
+  "run_id": "12924549854",
+  "timestamp": "2026-01-30T05:41:12.040Z",
+  "cleanroom_sha": "",
+  "totals": {
+    "processed": 46,
+    "validated": 42,
+    "invalidated": 4
+  },
+  "validated": [
+    {
+      "kind": "authority_reference",
+      "file": "AR-AUTH-16-10-701-SPECIALTY-COURT-USER-FEES.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AR-AUTH-19-5-1144-ACCOUNTABILITY-COURT-FUND.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AR-AUTH-19-6-489-SPECIALTY-COURT-PROGRAM-FUND.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AR-AUTH-ACT776-2025-AOC-APPROPRIATION.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AUTH-AR-ACA-19-5-1011-DRUG-COURT-ENHANCEMENT-SPECIALTY-COURT-PROGRAM-FUND.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AUTH-AR-ACA-19-5-1033-CRIME-VICTIMS-REPARATIONS-REVOLVING-FUND.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AUTH-AR-ACA-19-5-1144-ACCOUNTABILITY-COURT-FUND.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AUTH-AR-ACA-19-5-1146-ADULT-DRUG-COURT-EXPENSE-CASH-FUND.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AUTH-AR-ACA-19-5-1147-SPECIALTY-COURT-STATE-CENTRAL-SERVICES-FUND.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AUTH-AR-ACA-19-5-1148-COURT-TECHNOLOGY-IMPROVEMENT-FUND.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AUTH-AR-ACA-19-5-304-COMMUNITY-CORRECTION-REVOLVING-FUND.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AUTH-AR-ACA-19-5-306.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AUTH-AR-ACA-20-46-301-SUBSTANCE-ABUSE-PREVENTION-FUND.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AUTH-AR-ACA-20-76-201-ACCOUNTABILITY-COURT-PROGRAM.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AUTH-AR-ACT58-2021-DHS-SUBSTANCE-ABUSE-PREVENTION-FUND-ESTABLISHMENT.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AUTH-AR-ACT776-2025-AOC-APPROPRIATIONS-SPECIAL-LANGUAGE.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AUTH-AR-SB472-S1-2015-ACCOUNTABILITY-COURT-FUND.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AUTH-AR-SB472-S1-2015-ACCOUNTABILITY-COURT-PROGRAM.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AUTH-US-34USC-10152-BYRNE-JAG.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AUTH-US-42USC-300X-14-SABG-PRIMARY-PREVENTION-20PCT.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AUTH-US-42USC-300X-24B-SABG-PPW-5PCT.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AUTH-US-42USC-300X-38-PABG.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AUTH-US-SAMHSA-PABG-SET-ASIDE-METHODOLOGY-GUIDANCE.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AUTH-US-SAMHSA-SABG-PPW-5PCT-GUIDANCE.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AUTH-US-SAMHSA-SABG-PRIMARY-PREVENTION-20PCT-GUIDANCE.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "FED-REG-45-CFR-96-124-SUBG.json",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-ADMIN-ORDER-2012-ARK-468.json",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-BUDGET-ACT776-2025-SPECIALTY-COURT-300000.json",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-BUDGET-ACT890-2025-DAABHS-CRISIS-5000000.json",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-NAADAC-APSP-INTRO.json",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EVID-AR-ACT1004-2025-DHS-SECRETARY-OFFICE-APPROPRIATIONS.json",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EVID-AR-ACT538-2025-ADH-OPERATIONS-TRAUMA-SYSTEM.json",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EVID-AR-ACT776-2025-AOC-APPROPRIATIONS-SECTIONS.json",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EVID-AR-ACT890-2025-DHS-DAABHS-CRISIS-SERVICES.json",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EVID-US-DOJ-OJJDP-RHTP-FY23-AWARDS-PACT-AR.json",
+      "item": 0
+    },
+    {
+      "kind": "field_validation",
+      "file": "FV-AR-ADH-TRAUMA-SYSTEM-OPEN-001.json",
+      "item": 0
+    },
+    {
+      "kind": "field_validation",
+      "file": "FV-AR-DHS-RHTP-PACT-CAPTURED-001.json",
+      "item": 0
+    },
+    {
+      "kind": "field_validation",
+      "file": "FV-AR-DHS-SABG-ALLOC-MIXED-001.json",
+      "item": 0
+    },
+    {
+      "kind": "field_validation",
+      "file": "FV-AR-IX-GAP-SPECIALTY-COURT-IMPLEMENTATION-001.json",
+      "item": 0
+    },
+    {
+      "kind": "field_validation",
+      "file": "FV-AR-IX-GAP-SUBG-20-PREVENTION-001.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-AR-SPECIALTY-COURT-FUND-2026.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-AR-SUBG-PREVENTION-REQUIREMENT.json",
+      "item": 0
+    }
+  ],
+  "invalidated": [
+    {
+      "kind": "evidence_item",
+      "file": "AR-IMPL-16-100-204-specialty-court.json",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/AR-IMPL-16-100-204-specialty-court.json.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'source' },\n    message: \"must have required property 'source'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'confidence_level' },\n    message: \"must have required property 'confidence_level'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'parent_authority' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'jurisdiction' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'scope' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'status' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'sources' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'notes' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '/evidence_type',\n    schemaPath: '#/$defs/evidence_item/properties/evidence_type/enum',\n    keyword: 'enum',\n    params: { allowedValues: [Array] },\n    message: 'must be equal to one of the allowed values'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "field_validation",
+      "file": "FV-AR-AOC-SPECIALTY-COURT-OPEN-001.json",
+      "item": 0,
+      "errors": [
+        "/tmp/FV-AR-AOC-SPECIALTY-COURT-OPEN-001.json.0.json invalid\n[\n  {\n    instancePath: '/evidence_basis/0',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/1',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/2',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "field_validation",
+      "file": "FV-AR-DHS-PEER-CAPTURED-001.json",
+      "item": 0,
+      "errors": [
+        "/tmp/FV-AR-DHS-PEER-CAPTURED-001.json.0.json invalid\n[\n  {\n    instancePath: '/evidence_basis/0',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/1',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/2',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/3',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/4',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-AR-RHTP-Y1-2026.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-AR-RHTP-Y1-2026.json.0.json invalid\n[\n  {\n    instancePath: '/restrictions/dhs_controlled',\n    schemaPath: '#/$defs/money_flow/properties/restrictions/properties/dhs_controlled/type',\n    keyword: 'type',\n    params: { type: 'boolean' },\n    message: 'must be boolean'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    }
+  ],
+  "retired": [
+    "proposals/authority_reference/AR-AUTH-16-10-701-SPECIALTY-COURT-USER-FEES.json",
+    "proposals/authority_reference/AR-AUTH-19-5-1144-ACCOUNTABILITY-COURT-FUND.json",
+    "proposals/authority_reference/AR-AUTH-19-6-489-SPECIALTY-COURT-PROGRAM-FUND.json",
+    "proposals/authority_reference/AR-AUTH-ACT776-2025-AOC-APPROPRIATION.json",
+    "proposals/authority_reference/AUTH-AR-ACA-19-5-1011-DRUG-COURT-ENHANCEMENT-SPECIALTY-COURT-PROGRAM-FUND.json",
+    "proposals/authority_reference/AUTH-AR-ACA-19-5-1033-CRIME-VICTIMS-REPARATIONS-REVOLVING-FUND.json",
+    "proposals/authority_reference/AUTH-AR-ACA-19-5-1144-ACCOUNTABILITY-COURT-FUND.json",
+    "proposals/authority_reference/AUTH-AR-ACA-19-5-1146-ADULT-DRUG-COURT-EXPENSE-CASH-FUND.json",
+    "proposals/authority_reference/AUTH-AR-ACA-19-5-1147-SPECIALTY-COURT-STATE-CENTRAL-SERVICES-FUND.json",
+    "proposals/authority_reference/AUTH-AR-ACA-19-5-1148-COURT-TECHNOLOGY-IMPROVEMENT-FUND.json",
+    "proposals/authority_reference/AUTH-AR-ACA-19-5-304-COMMUNITY-CORRECTION-REVOLVING-FUND.json",
+    "proposals/authority_reference/AUTH-AR-ACA-19-5-306.json",
+    "proposals/authority_reference/AUTH-AR-ACA-20-46-301-SUBSTANCE-ABUSE-PREVENTION-FUND.json",
+    "proposals/authority_reference/AUTH-AR-ACA-20-76-201-ACCOUNTABILITY-COURT-PROGRAM.json",
+    "proposals/authority_reference/AUTH-AR-ACT58-2021-DHS-SUBSTANCE-ABUSE-PREVENTION-FUND-ESTABLISHMENT.json",
+    "proposals/authority_reference/AUTH-AR-ACT776-2025-AOC-APPROPRIATIONS-SPECIAL-LANGUAGE.json",
+    "proposals/authority_reference/AUTH-AR-SB472-S1-2015-ACCOUNTABILITY-COURT-FUND.json",
+    "proposals/authority_reference/AUTH-AR-SB472-S1-2015-ACCOUNTABILITY-COURT-PROGRAM.json",
+    "proposals/authority_reference/AUTH-US-34USC-10152-BYRNE-JAG.json",
+    "proposals/authority_reference/AUTH-US-42USC-300X-14-SABG-PRIMARY-PREVENTION-20PCT.json",
+    "proposals/authority_reference/AUTH-US-42USC-300X-24B-SABG-PPW-5PCT.json",
+    "proposals/authority_reference/AUTH-US-42USC-300X-38-PABG.json",
+    "proposals/authority_reference/AUTH-US-SAMHSA-PABG-SET-ASIDE-METHODOLOGY-GUIDANCE.json",
+    "proposals/authority_reference/AUTH-US-SAMHSA-SABG-PPW-5PCT-GUIDANCE.json",
+    "proposals/authority_reference/AUTH-US-SAMHSA-SABG-PRIMARY-PREVENTION-20PCT-GUIDANCE.json",
+    "proposals/authority_reference/FED-REG-45-CFR-96-124-SUBG.json",
+    "proposals/evidence_item/AR-IMPL-16-100-204-specialty-court.json",
+    "proposals/evidence_item/EV-ADMIN-ORDER-2012-ARK-468.json",
+    "proposals/evidence_item/EV-BUDGET-ACT776-2025-SPECIALTY-COURT-300000.json",
+    "proposals/evidence_item/EV-BUDGET-ACT890-2025-DAABHS-CRISIS-5000000.json",
+    "proposals/evidence_item/EV-NAADAC-APSP-INTRO.json",
+    "proposals/evidence_item/EVID-AR-ACT1004-2025-DHS-SECRETARY-OFFICE-APPROPRIATIONS.json",
+    "proposals/evidence_item/EVID-AR-ACT538-2025-ADH-OPERATIONS-TRAUMA-SYSTEM.json",
+    "proposals/evidence_item/EVID-AR-ACT776-2025-AOC-APPROPRIATIONS-SECTIONS.json",
+    "proposals/evidence_item/EVID-AR-ACT890-2025-DHS-DAABHS-CRISIS-SERVICES.json",
+    "proposals/evidence_item/EVID-US-DOJ-OJJDP-RHTP-FY23-AWARDS-PACT-AR.json",
+    "proposals/field_validation/FV-AR-ADH-TRAUMA-SYSTEM-OPEN-001.json",
+    "proposals/field_validation/FV-AR-AOC-SPECIALTY-COURT-OPEN-001.json",
+    "proposals/field_validation/FV-AR-DHS-PEER-CAPTURED-001.json",
+    "proposals/field_validation/FV-AR-DHS-RHTP-PACT-CAPTURED-001.json",
+    "proposals/field_validation/FV-AR-DHS-SABG-ALLOC-MIXED-001.json",
+    "proposals/field_validation/FV-AR-IX-GAP-SPECIALTY-COURT-IMPLEMENTATION-001.json",
+    "proposals/field_validation/FV-AR-IX-GAP-SUBG-20-PREVENTION-001.json",
+    "proposals/money_flow/MF-AR-RHTP-Y1-2026.json",
+    "proposals/money_flow/MF-AR-SPECIALTY-COURT-FUND-2026.json",
+    "proposals/money_flow/MF-AR-SUBG-PREVENTION-REQUIREMENT.json"
+  ]
+}

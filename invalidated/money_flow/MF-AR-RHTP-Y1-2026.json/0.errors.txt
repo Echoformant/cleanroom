@@ -1,0 +1,24 @@
+/tmp/MF-AR-RHTP-Y1-2026.json.0.json invalid
+[
+  {
+    instancePath: '/restrictions/dhs_controlled',
+    schemaPath: '#/$defs/money_flow/properties/restrictions/properties/dhs_controlled/type',
+    keyword: 'type',
+    params: { type: 'boolean' },
+    message: 'must be boolean'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/oneOf/1/type',
+    keyword: 'type',
+    params: { type: 'array' },
+    message: 'must be array'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/oneOf',
+    keyword: 'oneOf',
+    params: { passingSchemas: null },
+    message: 'must match exactly one schema in oneOf'
+  }
+]
