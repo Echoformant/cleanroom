@@ -1,0 +1,179 @@
+name: Correct Pending JSON Schemas
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'invalidated/pending/**'
+
+permissions:
+  contents: write
+
+jobs:
+  correct-and-move-schemas:
+    name: Correct and Move JSON Schemas
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Check for pending JSON files
+        id: check-files
+        run: |
+          if find invalidated/pending -type f -name "*.json" 2>/dev/null | grep -q .; then
+            echo "has_files=true" >> $GITHUB_OUTPUT
+            echo "Found JSON files in invalidated/pending/"
+          else
+            echo "has_files=false" >> $GITHUB_OUTPUT
+            echo "No JSON files found in invalidated/pending/"
+          fi
+
+      - name: Correct JSON syntax and move files
+        if: steps.check-files.outputs.has_files == 'true'
+        run: |
+          python3 << 'EOF'
+          import os
+          import json
+          import re
+          import shutil
+          from pathlib import Path
+
+          def fix_json_syntax(content):
+              """
+              Attempt to fix common JSON syntax errors.
+              Returns (fixed_content, success) tuple.
+              """
+              try:
+                  # First, try to parse as-is
+                  json.loads(content)
+                  return content, True
+              except json.JSONDecodeError:
+                  pass
+              
+              # Try fixing common issues
+              fixed = content
+              
+              # Fix single quotes to double quotes (be careful with apostrophes in strings)
+              # This is a simple approach - replace single quotes with double quotes
+              fixed = re.sub(r"'", '"', fixed)
+              
+              # Remove trailing commas before closing braces/brackets
+              fixed = re.sub(r',(\s*[}\]])', r'\1', fixed)
+              
+              # Fix common escape sequence issues
+              # (This is basic - may need more sophisticated handling)
+              
+              try:
+                  # Try to parse the fixed version
+                  parsed = json.loads(fixed)
+                  # Re-serialize to ensure valid JSON
+                  return json.dumps(parsed, indent=2), True
+              except json.JSONDecodeError as e:
+                  print(f"  ❌ Could not fix JSON: {e}")
+                  return None, False
+
+          def process_pending_files():
+              """
+              Process all JSON files in invalidated/pending/ directory.
+              Correct syntax errors and move valid files to proposals/.
+              """
+              pending_dir = Path("invalidated/pending")
+              proposals_dir = Path("proposals")
+              
+              if not pending_dir.exists():
+                  print("No invalidated/pending directory found")
+                  return 0
+              
+              # Find all JSON files recursively
+              json_files = list(pending_dir.rglob("*.json"))
+              
+              if not json_files:
+                  print("No JSON files found in invalidated/pending/")
+                  return 0
+              
+              moved_count = 0
+              failed_count = 0
+              
+              for json_file in json_files:
+                  relative_path = json_file.relative_to(pending_dir)
+                  print(f"\nProcessing: {json_file}")
+                  
+                  try:
+                      # Read the file
+                      with open(json_file, 'r', encoding='utf-8') as f:
+                          content = f.read()
+                      
+                      # Try to fix JSON syntax
+                      fixed_content, success = fix_json_syntax(content)
+                      
+                      if success:
+                          # Create target path in proposals/
+                          target_path = proposals_dir / relative_path
+                          target_path.parent.mkdir(parents=True, exist_ok=True)
+                          
+                          # Write the corrected JSON to proposals/
+                          with open(target_path, 'w', encoding='utf-8') as f:
+                              f.write(fixed_content)
+                          
+                          print(f"  ✅ Corrected and moved to: {target_path}")
+                          
+                          # Remove the file from invalidated/pending/
+                          json_file.unlink()
+                          print(f"  🗑️  Removed from: {json_file}")
+                          
+                          moved_count += 1
+                      else:
+                          print(f"  ⚠️  Cannot correct - leaving in invalidated/pending/")
+                          failed_count += 1
+                          
+                  except Exception as e:
+                      print(f"  ❌ Error processing file: {e}")
+                      failed_count += 1
+              
+              # Clean up empty directories in invalidated/pending/
+              for dirpath, dirnames, filenames in os.walk(pending_dir, topdown=False):
+                  dir_path = Path(dirpath)
+                  if dir_path != pending_dir and not any(dir_path.iterdir()):
+                      dir_path.rmdir()
+                      print(f"\n🗑️  Removed empty directory: {dir_path}")
+              
+              print(f"\n{'='*60}")
+              print(f"Summary:")
+              print(f"  ✅ Successfully corrected and moved: {moved_count}")
+              print(f"  ⚠️  Failed to correct: {failed_count}")
+              print(f"{'='*60}")
+              
+              return moved_count
+
+          if __name__ == "__main__":
+              moved = process_pending_files()
+              exit(0 if moved >= 0 else 1)
+          EOF
+
+      - name: Configure git
+        if: steps.check-files.outputs.has_files == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push changes
+        if: steps.check-files.outputs.has_files == 'true'
+        run: |
+          git add proposals/ invalidated/pending/
+          
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-correct: Move validated JSON schemas from invalidated/pending/ to proposals/ [skip ci]"
+            git push
+            echo "✅ Changes committed and pushed"
+          fi
