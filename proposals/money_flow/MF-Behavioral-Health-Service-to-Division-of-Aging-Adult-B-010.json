@@ -1,0 +1,15 @@
+{
+  "source": "Behavioral Health Services Fund Account",
+  "intermediary": null,
+  "destination": "Division of Aging, Adult & Behavioral Health Services – Crisis Services",
+  "amount": 5000000,
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": true
+  },
+  "statutory_basis": "The Division of Aging, Adult, and Behavioral Health Services appropriation act (SB36) provides that from the\nBehavioral Health Services Fund Account there is appropriated five million dollars ($5,000,000) for crisis intervention\nservices for FY‑2025/2026【699176352912117†L609-L633】.\n",
+  "editor_status": "accepted",
+  "flow_id": "MF-Behavioral-Health-Service-to-Division-of-Aging-Adult-B-010",
+  "fund_type": "state",
+  "fiscal_year": "2025-2026"
+}
