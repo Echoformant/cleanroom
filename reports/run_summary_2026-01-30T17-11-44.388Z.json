@@ -1,0 +1,22 @@
+{
+  "run_id": "12933461029",
+  "timestamp": "2026-01-30T17:11:44.388Z",
+  "cleanroom_sha": "",
+  "totals": {
+    "processed": 1,
+    "validated": 0,
+    "invalidated": 1
+  },
+  "validated": [],
+  "invalidated": [
+    {
+      "kind": "money_flow",
+      "file": "clearlane_artifacts.yaml",
+      "item": null,
+      "errors": []
+    }
+  ],
+  "retired": [
+    "proposals/money_flow/clearlane_artifacts.yaml"
+  ]
+}
