@@ -1,0 +1,24 @@
+/tmp/MF-Secretary-of-Human-Servic-to-Arkansas-Department-of-Hu-008.json.0.json invalid
+[
+  {
+    instancePath: '/intermediary',
+    schemaPath: '#/$defs/money_flow/properties/intermediary/type',
+    keyword: 'type',
+    params: { type: 'string' },
+    message: 'must be string'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/oneOf/1/type',
+    keyword: 'type',
+    params: { type: 'array' },
+    message: 'must be array'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/oneOf',
+    keyword: 'oneOf',
+    params: { passingSchemas: null },
+    message: 'must match exactly one schema in oneOf'
+  }
+]

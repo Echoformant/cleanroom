@@ -1,0 +1,56 @@
+unknown format "uri" ignored in schema at path "#/$defs/evidence_item/properties/source/properties/url"
+unknown format "uri" ignored in schema at path "#/$defs/evidence_item/properties/source/properties/url"
+unknown format "uri" ignored in schema at path "#/$defs/evidence_item/properties/source/properties/url"
+unknown format "uri" ignored in schema at path "#/$defs/evidence_item/properties/source/properties/url"
+/tmp/EV-During-FY2026-the-Arkansas-Department-016.json.0.json invalid
+[
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/evidence_item/required',
+    keyword: 'required',
+    params: { missingProperty: 'section' },
+    message: "must have required property 'section'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/evidence_item/required',
+    keyword: 'required',
+    params: { missingProperty: 'claim_summary' },
+    message: "must have required property 'claim_summary'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/evidence_item/required',
+    keyword: 'required',
+    params: { missingProperty: 'source' },
+    message: "must have required property 'source'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/evidence_item/additionalProperties',
+    keyword: 'additionalProperties',
+    params: { additionalProperty: 'statement' },
+    message: 'must NOT have additional properties'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/evidence_item/additionalProperties',
+    keyword: 'additionalProperties',
+    params: { additionalProperty: 'statutory_basis' },
+    message: 'must NOT have additional properties'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/oneOf/1/type',
+    keyword: 'type',
+    params: { type: 'array' },
+    message: 'must be array'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/oneOf',
+    keyword: 'oneOf',
+    params: { passingSchemas: null },
+    message: 'must match exactly one schema in oneOf'
+  }
+]
