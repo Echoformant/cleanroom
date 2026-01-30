@@ -1,200 +1,351 @@
 name: Fix Invalidated Files
 
-# This workflow processes files in the invalidated/ directory.
-# 
-# IMPORTANT: This workflow is designed to run even when commits contain [skip ci]
-# because automated processes may commit to invalidated/ with [skip ci] tags.
-#
-# The workflow uses multiple triggers:
-# 1. workflow_dispatch - Manual triggering via GitHub UI or API
-# 2. schedule - Runs every 30 minutes to catch files committed with [skip ci]
-# 3. push - Runs on direct pushes to invalidated/ (excluding invalidated/pending/)
-#            Only triggers without [skip ci] in commit message
-#
-# Note: When commits include [skip ci], [ci skip], [no ci], [skip actions], or
-# [actions skip] in the commit message, GitHub Actions skips ALL workflows,
-# including this one, regardless of path filters. The schedule trigger ensures
-# files are still processed within 30 minutes.
-#
-# The push trigger excludes invalidated/pending/** to prevent the workflow from
-# triggering on its own commits (belt-and-suspenders with [skip ci]).
-
 on:
-  # Manual trigger - can be run anytime via GitHub UI or API
   workflow_dispatch:
-
-  # Scheduled trigger - runs every 30 minutes to process files
-  # This ensures files committed with [skip ci] are still processed
-  schedule:
-    - cron: '*/30 * * * *'
-
-  # Push trigger - runs immediately on push (only if commit doesn't have [skip ci])
-  # Only triggers for files in invalidated/ but NOT in invalidated/pending/
-  push:
-    paths:
-      - 'invalidated/**'
-      - '!invalidated/pending/**'
-    branches:
-      - '**'
 
 permissions:
   contents: write
 
 jobs:
-  fix-and-move:
+  process-invalidated-files:
+    name: Process and Fix Invalidated Files
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Check for files to process
-        id: check_files
-        run: |
-          # Check if there are any YAML/JSON files in invalidated/ (excluding pending/)
-          if find invalidated -type f \( -name "*.yaml" -o -name "*.yml" -o -name "*.json" \) ! -path "*/pending/*" 2>/dev/null | grep -q .; then
-            echo "has_files=true" >> $GITHUB_OUTPUT
-            echo "Found files to process in invalidated/"
-          else
-            echo "has_files=false" >> $GITHUB_OUTPUT
-            echo "No files to process in invalidated/"
-          fi
-
+      
       - name: Set up Python
-        if: steps.check_files.outputs.has_files == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-
+      
       - name: Install dependencies
-        if: steps.check_files.outputs.has_files == 'true'
+        run: pip install pyyaml
+      
+      - name: Check for files to process
+        id: check_files
         run: |
-          pip install pyyaml
-          sudo apt-get update
-          sudo apt-get install -y jq
-
+          # Find processable files (exclude .gitkeep and error logs)
+          file_count=$(find invalidated/ -type f \( -name "*.json" -o -name "*.yaml" -o -name "*.yml" \) \
+            ! -name ".gitkeep" ! -name "*.txt" ! -name "*.errors.txt" 2>/dev/null | wc -l)
+          
+          if [ "$file_count" -gt 0 ]; then
+            echo "has_files=true" >> $GITHUB_OUTPUT
+            echo "Found $file_count files to process"
+          else
+            echo "has_files=false" >> $GITHUB_OUTPUT
+            echo "No files to process"
+          fi
+      
       - name: Process invalidated files
         if: steps.check_files.outputs.has_files == 'true'
         run: |
-          # Create pending directory if it doesn't exist
-          mkdir -p invalidated/pending
-
-          # Find all YAML and JSON files in invalidated directory (excluding pending)
-          find invalidated -type f \( -name "*.yaml" -o -name "*.yml" -o -name "*.json" \) ! -path "*/pending/*" | while read -r file; do
-            echo "Processing: $file"
-
-            # Get file extension
-            ext="${file##*.}"
-
-            # Determine target path in pending directory
-            relative_path="${file#invalidated/}"
-            target_file="invalidated/pending/$relative_path"
-            target_dir=$(dirname "$target_file")
-
-            mkdir -p "$target_dir"
-
-            # Try to fix the file based on type
-            if [[ "$ext" == "json" ]]; then
-              # Fix JSON using jq
-              if jq empty "$file" 2>/dev/null; then
-                # Valid JSON, just prettify
-                jq '.' "$file" > "$target_file"
-                echo "✓ Fixed JSON: $file -> $target_file"
-              else
-                # Invalid JSON, try to fix common issues with Python
-                python3 -c "
+          python3 << 'EOF'
+          import os
           import json
-          import sys
-          import re
-
-          try:
-              with open('$file', 'r') as f:
-                  content = f.read()
-
-              # Try to parse as-is
-              try:
-                  data = json.loads(content)
-                  with open('$target_file', 'w') as f:
-                      json.dump(data, f, indent=2)
-                  print('✓ Fixed JSON: $file -> $target_file')
-              except json.JSONDecodeError:
-                  # Try common fixes
-                  # Remove trailing commas
-                  fixed = re.sub(r',(\s*[}\]])', r'\1', content)
-                  # Fix single quotes to double quotes
-                  fixed = fixed.replace(\"'\", '\"')
-
-                  try:
-                      data = json.loads(fixed)
-                      with open('$target_file', 'w') as f:
-                          json.dump(data, f, indent=2)
-                      print('✓ Fixed JSON with corrections: $file -> $target_file')
-                  except:
-                      # If still can't fix, copy as-is
-                      with open('$target_file', 'w') as f:
-                          f.write(content)
-                      print('⚠ Could not auto-fix JSON, copied as-is: $file -> $target_file')
-          except Exception as e:
-              print(f'✗ Error processing $file: {e}', file=sys.stderr)
-              sys.exit(1)
-          " || {
-                  # Fallback: just copy the file
-                  cp "$file" "$target_file"
-                  echo "⚠ Could not fix JSON, copied as-is: $file -> $target_file"
-                }
-              fi
-            elif [[ "$ext" == "yaml" || "$ext" == "yml" ]]; then
-              # Fix YAML using Python's PyYAML
-              python3 -c "
           import yaml
-          import sys
+          from pathlib import Path
+          from datetime import datetime, timezone
 
-          try:
-              with open('$file', 'r') as f:
+          # Configuration
+          INVALIDATED_DIR = Path("invalidated")
+          PROPOSALS_DIR = Path("proposals")
+          REPORTS_DIR = Path("reports")
+          REPORT_FILE = REPORTS_DIR / "invalidated-fixes.json"
+
+          # Mapping of wrapper keys to ID fields
+          WRAPPER_CONFIG = {
+              "evidence_item": "evidence_id",
+              "money_flow": "flow_id",
+              "field_validation": "fv_id",
+              "authority_reference": "authority_id"
+          }
+
+          def load_file(file_path):
+              """Load JSON or YAML file."""
+              with open(file_path, 'r', encoding='utf-8') as f:
                   content = f.read()
+              
+              if file_path.suffix.lower() == '.json':
+                  return json.loads(content)
+              else:  # .yaml or .yml
+                  try:
+                      return yaml.safe_load(content)
+                  except yaml.YAMLError:
+                      # Try to fix common YAML issues by adding quotes around problematic values
+                      # Re-raise if still can't parse
+                      lines = content.split('\n')
+                      fixed_lines = []
+                      for line in lines:
+                          # If line has value with unquoted colon after the key colon, quote it
+                          if ': ' in line and line.count(':') > 1:
+                              key_end = line.index(': ') + 2
+                              key = line[:key_end]
+                              value = line[key_end:]
+                              if value and not value.startswith('"') and not value.startswith("'"):
+                                  value = '"' + value.replace('"', '\\"') + '"'
+                              fixed_lines.append(key + value)
+                          else:
+                              fixed_lines.append(line)
+                      return yaml.safe_load('\n'.join(fixed_lines))
 
-              try:
-                  # Try to load and dump YAML to fix formatting
-                  data = yaml.safe_load(content)
-                  with open('$target_file', 'w') as f:
-                      yaml.dump(data, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
-                  print('✓ Fixed YAML: $file -> $target_file')
-              except yaml.YAMLError as e:
-                  # If can't parse, try to fix common issues
-                  print(f'⚠ YAML parse error in $file: {e}', file=sys.stderr)
-                  # Copy as-is if can't fix
-                  with open('$target_file', 'w') as f:
-                      f.write(content)
-                  print('⚠ Could not auto-fix YAML, copied as-is: $file -> $target_file')
-          except Exception as e:
-              print(f'✗ Error processing $file: {e}', file=sys.stderr)
-              sys.exit(1)
-          " || {
-                # Fallback: just copy the file
-                cp "$file" "$target_file"
-                echo "⚠ Could not fix YAML, copied as-is: $file -> $target_file"
+          def save_json(file_path, data):
+              """Save data as pretty-printed JSON."""
+              file_path.parent.mkdir(parents=True, exist_ok=True)
+              with open(file_path, 'w', encoding='utf-8') as f:
+                  json.dump(data, f, indent=2, ensure_ascii=False)
+                  f.write('\n')  # Add trailing newline
+
+          def determine_target_dir(source_path):
+              """Determine target directory based on source path."""
+              # Get relative path from invalidated/
+              rel_path = source_path.relative_to(INVALIDATED_DIR)
+              
+              # Extract the subdirectory (evidence_item, money_flow, etc.)
+              # Handle both direct subdirs and nested paths
+              parts = rel_path.parts
+              if parts[0] in WRAPPER_CONFIG:
+                  subdir = parts[0]
+              elif parts[0] == "pending" and len(parts) > 1:
+                  # For pending/, look at the next level or infer from content
+                  subdir = parts[1] if parts[1] in WRAPPER_CONFIG else None
+              else:
+                  subdir = None
+              
+              return subdir
+
+          def infer_type_from_content(data):
+              """Infer the type from the wrapper key in the data."""
+              for wrapper_key in WRAPPER_CONFIG:
+                  if wrapper_key in data:
+                      return wrapper_key
+              return None
+
+          def is_already_unwrapped(data):
+              """Check if data is already an unwrapped single item."""
+              # Check if it has one of the ID fields directly (not wrapped)
+              id_fields = ["evidence_id", "flow_id", "fv_id", "authority_id"]
+              return any(id_field in data for id_field in id_fields)
+
+          def get_type_from_id_field(data):
+              """Get the type based on which ID field is present."""
+              id_to_type = {
+                  "evidence_id": "evidence_item",
+                  "flow_id": "money_flow",
+                  "fv_id": "field_validation",
+                  "authority_id": "authority_reference"
               }
-            fi
+              for id_field, type_name in id_to_type.items():
+                  if id_field in data:
+                      return type_name, id_field, data.get(id_field)
+              return None, None, None
 
-            # Remove original file after successful processing
-            rm -f "$file"
-          done
+          def sanitize_filename(name):
+              """Sanitize a string for use as a filename."""
+              # Replace problematic characters
+              for char in ['/', '\\', ':', '*', '?', '"', '<', '>', '|']:
+                  name = name.replace(char, '_')
+              # Limit length to prevent filesystem issues
+              if len(name) > 200:
+                  name = name[:200]
+              return name
 
+          def process_file(file_path):
+              """Process a single invalidated file."""
+              print(f"Processing: {file_path}")
+              
+              try:
+                  # Load the file
+                  data = load_file(file_path)
+                  
+                  # Check if already unwrapped (single item, not wrapped in array)
+                  if is_already_unwrapped(data):
+                      type_name, id_field, item_id = get_type_from_id_field(data)
+                      if type_name:
+                          # Determine target directory
+                          target_subdir = determine_target_dir(file_path)
+                          if not target_subdir:
+                              target_subdir = type_name
+                          
+                          target_dir = PROPOSALS_DIR / target_subdir
+                          
+                          # Clean ID for filename
+                          safe_id = sanitize_filename(str(item_id))
+                          output_file = target_dir / f"{safe_id}.json"
+                          
+                          # Save file
+                          save_json(output_file, data)
+                          print(f"  ✓ Moved (already unwrapped): {output_file}")
+                          
+                          # Delete original with error handling
+                          try:
+                              file_path.unlink()
+                              print(f"  ✓ Deleted: {file_path}")
+                          except Exception as e:
+                              print(f"  ⚠️ Warning: Could not delete source file {file_path}: {e}")
+                          
+                          return {
+                              "source": str(file_path),
+                              "items_extracted": 1,
+                              "target_dir": str(target_dir),
+                              "output_files": [str(output_file)]
+                          }
+                  
+                  # Determine wrapper type
+                  wrapper_type = infer_type_from_content(data)
+                  
+                  if not wrapper_type:
+                      print(f"  ⚠️  No recognized wrapper key or ID field found, skipping")
+                      return None
+                  
+                  wrapper_items = data.get(wrapper_type)
+                  
+                  if not isinstance(wrapper_items, list):
+                      print(f"  ⚠️  Wrapper '{wrapper_type}' is not an array, skipping")
+                      return None
+                  
+                  if len(wrapper_items) == 0:
+                      print(f"  ⚠️  Empty array, skipping")
+                      return None
+                  
+                  # Determine target directory
+                  target_subdir = determine_target_dir(file_path)
+                  if not target_subdir:
+                      target_subdir = wrapper_type  # Fallback to wrapper type
+                  
+                  target_dir = PROPOSALS_DIR / target_subdir
+                  id_field = WRAPPER_CONFIG[wrapper_type]
+                  
+                  # Process each item
+                  output_files = []
+                  for i, item in enumerate(wrapper_items):
+                      # Get ID for filename
+                      item_id = item.get(id_field)
+                      if not item_id:
+                          print(f"  ⚠️  Item {i} missing '{id_field}', using index")
+                          item_id = f"item_{i}"
+                      
+                      # Clean ID for filename
+                      safe_id = sanitize_filename(str(item_id))
+                      output_file = target_dir / f"{safe_id}.json"
+                      
+                      # Save individual file
+                      save_json(output_file, item)
+                      output_files.append(str(output_file))
+                      print(f"  ✓ Created: {output_file}")
+                  
+                  # Delete original file with error handling
+                  try:
+                      file_path.unlink()
+                      print(f"  ✓ Deleted: {file_path}")
+                  except Exception as e:
+                      print(f"  ⚠️ Warning: Could not delete source file {file_path}: {e}")
+                  
+                  return {
+                      "source": str(file_path),
+                      "items_extracted": len(wrapper_items),
+                      "target_dir": str(target_dir),
+                      "output_files": output_files
+                  }
+              
+              except Exception as e:
+                  print(f"  ✗ Error processing {file_path}: {e}")
+                  return None
+
+          def find_processable_files():
+              """Find all processable files in invalidated directory."""
+              files = []
+              for ext in ['*.json', '*.yaml', '*.yml']:
+                  files.extend(INVALIDATED_DIR.rglob(ext))
+              
+              # Filter out directories, .gitkeep and error log files
+              processable = []
+              for f in files:
+                  if not f.is_file():
+                      continue
+                  if f.name == '.gitkeep':
+                      continue
+                  if f.suffix in ['.txt'] or f.name.endswith('.errors.txt'):
+                      continue
+                  processable.append(f)
+              
+              return processable
+
+          def main():
+              """Main processing function."""
+              print("=" * 60)
+              print("Fix Invalidated Files - Processing Started")
+              print("=" * 60)
+              
+              # Find files to process
+              files = find_processable_files()
+              print(f"\nFound {len(files)} files to process\n")
+              
+              if not files:
+                  print("No files to process")
+                  return
+              
+              # Process each file
+              processed_files = []
+              for file_path in files:
+                  result = process_file(file_path)
+                  if result:
+                      processed_files.append(result)
+              
+              # Create reports directory
+              REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+              
+              # Load existing report or create new
+              report_data = []
+              if REPORT_FILE.exists():
+                  try:
+                      with open(REPORT_FILE, 'r', encoding='utf-8') as f:
+                          existing = json.load(f)
+                      if isinstance(existing, list):
+                          report_data = existing
+                      elif isinstance(existing, dict):
+                          report_data = [existing]
+                      # Ignore other types (string, null, etc.) and start fresh
+                  except (json.JSONDecodeError, IOError):
+                      print(f"  ⚠️ Warning: Could not read existing report, starting fresh")
+              
+              # Append new processing record
+              report_entry = {
+                  "timestamp": datetime.now(timezone.utc).isoformat(),
+                  "processed_files": processed_files
+              }
+              report_data.append(report_entry)
+              
+              # Save report
+              with open(REPORT_FILE, 'w', encoding='utf-8') as f:
+                  json.dump(report_data, f, indent=2, ensure_ascii=False)
+                  f.write('\n')
+              
+              print("\n" + "=" * 60)
+              print(f"Processing Complete: {len(processed_files)} files processed")
+              print(f"Report saved to: {REPORT_FILE}")
+              print("=" * 60)
+
+          if __name__ == "__main__":
+              main()
+          EOF
+      
       - name: Commit and push changes
         if: steps.check_files.outputs.has_files == 'true'
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-          # Check if there are changes to commit
-          if [[ -n $(git status -s) ]]; then
-            git add invalidated/
-            git commit -m "Auto-fix: Move corrected files from invalidated/ to invalidated/pending/ [skip ci]"
-            git push
-            echo "Changes committed and pushed"
-          else
+          set -e
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git add proposals/ reports/ invalidated/
+          
+          if git diff --staged --quiet; then
             echo "No changes to commit"
+          else
+            git commit -m "fix: process invalidated files and move to proposals [skip ci]"
+            git push || { echo "Push failed!"; exit 1; }
+            echo "Changes committed and pushed"
           fi
