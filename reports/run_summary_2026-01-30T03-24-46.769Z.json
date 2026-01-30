@@ -1,0 +1,106 @@
+{
+  "run_id": "12923399365",
+  "timestamp": "2026-01-30T03:24:46.769Z",
+  "cleanroom_sha": "",
+  "totals": {
+    "processed": 9,
+    "validated": 5,
+    "invalidated": 7
+  },
+  "validated": [
+    {
+      "kind": "field_validation",
+      "file": "field_validation_batch_301.yaml",
+      "item": 0
+    },
+    {
+      "kind": "field_validation",
+      "file": "field_validation_batch_301.yaml",
+      "item": 1
+    },
+    {
+      "kind": "field_validation",
+      "file": "field_validation_batch_301.yaml",
+      "item": 2
+    },
+    {
+      "kind": "field_validation",
+      "file": "field_validation_batch_301.yaml",
+      "item": 3
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-batch-202.yaml",
+      "item": 0
+    }
+  ],
+  "invalidated": [
+    {
+      "kind": "authority_reference",
+      "file": "AR-AUTH-batch-001.yaml",
+      "item": 0,
+      "errors": [
+        "/tmp/AR-AUTH-batch-001.yaml.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/authority_reference/required',\n    keyword: 'required',\n    params: { missingProperty: 'authority_id' },\n    message: \"must have required property 'authority_id'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/authority_reference/required',\n    keyword: 'required',\n    params: { missingProperty: 'authority_type' },\n    message: \"must have required property 'authority_type'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/authority_reference/required',\n    keyword: 'required',\n    params: { missingProperty: 'citation' },\n    message: \"must have required property 'citation'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/authority_reference/required',\n    keyword: 'required',\n    params: { missingProperty: 'administering_body' },\n    message: \"must have required property 'administering_body'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/authority_reference/required',\n    keyword: 'required',\n    params: { missingProperty: 'governs' },\n    message: \"must have required property 'governs'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/authority_reference/required',\n    keyword: 'required',\n    params: { missingProperty: 'effects' },\n    message: \"must have required property 'effects'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/authority_reference/required',\n    keyword: 'required',\n    params: { missingProperty: 'editor_status' },\n    message: \"must have required property 'editor_status'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/authority_reference/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'authority_reference' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AR-AUTH-batch-202.yaml",
+      "item": 0,
+      "errors": [
+        "/tmp/AR-AUTH-batch-202.yaml.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/authority_reference/required',\n    keyword: 'required',\n    params: { missingProperty: 'authority_id' },\n    message: \"must have required property 'authority_id'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/authority_reference/required',\n    keyword: 'required',\n    params: { missingProperty: 'authority_type' },\n    message: \"must have required property 'authority_type'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/authority_reference/required',\n    keyword: 'required',\n    params: { missingProperty: 'citation' },\n    message: \"must have required property 'citation'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/authority_reference/required',\n    keyword: 'required',\n    params: { missingProperty: 'administering_body' },\n    message: \"must have required property 'administering_body'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/authority_reference/required',\n    keyword: 'required',\n    params: { missingProperty: 'governs' },\n    message: \"must have required property 'governs'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/authority_reference/required',\n    keyword: 'required',\n    params: { missingProperty: 'effects' },\n    message: \"must have required property 'effects'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/authority_reference/required',\n    keyword: 'required',\n    params: { missingProperty: 'editor_status' },\n    message: \"must have required property 'editor_status'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/authority_reference/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'authority_reference' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-batch-001.yaml",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/EV-batch-001.yaml.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'evidence_id' },\n    message: \"must have required property 'evidence_id'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'evidence_type' },\n    message: \"must have required property 'evidence_type'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'source' },\n    message: \"must have required property 'source'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'confidence_level' },\n    message: \"must have required property 'confidence_level'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'editor_status' },\n    message: \"must have required property 'editor_status'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'evidence_item' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-batch-203.yaml",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/EV-batch-203.yaml.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'evidence_id' },\n    message: \"must have required property 'evidence_id'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'evidence_type' },\n    message: \"must have required property 'evidence_type'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'source' },\n    message: \"must have required property 'source'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'confidence_level' },\n    message: \"must have required property 'confidence_level'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'editor_status' },\n    message: \"must have required property 'editor_status'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'evidence_item' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "field_validation",
+      "file": "FV-batch-200.yaml",
+      "item": 0,
+      "errors": [
+        "/tmp/FV-batch-200.yaml.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/field_validation/required',\n    keyword: 'required',\n    params: { missingProperty: 'fv_id' },\n    message: \"must have required property 'fv_id'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/field_validation/required',\n    keyword: 'required',\n    params: { missingProperty: 'jurisdiction' },\n    message: \"must have required property 'jurisdiction'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/field_validation/required',\n    keyword: 'required',\n    params: { missingProperty: 'validating_entity' },\n    message: \"must have required property 'validating_entity'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/field_validation/required',\n    keyword: 'required',\n    params: { missingProperty: 'alignment_status' },\n    message: \"must have required property 'alignment_status'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/field_validation/required',\n    keyword: 'required',\n    params: { missingProperty: 'evidence_basis' },\n    message: \"must have required property 'evidence_basis'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/field_validation/required',\n    keyword: 'required',\n    params: { missingProperty: 'disclosure_level' },\n    message: \"must have required property 'disclosure_level'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/field_validation/required',\n    keyword: 'required',\n    params: { missingProperty: 'editor_status' },\n    message: \"must have required property 'editor_status'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/field_validation/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'field_validation' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "field_validation",
+      "file": "FV-batch-204.yaml",
+      "item": 0,
+      "errors": [
+        "/tmp/FV-batch-204.yaml.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/field_validation/required',\n    keyword: 'required',\n    params: { missingProperty: 'fv_id' },\n    message: \"must have required property 'fv_id'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/field_validation/required',\n    keyword: 'required',\n    params: { missingProperty: 'jurisdiction' },\n    message: \"must have required property 'jurisdiction'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/field_validation/required',\n    keyword: 'required',\n    params: { missingProperty: 'validating_entity' },\n    message: \"must have required property 'validating_entity'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/field_validation/required',\n    keyword: 'required',\n    params: { missingProperty: 'alignment_status' },\n    message: \"must have required property 'alignment_status'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/field_validation/required',\n    keyword: 'required',\n    params: { missingProperty: 'evidence_basis' },\n    message: \"must have required property 'evidence_basis'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/field_validation/required',\n    keyword: 'required',\n    params: { missingProperty: 'disclosure_level' },\n    message: \"must have required property 'disclosure_level'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/field_validation/required',\n    keyword: 'required',\n    params: { missingProperty: 'editor_status' },\n    message: \"must have required property 'editor_status'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/field_validation/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'field_validation' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-batch-201.yaml",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-batch-201.yaml.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/money_flow/required',\n    keyword: 'required',\n    params: { missingProperty: 'flow_id' },\n    message: \"must have required property 'flow_id'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/money_flow/required',\n    keyword: 'required',\n    params: { missingProperty: 'source' },\n    message: \"must have required property 'source'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/money_flow/required',\n    keyword: 'required',\n    params: { missingProperty: 'intermediary' },\n    message: \"must have required property 'intermediary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/money_flow/required',\n    keyword: 'required',\n    params: { missingProperty: 'destination' },\n    message: \"must have required property 'destination'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/money_flow/required',\n    keyword: 'required',\n    params: { missingProperty: 'amount' },\n    message: \"must have required property 'amount'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/money_flow/required',\n    keyword: 'required',\n    params: { missingProperty: 'fund_type' },\n    message: \"must have required property 'fund_type'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/money_flow/required',\n    keyword: 'required',\n    params: { missingProperty: 'fiscal_year' },\n    message: \"must have required property 'fiscal_year'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/money_flow/required',\n    keyword: 'required',\n    params: { missingProperty: 'restrictions' },\n    message: \"must have required property 'restrictions'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/money_flow/required',\n    keyword: 'required',\n    params: { missingProperty: 'statutory_basis' },\n    message: \"must have required property 'statutory_basis'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/money_flow/required',\n    keyword: 'required',\n    params: { missingProperty: 'editor_status' },\n    message: \"must have required property 'editor_status'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/money_flow/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'money_flow' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    }
+  ],
+  "retired": [
+    "proposals/authority_reference/AR-AUTH-batch-001.yaml",
+    "proposals/authority_reference/AR-AUTH-batch-202.yaml",
+    "proposals/evidence_item/EV-batch-001.yaml",
+    "proposals/evidence_item/EV-batch-203.yaml",
+    "proposals/field_validation/FV-batch-200.yaml",
+    "proposals/field_validation/FV-batch-204.yaml",
+    "proposals/field_validation/field_validation_batch_301.yaml",
+    "proposals/money_flow/MF-batch-201.yaml",
+    "proposals/money_flow/MF-batch-202.yaml"
+  ]
+}

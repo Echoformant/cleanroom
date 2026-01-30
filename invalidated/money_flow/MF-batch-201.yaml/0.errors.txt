@@ -1,0 +1,94 @@
+/tmp/MF-batch-201.yaml.0.json invalid
+[
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/money_flow/required',
+    keyword: 'required',
+    params: { missingProperty: 'flow_id' },
+    message: "must have required property 'flow_id'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/money_flow/required',
+    keyword: 'required',
+    params: { missingProperty: 'source' },
+    message: "must have required property 'source'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/money_flow/required',
+    keyword: 'required',
+    params: { missingProperty: 'intermediary' },
+    message: "must have required property 'intermediary'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/money_flow/required',
+    keyword: 'required',
+    params: { missingProperty: 'destination' },
+    message: "must have required property 'destination'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/money_flow/required',
+    keyword: 'required',
+    params: { missingProperty: 'amount' },
+    message: "must have required property 'amount'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/money_flow/required',
+    keyword: 'required',
+    params: { missingProperty: 'fund_type' },
+    message: "must have required property 'fund_type'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/money_flow/required',
+    keyword: 'required',
+    params: { missingProperty: 'fiscal_year' },
+    message: "must have required property 'fiscal_year'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/money_flow/required',
+    keyword: 'required',
+    params: { missingProperty: 'restrictions' },
+    message: "must have required property 'restrictions'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/money_flow/required',
+    keyword: 'required',
+    params: { missingProperty: 'statutory_basis' },
+    message: "must have required property 'statutory_basis'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/money_flow/required',
+    keyword: 'required',
+    params: { missingProperty: 'editor_status' },
+    message: "must have required property 'editor_status'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/money_flow/additionalProperties',
+    keyword: 'additionalProperties',
+    params: { additionalProperty: 'money_flow' },
+    message: 'must NOT have additional properties'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/oneOf/1/type',
+    keyword: 'type',
+    params: { type: 'array' },
+    message: 'must be array'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/oneOf',
+    keyword: 'oneOf',
+    params: { passingSchemas: null },
+    message: 'must match exactly one schema in oneOf'
+  }
+]

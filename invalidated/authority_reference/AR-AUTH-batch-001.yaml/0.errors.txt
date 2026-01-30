@@ -1,0 +1,73 @@
+/tmp/AR-AUTH-batch-001.yaml.0.json invalid
+[
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/authority_reference/required',
+    keyword: 'required',
+    params: { missingProperty: 'authority_id' },
+    message: "must have required property 'authority_id'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/authority_reference/required',
+    keyword: 'required',
+    params: { missingProperty: 'authority_type' },
+    message: "must have required property 'authority_type'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/authority_reference/required',
+    keyword: 'required',
+    params: { missingProperty: 'citation' },
+    message: "must have required property 'citation'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/authority_reference/required',
+    keyword: 'required',
+    params: { missingProperty: 'administering_body' },
+    message: "must have required property 'administering_body'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/authority_reference/required',
+    keyword: 'required',
+    params: { missingProperty: 'governs' },
+    message: "must have required property 'governs'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/authority_reference/required',
+    keyword: 'required',
+    params: { missingProperty: 'effects' },
+    message: "must have required property 'effects'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/authority_reference/required',
+    keyword: 'required',
+    params: { missingProperty: 'editor_status' },
+    message: "must have required property 'editor_status'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/authority_reference/additionalProperties',
+    keyword: 'additionalProperties',
+    params: { additionalProperty: 'authority_reference' },
+    message: 'must NOT have additional properties'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/oneOf/1/type',
+    keyword: 'type',
+    params: { type: 'array' },
+    message: 'must be array'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/oneOf',
+    keyword: 'oneOf',
+    params: { passingSchemas: null },
+    message: 'must match exactly one schema in oneOf'
+  }
+]

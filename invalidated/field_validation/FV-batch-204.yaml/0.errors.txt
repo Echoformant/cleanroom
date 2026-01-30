@@ -1,0 +1,73 @@
+/tmp/FV-batch-204.yaml.0.json invalid
+[
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/field_validation/required',
+    keyword: 'required',
+    params: { missingProperty: 'fv_id' },
+    message: "must have required property 'fv_id'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/field_validation/required',
+    keyword: 'required',
+    params: { missingProperty: 'jurisdiction' },
+    message: "must have required property 'jurisdiction'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/field_validation/required',
+    keyword: 'required',
+    params: { missingProperty: 'validating_entity' },
+    message: "must have required property 'validating_entity'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/field_validation/required',
+    keyword: 'required',
+    params: { missingProperty: 'alignment_status' },
+    message: "must have required property 'alignment_status'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/field_validation/required',
+    keyword: 'required',
+    params: { missingProperty: 'evidence_basis' },
+    message: "must have required property 'evidence_basis'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/field_validation/required',
+    keyword: 'required',
+    params: { missingProperty: 'disclosure_level' },
+    message: "must have required property 'disclosure_level'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/field_validation/required',
+    keyword: 'required',
+    params: { missingProperty: 'editor_status' },
+    message: "must have required property 'editor_status'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/field_validation/additionalProperties',
+    keyword: 'additionalProperties',
+    params: { additionalProperty: 'field_validation' },
+    message: 'must NOT have additional properties'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/oneOf/1/type',
+    keyword: 'type',
+    params: { type: 'array' },
+    message: 'must be array'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/oneOf',
+    keyword: 'oneOf',
+    params: { passingSchemas: null },
+    message: 'must match exactly one schema in oneOf'
+  }
+]
