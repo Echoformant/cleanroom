@@ -1,0 +1,79 @@
+{
+  "authority_reference": [
+    {
+      "authority_id": "AR-AUTH-ACT776-2025-AOC-APPROPRIATION",
+      "authority_type": "statute",
+      "citation": "Act 776 of 2025 (SB72) — Administrative Office of the Courts Appropriation for FY ending June 30, 2026",
+      "administering_body": "Arkansas Administrative Office of the Courts (AOC)",
+      "governs": [
+        "Appropriations for AOC operations and programs for FY2026",
+        "Specialty Court Program Fund expenditures",
+        "Drug Court Enhancement expenditures",
+        "Accountability Court Fund expenditures"
+      ],
+      "effects": {
+        "access_limiting": false,
+        "appeal_mechanism": false
+      },
+      "editor_status": "pending"
+    },
+    {
+      "authority_id": "AR-AUTH-19-6-489-SPECIALTY-COURT-PROGRAM-FUND",
+      "authority_type": "statute",
+      "citation": "Ark. Code Ann. § 19-6-489 — Specialty Court Program Fund",
+      "administering_body": "Arkansas Administrative Office of the Courts; Arkansas Treasurer of State",
+      "governs": [
+        "Revenue sources for Specialty Court Program Fund",
+        "Exclusive statutory uses of Specialty Court Program Fund"
+      ],
+      "effects": {
+        "access_limiting": false,
+        "appeal_mechanism": false
+      },
+      "editor_status": "pending"
+    },
+    {
+      "authority_id": "AR-AUTH-19-5-1144-ACCOUNTABILITY-COURT-FUND",
+      "authority_type": "statute",
+      "citation": "Ark. Code Ann. § 19-5-1144 — Accountability Court Fund",
+      "administering_body": "Arkansas Judicial Council; AOC; Legislative Council",
+      "governs": [
+        "Accountability Court Fund allocation by formula",
+        "Judicial Council and SCPAC review process"
+      ],
+      "effects": {
+        "access_limiting": false,
+        "appeal_mechanism": false
+      },
+      "editor_status": "pending"
+    },
+    {
+      "authority_id": "AR-AUTH-16-10-701-SPECIALTY-COURT-USER-FEES",
+      "authority_type": "statute",
+      "citation": "Ark. Code Ann. § 16-10-701 — Specialty court program user fees",
+      "administering_body": "Arkansas courts; Administration of Justice Funds Section",
+      "governs": [
+        "Assessment and remittance of $125 specialty court program user fee"
+      ],
+      "effects": {
+        "access_limiting": false,
+        "appeal_mechanism": false
+      },
+      "editor_status": "pending"
+    },
+    {
+      "authority_id": "FED-REG-45-CFR-96-124-SUBG",
+      "authority_type": "regulation",
+      "citation": "45 C.F.R. § 96.124 — Substance Use Prevention, Treatment, and Recovery Services Block Grant allocations",
+      "administering_body": "SAMHSA / U.S. Department of Health and Human Services",
+      "governs": [
+        "Requirement that not less than 20% of SUBG funds be spent on primary prevention"
+      ],
+      "effects": {
+        "access_limiting": false,
+        "appeal_mechanism": false
+      },
+      "editor_status": "pending"
+    }
+  ]
+}
