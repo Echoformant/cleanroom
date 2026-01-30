@@ -1,0 +1,51 @@
+{
+  "run_id": "12933249131",
+  "timestamp": "2026-01-30T16:57:41.103Z",
+  "cleanroom_sha": "",
+  "totals": {
+    "processed": 4,
+    "validated": 0,
+    "invalidated": 4
+  },
+  "validated": [],
+  "invalidated": [
+    {
+      "kind": "evidence_item",
+      "file": "AR-IMPL-16-100-204-specialty-court.json",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/AR-IMPL-16-100-204-specialty-court.json.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'source' },\n    message: \"must have required property 'source'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'confidence_level' },\n    message: \"must have required property 'confidence_level'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'parent_authority' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'jurisdiction' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'scope' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'status' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'sources' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'notes' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '/evidence_type',\n    schemaPath: '#/$defs/evidence_item/properties/evidence_type/enum',\n    keyword: 'enum',\n    params: { allowedValues: [Array] },\n    message: 'must be equal to one of the allowed values'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "field_validation",
+      "file": "FV-AR-AOC-SPECIALTY-COURT-OPEN-001.json",
+      "item": 0,
+      "errors": [
+        "/tmp/FV-AR-AOC-SPECIALTY-COURT-OPEN-001.json.0.json invalid\n[\n  {\n    instancePath: '/evidence_basis/0',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/1',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/2',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "field_validation",
+      "file": "FV-AR-DHS-PEER-CAPTURED-001.json",
+      "item": 0,
+      "errors": [
+        "/tmp/FV-AR-DHS-PEER-CAPTURED-001.json.0.json invalid\n[\n  {\n    instancePath: '/evidence_basis/0',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/1',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/2',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/3',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/4',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-AR-RHTP-Y1-2026.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-AR-RHTP-Y1-2026.json.0.json invalid\n[\n  {\n    instancePath: '/restrictions/dhs_controlled',\n    schemaPath: '#/$defs/money_flow/properties/restrictions/properties/dhs_controlled/type',\n    keyword: 'type',\n    params: { type: 'boolean' },\n    message: 'must be boolean'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    }
+  ],
+  "retired": [
+    "proposals/evidence_item/AR-IMPL-16-100-204-specialty-court.json",
+    "proposals/field_validation/FV-AR-AOC-SPECIALTY-COURT-OPEN-001.json",
+    "proposals/field_validation/FV-AR-DHS-PEER-CAPTURED-001.json",
+    "proposals/money_flow/MF-AR-RHTP-Y1-2026.json"
+  ]
+}
