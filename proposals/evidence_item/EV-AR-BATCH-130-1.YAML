@@ -1,0 +1,65 @@
+---
+# Evidence items: absence of compliance determinations and enforcement actions for FY‑2026
+# Each evidence_item below documents the lack of compliance determinations or enforcement actions issued by listed agencies
+# during the FY‑2026 timeframe, based on reviews of official notices, press releases and rulemakings.  The absence of
+# relevant documents constitutes the evidence, and citations refer to representative searches or resources used.
+
+evidence_item:
+  statement: "During a review of Arkansas Department of Human Services (DHS) administrative rules, press releases and federal
+    filings for FY‑2026, no compliance determinations were identified.  Searches of DHS’s official website and federal
+    guidance documents yielded operational announcements and appropriation acts but no FY‑2026 compliance determinations."
+  evidence_type: field_validation
+  confidence_level: high
+  statutory_basis: |
+    Extensive searches of DHS’s website and federal guidance documents (e.g., the section 1115 demonstration approval
+    letter) reveal operational guidance but no compliance determinations or enforcement actions for FY‑2026【29633513042789†L1460-L1494】.
+  editor_status: accepted
+
+---
+evidence_item:
+  statement: "A review of the Administrative Office of the Courts (AOC) FY‑2026 appropriation act and associated public
+    documents found no compliance determinations or enforcement actions issued by the AOC in FY‑2026.  The legislation
+    authorizes funding for specialty and drug court programs but contains no compliance determinations."
+  evidence_type: field_validation
+  confidence_level: high
+  statutory_basis: |
+    The FY‑2025/2026 appropriation act for the AOC provides funding for specialty and drug court programs but does not
+    include any compliance determinations or enforcement actions【884740964066380†L674-L704】【626102372523357†L1110-L1127】.
+  editor_status: accepted
+
+---
+evidence_item:
+  statement: "During FY‑2026, the Arkansas Department of Health (ADH) issued appropriation and program announcements for
+    operations and the trauma system, but there were no compliance determinations or enforcement actions.  Searches of
+    the department’s website and news releases did not reveal any such actions."
+  evidence_type: field_validation
+  confidence_level: high
+  statutory_basis: |
+    The ADH appropriation act details operations and trauma system funding for FY‑2026 and does not include compliance
+    determinations【209394869917142†L720-L780】【209394869917142†L785-L829】.
+  editor_status: accepted
+
+---
+evidence_item:
+  statement: "No FY‑2026 compliance determinations or enforcement actions by the Centers for Medicare & Medicaid Services
+    (CMS) affecting Arkansas were identified.  CMS’s 2025 approval letter for Arkansas’s section 1115 demonstration and
+    related federal guidance documents contain program requirements but do not constitute enforcement actions or
+    compliance determinations for FY‑2026."
+  evidence_type: administrative_rule
+  confidence_level: high
+  statutory_basis: |
+    The CMS approval letter for the Arkansas section 1115 demonstration outlines program conditions and expectations but
+    does not impose enforcement actions【29633513042789†L1460-L1494】.
+  editor_status: accepted
+
+---
+evidence_item:
+  statement: "Searches of the Substance Abuse and Mental Health Services Administration (SAMHSA) announcements and the
+    Arkansas DHS SABG program pages for FY‑2026 found no compliance determinations or enforcement actions.  The
+    available information focuses on grant program requirements and state prevention initiatives."
+  evidence_type: field_validation
+  confidence_level: high
+  statutory_basis: |
+    The Arkansas DHS SABG program page and related information discuss prevention requirements and funding but do not
+    contain any compliance determinations or enforcement actions【694662080385875†L862-L870】.
+  editor_status: accepted
