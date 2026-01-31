@@ -1,0 +1,15 @@
+{
+  "flow_id": "MF-AR-BATCH-130-1-6",
+  "source": "Health Department Operations Funds (state and federal)",
+  "intermediary": "Direct",
+  "destination": "Arkansas Department of Health – Operations",
+  "amount": 330969878.0,
+  "fund_type": "state",
+  "fiscal_year": "2025-2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "The Department of Health appropriation act (HB1091) for FY‑2025/2026 appropriates a total of three hundred\nthirty million nine hundred sixty‑nine thousand eight hundred seventy‑eight dollars ($330,969,878) for Health\nDepartment operations.  Section 8 lists salaries, personal services, operating expenses and other line items and\nstates the total amount appropriated【209394869917142†L720-L780】.\n",
+  "editor_status": "accepted"
+}

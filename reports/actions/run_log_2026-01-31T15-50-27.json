@@ -1,0 +1,547 @@
+{
+  "run_timestamp": "2026-01-31T15:50:27.367992+00:00",
+  "before_state": {
+    "captured_at": "2026-01-31T15:50:27.367992+00:00",
+    "directories": {
+      "evidence_item": {
+        "files": [],
+        "subdirectories": {
+          "EV-NAADAC-APSP-INTRO.yaml": {
+            "files": [
+              {
+                "path": "parse.errors.txt",
+                "size": 1,
+                "modified": "2026-01-31T15:50:23.162459+00:00"
+              }
+            ],
+            "file_count": 1
+          },
+          "AR-IMPL-16-100-204-specialty-court.yaml": {
+            "files": [
+              {
+                "path": "json.errors.txt",
+                "size": 3249,
+                "modified": "2026-01-31T15:50:23.162459+00:00"
+              },
+              {
+                "path": "0.errors.txt",
+                "size": 3249,
+                "modified": "2026-01-31T15:50:23.162459+00:00"
+              }
+            ],
+            "file_count": 2
+          },
+          "EV-batch-001.yaml": {
+            "files": [
+              {
+                "path": "0.errors.txt",
+                "size": 2490,
+                "modified": "2026-01-31T15:50:23.162459+00:00"
+              }
+            ],
+            "file_count": 1
+          },
+          "operation_nami_clearlane_batch1_artifacts.yaml": {
+            "files": [
+              {
+                "path": "7.errors.txt",
+                "size": 3474,
+                "modified": "2026-01-31T15:50:23.162459+00:00"
+              },
+              {
+                "path": "4.errors.txt",
+                "size": 4131,
+                "modified": "2026-01-31T15:50:23.162459+00:00"
+              },
+              {
+                "path": "3.errors.txt",
+                "size": 3691,
+                "modified": "2026-01-31T15:50:23.162459+00:00"
+              },
+              {
+                "path": "1.errors.txt",
+                "size": 3691,
+                "modified": "2026-01-31T15:50:23.162459+00:00"
+              },
+              {
+                "path": "5.errors.txt",
+                "size": 4361,
+                "modified": "2026-01-31T15:50:23.162459+00:00"
+              },
+              {
+                "path": "6.errors.txt",
+                "size": 4131,
+                "modified": "2026-01-31T15:50:23.162459+00:00"
+              },
+              {
+                "path": "2.errors.txt",
+                "size": 3691,
+                "modified": "2026-01-31T15:50:23.162459+00:00"
+              },
+              {
+                "path": "0.errors.txt",
+                "size": 3691,
+                "modified": "2026-01-31T15:50:23.162459+00:00"
+              }
+            ],
+            "file_count": 8
+          },
+          "EV-batch-203.yaml": {
+            "files": [
+              {
+                "path": "0.errors.txt",
+                "size": 2490,
+                "modified": "2026-01-31T15:50:23.162459+00:00"
+              }
+            ],
+            "file_count": 1
+          }
+        }
+      },
+      "money_flow": {
+        "files": [],
+        "subdirectories": {
+          "MF-Substance-Use-Prevention-to-Arkansas-Department-of-Hu-011.json": {
+            "files": [
+              {
+                "path": "0.errors.txt",
+                "size": 783,
+                "modified": "2026-01-31T15:50:23.163459+00:00"
+              }
+            ],
+            "file_count": 1
+          },
+          "MF-Federal-Drug-Court-Enhanc-to-Administrative-Office-of-001.json": {
+            "files": [
+              {
+                "path": "0.errors.txt",
+                "size": 601,
+                "modified": "2026-01-31T15:50:23.163459+00:00"
+              }
+            ],
+            "file_count": 1
+          },
+          "MF-Adult-Drug-Court-Cash-Fun-to-Administrative-Office-of-003.json": {
+            "files": [
+              {
+                "path": "0.errors.txt",
+                "size": 601,
+                "modified": "2026-01-31T15:50:23.163459+00:00"
+              }
+            ],
+            "file_count": 1
+          },
+          "MF-AR-RHTP-Y1-2026.yaml": {
+            "files": [
+              {
+                "path": "json.errors.txt",
+                "size": 602,
+                "modified": "2026-01-31T15:50:23.163459+00:00"
+              },
+              {
+                "path": "0.errors.txt",
+                "size": 602,
+                "modified": "2026-01-31T15:50:23.163459+00:00"
+              }
+            ],
+            "file_count": 2
+          },
+          "MF-U.S.-Department-of-Transp-to-Administrative-Office-of-005.json": {
+            "files": [
+              {
+                "path": "0.errors.txt",
+                "size": 589,
+                "modified": "2026-01-31T15:50:23.163459+00:00"
+              }
+            ],
+            "file_count": 1
+          },
+          "MF-Secretary-of-Human-Servic-to-Arkansas-Department-of-Hu-1.json": {
+            "files": [
+              {
+                "path": "0.errors.txt",
+                "size": 600,
+                "modified": "2026-01-31T15:50:23.163459+00:00"
+              }
+            ],
+            "file_count": 1
+          },
+          "clearlane_artifacts.yaml": {
+            "files": [
+              {
+                "path": "parse.errors.txt",
+                "size": 1,
+                "modified": "2026-01-31T15:50:23.164459+00:00"
+              }
+            ],
+            "file_count": 1
+          },
+          "MF-Accountability-Court-Fund-to-Administrative-Office-of-002.json": {
+            "files": [
+              {
+                "path": "0.errors.txt",
+                "size": 601,
+                "modified": "2026-01-31T15:50:23.163459+00:00"
+              }
+            ],
+            "file_count": 1
+          },
+          "MF-AR-BATCH-130-1.yaml": {
+            "files": [
+              {
+                "path": "source.yaml",
+                "size": 10370,
+                "modified": "2026-01-31T15:50:23.163459+00:00"
+              },
+              {
+                "path": "parse.errors.txt",
+                "size": 1,
+                "modified": "2026-01-31T15:50:23.163459+00:00"
+              }
+            ],
+            "file_count": 2
+          },
+          "MF-State-Central-Services-Fu-to-Administrative-Office-of-004.json": {
+            "files": [
+              {
+                "path": "0.errors.txt",
+                "size": 601,
+                "modified": "2026-01-31T15:50:23.163459+00:00"
+              }
+            ],
+            "file_count": 1
+          },
+          "MF-Specialty-Court-Program-F-to-Administrative-Office-of-000.json": {
+            "files": [
+              {
+                "path": "0.errors.txt",
+                "size": 601,
+                "modified": "2026-01-31T15:50:23.163459+00:00"
+              }
+            ],
+            "file_count": 1
+          },
+          "MF-batch-201.yaml": {
+            "files": [
+              {
+                "path": "0.errors.txt",
+                "size": 2651,
+                "modified": "2026-01-31T15:50:23.164459+00:00"
+              }
+            ],
+            "file_count": 1
+          }
+        }
+      },
+      "field_validation": {
+        "files": [],
+        "subdirectories": {
+          "FV-batch-200.yaml": {
+            "files": [
+              {
+                "path": "0.errors.txt",
+                "size": 2129,
+                "modified": "2026-01-31T15:50:23.163459+00:00"
+              }
+            ],
+            "file_count": 1
+          },
+          "FV-AR-DHS-PEER-CAPTURED-001.yaml": {
+            "files": [
+              {
+                "path": "0.errors.txt",
+                "size": 1434,
+                "modified": "2026-01-31T15:50:23.163459+00:00"
+              }
+            ],
+            "file_count": 1
+          },
+          "FV-batch-204.yaml": {
+            "files": [
+              {
+                "path": "0.errors.txt",
+                "size": 2129,
+                "modified": "2026-01-31T15:50:23.163459+00:00"
+              }
+            ],
+            "file_count": 1
+          },
+          "FV-AR-AOC-SPECIALTY-COURT-OPEN-001.yaml": {
+            "files": [
+              {
+                "path": "0.errors.txt",
+                "size": 1017,
+                "modified": "2026-01-31T15:50:23.163459+00:00"
+              }
+            ],
+            "file_count": 1
+          }
+        }
+      },
+      "authority_reference": {
+        "files": [],
+        "subdirectories": {
+          "AR-AUTH-batch-202.yaml": {
+            "files": [
+              {
+                "path": "0.errors.txt",
+                "size": 2133,
+                "modified": "2026-01-31T15:50:23.162459+00:00"
+              }
+            ],
+            "file_count": 1
+          },
+          "AR-AUTH-batch-001.yaml": {
+            "files": [
+              {
+                "path": "0.errors.txt",
+                "size": 2133,
+                "modified": "2026-01-31T15:50:23.162459+00:00"
+              }
+            ],
+            "file_count": 1
+          }
+        }
+      }
+    },
+    "total_files": 33,
+    "total_dirs": 23
+  },
+  "summary": {
+    "files_processed": 1,
+    "files_created": 14,
+    "files_deleted": 0,
+    "directories_deleted": 1,
+    "files_quarantined": 22,
+    "files_failed": 0,
+    "errors": 0
+  },
+  "processed_files": [
+    {
+      "source": "invalidated/money_flow/MF-AR-BATCH-130-1.yaml/source.yaml",
+      "schema_types": [
+        "money_flow"
+      ],
+      "items_fixed": 14,
+      "output_files": [
+        {
+          "file": "proposals/money_flow/MF-AR-BATCH-130-1-0.json",
+          "schema_type": "money_flow",
+          "id": "MF-AR-BATCH-130-1-0"
+        },
+        {
+          "file": "proposals/money_flow/MF-AR-BATCH-130-1-1.json",
+          "schema_type": "money_flow",
+          "id": "MF-AR-BATCH-130-1-1"
+        },
+        {
+          "file": "proposals/money_flow/MF-AR-BATCH-130-1-2.json",
+          "schema_type": "money_flow",
+          "id": "MF-AR-BATCH-130-1-2"
+        },
+        {
+          "file": "proposals/money_flow/MF-AR-BATCH-130-1-3.json",
+          "schema_type": "money_flow",
+          "id": "MF-AR-BATCH-130-1-3"
+        },
+        {
+          "file": "proposals/money_flow/MF-AR-BATCH-130-1-4.json",
+          "schema_type": "money_flow",
+          "id": "MF-AR-BATCH-130-1-4"
+        },
+        {
+          "file": "proposals/money_flow/MF-AR-BATCH-130-1-5.json",
+          "schema_type": "money_flow",
+          "id": "MF-AR-BATCH-130-1-5"
+        },
+        {
+          "file": "proposals/money_flow/MF-AR-BATCH-130-1-6.json",
+          "schema_type": "money_flow",
+          "id": "MF-AR-BATCH-130-1-6"
+        },
+        {
+          "file": "proposals/money_flow/MF-AR-BATCH-130-1-7.json",
+          "schema_type": "money_flow",
+          "id": "MF-AR-BATCH-130-1-7"
+        },
+        {
+          "file": "proposals/money_flow/MF-AR-BATCH-130-1-8.json",
+          "schema_type": "money_flow",
+          "id": "MF-AR-BATCH-130-1-8"
+        },
+        {
+          "file": "proposals/money_flow/MF-AR-BATCH-130-1-9.json",
+          "schema_type": "money_flow",
+          "id": "MF-AR-BATCH-130-1-9"
+        },
+        {
+          "file": "proposals/money_flow/MF-AR-BATCH-130-1-10.json",
+          "schema_type": "money_flow",
+          "id": "MF-AR-BATCH-130-1-10"
+        },
+        {
+          "file": "proposals/money_flow/MF-AR-BATCH-130-1-11.json",
+          "schema_type": "money_flow",
+          "id": "MF-AR-BATCH-130-1-11"
+        },
+        {
+          "file": "proposals/money_flow/MF-AR-BATCH-130-1-12.json",
+          "schema_type": "money_flow",
+          "id": "MF-AR-BATCH-130-1-12"
+        },
+        {
+          "file": "proposals/money_flow/MF-AR-BATCH-130-1-13.json",
+          "schema_type": "money_flow",
+          "id": "MF-AR-BATCH-130-1-13"
+        }
+      ]
+    }
+  ],
+  "failed_sources": [],
+  "quarantined_files": [
+    {
+      "source": "invalidated/evidence_item/EV-NAADAC-APSP-INTRO.yaml",
+      "quarantine_path": "reports/actions/quarantine_2026-01-31T15-50-27/evidence_item/EV-NAADAC-APSP-INTRO.yaml",
+      "reason": "not_processed"
+    },
+    {
+      "source": "invalidated/evidence_item/AR-IMPL-16-100-204-specialty-court.yaml",
+      "quarantine_path": "reports/actions/quarantine_2026-01-31T15-50-27/evidence_item/AR-IMPL-16-100-204-specialty-court.yaml",
+      "reason": "not_processed"
+    },
+    {
+      "source": "invalidated/evidence_item/EV-batch-001.yaml",
+      "quarantine_path": "reports/actions/quarantine_2026-01-31T15-50-27/evidence_item/EV-batch-001.yaml",
+      "reason": "not_processed"
+    },
+    {
+      "source": "invalidated/evidence_item/operation_nami_clearlane_batch1_artifacts.yaml",
+      "quarantine_path": "reports/actions/quarantine_2026-01-31T15-50-27/evidence_item/operation_nami_clearlane_batch1_artifacts.yaml",
+      "reason": "not_processed"
+    },
+    {
+      "source": "invalidated/evidence_item/EV-batch-203.yaml",
+      "quarantine_path": "reports/actions/quarantine_2026-01-31T15-50-27/evidence_item/EV-batch-203.yaml",
+      "reason": "not_processed"
+    },
+    {
+      "source": "invalidated/money_flow/MF-Substance-Use-Prevention-to-Arkansas-Department-of-Hu-011.json",
+      "quarantine_path": "reports/actions/quarantine_2026-01-31T15-50-27/money_flow/MF-Substance-Use-Prevention-to-Arkansas-Department-of-Hu-011.json",
+      "reason": "not_processed"
+    },
+    {
+      "source": "invalidated/money_flow/MF-Federal-Drug-Court-Enhanc-to-Administrative-Office-of-001.json",
+      "quarantine_path": "reports/actions/quarantine_2026-01-31T15-50-27/money_flow/MF-Federal-Drug-Court-Enhanc-to-Administrative-Office-of-001.json",
+      "reason": "not_processed"
+    },
+    {
+      "source": "invalidated/money_flow/MF-Adult-Drug-Court-Cash-Fun-to-Administrative-Office-of-003.json",
+      "quarantine_path": "reports/actions/quarantine_2026-01-31T15-50-27/money_flow/MF-Adult-Drug-Court-Cash-Fun-to-Administrative-Office-of-003.json",
+      "reason": "not_processed"
+    },
+    {
+      "source": "invalidated/money_flow/MF-AR-RHTP-Y1-2026.yaml",
+      "quarantine_path": "reports/actions/quarantine_2026-01-31T15-50-27/money_flow/MF-AR-RHTP-Y1-2026.yaml",
+      "reason": "not_processed"
+    },
+    {
+      "source": "invalidated/money_flow/MF-U.S.-Department-of-Transp-to-Administrative-Office-of-005.json",
+      "quarantine_path": "reports/actions/quarantine_2026-01-31T15-50-27/money_flow/MF-U.S.-Department-of-Transp-to-Administrative-Office-of-005.json",
+      "reason": "not_processed"
+    },
+    {
+      "source": "invalidated/money_flow/MF-Secretary-of-Human-Servic-to-Arkansas-Department-of-Hu-1.json",
+      "quarantine_path": "reports/actions/quarantine_2026-01-31T15-50-27/money_flow/MF-Secretary-of-Human-Servic-to-Arkansas-Department-of-Hu-1.json",
+      "reason": "not_processed"
+    },
+    {
+      "source": "invalidated/money_flow/clearlane_artifacts.yaml",
+      "quarantine_path": "reports/actions/quarantine_2026-01-31T15-50-27/money_flow/clearlane_artifacts.yaml",
+      "reason": "not_processed"
+    },
+    {
+      "source": "invalidated/money_flow/MF-Accountability-Court-Fund-to-Administrative-Office-of-002.json",
+      "quarantine_path": "reports/actions/quarantine_2026-01-31T15-50-27/money_flow/MF-Accountability-Court-Fund-to-Administrative-Office-of-002.json",
+      "reason": "not_processed"
+    },
+    {
+      "source": "invalidated/money_flow/MF-State-Central-Services-Fu-to-Administrative-Office-of-004.json",
+      "quarantine_path": "reports/actions/quarantine_2026-01-31T15-50-27/money_flow/MF-State-Central-Services-Fu-to-Administrative-Office-of-004.json",
+      "reason": "not_processed"
+    },
+    {
+      "source": "invalidated/money_flow/MF-Specialty-Court-Program-F-to-Administrative-Office-of-000.json",
+      "quarantine_path": "reports/actions/quarantine_2026-01-31T15-50-27/money_flow/MF-Specialty-Court-Program-F-to-Administrative-Office-of-000.json",
+      "reason": "not_processed"
+    },
+    {
+      "source": "invalidated/money_flow/MF-batch-201.yaml",
+      "quarantine_path": "reports/actions/quarantine_2026-01-31T15-50-27/money_flow/MF-batch-201.yaml",
+      "reason": "not_processed"
+    },
+    {
+      "source": "invalidated/field_validation/FV-batch-200.yaml",
+      "quarantine_path": "reports/actions/quarantine_2026-01-31T15-50-27/field_validation/FV-batch-200.yaml",
+      "reason": "not_processed"
+    },
+    {
+      "source": "invalidated/field_validation/FV-AR-DHS-PEER-CAPTURED-001.yaml",
+      "quarantine_path": "reports/actions/quarantine_2026-01-31T15-50-27/field_validation/FV-AR-DHS-PEER-CAPTURED-001.yaml",
+      "reason": "not_processed"
+    },
+    {
+      "source": "invalidated/field_validation/FV-batch-204.yaml",
+      "quarantine_path": "reports/actions/quarantine_2026-01-31T15-50-27/field_validation/FV-batch-204.yaml",
+      "reason": "not_processed"
+    },
+    {
+      "source": "invalidated/field_validation/FV-AR-AOC-SPECIALTY-COURT-OPEN-001.yaml",
+      "quarantine_path": "reports/actions/quarantine_2026-01-31T15-50-27/field_validation/FV-AR-AOC-SPECIALTY-COURT-OPEN-001.yaml",
+      "reason": "not_processed"
+    },
+    {
+      "source": "invalidated/authority_reference/AR-AUTH-batch-202.yaml",
+      "quarantine_path": "reports/actions/quarantine_2026-01-31T15-50-27/authority_reference/AR-AUTH-batch-202.yaml",
+      "reason": "not_processed"
+    },
+    {
+      "source": "invalidated/authority_reference/AR-AUTH-batch-001.yaml",
+      "quarantine_path": "reports/actions/quarantine_2026-01-31T15-50-27/authority_reference/AR-AUTH-batch-001.yaml",
+      "reason": "not_processed"
+    }
+  ],
+  "created_files": [
+    "proposals/money_flow/MF-AR-BATCH-130-1-0.json",
+    "proposals/money_flow/MF-AR-BATCH-130-1-1.json",
+    "proposals/money_flow/MF-AR-BATCH-130-1-2.json",
+    "proposals/money_flow/MF-AR-BATCH-130-1-3.json",
+    "proposals/money_flow/MF-AR-BATCH-130-1-4.json",
+    "proposals/money_flow/MF-AR-BATCH-130-1-5.json",
+    "proposals/money_flow/MF-AR-BATCH-130-1-6.json",
+    "proposals/money_flow/MF-AR-BATCH-130-1-7.json",
+    "proposals/money_flow/MF-AR-BATCH-130-1-8.json",
+    "proposals/money_flow/MF-AR-BATCH-130-1-9.json",
+    "proposals/money_flow/MF-AR-BATCH-130-1-10.json",
+    "proposals/money_flow/MF-AR-BATCH-130-1-11.json",
+    "proposals/money_flow/MF-AR-BATCH-130-1-12.json",
+    "proposals/money_flow/MF-AR-BATCH-130-1-13.json"
+  ],
+  "deleted_files": [],
+  "deleted_directories": [
+    "invalidated/money_flow/MF-AR-BATCH-130-1.yaml"
+  ],
+  "errors": [],
+  "reconciliation": {
+    "already_in_artifacts_validated": [],
+    "already_in_artifacts_other": [],
+    "already_in_processed": [],
+    "unique_to_invalidated": [
+      {
+        "id": "MF-AR-BATCH-130-1",
+        "source": "invalidated/money_flow/MF-AR-BATCH-130-1.yaml/source.yaml",
+        "action": "will_fix_and_move_to_proposals"
+      }
+    ],
+    "duplicates_flagged": []
+  }
+}
