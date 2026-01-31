@@ -87,6 +87,8 @@ jobs:
                   self.timestamp_str = self.timestamp.strftime("%Y-%m-%dT%H-%M-%S")
                   self.before_state = {}
                   self.processed_files = []
+                  self.failed_sources = []  # Track sources that failed processing
+                  self.quarantined_files = []  # Track files moved to quarantine
                   self.deleted_files = []
                   self.deleted_dirs = []
                   self.created_files = []
@@ -150,9 +152,13 @@ jobs:
                           "files_created": len(self.created_files),
                           "files_deleted": len(self.deleted_files),
                           "directories_deleted": len(self.deleted_dirs),
+                          "files_quarantined": len(self.quarantined_files),
+                          "files_failed": len(self.failed_sources),
                           "errors": len(self.errors)
                       },
                       "processed_files": self.processed_files,
+                      "failed_sources": self.failed_sources,
+                      "quarantined_files": self.quarantined_files,
                       "created_files": self.created_files,
                       "deleted_files": self.deleted_files,
                       "deleted_directories": self.deleted_dirs,
@@ -490,6 +496,7 @@ jobs:
                   if not documents:
                       print(f"  ⚠️ No valid documents found")
                       run_log.errors.append({"file": str(file_path), "error": "No valid documents"})
+                      run_log.failed_sources.append(str(file_path))
                       return False
                   
                   output_files = []
@@ -545,21 +552,45 @@ jobs:
                       })
                       return True
                   
+                  # No output files produced - mark as failed
+                  run_log.failed_sources.append(str(file_path))
                   return False
                   
               except Exception as e:
                   print(f"  ❌ Error: {e}")
                   run_log.errors.append({"file": str(file_path), "error": str(e)})
+                  run_log.failed_sources.append(str(file_path))
                   import traceback
                   traceback.print_exc()
                   return False
 
           def cleanup_invalidated(run_log):
-              """Completely clean up the invalidated directory."""
+              """Clean up invalidated directory - delete successfully processed sources, quarantine failed ones."""
               print("\n🧹 Cleaning up invalidated/ directory...")
               
               if not INVALIDATED_DIR.exists():
                   return
+              
+              # Create quarantine directory for failed sources
+              quarantine_dir = ACTIONS_LOG_DIR / f"quarantine_{run_log.timestamp_str}"
+              
+              # Get set of successfully processed source paths
+              processed_sources = set()
+              for pf in run_log.processed_files:
+                  src = pf.get("source", "")
+                  processed_sources.add(src)
+                  # Also add parent directory if source is inside a GitLab batch dir
+                  src_path = Path(src)
+                  if src_path.parent.suffix in ['.yaml', '.yml', '.json']:
+                      processed_sources.add(str(src_path.parent))
+              
+              # Get set of failed source paths
+              failed_sources = set(run_log.failed_sources)
+              # Also add parent directories for failed sources
+              for fs in list(failed_sources):
+                  fs_path = Path(fs)
+                  if fs_path.parent.suffix in ['.yaml', '.yml', '.json']:
+                      failed_sources.add(str(fs_path.parent))
               
               for schema_type in SCHEMA_CONFIG.keys():
                   subdir = INVALIDATED_DIR / schema_type
@@ -570,17 +601,62 @@ jobs:
                       if item.name == ".gitkeep":
                           continue
                       
+                      item_str = str(item)
+                      is_processed = item_str in processed_sources or any(item_str in ps for ps in processed_sources)
+                      is_failed = item_str in failed_sources or any(item_str in fs for fs in failed_sources)
+                      
                       try:
-                          if item.is_file():
-                              item.unlink()
-                              run_log.deleted_files.append(str(item))
-                              print(f"  🗑️ Deleted file: {item}")
-                          elif item.is_dir():
-                              shutil.rmtree(item)
-                              run_log.deleted_dirs.append(str(item))
-                              print(f"  🗑️ Deleted directory: {item}")
+                          if is_processed and not is_failed:
+                              # Successfully processed - safe to delete
+                              if item.is_file():
+                                  item.unlink()
+                                  run_log.deleted_files.append(str(item))
+                                  print(f"  🗑️ Deleted file: {item}")
+                              elif item.is_dir():
+                                  shutil.rmtree(item)
+                                  run_log.deleted_dirs.append(str(item))
+                                  print(f"  🗑️ Deleted directory: {item}")
+                          elif is_failed:
+                              # Failed to process - move to quarantine
+                              quarantine_dir.mkdir(parents=True, exist_ok=True)
+                              quarantine_subdir = quarantine_dir / schema_type
+                              quarantine_subdir.mkdir(parents=True, exist_ok=True)
+                              dest = quarantine_subdir / item.name
+                              
+                              if item.is_file():
+                                  shutil.copy2(item, dest)
+                                  item.unlink()
+                              elif item.is_dir():
+                                  shutil.copytree(item, dest)
+                                  shutil.rmtree(item)
+                              
+                              run_log.quarantined_files.append({
+                                  "source": str(item),
+                                  "quarantine_path": str(dest)
+                              })
+                              print(f"  📦 Quarantined: {item} -> {dest}")
+                          else:
+                              # Not in either list (wasn't processed at all) - quarantine for safety
+                              quarantine_dir.mkdir(parents=True, exist_ok=True)
+                              quarantine_subdir = quarantine_dir / schema_type
+                              quarantine_subdir.mkdir(parents=True, exist_ok=True)
+                              dest = quarantine_subdir / item.name
+                              
+                              if item.is_file():
+                                  shutil.copy2(item, dest)
+                                  item.unlink()
+                              elif item.is_dir():
+                                  shutil.copytree(item, dest)
+                                  shutil.rmtree(item)
+                              
+                              run_log.quarantined_files.append({
+                                  "source": str(item),
+                                  "quarantine_path": str(dest),
+                                  "reason": "not_processed"
+                              })
+                              print(f"  📦 Quarantined (not processed): {item} -> {dest}")
                       except Exception as e:
-                          print(f"  ⚠️ Could not delete {item}: {e}")
+                          print(f"  ⚠️ Could not handle {item}: {e}")
                           run_log.errors.append({"file": str(item), "error": f"Cleanup failed: {e}"})
 
           def reconcile_with_manifests(run_log):
@@ -745,12 +821,14 @@ jobs:
               print("\n" + "=" * 70)
               print("📊 PROCESSING SUMMARY")
               print("=" * 70)
-              print(f"  Files processed:    {processed_count}")
-              print(f"  Files created:      {len(run_log.created_files)}")
-              print(f"  Files deleted:      {len(run_log.deleted_files)}")
+              print(f"  Files processed:     {processed_count}")
+              print(f"  Files created:       {len(run_log.created_files)}")
+              print(f"  Files deleted:       {len(run_log.deleted_files)}")
               print(f"  Directories deleted: {len(run_log.deleted_dirs)}")
-              print(f"  Errors:             {len(run_log.errors)}")
-              print(f"  Run log:            {log_file}")
+              print(f"  Files quarantined:   {len(run_log.quarantined_files)}")
+              print(f"  Failed sources:      {len(run_log.failed_sources)}")
+              print(f"  Errors:              {len(run_log.errors)}")
+              print(f"  Run log:             {log_file}")
               print("=" * 70)
               
               # Set outputs for GitHub Actions
