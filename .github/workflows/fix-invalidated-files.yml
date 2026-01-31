@@ -326,9 +326,13 @@ jobs:
               
               # restrictions - must have medicaid and dhs_controlled as booleans
               if "restrictions" in data and isinstance(data["restrictions"], dict):
+                  # Only use values that are already booleans, otherwise default to False
+                  # This handles cases like dhs_controlled: "conditional (operational/staffing only)"
+                  med = data["restrictions"].get("medicaid")
+                  dhs = data["restrictions"].get("dhs_controlled")
                   fixed["restrictions"] = {
-                      "medicaid": bool(data["restrictions"].get("medicaid", False)) if isinstance(data["restrictions"].get("medicaid"), bool) else False,
-                      "dhs_controlled": bool(data["restrictions"].get("dhs_controlled", False)) if isinstance(data["restrictions"].get("dhs_controlled"), bool) else False
+                      "medicaid": med if isinstance(med, bool) else False,
+                      "dhs_controlled": dhs if isinstance(dhs, bool) else False
                   }
               else:
                   fixed["restrictions"] = {"medicaid": False, "dhs_controlled": False}
