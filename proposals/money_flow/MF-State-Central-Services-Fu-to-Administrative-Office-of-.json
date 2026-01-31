@@ -1,0 +1,15 @@
+{
+  "source": "State Central Services Fund",
+  "intermediary": null,
+  "destination": "Administrative Office of the Courts",
+  "amount": 4500000,
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Section 32 of SB72 appropriates funds from the State Central Services Fund to the Administrative Office of the Courts\nfor specialty court operations and grants.  The act authorizes expenditures of up to four million five hundred\nthousand dollars ($4,500,000) for FY‑2025/2026【884740964066380†L706-L722】.\n",
+  "editor_status": "accepted",
+  "flow_id": "MF-State-Central-Services-Fu-to-Administrative-Office-of-",
+  "fund_type": "state",
+  "fiscal_year": "2025-2026"
+}

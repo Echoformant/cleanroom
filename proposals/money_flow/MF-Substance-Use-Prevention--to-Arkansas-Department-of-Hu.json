@@ -1,0 +1,15 @@
+{
+  "source": "Substance Use Prevention, Treatment & Recovery Services Block Grant (SAMHSA SUBG)",
+  "intermediary": null,
+  "destination": "Arkansas Department of Human Services – Substance Abuse Program",
+  "amount": null,
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": true
+  },
+  "statutory_basis": "The Arkansas Department of Human Services describes the Substance Abuse Block Grant (SABG), also called the\nSubstance Use Prevention, Treatment and Recovery Services Block Grant (SUBG), as providing funds to plan,\nimplement and evaluate activities that prevent and treat substance abuse.  SAMHSA requires grantees to spend no\nless than 20 percent of their allotment on prevention strategies【694662080385875†L862-L867】.  The state notes that\nArkansas is divided into thirteen catchment areas and that UALR Mid‑South coordinates services for this program\n【694662080385875†L862-L870】.  The site does not publish the FY‑2025/2026 award amount, so the amount is left\nunspecified in this artifact.\n",
+  "editor_status": "accepted",
+  "flow_id": "MF-Substance-Use-Prevention--to-Arkansas-Department-of-Hu",
+  "fund_type": "state",
+  "fiscal_year": "2025-2026"
+}

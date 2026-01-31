@@ -1,0 +1,17 @@
+{
+  "schema": "authority_reference",
+  "editor_status": "pending",
+  "authority_id": "AR-AUTH-ACT776-2025-AOC-APPROPRIATION",
+  "statute": "Act 776 of 2025 (SB72) – Administrative Office of the Courts Appropriation",
+  "administering_body": [
+    "Administrative Office of the Courts"
+  ],
+  "description": "Appropriation act for personal services, operating expenses and various programs of the Administrative Office of the Courts for the fiscal year ending June 30 2026.  Among other allocations, the act appropriates $400,000 to the Accountability Court Fund, $1,000,000 for the Adult Drug Court Program, $4,500,000 for specialty courts (including $2,800,000 in professional fees and $1,700,000 in grants and aid), $100,000 for courthouse lactation facilities, $150,000 for a Byrne JAG grant and $4,027,500 for court technology initiatives【820752699809212†L1290-L1466】.\n",
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "citation_urls": [
+    "http://localhost:8451/https://arkleg.state.ar.us/Home/FTPDocument?path=%2FBills%2F2025R%2FPublic%2FSB72.pdf"
+  ]
+}
