@@ -1,0 +1,31 @@
+/tmp/MF-Substance-Use-Prevention--to-Arkansas-Department-of-Hu-011.json.0.json invalid
+[
+  {
+    instancePath: '/intermediary',
+    schemaPath: '#/$defs/money_flow/properties/intermediary/type',
+    keyword: 'type',
+    params: { type: 'string' },
+    message: 'must be string'
+  },
+  {
+    instancePath: '/amount',
+    schemaPath: '#/$defs/money_flow/properties/amount/type',
+    keyword: 'type',
+    params: { type: 'number' },
+    message: 'must be number'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/oneOf/1/type',
+    keyword: 'type',
+    params: { type: 'array' },
+    message: 'must be array'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/oneOf',
+    keyword: 'oneOf',
+    params: { passingSchemas: null },
+    message: 'must match exactly one schema in oneOf'
+  }
+]

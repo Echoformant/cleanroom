@@ -1,0 +1,438 @@
+{
+  "run_id": "12937478408",
+  "timestamp": "2026-01-31T02:12:24.682Z",
+  "cleanroom_sha": "",
+  "totals": {
+    "processed": 47,
+    "validated": 0,
+    "invalidated": 47
+  },
+  "validated": [],
+  "invalidated": [
+    {
+      "kind": "evidence_item",
+      "file": "AR-AUTH-16-10-701-SPECIALTY-COURT-USER-FEES.json",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/AR-AUTH-16-10-701-SPECIALTY-COURT-USER-FEES.json.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'evidence_id' },\n    message: \"must have required property 'evidence_id'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'evidence_type' },\n    message: \"must have required property 'evidence_type'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'source' },\n    message: \"must have required property 'source'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'confidence_level' },\n    message: \"must have required property 'confidence_level'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'schema' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'authority_id' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statute' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'administering_body' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'description' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'effects' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'citation_urls' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "evidence_item",
+      "file": "AR-AUTH-19-5-1144-ACCOUNTABILITY-COURT-FUND.json",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/AR-AUTH-19-5-1144-ACCOUNTABILITY-COURT-FUND.json.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'evidence_id' },\n    message: \"must have required property 'evidence_id'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'evidence_type' },\n    message: \"must have required property 'evidence_type'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'source' },\n    message: \"must have required property 'source'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'confidence_level' },\n    message: \"must have required property 'confidence_level'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'schema' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'authority_id' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statute' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'administering_body' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'description' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'effects' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'citation_urls' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "evidence_item",
+      "file": "AR-AUTH-19-6-489-SPECIALTY-COURT-PROGRAM-FUND.json",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/AR-AUTH-19-6-489-SPECIALTY-COURT-PROGRAM-FUND.json.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'evidence_id' },\n    message: \"must have required property 'evidence_id'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'evidence_type' },\n    message: \"must have required property 'evidence_type'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'source' },\n    message: \"must have required property 'source'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'confidence_level' },\n    message: \"must have required property 'confidence_level'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'schema' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'authority_id' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statute' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'administering_body' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'description' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'effects' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'citation_urls' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "evidence_item",
+      "file": "AR-AUTH-ACT776-2025-AOC-APPROPRIATION.json",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/AR-AUTH-ACT776-2025-AOC-APPROPRIATION.json.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'evidence_id' },\n    message: \"must have required property 'evidence_id'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'evidence_type' },\n    message: \"must have required property 'evidence_type'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'source' },\n    message: \"must have required property 'source'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'confidence_level' },\n    message: \"must have required property 'confidence_level'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'schema' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'authority_id' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statute' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'administering_body' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'description' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'effects' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'citation_urls' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "evidence_item",
+      "file": "AR-IMPL-16-100-204-specialty-court.json",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/AR-IMPL-16-100-204-specialty-court.json.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'source' },\n    message: \"must have required property 'source'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'confidence_level' },\n    message: \"must have required property 'confidence_level'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'parent_authority' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'jurisdiction' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'scope' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'status' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'sources' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'notes' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '/evidence_type',\n    schemaPath: '#/$defs/evidence_item/properties/evidence_type/enum',\n    keyword: 'enum',\n    params: { allowedValues: [Array] },\n    message: 'must be equal to one of the allowed values'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-A-review-of-the-Administrative-Office-of-015.json",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/EV-A-review-of-the-Administrative-Office-of-015.json.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'source' },\n    message: \"must have required property 'source'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statement' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statutory_basis' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-A-review-of-the-Administrative-Office-of-the-Court.json",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/EV-A-review-of-the-Administrative-Office-of-the-Court.json.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'source' },\n    message: \"must have required property 'source'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statement' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statutory_basis' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-During-FY2026-the-Arkansas-Department-016.json",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/EV-During-FY2026-the-Arkansas-Department-016.json.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'source' },\n    message: \"must have required property 'source'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statement' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statutory_basis' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-During-FY2026-the-Arkansas-Department-of-Health-AD.json",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/EV-During-FY2026-the-Arkansas-Department-of-Health-AD.json.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'source' },\n    message: \"must have required property 'source'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statement' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statutory_basis' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-During-a-review-of-Arkansas-Department-o-014.json",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/EV-During-a-review-of-Arkansas-Department-o-014.json.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'source' },\n    message: \"must have required property 'source'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statement' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statutory_basis' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-During-a-review-of-Arkansas-Department-of-Human-Se.json",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/EV-During-a-review-of-Arkansas-Department-of-Human-Se.json.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'source' },\n    message: \"must have required property 'source'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statement' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statutory_basis' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-No-FY2026-compliance-determinations-or-017.json",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/EV-No-FY2026-compliance-determinations-or-017.json.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'source' },\n    message: \"must have required property 'source'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statement' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statutory_basis' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-No-FY2026-compliance-determinations-or-enforcement.json",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/EV-No-FY2026-compliance-determinations-or-enforcement.json.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'source' },\n    message: \"must have required property 'source'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statement' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statutory_basis' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-SB72-2025-AOC-APPROPRIATION.json",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/EV-SB72-2025-AOC-APPROPRIATION.json.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'evidence_type' },\n    message: \"must have required property 'evidence_type'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'source' },\n    message: \"must have required property 'source'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'confidence_level' },\n    message: \"must have required property 'confidence_level'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'schema' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'document_type' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'title' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'date' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'source_url' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'description' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'related_authorities' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-Searches-of-the-Substance-Abuse-and-Ment-018.json",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/EV-Searches-of-the-Substance-Abuse-and-Ment-018.json.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'source' },\n    message: \"must have required property 'source'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statement' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statutory_basis' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-Searches-of-the-Substance-Abuse-and-Mental-Health-.json",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/EV-Searches-of-the-Substance-Abuse-and-Mental-Health-.json.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'source' },\n    message: \"must have required property 'source'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statement' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statutory_basis' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "evidence_item",
+      "file": "MF-ACCOUNTABILITY-COURT-FUND-2025-2026.json",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/MF-ACCOUNTABILITY-COURT-FUND-2025-2026.json.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'evidence_id' },\n    message: \"must have required property 'evidence_id'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'evidence_type' },\n    message: \"must have required property 'evidence_type'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'confidence_level' },\n    message: \"must have required property 'confidence_level'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'schema' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'flow_id' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'destination' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'amount' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'currency' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'fiscal_year' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statutory_basis' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'description' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'citation_urls' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '/source',\n    schemaPath: '#/$defs/evidence_item/properties/source/type',\n    keyword: 'type',\n    params: { type: 'object' },\n    message: 'must be object'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "evidence_item",
+      "file": "MF-SPECIALTY-COURT-USER-FEE.json",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/MF-SPECIALTY-COURT-USER-FEE.json.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'evidence_id' },\n    message: \"must have required property 'evidence_id'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'evidence_type' },\n    message: \"must have required property 'evidence_type'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'confidence_level' },\n    message: \"must have required property 'confidence_level'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'schema' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'flow_id' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'destination' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'amount' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'currency' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'fiscal_year' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statutory_basis' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'description' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'citation_urls' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '/source',\n    schemaPath: '#/$defs/evidence_item/properties/source/type',\n    keyword: 'type',\n    params: { type: 'object' },\n    message: 'must be object'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "evidence_item",
+      "file": "MF-SPECIALTY-COURTS-2025-2026.json",
+      "item": 0,
+      "errors": [
+        "unknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\nunknown format \"uri\" ignored in schema at path \"#/$defs/evidence_item/properties/source/properties/url\"\n/tmp/MF-SPECIALTY-COURTS-2025-2026.json.0.json invalid\n[\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'evidence_id' },\n    message: \"must have required property 'evidence_id'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'section' },\n    message: \"must have required property 'section'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'claim_summary' },\n    message: \"must have required property 'claim_summary'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'evidence_type' },\n    message: \"must have required property 'evidence_type'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/required',\n    keyword: 'required',\n    params: { missingProperty: 'confidence_level' },\n    message: \"must have required property 'confidence_level'\"\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'schema' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'flow_id' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'destination' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'amount' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'currency' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'fiscal_year' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'breakdown' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'statutory_basis' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'description' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/$defs/evidence_item/additionalProperties',\n    keyword: 'additionalProperties',\n    params: { additionalProperty: 'citation_urls' },\n    message: 'must NOT have additional properties'\n  },\n  {\n    instancePath: '/source',\n    schemaPath: '#/$defs/evidence_item/properties/source/type',\n    keyword: 'type',\n    params: { type: 'object' },\n    message: 'must be object'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "field_validation",
+      "file": "FV-AR-AOC-SPECIALTY-COURT-OPEN-001.json",
+      "item": 0,
+      "errors": [
+        "/tmp/FV-AR-AOC-SPECIALTY-COURT-OPEN-001.json.0.json invalid\n[\n  {\n    instancePath: '/evidence_basis/0',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/1',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/2',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "field_validation",
+      "file": "FV-AR-DHS-PEER-CAPTURED-001.json",
+      "item": 0,
+      "errors": [
+        "/tmp/FV-AR-DHS-PEER-CAPTURED-001.json.0.json invalid\n[\n  {\n    instancePath: '/evidence_basis/0',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/1',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/2',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/3',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/evidence_basis/4',\n    schemaPath: '#/$defs/field_validation/properties/evidence_basis/items/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-AR-RHTP-Y1-2026.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-AR-RHTP-Y1-2026.json.0.json invalid\n[\n  {\n    instancePath: '/restrictions/dhs_controlled',\n    schemaPath: '#/$defs/money_flow/properties/restrictions/properties/dhs_controlled/type',\n    keyword: 'type',\n    params: { type: 'boolean' },\n    message: 'must be boolean'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Accountability-Court-Fund-to-Administrative-Office-of--002.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-Accountability-Court-Fund-to-Administrative-Office-of--002.json.0.json invalid\n[\n  {\n    instancePath: '/intermediary',\n    schemaPath: '#/$defs/money_flow/properties/intermediary/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Accountability-Court-Fund-to-Administrative-Office-of-.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-Accountability-Court-Fund-to-Administrative-Office-of-.json.0.json invalid\n[\n  {\n    instancePath: '/intermediary',\n    schemaPath: '#/$defs/money_flow/properties/intermediary/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Adult-Drug-Court-Cash-Fun-to-Administrative-Office-of--003.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-Adult-Drug-Court-Cash-Fun-to-Administrative-Office-of--003.json.0.json invalid\n[\n  {\n    instancePath: '/intermediary',\n    schemaPath: '#/$defs/money_flow/properties/intermediary/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Adult-Drug-Court-Cash-Fun-to-Administrative-Office-of-.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-Adult-Drug-Court-Cash-Fun-to-Administrative-Office-of-.json.0.json invalid\n[\n  {\n    instancePath: '/intermediary',\n    schemaPath: '#/$defs/money_flow/properties/intermediary/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Behavioral-Health-Service-to-Division-of-Aging-Adult-B-010.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-Behavioral-Health-Service-to-Division-of-Aging-Adult-B-010.json.0.json invalid\n[\n  {\n    instancePath: '/intermediary',\n    schemaPath: '#/$defs/money_flow/properties/intermediary/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Behavioral-Health-Service-to-Division-of-Aging-Adult-B.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-Behavioral-Health-Service-to-Division-of-Aging-Adult-B.json.0.json invalid\n[\n  {\n    instancePath: '/intermediary',\n    schemaPath: '#/$defs/money_flow/properties/intermediary/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Federal-Drug-Court-Enhanc-to-Administrative-Office-of--001.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-Federal-Drug-Court-Enhanc-to-Administrative-Office-of--001.json.0.json invalid\n[\n  {\n    instancePath: '/intermediary',\n    schemaPath: '#/$defs/money_flow/properties/intermediary/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Federal-Drug-Court-Enhanc-to-Administrative-Office-of-.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-Federal-Drug-Court-Enhanc-to-Administrative-Office-of-.json.0.json invalid\n[\n  {\n    instancePath: '/intermediary',\n    schemaPath: '#/$defs/money_flow/properties/intermediary/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Health-Department-Operati-to-Arkansas-Department-of-He-006.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-Health-Department-Operati-to-Arkansas-Department-of-He-006.json.0.json invalid\n[\n  {\n    instancePath: '/intermediary',\n    schemaPath: '#/$defs/money_flow/properties/intermediary/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Health-Department-Operati-to-Arkansas-Department-of-He.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-Health-Department-Operati-to-Arkansas-Department-of-He.json.0.json invalid\n[\n  {\n    instancePath: '/intermediary',\n    schemaPath: '#/$defs/money_flow/properties/intermediary/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Medicaid-Section1115-Demo-to-Arkansas-Medicaid-DHS-Pee-012.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-Medicaid-Section1115-Demo-to-Arkansas-Medicaid-DHS-Pee-012.json.0.json invalid\n[\n  {\n    instancePath: '/intermediary',\n    schemaPath: '#/$defs/money_flow/properties/intermediary/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/amount',\n    schemaPath: '#/$defs/money_flow/properties/amount/type',\n    keyword: 'type',\n    params: { type: 'number' },\n    message: 'must be number'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Medicaid-Section1115-Demo-to-Arkansas-Medicaid-DHS-Pee.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-Medicaid-Section1115-Demo-to-Arkansas-Medicaid-DHS-Pee.json.0.json invalid\n[\n  {\n    instancePath: '/intermediary',\n    schemaPath: '#/$defs/money_flow/properties/intermediary/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/amount',\n    schemaPath: '#/$defs/money_flow/properties/amount/type',\n    keyword: 'type',\n    params: { type: 'number' },\n    message: 'must be number'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Secretary-of-Human-Servic-to-Arkansas-Department-of-Hu-008.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-Secretary-of-Human-Servic-to-Arkansas-Department-of-Hu-008.json.0.json invalid\n[\n  {\n    instancePath: '/intermediary',\n    schemaPath: '#/$defs/money_flow/properties/intermediary/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Secretary-of-Human-Servic-to-Arkansas-Department-of-Hu-009.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-Secretary-of-Human-Servic-to-Arkansas-Department-of-Hu-009.json.0.json invalid\n[\n  {\n    instancePath: '/intermediary',\n    schemaPath: '#/$defs/money_flow/properties/intermediary/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Secretary-of-Human-Servic-to-Arkansas-Department-of-Hu.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-Secretary-of-Human-Servic-to-Arkansas-Department-of-Hu.json.0.json invalid\n[\n  {\n    instancePath: '/intermediary',\n    schemaPath: '#/$defs/money_flow/properties/intermediary/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Specialty-Court-Program-F-to-Administrative-Office-of--000.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-Specialty-Court-Program-F-to-Administrative-Office-of--000.json.0.json invalid\n[\n  {\n    instancePath: '/intermediary',\n    schemaPath: '#/$defs/money_flow/properties/intermediary/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Specialty-Court-Program-F-to-Administrative-Office-of-.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-Specialty-Court-Program-F-to-Administrative-Office-of-.json.0.json invalid\n[\n  {\n    instancePath: '/intermediary',\n    schemaPath: '#/$defs/money_flow/properties/intermediary/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-State-Central-Services-Fu-to-Administrative-Office-of--004.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-State-Central-Services-Fu-to-Administrative-Office-of--004.json.0.json invalid\n[\n  {\n    instancePath: '/intermediary',\n    schemaPath: '#/$defs/money_flow/properties/intermediary/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-State-Central-Services-Fu-to-Administrative-Office-of-.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-State-Central-Services-Fu-to-Administrative-Office-of-.json.0.json invalid\n[\n  {\n    instancePath: '/intermediary',\n    schemaPath: '#/$defs/money_flow/properties/intermediary/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Substance-Use-Prevention--to-Arkansas-Department-of-Hu-011.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-Substance-Use-Prevention--to-Arkansas-Department-of-Hu-011.json.0.json invalid\n[\n  {\n    instancePath: '/intermediary',\n    schemaPath: '#/$defs/money_flow/properties/intermediary/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/amount',\n    schemaPath: '#/$defs/money_flow/properties/amount/type',\n    keyword: 'type',\n    params: { type: 'number' },\n    message: 'must be number'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Substance-Use-Prevention--to-Arkansas-Department-of-Hu.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-Substance-Use-Prevention--to-Arkansas-Department-of-Hu.json.0.json invalid\n[\n  {\n    instancePath: '/intermediary',\n    schemaPath: '#/$defs/money_flow/properties/intermediary/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '/amount',\n    schemaPath: '#/$defs/money_flow/properties/amount/type',\n    keyword: 'type',\n    params: { type: 'number' },\n    message: 'must be number'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Trauma-System-Fund-to-Arkansas-Department-of-He-007.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-Trauma-System-Fund-to-Arkansas-Department-of-He-007.json.0.json invalid\n[\n  {\n    instancePath: '/intermediary',\n    schemaPath: '#/$defs/money_flow/properties/intermediary/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Trauma-System-Fund-to-Arkansas-Department-of-He.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-Trauma-System-Fund-to-Arkansas-Department-of-He.json.0.json invalid\n[\n  {\n    instancePath: '/intermediary',\n    schemaPath: '#/$defs/money_flow/properties/intermediary/type',\n    keyword: 'type',\n    params: { type: 'string' },\n    message: 'must be string'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-U.S.-Department-of-Transp-to-Administrative-Office-of--005.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-U.S.-Department-of-Transp-to-Administrative-Office-of--005.json.0.json invalid\n[\n  {\n    instancePath: '/amount',\n    schemaPath: '#/$defs/money_flow/properties/amount/type',\n    keyword: 'type',\n    params: { type: 'number' },\n    message: 'must be number'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-U.S.-Department-of-Transp-to-Administrative-Office-of-.json",
+      "item": 0,
+      "errors": [
+        "/tmp/MF-U.S.-Department-of-Transp-to-Administrative-Office-of-.json.0.json invalid\n[\n  {\n    instancePath: '/amount',\n    schemaPath: '#/$defs/money_flow/properties/amount/type',\n    keyword: 'type',\n    params: { type: 'number' },\n    message: 'must be number'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf/1/type',\n    keyword: 'type',\n    params: { type: 'array' },\n    message: 'must be array'\n  },\n  {\n    instancePath: '',\n    schemaPath: '#/oneOf',\n    keyword: 'oneOf',\n    params: { passingSchemas: null },\n    message: 'must match exactly one schema in oneOf'\n  }\n]"
+      ]
+    }
+  ],
+  "retired": [
+    "proposals/evidence_item/AR-AUTH-16-10-701-SPECIALTY-COURT-USER-FEES.json",
+    "proposals/evidence_item/AR-AUTH-19-5-1144-ACCOUNTABILITY-COURT-FUND.json",
+    "proposals/evidence_item/AR-AUTH-19-6-489-SPECIALTY-COURT-PROGRAM-FUND.json",
+    "proposals/evidence_item/AR-AUTH-ACT776-2025-AOC-APPROPRIATION.json",
+    "proposals/evidence_item/AR-IMPL-16-100-204-specialty-court.json",
+    "proposals/evidence_item/EV-A-review-of-the-Administrative-Office-of-015.json",
+    "proposals/evidence_item/EV-A-review-of-the-Administrative-Office-of-the-Court.json",
+    "proposals/evidence_item/EV-During-FY2026-the-Arkansas-Department-016.json",
+    "proposals/evidence_item/EV-During-FY2026-the-Arkansas-Department-of-Health-AD.json",
+    "proposals/evidence_item/EV-During-a-review-of-Arkansas-Department-o-014.json",
+    "proposals/evidence_item/EV-During-a-review-of-Arkansas-Department-of-Human-Se.json",
+    "proposals/evidence_item/EV-No-FY2026-compliance-determinations-or-017.json",
+    "proposals/evidence_item/EV-No-FY2026-compliance-determinations-or-enforcement.json",
+    "proposals/evidence_item/EV-SB72-2025-AOC-APPROPRIATION.json",
+    "proposals/evidence_item/EV-Searches-of-the-Substance-Abuse-and-Ment-018.json",
+    "proposals/evidence_item/EV-Searches-of-the-Substance-Abuse-and-Mental-Health-.json",
+    "proposals/evidence_item/MF-ACCOUNTABILITY-COURT-FUND-2025-2026.json",
+    "proposals/evidence_item/MF-SPECIALTY-COURT-USER-FEE.json",
+    "proposals/evidence_item/MF-SPECIALTY-COURTS-2025-2026.json",
+    "proposals/field_validation/FV-AR-AOC-SPECIALTY-COURT-OPEN-001.json",
+    "proposals/field_validation/FV-AR-DHS-PEER-CAPTURED-001.json",
+    "proposals/money_flow/MF-AR-RHTP-Y1-2026.json",
+    "proposals/money_flow/MF-Accountability-Court-Fund-to-Administrative-Office-of--002.json",
+    "proposals/money_flow/MF-Accountability-Court-Fund-to-Administrative-Office-of-.json",
+    "proposals/money_flow/MF-Adult-Drug-Court-Cash-Fun-to-Administrative-Office-of--003.json",
+    "proposals/money_flow/MF-Adult-Drug-Court-Cash-Fun-to-Administrative-Office-of-.json",
+    "proposals/money_flow/MF-Behavioral-Health-Service-to-Division-of-Aging-Adult-B-010.json",
+    "proposals/money_flow/MF-Behavioral-Health-Service-to-Division-of-Aging-Adult-B.json",
+    "proposals/money_flow/MF-Federal-Drug-Court-Enhanc-to-Administrative-Office-of--001.json",
+    "proposals/money_flow/MF-Federal-Drug-Court-Enhanc-to-Administrative-Office-of-.json",
+    "proposals/money_flow/MF-Health-Department-Operati-to-Arkansas-Department-of-He-006.json",
+    "proposals/money_flow/MF-Health-Department-Operati-to-Arkansas-Department-of-He.json",
+    "proposals/money_flow/MF-Medicaid-Section1115-Demo-to-Arkansas-Medicaid-DHS-Pee-012.json",
+    "proposals/money_flow/MF-Medicaid-Section1115-Demo-to-Arkansas-Medicaid-DHS-Pee.json",
+    "proposals/money_flow/MF-Secretary-of-Human-Servic-to-Arkansas-Department-of-Hu-008.json",
+    "proposals/money_flow/MF-Secretary-of-Human-Servic-to-Arkansas-Department-of-Hu-009.json",
+    "proposals/money_flow/MF-Secretary-of-Human-Servic-to-Arkansas-Department-of-Hu.json",
+    "proposals/money_flow/MF-Specialty-Court-Program-F-to-Administrative-Office-of--000.json",
+    "proposals/money_flow/MF-Specialty-Court-Program-F-to-Administrative-Office-of-.json",
+    "proposals/money_flow/MF-State-Central-Services-Fu-to-Administrative-Office-of--004.json",
+    "proposals/money_flow/MF-State-Central-Services-Fu-to-Administrative-Office-of-.json",
+    "proposals/money_flow/MF-Substance-Use-Prevention--to-Arkansas-Department-of-Hu-011.json",
+    "proposals/money_flow/MF-Substance-Use-Prevention--to-Arkansas-Department-of-Hu.json",
+    "proposals/money_flow/MF-Trauma-System-Fund-to-Arkansas-Department-of-He-007.json",
+    "proposals/money_flow/MF-Trauma-System-Fund-to-Arkansas-Department-of-He.json",
+    "proposals/money_flow/MF-U.S.-Department-of-Transp-to-Administrative-Office-of--005.json",
+    "proposals/money_flow/MF-U.S.-Department-of-Transp-to-Administrative-Office-of-.json"
+  ]
+}

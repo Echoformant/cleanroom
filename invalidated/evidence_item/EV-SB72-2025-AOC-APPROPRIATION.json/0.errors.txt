@@ -1,0 +1,105 @@
+unknown format "uri" ignored in schema at path "#/$defs/evidence_item/properties/source/properties/url"
+unknown format "uri" ignored in schema at path "#/$defs/evidence_item/properties/source/properties/url"
+unknown format "uri" ignored in schema at path "#/$defs/evidence_item/properties/source/properties/url"
+unknown format "uri" ignored in schema at path "#/$defs/evidence_item/properties/source/properties/url"
+/tmp/EV-SB72-2025-AOC-APPROPRIATION.json.0.json invalid
+[
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/evidence_item/required',
+    keyword: 'required',
+    params: { missingProperty: 'section' },
+    message: "must have required property 'section'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/evidence_item/required',
+    keyword: 'required',
+    params: { missingProperty: 'claim_summary' },
+    message: "must have required property 'claim_summary'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/evidence_item/required',
+    keyword: 'required',
+    params: { missingProperty: 'evidence_type' },
+    message: "must have required property 'evidence_type'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/evidence_item/required',
+    keyword: 'required',
+    params: { missingProperty: 'source' },
+    message: "must have required property 'source'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/evidence_item/required',
+    keyword: 'required',
+    params: { missingProperty: 'confidence_level' },
+    message: "must have required property 'confidence_level'"
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/evidence_item/additionalProperties',
+    keyword: 'additionalProperties',
+    params: { additionalProperty: 'schema' },
+    message: 'must NOT have additional properties'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/evidence_item/additionalProperties',
+    keyword: 'additionalProperties',
+    params: { additionalProperty: 'document_type' },
+    message: 'must NOT have additional properties'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/evidence_item/additionalProperties',
+    keyword: 'additionalProperties',
+    params: { additionalProperty: 'title' },
+    message: 'must NOT have additional properties'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/evidence_item/additionalProperties',
+    keyword: 'additionalProperties',
+    params: { additionalProperty: 'date' },
+    message: 'must NOT have additional properties'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/evidence_item/additionalProperties',
+    keyword: 'additionalProperties',
+    params: { additionalProperty: 'source_url' },
+    message: 'must NOT have additional properties'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/evidence_item/additionalProperties',
+    keyword: 'additionalProperties',
+    params: { additionalProperty: 'description' },
+    message: 'must NOT have additional properties'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/$defs/evidence_item/additionalProperties',
+    keyword: 'additionalProperties',
+    params: { additionalProperty: 'related_authorities' },
+    message: 'must NOT have additional properties'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/oneOf/1/type',
+    keyword: 'type',
+    params: { type: 'array' },
+    message: 'must be array'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/oneOf',
+    keyword: 'oneOf',
+    params: { passingSchemas: null },
+    message: 'must match exactly one schema in oneOf'
+  }
+]

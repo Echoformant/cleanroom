@@ -1,0 +1,24 @@
+/tmp/MF-U.S.-Department-of-Transp-to-Administrative-Office-of--005.json.0.json invalid
+[
+  {
+    instancePath: '/amount',
+    schemaPath: '#/$defs/money_flow/properties/amount/type',
+    keyword: 'type',
+    params: { type: 'number' },
+    message: 'must be number'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/oneOf/1/type',
+    keyword: 'type',
+    params: { type: 'array' },
+    message: 'must be array'
+  },
+  {
+    instancePath: '',
+    schemaPath: '#/oneOf',
+    keyword: 'oneOf',
+    params: { passingSchemas: null },
+    message: 'must match exactly one schema in oneOf'
+  }
+]
