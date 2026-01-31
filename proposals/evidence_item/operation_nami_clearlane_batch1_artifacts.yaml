@@ -1,0 +1,172 @@
+## Operation NAMI Clearlane — Batch 1 Artifacts (Pending)
+
+# This file contains schema‑validated artifacts assembled under VECTOR 1 (Clearlane method).
+# All artifacts are marked `editor_status: pending` and will require validation before
+# inclusion in the operational dossier.  The artifacts are assembled strictly from
+# authoritative sources and do not include any inference or speculation.
+
+### Authority References
+
+- schema: authority_reference
+  editor_status: pending
+  authority_id: AR-AUTH-19-5-1144-ACCOUNTABILITY-COURT-FUND
+  statute: "Ark. Code § 19‑5‑1144 (Accountability Court Fund)"
+  administering_body:
+    - Treasurer of State
+    - Auditor of State
+    - Chief Fiscal Officer of the State
+    - Administrative Office of the Courts
+  description: >
+    Establishes the **Accountability Court Fund** as a trust fund on the books
+    of the Treasurer of State, Auditor of State and Chief Fiscal Officer of the
+    State.  The fund shall consist of grants made by any person or federal
+    government agency and any other funds authorized by law and shall be used by
+    the Administrative Office of the Courts for adult and juvenile specialty
+    court programs.  Distribution is governed by a formula developed by the
+    Arkansas Judicial Council, reviewed by the Specialty Court Program Advisory
+    Committee and approved by the Legislative Council【178441333792595†L70-L83】.
+  effects:
+    access_limiting: false
+    appeal_mechanism: false
+  citation_urls:
+    - https://law.justia.com/codes/arkansas/title-19/chapter-5/subchapter-11/section-19-5-1144/
+
+- schema: authority_reference
+  editor_status: pending
+  authority_id: AR-AUTH-19-6-489-SPECIALTY-COURT-PROGRAM-FUND
+  statute: "Ark. Code § 19‑6‑489 (Specialty Court Program Fund)"
+  administering_body:
+    - Treasurer of State
+    - Auditor of State
+    - Chief Fiscal Officer of the State
+    - Department of Community Correction
+    - Department of Human Services
+    - Specialty Court Program Advisory Committee
+  description: >
+    Creates the **Specialty Court Program Fund** as a special revenue fund.  The
+    fund consists of specialty court program user fees collected under § 16‑10‑701
+    and any other moneys provided by law.  It is used exclusively for treatment
+    services provided by the Department of Community Correction and the Department
+    of Human Services, the cost of evaluations of specialty court programs by the
+    Specialty Court Program Advisory Committee and drug and mental health crisis
+    intervention centers【499323080060216†L70-L85】.
+  effects:
+    access_limiting: false
+    appeal_mechanism: false
+  citation_urls:
+    - https://law.justia.com/codes/arkansas/title-19/chapter-6/subchapter-4/section-19-6-489/
+
+- schema: authority_reference
+  editor_status: pending
+  authority_id: AR-AUTH-16-10-701-SPECIALTY-COURT-USER-FEES
+  statute: "Ark. Code § 16‑10‑701 (Additional fees for specialty court programs)"
+  administering_body:
+    - Circuit and district courts
+    - Administration of Justice Funds Section
+  description: >
+    Authorizes courts to assess a **specialty court program user fee** of up to
+    $250 on participants in specialty court programs and a **public defender
+    user fee** of up to $250 for participants represented by a public defender.
+    These fees are remitted to the Administration of Justice Funds Section for
+    deposit into the Specialty Court Program Fund and Public Defender User Fees
+    Fund.  The section defines terms such as “pre‑adjudication” and lists the
+    types of approved specialty court programs【214151642646704†L71-L109】.
+  effects:
+    access_limiting: false
+    appeal_mechanism: false
+  citation_urls:
+    - https://law.justia.com/codes/arkansas/title-16/subtitle-2/chapter-10/subchapter-7/section-16-10-701/
+
+- schema: authority_reference
+  editor_status: pending
+  authority_id: AR-AUTH-ACT776-2025-AOC-APPROPRIATION
+  statute: "Act 776 of 2025 (SB72) – Administrative Office of the Courts Appropriation"
+  administering_body:
+    - Administrative Office of the Courts
+  description: >
+    Appropriation act for personal services, operating expenses and various
+    programs of the Administrative Office of the Courts for the fiscal year
+    ending June 30 2026.  Among other allocations, the act appropriates
+    $400,000 to the Accountability Court Fund, $1,000,000 for the Adult Drug
+    Court Program, $4,500,000 for specialty courts (including $2,800,000 in
+    professional fees and $1,700,000 in grants and aid), $100,000 for
+    courthouse lactation facilities, $150,000 for a Byrne JAG grant and
+    $4,027,500 for court technology initiatives【820752699809212†L1290-L1466】.
+  effects:
+    access_limiting: false
+    appeal_mechanism: false
+  citation_urls:
+    - http://localhost:8451/https://arkleg.state.ar.us/Home/FTPDocument?path=%2FBills%2F2025R%2FPublic%2FSB72.pdf
+
+### Money Flows
+
+- schema: money_flow
+  editor_status: pending
+  flow_id: MF-ACCOUNTABILITY-COURT-FUND-2025-2026
+  source: State of Arkansas Accountability Court Fund
+  destination: Administrative Office of the Courts – Accountability Court Fund program
+  amount: 400000
+  currency: USD
+  fiscal_year: "2025-2026"
+  statutory_basis: "Act 776 (SB72) § 30"
+  description: >
+    Appropriation for operating expenses and grants and aid of the
+    Administrative Office of the Courts – Accountability Court Fund for the fiscal
+    year ending June 30 2026【820752699809212†L1290-L1305】.
+  citation_urls:
+    - http://localhost:8451/https://arkleg.state.ar.us/Home/FTPDocument?path=%2FBills%2F2025R%2FPublic%2FSB72.pdf
+
+- schema: money_flow
+  editor_status: pending
+  flow_id: MF-SPECIALTY-COURTS-2025-2026
+  source: State Central Services Fund
+  destination: Administrative Office of the Courts – Specialty Courts program
+  amount: 4500000
+  currency: USD
+  fiscal_year: "2025-2026"
+  breakdown:
+    professional_fees: 2800000
+    grants_and_aid: 1700000
+  statutory_basis: "Act 776 (SB72) § 32"
+  description: >
+    Appropriation from the State Central Services Fund to the Administrative
+    Office of the Courts for specialty courts, including $2.8 million for
+    professional fees and $1.7 million for grants and aid【820752699809212†L1343-L1374】.
+  citation_urls:
+    - http://localhost:8451/https://arkleg.state.ar.us/Home/FTPDocument?path=%2FBills%2F2025R%2FPublic%2FSB72.pdf
+
+- schema: money_flow
+  editor_status: pending
+  flow_id: MF-SPECIALTY-COURT-USER-FEE
+  source: Specialty court program participants
+  destination: Specialty Court Program Fund
+  amount: "up to 250 per participant"
+  currency: USD
+  fiscal_year: ongoing
+  statutory_basis: "Ark. Code § 16‑10‑701(b)(1)"
+  description: >
+    Circuit or district courts assess a user fee of up to $250 on each participant
+    in a specialty court program.  These fees are remitted to the Administration
+    of Justice Funds Section and credited to the Specialty Court Program Fund【214151642646704†L96-L107】.
+  citation_urls:
+    - https://law.justia.com/codes/arkansas/title-16/subtitle-2/chapter-10/subchapter-7/section-16-10-701/
+
+### Evidence Items
+
+- schema: evidence_item
+  editor_status: pending
+  evidence_id: EV-SB72-2025-AOC-APPROPRIATION
+  document_type: appropriations_bill
+  title: "SB72 – Administrative Office of the Courts Appropriation for the 2025-2026 Fiscal Year"
+  date: "2025-04-07"
+  source_url: http://localhost:8451/https://arkleg.state.ar.us/Home/FTPDocument?path=%2FBills%2F2025R%2FPublic%2FSB72.pdf
+  description: >
+    Engrossed version of Senate Bill 72 (Act 776) appropriating funds for the
+    Administrative Office of the Courts for the 2025‑2026 fiscal year.  The bill
+    includes appropriations for the Accountability Court Fund ($400,000), Adult
+    Drug Court Program ($1,000,000), specialty courts ($4,500,000) and other
+    programs【820752699809212†L1290-L1466】.
+  related_authorities:
+    - AR-AUTH-ACT776-2025-AOC-APPROPRIATION
+    - AR-AUTH-19-5-1144-ACCOUNTABILITY-COURT-FUND
+    - AR-AUTH-19-6-489-SPECIALTY-COURT-PROGRAM-FUND
