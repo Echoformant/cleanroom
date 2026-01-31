@@ -205,6 +205,30 @@ jobs:
                   json.dump(data, f, indent=2, ensure_ascii=False)
                   f.write('\n')
 
+          def detect_schema_from_id_prefix(id_value):
+              """Detect schema type from ID prefix patterns."""
+              if not id_value:
+                  return None
+              id_str = str(id_value).upper()
+              
+              # Evidence item patterns: EV-, EVID-, evidence-
+              if id_str.startswith(('EV-', 'EVID-', 'EVID_')) or 'EVIDENCE' in id_str:
+                  return "evidence_item"
+              
+              # Money flow patterns: MF-, FLOW-, flow_id
+              if id_str.startswith(('MF-', 'FLOW-', 'FLOW_')) or 'MONEY' in id_str:
+                  return "money_flow"
+              
+              # Authority reference patterns: AR-, AUTH-, authority-
+              if id_str.startswith(('AR-', 'AUTH-', 'AUTHORITY-')):
+                  return "authority_reference"
+              
+              # Field validation patterns: FV-, FIELD-
+              if id_str.startswith(('FV-', 'FIELD-')):
+                  return "field_validation"
+              
+              return None
+
           def detect_schema_type(data):
               """Detect the schema type from content."""
               if not isinstance(data, dict):
@@ -230,14 +254,30 @@ jobs:
               if 'schema' in data and data['schema'] in SCHEMA_CONFIG:
                   return data['schema']
               
+              # Try to detect from any ID-like field value
+              for key, value in data.items():
+                  if isinstance(value, str) and ('id' in key.lower() or key.lower().endswith('_id')):
+                      detected = detect_schema_from_id_prefix(value)
+                      if detected:
+                          return detected
+              
               return None
 
           def detect_schema_from_path(file_path):
-              """Detect schema type from file path."""
+              """Detect schema type from file path or filename."""
               path_str = str(file_path).lower()
+              filename = Path(file_path).stem.upper()
+              
+              # Check if path contains schema type name
               for schema_type in SCHEMA_CONFIG:
                   if schema_type in path_str:
                       return schema_type
+              
+              # Try to detect from filename prefix
+              detected = detect_schema_from_id_prefix(filename)
+              if detected:
+                  return detected
+              
               return None
 
           def fix_authority_reference(data, original_id=None):
@@ -535,35 +575,55 @@ jobs:
                           run_log.errors.append({"file": str(item), "error": f"Cleanup failed: {e}"})
 
           def reconcile_with_manifests(run_log):
-              """Reconcile invalidated files against artifacts/ and processed/ manifests."""
+              """Reconcile invalidated files against artifacts/validated, artifacts/manifest, and processed/ directories."""
               print("\n🔍 Reconciling with artifacts and processed directories...")
               
               reconciliation = {
-                  "already_in_artifacts": [],
+                  "already_in_artifacts_validated": [],
+                  "already_in_artifacts_other": [],
                   "already_in_processed": [],
-                  "unique_to_invalidated": []
+                  "unique_to_invalidated": [],
+                  "duplicates_flagged": []
               }
               
-              # Get all IDs from artifacts
-              artifact_ids = set()
-              if ARTIFACTS_DIR.exists():
-                  for f in ARTIFACTS_DIR.rglob("*.json"):
+              # Get all IDs from artifacts/validated/
+              validated_ids = {}
+              validated_dir = ARTIFACTS_DIR / "validated"
+              if validated_dir.exists():
+                  for f in validated_dir.rglob("*.json"):
                       try:
                           with open(f, 'r') as fh:
                               data = json.load(fh)
                           for id_field in ["evidence_id", "flow_id", "fv_id", "authority_id"]:
                               if id_field in data:
-                                  artifact_ids.add(data[id_field])
+                                  validated_ids[data[id_field]] = str(f)
                                   break
                       except (json.JSONDecodeError, IOError, KeyError):
                           pass
               
-              # Get all IDs from processed
-              processed_ids = set()
+              # Get all IDs from other artifacts (including manifest if any)
+              other_artifact_ids = {}
+              if ARTIFACTS_DIR.exists():
+                  for f in ARTIFACTS_DIR.rglob("*.json"):
+                      # Skip validated directory (already processed)
+                      if "validated" in str(f):
+                          continue
+                      try:
+                          with open(f, 'r') as fh:
+                              data = json.load(fh)
+                          for id_field in ["evidence_id", "flow_id", "fv_id", "authority_id"]:
+                              if id_field in data:
+                                  other_artifact_ids[data[id_field]] = str(f)
+                                  break
+                      except (json.JSONDecodeError, IOError, KeyError):
+                          pass
+              
+              # Get all file stems from processed/
+              processed_files = {}
               if PROCESSED_DIR.exists():
                   for f in PROCESSED_DIR.rglob("*"):
                       if f.is_file() and f.suffix in ['.yaml', '.yml', '.json']:
-                          processed_ids.add(f.stem)
+                          processed_files[f.stem] = str(f)
               
               # Check invalidated sources
               sources = find_processable_sources()
@@ -571,18 +631,64 @@ jobs:
                   parent_is_gitlab_dir = src.parent.suffix in ['.yaml', '.yml', '.json']
                   base_id = src.parent.stem if parent_is_gitlab_dir else src.stem
                   
-                  if base_id in artifact_ids:
-                      reconciliation["already_in_artifacts"].append(base_id)
-                  elif base_id in processed_ids:
-                      reconciliation["already_in_processed"].append(base_id)
+                  found_in = []
+                  
+                  # Check if in validated artifacts
+                  if base_id in validated_ids:
+                      reconciliation["already_in_artifacts_validated"].append({
+                          "id": base_id,
+                          "location": validated_ids[base_id]
+                      })
+                      found_in.append("artifacts/validated")
+                  
+                  # Check if in other artifacts
+                  if base_id in other_artifact_ids:
+                      reconciliation["already_in_artifacts_other"].append({
+                          "id": base_id,
+                          "location": other_artifact_ids[base_id]
+                      })
+                      found_in.append("artifacts")
+                  
+                  # Check if in processed
+                  if base_id in processed_files:
+                      reconciliation["already_in_processed"].append({
+                          "id": base_id,
+                          "location": processed_files[base_id]
+                      })
+                      found_in.append("processed")
+                  
+                  # Categorize based on where found
+                  if len(found_in) > 1:
+                      # True duplicate: exists in multiple places
+                      reconciliation["duplicates_flagged"].append({
+                          "id": base_id,
+                          "source": str(src),
+                          "found_in": found_in,
+                          "action": "flagged_as_duplicate"
+                      })
+                  elif len(found_in) == 1:
+                      # Exists in exactly one location - still process but flag in report
+                      reconciliation["duplicates_flagged"].append({
+                          "id": base_id,
+                          "source": str(src),
+                          "found_in": found_in,
+                          "action": "already_exists_flagged_for_review"
+                      })
                   else:
-                      reconciliation["unique_to_invalidated"].append(base_id)
+                      # Unique: not found anywhere, will fix and move to proposals
+                      reconciliation["unique_to_invalidated"].append({
+                          "id": base_id,
+                          "source": str(src),
+                          "action": "will_fix_and_move_to_proposals"
+                      })
               
               run_log.reconciliation = reconciliation
               
-              print(f"  📊 Already in artifacts: {len(reconciliation['already_in_artifacts'])}")
+              print(f"  📊 Already in artifacts/validated: {len(reconciliation['already_in_artifacts_validated'])}")
+              print(f"  📊 Already in other artifacts: {len(reconciliation['already_in_artifacts_other'])}")
               print(f"  📊 Already in processed: {len(reconciliation['already_in_processed'])}")
-              print(f"  📊 Unique to invalidated: {len(reconciliation['unique_to_invalidated'])}")
+              print(f"  📊 Duplicates flagged: {len(reconciliation['duplicates_flagged'])}")
+              print(f"  📊 Unique to invalidated (will process): {len(reconciliation['unique_to_invalidated'])}")
 
           def main():
               print("=" * 70)
