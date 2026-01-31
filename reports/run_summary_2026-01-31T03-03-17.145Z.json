@@ -1,0 +1,297 @@
+{
+  "run_id": "12937631117",
+  "timestamp": "2026-01-31T03:03:17.145Z",
+  "cleanroom_sha": "",
+  "totals": {
+    "processed": 47,
+    "validated": 47,
+    "invalidated": 0
+  },
+  "validated": [
+    {
+      "kind": "authority_reference",
+      "file": "AR-AUTH-16-10-701-SPECIALTY-COURT-USER-FEES.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AR-AUTH-19-5-1144-ACCOUNTABILITY-COURT-FUND.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AR-AUTH-19-6-489-SPECIALTY-COURT-PROGRAM-FUND.json",
+      "item": 0
+    },
+    {
+      "kind": "authority_reference",
+      "file": "AR-AUTH-ACT776-2025-AOC-APPROPRIATION.json",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "AR-IMPL-16-100-204-specialty-court.json",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-A-review-of-the-Administrative-Office-of-015.json",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-A-review-of-the-Administrative-Office-of-the-Court.json",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-During-FY2026-the-Arkansas-Department-016.json",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-During-FY2026-the-Arkansas-Department-of-Health-AD.json",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-During-a-review-of-Arkansas-Department-o-014.json",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-During-a-review-of-Arkansas-Department-of-Human-Se.json",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-No-FY2026-compliance-determinations-or-017.json",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-No-FY2026-compliance-determinations-or-enforcement.json",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-SB72-2025-AOC-APPROPRIATION.json",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-Searches-of-the-Substance-Abuse-and-Ment-018.json",
+      "item": 0
+    },
+    {
+      "kind": "evidence_item",
+      "file": "EV-Searches-of-the-Substance-Abuse-and-Mental-Health-.json",
+      "item": 0
+    },
+    {
+      "kind": "field_validation",
+      "file": "FV-AR-AOC-SPECIALTY-COURT-OPEN-001.json",
+      "item": 0
+    },
+    {
+      "kind": "field_validation",
+      "file": "FV-AR-DHS-PEER-CAPTURED-001.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-ACCOUNTABILITY-COURT-FUND-2025-2026.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-AR-RHTP-Y1-2026.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Accountability-Court-Fund-to-Administrative-Office-of--002.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Accountability-Court-Fund-to-Administrative-Office-of-.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Adult-Drug-Court-Cash-Fun-to-Administrative-Office-of--003.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Adult-Drug-Court-Cash-Fun-to-Administrative-Office-of-.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Behavioral-Health-Service-to-Division-of-Aging-Adult-B-010.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Behavioral-Health-Service-to-Division-of-Aging-Adult-B.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Federal-Drug-Court-Enhanc-to-Administrative-Office-of--001.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Federal-Drug-Court-Enhanc-to-Administrative-Office-of-.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Health-Department-Operati-to-Arkansas-Department-of-He-006.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Health-Department-Operati-to-Arkansas-Department-of-He.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Medicaid-Section1115-Demo-to-Arkansas-Medicaid-DHS-Pee-012.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Medicaid-Section1115-Demo-to-Arkansas-Medicaid-DHS-Pee.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-SPECIALTY-COURT-USER-FEE.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-SPECIALTY-COURTS-2025-2026.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Secretary-of-Human-Servic-to-Arkansas-Department-of-Hu-008.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Secretary-of-Human-Servic-to-Arkansas-Department-of-Hu-009.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Secretary-of-Human-Servic-to-Arkansas-Department-of-Hu.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Specialty-Court-Program-F-to-Administrative-Office-of--000.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Specialty-Court-Program-F-to-Administrative-Office-of-.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-State-Central-Services-Fu-to-Administrative-Office-of--004.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-State-Central-Services-Fu-to-Administrative-Office-of-.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Substance-Use-Prevention--to-Arkansas-Department-of-Hu-011.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Substance-Use-Prevention--to-Arkansas-Department-of-Hu.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Trauma-System-Fund-to-Arkansas-Department-of-He-007.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-Trauma-System-Fund-to-Arkansas-Department-of-He.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-U.S.-Department-of-Transp-to-Administrative-Office-of--005.json",
+      "item": 0
+    },
+    {
+      "kind": "money_flow",
+      "file": "MF-U.S.-Department-of-Transp-to-Administrative-Office-of-.json",
+      "item": 0
+    }
+  ],
+  "invalidated": [],
+  "retired": [
+    "proposals/authority_reference/AR-AUTH-16-10-701-SPECIALTY-COURT-USER-FEES.json",
+    "proposals/authority_reference/AR-AUTH-19-5-1144-ACCOUNTABILITY-COURT-FUND.json",
+    "proposals/authority_reference/AR-AUTH-19-6-489-SPECIALTY-COURT-PROGRAM-FUND.json",
+    "proposals/authority_reference/AR-AUTH-ACT776-2025-AOC-APPROPRIATION.json",
+    "proposals/evidence_item/AR-IMPL-16-100-204-specialty-court.json",
+    "proposals/evidence_item/EV-A-review-of-the-Administrative-Office-of-015.json",
+    "proposals/evidence_item/EV-A-review-of-the-Administrative-Office-of-the-Court.json",
+    "proposals/evidence_item/EV-During-FY2026-the-Arkansas-Department-016.json",
+    "proposals/evidence_item/EV-During-FY2026-the-Arkansas-Department-of-Health-AD.json",
+    "proposals/evidence_item/EV-During-a-review-of-Arkansas-Department-o-014.json",
+    "proposals/evidence_item/EV-During-a-review-of-Arkansas-Department-of-Human-Se.json",
+    "proposals/evidence_item/EV-No-FY2026-compliance-determinations-or-017.json",
+    "proposals/evidence_item/EV-No-FY2026-compliance-determinations-or-enforcement.json",
+    "proposals/evidence_item/EV-SB72-2025-AOC-APPROPRIATION.json",
+    "proposals/evidence_item/EV-Searches-of-the-Substance-Abuse-and-Ment-018.json",
+    "proposals/evidence_item/EV-Searches-of-the-Substance-Abuse-and-Mental-Health-.json",
+    "proposals/field_validation/FV-AR-AOC-SPECIALTY-COURT-OPEN-001.json",
+    "proposals/field_validation/FV-AR-DHS-PEER-CAPTURED-001.json",
+    "proposals/money_flow/MF-ACCOUNTABILITY-COURT-FUND-2025-2026.json",
+    "proposals/money_flow/MF-AR-RHTP-Y1-2026.json",
+    "proposals/money_flow/MF-Accountability-Court-Fund-to-Administrative-Office-of--002.json",
+    "proposals/money_flow/MF-Accountability-Court-Fund-to-Administrative-Office-of-.json",
+    "proposals/money_flow/MF-Adult-Drug-Court-Cash-Fun-to-Administrative-Office-of--003.json",
+    "proposals/money_flow/MF-Adult-Drug-Court-Cash-Fun-to-Administrative-Office-of-.json",
+    "proposals/money_flow/MF-Behavioral-Health-Service-to-Division-of-Aging-Adult-B-010.json",
+    "proposals/money_flow/MF-Behavioral-Health-Service-to-Division-of-Aging-Adult-B.json",
+    "proposals/money_flow/MF-Federal-Drug-Court-Enhanc-to-Administrative-Office-of--001.json",
+    "proposals/money_flow/MF-Federal-Drug-Court-Enhanc-to-Administrative-Office-of-.json",
+    "proposals/money_flow/MF-Health-Department-Operati-to-Arkansas-Department-of-He-006.json",
+    "proposals/money_flow/MF-Health-Department-Operati-to-Arkansas-Department-of-He.json",
+    "proposals/money_flow/MF-Medicaid-Section1115-Demo-to-Arkansas-Medicaid-DHS-Pee-012.json",
+    "proposals/money_flow/MF-Medicaid-Section1115-Demo-to-Arkansas-Medicaid-DHS-Pee.json",
+    "proposals/money_flow/MF-SPECIALTY-COURT-USER-FEE.json",
+    "proposals/money_flow/MF-SPECIALTY-COURTS-2025-2026.json",
+    "proposals/money_flow/MF-Secretary-of-Human-Servic-to-Arkansas-Department-of-Hu-008.json",
+    "proposals/money_flow/MF-Secretary-of-Human-Servic-to-Arkansas-Department-of-Hu-009.json",
+    "proposals/money_flow/MF-Secretary-of-Human-Servic-to-Arkansas-Department-of-Hu.json",
+    "proposals/money_flow/MF-Specialty-Court-Program-F-to-Administrative-Office-of--000.json",
+    "proposals/money_flow/MF-Specialty-Court-Program-F-to-Administrative-Office-of-.json",
+    "proposals/money_flow/MF-State-Central-Services-Fu-to-Administrative-Office-of--004.json",
+    "proposals/money_flow/MF-State-Central-Services-Fu-to-Administrative-Office-of-.json",
+    "proposals/money_flow/MF-Substance-Use-Prevention--to-Arkansas-Department-of-Hu-011.json",
+    "proposals/money_flow/MF-Substance-Use-Prevention--to-Arkansas-Department-of-Hu.json",
+    "proposals/money_flow/MF-Trauma-System-Fund-to-Arkansas-Department-of-He-007.json",
+    "proposals/money_flow/MF-Trauma-System-Fund-to-Arkansas-Department-of-He.json",
+    "proposals/money_flow/MF-U.S.-Department-of-Transp-to-Administrative-Office-of--005.json",
+    "proposals/money_flow/MF-U.S.-Department-of-Transp-to-Administrative-Office-of-.json"
+  ]
+}
