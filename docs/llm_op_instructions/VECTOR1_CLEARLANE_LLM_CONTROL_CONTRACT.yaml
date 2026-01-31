@@ -1,0 +1,54 @@
+contract_id: VECTOR1.CLEARLANE.LLM_CONTROL_CONTRACT.V1
+semantic_key: VECTOR_1
+method: CLEARLANE
+proof_layer: DOSSIER
+
+allowed_artifact_schemas:
+  - authority_reference
+  - money_flow
+  - evidence_item
+  - field_validation
+
+output_rules:
+  default_format: yaml
+  json_only_if_requested: true
+  schema_valid_only: true
+  editor_status_default: pending
+
+prohibitions:
+  infer_governance: false
+  speculate_agency_intent: false
+  create_new_schemas: false
+  add_non_schema_fields: false
+
+audit_normalization:
+  step_1:
+    description: Audit reports are evidence
+    schema: evidence_item
+  step_2:
+    description: Operational posture derived from audit
+    schema: field_validation
+    alignment_values:
+      - open
+      - mixed
+      - captured
+
+result_types:
+  - documented_constraint
+  - confirmed_routing
+  - validated_amount
+  - declared_alignment_status
+  - recorded_absence
+
+truth_hierarchy:
+  - authority_reference
+  - money_flow
+  - evidence_item
+  - field_validation
+
+end_state:
+  deliverables:
+    - GO_NO_GO_LANES
+    - BOUNDARY_MAPS
+    - FUNDING_EXCLUSIONS
+    - GOVERNANCE_SAFE_ZONES
