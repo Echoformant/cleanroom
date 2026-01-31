@@ -463,14 +463,21 @@ jobs:
                           if item.name != ".gitkeep" and item.suffix in ['.yaml', '.yml', '.json']:
                               sources.append(item)
                       elif item.is_dir():
-                          # GitLab creates dirs like "MF-AR-BATCH-130-1.yaml/" containing source.yaml
+                          # GitLab creates dirs like "MF-AR-BATCH-130-1.yaml/" containing various files
+                          # Prioritize source.yaml, then 0.json, then any other YAML/JSON files
                           source_yaml = item / "source.yaml"
+                          zero_json = item / "0.json"
+                          
                           if source_yaml.exists():
                               sources.append(source_yaml)
-                          # Also check for 0.json
-                          zero_json = item / "0.json"
-                          if zero_json.exists():
+                          elif zero_json.exists():
                               sources.append(zero_json)
+                          else:
+                              # Look for any processable files in nested directory so data doesn't get lost
+                              for nested_file in item.iterdir():
+                                  if nested_file.is_file() and nested_file.suffix in ['.yaml', '.yml', '.json']:
+                                      if not nested_file.name.endswith('.errors.txt'):
+                                          sources.append(nested_file)
               
               return sources
 
@@ -501,16 +508,29 @@ jobs:
                   
                   output_files = []
                   output_details = []  # Track per-output file details including schema type
+                  skipped_docs = []  # Track documents that couldn't be processed
                   item_counter = 0
                   
-                  for doc in documents:
+                  for doc_idx, doc in enumerate(documents):
                       if not isinstance(doc, dict):
+                          skipped_docs.append({"index": doc_idx, "reason": "Not a dictionary"})
                           continue
                       
                       schema_type = detect_schema_type(doc) or path_schema
                       
                       if not schema_type:
-                          print(f"  ⚠️ Could not determine schema type for document")
+                          # Try to infer from base_id prefix as last resort
+                          schema_type = detect_schema_from_id_prefix(base_id)
+                      
+                      if not schema_type:
+                          # Log details about the undetectable document for debugging
+                          doc_keys = list(doc.keys())[:5]  # First 5 keys for context
+                          print(f"  ⚠️ Could not determine schema type for document {doc_idx} (keys: {doc_keys})")
+                          skipped_docs.append({
+                              "index": doc_idx,
+                              "reason": "Could not determine schema type",
+                              "keys": doc_keys
+                          })
                           continue
                       
                       # Get ID field
@@ -544,12 +564,15 @@ jobs:
                   if output_files:
                       # Collect unique schema types processed
                       schema_types = list(set(d["schema_type"] for d in output_details))
-                      run_log.processed_files.append({
+                      entry = {
                           "source": str(file_path),
                           "schema_types": schema_types,
                           "items_fixed": len(output_files),
                           "output_files": output_details
-                      })
+                      }
+                      if skipped_docs:
+                          entry["skipped_documents"] = skipped_docs
+                      run_log.processed_files.append(entry)
                       return True
                   
                   # No output files produced - mark as failed
