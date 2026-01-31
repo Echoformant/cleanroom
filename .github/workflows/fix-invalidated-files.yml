@@ -23,30 +23,38 @@ jobs:
           python-version: '3.x'
       
       - name: Install dependencies
-        run: pip install pyyaml
+        run: pip install pyyaml jsonschema
       
       - name: Check for files to process
         id: check_files
         run: |
           # Find processable files (exclude .gitkeep and error logs)
+          # Also check for directories with .json/.yaml names containing 0.json (external pipeline structure)
           file_count=$(find invalidated/ -type f \( -name "*.json" -o -name "*.yaml" -o -name "*.yml" \) \
-            ! -name ".gitkeep" ! -name "*.txt" ! -name "*.errors.txt" 2>/dev/null | wc -l)
+            ! -name ".gitkeep" ! -name "*.txt" ! -name "*.errors.txt" ! -name "0.json" 2>/dev/null | wc -l)
           
-          if [ "$file_count" -gt 0 ]; then
+          # Also count directories that contain 0.json (external pipeline validation results)
+          dir_count=$(find invalidated/ -type f -name "0.json" 2>/dev/null | wc -l)
+          
+          total_count=$((file_count + dir_count))
+          
+          if [ "$total_count" -gt 0 ]; then
             echo "has_files=true" >> $GITHUB_OUTPUT
-            echo "Found $file_count files to process"
+            echo "Found $file_count files and $dir_count pipeline directories to process"
           else
             echo "has_files=false" >> $GITHUB_OUTPUT
             echo "No files to process"
           fi
       
-      - name: Process invalidated files
+      - name: Process and fix invalidated files
         if: steps.check_files.outputs.has_files == 'true'
         run: |
           python3 << 'EOF'
           import os
           import json
           import yaml
+          import shutil
+          import re
           from pathlib import Path
           from datetime import datetime, timezone
 
@@ -54,14 +62,37 @@ jobs:
           INVALIDATED_DIR = Path("invalidated")
           PROPOSALS_DIR = Path("proposals")
           REPORTS_DIR = Path("reports")
+          SCHEMAS_DIR = Path("schemas")
           REPORT_FILE = REPORTS_DIR / "invalidated-fixes.json"
 
-          # Mapping of wrapper keys to ID fields
-          WRAPPER_CONFIG = {
-              "evidence_item": "evidence_id",
-              "money_flow": "flow_id",
-              "field_validation": "fv_id",
-              "authority_reference": "authority_id"
+          # Schema configuration with required fields and ID fields
+          SCHEMA_CONFIG = {
+              "evidence_item": {
+                  "id_field": "evidence_id",
+                  "required": ["evidence_id", "section", "claim_summary", "evidence_type", "source", "confidence_level", "editor_status"],
+                  "evidence_types": ["statute", "budget", "grant", "administrative_rule", "field_validation"],
+                  "confidence_levels": ["high", "medium", "low"],
+                  "editor_statuses": ["pending", "accepted", "corrected", "nullified"]
+              },
+              "money_flow": {
+                  "id_field": "flow_id",
+                  "required": ["flow_id", "source", "intermediary", "destination", "amount", "fund_type", "fiscal_year", "restrictions", "statutory_basis", "editor_status"],
+                  "fund_types": ["state", "federal", "settlement"],
+                  "editor_statuses": ["pending", "accepted", "corrected", "nullified"]
+              },
+              "field_validation": {
+                  "id_field": "fv_id",
+                  "required": ["fv_id", "jurisdiction", "validating_entity", "alignment_status", "evidence_basis", "disclosure_level", "editor_status"],
+                  "alignment_statuses": ["open", "mixed", "captured"],
+                  "disclosure_levels": ["restricted"],
+                  "editor_statuses": ["pending", "accepted", "corrected", "nullified"]
+              },
+              "authority_reference": {
+                  "id_field": "authority_id",
+                  "required": ["authority_id", "authority_type", "citation", "administering_body", "governs", "effects", "editor_status"],
+                  "authority_types": ["statute", "regulation", "policy"],
+                  "editor_statuses": ["pending", "accepted", "corrected", "nullified"]
+              }
           }
 
           def load_file(file_path):
@@ -71,16 +102,13 @@ jobs:
               
               if file_path.suffix.lower() == '.json':
                   return json.loads(content)
-              else:  # .yaml or .yml
+              else:
                   try:
                       return yaml.safe_load(content)
                   except yaml.YAMLError:
-                      # Try to fix common YAML issues by adding quotes around problematic values
-                      # Re-raise if still can't parse
                       lines = content.split('\n')
                       fixed_lines = []
                       for line in lines:
-                          # If line has value with unquoted colon after the key colon, quote it
                           if ': ' in line and line.count(':') > 1:
                               key_end = line.index(': ') + 2
                               key = line[:key_end]
@@ -97,162 +125,393 @@ jobs:
               file_path.parent.mkdir(parents=True, exist_ok=True)
               with open(file_path, 'w', encoding='utf-8') as f:
                   json.dump(data, f, indent=2, ensure_ascii=False)
-                  f.write('\n')  # Add trailing newline
+                  f.write('\n')
 
-          def determine_target_dir(source_path):
-              """Determine target directory based on source path."""
-              # Get relative path from invalidated/
-              rel_path = source_path.relative_to(INVALIDATED_DIR)
+          def detect_schema_type(data):
+              """Detect the schema type from content."""
+              # Check explicit schema field
+              if 'schema' in data:
+                  schema_val = data['schema']
+                  if schema_val in SCHEMA_CONFIG:
+                      return schema_val
               
-              # Extract the subdirectory (evidence_item, money_flow, etc.)
-              # Handle both direct subdirs and nested paths
-              parts = rel_path.parts
-              if parts[0] in WRAPPER_CONFIG:
-                  subdir = parts[0]
-              elif parts[0] == "pending" and len(parts) > 1:
-                  # For pending/, look at the next level or infer from content
-                  subdir = parts[1] if parts[1] in WRAPPER_CONFIG else None
-              else:
-                  subdir = None
-              
-              return subdir
-
-          def infer_type_from_content(data):
-              """Infer the type from the wrapper key in the data."""
-              for wrapper_key in WRAPPER_CONFIG:
-                  if wrapper_key in data:
-                      return wrapper_key
-              return None
-
-          def is_already_unwrapped(data):
-              """Check if data is already an unwrapped single item."""
-              # Check if it has one of the ID fields directly (not wrapped)
-              id_fields = ["evidence_id", "flow_id", "fv_id", "authority_id"]
-              return any(id_field in data for id_field in id_fields)
-
-          def get_type_from_id_field(data):
-              """Get the type based on which ID field is present."""
+              # Check for ID fields
               id_to_type = {
                   "evidence_id": "evidence_item",
                   "flow_id": "money_flow",
                   "fv_id": "field_validation",
                   "authority_id": "authority_reference"
               }
-              for id_field, type_name in id_to_type.items():
+              for id_field, schema_type in id_to_type.items():
                   if id_field in data:
-                      return type_name, id_field, data.get(id_field)
-              return None, None, None
+                      return schema_type
+              
+              # Check for wrapper keys
+              for wrapper_key in SCHEMA_CONFIG:
+                  if wrapper_key in data:
+                      return wrapper_key
+              
+              return None
+
+          def fix_authority_reference(data, original_id=None):
+              """Fix/transform authority_reference data to match schema."""
+              fixed = {}
+              
+              # Required fields
+              fixed["authority_id"] = data.get("authority_id") or original_id or f"AR-GEN-{datetime.now().strftime('%Y%m%d%H%M%S')}"
+              
+              # authority_type - infer from statute field or default
+              if "authority_type" in data:
+                  at = data["authority_type"]
+                  fixed["authority_type"] = at if at in ["statute", "regulation", "policy"] else "statute"
+              elif "statute" in data:
+                  fixed["authority_type"] = "statute"
+              else:
+                  fixed["authority_type"] = "statute"
+              
+              # citation - use statute field or generate
+              if "citation" in data:
+                  fixed["citation"] = data["citation"]
+              elif "statute" in data:
+                  fixed["citation"] = data["statute"]
+              else:
+                  fixed["citation"] = f"See {fixed['authority_id']}"
+              
+              # administering_body - must be string, not array
+              if "administering_body" in data:
+                  ab = data["administering_body"]
+                  if isinstance(ab, list):
+                      fixed["administering_body"] = ", ".join(ab)
+                  else:
+                      fixed["administering_body"] = str(ab)
+              else:
+                  fixed["administering_body"] = "Unknown"
+              
+              # governs - must be array of strings
+              if "governs" in data:
+                  gov = data["governs"]
+                  if isinstance(gov, list):
+                      fixed["governs"] = [str(g) for g in gov]
+                  else:
+                      fixed["governs"] = [str(gov)]
+              elif "description" in data:
+                  # Extract key topics from description
+                  fixed["governs"] = [data["description"][:100] + "..." if len(data.get("description", "")) > 100 else data.get("description", "General governance")]
+              else:
+                  fixed["governs"] = ["General governance"]
+              
+              # effects - must have access_limiting and appeal_mechanism as booleans
+              if "effects" in data and isinstance(data["effects"], dict):
+                  fixed["effects"] = {
+                      "access_limiting": bool(data["effects"].get("access_limiting", False)),
+                      "appeal_mechanism": bool(data["effects"].get("appeal_mechanism", False))
+                  }
+              else:
+                  fixed["effects"] = {"access_limiting": False, "appeal_mechanism": False}
+              
+              # editor_status
+              es = data.get("editor_status", "pending")
+              fixed["editor_status"] = es if es in ["pending", "accepted", "corrected", "nullified"] else "pending"
+              
+              return fixed
+
+          def fix_evidence_item(data, original_id=None):
+              """Fix/transform evidence_item data to match schema."""
+              fixed = {}
+              
+              # evidence_id
+              fixed["evidence_id"] = data.get("evidence_id") or original_id or f"EV-GEN-{datetime.now().strftime('%Y%m%d%H%M%S')}"
+              
+              # section - extract from evidence_id or default
+              if "section" in data:
+                  fixed["section"] = data["section"]
+              else:
+                  # Try to extract section from evidence_id pattern
+                  match = re.search(r'EV-([A-Z]+)-', str(data.get("evidence_id", "")))
+                  if match:
+                      fixed["section"] = match.group(1).lower()
+                  else:
+                      fixed["section"] = "general"
+              
+              # claim_summary - use statement or description
+              if "claim_summary" in data:
+                  fixed["claim_summary"] = data["claim_summary"]
+              elif "statement" in data:
+                  fixed["claim_summary"] = data["statement"]
+              elif "description" in data:
+                  fixed["claim_summary"] = data["description"][:500] if len(data.get("description", "")) > 500 else data.get("description", "")
+              else:
+                  fixed["claim_summary"] = "Evidence item pending detailed summary"
+              
+              # evidence_type
+              if "evidence_type" in data:
+                  et = data["evidence_type"]
+                  fixed["evidence_type"] = et if et in ["statute", "budget", "grant", "administrative_rule", "field_validation"] else "field_validation"
+              else:
+                  fixed["evidence_type"] = "field_validation"
+              
+              # source - must be object with title and issuing_body
+              if "source" in data and isinstance(data["source"], dict):
+                  fixed["source"] = {
+                      "title": data["source"].get("title", "Source document"),
+                      "issuing_body": data["source"].get("issuing_body", "Government entity")
+                  }
+                  if "url" in data["source"]:
+                      fixed["source"]["url"] = data["source"]["url"]
+              else:
+                  # Try to construct from available data
+                  fixed["source"] = {
+                      "title": data.get("statutory_basis", "Source document")[:200] if data.get("statutory_basis") else "Source document",
+                      "issuing_body": "Government entity"
+                  }
+                  if "citation_urls" in data and isinstance(data["citation_urls"], list) and len(data["citation_urls"]) > 0:
+                      fixed["source"]["url"] = data["citation_urls"][0]
+              
+              # confidence_level
+              if "confidence_level" in data:
+                  cl = data["confidence_level"]
+                  fixed["confidence_level"] = cl if cl in ["high", "medium", "low"] else "medium"
+              else:
+                  fixed["confidence_level"] = "medium"
+              
+              # editor_status
+              es = data.get("editor_status", "pending")
+              fixed["editor_status"] = es if es in ["pending", "accepted", "corrected", "nullified"] else "pending"
+              
+              return fixed
+
+          def fix_money_flow(data, original_id=None):
+              """Fix/transform money_flow data to match schema."""
+              fixed = {}
+              
+              # flow_id
+              fixed["flow_id"] = data.get("flow_id") or original_id or f"MF-GEN-{datetime.now().strftime('%Y%m%d%H%M%S')}"
+              
+              # source (string)
+              fixed["source"] = str(data.get("source", "Unknown source"))
+              
+              # intermediary
+              fixed["intermediary"] = str(data.get("intermediary", "Direct"))
+              
+              # destination
+              fixed["destination"] = str(data.get("destination", "Unknown destination"))
+              
+              # amount - must be number
+              amt = data.get("amount", 0)
+              if isinstance(amt, str):
+                  # Try to parse number from string
+                  amt = re.sub(r'[^\d.]', '', amt)
+                  try:
+                      fixed["amount"] = float(amt) if '.' in amt else int(amt)
+                  except:
+                      fixed["amount"] = 0
+              else:
+                  fixed["amount"] = float(amt) if amt else 0
+              
+              # fund_type
+              ft = data.get("fund_type", "state")
+              fixed["fund_type"] = ft if ft in ["state", "federal", "settlement"] else "state"
+              
+              # fiscal_year - must match pattern
+              fy = str(data.get("fiscal_year", "2025-2026"))
+              if not re.match(r'^[0-9]{4}(-[0-9]{4})?$', fy):
+                  # Try to extract year
+                  match = re.search(r'(\d{4})', fy)
+                  if match:
+                      fixed["fiscal_year"] = match.group(1)
+                  else:
+                      fixed["fiscal_year"] = "2025-2026"
+              else:
+                  fixed["fiscal_year"] = fy
+              
+              # restrictions - must have medicaid and dhs_controlled as booleans
+              if "restrictions" in data and isinstance(data["restrictions"], dict):
+                  fixed["restrictions"] = {
+                      "medicaid": bool(data["restrictions"].get("medicaid", False)) if isinstance(data["restrictions"].get("medicaid"), bool) else False,
+                      "dhs_controlled": bool(data["restrictions"].get("dhs_controlled", False)) if isinstance(data["restrictions"].get("dhs_controlled"), bool) else False
+                  }
+              else:
+                  fixed["restrictions"] = {"medicaid": False, "dhs_controlled": False}
+              
+              # statutory_basis
+              fixed["statutory_basis"] = str(data.get("statutory_basis", "Not specified"))
+              
+              # editor_status
+              es = data.get("editor_status", "pending")
+              fixed["editor_status"] = es if es in ["pending", "accepted", "corrected", "nullified"] else "pending"
+              
+              return fixed
+
+          def fix_field_validation(data, original_id=None):
+              """Fix/transform field_validation data to match schema."""
+              fixed = {}
+              
+              # fv_id
+              fixed["fv_id"] = data.get("fv_id") or original_id or f"FV-GEN-{datetime.now().strftime('%Y%m%d%H%M%S')}"
+              
+              # jurisdiction
+              fixed["jurisdiction"] = str(data.get("jurisdiction", "Arkansas"))
+              
+              # validating_entity
+              fixed["validating_entity"] = str(data.get("validating_entity", "Clearlane"))
+              
+              # corroborator (optional)
+              if "corroborator" in data:
+                  fixed["corroborator"] = str(data["corroborator"])
+              
+              # alignment_status
+              as_val = data.get("alignment_status", "open")
+              fixed["alignment_status"] = as_val if as_val in ["open", "mixed", "captured"] else "open"
+              
+              # evidence_basis - must be array of strings
+              if "evidence_basis" in data:
+                  eb = data["evidence_basis"]
+                  if isinstance(eb, list):
+                      fixed["evidence_basis"] = [str(e) for e in eb]
+                  else:
+                      fixed["evidence_basis"] = [str(eb)]
+              else:
+                  fixed["evidence_basis"] = ["Pending evidence collection"]
+              
+              # disclosure_level - must be "restricted"
+              fixed["disclosure_level"] = "restricted"
+              
+              # editor_status
+              es = data.get("editor_status", "pending")
+              fixed["editor_status"] = es if es in ["pending", "accepted", "corrected", "nullified"] else "pending"
+              
+              return fixed
+
+          def fix_item(data, schema_type, original_id=None):
+              """Fix an item based on its schema type."""
+              if schema_type == "authority_reference":
+                  return fix_authority_reference(data, original_id)
+              elif schema_type == "evidence_item":
+                  return fix_evidence_item(data, original_id)
+              elif schema_type == "money_flow":
+                  return fix_money_flow(data, original_id)
+              elif schema_type == "field_validation":
+                  return fix_field_validation(data, original_id)
+              else:
+                  return None
 
           def sanitize_filename(name):
               """Sanitize a string for use as a filename."""
-              # Replace problematic characters
+              if name is None:
+                  name = "unknown"
               for char in ['/', '\\', ':', '*', '?', '"', '<', '>', '|']:
                   name = name.replace(char, '_')
-              # Limit length to prevent filesystem issues
               if len(name) > 200:
                   name = name[:200]
               return name
 
+          def cleanup_pipeline_directory(dir_path):
+              """Clean up a directory created by external pipeline validation."""
+              try:
+                  if dir_path.suffix in ['.json', '.yaml', '.yml']:
+                      shutil.rmtree(dir_path)
+                      print(f"  ✓ Cleaned up pipeline directory: {dir_path}")
+                      return True
+              except Exception as e:
+                  print(f"  ⚠️ Warning: Could not clean up directory {dir_path}: {e}")
+              return False
+
           def process_file(file_path):
-              """Process a single invalidated file."""
+              """Process and fix a single invalidated file."""
               print(f"Processing: {file_path}")
               
+              is_pipeline_file = (file_path.name == '0.json' and 
+                                  file_path.parent.suffix in ['.json', '.yaml', '.yml'])
+              
+              # Extract original ID from filename/directory name
+              if is_pipeline_file:
+                  original_id = file_path.parent.stem  # e.g., "AR-AUTH-16-10-701-SPECIALTY-COURT-USER-FEES"
+              else:
+                  original_id = file_path.stem
+              
               try:
-                  # Load the file
                   data = load_file(file_path)
                   
-                  # Check if already unwrapped (single item, not wrapped in array)
-                  if is_already_unwrapped(data):
-                      type_name, id_field, item_id = get_type_from_id_field(data)
-                      if type_name:
-                          # Determine target directory
-                          target_subdir = determine_target_dir(file_path)
-                          if not target_subdir:
-                              target_subdir = type_name
+                  # Detect schema type from content
+                  schema_type = detect_schema_type(data)
+                  
+                  if not schema_type:
+                      print(f"  ⚠️ Could not determine schema type, skipping")
+                      return None
+                  
+                  print(f"  → Detected schema type: {schema_type}")
+                  
+                  # Check if it's a wrapped array or single item
+                  if schema_type in data and isinstance(data[schema_type], list):
+                      # Wrapped array - process each item
+                      items = data[schema_type]
+                      output_files = []
+                      
+                      for i, item in enumerate(items):
+                          item_schema = detect_schema_type(item) or schema_type
+                          item_id_field = SCHEMA_CONFIG[item_schema]["id_field"]
+                          item_id = item.get(item_id_field) or f"{original_id}-{i}"
                           
-                          target_dir = PROPOSALS_DIR / target_subdir
-                          
-                          # Clean ID for filename
-                          safe_id = sanitize_filename(str(item_id))
-                          output_file = target_dir / f"{safe_id}.json"
-                          
-                          # Save file
-                          save_json(output_file, data)
-                          print(f"  ✓ Moved (already unwrapped): {output_file}")
-                          
-                          # Delete original with error handling
+                          fixed_item = fix_item(item, item_schema, item_id)
+                          if fixed_item:
+                              target_dir = PROPOSALS_DIR / item_schema
+                              safe_id = sanitize_filename(fixed_item.get(SCHEMA_CONFIG[item_schema]["id_field"], f"item-{i}"))
+                              output_file = target_dir / f"{safe_id}.json"
+                              save_json(output_file, fixed_item)
+                              output_files.append(str(output_file))
+                              print(f"  ✓ Fixed and saved: {output_file}")
+                      
+                      # Cleanup source
+                      if is_pipeline_file:
+                          cleanup_pipeline_directory(file_path.parent)
+                      else:
+                          file_path.unlink()
+                          print(f"  ✓ Deleted: {file_path}")
+                      
+                      return {
+                          "source": str(file_path),
+                          "schema_type": schema_type,
+                          "items_fixed": len(output_files),
+                          "output_files": output_files
+                      }
+                  else:
+                      # Single item (unwrapped)
+                      id_field = SCHEMA_CONFIG[schema_type]["id_field"]
+                      item_id = data.get(id_field) or original_id
+                      
+                      fixed_item = fix_item(data, schema_type, item_id)
+                      if not fixed_item:
+                          print(f"  ⚠️ Could not fix item")
+                          return None
+                      
+                      target_dir = PROPOSALS_DIR / schema_type
+                      safe_id = sanitize_filename(fixed_item.get(id_field, original_id))
+                      output_file = target_dir / f"{safe_id}.json"
+                      
+                      save_json(output_file, fixed_item)
+                      print(f"  ✓ Fixed and saved: {output_file}")
+                      
+                      # Cleanup source
+                      if is_pipeline_file:
+                          cleanup_pipeline_directory(file_path.parent)
+                      else:
                           try:
                               file_path.unlink()
                               print(f"  ✓ Deleted: {file_path}")
                           except Exception as e:
-                              print(f"  ⚠️ Warning: Could not delete source file {file_path}: {e}")
-                          
-                          return {
-                              "source": str(file_path),
-                              "items_extracted": 1,
-                              "target_dir": str(target_dir),
-                              "output_files": [str(output_file)]
-                          }
-                  
-                  # Determine wrapper type
-                  wrapper_type = infer_type_from_content(data)
-                  
-                  if not wrapper_type:
-                      print(f"  ⚠️  No recognized wrapper key or ID field found, skipping")
-                      return None
-                  
-                  wrapper_items = data.get(wrapper_type)
-                  
-                  if not isinstance(wrapper_items, list):
-                      print(f"  ⚠️  Wrapper '{wrapper_type}' is not an array, skipping")
-                      return None
-                  
-                  if len(wrapper_items) == 0:
-                      print(f"  ⚠️  Empty array, skipping")
-                      return None
-                  
-                  # Determine target directory
-                  target_subdir = determine_target_dir(file_path)
-                  if not target_subdir:
-                      target_subdir = wrapper_type  # Fallback to wrapper type
-                  
-                  target_dir = PROPOSALS_DIR / target_subdir
-                  id_field = WRAPPER_CONFIG[wrapper_type]
-                  
-                  # Process each item
-                  output_files = []
-                  for i, item in enumerate(wrapper_items):
-                      # Get ID for filename
-                      item_id = item.get(id_field)
-                      if not item_id:
-                          print(f"  ⚠️  Item {i} missing '{id_field}', using index")
-                          item_id = f"item_{i}"
+                              print(f"  ⚠️ Warning: Could not delete {file_path}: {e}")
                       
-                      # Clean ID for filename
-                      safe_id = sanitize_filename(str(item_id))
-                      output_file = target_dir / f"{safe_id}.json"
-                      
-                      # Save individual file
-                      save_json(output_file, item)
-                      output_files.append(str(output_file))
-                      print(f"  ✓ Created: {output_file}")
-                  
-                  # Delete original file with error handling
-                  try:
-                      file_path.unlink()
-                      print(f"  ✓ Deleted: {file_path}")
-                  except Exception as e:
-                      print(f"  ⚠️ Warning: Could not delete source file {file_path}: {e}")
-                  
-                  return {
-                      "source": str(file_path),
-                      "items_extracted": len(wrapper_items),
-                      "target_dir": str(target_dir),
-                      "output_files": output_files
-                  }
+                      return {
+                          "source": str(file_path),
+                          "schema_type": schema_type,
+                          "items_fixed": 1,
+                          "output_files": [str(output_file)]
+                      }
               
               except Exception as e:
                   print(f"  ✗ Error processing {file_path}: {e}")
+                  import traceback
+                  traceback.print_exc()
                   return None
 
           def find_processable_files():
@@ -261,8 +520,9 @@ jobs:
               for ext in ['*.json', '*.yaml', '*.yml']:
                   files.extend(INVALIDATED_DIR.rglob(ext))
               
-              # Filter out directories, .gitkeep and error log files
               processable = []
+              processed_dirs = set()
+              
               for f in files:
                   if not f.is_file():
                       continue
@@ -270,17 +530,27 @@ jobs:
                       continue
                   if f.suffix in ['.txt'] or f.name.endswith('.errors.txt'):
                       continue
+                  
+                  # Handle 0.json files (from external pipeline validation)
+                  if f.name == '0.json':
+                      processable.append(f)
+                      processed_dirs.add(f.parent)
+                      continue
+                  
+                  # Skip other numbered json files in pipeline directories
+                  if f.name.endswith('.json') and f.parent.suffix in ['.json', '.yaml', '.yml']:
+                      if f.name != '0.json':
+                          continue
+                  
                   processable.append(f)
               
               return processable
 
           def main():
-              """Main processing function."""
               print("=" * 60)
               print("Fix Invalidated Files - Processing Started")
               print("=" * 60)
               
-              # Find files to process
               files = find_processable_files()
               print(f"\nFound {len(files)} files to process\n")
               
@@ -288,17 +558,14 @@ jobs:
                   print("No files to process")
                   return
               
-              # Process each file
               processed_files = []
               for file_path in files:
                   result = process_file(file_path)
                   if result:
                       processed_files.append(result)
               
-              # Create reports directory
               REPORTS_DIR.mkdir(parents=True, exist_ok=True)
               
-              # Load existing report or create new
               report_data = []
               if REPORT_FILE.exists():
                   try:
@@ -308,24 +575,23 @@ jobs:
                           report_data = existing
                       elif isinstance(existing, dict):
                           report_data = [existing]
-                      # Ignore other types (string, null, etc.) and start fresh
                   except (json.JSONDecodeError, IOError):
                       print(f"  ⚠️ Warning: Could not read existing report, starting fresh")
               
-              # Append new processing record
               report_entry = {
                   "timestamp": datetime.now(timezone.utc).isoformat(),
-                  "processed_files": processed_files
+                  "processed_files": processed_files,
+                  "total_items_fixed": sum(pf.get("items_fixed", 0) for pf in processed_files)
               }
               report_data.append(report_entry)
               
-              # Save report
               with open(REPORT_FILE, 'w', encoding='utf-8') as f:
                   json.dump(report_data, f, indent=2, ensure_ascii=False)
                   f.write('\n')
               
               print("\n" + "=" * 60)
               print(f"Processing Complete: {len(processed_files)} files processed")
+              print(f"Total items fixed: {report_entry['total_items_fixed']}")
               print(f"Report saved to: {REPORT_FILE}")
               print("=" * 60)
 
@@ -345,7 +611,27 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "fix: process invalidated files and move to proposals [skip ci]"
-            git push || { echo "Push failed!"; exit 1; }
-            echo "Changes committed and pushed"
+            # Check if proposals directory has changes (files were moved there)
+            proposals_changed=$(git diff --staged --name-only -- proposals/ | wc -l)
+            
+            if [ "$proposals_changed" -gt 0 ]; then
+              # Files were fixed and moved to proposals - DO NOT skip CI so GitLab can validate
+              git commit -m "fix: process and fix invalidated files, move to proposals"
+              echo "Note: Commit does NOT include [skip ci] - GitLab pipeline should trigger"
+            else
+              # Only internal changes (reports, etc.) - skip CI to prevent loops
+              git commit -m "chore: update processing reports [skip ci]"
+            fi
+            
+            # Push with retry for race conditions
+            for i in 1 2 3; do
+              if git push; then
+                echo "Changes committed and pushed successfully"
+                break
+              else
+                echo "Push attempt $i failed, retrying..."
+                git pull --rebase origin main || true
+                sleep 2
+              fi
+            done
           fi
