@@ -6,6 +6,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: fix-invalidated-files
+  cancel-in-progress: false
+
 jobs:
   process-invalidated-files:
     name: Process and Fix Invalidated Files
@@ -25,31 +29,10 @@ jobs:
       - name: Install dependencies
         run: pip install pyyaml jsonschema
       
-      - name: Check for files to process
-        id: check_files
-        run: |
-          # Find processable files (exclude .gitkeep and error logs)
-          # Also check for directories with .json/.yaml names containing 0.json (external pipeline structure)
-          file_count=$(find invalidated/ -type f \( -name "*.json" -o -name "*.yaml" -o -name "*.yml" \) \
-            ! -name ".gitkeep" ! -name "*.txt" ! -name "*.errors.txt" ! -name "0.json" 2>/dev/null | wc -l)
-          
-          # Also count directories that contain 0.json (external pipeline validation results)
-          dir_count=$(find invalidated/ -type f -name "0.json" 2>/dev/null | wc -l)
-          
-          total_count=$((file_count + dir_count))
-          
-          if [ "$total_count" -gt 0 ]; then
-            echo "has_files=true" >> $GITHUB_OUTPUT
-            echo "Found $file_count files and $dir_count pipeline directories to process"
-          else
-            echo "has_files=false" >> $GITHUB_OUTPUT
-            echo "No files to process"
-          fi
-      
       - name: Process and fix invalidated files
-        if: steps.check_files.outputs.has_files == 'true'
+        id: process
         run: |
-          python3 << 'EOF'
+          python3 << 'PYTHON_SCRIPT'
           import os
           import json
           import yaml
@@ -62,10 +45,12 @@ jobs:
           INVALIDATED_DIR = Path("invalidated")
           PROPOSALS_DIR = Path("proposals")
           REPORTS_DIR = Path("reports")
+          ACTIONS_LOG_DIR = REPORTS_DIR / "actions"
           SCHEMAS_DIR = Path("schemas")
-          REPORT_FILE = REPORTS_DIR / "invalidated-fixes.json"
+          ARTIFACTS_DIR = Path("artifacts")
+          PROCESSED_DIR = Path("processed")
 
-          # Schema configuration with required fields and ID fields
+          # Schema configuration
           SCHEMA_CONFIG = {
               "evidence_item": {
                   "id_field": "evidence_id",
@@ -95,30 +80,123 @@ jobs:
               }
           }
 
-          def load_file(file_path):
-              """Load JSON or YAML file."""
+          class RunLog:
+              """Manages detailed run logging."""
+              def __init__(self):
+                  self.timestamp = datetime.now(timezone.utc)
+                  self.timestamp_str = self.timestamp.strftime("%Y-%m-%dT%H-%M-%S")
+                  self.before_state = {}
+                  self.processed_files = []
+                  self.deleted_files = []
+                  self.deleted_dirs = []
+                  self.created_files = []
+                  self.errors = []
+                  self.reconciliation = {}
+              
+              def capture_before_state(self):
+                  """Capture complete inventory of invalidated/ before processing."""
+                  self.before_state = {
+                      "captured_at": self.timestamp.isoformat(),
+                      "directories": {},
+                      "total_files": 0,
+                      "total_dirs": 0
+                  }
+                  
+                  if not INVALIDATED_DIR.exists():
+                      return
+                  
+                  for schema_type in ["evidence_item", "money_flow", "field_validation", "authority_reference"]:
+                      subdir = INVALIDATED_DIR / schema_type
+                      if subdir.exists():
+                          dir_info = {
+                              "files": [],
+                              "subdirectories": {}
+                          }
+                          for item in subdir.iterdir():
+                              if item.is_file():
+                                  if item.name != ".gitkeep":
+                                      dir_info["files"].append({
+                                          "name": item.name,
+                                          "size": item.stat().st_size,
+                                          "modified": datetime.fromtimestamp(item.stat().st_mtime, tz=timezone.utc).isoformat()
+                                      })
+                                      self.before_state["total_files"] += 1
+                              elif item.is_dir():
+                                  subdir_files = []
+                                  for f in item.rglob("*"):
+                                      if f.is_file():
+                                          subdir_files.append({
+                                              "path": str(f.relative_to(item)),
+                                              "size": f.stat().st_size
+                                          })
+                                          self.before_state["total_files"] += 1
+                                  dir_info["subdirectories"][item.name] = {
+                                      "files": subdir_files,
+                                      "file_count": len(subdir_files)
+                                  }
+                                  self.before_state["total_dirs"] += 1
+                          self.before_state["directories"][schema_type] = dir_info
+              
+              def save(self):
+                  """Save run log to reports/actions/."""
+                  ACTIONS_LOG_DIR.mkdir(parents=True, exist_ok=True)
+                  
+                  log_data = {
+                      "run_timestamp": self.timestamp.isoformat(),
+                      "before_state": self.before_state,
+                      "summary": {
+                          "files_processed": len(self.processed_files),
+                          "files_created": len(self.created_files),
+                          "files_deleted": len(self.deleted_files),
+                          "directories_deleted": len(self.deleted_dirs),
+                          "errors": len(self.errors)
+                      },
+                      "processed_files": self.processed_files,
+                      "created_files": self.created_files,
+                      "deleted_files": self.deleted_files,
+                      "deleted_directories": self.deleted_dirs,
+                      "errors": self.errors,
+                      "reconciliation": self.reconciliation
+                  }
+                  
+                  log_file = ACTIONS_LOG_DIR / f"run_log_{self.timestamp_str}.json"
+                  with open(log_file, 'w', encoding='utf-8') as f:
+                      json.dump(log_data, f, indent=2, ensure_ascii=False)
+                      f.write('\n')
+                  
+                  print(f"\n📋 Run log saved to: {log_file}")
+                  return log_file
+
+          def load_yaml_multi_doc(file_path):
+              """Load YAML file that may contain multiple documents (--- separators)."""
               with open(file_path, 'r', encoding='utf-8') as f:
                   content = f.read()
               
-              if file_path.suffix.lower() == '.json':
-                  return json.loads(content)
-              else:
+              documents = []
+              try:
+                  for doc in yaml.safe_load_all(content):
+                      if doc is not None:
+                          documents.append(doc)
+              except yaml.YAMLError as e:
+                  print(f"  ⚠️ YAML parse error, attempting recovery: {e}")
+                  # Try single document load
                   try:
-                      return yaml.safe_load(content)
-                  except yaml.YAMLError:
-                      lines = content.split('\n')
-                      fixed_lines = []
-                      for line in lines:
-                          if ': ' in line and line.count(':') > 1:
-                              key_end = line.index(': ') + 2
-                              key = line[:key_end]
-                              value = line[key_end:]
-                              if value and not value.startswith('"') and not value.startswith("'"):
-                                  value = '"' + value.replace('"', '\\"') + '"'
-                              fixed_lines.append(key + value)
-                          else:
-                              fixed_lines.append(line)
-                      return yaml.safe_load('\n'.join(fixed_lines))
+                      doc = yaml.safe_load(content)
+                      if doc:
+                          documents.append(doc)
+                  except (yaml.YAMLError, ValueError):
+                      pass
+              
+              return documents
+
+          def load_file(file_path):
+              """Load JSON or YAML file, returning list of documents."""
+              if file_path.suffix.lower() == '.json':
+                  with open(file_path, 'r', encoding='utf-8') as f:
+                      data = json.load(f)
+                  return [data] if not isinstance(data, list) else data
+              else:
+                  return load_yaml_multi_doc(file_path)
 
           def save_json(file_path, data):
               """Save data as pretty-printed JSON."""
@@ -129,11 +207,13 @@ jobs:
 
           def detect_schema_type(data):
               """Detect the schema type from content."""
-              # Check explicit schema field
-              if 'schema' in data:
-                  schema_val = data['schema']
-                  if schema_val in SCHEMA_CONFIG:
-                      return schema_val
+              if not isinstance(data, dict):
+                  return None
+              
+              # Check for wrapper keys first (money_flow: { ... })
+              for wrapper_key in SCHEMA_CONFIG:
+                  if wrapper_key in data and isinstance(data[wrapper_key], dict):
+                      return wrapper_key
               
               # Check for ID fields
               id_to_type = {
@@ -146,61 +226,39 @@ jobs:
                   if id_field in data:
                       return schema_type
               
-              # Check for wrapper keys
-              for wrapper_key in SCHEMA_CONFIG:
-                  if wrapper_key in data:
-                      return wrapper_key
+              # Check explicit schema field
+              if 'schema' in data and data['schema'] in SCHEMA_CONFIG:
+                  return data['schema']
               
               return None
 
+          def detect_schema_from_path(file_path):
+              """Detect schema type from file path."""
+              path_str = str(file_path).lower()
+              for schema_type in SCHEMA_CONFIG:
+                  if schema_type in path_str:
+                      return schema_type
+              return None
+
           def fix_authority_reference(data, original_id=None):
-              """Fix/transform authority_reference data to match schema."""
+              """Fix authority_reference data."""
               fixed = {}
-              
-              # Required fields
               fixed["authority_id"] = data.get("authority_id") or original_id or f"AR-GEN-{datetime.now().strftime('%Y%m%d%H%M%S')}"
               
-              # authority_type - infer from statute field or default
               if "authority_type" in data:
                   at = data["authority_type"]
                   fixed["authority_type"] = at if at in ["statute", "regulation", "policy"] else "statute"
-              elif "statute" in data:
-                  fixed["authority_type"] = "statute"
               else:
                   fixed["authority_type"] = "statute"
               
-              # citation - use statute field or generate
-              if "citation" in data:
-                  fixed["citation"] = data["citation"]
-              elif "statute" in data:
-                  fixed["citation"] = data["statute"]
-              else:
-                  fixed["citation"] = f"See {fixed['authority_id']}"
+              fixed["citation"] = data.get("citation") or data.get("statute") or f"See {fixed['authority_id']}"
               
-              # administering_body - must be string, not array
-              if "administering_body" in data:
-                  ab = data["administering_body"]
-                  if isinstance(ab, list):
-                      fixed["administering_body"] = ", ".join(ab)
-                  else:
-                      fixed["administering_body"] = str(ab)
-              else:
-                  fixed["administering_body"] = "Unknown"
+              ab = data.get("administering_body", "Unknown")
+              fixed["administering_body"] = ", ".join(ab) if isinstance(ab, list) else str(ab)
               
-              # governs - must be array of strings
-              if "governs" in data:
-                  gov = data["governs"]
-                  if isinstance(gov, list):
-                      fixed["governs"] = [str(g) for g in gov]
-                  else:
-                      fixed["governs"] = [str(gov)]
-              elif "description" in data:
-                  # Extract key topics from description
-                  fixed["governs"] = [data["description"][:100] + "..." if len(data.get("description", "")) > 100 else data.get("description", "General governance")]
-              else:
-                  fixed["governs"] = ["General governance"]
+              gov = data.get("governs", ["General governance"])
+              fixed["governs"] = [str(g) for g in gov] if isinstance(gov, list) else [str(gov)]
               
-              # effects - must have access_limiting and appeal_mechanism as booleans
               if "effects" in data and isinstance(data["effects"], dict):
                   fixed["effects"] = {
                       "access_limiting": bool(data["effects"].get("access_limiting", False)),
@@ -209,48 +267,27 @@ jobs:
               else:
                   fixed["effects"] = {"access_limiting": False, "appeal_mechanism": False}
               
-              # editor_status
               es = data.get("editor_status", "pending")
               fixed["editor_status"] = es if es in ["pending", "accepted", "corrected", "nullified"] else "pending"
               
               return fixed
 
           def fix_evidence_item(data, original_id=None):
-              """Fix/transform evidence_item data to match schema."""
+              """Fix evidence_item data."""
               fixed = {}
-              
-              # evidence_id
               fixed["evidence_id"] = data.get("evidence_id") or original_id or f"EV-GEN-{datetime.now().strftime('%Y%m%d%H%M%S')}"
               
-              # section - extract from evidence_id or default
               if "section" in data:
                   fixed["section"] = data["section"]
               else:
-                  # Try to extract section from evidence_id pattern
-                  match = re.search(r'EV-([A-Z]+)-', str(data.get("evidence_id", "")))
-                  if match:
-                      fixed["section"] = match.group(1).lower()
-                  else:
-                      fixed["section"] = "general"
+                  match = re.search(r'EV-([A-Z]+)-', str(fixed["evidence_id"]))
+                  fixed["section"] = match.group(1).lower() if match else "general"
               
-              # claim_summary - use statement or description
-              if "claim_summary" in data:
-                  fixed["claim_summary"] = data["claim_summary"]
-              elif "statement" in data:
-                  fixed["claim_summary"] = data["statement"]
-              elif "description" in data:
-                  fixed["claim_summary"] = data["description"][:500] if len(data.get("description", "")) > 500 else data.get("description", "")
-              else:
-                  fixed["claim_summary"] = "Evidence item pending detailed summary"
+              fixed["claim_summary"] = data.get("claim_summary") or data.get("statement") or data.get("description", "Evidence item pending detailed summary")[:500]
               
-              # evidence_type
-              if "evidence_type" in data:
-                  et = data["evidence_type"]
-                  fixed["evidence_type"] = et if et in ["statute", "budget", "grant", "administrative_rule", "field_validation"] else "field_validation"
-              else:
-                  fixed["evidence_type"] = "field_validation"
+              et = data.get("evidence_type", "field_validation")
+              fixed["evidence_type"] = et if et in ["statute", "budget", "grant", "administrative_rule", "field_validation"] else "field_validation"
               
-              # source - must be object with title and issuing_body
               if "source" in data and isinstance(data["source"], dict):
                   fixed["source"] = {
                       "title": data["source"].get("title", "Source document"),
@@ -259,75 +296,45 @@ jobs:
                   if "url" in data["source"]:
                       fixed["source"]["url"] = data["source"]["url"]
               else:
-                  # Try to construct from available data
-                  fixed["source"] = {
-                      "title": data.get("statutory_basis", "Source document")[:200] if data.get("statutory_basis") else "Source document",
-                      "issuing_body": "Government entity"
-                  }
-                  if "citation_urls" in data and isinstance(data["citation_urls"], list) and len(data["citation_urls"]) > 0:
-                      fixed["source"]["url"] = data["citation_urls"][0]
+                  fixed["source"] = {"title": "Source document", "issuing_body": "Government entity"}
               
-              # confidence_level
-              if "confidence_level" in data:
-                  cl = data["confidence_level"]
-                  fixed["confidence_level"] = cl if cl in ["high", "medium", "low"] else "medium"
-              else:
-                  fixed["confidence_level"] = "medium"
+              cl = data.get("confidence_level", "medium")
+              fixed["confidence_level"] = cl if cl in ["high", "medium", "low"] else "medium"
               
-              # editor_status
               es = data.get("editor_status", "pending")
               fixed["editor_status"] = es if es in ["pending", "accepted", "corrected", "nullified"] else "pending"
               
               return fixed
 
           def fix_money_flow(data, original_id=None):
-              """Fix/transform money_flow data to match schema."""
+              """Fix money_flow data."""
               fixed = {}
-              
-              # flow_id
               fixed["flow_id"] = data.get("flow_id") or original_id or f"MF-GEN-{datetime.now().strftime('%Y%m%d%H%M%S')}"
-              
-              # source (string)
               fixed["source"] = str(data.get("source", "Unknown source"))
-              
-              # intermediary
-              fixed["intermediary"] = str(data.get("intermediary", "Direct"))
-              
-              # destination
+              fixed["intermediary"] = str(data.get("intermediary") or "Direct")
               fixed["destination"] = str(data.get("destination", "Unknown destination"))
               
-              # amount - must be number
               amt = data.get("amount", 0)
               if isinstance(amt, str):
-                  # Try to parse number from string
                   amt = re.sub(r'[^\d.]', '', amt)
                   try:
-                      fixed["amount"] = float(amt) if '.' in amt else int(amt)
+                      fixed["amount"] = float(amt) if '.' in str(amt) else int(amt or 0)
                   except:
                       fixed["amount"] = 0
               else:
                   fixed["amount"] = float(amt) if amt else 0
               
-              # fund_type
               ft = data.get("fund_type", "state")
               fixed["fund_type"] = ft if ft in ["state", "federal", "settlement"] else "state"
               
-              # fiscal_year - must match pattern
               fy = str(data.get("fiscal_year", "2025-2026"))
               if not re.match(r'^[0-9]{4}(-[0-9]{4})?$', fy):
-                  # Try to extract year
                   match = re.search(r'(\d{4})', fy)
-                  if match:
-                      fixed["fiscal_year"] = match.group(1)
-                  else:
-                      fixed["fiscal_year"] = "2025-2026"
+                  fixed["fiscal_year"] = match.group(1) if match else "2025-2026"
               else:
                   fixed["fiscal_year"] = fy
               
-              # restrictions - must have medicaid and dhs_controlled as booleans
               if "restrictions" in data and isinstance(data["restrictions"], dict):
-                  # Only use values that are already booleans, otherwise default to False
-                  # This handles cases like dhs_controlled: "conditional (operational/staffing only)"
                   med = data["restrictions"].get("medicaid")
                   dhs = data["restrictions"].get("dhs_controlled")
                   fixed["restrictions"] = {
@@ -337,50 +344,31 @@ jobs:
               else:
                   fixed["restrictions"] = {"medicaid": False, "dhs_controlled": False}
               
-              # statutory_basis
               fixed["statutory_basis"] = str(data.get("statutory_basis", "Not specified"))
               
-              # editor_status
               es = data.get("editor_status", "pending")
               fixed["editor_status"] = es if es in ["pending", "accepted", "corrected", "nullified"] else "pending"
               
               return fixed
 
           def fix_field_validation(data, original_id=None):
-              """Fix/transform field_validation data to match schema."""
+              """Fix field_validation data."""
               fixed = {}
-              
-              # fv_id
               fixed["fv_id"] = data.get("fv_id") or original_id or f"FV-GEN-{datetime.now().strftime('%Y%m%d%H%M%S')}"
-              
-              # jurisdiction
               fixed["jurisdiction"] = str(data.get("jurisdiction", "Arkansas"))
-              
-              # validating_entity
               fixed["validating_entity"] = str(data.get("validating_entity", "Clearlane"))
               
-              # corroborator (optional)
               if "corroborator" in data:
                   fixed["corroborator"] = str(data["corroborator"])
               
-              # alignment_status
               as_val = data.get("alignment_status", "open")
               fixed["alignment_status"] = as_val if as_val in ["open", "mixed", "captured"] else "open"
               
-              # evidence_basis - must be array of strings
-              if "evidence_basis" in data:
-                  eb = data["evidence_basis"]
-                  if isinstance(eb, list):
-                      fixed["evidence_basis"] = [str(e) for e in eb]
-                  else:
-                      fixed["evidence_basis"] = [str(eb)]
-              else:
-                  fixed["evidence_basis"] = ["Pending evidence collection"]
+              eb = data.get("evidence_basis", ["Pending evidence collection"])
+              fixed["evidence_basis"] = [str(e) for e in eb] if isinstance(eb, list) else [str(eb)]
               
-              # disclosure_level - must be "restricted"
               fixed["disclosure_level"] = "restricted"
               
-              # editor_status
               es = data.get("editor_status", "pending")
               fixed["editor_status"] = es if es in ["pending", "accepted", "corrected", "nullified"] else "pending"
               
@@ -388,6 +376,10 @@ jobs:
 
           def fix_item(data, schema_type, original_id=None):
               """Fix an item based on its schema type."""
+              # If data is wrapped (e.g., {money_flow: {...}}), unwrap it
+              if schema_type in data and isinstance(data[schema_type], dict):
+                  data = data[schema_type]
+              
               if schema_type == "authority_reference":
                   return fix_authority_reference(data, original_id)
               elif schema_type == "evidence_item":
@@ -396,246 +388,314 @@ jobs:
                   return fix_money_flow(data, original_id)
               elif schema_type == "field_validation":
                   return fix_field_validation(data, original_id)
-              else:
-                  return None
+              return None
 
           def sanitize_filename(name):
               """Sanitize a string for use as a filename."""
               if name is None:
                   name = "unknown"
+              name = str(name)
               for char in ['/', '\\', ':', '*', '?', '"', '<', '>', '|']:
                   name = name.replace(char, '_')
-              if len(name) > 200:
-                  name = name[:200]
-              return name
+              return name[:200] if len(name) > 200 else name
 
-          def cleanup_pipeline_directory(dir_path):
-              """Clean up a directory created by external pipeline validation."""
-              try:
-                  if dir_path.suffix in ['.json', '.yaml', '.yml']:
-                      shutil.rmtree(dir_path)
-                      print(f"  ✓ Cleaned up pipeline directory: {dir_path}")
-                      return True
-              except Exception as e:
-                  print(f"  ⚠️ Warning: Could not clean up directory {dir_path}: {e}")
-              return False
+          def find_processable_sources():
+              """Find all source files in invalidated directory."""
+              sources = []
+              
+              if not INVALIDATED_DIR.exists():
+                  return sources
+              
+              for schema_type in SCHEMA_CONFIG.keys():
+                  subdir = INVALIDATED_DIR / schema_type
+                  if not subdir.exists():
+                      continue
+                  
+                  for item in subdir.iterdir():
+                      if item.is_file():
+                          if item.name != ".gitkeep" and item.suffix in ['.yaml', '.yml', '.json']:
+                              sources.append(item)
+                      elif item.is_dir():
+                          # GitLab creates dirs like "MF-AR-BATCH-130-1.yaml/" containing source.yaml
+                          source_yaml = item / "source.yaml"
+                          if source_yaml.exists():
+                              sources.append(source_yaml)
+                          # Also check for 0.json
+                          zero_json = item / "0.json"
+                          if zero_json.exists():
+                              sources.append(zero_json)
+              
+              return sources
 
-          def process_file(file_path):
-              """Process and fix a single invalidated file."""
-              print(f"Processing: {file_path}")
+          def process_source(file_path, run_log):
+              """Process a single source file."""
+              print(f"\n📄 Processing: {file_path}")
               
-              is_pipeline_file = (file_path.name == '0.json' and 
-                                  file_path.parent.suffix in ['.json', '.yaml', '.yml'])
+              # Determine if this is inside a GitLab-created directory
+              parent_is_gitlab_dir = file_path.parent.suffix in ['.yaml', '.yml', '.json']
               
-              # Extract original ID from filename/directory name
-              if is_pipeline_file:
-                  original_id = file_path.parent.stem  # e.g., "AR-AUTH-16-10-701-SPECIALTY-COURT-USER-FEES"
+              # Determine schema type from path
+              path_schema = detect_schema_from_path(file_path)
+              
+              # Extract base ID
+              if parent_is_gitlab_dir:
+                  base_id = file_path.parent.stem
               else:
-                  original_id = file_path.stem
+                  base_id = file_path.stem
               
               try:
-                  data = load_file(file_path)
+                  documents = load_file(file_path)
                   
-                  # Detect schema type from content
-                  schema_type = detect_schema_type(data)
+                  if not documents:
+                      print(f"  ⚠️ No valid documents found")
+                      run_log.errors.append({"file": str(file_path), "error": "No valid documents"})
+                      return False
                   
-                  if not schema_type:
-                      print(f"  ⚠️ Could not determine schema type, skipping")
-                      return None
+                  output_files = []
+                  item_counter = 0
                   
-                  print(f"  → Detected schema type: {schema_type}")
-                  
-                  # Check if it's a wrapped array or single item
-                  if schema_type in data and isinstance(data[schema_type], list):
-                      # Wrapped array - process each item
-                      items = data[schema_type]
-                      output_files = []
+                  for doc in documents:
+                      if not isinstance(doc, dict):
+                          continue
                       
-                      for i, item in enumerate(items):
-                          item_schema = detect_schema_type(item) or schema_type
-                          item_id_field = SCHEMA_CONFIG[item_schema]["id_field"]
-                          item_id = item.get(item_id_field) or f"{original_id}-{i}"
+                      schema_type = detect_schema_type(doc) or path_schema
+                      
+                      if not schema_type:
+                          print(f"  ⚠️ Could not determine schema type for document")
+                          continue
+                      
+                      # Get ID field
+                      id_field = SCHEMA_CONFIG[schema_type]["id_field"]
+                      
+                      # Handle wrapped data
+                      actual_data = doc.get(schema_type, doc) if schema_type in doc else doc
+                      
+                      # Get or generate ID
+                      item_id = actual_data.get(id_field) or f"{base_id}-{item_counter}"
+                      item_counter += 1
+                      
+                      # Fix the item
+                      fixed_item = fix_item(doc, schema_type, item_id)
+                      
+                      if fixed_item:
+                          target_dir = PROPOSALS_DIR / schema_type
+                          safe_id = sanitize_filename(fixed_item.get(id_field, item_id))
+                          output_file = target_dir / f"{safe_id}.json"
                           
-                          fixed_item = fix_item(item, item_schema, item_id)
-                          if fixed_item:
-                              target_dir = PROPOSALS_DIR / item_schema
-                              safe_id = sanitize_filename(fixed_item.get(SCHEMA_CONFIG[item_schema]["id_field"], f"item-{i}"))
-                              output_file = target_dir / f"{safe_id}.json"
-                              save_json(output_file, fixed_item)
-                              output_files.append(str(output_file))
-                              print(f"  ✓ Fixed and saved: {output_file}")
-                      
-                      # Cleanup source
-                      if is_pipeline_file:
-                          cleanup_pipeline_directory(file_path.parent)
-                      else:
-                          file_path.unlink()
-                          print(f"  ✓ Deleted: {file_path}")
-                      
-                      return {
+                          save_json(output_file, fixed_item)
+                          output_files.append(str(output_file))
+                          run_log.created_files.append(str(output_file))
+                          print(f"  ✅ Created: {output_file}")
+                  
+                  if output_files:
+                      run_log.processed_files.append({
                           "source": str(file_path),
                           "schema_type": schema_type,
                           "items_fixed": len(output_files),
                           "output_files": output_files
-                      }
-                  else:
-                      # Single item (unwrapped)
-                      id_field = SCHEMA_CONFIG[schema_type]["id_field"]
-                      item_id = data.get(id_field) or original_id
-                      
-                      fixed_item = fix_item(data, schema_type, item_id)
-                      if not fixed_item:
-                          print(f"  ⚠️ Could not fix item")
-                          return None
-                      
-                      target_dir = PROPOSALS_DIR / schema_type
-                      safe_id = sanitize_filename(fixed_item.get(id_field, original_id))
-                      output_file = target_dir / f"{safe_id}.json"
-                      
-                      save_json(output_file, fixed_item)
-                      print(f"  ✓ Fixed and saved: {output_file}")
-                      
-                      # Cleanup source
-                      if is_pipeline_file:
-                          cleanup_pipeline_directory(file_path.parent)
-                      else:
-                          try:
-                              file_path.unlink()
-                              print(f"  ✓ Deleted: {file_path}")
-                          except Exception as e:
-                              print(f"  ⚠️ Warning: Could not delete {file_path}: {e}")
-                      
-                      return {
-                          "source": str(file_path),
-                          "schema_type": schema_type,
-                          "items_fixed": 1,
-                          "output_files": [str(output_file)]
-                      }
-              
+                      })
+                      return True
+                  
+                  return False
+                  
               except Exception as e:
-                  print(f"  ✗ Error processing {file_path}: {e}")
+                  print(f"  ❌ Error: {e}")
+                  run_log.errors.append({"file": str(file_path), "error": str(e)})
                   import traceback
                   traceback.print_exc()
-                  return None
+                  return False
 
-          def find_processable_files():
-              """Find all processable files in invalidated directory."""
-              files = []
-              for ext in ['*.json', '*.yaml', '*.yml']:
-                  files.extend(INVALIDATED_DIR.rglob(ext))
+          def cleanup_invalidated(run_log):
+              """Completely clean up the invalidated directory."""
+              print("\n🧹 Cleaning up invalidated/ directory...")
               
-              processable = []
-              processed_dirs = set()
-              
-              for f in files:
-                  if not f.is_file():
-                      continue
-                  if f.name == '.gitkeep':
-                      continue
-                  if f.suffix in ['.txt'] or f.name.endswith('.errors.txt'):
-                      continue
-                  
-                  # Handle 0.json files (from external pipeline validation)
-                  if f.name == '0.json':
-                      processable.append(f)
-                      processed_dirs.add(f.parent)
-                      continue
-                  
-                  # Skip other numbered json files in pipeline directories
-                  if f.name.endswith('.json') and f.parent.suffix in ['.json', '.yaml', '.yml']:
-                      if f.name != '0.json':
-                          continue
-                  
-                  processable.append(f)
-              
-              return processable
-
-          def main():
-              print("=" * 60)
-              print("Fix Invalidated Files - Processing Started")
-              print("=" * 60)
-              
-              files = find_processable_files()
-              print(f"\nFound {len(files)} files to process\n")
-              
-              if not files:
-                  print("No files to process")
+              if not INVALIDATED_DIR.exists():
                   return
               
-              processed_files = []
-              for file_path in files:
-                  result = process_file(file_path)
-                  if result:
-                      processed_files.append(result)
+              for schema_type in SCHEMA_CONFIG.keys():
+                  subdir = INVALIDATED_DIR / schema_type
+                  if not subdir.exists():
+                      continue
+                  
+                  for item in list(subdir.iterdir()):
+                      if item.name == ".gitkeep":
+                          continue
+                      
+                      try:
+                          if item.is_file():
+                              item.unlink()
+                              run_log.deleted_files.append(str(item))
+                              print(f"  🗑️ Deleted file: {item}")
+                          elif item.is_dir():
+                              shutil.rmtree(item)
+                              run_log.deleted_dirs.append(str(item))
+                              print(f"  🗑️ Deleted directory: {item}")
+                      except Exception as e:
+                          print(f"  ⚠️ Could not delete {item}: {e}")
+                          run_log.errors.append({"file": str(item), "error": f"Cleanup failed: {e}"})
+
+          def reconcile_with_manifests(run_log):
+              """Reconcile invalidated files against artifacts/ and processed/ manifests."""
+              print("\n🔍 Reconciling with artifacts and processed directories...")
               
-              REPORTS_DIR.mkdir(parents=True, exist_ok=True)
-              
-              report_data = []
-              if REPORT_FILE.exists():
-                  try:
-                      with open(REPORT_FILE, 'r', encoding='utf-8') as f:
-                          existing = json.load(f)
-                      if isinstance(existing, list):
-                          report_data = existing
-                      elif isinstance(existing, dict):
-                          report_data = [existing]
-                  except (json.JSONDecodeError, IOError):
-                      print(f"  ⚠️ Warning: Could not read existing report, starting fresh")
-              
-              report_entry = {
-                  "timestamp": datetime.now(timezone.utc).isoformat(),
-                  "processed_files": processed_files,
-                  "total_items_fixed": sum(pf.get("items_fixed", 0) for pf in processed_files)
+              reconciliation = {
+                  "already_in_artifacts": [],
+                  "already_in_processed": [],
+                  "unique_to_invalidated": []
               }
-              report_data.append(report_entry)
               
-              with open(REPORT_FILE, 'w', encoding='utf-8') as f:
-                  json.dump(report_data, f, indent=2, ensure_ascii=False)
-                  f.write('\n')
+              # Get all IDs from artifacts
+              artifact_ids = set()
+              if ARTIFACTS_DIR.exists():
+                  for f in ARTIFACTS_DIR.rglob("*.json"):
+                      try:
+                          with open(f, 'r') as fh:
+                              data = json.load(fh)
+                          for id_field in ["evidence_id", "flow_id", "fv_id", "authority_id"]:
+                              if id_field in data:
+                                  artifact_ids.add(data[id_field])
+                                  break
+                      except (json.JSONDecodeError, IOError, KeyError):
+                          pass
               
-              print("\n" + "=" * 60)
-              print(f"Processing Complete: {len(processed_files)} files processed")
-              print(f"Total items fixed: {report_entry['total_items_fixed']}")
-              print(f"Report saved to: {REPORT_FILE}")
-              print("=" * 60)
+              # Get all IDs from processed
+              processed_ids = set()
+              if PROCESSED_DIR.exists():
+                  for f in PROCESSED_DIR.rglob("*"):
+                      if f.is_file() and f.suffix in ['.yaml', '.yml', '.json']:
+                          processed_ids.add(f.stem)
+              
+              # Check invalidated sources
+              sources = find_processable_sources()
+              for src in sources:
+                  parent_is_gitlab_dir = src.parent.suffix in ['.yaml', '.yml', '.json']
+                  base_id = src.parent.stem if parent_is_gitlab_dir else src.stem
+                  
+                  if base_id in artifact_ids:
+                      reconciliation["already_in_artifacts"].append(base_id)
+                  elif base_id in processed_ids:
+                      reconciliation["already_in_processed"].append(base_id)
+                  else:
+                      reconciliation["unique_to_invalidated"].append(base_id)
+              
+              run_log.reconciliation = reconciliation
+              
+              print(f"  📊 Already in artifacts: {len(reconciliation['already_in_artifacts'])}")
+              print(f"  📊 Already in processed: {len(reconciliation['already_in_processed'])}")
+              print(f"  📊 Unique to invalidated: {len(reconciliation['unique_to_invalidated'])}")
+
+          def main():
+              print("=" * 70)
+              print("🔧 Fix Invalidated Files - GitHub Actions Workflow")
+              print(f"⏰ Started: {datetime.now(timezone.utc).isoformat()}")
+              print("=" * 70)
+              
+              # Initialize run log
+              run_log = RunLog()
+              
+              # Capture before state
+              print("\n📸 Capturing before-state inventory...")
+              run_log.capture_before_state()
+              print(f"  Found {run_log.before_state['total_files']} files in {run_log.before_state['total_dirs']} directories")
+              
+              # Reconcile first
+              reconcile_with_manifests(run_log)
+              
+              # Find sources
+              sources = find_processable_sources()
+              print(f"\n📂 Found {len(sources)} source files to process")
+              
+              if not sources:
+                  print("\n✨ No files to process - invalidated/ is already clean")
+                  run_log.save()
+                  
+                  # Set output for GitHub Actions
+                  with open(os.environ.get('GITHUB_OUTPUT', '/dev/null'), 'a') as f:
+                      f.write("has_changes=false\n")
+                  return
+              
+              # Process each source
+              processed_count = 0
+              for source in sources:
+                  if process_source(source, run_log):
+                      processed_count += 1
+              
+              # Cleanup invalidated directory completely
+              cleanup_invalidated(run_log)
+              
+              # Save run log
+              log_file = run_log.save()
+              
+              # Print summary
+              print("\n" + "=" * 70)
+              print("📊 PROCESSING SUMMARY")
+              print("=" * 70)
+              print(f"  Files processed:    {processed_count}")
+              print(f"  Files created:      {len(run_log.created_files)}")
+              print(f"  Files deleted:      {len(run_log.deleted_files)}")
+              print(f"  Directories deleted: {len(run_log.deleted_dirs)}")
+              print(f"  Errors:             {len(run_log.errors)}")
+              print(f"  Run log:            {log_file}")
+              print("=" * 70)
+              
+              # Set outputs for GitHub Actions
+              has_changes = len(run_log.created_files) > 0 or len(run_log.deleted_files) > 0 or len(run_log.deleted_dirs) > 0
+              proposals_changed = any('proposals/' in f for f in run_log.created_files)
+              
+              with open(os.environ.get('GITHUB_OUTPUT', '/dev/null'), 'a') as f:
+                  f.write(f"has_changes={'true' if has_changes else 'false'}\n")
+                  f.write(f"proposals_changed={'true' if proposals_changed else 'false'}\n")
+                  f.write(f"files_created={len(run_log.created_files)}\n")
+                  f.write(f"files_deleted={len(run_log.deleted_files)}\n")
 
           if __name__ == "__main__":
               main()
-          EOF
+          PYTHON_SCRIPT
       
       - name: Commit and push changes
-        if: steps.check_files.outputs.has_files == 'true'
         run: |
           set -e
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           
+          # Stage all changes
           git add proposals/ reports/ invalidated/
           
           if git diff --staged --quiet; then
             echo "No changes to commit"
-          else
-            # Check if proposals directory has changes (files were moved there)
-            proposals_changed=$(git diff --staged --name-only -- proposals/ | wc -l)
-            
-            if [ "$proposals_changed" -gt 0 ]; then
-              # Files were fixed and moved to proposals - DO NOT skip CI so GitLab can validate
-              git commit -m "fix: process and fix invalidated files, move to proposals"
-              echo "Note: Commit does NOT include [skip ci] - GitLab pipeline should trigger"
-            else
-              # Only internal changes (reports, etc.) - skip CI to prevent loops
-              git commit -m "chore: update processing reports [skip ci]"
-            fi
-            
-            # Push with retry for race conditions
-            for i in 1 2 3; do
-              if git push; then
-                echo "Changes committed and pushed successfully"
-                break
-              else
-                echo "Push attempt $i failed, retrying..."
-                git pull --rebase origin main || true
-                sleep 2
-              fi
-            done
+            exit 0
           fi
+          
+          # Check what changed
+          proposals_changed=$(git diff --staged --name-only -- proposals/ | wc -l)
+          reports_changed=$(git diff --staged --name-only -- reports/ | wc -l)
+          
+          if [ "$proposals_changed" -gt 0 ]; then
+            # Files moved to proposals - trigger GitLab pipeline (NO [skip ci])
+            git commit -m "fix: process invalidated schemas and move to proposals for validation"
+            echo "✅ Committing with GitLab trigger (proposals changed)"
+          else
+            # Only internal changes (reports, cleanup) - skip CI
+            git commit -m "chore: cleanup invalidated directory and update run logs [skip ci]"
+            echo "✅ Committing with [skip ci] (internal changes only)"
+          fi
+          
+          # Push with retry
+          for i in 1 2 3; do
+            if git push; then
+              echo "✅ Changes pushed successfully"
+              exit 0
+            else
+              echo "⚠️ Push attempt $i failed, retrying..."
+              if ! git pull --rebase origin main; then
+                echo "⚠️ Pull from main failed, trying current branch..."
+                if ! git pull --rebase origin $(git rev-parse --abbrev-ref HEAD); then
+                  echo "⚠️ Pull from current branch also failed, continuing..."
+                fi
+              fi
+              sleep 2
+            fi
+          done
+          
+          echo "❌ Failed to push after 3 attempts"
+          exit 1
