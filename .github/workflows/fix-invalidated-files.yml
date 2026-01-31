@@ -205,6 +205,20 @@ jobs:
               else:
                   return load_yaml_multi_doc(file_path)
 
+          _SCHEMA_CACHE = {}
+
+          def load_schema(schema_type):
+              """Load JSON schema for a given schema type."""
+              if schema_type in _SCHEMA_CACHE:
+                  return _SCHEMA_CACHE[schema_type]
+              schema_path = SCHEMAS_DIR / f"{schema_type}.schema.json"
+              if not schema_path.exists():
+                  return None
+              with open(schema_path, 'r', encoding='utf-8') as f:
+                  schema = json.load(f)
+              _SCHEMA_CACHE[schema_type] = schema
+              return schema
+
           def save_json(file_path, data):
               """Save data as pretty-printed JSON."""
               file_path.parent.mkdir(parents=True, exist_ok=True)
@@ -474,7 +488,7 @@ jobs:
                               sources.append(zero_json)
                           else:
                               # Look for any processable files in nested directory so data doesn't get lost
-                              for nested_file in item.iterdir():
+                              for nested_file in item.rglob("*"):
                                   if nested_file.is_file() and nested_file.suffix in ['.yaml', '.yml', '.json']:
                                       if not nested_file.name.endswith('.errors.txt'):
                                           sources.append(nested_file)
@@ -547,6 +561,19 @@ jobs:
                       fixed_item = fix_item(doc, schema_type, item_id)
                       
                       if fixed_item:
+                          schema = load_schema(schema_type)
+                          if schema is not None:
+                              try:
+                                  import jsonschema
+                                  jsonschema.validate(instance=fixed_item, schema=schema)
+                              except Exception as e:
+                                  print(f"  ❌ Schema validation failed: {e}")
+                                  run_log.errors.append({
+                                      "file": str(file_path),
+                                      "error": f"Schema validation failed: {e}"
+                                  })
+                                  run_log.failed_sources.append(str(file_path))
+                                  continue
                           target_dir = PROPOSALS_DIR / schema_type
                           safe_id = sanitize_filename(fixed_item.get(id_field, item_id))
                           output_file = target_dir / f"{safe_id}.json"
@@ -587,6 +614,14 @@ jobs:
                   traceback.print_exc()
                   return False
 
+          def _path_is_within(path, candidate):
+              try:
+                  return Path(path).resolve().is_relative_to(Path(candidate).resolve())
+              except AttributeError:
+                  path = Path(path).resolve()
+                  candidate = Path(candidate).resolve()
+                  return str(path).startswith(str(candidate) + os.sep)
+
           def cleanup_invalidated(run_log):
               """Clean up invalidated directory - delete successfully processed sources, quarantine failed ones."""
               print("\n🧹 Cleaning up invalidated/ directory...")
@@ -625,8 +660,8 @@ jobs:
                           continue
                       
                       item_str = str(item)
-                      is_processed = item_str in processed_sources or any(item_str in ps for ps in processed_sources)
-                      is_failed = item_str in failed_sources or any(item_str in fs for fs in failed_sources)
+                      is_processed = item_str in processed_sources or any(_path_is_within(ps, item_str) for ps in processed_sources)
+                      is_failed = item_str in failed_sources or any(_path_is_within(fs, item_str) for fs in failed_sources)
                       
                       try:
                           if is_processed and not is_failed:
@@ -648,9 +683,13 @@ jobs:
                               
                               if item.is_file():
                                   shutil.copy2(item, dest)
+                                  if not dest.exists():
+                                      raise IOError(f"Quarantine copy failed for {item}")
                                   item.unlink()
                               elif item.is_dir():
                                   shutil.copytree(item, dest)
+                                  if not dest.exists():
+                                      raise IOError(f"Quarantine copy failed for {item}")
                                   shutil.rmtree(item)
                               
                               run_log.quarantined_files.append({
@@ -667,9 +706,13 @@ jobs:
                               
                               if item.is_file():
                                   shutil.copy2(item, dest)
+                                  if not dest.exists():
+                                      raise IOError(f"Quarantine copy failed for {item}")
                                   item.unlink()
                               elif item.is_dir():
                                   shutil.copytree(item, dest)
+                                  if not dest.exists():
+                                      raise IOError(f"Quarantine copy failed for {item}")
                                   shutil.rmtree(item)
                               
                               run_log.quarantined_files.append({
@@ -681,6 +724,19 @@ jobs:
                       except Exception as e:
                           print(f"  ⚠️ Could not handle {item}: {e}")
                           run_log.errors.append({"file": str(item), "error": f"Cleanup failed: {e}"})
+
+          def extract_ids_from_document(doc):
+              ids = []
+              if not isinstance(doc, dict):
+                  return ids
+              for key in ["evidence_id", "flow_id", "fv_id", "authority_id"]:
+                  if key in doc:
+                      ids.append(str(doc[key]))
+              if "schema" in doc and doc["schema"] in SCHEMA_CONFIG and doc["schema"] in doc:
+                  inner = doc.get(doc["schema"])
+                  if isinstance(inner, dict):
+                      ids.extend(extract_ids_from_document(inner))
+              return list(dict.fromkeys(ids))
 
           def reconcile_with_manifests(run_log):
               """Reconcile invalidated files against artifacts/validated, other JSON artifacts under artifacts/, and processed/ directories."""
@@ -738,57 +794,68 @@ jobs:
               for src in sources:
                   parent_is_gitlab_dir = src.parent.suffix in ['.yaml', '.yml', '.json']
                   base_id = src.parent.stem if parent_is_gitlab_dir else src.stem
+                  detected_ids = []
                   
-                  found_in = []
+                  try:
+                      docs = load_file(src)
+                      for doc in docs:
+                          detected_ids.extend(extract_ids_from_document(doc))
+                  except Exception:
+                      pass
                   
-                  # Check if in validated artifacts
-                  if base_id in validated_ids:
-                      reconciliation["already_in_artifacts_validated"].append({
-                          "id": base_id,
-                          "location": validated_ids[base_id]
-                      })
-                      found_in.append("artifacts/validated")
+                  ids_to_check = detected_ids or [base_id]
                   
-                  # Check if in other artifacts
-                  if base_id in other_artifact_ids:
-                      reconciliation["already_in_artifacts_other"].append({
-                          "id": base_id,
-                          "location": other_artifact_ids[base_id]
-                      })
-                      found_in.append("artifacts")
-                  
-                  # Check if in processed
-                  if base_id in processed_files:
-                      reconciliation["already_in_processed"].append({
-                          "id": base_id,
-                          "location": processed_files[base_id]
-                      })
-                      found_in.append("processed")
-                  
-                  # Categorize based on where found
-                  if len(found_in) > 1:
-                      # True duplicate: exists in multiple places
-                      reconciliation["duplicates_flagged"].append({
-                          "id": base_id,
-                          "source": str(src),
-                          "found_in": found_in,
-                          "action": "flagged_as_duplicate"
-                      })
-                  elif len(found_in) == 1:
-                      # Exists in exactly one location - still process but flag in report
-                      reconciliation["duplicates_flagged"].append({
-                          "id": base_id,
-                          "source": str(src),
-                          "found_in": found_in,
-                          "action": "already_exists_flagged_for_review"
-                      })
-                  else:
-                      # Unique: not found anywhere, will fix and move to proposals
-                      reconciliation["unique_to_invalidated"].append({
-                          "id": base_id,
-                          "source": str(src),
-                          "action": "will_fix_and_move_to_proposals"
-                      })
+                  for source_id in ids_to_check:
+                      found_in = []
+                      
+                      # Check if in validated artifacts
+                      if source_id in validated_ids:
+                          reconciliation["already_in_artifacts_validated"].append({
+                              "id": source_id,
+                              "location": validated_ids[source_id]
+                          })
+                          found_in.append("artifacts/validated")
+                      
+                      # Check if in other artifacts
+                      if source_id in other_artifact_ids:
+                          reconciliation["already_in_artifacts_other"].append({
+                              "id": source_id,
+                              "location": other_artifact_ids[source_id]
+                          })
+                          found_in.append("artifacts")
+                      
+                      # Check if in processed
+                      if source_id in processed_files:
+                          reconciliation["already_in_processed"].append({
+                              "id": source_id,
+                              "location": processed_files[source_id]
+                          })
+                          found_in.append("processed")
+                      
+                      # Categorize based on where found
+                      if len(found_in) > 1:
+                          # True duplicate: exists in multiple places
+                          reconciliation["duplicates_flagged"].append({
+                              "id": source_id,
+                              "source": str(src),
+                              "found_in": found_in,
+                              "action": "flagged_as_duplicate"
+                          })
+                      elif len(found_in) == 1:
+                          # Exists in exactly one location - still process but flag in report
+                          reconciliation["duplicates_flagged"].append({
+                              "id": source_id,
+                              "source": str(src),
+                              "found_in": found_in,
+                              "action": "already_exists_flagged_for_review"
+                          })
+                      else:
+                          # Unique: not found anywhere, will fix and move to proposals
+                          reconciliation["unique_to_invalidated"].append({
+                              "id": source_id,
+                              "source": str(src),
+                              "action": "will_fix_and_move_to_proposals"
+                          })
               
               run_log.reconciliation = reconciliation
               
@@ -897,19 +964,26 @@ jobs:
           
           # Push with retry
           for i in 1 2 3; do
-            if git push; then
-              echo "✅ Changes pushed successfully"
-              exit 0
-            else
-              echo "⚠️ Push attempt $i failed, retrying..."
-              if ! git pull --rebase origin main; then
-                echo "⚠️ Pull from main failed, trying current branch..."
-                if ! git pull --rebase origin $(git rev-parse --abbrev-ref HEAD); then
-                  echo "⚠️ Pull from current branch also failed, continuing..."
+              if git push; then
+                echo "✅ Changes pushed successfully"
+                exit 0
+              else
+                echo "⚠️ Push attempt $i failed, retrying..."
+                if git show-ref --verify --quiet refs/remotes/origin/main; then
+                  if ! git pull --rebase origin main; then
+                    echo "⚠️ Pull from main failed, trying current branch..."
+                    if ! git pull --rebase origin $(git rev-parse --abbrev-ref HEAD); then
+                      echo "⚠️ Pull from current branch also failed, continuing..."
+                    fi
+                  fi
+                else
+                  echo "⚠️ origin/main not found, rebasing current branch only..."
+                  if ! git pull --rebase origin $(git rev-parse --abbrev-ref HEAD); then
+                    echo "⚠️ Pull from current branch failed, continuing..."
+                  fi
                 fi
+                sleep 2
               fi
-              sleep 2
-            fi
           done
           
           echo "❌ Failed to push after 3 attempts"
