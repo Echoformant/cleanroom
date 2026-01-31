@@ -1,0 +1,14 @@
+{
+  "authority_id": "AR-AUTH-19-6-489-SPECIALTY-COURT-PROGRAM-FUND",
+  "authority_type": "statute",
+  "citation": "Ark. Code § 19‑6‑489 (Specialty Court Program Fund)",
+  "administering_body": "Treasurer of State, Auditor of State, Chief Fiscal Officer of the State, Department of Community Correction, Department of Human Services, Specialty Court Program Advisory Committee",
+  "governs": [
+    "Creates the **Specialty Court Program Fund** as a special revenue fund.  The fund consists of specia..."
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "pending"
+}

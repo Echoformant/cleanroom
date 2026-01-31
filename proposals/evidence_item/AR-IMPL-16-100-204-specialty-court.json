@@ -1,0 +1,12 @@
+{
+  "evidence_id": "AR-IMPL-16-100-204-specialty-court",
+  "section": "general",
+  "claim_summary": "Evidence item pending detailed summary",
+  "evidence_type": "field_validation",
+  "source": {
+    "title": "Source document",
+    "issuing_body": "Government entity"
+  },
+  "confidence_level": "medium",
+  "editor_status": "pending"
+}

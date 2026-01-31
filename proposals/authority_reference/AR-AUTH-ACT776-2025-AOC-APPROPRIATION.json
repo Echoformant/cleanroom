@@ -1,0 +1,14 @@
+{
+  "authority_id": "AR-AUTH-ACT776-2025-AOC-APPROPRIATION",
+  "authority_type": "statute",
+  "citation": "Act 776 of 2025 (SB72) – Administrative Office of the Courts Appropriation",
+  "administering_body": "Administrative Office of the Courts",
+  "governs": [
+    "Appropriation act for personal services, operating expenses and various programs of the Administrati..."
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "pending"
+}

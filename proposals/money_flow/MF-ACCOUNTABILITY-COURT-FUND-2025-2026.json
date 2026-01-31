@@ -1,0 +1,15 @@
+{
+  "flow_id": "MF-ACCOUNTABILITY-COURT-FUND-2025-2026",
+  "source": "State of Arkansas Accountability Court Fund",
+  "intermediary": "Direct",
+  "destination": "Administrative Office of the Courts – Accountability Court Fund program",
+  "amount": 400000.0,
+  "fund_type": "state",
+  "fiscal_year": "2025-2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Act 776 (SB72) § 30",
+  "editor_status": "pending"
+}

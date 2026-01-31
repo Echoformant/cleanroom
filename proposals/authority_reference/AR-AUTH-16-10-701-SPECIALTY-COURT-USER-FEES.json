@@ -1,0 +1,14 @@
+{
+  "authority_id": "AR-AUTH-16-10-701-SPECIALTY-COURT-USER-FEES",
+  "authority_type": "statute",
+  "citation": "Ark. Code § 16‑10‑701 (Additional fees for specialty court programs)",
+  "administering_body": "Circuit and district courts, Administration of Justice Funds Section",
+  "governs": [
+    "Authorizes courts to assess a **specialty court program user fee** of up to $250 on participants in ..."
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "pending"
+}
