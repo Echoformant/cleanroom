@@ -127,7 +127,8 @@ jobs:
                                       if f.is_file():
                                           subdir_files.append({
                                               "path": str(f.relative_to(item)),
-                                              "size": f.stat().st_size
+                                              "size": f.stat().st_size,
+                                              "modified": datetime.fromtimestamp(f.stat().st_mtime, tz=timezone.utc).isoformat()
                                           })
                                           self.before_state["total_files"] += 1
                                   dir_info["subdirectories"][item.name] = {
@@ -294,7 +295,7 @@ jobs:
               fixed["citation"] = data.get("citation") or data.get("statute") or f"See {fixed['authority_id']}"
               
               ab = data.get("administering_body", "Unknown")
-              fixed["administering_body"] = ", ".join(ab) if isinstance(ab, list) else str(ab)
+              fixed["administering_body"] = ", ".join(str(item) for item in ab) if isinstance(ab, list) else str(ab)
               
               gov = data.get("governs", ["General governance"])
               fixed["governs"] = [str(g) for g in gov] if isinstance(gov, list) else [str(gov)]
@@ -492,6 +493,7 @@ jobs:
                       return False
                   
                   output_files = []
+                  output_details = []  # Track per-output file details including schema type
                   item_counter = 0
                   
                   for doc in documents:
@@ -524,15 +526,22 @@ jobs:
                           
                           save_json(output_file, fixed_item)
                           output_files.append(str(output_file))
+                          output_details.append({
+                              "file": str(output_file),
+                              "schema_type": schema_type,
+                              "id": fixed_item.get(id_field, item_id)
+                          })
                           run_log.created_files.append(str(output_file))
                           print(f"  ✅ Created: {output_file}")
                   
                   if output_files:
+                      # Collect unique schema types processed
+                      schema_types = list(set(d["schema_type"] for d in output_details))
                       run_log.processed_files.append({
                           "source": str(file_path),
-                          "schema_type": schema_type,
+                          "schema_types": schema_types,
                           "items_fixed": len(output_files),
-                          "output_files": output_files
+                          "output_files": output_details
                       })
                       return True
                   
@@ -575,7 +584,7 @@ jobs:
                           run_log.errors.append({"file": str(item), "error": f"Cleanup failed: {e}"})
 
           def reconcile_with_manifests(run_log):
-              """Reconcile invalidated files against artifacts/validated, artifacts/manifest, and processed/ directories."""
+              """Reconcile invalidated files against artifacts/validated, other JSON artifacts under artifacts/, and processed/ directories."""
               print("\n🔍 Reconciling with artifacts and processed directories...")
               
               reconciliation = {
@@ -774,7 +783,6 @@ jobs:
           
           # Check what changed
           proposals_changed=$(git diff --staged --name-only -- proposals/ | wc -l)
-          reports_changed=$(git diff --staged --name-only -- reports/ | wc -l)
           
           if [ "$proposals_changed" -gt 0 ]; then
             # Files moved to proposals - trigger GitLab pipeline (NO [skip ci])
