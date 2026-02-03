@@ -1,0 +1,6 @@
+model_preference_order:
+  - phi3
+  - llama3
+temperature: 0.0
+top_p: 0.9
+num_predict: 512
