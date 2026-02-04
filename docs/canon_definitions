@@ -1,0 +1,167 @@
+canonical_definitions_v2:
+  metadata:
+    title: "VECTOR 1 — Operation NAMI Clearlane Canonical Definitions v2"
+    status: "Proposed Canonical Upgrade"
+    scope: "Interpretive, binding, non-structural"
+    applies_to: "All VECTOR 1 artifacts, all models, all methods"
+
+  foundations:
+    - term: "Clearlane Core Premise"
+      description: >
+        Clearlane separates facts from claims.
+        Facts may exist without certainty.
+        Claims may not exist without sufficient support.
+
+  authority_reference:
+    - term: "Authority Reference (Canonical Definition)"
+      description: >
+        An authority_reference identifies a statute, regulation, or policy
+        that independently establishes, constrains, or delegates enforceable
+        legal or administrative power.
+
+    - term: "Authority Qualification Rule"
+      description: >
+        A source qualifies as an authority_reference only if removal of that
+        source would remove or alter enforceable power, obligation, or constraint.
+
+    - term: "Authority Exclusions"
+      description: >
+        Systems, platforms, databases, websites, dashboards, and reporting tools
+        are not authorities.
+        They may implement, reflect, or surface authority but do not establish it.
+
+    - term: "Administering Body (Canonical Constraint)"
+      description: >
+        The administering_body must be an entity capable of exercising or enforcing
+        authority. Software systems and websites cannot be administering bodies.
+
+  evidence_item:
+    - term: "Evidence Item (Canonical Definition)"
+      description: >
+        An evidence_item is a tangible, external source that documents what exists,
+        what is stated, or what is reported, independent of inquiry.
+
+    - term: "Evidence Independence Rule"
+      description: >
+        An evidence_item must remain true and defensible if all other artifacts
+        are removed.
+
+    - term: "Evidence Boundary Rule"
+      description: >
+        Evidence does not assert authority, permission, eligibility, compliance,
+        or correctness beyond what the source explicitly states.
+
+    - term: "Evidence Examples"
+      examples:
+        - "TAGGS recipient listing"
+        - "Statute text"
+        - "Grant NOFO PDF"
+        - "USAspending award page"
+        - "IRS Form 990 filing"
+
+  field_validation:
+    - term: "Field Validation (Canonical Definition)"
+      description: >
+        A field_validation records the answer to one explicit, narrowly scoped
+        validation question, derived from one or more evidence items.
+
+    - term: "Field Validation Question Rule"
+      description: >
+        Every field_validation corresponds to exactly one validation question.
+        If the question cannot be stated in one sentence, the validation is invalid.
+
+    - term: "Validation Is Not Resolution"
+      description: >
+        Field validation records the state of inquiry, not its completion.
+        It does not imply approval, permission, eligibility, funding, or compliance.
+
+    - term: "Alignment Status Semantics"
+      description: >
+        open: the validation question has not been answered
+        mixed: the answer is partially affirmative with constraints
+        captured: the answer is affirmative for the specific question only
+
+    - term: "Open Validation Rule"
+      description: >
+        Field validation artifacts may be created even when the validation
+        question cannot yet be answered.
+        An alignment_status of 'open' is valid and expected.
+
+    - term: "Allowed Validation Question Classes"
+      classes:
+        - "Jurisdictional alignment"
+        - "Operational alignment"
+        - "Role alignment"
+        - "Structural funding alignment"
+        - "Evidence corroboration"
+
+    - term: "Field Validation Examples"
+      examples:
+        - "Do TAGGS and USAspending both list Ozark Guidance Center as a recipient?"
+        - "Is there a valid structural funding path from HHS to SAMHSA to Arkansas providers?"
+        - "Does this SAMHSA-administered program apply within Arkansas?"
+
+  money_flow:
+    - term: "Money Flow (Canonical Definition)"
+      description: >
+        A money_flow describes a funding path or obligation between entities,
+        grounded in authority and evidence.
+
+    - term: "Money Flow Amount Interpretation"
+      description: >
+        The amount field records a known numeric value only.
+        A value of 0 indicates that no quantified obligation has been asserted,
+        not that zero dollars flow, unless explicitly stated by the source.
+
+    - term: "Structural Money Flow Rule"
+      description: >
+        A money_flow with amount = 0 represents a validated structural funding path
+        where authority exists but no award-level obligation has been asserted.
+
+  artifact_composition:
+    - term: "Artifact Autonomy and Support Rule"
+      description: >
+        Every artifact must be valid and defensible in isolation.
+        Artifacts may support one another but are never subordinate.
+
+    - term: "Split Not Stretch Rule"
+      description: >
+        When a source spans authority, evidence, validation, or funding,
+        each aspect must be represented as a separate artifact.
+
+  claims:
+    - term: "Claim (Clearlane Definition)"
+      description: >
+        A claim is an assertion Clearlane is willing to make publicly or operationally.
+        Claims may not be asserted unless sufficiently supported by artifacts.
+
+    - term: "Claim Threshold Rule"
+      description: >
+        A claim may only be asserted if supported by at least two independent artifacts.
+
+    - term: "Claim Assembly Bundle"
+      description: >
+        A Claim Assembly Bundle is a structured collection of two or more
+        independent artifacts that jointly support a single explicit claim.
+
+    - term: "Artifact Independence Rule (Claims)"
+      description: >
+        Artifacts supporting a claim must be independent in kind.
+        Multiple artifacts derived from the same source do not constitute
+        independent support.
+
+  ambiguity:
+    - term: "Ambiguity Handling Rule"
+      description: >
+        Ambiguity is a valid and expected state.
+        Clearlane preserves uncertainty rather than collapsing it into confidence.
+
+  summary:
+    - term: "Clearlane Canonical Summary"
+      description: >
+        Authority names power.
+        Evidence records facts.
+        Validation answers questions.
+        Money flow traces funds.
+        Claims require bundles.
+        Systems report; they do not govern.
