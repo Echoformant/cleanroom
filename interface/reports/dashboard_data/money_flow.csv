@@ -1,0 +1,218 @@
+flow_id,source,intermediary,destination,amount,fund_type,fiscal_year,restrictions,statutory_basis,editor_status
+AR_FY2026_ADH_OPERATIONS_ACT538_SEC8,Arkansas General Assembly,Governor of Arkansas; Chief Fiscal Officer of the State,Arkansas Department of Health (ADH),330969878.0,state,2026,"{""medicaid"": false, ""dhs_controlled"": false}","Act 538 of 2025 (HB1091), Section 8 (Appropriation — Operations)",accepted
+AR_FY2026_ADH_TRAUMA_EMS_ACT538_SEC9,Arkansas General Assembly,Governor of Arkansas,Arkansas Department of Health (ADH),26215247.0,state,2026,"{""medicaid"": false, ""dhs_controlled"": false}","Act 538 of 2025 (HB1091), Section 9 (Appropriation — Trauma System and Emergency Medical Services)",accepted
+AR_FY2026_AOC_ACCOUNTABILITY_COURT_FUND_ACT776_SEC29,Arkansas General Assembly,Governor of Arkansas,Administrative Office of the Courts (AOC),400000.0,state,2026,"{""medicaid"": false, ""dhs_controlled"": false}","Act 776 of 2025 (SB72), Section 29 (Appropriation — Accountability Court Fund)",accepted
+MF-ACCOUNTABILITY-COURT-FUND-2025-2026,State of Arkansas Accountability Court Fund,Direct,Administrative Office of the Courts – Accountability Court Fund program,400000.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}",Act 776 (SB72) § 30,pending
+MF-AR-BATCH-130-1-0,Specialty Court Program Fund,Direct,Administrative Office of the Courts,300000.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","The FY‑2025/2026 appropriation act for the Arkansas Administrative Office of the Courts (SB72) specifies that there is
+appropriated from the Specialty Court Program Fund the sum of three hundred thousand dollars ($300,000) for costs
+associated with the specialty court program for the fiscal year ending June 30, 2026【626102372523357†L1110-L1127】.
+",accepted
+MF-AR-BATCH-130-1-1,Federal Drug Court Enhancement Funds,Direct,Administrative Office of the Courts,9190880.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","Section 27 of the same appropriation act (SB72) appropriates federal funds received for the drug court enhancement
+program.  It authorizes the Administrative Office of the Courts to expend up to nine million one hundred ninety
+thousand eight hundred eighty dollars ($9,190,880) from federal funds for operating expenses of the drug court
+enhancement program for FY‑2025/2026【626102372523357†L1163-L1199】.
+",accepted
+MF-AR-BATCH-130-1-10,Behavioral Health Services Fund Account,Direct,"Division of Aging, Adult & Behavioral Health Services – Crisis Services",5000000.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": true}","The Division of Aging, Adult, and Behavioral Health Services appropriation act (SB36) provides that from the
+Behavioral Health Services Fund Account there is appropriated five million dollars ($5,000,000) for crisis intervention
+services for FY‑2025/2026【699176352912117†L609-L633】.
+",accepted
+MF-AR-BATCH-130-1-11,"Substance Use Prevention, Treatment & Recovery Services Block Grant (SAMHSA SUBG)",Direct,Arkansas Department of Human Services – Substance Abuse Program,0.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": true}","The Arkansas Department of Human Services describes the Substance Abuse Block Grant (SABG), also called the
+Substance Use Prevention, Treatment and Recovery Services Block Grant (SUBG), as providing funds to plan,
+implement and evaluate activities that prevent and treat substance abuse.  SAMHSA requires grantees to spend no
+less than 20 percent of their allotment on prevention strategies【694662080385875†L862-L867】.  The state notes that
+Arkansas is divided into thirteen catchment areas and that UALR Mid‑South coordinates services for this program
+【694662080385875†L862-L870】.  The site does not publish the FY‑2025/2026 award amount, so the amount is left
+unspecified in this artifact.
+",accepted
+MF-AR-BATCH-130-1-12,Medicaid Section 1115 Demonstration – Community Reentry,Direct,Arkansas Medicaid (DHS) – Peer Support Routing,0.0,state,2025-2026,"{""medicaid"": true, ""dhs_controlled"": true}","CMS’s July 22 2025 approval letter for the Arkansas “Opportunities to Test Transition‑Related Strategies to Support
+Community Reentry from Institutions for Mental Disease” Section 1115(a) demonstration requires the state to engage
+peer support specialists to help beneficiaries make connections with community‑based providers and to implement
+strategies such as having peer support specialists in emergency departments to assist with discharge and referral to
+treatment providers【29633513042789†L1460-L1494】.  This demonstration focuses on improving transitions for
+individuals with serious mental illness or substance use disorder, but the approval letter does not specify a
+dedicated funding amount, so the amount is left unspecified.
+",accepted
+MF-AR-BATCH-130-1-13,Rural Health Transformation Program (RHTP) – FY 2026 Federal Award,State of Arkansas (Governor’s Office),Arkansas Department of Health,208779396.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","A December 30 2025 press release from the Arkansas governor’s office announces that Arkansas received an award of
+two hundred eight million seven hundred seventy‑nine thousand three hundred ninety‑six dollars ($208,779,396) for
+Fiscal Year 2026 through the federal Rural Health Transformation Program【993399354448306†L62-L65】.  The press
+release notes that this is part of the program’s five‑year commitment and that the FY‑2026 allocation is the
+state’s first‑year award【993399354448306†L79-L84】.
+",accepted
+MF-AR-BATCH-130-1-2,Accountability Court Fund,Direct,Administrative Office of the Courts,400000.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","Section 30 of SB72 appropriates funds payable from the Accountability Court Fund.  The act authorizes the
+Administrative Office of the Courts to spend four hundred thousand dollars ($400,000) for grants and aid for
+accountability courts during FY‑2025/2026【884740964066380†L674-L684】.
+",accepted
+MF-AR-BATCH-130-1-3,Adult Drug Court Cash Fund,Direct,Administrative Office of the Courts,1000000.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","The same appropriation act appropriates one million dollars ($1,000,000) payable from the Adult Drug Court Cash
+Fund to the Administrative Office of the Courts for costs associated with adult drug courts【884740964066380†L685-L704】.
+",accepted
+MF-AR-BATCH-130-1-4,State Central Services Fund,Direct,Administrative Office of the Courts,4500000.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","Section 32 of SB72 appropriates funds from the State Central Services Fund to the Administrative Office of the Courts
+for specialty court operations and grants.  The act authorizes expenditures of up to four million five hundred
+thousand dollars ($4,500,000) for FY‑2025/2026【884740964066380†L706-L722】.
+",accepted
+MF-AR-BATCH-130-1-5,U.S. Department of Transportation Highway Safety Funds (23 U.S.C. § 402),Arkansas State Police,Administrative Office of the Courts,0.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","Section 33 of the Administrative Office of the Courts appropriation for a prior fiscal year (SB70) contains special
+language authorizing federal highway safety incentive funds received under 23 U.S.C. § 402 by the Arkansas State Police
+to be granted to the Administrative Office of the Courts and deposited into the State Central Services Fund to
+reimburse expenditures for the continuing education program for district judges【422389437869558†L502-L509】.  The
+statute does not state a specific amount for this reimbursement.
+",accepted
+MF-AR-BATCH-130-1-6,Health Department Operations Funds (state and federal),Direct,Arkansas Department of Health – Operations,330969878.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","The Department of Health appropriation act (HB1091) for FY‑2025/2026 appropriates a total of three hundred
+thirty million nine hundred sixty‑nine thousand eight hundred seventy‑eight dollars ($330,969,878) for Health
+Department operations.  Section 8 lists salaries, personal services, operating expenses and other line items and
+states the total amount appropriated【209394869917142†L720-L780】.
+",accepted
+MF-AR-BATCH-130-1-7,Trauma System Fund,Direct,Arkansas Department of Health – Trauma System,26215247.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","Section 9 of HB1091 appropriates money for the Trauma System.  It authorizes total expenditures of
+twenty‑six million two hundred fifteen thousand two hundred forty‑seven dollars ($26,215,247) for salaries and
+operating expenses related to the Arkansas Trauma System【209394869917142†L785-L829】.
+",accepted
+MF-AR-BATCH-130-1-8,Secretary of Human Services Paying Account,Direct,Arkansas Department of Human Services – Secretary’s Office (State Operations),69760347.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": true}","Section 5 of the DHS Secretary’s Office appropriation act (HB1105) appropriates funds for operations.  The section
+lists salaries, personal services, operating expenses and data processing services with a total amount of sixty‑nine
+million seven hundred sixty thousand three hundred forty‑seven dollars ($69,760,347)【935954631752484†L517-L555】.
+",accepted
+MF-AR-BATCH-130-1-9,Secretary of Human Services Grants Paying Account,Direct,Arkansas Department of Human Services – Purchase of Services,129084.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": true}","Section 8 of HB1105 authorizes the Secretary of Human Services to use grants paying funds for purchase‑of‑service
+payments.  The section appropriates one hundred twenty‑nine thousand eighty‑four dollars ($129,084) for that
+purpose【935954631752484†L623-L640】.
+",accepted
+MF-AR-MEDICAID-PEER-ROUTING-2026,Medicaid (Title XIX),Arkansas DHS Division of Medical Services (Medicaid),Peer support specialist reimbursement (CPT H0038),8330000000.0,state,2026,"{""medicaid"": true, ""dhs_controlled"": true}",Ark. Code § 20-77-135; DHS OBHS Provider Manual,accepted
+MF-AR-RHTP-HEART-2026,"Arkansas Rural Health Transformation (RHT) Program proposal (as summarized by Arkansas Senate, Nov 25, 2025)",State of Arkansas (proposal),"Healthy Eating, Active Recreation, and Transformation (HEART) initiative (proposal budget)",150000000.0,federal,2026-2030,"{""medicaid"": false, ""dhs_controlled"": false}","Arkansas Senate summary (Nov 25, 2025) describes the HEART initiative as costing approximately $150 million within Arkansas' RHT proposal.",accepted
+MF-AR-RHTP-PACT-2026,"Arkansas Rural Health Transformation (RHT) Program proposal (as summarized by Arkansas Senate, Nov 25, 2025)",State of Arkansas (proposal),"Promoting Access, Coordination, and Transformation (PACT) initiative (proposal budget)",400000000.0,federal,2026-2030,"{""medicaid"": false, ""dhs_controlled"": false}","Arkansas Senate summary (Nov 25, 2025) describes the PACT initiative as costing $400 million within Arkansas' RHT proposal.",accepted
+MF-AR-RHTP-RISEAR-2026,"Arkansas Rural Health Transformation (RHT) Program proposal (as summarized by Arkansas Senate, Nov 25, 2025)",State of Arkansas (proposal),"Recruitment, Innovation, Skills, and Education for Arkansas (RISE AR) initiative (proposal budget)",161000000.0,federal,2026-2030,"{""medicaid"": false, ""dhs_controlled"": false}","Arkansas Senate summary (Nov 25, 2025) describes the RISE AR initiative as costing approximately $161 million within Arkansas' RHT proposal.",accepted
+MF-AR-RHTP-THRIVE-2026,"Arkansas Rural Health Transformation (RHT) Program proposal (as summarized by Arkansas Senate, Nov 25, 2025)",State of Arkansas (proposal),"Telehealth, Health-monitoring, and Response Innovation for Vital Expansion (THRIVE) strategy (proposal budget)",267000000.0,federal,2026-2030,"{""medicaid"": false, ""dhs_controlled"": false}","Arkansas Senate summary (Nov 25, 2025) describes the THRIVE strategy as funded at approximately $267 million within Arkansas' RHT proposal.",accepted
+MF-AR-RHTP-Y1-2026,CMS (Rural Health Transformation Program),Arkansas Department of Health (ADH),RHTP Year 1 subawards (HEART/PACT/RISE AR/THRIVE),208779396.0,federal,2026,"{""medicaid"": false, ""dhs_controlled"": false}",Pub. L. 119-21 § 71401 (2025) — RHTP,accepted
+MF-AR-SPECIALTY-COURT-FUND-2026,Specialty Court Program user fees and other statutory sources,Arkansas Administrative Office of the Courts,Specialty Court Program operations and support,300000.0,state,2026,"{""medicaid"": false, ""dhs_controlled"": false}",Ark. Code Ann. § 19-6-489; Act 776 of 2025,pending
+MF-AR-SUBG-PREVENTION-REQUIREMENT,U.S. HHS / SAMHSA,Arkansas DHS,Primary substance use prevention programs,0.0,federal,2025-2026,"{""medicaid"": false, ""dhs_controlled"": true}",45 C.F.R. § 96.124,pending
+MF-Accountability-Court-Fund-to-Administrative-Office-of--002,Accountability Court Fund,None,Administrative Office of the Courts,400000.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","Section 30 of SB72 appropriates funds payable from the Accountability Court Fund.  The act authorizes the
+Administrative Office of the Courts to spend four hundred thousand dollars ($400,000) for grants and aid for
+accountability courts during FY‑2025/2026【884740964066380†L674-L684】.
+",accepted
+MF-Accountability-Court-Fund-to-Administrative-Office-of-,Accountability Court Fund,None,Administrative Office of the Courts,400000.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","Section 30 of SB72 appropriates funds payable from the Accountability Court Fund.  The act authorizes the
+Administrative Office of the Courts to spend four hundred thousand dollars ($400,000) for grants and aid for
+accountability courts during FY‑2025/2026【884740964066380†L674-L684】.
+",accepted
+MF-Adult-Drug-Court-Cash-Fun-to-Administrative-Office-of--003,Adult Drug Court Cash Fund,None,Administrative Office of the Courts,1000000.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","The same appropriation act appropriates one million dollars ($1,000,000) payable from the Adult Drug Court Cash
+Fund to the Administrative Office of the Courts for costs associated with adult drug courts【884740964066380†L685-L704】.
+",accepted
+MF-Adult-Drug-Court-Cash-Fun-to-Administrative-Office-of-,Adult Drug Court Cash Fund,None,Administrative Office of the Courts,1000000.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","The same appropriation act appropriates one million dollars ($1,000,000) payable from the Adult Drug Court Cash
+Fund to the Administrative Office of the Courts for costs associated with adult drug courts【884740964066380†L685-L704】.
+",accepted
+MF-Behavioral-Health-Service-to-Division-of-Aging-Adult-B-010,Behavioral Health Services Fund Account,None,"Division of Aging, Adult & Behavioral Health Services – Crisis Services",5000000.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": true}","The Division of Aging, Adult, and Behavioral Health Services appropriation act (SB36) provides that from the
+Behavioral Health Services Fund Account there is appropriated five million dollars ($5,000,000) for crisis intervention
+services for FY‑2025/2026【699176352912117†L609-L633】.
+",accepted
+MF-Behavioral-Health-Service-to-Division-of-Aging-Adult-B,Behavioral Health Services Fund Account,None,"Division of Aging, Adult & Behavioral Health Services – Crisis Services",5000000.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": true}","The Division of Aging, Adult, and Behavioral Health Services appropriation act (SB36) provides that from the
+Behavioral Health Services Fund Account there is appropriated five million dollars ($5,000,000) for crisis intervention
+services for FY‑2025/2026【699176352912117†L609-L633】.
+",accepted
+MF-Federal-Drug-Court-Enhanc-to-Administrative-Office-of--001,Federal Drug Court Enhancement Funds,None,Administrative Office of the Courts,9190880.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","Section 27 of the same appropriation act (SB72) appropriates federal funds received for the drug court enhancement
+program.  It authorizes the Administrative Office of the Courts to expend up to nine million one hundred ninety
+thousand eight hundred eighty dollars ($9,190,880) from federal funds for operating expenses of the drug court
+enhancement program for FY‑2025/2026【626102372523357†L1163-L1199】.
+",accepted
+MF-Federal-Drug-Court-Enhanc-to-Administrative-Office-of-,Federal Drug Court Enhancement Funds,None,Administrative Office of the Courts,9190880.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","Section 27 of the same appropriation act (SB72) appropriates federal funds received for the drug court enhancement
+program.  It authorizes the Administrative Office of the Courts to expend up to nine million one hundred ninety
+thousand eight hundred eighty dollars ($9,190,880) from federal funds for operating expenses of the drug court
+enhancement program for FY‑2025/2026【626102372523357†L1163-L1199】.
+",accepted
+MF-Health-Department-Operati-to-Arkansas-Department-of-He-006,Health Department Operations Funds (state and federal),None,Arkansas Department of Health – Operations,330969878.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","The Department of Health appropriation act (HB1091) for FY‑2025/2026 appropriates a total of three hundred
+thirty million nine hundred sixty‑nine thousand eight hundred seventy‑eight dollars ($330,969,878) for Health
+Department operations.  Section 8 lists salaries, personal services, operating expenses and other line items and
+states the total amount appropriated【209394869917142†L720-L780】.
+",accepted
+MF-Health-Department-Operati-to-Arkansas-Department-of-He,Health Department Operations Funds (state and federal),None,Arkansas Department of Health – Operations,330969878.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","The Department of Health appropriation act (HB1091) for FY‑2025/2026 appropriates a total of three hundred
+thirty million nine hundred sixty‑nine thousand eight hundred seventy‑eight dollars ($330,969,878) for Health
+Department operations.  Section 8 lists salaries, personal services, operating expenses and other line items and
+states the total amount appropriated【209394869917142†L720-L780】.
+",accepted
+MF-Medicaid-Section1115-Demo-to-Arkansas-Medicaid-DHS-Pee-012,Medicaid Section 1115 Demonstration – Community Reentry,None,Arkansas Medicaid (DHS) – Peer Support Routing,0.0,state,2025-2026,"{""medicaid"": true, ""dhs_controlled"": true}","CMS’s July 22 2025 approval letter for the Arkansas “Opportunities to Test Transition‑Related Strategies to Support
+Community Reentry from Institutions for Mental Disease” Section 1115(a) demonstration requires the state to engage
+peer support specialists to help beneficiaries make connections with community‑based providers and to implement
+strategies such as having peer support specialists in emergency departments to assist with discharge and referral to
+treatment providers【29633513042789†L1460-L1494】.  This demonstration focuses on improving transitions for
+individuals with serious mental illness or substance use disorder, but the approval letter does not specify a
+dedicated funding amount, so the amount is left unspecified.
+",accepted
+MF-Medicaid-Section1115-Demo-to-Arkansas-Medicaid-DHS-Pee,Medicaid Section 1115 Demonstration – Community Reentry,None,Arkansas Medicaid (DHS) – Peer Support Routing,0.0,state,2025-2026,"{""medicaid"": true, ""dhs_controlled"": true}","CMS’s July 22 2025 approval letter for the Arkansas “Opportunities to Test Transition‑Related Strategies to Support
+Community Reentry from Institutions for Mental Disease” Section 1115(a) demonstration requires the state to engage
+peer support specialists to help beneficiaries make connections with community‑based providers and to implement
+strategies such as having peer support specialists in emergency departments to assist with discharge and referral to
+treatment providers【29633513042789†L1460-L1494】.  This demonstration focuses on improving transitions for
+individuals with serious mental illness or substance use disorder, but the approval letter does not specify a
+dedicated funding amount, so the amount is left unspecified.
+",accepted
+MF-Rural-Health-Transformati-to-Arkansas-Department-of-He-013,Rural Health Transformation Program (RHTP) – FY 2026 Federal Award,State of Arkansas (Governor’s Office),Arkansas Department of Health,208779396.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","A December 30 2025 press release from the Arkansas governor’s office announces that Arkansas received an award of
+two hundred eight million seven hundred seventy‑nine thousand three hundred ninety‑six dollars ($208,779,396) for
+Fiscal Year 2026 through the federal Rural Health Transformation Program【993399354448306†L62-L65】.  The press
+release notes that this is part of the program’s five‑year commitment and that the FY‑2026 allocation is the
+state’s first‑year award【993399354448306†L79-L84】.
+",accepted
+MF-Rural-Health-Transformati-to-Arkansas-Department-of-He,Rural Health Transformation Program (RHTP) – FY 2026 Federal Award,State of Arkansas (Governor’s Office),Arkansas Department of Health,208779396.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","A December 30 2025 press release from the Arkansas governor’s office announces that Arkansas received an award of
+two hundred eight million seven hundred seventy‑nine thousand three hundred ninety‑six dollars ($208,779,396) for
+Fiscal Year 2026 through the federal Rural Health Transformation Program【993399354448306†L62-L65】.  The press
+release notes that this is part of the program’s five‑year commitment and that the FY‑2026 allocation is the
+state’s first‑year award【993399354448306†L79-L84】.
+",accepted
+MF-SPECIALTY-COURT-USER-FEE,Specialty court program participants,Direct,Specialty Court Program Fund,250.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}",Ark. Code § 16‑10‑701(b)(1),pending
+MF-SPECIALTY-COURTS-2025-2026,State Central Services Fund,Direct,Administrative Office of the Courts – Specialty Courts program,4500000.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}",Act 776 (SB72) § 32,pending
+MF-Secretary-of-Human-Servic-to-Arkansas-Department-of-Hu-008,Secretary of Human Services Paying Account,None,Arkansas Department of Human Services – Secretary’s Office (State Operations),69760347.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": true}","Section 5 of the DHS Secretary’s Office appropriation act (HB1105) appropriates funds for operations.  The section
+lists salaries, personal services, operating expenses and data processing services with a total amount of sixty‑nine
+million seven hundred sixty thousand three hundred forty‑seven dollars ($69,760,347)【935954631752484†L517-L555】.
+",accepted
+MF-Secretary-of-Human-Servic-to-Arkansas-Department-of-Hu-009,Secretary of Human Services Grants Paying Account,None,Arkansas Department of Human Services – Purchase of Services,129084.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": true}","Section 8 of HB1105 authorizes the Secretary of Human Services to use grants paying funds for purchase‑of‑service
+payments.  The section appropriates one hundred twenty‑nine thousand eighty‑four dollars ($129,084) for that
+purpose【935954631752484†L623-L640】.
+",accepted
+MF-Secretary-of-Human-Servic-to-Arkansas-Department-of-Hu,Secretary of Human Services Grants Paying Account,None,Arkansas Department of Human Services – Purchase of Services,129084.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": true}","Section 8 of HB1105 authorizes the Secretary of Human Services to use grants paying funds for purchase‑of‑service
+payments.  The section appropriates one hundred twenty‑nine thousand eighty‑four dollars ($129,084) for that
+purpose【935954631752484†L623-L640】.
+",accepted
+MF-Specialty-Court-Program-F-to-Administrative-Office-of--000,Specialty Court Program Fund,None,Administrative Office of the Courts,300000.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","The FY‑2025/2026 appropriation act for the Arkansas Administrative Office of the Courts (SB72) specifies that there is
+appropriated from the Specialty Court Program Fund the sum of three hundred thousand dollars ($300,000) for costs
+associated with the specialty court program for the fiscal year ending June 30, 2026【626102372523357†L1110-L1127】.
+",accepted
+MF-Specialty-Court-Program-F-to-Administrative-Office-of-,Specialty Court Program Fund,None,Administrative Office of the Courts,300000.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","The FY‑2025/2026 appropriation act for the Arkansas Administrative Office of the Courts (SB72) specifies that there is
+appropriated from the Specialty Court Program Fund the sum of three hundred thousand dollars ($300,000) for costs
+associated with the specialty court program for the fiscal year ending June 30, 2026【626102372523357†L1110-L1127】.
+",accepted
+MF-State-Central-Services-Fu-to-Administrative-Office-of--004,State Central Services Fund,None,Administrative Office of the Courts,4500000.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","Section 32 of SB72 appropriates funds from the State Central Services Fund to the Administrative Office of the Courts
+for specialty court operations and grants.  The act authorizes expenditures of up to four million five hundred
+thousand dollars ($4,500,000) for FY‑2025/2026【884740964066380†L706-L722】.
+",accepted
+MF-State-Central-Services-Fu-to-Administrative-Office-of-,State Central Services Fund,None,Administrative Office of the Courts,4500000.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","Section 32 of SB72 appropriates funds from the State Central Services Fund to the Administrative Office of the Courts
+for specialty court operations and grants.  The act authorizes expenditures of up to four million five hundred
+thousand dollars ($4,500,000) for FY‑2025/2026【884740964066380†L706-L722】.
+",accepted
+MF-Substance-Use-Prevention--to-Arkansas-Department-of-Hu-011,"Substance Use Prevention, Treatment & Recovery Services Block Grant (SAMHSA SUBG)",None,Arkansas Department of Human Services – Substance Abuse Program,0.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": true}","The Arkansas Department of Human Services describes the Substance Abuse Block Grant (SABG), also called the
+Substance Use Prevention, Treatment and Recovery Services Block Grant (SUBG), as providing funds to plan,
+implement and evaluate activities that prevent and treat substance abuse.  SAMHSA requires grantees to spend no
+less than 20 percent of their allotment on prevention strategies【694662080385875†L862-L867】.  The state notes that
+Arkansas is divided into thirteen catchment areas and that UALR Mid‑South coordinates services for this program
+【694662080385875†L862-L870】.  The site does not publish the FY‑2025/2026 award amount, so the amount is left
+unspecified in this artifact.
+",accepted
+MF-Substance-Use-Prevention--to-Arkansas-Department-of-Hu,"Substance Use Prevention, Treatment & Recovery Services Block Grant (SAMHSA SUBG)",None,Arkansas Department of Human Services – Substance Abuse Program,0.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": true}","The Arkansas Department of Human Services describes the Substance Abuse Block Grant (SABG), also called the
+Substance Use Prevention, Treatment and Recovery Services Block Grant (SUBG), as providing funds to plan,
+implement and evaluate activities that prevent and treat substance abuse.  SAMHSA requires grantees to spend no
+less than 20 percent of their allotment on prevention strategies【694662080385875†L862-L867】.  The state notes that
+Arkansas is divided into thirteen catchment areas and that UALR Mid‑South coordinates services for this program
+【694662080385875†L862-L870】.  The site does not publish the FY‑2025/2026 award amount, so the amount is left
+unspecified in this artifact.
+",accepted
+MF-Trauma-System-Fund-to-Arkansas-Department-of-He-007,Trauma System Fund,None,Arkansas Department of Health – Trauma System,26215247.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","Section 9 of HB1091 appropriates money for the Trauma System.  It authorizes total expenditures of
+twenty‑six million two hundred fifteen thousand two hundred forty‑seven dollars ($26,215,247) for salaries and
+operating expenses related to the Arkansas Trauma System【209394869917142†L785-L829】.
+",accepted
+MF-Trauma-System-Fund-to-Arkansas-Department-of-He,Trauma System Fund,None,Arkansas Department of Health – Trauma System,26215247.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","Section 9 of HB1091 appropriates money for the Trauma System.  It authorizes total expenditures of
+twenty‑six million two hundred fifteen thousand two hundred forty‑seven dollars ($26,215,247) for salaries and
+operating expenses related to the Arkansas Trauma System【209394869917142†L785-L829】.
+",accepted
+MF-U.S.-Department-of-Transp-to-Administrative-Office-of--005,U.S. Department of Transportation Highway Safety Funds (23 U.S.C. § 402),Arkansas State Police,Administrative Office of the Courts,0.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","Section 33 of the Administrative Office of the Courts appropriation for a prior fiscal year (SB70) contains special
+language authorizing federal highway safety incentive funds received under 23 U.S.C. § 402 by the Arkansas State Police
+to be granted to the Administrative Office of the Courts and deposited into the State Central Services Fund to
+reimburse expenditures for the continuing education program for district judges【422389437869558†L502-L509】.  The
+statute does not state a specific amount for this reimbursement.
+",accepted
+MF-U.S.-Department-of-Transp-to-Administrative-Office-of-,U.S. Department of Transportation Highway Safety Funds (23 U.S.C. § 402),Arkansas State Police,Administrative Office of the Courts,0.0,state,2025-2026,"{""medicaid"": false, ""dhs_controlled"": false}","Section 33 of the Administrative Office of the Courts appropriation for a prior fiscal year (SB70) contains special
+language authorizing federal highway safety incentive funds received under 23 U.S.C. § 402 by the Arkansas State Police
+to be granted to the Administrative Office of the Courts and deposited into the State Central Services Fund to
+reimburse expenditures for the continuing education program for district judges【422389437869558†L502-L509】.  The
+statute does not state a specific amount for this reimbursement.
+",accepted

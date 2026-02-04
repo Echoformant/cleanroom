@@ -119,15 +119,32 @@ def ingest_table(conn: sqlite3.Connection, table: str, props: Dict[str, Dict], a
     target_dir = artifacts_dir / table
     if not target_dir.exists():
         return 0
-    files = sorted([p for p in target_dir.glob("*.json") if p.is_file()])
+    # Ingest recursively under artifacts/validated/<table>/ but ignore hidden/tooling dirs.
+    files = []
+    for p in target_dir.rglob("*.json"):
+        if not p.is_file():
+            continue
+        parts = set(p.parts)
+        if ".git" in parts or ".github" in parts or "_manifests" in parts:
+            continue
+        # If a parent directory looks like an original YAML artifact folder, skip JSON fragments under it.
+        if any(part.lower().endswith((".yaml", ".yml")) for part in p.parts):
+            continue
+        # Skip any hidden path components.
+        if any(part.startswith(".") for part in p.parts):
+            continue
+        files.append(p)
+    files = sorted(files)
     if not files:
         return 0
     col_names = list(props.keys()) if props else []
     col_names = col_names if col_names else []
     cols_with_raw = col_names + ["_raw_json"]
     placeholders = ",".join(["?"] * len(cols_with_raw))
-    sql = f"INSERT INTO {table} (" + ",".join(cols_with_raw) + f") VALUES ({placeholders})"
+    # Deterministic dedupe: for duplicate primary keys, keep the first inserted row (files are processed in sorted order).
+    sql = f"INSERT OR IGNORE INTO {table} (" + ",".join(cols_with_raw) + f") VALUES ({placeholders})"
     count = 0
+    collisions = 0
     cur = conn.cursor()
     cur.execute("BEGIN")
     for path in files:
@@ -150,8 +167,14 @@ def ingest_table(conn: sqlite3.Connection, table: str, props: Dict[str, Dict], a
                 row.append(val)
         row.append(json.dumps(obj, ensure_ascii=False))
         cur.execute(sql, row)
-        count += 1
+        # If a row was ignored, it's a PK collision (or other constraint); count it.
+        if cur.rowcount == 1:
+            count += 1
+        else:
+            collisions += 1
     conn.commit()
+    if collisions:
+        print(f"{table} collisions_ignored: {collisions}")
     return count
 
 

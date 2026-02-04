@@ -1,0 +1,416 @@
+[
+  {
+    "evidence_id": "AR-IMPL-16-100-204-specialty-court",
+    "section": "general",
+    "claim_summary": "Evidence item pending detailed summary",
+    "evidence_type": "field_validation",
+    "source": "{\"title\": \"Source document\", \"issuing_body\": \"Government entity\"}",
+    "confidence_level": "medium",
+    "editor_status": "pending"
+  },
+  {
+    "evidence_id": "EV-A-review-of-the-Administrative-Office-of-015",
+    "section": "a",
+    "claim_summary": "A review of the Administrative Office of the Courts (AOC) FY\u20112026 appropriation act and associated public documents found no compliance determinations or enforcement actions issued by the AOC in FY\u20112026.  The legislation authorizes funding for specialty and drug court programs but contains no compliance determinations.",
+    "evidence_type": "field_validation",
+    "source": "{\"title\": \"The FY\u20112025/2026 appropriation act for the AOC provides funding for specialty and drug court programs but does not\\ninclude any compliance determinations or enforcement actions\u3010884740964066380\u2020L674-L70\", \"issuing_body\": \"Government entity\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EV-A-review-of-the-Administrative-Office-of-the-Court",
+    "section": "a",
+    "claim_summary": "A review of the Administrative Office of the Courts (AOC) FY\u20112026 appropriation act and associated public documents found no compliance determinations or enforcement actions issued by the AOC in FY\u20112026.  The legislation authorizes funding for specialty and drug court programs but contains no compliance determinations.",
+    "evidence_type": "field_validation",
+    "source": "{\"title\": \"The FY\u20112025/2026 appropriation act for the AOC provides funding for specialty and drug court programs but does not\\ninclude any compliance determinations or enforcement actions\u3010884740964066380\u2020L674-L70\", \"issuing_body\": \"Government entity\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EV-ADMIN-ORDER-2012-ARK-468",
+    "section": "IX. Legal / Regulatory Context > Implementing Policy",
+    "claim_summary": "Arkansas Supreme Court Administrative Orders 14 and 18 require specialty court programs to be approved through administrative plans.",
+    "evidence_type": "administrative_rule",
+    "source": "{\"title\": \"In re Admin. Order Nos. 14 & 18, 2012 Ark. 468\", \"issuing_body\": \"Arkansas Supreme Court\", \"url\": \"https://law.justia.com/cases/arkansas/supreme-court/2012/2012-ark-468.html\"}",
+    "confidence_level": "high",
+    "editor_status": "pending"
+  },
+  {
+    "evidence_id": "EV-BUDGET-ACT776-2025-SPECIALTY-COURT-300000",
+    "section": "IX. Legal / Regulatory Context > Act 776 of 2025",
+    "claim_summary": "Act 776 of 2025 appropriates $300,000 from the Specialty Court Program Fund to the AOC for Specialty Court Program costs and Advisory Committee support.",
+    "evidence_type": "budget",
+    "source": "{\"title\": \"Act 776 of 2025 (SB72) \u2014 AOC Appropriation\", \"issuing_body\": \"Arkansas General Assembly\", \"url\": \"https://arkleg.state.ar.us/Acts/FTPDocument?ddBienniumSession=2025%2F2025R&file=776.pdf&path=%2FACTS%2F2025R%2FPublic%2F\"}",
+    "confidence_level": "high",
+    "editor_status": "pending"
+  },
+  {
+    "evidence_id": "EV-BUDGET-ACT890-2025-DAABHS-CRISIS-5000000",
+    "section": "IX. Legal / Regulatory Context > Act 890 of 2025",
+    "claim_summary": "Act 890 of 2025 appropriates $5,000,000 for DHS DAABHS Crisis Services.",
+    "evidence_type": "budget",
+    "source": "{\"title\": \"Act 890 of 2025 (SB36) \u2014 DAABHS Appropriation\", \"issuing_body\": \"Arkansas General Assembly\", \"url\": \"https://arkleg.state.ar.us/Acts/FTPDocument?ddBienniumSession=2025%2F2025R&file=890.pdf&path=%2FACTS%2F2025R%2FPublic%2F\"}",
+    "confidence_level": "high",
+    "editor_status": "pending"
+  },
+  {
+    "evidence_id": "EV-During-a-review-of-Arkansas-Department-o-014",
+    "section": "general",
+    "claim_summary": "During a review of Arkansas Department of Human Services (DHS) administrative rules, press releases and federal filings for FY\u20112026, no compliance determinations were identified.  Searches of DHS\u2019s official website and federal guidance documents yielded operational announcements and appropriation acts but no FY\u20112026 compliance determinations.",
+    "evidence_type": "field_validation",
+    "source": "{\"title\": \"Extensive searches of DHS\u2019s website and federal guidance documents (e.g., the section\u00a01115 demonstration approval\\nletter) reveal operational guidance but no compliance determinations or enforcement ac\", \"issuing_body\": \"Government entity\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EV-During-a-review-of-Arkansas-Department-of-Human-Se",
+    "section": "general",
+    "claim_summary": "During a review of Arkansas Department of Human Services (DHS) administrative rules, press releases and federal filings for FY\u20112026, no compliance determinations were identified.  Searches of DHS\u2019s official website and federal guidance documents yielded operational announcements and appropriation acts but no FY\u20112026 compliance determinations.",
+    "evidence_type": "field_validation",
+    "source": "{\"title\": \"Extensive searches of DHS\u2019s website and federal guidance documents (e.g., the section\u00a01115 demonstration approval\\nletter) reveal operational guidance but no compliance determinations or enforcement ac\", \"issuing_body\": \"Government entity\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EV-During-FY2026-the-Arkansas-Department-016",
+    "section": "general",
+    "claim_summary": "During FY\u20112026, the Arkansas Department of Health (ADH) issued appropriation and program announcements for operations and the trauma system, but there were no compliance determinations or enforcement actions.  Searches of the department\u2019s website and news releases did not reveal any such actions.",
+    "evidence_type": "field_validation",
+    "source": "{\"title\": \"The ADH appropriation act details operations and trauma system funding for FY\u20112026 and does not include compliance\\ndeterminations\u3010209394869917142\u2020L720-L780\u3011\u3010209394869917142\u2020L785-L829\u3011.\\n\", \"issuing_body\": \"Government entity\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EV-During-FY2026-the-Arkansas-Department-of-Health-AD",
+    "section": "general",
+    "claim_summary": "During FY\u20112026, the Arkansas Department of Health (ADH) issued appropriation and program announcements for operations and the trauma system, but there were no compliance determinations or enforcement actions.  Searches of the department\u2019s website and news releases did not reveal any such actions.",
+    "evidence_type": "field_validation",
+    "source": "{\"title\": \"The ADH appropriation act details operations and trauma system funding for FY\u20112026 and does not include compliance\\ndeterminations\u3010209394869917142\u2020L720-L780\u3011\u3010209394869917142\u2020L785-L829\u3011.\\n\", \"issuing_body\": \"Government entity\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EV-NAADAC-APSP-INTRO",
+    "section": "Authority Map: APSP Credentialing",
+    "claim_summary": "APSP is described as a three-tier credentialing process (PR/APR/PRPS) with training, education, experience, and supervision requirements.",
+    "evidence_type": "administrative_rule",
+    "source": "{\"title\": \"Introducing the Arkansas Peer Specialist Program\", \"issuing_body\": \"NAADAC\", \"url\": \"https://www.naadac.org/assets/2416/aa&r_spring2021_introducing_the_arkansas_peer_specialist_program.pdf\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EV-No-FY2026-compliance-determinations-or-017",
+    "section": "general",
+    "claim_summary": "No FY\u20112026 compliance determinations or enforcement actions by the Centers for Medicare & Medicaid Services (CMS) affecting Arkansas were identified.  CMS\u2019s 2025 approval letter for Arkansas\u2019s section\u00a01115 demonstration and related federal guidance documents contain program requirements but do not constitute enforcement actions or compliance determinations for FY\u20112026.",
+    "evidence_type": "administrative_rule",
+    "source": "{\"title\": \"The CMS approval letter for the Arkansas section\u00a01115 demonstration outlines program conditions and expectations but\\ndoes not impose enforcement actions\u301029633513042789\u2020L1460-L1494\u3011.\\n\", \"issuing_body\": \"Government entity\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EV-No-FY2026-compliance-determinations-or-enforcement",
+    "section": "general",
+    "claim_summary": "No FY\u20112026 compliance determinations or enforcement actions by the Centers for Medicare & Medicaid Services (CMS) affecting Arkansas were identified.  CMS\u2019s 2025 approval letter for Arkansas\u2019s section\u00a01115 demonstration and related federal guidance documents contain program requirements but do not constitute enforcement actions or compliance determinations for FY\u20112026.",
+    "evidence_type": "administrative_rule",
+    "source": "{\"title\": \"The CMS approval letter for the Arkansas section\u00a01115 demonstration outlines program conditions and expectations but\\ndoes not impose enforcement actions\u301029633513042789\u2020L1460-L1494\u3011.\\n\", \"issuing_body\": \"Government entity\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EV-SB72-2025-AOC-APPROPRIATION",
+    "section": "general",
+    "claim_summary": "Engrossed version of Senate Bill\u00a072 (Act\u00a0776) appropriating funds for the Administrative Office of the Courts for the 2025\u20112026 fiscal year.  The bill includes appropriations for the Accountability Court Fund ($400,000), Adult Drug Court Program ($1,000,000), specialty courts ($4,500,000) and other programs\u3010820752699809212\u2020L1290-L1466\u3011.\n",
+    "evidence_type": "field_validation",
+    "source": "{\"title\": \"Source document\", \"issuing_body\": \"Government entity\"}",
+    "confidence_level": "medium",
+    "editor_status": "pending"
+  },
+  {
+    "evidence_id": "EV-Searches-of-the-Substance-Abuse-and-Ment-018",
+    "section": "general",
+    "claim_summary": "Searches of the Substance Abuse and Mental Health Services Administration (SAMHSA) announcements and the Arkansas DHS SABG program pages for FY\u20112026 found no compliance determinations or enforcement actions.  The available information focuses on grant program requirements and state prevention initiatives.",
+    "evidence_type": "field_validation",
+    "source": "{\"title\": \"The Arkansas DHS SABG program page and related information discuss prevention requirements and funding but do not\\ncontain any compliance determinations or enforcement actions\u3010694662080385875\u2020L862-L870\", \"issuing_body\": \"Government entity\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EV-Searches-of-the-Substance-Abuse-and-Mental-Health-",
+    "section": "general",
+    "claim_summary": "Searches of the Substance Abuse and Mental Health Services Administration (SAMHSA) announcements and the Arkansas DHS SABG program pages for FY\u20112026 found no compliance determinations or enforcement actions.  The available information focuses on grant program requirements and state prevention initiatives.",
+    "evidence_type": "field_validation",
+    "source": "{\"title\": \"The Arkansas DHS SABG program page and related information discuss prevention requirements and funding but do not\\ncontain any compliance determinations or enforcement actions\u3010694662080385875\u2020L862-L870\", \"issuing_body\": \"Government entity\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-AR-ACT1004-2025-DHS-SECRETARY-OFFICE-APPROPRIATIONS",
+    "section": "Act 1004 of 2025 \u2014 DHS Secretary\u2019s Office appropriation sections",
+    "claim_summary": "Arkansas Act 1004 of 2025 contains FY2026 DHS Secretary\u2019s Office appropriations; referenced in-thread as part of DHS budget evidence supporting the dossier.\n",
+    "evidence_type": "budget",
+    "source": "{\"title\": \"Arkansas Act 1004 of 2025 (DHS Secretary\u2019s Office Appropriations)\", \"issuing_body\": \"Arkansas General Assembly\", \"url\": \"https://arkleg.state.ar.us/Acts/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2F&file=1004.pdf&ddBienniumSession=2025%2F2025R\"}",
+    "confidence_level": "high",
+    "editor_status": "pending"
+  },
+  {
+    "evidence_id": "EVID-AR-ACT1004-2025-S5-DHS-Secretary-StateOperations-135455033-FY2026",
+    "section": "AR_FY2026_DHS_SECRETARY_OFFICE_STATE_OPERATIONS_ACT1004_SEC5",
+    "claim_summary": "Act 1004 of 2025 appropriates a total of $135,455,033 to the Department of Human Services - Secretary's Office for State Operations for FY2026 (including regular salaries, extra help, personal services matching, operating expenses, conference & travel, professional fees and services, and capital outlay).",
+    "evidence_type": "budget",
+    "source": "{\"title\": \"Act 1004 of 2025 \u2014 DHS Secretary's Office Appropriation\", \"issuing_body\": \"Arkansas General Assembly\", \"url\": \"https://arkleg.state.ar.us/Home/FTPDocument?path=%2FAssembly%2FMeeting+Attachments%2F083%2F27496%2FExhibit+B2-+Act+1004+of+2025.pdf\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-AR-ACT1004-2025-S8-DHS-Secretary-PurchaseOfServices-129084-FY2026",
+    "section": "AR_FY2026_DHS_SECRETARY_OFFICE_GRANTS_PAYING_PURCHASE_OF_SERVICES_ACT1004_SEC8",
+    "claim_summary": "Act 1004 of 2025 appropriates $129,084 to the Department of Human Services - Secretary's Office for grants and paying account purchase of services for FY2026.",
+    "evidence_type": "budget",
+    "source": "{\"title\": \"Act 1004 of 2025 \u2014 DHS Secretary's Office Appropriation\", \"issuing_body\": \"Arkansas General Assembly\", \"url\": \"https://arkleg.state.ar.us/Home/FTPDocument?path=%2FAssembly%2FMeeting+Attachments%2F083%2F27496%2FExhibit+B2-+Act+1004+of+2025.pdf\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-AR-ACT538-2025-ADH-OPERATIONS-TRAUMA-SYSTEM",
+    "section": "Act 538 of 2025 \u2014 ADH Operations; Trauma System appropriation items",
+    "claim_summary": "Arkansas Act 538 of 2025 contains FY2026 Arkansas Department of Health (ADH) appropriation items for Trauma System operations, supporting the ADH trauma-related funds referenced in-thread.\n",
+    "evidence_type": "budget",
+    "source": "{\"title\": \"Arkansas Act 538 of 2025 (ADH Operations)\", \"issuing_body\": \"Arkansas General Assembly\", \"url\": \"https://arkleg.state.ar.us/Acts/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2F&file=538.pdf&ddBienniumSession=2025%2F2025R\"}",
+    "confidence_level": "high",
+    "editor_status": "pending"
+  },
+  {
+    "evidence_id": "EVID-AR-ACT538-2025-S8-ADH-Operations-349686818-FY2026",
+    "section": "AR_FY2026_ADH_OPERATIONS_ACT538_SEC8",
+    "claim_summary": "Act 538 of 2025 appropriates a total of $349,686,818 to the Arkansas Department of Health for Operations for FY2026 (including regular salaries, extra help, personal services matching, operating expenses, and other line items).",
+    "evidence_type": "budget",
+    "source": "{\"title\": \"Act 538 of 2025 \u2014 Arkansas Department of Health Appropriation\", \"issuing_body\": \"Arkansas General Assembly\", \"url\": \"https://arkleg.state.ar.us/Acts/FTPDocument?ddBienniumSession=2025%2F2025R&file=538.pdf&path=%2FACTS%2F2025R%2FPublic%2F\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-AR-ACT538-2025-S9-ADH-TraumaSystem-4474344-FY2026",
+    "section": "AR_FY2026_ADH_TRAUMA_EMS_ACT538_SEC9",
+    "claim_summary": "Act 538 of 2025 appropriates $4,474,344 to the Arkansas Department of Health for the Trauma System for FY2026 (operating expenses; professional fees and services; and grants and aid).",
+    "evidence_type": "budget",
+    "source": "{\"title\": \"Act 538 of 2025 \u2014 Arkansas Department of Health Appropriation\", \"issuing_body\": \"Arkansas General Assembly\", \"url\": \"https://arkleg.state.ar.us/Acts/FTPDocument?ddBienniumSession=2025%2F2025R&file=538.pdf&path=%2FACTS%2F2025R%2FPublic%2F\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-AR-ACT58-2021-AccountabilityCourtFund-UseAndFormula",
+    "section": "AR_FY2026_AOC_ACCOUNTABILITY_COURT_FUND_ACT776_SEC29 (Statutory fund-use + formula constraint)",
+    "claim_summary": "Act 58 of 2021 (amending Ark. Code Ann. \u00a7 19-5-1144) provides that the Accountability Court Fund shall be used by the Administrative Office of the Courts for adult and juvenile specialty court programs, based on a formula developed by the Arkansas Judicial Council, reviewed by the Specialty Court Program Advisory Committee, and approved by the Legislative Council.",
+    "evidence_type": "statute",
+    "source": "{\"title\": \"Act 58 of 2021 \u2014 Accountability Court Fund (Ark. Code Ann. \u00a7 19-5-1144 amendment)\", \"issuing_body\": \"Arkansas General Assembly\", \"url\": \"https://arkleg.state.ar.us/Acts/FTPDocument?ddBienniumSession=2021%2F2021R&file=58.pdf&path=%2FACTS%2F2021R%2FPublic%2F\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-AR-ACT776-2025-AOC-APPROPRIATIONS-SECTIONS",
+    "section": "Act 776 of 2025 \u2014 Sec. 31; Sec. 34; Special Language Sec. 1\u20133",
+    "claim_summary": "Arkansas Act 776 of 2025 contains FY2026 AOC appropriation line-items for 'Specialty Court/Juvenile Drug Programs' and references Byrne JAG behavioral health collaboration in federal funds sections; special language sections govern conditions/allowable use for these appropriations.\n",
+    "evidence_type": "budget",
+    "source": "{\"title\": \"Arkansas Act 776 of 2025 (AOC Appropriations)\", \"issuing_body\": \"Arkansas General Assembly\", \"url\": \"https://arkleg.state.ar.us/Acts/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2F&file=776.pdf&ddBienniumSession=2025%2F2025R\"}",
+    "confidence_level": "high",
+    "editor_status": "pending"
+  },
+  {
+    "evidence_id": "EVID-AR-ACT776-2025-S25-SpecialtyCourtProgram-300000-FY2026",
+    "section": "AR_FY2026_AOC_DRUG_COURT_ENHANCEMENT_SPECIALTY_COURT_PROGRAM_FUND_ACT776_SEC27 (Act 776 \u00a725)",
+    "claim_summary": "Act 776 of 2025 appropriates $300,000 from the Specialty Court Program Fund to the Administrative Office of the Courts for costs of the Specialty Court Program and support to the Specialty Court Advisory Committee for the fiscal year ending June 30, 2026.",
+    "evidence_type": "budget",
+    "source": "{\"title\": \"Act 776 of 2025 (SB72) \u2014 AOC Appropriation\", \"issuing_body\": \"Arkansas General Assembly\", \"url\": \"https://arkleg.state.ar.us/Acts/FTPDocument?ddBienniumSession=2025%2F2025R&file=776.pdf&path=%2FACTS%2F2025R%2FPublic%2F\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-AR-ACT776-2025-S27-DrugCourtEnhancement-9190880-FY2026",
+    "section": "AR_FY2026_AOC_DRUG_COURT_ENHANCEMENT_SPECIALTY_COURT_PROGRAM_FUND_ACT776_SEC27 (Act 776 \u00a727)",
+    "claim_summary": "Act 776 of 2025 appropriates federal funds for AOC Drug Court Enhancement totaling $9,190,880 for FY2026 (including operating expense, conference & travel, professional fees, grants & aid, and an adult treatment court program line).",
+    "evidence_type": "budget",
+    "source": "{\"title\": \"Act 776 of 2025 (SB72) \u2014 AOC Appropriation\", \"issuing_body\": \"Arkansas General Assembly\", \"url\": \"https://arkleg.state.ar.us/Acts/FTPDocument?ddBienniumSession=2025%2F2025R&file=776.pdf&path=%2FACTS%2F2025R%2FPublic%2F\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-AR-ACT776-2025-S30-AccountabilityCourtFund-400000-FY2026",
+    "section": "AR_FY2026_AOC_ACCOUNTABILITY_COURT_FUND_ACT776_SEC29 (Act 776 \u00a730)",
+    "claim_summary": "Act 776 of 2025 appropriates $400,000 from the Accountability Court Fund to the Administrative Office of the Courts for Accountability Court expenses for the fiscal year ending June 30, 2026.",
+    "evidence_type": "budget",
+    "source": "{\"title\": \"Act 776 of 2025 (SB72) \u2014 AOC Appropriation\", \"issuing_body\": \"Arkansas General Assembly\", \"url\": \"https://arkleg.state.ar.us/Acts/FTPDocument?ddBienniumSession=2025%2F2025R&file=776.pdf&path=%2FACTS%2F2025R%2FPublic%2F\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-AR-ACT776-2025-S31-AdultDrugCourt-1000000-FY2026",
+    "section": "AR_FY2026_AOC_ADULT_DRUG_COURT_EXPENSES_CASH_FUND_ACT776_SEC30 (Act 776 \u00a731)",
+    "claim_summary": "Act 776 of 2025 appropriates $1,000,000 to the Administrative Office of the Courts for Adult Drug Court expenses (operating expenses and grants & aid) for the fiscal year ending June 30, 2026.",
+    "evidence_type": "budget",
+    "source": "{\"title\": \"Act 776 of 2025 (SB72) \u2014 AOC Appropriation\", \"issuing_body\": \"Arkansas General Assembly\", \"url\": \"https://arkleg.state.ar.us/Acts/FTPDocument?ddBienniumSession=2025%2F2025R&file=776.pdf&path=%2FACTS%2F2025R%2FPublic%2F\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-AR-ACT776-2025-S32-SpecialtyCourts-4500000-FY2026",
+    "section": "AR_FY2026_AOC_SPECIALTY_COURTS_STATE_CENTRAL_SERVICES_ACT776_SEC31 (Act 776 \u00a732)",
+    "claim_summary": "Act 776 of 2025 appropriates $4,500,000 from the State Central Services Fund to the Administrative Office of the Courts for operating expenses and grants for specialty courts for the fiscal year ending June 30, 2026.",
+    "evidence_type": "budget",
+    "source": "{\"title\": \"Act 776 of 2025 (SB72) \u2014 AOC Appropriation\", \"issuing_body\": \"Arkansas General Assembly\", \"url\": \"https://arkleg.state.ar.us/Acts/FTPDocument?ddBienniumSession=2025%2F2025R&file=776.pdf&path=%2FACTS%2F2025R%2FPublic%2F\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-AR-ACT776-2025-S34-ByrneJAG-150000-FY2026",
+    "section": "AR_FY2026_AOC_BYRNE_JAG_BEHAVIORAL_HEALTH_COLLAB_FEDERAL_FUNDS_ACT776_SEC34",
+    "claim_summary": "Act 776 of 2025 appropriates $150,000 in federal funds to the Administrative Office of the Courts for grants and aid to improve collaborative efforts with behavioral health and criminal justice stakeholders for the fiscal year ending June 30, 2026.",
+    "evidence_type": "budget",
+    "source": "{\"title\": \"Act 776 of 2025 (SB72) \u2014 AOC Appropriation\", \"issuing_body\": \"Arkansas General Assembly\", \"url\": \"https://arkleg.state.ar.us/Acts/FTPDocument?ddBienniumSession=2025%2F2025R&file=776.pdf&path=%2FACTS%2F2025R%2FPublic%2F\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-AR-ACT776-2025-S36-ASP-AOC-DOT402-FundTransfer-MatchRestriction",
+    "section": "AR_FY2026_ASP_TO_AOC_FEDERAL_DOT_SAFETY_FUNDS_PASS_THROUGH_ACT776_SEC36",
+    "claim_summary": "Act 776 of 2025 contains special language allowing federal DOT safety incentive funds received by Arkansas State Police under 23 U.S.C. \u00a7402 to be granted to AOC and deposited into the State Central Services Fund to reimburse AOC Continuing Education Program expenditures; it also states the funds may not be used for match required by other funding sources.",
+    "evidence_type": "administrative_rule",
+    "source": "{\"title\": \"Act 776 of 2025 (SB72) \u2014 AOC Appropriation\", \"issuing_body\": \"Arkansas General Assembly\", \"url\": \"https://arkleg.state.ar.us/Acts/FTPDocument?ddBienniumSession=2025%2F2025R&file=776.pdf&path=%2FACTS%2F2025R%2FPublic%2F\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-AR-ACT890-2025-DHS-DAABHS-CRISIS-SERVICES",
+    "section": "Act 890 of 2025 \u2014 DHS DAABHS appropriation items incl. crisis services and related line-items",
+    "claim_summary": "Arkansas Act 890 of 2025 contains FY2026 DHS Division of Aging, Adult, and Behavioral Health Services (DAABHS) appropriations, including items referenced in-thread such as Substance Abuse Prevention and Alcohol and Drug Abuse Coordinating Council state funds line-items.\n",
+    "evidence_type": "budget",
+    "source": "{\"title\": \"Arkansas Act 890 of 2025 (DHS DAABHS Appropriations)\", \"issuing_body\": \"Arkansas General Assembly\", \"url\": \"https://arkleg.state.ar.us/Acts/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2F&file=890.pdf&ddBienniumSession=2025%2F2025R\"}",
+    "confidence_level": "high",
+    "editor_status": "pending"
+  },
+  {
+    "evidence_id": "EVID-AR-ACT890-2025-S9-DAABHS-CrisisServices-5000000-FY2026",
+    "section": "AR_FY2026_DHS_DAABHS_CRISIS_SERVICES_ACT890_ITEM",
+    "claim_summary": "Act 890 of 2025 appropriates $5,000,000 from the State Central Services Fund to the Department of Human Services, Division of Aging, Adult, and Behavioral Health Services (DAABHS) for Crisis Services for the fiscal year ending June 30, 2026.",
+    "evidence_type": "budget",
+    "source": "{\"title\": \"Act 890 of 2025 \u2014 DHS DAABHS Appropriation\", \"issuing_body\": \"Arkansas General Assembly\", \"url\": \"https://www.arkleg.state.ar.us/Acts/FTPDocument?ddBienniumSession=2025%2F2025R&file=890.pdf&path=%2FACTS%2F2025R%2FPublic%2F\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-AR-ALC-2025-02-26-DHS-GrantsReview-ARM180-FaithBasedTreatment-A04-100000",
+    "section": "AR_FY2025_DHS_DAABHS_SUBGRANTS_FAITH_BASED_TREATMENT_INITIATIVES_FEDERAL_FUNDS_GRANTS_REVIEW_2025_02_26",
+    "claim_summary": "A DHS Grants for Review document dated February 26, 2025 lists a DAABHS subgrant for ARM180 (federal 100%) for Faith-Based Treatment Initiatives, Amendment #A04, Amendment Amount $100,000.",
+    "evidence_type": "grant",
+    "source": "{\"title\": \"DHS Grants for Review \u2014 February 26, 2025\", \"issuing_body\": \"Arkansas Legislative Council / Arkansas General Assembly (meeting attachments)\", \"url\": \"https://arkleg.state.ar.us/Home/FTPDocument?path=%2FAssembly%2FMeeting+Attachments%2F024%2F27083%2FN.+discretionary+grants.pdf\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-AR-LegAudit-2025-BudgetHearings-AOC-FY2022-Finding-AppropriationMisuse",
+    "section": "AR_FY2026_AOC_SPECIALTY_COURTS_STATE_CENTRAL_SERVICES_ACT776_SEC31 (Audit finding re: appropriations use; not specialty-court specific)",
+    "claim_summary": "Arkansas Legislative Audit summarized a finding (AOC, year ended June 30, 2022) stating that AOC used appropriations for one purpose for another purpose (reimbursements vs dependency-neglect professional fees), and referenced a statutory transfer cap of not more than $4 million in Ark. Code Ann. \u00a7 16-10-310(d)(1) as a potential solution.",
+    "evidence_type": "field_validation",
+    "source": "{\"title\": \"Audit Findings for Budget Hearings \u2014 2025 Regular Session\", \"issuing_body\": \"Arkansas Legislative Audit / Arkansas General Assembly (budget manuals)\", \"url\": \"https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FAssembly%2F2025%2FSummary+Budget+Manuals%2FAudit+Findings+for+Budget+Hearings+-+2025+Regular+Session.pdf\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-AR-SB472-S1-2015-DrugCourtProgramUserFeeCap-20PerMonth",
+    "section": "AR_FY2026_AOC_DRUG_COURT_ENHANCEMENT_SPECIALTY_COURT_PROGRAM_FUND_ACT776_SEC27 (Quantified constraint: monthly fee cap)",
+    "claim_summary": "SB472-S1 (2015) includes language that a drug court program user fee may be assessed but shall not exceed $20 per month.",
+    "evidence_type": "statute",
+    "source": "{\"title\": \"SB472-S1 (2015) \u2014 Amendment (drug court user fee cap)\", \"issuing_body\": \"Arkansas General Assembly\", \"url\": \"https://arkleg.state.ar.us/Home/FTPDocument?path=%2FAMEND%2F2015%2FPublic%2FSB472-S1.pdf\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-AR-SB472-S1-2015-SpecialtyCourtProgramFund-ExclusiveUses",
+    "section": "AR_FY2026_AOC_DRUG_COURT_ENHANCEMENT_SPECIALTY_COURT_PROGRAM_FUND_ACT776_SEC27 (Statutory fund-use constraint)",
+    "claim_summary": "An Arkansas legislative amendment (SB472-S1, 2015) states that the Specialty Court Program Fund shall be used exclusively for specified purposes, including treatment services and supervision services for specialty court program participants and drug and mental health crisis intervention centers.",
+    "evidence_type": "statute",
+    "source": "{\"title\": \"SB472-S1 (2015) \u2014 Amendment (Specialty Court Program Fund language)\", \"issuing_body\": \"Arkansas General Assembly\", \"url\": \"https://arkleg.state.ar.us/Home/FTPDocument?path=%2FAMEND%2F2015%2FPublic%2FSB472-S1.pdf\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-AR-SB472-S1-2015-SpecialtyCourtUserFee-125",
+    "section": "AR_FY2026_AOC_SPECIALTY_COURTS_STATE_CENTRAL_SERVICES_ACT776_SEC31 (Quantified constraint: participant fee)",
+    "claim_summary": "SB472-S1 (2015) includes language stating a specialty court program user fee of $125 shall be assessed on a specialty court program participant at the time of admittance into the program (for deposit into the specialty court program fund).",
+    "evidence_type": "statute",
+    "source": "{\"title\": \"SB472-S1 (2015) \u2014 Amendment (specialty court user fee)\", \"issuing_body\": \"Arkansas General Assembly\", \"url\": \"https://arkleg.state.ar.us/Home/FTPDocument?path=%2FAMEND%2F2015%2FPublic%2FSB472-S1.pdf\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-AR-Senate-2025-11-25-RHTP-HEART-Approx150M",
+    "section": "MF-AR-RHTP-HEART-2026",
+    "claim_summary": "An Arkansas Senate post (Nov 25, 2025) describes the HEART initiative in Arkansas' RHT proposal as costing approximately $150 million, and notes $10 million for school-based clinics and mobile care units.",
+    "evidence_type": "grant",
+    "source": "{\"title\": \"Rural Health Transformation (RHT) Program\", \"issuing_body\": \"Arkansas Senate\", \"url\": \"https://senate.arkansas.gov/senate-news/posts/2025/november/rural-health-transformation-rht-program/\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-AR-Senate-2025-11-25-RHTP-PACT-400M",
+    "section": "MF-AR-RHTP-PACT-2026",
+    "claim_summary": "An Arkansas Senate post (Nov 25, 2025) describes the PACT initiative in Arkansas' RHT proposal as costing $400 million.",
+    "evidence_type": "grant",
+    "source": "{\"title\": \"Rural Health Transformation (RHT) Program\", \"issuing_body\": \"Arkansas Senate\", \"url\": \"https://senate.arkansas.gov/senate-news/posts/2025/november/rural-health-transformation-rht-program/\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-AR-Senate-2025-11-25-RHTP-Proposal-TotalRequest-1B-5Years",
+    "section": "MF-AR-RHTP-Y1-2026",
+    "claim_summary": "An Arkansas Senate post (Nov 25, 2025) states Arkansas applied for $1 billion in RHT Program funding to be paid out in installments over five years.",
+    "evidence_type": "grant",
+    "source": "{\"title\": \"Rural Health Transformation (RHT) Program\", \"issuing_body\": \"Arkansas Senate\", \"url\": \"https://senate.arkansas.gov/senate-news/posts/2025/november/rural-health-transformation-rht-program/\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-AR-Senate-2025-11-25-RHTP-RISEAR-Approx161M",
+    "section": "MF-AR-RHTP-RISEAR-2026",
+    "claim_summary": "An Arkansas Senate post (Nov 25, 2025) describes the RISE AR initiative in Arkansas' RHT proposal as costing approximately $161 million.",
+    "evidence_type": "grant",
+    "source": "{\"title\": \"Rural Health Transformation (RHT) Program\", \"issuing_body\": \"Arkansas Senate\", \"url\": \"https://senate.arkansas.gov/senate-news/posts/2025/november/rural-health-transformation-rht-program/\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-AR-Senate-2025-11-25-RHTP-THRIVE-Approx267M-EMS-Telehealth-Remote92M",
+    "section": "MF-AR-RHTP-THRIVE-2026",
+    "claim_summary": "An Arkansas Senate post (Nov 25, 2025) describes the THRIVE strategy in Arkansas' RHT proposal as funded at approximately $267 million and notes nearly $92 million for launching remote pilot programs for chronic diseases.",
+    "evidence_type": "grant",
+    "source": "{\"title\": \"Rural Health Transformation (RHT) Program\", \"issuing_body\": \"Arkansas Senate\", \"url\": \"https://senate.arkansas.gov/senate-news/posts/2025/november/rural-health-transformation-rht-program/\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-US-DOJ-OJJDP-RHTP-FY23-AWARDS-PACT-AR",
+    "section": "RHTP FY23 awards list \u2014 Arkansas PACT award entry",
+    "claim_summary": "U.S. DOJ OJJDP RHTP FY23 awards document lists a $3,099,792 award to Arkansas for the PACT program (referenced in-thread as NAMI Arkansas + DHS DAABHS involvement).\n",
+    "evidence_type": "grant",
+    "source": "{\"title\": \"OJJDP RHTP FY23 Awards\", \"issuing_body\": \"U.S. Department of Justice \u2014 Office of Juvenile Justice and Delinquency Prevention (OJJDP)\", \"url\": \"https://ojjdp.ojp.gov/sites/g/files/xyckuh176/files/media/document/rhtp-fy23-awards.pdf\"}",
+    "confidence_level": "high",
+    "editor_status": "pending"
+  },
+  {
+    "evidence_id": "EVID-US-HHS-CMS-RHTP-FY26-Arkansas-Award-208779396",
+    "section": "MF-AR-RHTP-Y1-2026",
+    "claim_summary": "An HHS press release (Dec 29, 2025) lists Arkansas' FY26 Rural Health Transformation Program award amount as $208,779,396.",
+    "evidence_type": "grant",
+    "source": "{\"title\": \"CMS Announces $50 Billion in Awards to Strengthen Rural Health in All 50 States\", \"issuing_body\": \"U.S. Department of Health and Human Services (HHS) / Centers for Medicare & Medicaid Services (CMS)\", \"url\": \"https://www.hhs.gov/press-room/cms-announces-50-billion-in-awards-to-strengthen-rural-health-in-all-50-states.html\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  },
+  {
+    "evidence_id": "EVID-US-SAMHSA-SUBG-PrimaryPrevention-20percent",
+    "section": "MF-AR-SAMHSA-DHS-ROUTING-2026",
+    "claim_summary": "SAMHSA states that SUBG (Substance Use Prevention, Treatment, and Recovery Services Block Grant) grantees must spend no less than 20% of their SUBG allotment on substance use primary prevention strategies.",
+    "evidence_type": "administrative_rule",
+    "source": "{\"title\": \"Substance Use Prevention, Treatment, and Recovery Services Block Grant (SUBG) \u2014 Primary Prevention\", \"issuing_body\": \"Substance Abuse and Mental Health Services Administration (SAMHSA)\", \"url\": \"https://www.samhsa.gov/grants/block-grants/subg\"}",
+    "confidence_level": "high",
+    "editor_status": "accepted"
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "db": "C:\\Threshold\\cleanroom\\interface\\db\\clearlane.db",
+  "tables": {
+    "authority_reference": {
+      "columns": [
+        "authority_id",
+        "authority_type",
+        "citation",
+        "administering_body",
+        "governs",
+        "effects",
+        "editor_status"
+      ],
+      "json": "authority_reference.json",
+      "csv": null,
+      "rows": 31,
+      "exported_rows": 31
+    },
+    "evidence_item": {
+      "columns": [
+        "evidence_id",
+        "section",
+        "claim_summary",
+        "evidence_type",
+        "source",
+        "confidence_level",
+        "editor_status"
+      ],
+      "json": "evidence_item.json",
+      "csv": null,
+      "rows": 46,
+      "exported_rows": 46
+    },
+    "money_flow": {
+      "columns": [
+        "flow_id",
+        "source",
+        "intermediary",
+        "destination",
+        "amount",
+        "fund_type",
+        "fiscal_year",
+        "restrictions",
+        "statutory_basis",
+        "editor_status"
+      ],
+      "json": "money_flow.json",
+      "csv": null,
+      "rows": 55,
+      "exported_rows": 55
+    },
+    "field_validation": {
+      "columns": [
+        "fv_id",
+        "jurisdiction",
+        "validating_entity",
+        "corroborator",
+        "alignment_status",
+        "evidence_basis",
+        "disclosure_level",
+        "editor_status"
+      ],
+      "json": "field_validation.json",
+      "csv": null,
+      "rows": 8,
+      "exported_rows": 8
+    }
+  }
+}

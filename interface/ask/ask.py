@@ -23,11 +23,10 @@ DISALLOWED_TOKENS = [
 
 def get_repo_root() -> Path:
     try:
-        out = subprocess.check_output([
-            "git",
-            "rev-parse",
-            "--show-toplevel",
-        ], text=True).strip()
+        out = subprocess.check_output(
+            ["git", "rev-parse", "--show-toplevel"],
+            text=True,
+        ).strip()
         return Path(out)
     except Exception:
         return Path(__file__).resolve().parents[2]
@@ -39,9 +38,15 @@ def load_prompt(prompt_path: Path) -> str:
 
 def build_schema_context(conn: sqlite3.Connection) -> str:
     cur = conn.cursor()
-    tables = [row[0] for row in cur.execute(
-        "SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%' ORDER BY name"
-    ).fetchall()]
+    tables = [
+        row[0]
+        for row in cur.execute(
+            "SELECT name FROM sqlite_master "
+            "WHERE type='table' AND name NOT LIKE 'sqlite_%' "
+            "ORDER BY name"
+        ).fetchall()
+    ]
+
     lines = []
     for table in tables:
         cols = [r[1] for r in cur.execute(f"PRAGMA table_info({table})").fetchall()]
@@ -75,7 +80,8 @@ def run_ollama(model: str, prompt: str) -> str:
 def enforce_sql_safety(sql: str) -> str:
     trimmed = sql.strip()
     lowered = trimmed.lower()
-    if not trimmed.lower().startswith("select"):
+
+    if not lowered.startswith("select"):
         print("Rejected SQL by safety gate.")
         print(trimmed)
         sys.exit(3)
@@ -91,11 +97,22 @@ def enforce_sql_safety(sql: str) -> str:
     return trimmed
 
 
-def main(argv=None):
+def main(argv=None) -> None:
+    # Keep argv handling simple and explicit (blueprint requires argv[1...] joined into question).
     args = sys.argv[1:] if argv is None else argv
-    if not args:
-        print("Usage: python interface/ask/ask.py \"your question\"")
-        sys.exit(1)
+    if not args or args[0] in {"-h", "--help"}:
+        print("Usage:")
+        print('  python interface/ask/ask.py \"your question\"')
+        print("")
+        print("Environment variables:")
+        print("  OLLAMA_MODEL  Model name to use (default: phi3)")
+        print("  OLLAMA_BIN    Full path to ollama executable (default: ollama)")
+        print("")
+        print("Examples:")
+        print('  python interface/ask/ask.py \"list 5 money_flow rows\"')
+        print('  OLLAMA_MODEL=llama3.2 python interface/ask/ask.py \"count rows per table\"')
+        sys.exit(0 if args and args[0] in {"-h", "--help"} else 1)
+
     question = " ".join(args)
 
     repo_root = get_repo_root()
@@ -114,7 +131,13 @@ def main(argv=None):
     finally:
         conn.close()
 
-    prompt = base_prompt.strip() + "\n\nTABLES_AND_COLUMNS:\n" + schema_context + "\n\nQUESTION:\n" + question
+    prompt = (
+        base_prompt.strip()
+        + "\n\nTABLES_AND_COLUMNS:\n"
+        + schema_context
+        + "\n\nQUESTION:\n"
+        + question
+    )
 
     model = select_model()
     sql = run_ollama(model, prompt)
@@ -126,7 +149,6 @@ def main(argv=None):
         rows = cur.fetchall()
         headers = [desc[0] for desc in cur.description]
     except sqlite3.Error as e:
-        conn.close()
         sys.stderr.write(f"SQLite error: {e}\n")
         sys.exit(4)
     finally:
@@ -137,8 +159,6 @@ def main(argv=None):
     print(f"ROWS: {len(rows)}")
     if rows:
         print(tabulate(rows, headers=headers, tablefmt="github"))
-
-    sys.exit(0)
 
 
 if __name__ == "__main__":

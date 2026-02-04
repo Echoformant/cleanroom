@@ -1,0 +1,487 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cleanroom Dashboard</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: rgba(255, 255, 255, 0.06);
+      --panel2: rgba(255, 255, 255, 0.08);
+      --text: #e6e8ef;
+      --muted: rgba(230, 232, 239, 0.72);
+      --accent: #7cdbca;
+      --warn: #ffcc66;
+      --bad: #ff6b6b;
+      --good: #46d18e;
+    }
+
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 20% 10%, rgba(124, 219, 202, 0.18), transparent 55%),
+                  radial-gradient(900px 600px at 80% 25%, rgba(92, 140, 255, 0.16), transparent 55%),
+                  radial-gradient(900px 700px at 60% 90%, rgba(255, 204, 102, 0.12), transparent 55%),
+                  var(--bg);
+      color: var(--text);
+    }
+
+    a { color: var(--accent); }
+
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 28px 16px 44px; }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 22px;
+      letter-spacing: 0.2px;
+    }
+
+    .sub {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .pillbar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .pill {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      background: var(--panel);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 999px;
+      padding: 8px 10px;
+      color: var(--muted);
+      font-size: 12px;
+      user-select: none;
+    }
+
+    .pill b { color: var(--text); font-weight: 600; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 14px;
+    }
+
+    .card {
+      grid-column: span 12;
+      background: var(--panel);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 16px;
+      padding: 14px 14px 10px;
+      overflow: hidden;
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 14px;
+      color: var(--text);
+      font-weight: 650;
+      letter-spacing: 0.2px;
+    }
+
+    .hint {
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .warn {
+      background: rgba(255, 204, 102, 0.08);
+      border: 1px solid rgba(255, 204, 102, 0.22);
+      color: rgba(255, 204, 102, 0.95);
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    .error {
+      background: rgba(255, 107, 107, 0.10);
+      border: 1px solid rgba(255, 107, 107, 0.26);
+      color: rgba(255, 107, 107, 0.96);
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    .row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    label {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    select, input {
+      background: var(--panel2);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--text);
+      border-radius: 10px;
+      padding: 8px 10px;
+      font-size: 12px;
+      outline: none;
+    }
+
+    .chart {
+      min-height: 320px;
+    }
+
+    .chart.small {
+      min-height: 260px;
+    }
+
+    @media (min-width: 900px) {
+      .card.half { grid-column: span 6; }
+    }
+  </style>
+
+  <!-- Vega stack (CDN). To avoid file:// fetch issues, open via a local server (see below). -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Cleanroom Dashboard</h1>
+        <p class="sub">Source: interface/reports/dashboard_data/*.json (generated from interface/db/clearlane.db)</p>
+      </div>
+      <div class="pillbar">
+        <div class="pill"><b>Mode</b> Vega-Lite</div>
+        <div class="pill"><b>Dataset</b> money_flow</div>
+      </div>
+    </header>
+
+    <div id="fileWarning" class="warn" style="display:none; margin-bottom: 14px;"></div>
+    <div id="loadError" class="error" style="display:none; margin-bottom: 14px;"></div>
+    <div id="status" class="pill" style="margin-bottom: 14px; display:none;"></div>
+
+    <div class="grid">
+      <section class="card">
+        <div class="row">
+          <div>
+            <h2>Overview</h2>
+            <p class="hint">Use this to sanity check what's in the DB without guessing prompts.</p>
+          </div>
+          <div class="controls">
+            <label>Top N</label>
+            <select id="topN">
+              <option value="5">5</option>
+              <option value="10" selected>10</option>
+              <option value="20">20</option>
+            </select>
+            <label>Fund type</label>
+            <select id="fundType">
+              <option value="__ALL__" selected>All</option>
+            </select>
+          </div>
+        </div>
+        <div id="chart_counts" class="chart small"></div>
+      </section>
+
+      <section class="card half">
+        <h2>Amount by Fund Type</h2>
+        <p class="hint">Total amount by fund_type. Hover for exact values.</p>
+        <div id="chart_fund" class="chart"></div>
+      </section>
+
+      <section class="card half">
+        <h2>Top Destinations</h2>
+        <p class="hint">Top destinations by total amount.</p>
+        <div id="chart_dest" class="chart"></div>
+      </section>
+
+      <section class="card half">
+        <h2>Top Sources</h2>
+        <p class="hint">Top sources by total amount.</p>
+        <div id="chart_source" class="chart"></div>
+      </section>
+
+      <section class="card half">
+        <h2>Amount Distribution</h2>
+        <p class="hint">Histogram of amounts (log-scaled X). This helps spot outliers.</p>
+        <div id="chart_hist" class="chart"></div>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const isFile = window.location.protocol === 'file:';
+      if (isFile) {
+        const el = document.getElementById('fileWarning');
+        el.style.display = 'block';
+        el.textContent =
+          'This dashboard loads JSON via fetch(). Most browsers block fetch() on file://. ' +
+          'Open with a local server instead: cd interface/reports; python -m http.server 8000; ' +
+          'then visit http://localhost:8000/dashboard/index.html';
+      }
+
+      const statusEl = document.getElementById('status');
+      function setStatus(text) {
+        statusEl.style.display = 'inline-flex';
+        statusEl.textContent = text;
+      }
+
+      const datasetPath = '../dashboard_data/money_flow.json';
+      const indexPath = '../dashboard_data/index.json';
+
+      const state = {
+        moneyFlow: [],
+        index: null,
+      };
+
+      function showError(msg) {
+        const el = document.getElementById('loadError');
+        el.style.display = 'block';
+        el.textContent = msg;
+      }
+
+      // Surface JS errors directly in the UI (so you don't have to open DevTools).
+      window.addEventListener('error', (ev) => {
+        showError('JS error: ' + (ev && ev.message ? ev.message : String(ev)));
+      });
+      window.addEventListener('unhandledrejection', (ev) => {
+        showError('Unhandled promise rejection: ' + (ev && ev.reason ? ev.reason : String(ev)));
+      });
+
+      function fmtMoney(x) {
+        const n = Number(x);
+        if (!isFinite(n)) return String(x);
+        return n.toLocaleString(undefined, { maximumFractionDigits: 0 });
+      }
+
+      function getFiltered() {
+        const ft = document.getElementById('fundType').value;
+        if (ft === '__ALL__') return state.moneyFlow;
+        return state.moneyFlow.filter(r => (r.fund_type || '') === ft);
+      }
+
+      function baseConfig() {
+        return {
+          config: {
+            background: 'transparent',
+            axis: {
+              labelColor: 'rgba(230,232,239,0.82)',
+              titleColor: 'rgba(230,232,239,0.82)',
+              gridColor: 'rgba(255,255,255,0.10)',
+              tickColor: 'rgba(255,255,255,0.16)'
+            },
+            legend: {
+              labelColor: 'rgba(230,232,239,0.82)',
+              titleColor: 'rgba(230,232,239,0.82)'
+            },
+            view: { stroke: 'transparent' }
+          }
+        };
+      }
+
+      function specCounts() {
+        // Uses index.json for real table row counts.
+        const rows = [];
+        if (state.index && state.index.tables) {
+          for (const [name, info] of Object.entries(state.index.tables)) {
+            rows.push({ table: name, rows: info.rows || 0, columns: (info.columns || []).length });
+          }
+        }
+        rows.sort((a, b) => b.rows - a.rows);
+
+        return {
+          ...baseConfig(),
+          width: 'container',
+          height: 240,
+          data: { values: rows },
+          mark: { type: 'bar', cornerRadiusEnd: 6 },
+          encoding: {
+            y: { field: 'table', type: 'nominal', sort: '-x', title: null },
+            x: { field: 'rows', type: 'quantitative', title: 'Rows' },
+            color: { value: '#7cdbca' },
+            tooltip: [
+              { field: 'table', type: 'nominal' },
+              { field: 'rows', type: 'quantitative' },
+              { field: 'columns', type: 'quantitative' }
+            ]
+          }
+        };
+      }
+
+      function specFundType(data) {
+        return {
+          ...baseConfig(),
+          width: 'container',
+          height: 340,
+          data: { values: data },
+          transform: [
+            { filter: 'isValid(datum.amount)' },
+            { aggregate: [{ op: 'sum', field: 'amount', as: 'total_amount' }], groupby: ['fund_type'] },
+            { calculate: 'format(datum.total_amount, ",")', as: 'total_amount_fmt' }
+          ],
+          mark: { type: 'bar', cornerRadiusEnd: 6 },
+          encoding: {
+            x: { field: 'fund_type', type: 'nominal', title: 'Fund type', axis: { labelAngle: -20 } },
+            y: { field: 'total_amount', type: 'quantitative', title: 'Total amount' },
+            color: { field: 'fund_type', type: 'nominal', legend: { title: 'fund_type' } },
+            tooltip: [
+              { field: 'fund_type', type: 'nominal' },
+              { field: 'total_amount_fmt', type: 'nominal', title: 'total_amount' }
+            ]
+          }
+        };
+      }
+
+      function specTopByField(data, field, title, topN) {
+        return {
+          ...baseConfig(),
+          width: 'container',
+          height: 340,
+          data: { values: data },
+          transform: [
+            { filter: 'isValid(datum.amount)' },
+            { aggregate: [{ op: 'sum', field: 'amount', as: 'total_amount' }], groupby: [field] },
+            { window: [{ op: 'rank', as: 'rank' }], sort: [{ field: 'total_amount', order: 'descending' }] },
+            { filter: `datum.rank <= ${topN}` },
+            { calculate: 'format(datum.total_amount, ",")', as: 'total_amount_fmt' }
+          ],
+          mark: { type: 'bar', cornerRadiusEnd: 6 },
+          encoding: {
+            y: { field: field, type: 'nominal', sort: '-x', title: null },
+            x: { field: 'total_amount', type: 'quantitative', title: 'Total amount' },
+            color: { value: '#5c8cff' },
+            tooltip: [
+              { field: field, type: 'nominal', title: field },
+              { field: 'total_amount_fmt', type: 'nominal', title: 'total_amount' }
+            ]
+          },
+          title: { text: title, color: 'rgba(230,232,239,0.92)', fontSize: 12, anchor: 'start' }
+        };
+      }
+
+      function specHistogram(data) {
+        return {
+          ...baseConfig(),
+          width: 'container',
+          height: 340,
+          data: { values: data },
+          transform: [
+            { filter: 'isValid(datum.amount) && datum.amount > 0' },
+            { calculate: 'log(datum.amount) / log(10)', as: 'log10_amount' }
+          ],
+          mark: { type: 'bar' },
+          encoding: {
+            x: {
+              field: 'log10_amount',
+              type: 'quantitative',
+              bin: { maxbins: 25 },
+              title: 'log10(amount)'
+            },
+            y: { aggregate: 'count', type: 'quantitative', title: 'Count' },
+            color: { value: '#ffcc66' },
+            tooltip: [
+              { aggregate: 'count', type: 'quantitative', title: 'count' }
+            ]
+          }
+        };
+      }
+
+      async function render() {
+        if (typeof window.vegaEmbed !== 'function') {
+          showError(
+            'Vega libraries did not load. If your network blocks the CDN, vendor them locally under ' +
+            'interface/reports/dashboard/vendor/ (see fetch_vendor.py), then refresh.'
+          );
+          return;
+        }
+
+        // Load index.json (counts) first, then money_flow.
+        try {
+          const idx = await fetch(indexPath);
+          if (idx.ok) state.index = await idx.json();
+        } catch (_) {
+          // ignore; counts chart will be empty
+        }
+
+        let money;
+        try {
+          const r = await fetch(datasetPath);
+          if (!r.ok) {
+            showError('Failed to load ' + datasetPath + ' (HTTP ' + r.status + '). Did you run the exporter?');
+            return;
+          }
+          money = await r.json();
+        } catch (e) {
+          showError('Failed to load dataset. If you opened via file://, use a local server. Details: ' + e);
+          return;
+        }
+
+        state.moneyFlow = Array.isArray(money) ? money : [];
+        setStatus('money_flow rows loaded: ' + state.moneyFlow.length);
+
+        // Populate fund type dropdown.
+        const ft = new Set();
+        for (const r of state.moneyFlow) {
+          if (r && typeof r.fund_type === 'string' && r.fund_type) ft.add(r.fund_type);
+        }
+        const ftSelect = document.getElementById('fundType');
+        for (const v of Array.from(ft).sort()) {
+          const opt = document.createElement('option');
+          opt.value = v;
+          opt.textContent = v;
+          ftSelect.appendChild(opt);
+        }
+
+        async function drawAll() {
+          const data = getFiltered();
+          const topN = Number(document.getElementById('topN').value) || 10;
+
+          await vegaEmbed('#chart_counts', specCounts(), { actions: false });
+          await vegaEmbed('#chart_fund', specFundType(data), { actions: false });
+          await vegaEmbed('#chart_dest', specTopByField(data, 'destination', 'Top destinations by total amount', topN), { actions: false });
+          await vegaEmbed('#chart_source', specTopByField(data, 'source', 'Top sources by total amount', topN), { actions: false });
+          await vegaEmbed('#chart_hist', specHistogram(data), { actions: false });
+        }
+
+        document.getElementById('topN').addEventListener('change', drawAll);
+        document.getElementById('fundType').addEventListener('change', drawAll);
+
+        await drawAll();
+      }
+
+      render();
+    })();
+  </script>
+</body>
+</html>

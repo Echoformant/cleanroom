@@ -1,0 +1,82 @@
+[
+  {
+    "fv_id": "FV-AR-ADH-TRAUMA-SYSTEM-OPEN-001",
+    "jurisdiction": "Arkansas",
+    "validating_entity": "Dossier Compiler",
+    "corroborator": null,
+    "alignment_status": "open",
+    "evidence_basis": "[\"EVID-AR-ACT538-2025-ADH-OPERATIONS-TRAUMA-SYSTEM\"]",
+    "disclosure_level": "restricted",
+    "editor_status": "pending"
+  },
+  {
+    "fv_id": "FV-AR-AOC-SPECIALTY-COURT-OPEN-001",
+    "jurisdiction": "Arkansas",
+    "validating_entity": "STRATA / GLE Dossier Governance",
+    "corroborator": "Administrative Office of the Courts (AOC)",
+    "alignment_status": "open",
+    "evidence_basis": "[\"{'authority_reference': 'AR-ACA-16-10-139-specialty-court'}\", \"{'authority_reference': 'AR-ACA-16-100-204-mental-health-court'}\", \"{'rule': 'Define support roles as court-adjacent navigation/education functions; avoid DHS-defined titles that imply Medicaid peer service billing.'}\"]",
+    "disclosure_level": "restricted",
+    "editor_status": "accepted"
+  },
+  {
+    "fv_id": "FV-AR-DHS-PEER-CAPTURED-001",
+    "jurisdiction": "Arkansas",
+    "validating_entity": "STRATA / GLE Dossier Governance",
+    "corroborator": "DHS OSAMH / NAADAC (per statutory mandate)",
+    "alignment_status": "captured",
+    "evidence_basis": "[\"{'authority_reference': 'AR-ACA-20-64-602-b19'}\", \"{'authority_reference': 'AR-ACA-20-77-135-peer-support'}\", \"{'authority_reference': 'AR-POL-APSP-arkansas-model'}\", \"{'authority_reference': 'AR-POL-RCO-designation-AARCO'}\", \"{'rule': 'DHS-approved peer recovery certification is an eligibility gate for Medicaid-recognized peer support specialist status in Arkansas.'}\"]",
+    "disclosure_level": "restricted",
+    "editor_status": "accepted"
+  },
+  {
+    "fv_id": "FV-AR-DHS-RHTP-PACT-CAPTURED-001",
+    "jurisdiction": "Arkansas",
+    "validating_entity": "Dossier Compiler",
+    "corroborator": null,
+    "alignment_status": "captured",
+    "evidence_basis": "[\"EVID-US-DOJ-OJJDP-RHTP-FY23-AWARDS-PACT-AR\"]",
+    "disclosure_level": "restricted",
+    "editor_status": "pending"
+  },
+  {
+    "fv_id": "FV-AR-DHS-SABG-ALLOC-MIXED-001",
+    "jurisdiction": "Arkansas",
+    "validating_entity": "Dossier Compiler",
+    "corroborator": null,
+    "alignment_status": "mixed",
+    "evidence_basis": "[\"EVID-AR-ACT890-2025-DHS-DAABHS-CRISIS-SERVICES\", \"EVID-AR-ACT1004-2025-DHS-SECRETARY-OFFICE-APPROPRIATIONS\"]",
+    "disclosure_level": "restricted",
+    "editor_status": "pending"
+  },
+  {
+    "fv_id": "FV-AR-IX-GAP-SPECIALTY-COURT-IMPLEMENTATION-001",
+    "jurisdiction": "Arkansas",
+    "validating_entity": "Arkansas Administrative Office of the Courts",
+    "corroborator": "Arkansas Supreme Court",
+    "alignment_status": "open",
+    "evidence_basis": "[\"No implementing regulations or policies appended for Specialty Court Program Fund uses\", \"No SCPAC-promulgated rules appended under Ark. Code Ann. \u00a7 16-10-139\"]",
+    "disclosure_level": "restricted",
+    "editor_status": "pending"
+  },
+  {
+    "fv_id": "FV-AR-IX-GAP-SUBG-20-PREVENTION-001",
+    "jurisdiction": "Arkansas",
+    "validating_entity": "Arkansas DHS (SUBG Administering Entity)",
+    "corroborator": null,
+    "alignment_status": "open",
+    "evidence_basis": "[\"Federal SUBG 20% prevention requirement evidenced\", \"State implementation or tracking documentation not appended\"]",
+    "disclosure_level": "restricted",
+    "editor_status": "pending"
+  },
+  {
+    "fv_id": "FV-AR-LegAudit-AOC-FY2022-AppropriationPurposeFinding",
+    "jurisdiction": "Arkansas",
+    "validating_entity": "Arkansas Legislative Audit",
+    "corroborator": null,
+    "alignment_status": "mixed",
+    "evidence_basis": "[\"Audit Findings for Budget Hearings \u2014 2025 Regular Session (AOC report for year ended June 30, 2022) \u2014 describes miscoding/misuse of appropriations and references Ark. Const. art. 16, \u00a7 12 and Ark. Code Ann. \u00a7 16-10-310(d)(1) transfer cap; URL: https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FAssembly%2F2025%2FSummary+Budget+Manuals%2FAudit+Findings+for+Budget+Hearings+-+2025+Regular+Session.pdf\"]",
+    "disclosure_level": "restricted",
+    "editor_status": "accepted"
+  }
+]

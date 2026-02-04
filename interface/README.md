@@ -31,6 +31,47 @@ python interface/ask/ask.py "list 5 money_flow rows"
 python interface/db/diagnostics.py
 ```
 
+## Optional: Inspect DB (no Ollama)
+Shows tables, columns, and sample rows.
+```
+python interface/db/inspect_db.py
+```
+
+## Optional: Plotly HTML report (no Ollama)
+1) Install Plotly:
+```
+pip install -r interface/requirements.explore.txt
+```
+2) Generate report:
+```
+python interface/explore/db_report.py
+```
+This writes: interface/reports/db_report.html
+
+## Optional: Export dashboard data (no Ollama)
+Exports the four tables to JSON/CSV for use in a static dashboard.
+```
+python interface/explore/export_dashboard_data.py
+```
+This writes: interface/reports/dashboard_data/
+
+## Optional: Vega-Lite dashboard (static HTML)
+1) Export dashboard data (JSON):
+```
+python interface/explore/export_dashboard_data.py --format json
+```
+2) Serve reports and open the dashboard:
+```
+cd interface/reports
+python -m http.server 8000
+```
+Then open: http://localhost:8000/dashboard/index.html
+If the charts are blank and you see an error about Vega libraries not loading, your network may be blocking the CDN scripts.
+You can vendor the JS files by running:
+```
+python interface/reports/dashboard/fetch_vendor.py
+```
+
 ## Optional: Custom Ollama binary
 Set `OLLAMA_BIN` if `ollama` is not on PATH.
 
