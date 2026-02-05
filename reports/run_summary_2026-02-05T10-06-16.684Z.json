@@ -1,0 +1,21 @@
+{
+  "run_id": "12998682686",
+  "timestamp": "2026-02-05T10:06:16.684Z",
+  "cleanroom_sha": "",
+  "totals": {
+    "processed": 1,
+    "validated": 1,
+    "invalidated": 0
+  },
+  "validated": [
+    {
+      "kind": "evidence_item",
+      "file": "EV-AR-ACA-16-100-204.yaml",
+      "item": 0
+    }
+  ],
+  "invalidated": [],
+  "retired": [
+    "proposals/evidence_item/EV-AR-ACA-16-100-204.yaml"
+  ]
+}
