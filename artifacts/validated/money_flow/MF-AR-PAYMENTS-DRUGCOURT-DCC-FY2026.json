@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-PAYMENTS-DRUGCOURT-DCC-FY2026",
+  "source": "Drug court participants (fees under §§ 12-27-125(b)(17)(B) & 16-93-104(a)(1))",
+  "intermediary": "Court Clerk",
+  "destination": "Arkansas Department of Community Correction",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2025-2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Code Ann. § 16-98-304",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-ACA-19-5-1144-AUTHFLOW",
+  "_ingested_at": "2026-02-05T03:55:31.034662"
+}

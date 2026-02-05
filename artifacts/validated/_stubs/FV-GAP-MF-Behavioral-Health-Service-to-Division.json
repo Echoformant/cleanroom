@@ -1,0 +1,17 @@
+{
+  "fv_id": "FV-GAP-MF-Behavioral-Health-Service-to-Division",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "[GAP STUB - validating entity needed]",
+  "alignment_status": "open",
+  "evidence_basis": [
+    "MF-Behavioral-Health-Service-to-Division-of-Aging-Adult-B"
+  ],
+  "disclosure_level": "restricted",
+  "editor_status": "pending",
+  "_gap_metadata": {
+    "generated_by": "gap_analyzer",
+    "gap_type": "MISSING_VALIDATION",
+    "source_artifact": "MF-Behavioral-Health-Service-to-Division-of-Aging-Adult-B",
+    "detected_at": "2026-02-04T18:51:29.702158+00:00"
+  }
+}

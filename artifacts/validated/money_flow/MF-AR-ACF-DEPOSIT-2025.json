@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-ACF-DEPOSIT-2025",
+  "source": "Federal grants and other donations",
+  "intermediary": "None",
+  "destination": "Arkansas Accountability Court Fund",
+  "amount": 0,
+  "fund_type": "federal",
+  "fiscal_year": "2025-2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Code Ann. § 19-5-1144",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-ACA-19-5-1144-AUTHFLOW",
+  "_ingested_at": "2026-02-05T03:55:31.030041"
+}

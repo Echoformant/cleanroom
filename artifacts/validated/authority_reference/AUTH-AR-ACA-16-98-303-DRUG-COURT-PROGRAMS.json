@@ -1,0 +1,19 @@
+{
+  "authority_id": "AUTH-AR-ACA-16-98-303-DRUG-COURT-PROGRAMS",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 16-98-303",
+  "administering_body": "Arkansas Administrative Office of the Courts; Division of Community Correction",
+  "governs": [
+    "Authorizes each judicial district to establish adult and juvenile drug court programs",
+    "Allows juvenile drug court programs in delinquency, family, and dependency-neglect cases",
+    "Prohibits judges from ordering services unless appropriation, funding, and positions are available",
+    "Requires the Division of Community Correction to provide positions, treatment, and services for high-risk offenders"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-ACA-19-5-1144-AUTHFLOW",
+  "_ingested_at": "2026-02-05T03:55:31.037099"
+}

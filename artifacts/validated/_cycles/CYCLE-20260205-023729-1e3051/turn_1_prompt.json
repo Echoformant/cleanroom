@@ -1,0 +1,77 @@
+{
+  "_cycle_metadata": {
+    "anchor_category": "authority_reference",
+    "anchor_id": "AUTH-AR-ACA-19-5-1144-ACCOUNTABILITY-COURT-FUND",
+    "used_artifacts": [
+      "AUTH-AR-ACA-19-5-1144-ACCOUNTABILITY-COURT-FUND"
+    ],
+    "instruction": "Fill the empty schema slots below. Do not reuse artifacts listed in used_artifacts."
+  },
+  "anchor": {
+    "category": "authority_reference",
+    "artifact": {
+      "authority_id": "AUTH-AR-ACA-19-5-1144-ACCOUNTABILITY-COURT-FUND",
+      "authority_type": "statute",
+      "citation": "Arkansas Code Annotated §19-5-1144",
+      "administering_body": "Arkansas Administrative Office of the Courts (AOC)",
+      "governs": [
+        "AR_FY2026_AOC_SPECIALTY_COURT_JUVENILE_DRUG_PROGRAMS_STATE_FUNDS_ACT776_SEC31"
+      ],
+      "effects": {
+        "access_limiting": false,
+        "appeal_mechanism": false
+      },
+      "editor_status": "pending"
+    }
+  },
+  "slots": {
+    "money_flow": {
+      "instruction": "Fill this money_flow schema based on the anchor artifact",
+      "template": {
+        "flow_id": "[FILL - unique ID starting with MF- or AR_FY]",
+        "source": "[FILL - funding source entity]",
+        "intermediary": "[FILL - pass-through entity or 'None']",
+        "destination": "[FILL - receiving entity]",
+        "amount": 0,
+        "fund_type": "[FILL - 'state' or 'federal']",
+        "fiscal_year": "[FILL - e.g., '2026' or '2025-2026']",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "[FILL - legal authority citation]",
+        "editor_status": "pending"
+      }
+    },
+    "evidence_item": {
+      "instruction": "Fill this evidence_item schema based on the anchor artifact",
+      "template": {
+        "evidence_id": "[FILL - unique ID starting with EVID- or EV-]",
+        "section": "[FILL - reference to related flow or authority]",
+        "claim_summary": "[FILL - what this evidence supports]",
+        "evidence_type": "[FILL - 'statute', 'budget', 'grant', 'administrative_rule', or 'field_validation']",
+        "source": {
+          "title": "[FILL - document title]",
+          "issuing_body": "[FILL - issuing organization]",
+          "url": "[FILL - source URL if available]"
+        },
+        "confidence_level": "[FILL - 'high', 'medium', or 'low']",
+        "editor_status": "pending"
+      }
+    },
+    "field_validation": {
+      "instruction": "Fill this field_validation schema based on the anchor artifact",
+      "template": {
+        "fv_id": "[FILL - unique ID starting with FV-]",
+        "jurisdiction": "Arkansas",
+        "validating_entity": "[FILL - entity that performed validation]",
+        "alignment_status": "[FILL - 'open', 'mixed', or 'captured']",
+        "evidence_basis": [
+          "[FILL - list of supporting artifact IDs]"
+        ],
+        "disclosure_level": "restricted",
+        "editor_status": "pending"
+      }
+    }
+  }
+}

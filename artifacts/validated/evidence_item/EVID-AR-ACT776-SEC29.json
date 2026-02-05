@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ACT776-SEC29",
+  "section": "MF-AR-AOC-JUVENILE-JUSTICE-REFORM-FY2026",
+  "claim_summary": "Act 776 of 2025, Section 29 appropriates $1,000,000 in federal funds for Juvenile Justice Reform, specifying amounts for operating expenses, travel, professional fees, and other costs for the Administrative Office of the Courts【283384439218215†L709-L726】.",
+  "evidence_type": "budget",
+  "source": {
+    "title": "Act 776 of 2025 - Section 29 - Juvenile Justice Reform appropriation",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2F&file=776.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-ACA-19-5-1144-AUTHFLOW",
+  "_ingested_at": "2026-02-05T03:55:31.045226"
+}

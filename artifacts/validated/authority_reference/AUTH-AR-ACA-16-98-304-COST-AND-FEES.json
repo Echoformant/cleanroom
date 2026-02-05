@@ -1,0 +1,19 @@
+{
+  "authority_id": "AUTH-AR-ACA-16-98-304-COST-AND-FEES",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 16-98-304",
+  "administering_body": "Drug court judges; Court clerks; County treasury; Arkansas Department of Community Correction",
+  "governs": [
+    "Permits drug court judges to order offenders to pay court costs, treatment costs, drug testing costs, program user fees, supervision fees, and monitoring fees",
+    "Requires judges to establish payment schedules and directs court costs and program user fees to be remitted to the court clerk",
+    "Specifies that court costs are credited to the county administration of justice fund and local program user fees are credited to a local drug court program fund",
+    "Requires fees under §§ 12-27-125(b)(17)(B) or 16-93-104(a)(1) to be paid to the Department of Community Correction"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-ACA-19-5-1144-AUTHFLOW",
+  "_ingested_at": "2026-02-05T03:55:31.037518"
+}

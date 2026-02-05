@@ -1,0 +1,12 @@
+{
+  "gap_id": "GAP-INCOMPLETE-AUTH-AR-SB472-S1-2015-ACCOUNTA-AR_FY2026_AOC_SPECIALTY_COURT_",
+  "gap_type": "INCOMPLETE_CHAIN",
+  "source_artifact": "AUTH-AR-SB472-S1-2015-ACCOUNTABILITY-COURT-PROGRAM",
+  "source_category": "authority_reference",
+  "source_field": "governs[0]",
+  "target_reference": "AR_FY2026_AOC_SPECIALTY_COURT_JUVENILE_DRUG_PROGRAMS_STATE_FUNDS_ACT776_SEC31",
+  "target_category": "money_flow",
+  "detected_at": "2026-02-04T18:51:29.698055+00:00",
+  "stub_generated": true,
+  "stub_path": "C:\\Threshold\\cleanroom\\artifacts\\validated\\_stubs\\AR_FY2026_AOC_SPECIALTY_COURT_JUVENILE_DRUG_PROGRAMS_STATE_FUNDS_ACT776_SEC31.json"
+}

@@ -1,0 +1,10 @@
+evidence_id: "EVID-AR-ACT389-SUMMARY"
+section: "Crisis Prior Authorization Bypass"
+claim_summary: "Arkansas Act 389 eliminates administrative gatekeeping (prior authorization) for mental health crises defined as severe states risking harm to self or others."
+evidence_type: "statute"
+source:
+  title: "Arkansas Act 389 of the 95th General Assembly"
+  issuing_body: "Arkansas General Assembly"
+  url: "https://www.arkleg.state.ar.us/"
+confidence_level: "high"
+editor_status: "pending" 

@@ -168,10 +168,10 @@
     }
   </style>
 
-  <!-- Vega stack (CDN). To avoid file:// fetch issues, open via a local server (see below). -->
-  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <!-- Vega stack (vendored locally). -->
+  <script src="vendor/vega.min.js"></script>
+  <script src="vendor/vega-lite.min.js"></script>
+  <script src="vendor/vega-embed.min.js"></script>
 </head>
 <body>
   <div class="wrap">
@@ -189,6 +189,11 @@
     <div id="fileWarning" class="warn" style="display:none; margin-bottom: 14px;"></div>
     <div id="loadError" class="error" style="display:none; margin-bottom: 14px;"></div>
     <div id="status" class="pill" style="margin-bottom: 14px; display:none;"></div>
+    <div class="card" style="margin-bottom: 14px;">
+      <h2>Data Peek (debug)</h2>
+      <p class="hint">If charts look empty, this confirms whether JSON loaded and what fields exist.</p>
+      <pre id="dataPeek" style="margin:0; white-space:pre-wrap; color: rgba(230,232,239,0.86);"></pre>
+    </div>
 
     <div class="grid">
       <section class="card">
@@ -293,8 +298,9 @@
 
       function baseConfig() {
         return {
+          background: 'transparent',
+          autosize: { type: 'fit', contains: 'padding' },
           config: {
-            background: 'transparent',
             axis: {
               labelColor: 'rgba(230,232,239,0.82)',
               titleColor: 'rgba(230,232,239,0.82)',
@@ -308,6 +314,25 @@
             view: { stroke: 'transparent' }
           }
         };
+      }
+
+      function measureWidth(selector) {
+        const el = document.querySelector(selector);
+        if (!el) return 800;
+        const w = el.getBoundingClientRect().width;
+        // Vega-Lite behaves badly with width=0; clamp to a sane minimum.
+        return Math.max(420, Math.floor(w));
+      }
+
+      function withMeasuredWidth(spec, selector) {
+        return { ...spec, width: measureWidth(selector) };
+      }
+
+      function svgDims(containerSelector) {
+        const svg = document.querySelector(containerSelector + ' svg');
+        if (!svg) return { w: 0, h: 0, ok: false };
+        const r = svg.getBoundingClientRect();
+        return { w: Math.round(r.width), h: Math.round(r.height), ok: true };
       }
 
       function specCounts() {
@@ -449,6 +474,9 @@
 
         state.moneyFlow = Array.isArray(money) ? money : [];
         setStatus('money_flow rows loaded: ' + state.moneyFlow.length);
+        document.getElementById('dataPeek').textContent =
+          'vegaEmbed: ' + (typeof window.vegaEmbed) + '\\n\\n' +
+          JSON.stringify(state.moneyFlow.slice(0, 3), null, 2);
 
         // Populate fund type dropdown.
         const ft = new Set();
@@ -466,16 +494,48 @@
         async function drawAll() {
           const data = getFiltered();
           const topN = Number(document.getElementById('topN').value) || 10;
+          const opts = { actions: false, renderer: 'svg' };
 
-          await vegaEmbed('#chart_counts', specCounts(), { actions: false });
-          await vegaEmbed('#chart_fund', specFundType(data), { actions: false });
-          await vegaEmbed('#chart_dest', specTopByField(data, 'destination', 'Top destinations by total amount', topN), { actions: false });
-          await vegaEmbed('#chart_source', specTopByField(data, 'source', 'Top sources by total amount', topN), { actions: false });
-          await vegaEmbed('#chart_hist', specHistogram(data), { actions: false });
+          // Give layout a tick so getBoundingClientRect() returns real widths.
+          await new Promise(requestAnimationFrame);
+
+          await vegaEmbed('#chart_counts', withMeasuredWidth(specCounts(), '#chart_counts'), opts);
+          await vegaEmbed('#chart_fund', withMeasuredWidth(specFundType(data), '#chart_fund'), opts);
+          await vegaEmbed(
+            '#chart_dest',
+            withMeasuredWidth(specTopByField(data, 'destination', 'Top destinations by total amount', topN), '#chart_dest'),
+            opts
+          );
+          await vegaEmbed(
+            '#chart_source',
+            withMeasuredWidth(specTopByField(data, 'source', 'Top sources by total amount', topN), '#chart_source'),
+            opts
+          );
+          await vegaEmbed('#chart_hist', withMeasuredWidth(specHistogram(data), '#chart_hist'), opts);
+
+          const rendered = document.querySelectorAll('svg').length;
+          const dFund = svgDims('#chart_fund');
+          const dDest = svgDims('#chart_dest');
+          const dSource = svgDims('#chart_source');
+          const dHist = svgDims('#chart_hist');
+          setStatus(
+            'money_flow rows loaded: ' + state.moneyFlow.length +
+            ' | svg charts rendered: ' + rendered +
+            ' | widths: ' +
+            'fund=' + measureWidth('#chart_fund') + 'px' +
+            ', dest=' + measureWidth('#chart_dest') + 'px' +
+            ', source=' + measureWidth('#chart_source') + 'px' +
+            ' | svg dims: ' +
+            'fund=' + (dFund.ok ? (dFund.w + 'x' + dFund.h) : 'none') +
+            ', dest=' + (dDest.ok ? (dDest.w + 'x' + dDest.h) : 'none') +
+            ', source=' + (dSource.ok ? (dSource.w + 'x' + dSource.h) : 'none') +
+            ', hist=' + (dHist.ok ? (dHist.w + 'x' + dHist.h) : 'none')
+          );
         }
 
         document.getElementById('topN').addEventListener('change', drawAll);
         document.getElementById('fundType').addEventListener('change', drawAll);
+        window.addEventListener('resize', () => { drawAll(); });
 
         await drawAll();
       }

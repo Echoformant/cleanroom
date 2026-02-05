@@ -1,0 +1,18 @@
+{
+  "authority_id": "AUTH-AR-ACA-16-98-305-REQUIRED-RESOURCES",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 16-98-305",
+  "administering_body": "Department of Community Correction; Department of Human Services; Arkansas Administrative Office of the Courts",
+  "governs": [
+    "Requires the Department of Community Correction to provide drug counselor, probation officer, administrative assistant positions, drug testing, and treatment services for adult drug court programs based on a formula developed by the Administrative Office of the Courts and reviewed by the Specialty Court Program Advisory Committee",
+    "Requires the Department of Human Services to provide similar resources for delinquency and family cases",
+    "Requires the Administrative Office of the Courts to provide funding, support, case management, and assistance to the Specialty Court Program Advisory Committee for local drug court programs"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-ACA-19-5-1144-AUTHFLOW",
+  "_ingested_at": "2026-02-05T03:55:31.039237"
+}

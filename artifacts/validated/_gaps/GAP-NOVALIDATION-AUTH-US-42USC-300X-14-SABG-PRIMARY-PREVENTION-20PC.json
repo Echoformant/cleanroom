@@ -1,0 +1,12 @@
+{
+  "gap_id": "GAP-NOVALIDATION-AUTH-US-42USC-300X-14-SABG-PRIMARY-PREVENTION-20PC",
+  "gap_type": "MISSING_VALIDATION",
+  "source_artifact": "AUTH-US-42USC-300X-14-SABG-PRIMARY-PREVENTION-20PCT",
+  "source_category": "authority_reference",
+  "source_field": null,
+  "target_reference": "[field_validation for AUTH-US-42USC-300X-14-SABG-PRIMARY-PREVENTION-20PCT]",
+  "target_category": "field_validation",
+  "detected_at": "2026-02-04T18:51:29.702158+00:00",
+  "stub_generated": true,
+  "stub_path": "C:\\Threshold\\cleanroom\\artifacts\\validated\\_stubs\\FV-GAP-AUTH-US-42USC-300X-14-SABG-PRIMARY-PREVE.json"
+}

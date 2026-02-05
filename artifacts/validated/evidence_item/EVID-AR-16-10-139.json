@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-16-10-139",
+  "section": "AUTH-AR-ACA-16-10-139-SPECIALTY-COURT-PROGRAM",
+  "claim_summary": "Ark. Code § 16-10-139 defines 'specialty court program' to include pre-adjudication programs, drug courts, DWI/BWI courts, mental health courts, veterans treatment courts, juvenile drug courts, HOPE courts and domestic violence courts; it requires that specialty court programs operated by circuit or district courts be approved by the Supreme Court and evaluated by the Specialty Court Program Advisory Committee using nationally recognized standards and a uniform evaluation process【482478614226997†L74-L110】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code §16-10-139 - Specialty court program evaluation and approval",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/title-16/subtitle-2/chapter-10/subchapter-1/section-16-10-139/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-ACA-19-5-1144-AUTHFLOW",
+  "_ingested_at": "2026-02-05T03:55:31.042304"
+}

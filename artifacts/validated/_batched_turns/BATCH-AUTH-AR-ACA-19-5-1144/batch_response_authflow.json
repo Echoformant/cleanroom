@@ -1,0 +1,483 @@
+{
+  "batch_id": "BATCH-AUTH-AR-ACA-19-5-1144-AUTHFLOW",
+  "anchor_id": "AUTH-AR-ACA-19-5-1144-ACCOUNTABILITY-COURT-FUND",
+  "mode": "authority-flow-rotation",
+  "generated_at": "2026-02-05",
+  "total_turns": 5,
+  "artifacts": {
+    "money_flow": [
+      {
+        "flow_id": "MF-AR-ACF-DEPOSIT-2025",
+        "source": "Federal grants and other donations",
+        "intermediary": "None",
+        "destination": "Arkansas Accountability Court Fund",
+        "amount": 0,
+        "fund_type": "federal",
+        "fiscal_year": "2025-2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Ark. Code Ann. § 19-5-1144",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-AOC-ACF-FY2026",
+        "source": "Arkansas Accountability Court Fund",
+        "intermediary": "None",
+        "destination": "Arkansas Administrative Office of the Courts",
+        "amount": 400000,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Act 776 of 2025, Section 30; Ark. Code Ann. § 19-5-1144",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-OPIOID-SETTLEMENT-AOC-2025",
+        "source": "Arkansas Opioid Settlement Funds",
+        "intermediary": "None",
+        "destination": "Arkansas Specialty Courts Program",
+        "amount": 1000000,
+        "fund_type": "settlement",
+        "fiscal_year": "2025-2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Arkansas Attorney General opioid settlement grant announcement (Nov. 14, 2024)",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-SAMHSA-ARHP-DRUGCOURT-2025-2029",
+        "source": "Substance Abuse and Mental Health Services Administration (SAMHSA)",
+        "intermediary": "Arkansas Rural Health Partnership",
+        "destination": "Adult Treatment Drug Courts in rural Arkansas",
+        "amount": 2000000,
+        "fund_type": "federal",
+        "fiscal_year": "2025-2029",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "SAMHSA grant to Arkansas Rural Health Partnership",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-AOC-DRUG-COURT-ENHANCEMENT-FY2026",
+        "source": "U.S. Department of Justice or federal funds designated by the Chief Fiscal Officer",
+        "intermediary": "None",
+        "destination": "Arkansas Administrative Office of the Courts",
+        "amount": 9190880,
+        "fund_type": "federal",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Act 776 of 2025, Section 27; Ark. Code Ann. § 16-98-303",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-AOC-JUVENILE-JUSTICE-REFORM-FY2026",
+        "source": "Federal funds (Juvenile Justice Reform)",
+        "intermediary": "None",
+        "destination": "Arkansas Administrative Office of the Courts",
+        "amount": 1000000,
+        "fund_type": "federal",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Act 776 of 2025, Section 29; Ark. Code Ann. § 16-98-303",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-AOC-ADULT-DRUG-COURT-PROGRAM-FY2026",
+        "source": "Cash Fund deposits in State Treasury for Adult Drug Court Program",
+        "intermediary": "None",
+        "destination": "Arkansas Administrative Office of the Courts",
+        "amount": 1000000,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Act 776 of 2025, Section 31; Ark. Code Ann. § 16-98-303",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-USER-FEES-DRUGCOURT-LOCAL-PROGRAM-FUND-FY2026",
+        "source": "Drug court participants (program user fees)",
+        "intermediary": "Court Clerk",
+        "destination": "Local drug court program fund",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2025-2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Ark. Code Ann. § 16-98-304",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-COURT-COSTS-DRUGCOURT-COUNTY-FUND-FY2026",
+        "source": "Drug court participants (court costs and program user fees)",
+        "intermediary": "Court Clerk",
+        "destination": "County administration of justice fund",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2025-2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Ark. Code Ann. § 16-98-304",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-PAYMENTS-DRUGCOURT-DCC-FY2026",
+        "source": "Drug court participants (fees under §§ 12-27-125(b)(17)(B) & 16-93-104(a)(1))",
+        "intermediary": "Court Clerk",
+        "destination": "Arkansas Department of Community Correction",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2025-2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Ark. Code Ann. § 16-98-304",
+        "editor_status": "pending"
+      }
+    ],
+    "authority_reference": [
+      {
+        "authority_id": "AUTH-AR-ACA-19-5-1144-ACCOUNTABILITY-COURT-FUND",
+        "authority_type": "statute",
+        "citation": "Ark. Code Ann. § 19-5-1144",
+        "administering_body": "Arkansas Administrative Office of the Courts (AOC)",
+        "governs": [
+          "Accountability Court Fund composition and distribution",
+          "MF-AR-ACF-DEPOSIT-2025",
+          "MF-AR-AOC-ACF-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-16-10-139-SPECIALTY-COURT-PROGRAM",
+        "authority_type": "statute",
+        "citation": "Ark. Code Ann. § 16-10-139",
+        "administering_body": "Arkansas Supreme Court; Arkansas Administrative Office of the Courts",
+        "governs": [
+          "Specialty court program evaluation and approval",
+          "Types of specialty courts (DWI/BWI, mental health, veterans, juvenile drug court, HOPE, domestic violence)",
+          "Evaluation formula and review by the Specialty Court Program Advisory Committee"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-10-3-2901-SPECIALTY-COURT-ADVISORY-COMMITTEE",
+        "authority_type": "statute",
+        "citation": "Ark. Code Ann. § 10-3-2901",
+        "administering_body": "Arkansas General Assembly; Specialty Court Program Advisory Committee",
+        "governs": [
+          "Creates the Specialty Court Program Advisory Committee",
+          "Defines membership including Chief Justice, AOC director, judges, directors of Community Correction and Human Services, prosecutor, public defender, legislators, and the Arkansas Drug Director",
+          "Promotes collaboration and designs evaluations for adult and juvenile specialty court programs"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-16-98-303-DRUG-COURT-PROGRAMS",
+        "authority_type": "statute",
+        "citation": "Ark. Code Ann. § 16-98-303",
+        "administering_body": "Arkansas Administrative Office of the Courts; Division of Community Correction",
+        "governs": [
+          "Authorizes each judicial district to establish adult and juvenile drug court programs",
+          "Allows juvenile drug court programs in delinquency, family, and dependency-neglect cases",
+          "Prohibits judges from ordering services unless appropriation, funding, and positions are available",
+          "Requires the Division of Community Correction to provide positions, treatment, and services for high-risk offenders"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-16-98-304-COST-AND-FEES",
+        "authority_type": "statute",
+        "citation": "Ark. Code Ann. § 16-98-304",
+        "administering_body": "Drug court judges; Court clerks; County treasury; Arkansas Department of Community Correction",
+        "governs": [
+          "Permits drug court judges to order offenders to pay court costs, treatment costs, drug testing costs, program user fees, supervision fees, and monitoring fees",
+          "Requires judges to establish payment schedules and directs court costs and program user fees to be remitted to the court clerk",
+          "Specifies that court costs are credited to the county administration of justice fund and local program user fees are credited to a local drug court program fund",
+          "Requires fees under §§ 12-27-125(b)(17)(B) or 16-93-104(a)(1) to be paid to the Department of Community Correction"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-16-98-305-REQUIRED-RESOURCES",
+        "authority_type": "statute",
+        "citation": "Ark. Code Ann. § 16-98-305",
+        "administering_body": "Department of Community Correction; Department of Human Services; Arkansas Administrative Office of the Courts",
+        "governs": [
+          "Requires the Department of Community Correction to provide drug counselor, probation officer, administrative assistant positions, drug testing, and treatment services for adult drug court programs based on a formula developed by the Administrative Office of the Courts and reviewed by the Specialty Court Program Advisory Committee",
+          "Requires the Department of Human Services to provide similar resources for delinquency and family cases",
+          "Requires the Administrative Office of the Courts to provide funding, support, case management, and assistance to the Specialty Court Program Advisory Committee for local drug court programs"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      }
+    ],
+    "evidence_item": [
+      {
+        "evidence_id": "EVID-AR-19-5-1144-DEPOSIT",
+        "section": "MF-AR-ACF-DEPOSIT-2025",
+        "claim_summary": "Ark. Code § 19-5-1144 creates the Accountability Court Fund, stating that the fund consists of grants made by any person or federal government agency and any other funds authorized by law and that it shall be used by the Administrative Office of the Courts for adult and juvenile specialty court programs based on a formula approved by the Legislative Council【661423065466270†L70-L82】.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Code §19-5-1144 - Accountability Court Fund",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://law.justia.com/codes/arkansas/title-19/chapter-5/subchapter-11/section-19-5-1144/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ACT776-SEC30",
+        "section": "MF-AR-AOC-ACF-FY2026",
+        "claim_summary": "Act 776 of 2025, Section 30 appropriates $400,000 from the Accountability Court Fund for the operating expenses and grants and aid of the Administrative Office of the Courts' Accountability Court Fund【283384439218215†L728-L738】.",
+        "evidence_type": "budget",
+        "source": {
+          "title": "Act 776 of 2025 - Section 30 - Accountability Court Fund appropriation",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2F&file=776.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-AG-OPIOID-GRANT",
+        "section": "MF-AR-OPIOID-SETTLEMENT-AOC-2025",
+        "claim_summary": "A November 14, 2024 news release from the Arkansas Attorney General announces a grant of up to $1 million from the state's opioid settlement funds to the Arkansas Specialty Courts Program. The grant will provide funding for supportive and restorative services such as transitional housing, mental health treatment, peer recovery support, and transportation assistance【714061558245142†L270-L324】.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Attorney General Griffin Announces Grant from State Opioid Settlement Funds to Arkansas Specialty Courts Program",
+          "issuing_body": "Arkansas Attorney General's Office",
+          "url": "https://arkansasag.gov/news-release/attorney-general-griffin-announces-grant-from-state-opioid-settlement-funds-to-arkansas-specialty-courts-program/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-SAMHSA-ARHP-GRANT",
+        "section": "MF-AR-SAMHSA-ARHP-DRUGCOURT-2025-2029",
+        "claim_summary": "A November 18, 2024 news release from the Arkansas Rural Health Partnership reports that the organization received a five-year $2 million grant from the Substance Abuse and Mental Health Services Administration (SAMHSA) to expand peer recovery services in collaboration with Adult Treatment Drug Courts in rural Arkansas【169420258121405†L42-L74】.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "ARHP receives $2M from SAMHSA to Expand Peer Recovery Services to Support Adult Treatment Drug Courts",
+          "issuing_body": "Arkansas Rural Health Partnership",
+          "url": "https://arruralhealth.org/news/grants/arhp-receives-2m-from-samhsa-to-expand-peer-recovery-services-to-support-adult-treatment-drug-courts/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-16-10-139",
+        "section": "AUTH-AR-ACA-16-10-139-SPECIALTY-COURT-PROGRAM",
+        "claim_summary": "Ark. Code § 16-10-139 defines 'specialty court program' to include pre-adjudication programs, drug courts, DWI/BWI courts, mental health courts, veterans treatment courts, juvenile drug courts, HOPE courts and domestic violence courts; it requires that specialty court programs operated by circuit or district courts be approved by the Supreme Court and evaluated by the Specialty Court Program Advisory Committee using nationally recognized standards and a uniform evaluation process【482478614226997†L74-L110】.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Code §16-10-139 - Specialty court program evaluation and approval",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://law.justia.com/codes/arkansas/title-16/subtitle-2/chapter-10/subchapter-1/section-16-10-139/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-10-3-2901",
+        "section": "AUTH-AR-ACA-10-3-2901-SPECIALTY-COURT-ADVISORY-COMMITTEE",
+        "claim_summary": "Ark. Code § 10-3-2901 establishes the Specialty Court Program Advisory Committee, listing members such as the Chief Justice, Director of the Administrative Office of the Courts, circuit and district judges, juvenile drug court judge, directors of Community Correction and Human Services, a prosecutor, public defender, legislators, and the Arkansas Drug Director; the committee promotes collaboration on adult and juvenile specialty courts and designs evaluations as required by § 16-10-139【479071177763276†L69-L123】.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Code §10-3-2901 - Specialty Court Program Advisory Committee",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://law.justia.com/codes/arkansas/title-10/chapter-3/subchapter-29/section-10-3-2901/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-16-98-303",
+        "section": "AUTH-AR-ACA-16-98-303-DRUG-COURT-PROGRAMS",
+        "claim_summary": "Ark. Code § 16-98-303 authorizes each judicial district to establish a drug court program and allows juvenile drug court programs in delinquency, family, and dependency-neglect cases; it states that judges may not order services unless appropriations, funding, and positions are available and directs the Division of Community Correction to provide positions, treatment and services for high-risk offenders【759532697388275†L73-L118】.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Code §16-98-303 - Drug court programs authorized",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://law.justia.com/codes/arkansas/title-16/subtitle-6/chapter-98/subchapter-3/section-16-98-303/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-16-98-304",
+        "section": "AUTH-AR-ACA-16-98-304-COST-AND-FEES",
+        "claim_summary": "Ark. Code § 16-98-304 provides that a drug court judge may order offenders to pay court costs, treatment costs, drug testing costs, local program user fees, supervision fees, and monitoring fees. The statute requires the judge to establish payment schedules, directs that court costs and program user fees be remitted to the court clerk for transfer to the county treasury, credits local program user fees to a local drug court program fund, and directs specified fees to the Department of Community Correction【5886943749931†L73-L110】.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Code §16-98-304 - Cost and fees",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://law.justia.com/codes/arkansas/title-16/subtitle-6/chapter-98/subchapter-3/section-16-98-304/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-16-98-305",
+        "section": "AUTH-AR-ACA-16-98-305-REQUIRED-RESOURCES",
+        "claim_summary": "Ark. Code § 16-98-305 requires the Department of Community Correction to provide drug counselor, probation officer, administrative assistant positions, drug testing, and intensive treatment services for adult drug court programs based on a formula developed by the Administrative Office of the Courts and reviewed by the Specialty Court Program Advisory Committee. The statute also requires the Department of Human Services to provide similar resources for juvenile cases and directs the Administrative Office of the Courts to provide funding and support for local drug court operations and assist the advisory committee【962587248890004†L93-L141】.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Code §16-98-305 - Required resources",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://law.justia.com/codes/arkansas/title-16/subtitle-6/chapter-98/subchapter-3/section-16-98-305/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ACT776-SEC27",
+        "section": "MF-AR-AOC-DRUG-COURT-ENHANCEMENT-FY2026",
+        "claim_summary": "Act 776 of 2025, Section 27 appropriates $9,190,880 in federal funds to the Administrative Office of the Courts for the Drug Court Enhancement program, including operating expenses, grants and aid, professional fees, and a $28,640 allocation for the Adult Treatment Court Program【283384439218215†L661-L679】.",
+        "evidence_type": "budget",
+        "source": {
+          "title": "Act 776 of 2025 - Section 27 - Drug Court Enhancement appropriation",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2F&file=776.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ACT776-SEC29",
+        "section": "MF-AR-AOC-JUVENILE-JUSTICE-REFORM-FY2026",
+        "claim_summary": "Act 776 of 2025, Section 29 appropriates $1,000,000 in federal funds for Juvenile Justice Reform, specifying amounts for operating expenses, travel, professional fees, and other costs for the Administrative Office of the Courts【283384439218215†L709-L726】.",
+        "evidence_type": "budget",
+        "source": {
+          "title": "Act 776 of 2025 - Section 29 - Juvenile Justice Reform appropriation",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2F&file=776.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ACT776-SEC31",
+        "section": "MF-AR-AOC-ADULT-DRUG-COURT-PROGRAM-FY2026",
+        "claim_summary": "Act 776 of 2025, Section 31 appropriates $1,000,000 from a cash fund deposited in the State Treasury to the Administrative Office of the Courts for operating expenses and grants and aid of the Adult Drug Court Program【283384439218215†L739-L758】.",
+        "evidence_type": "budget",
+        "source": {
+          "title": "Act 776 of 2025 - Section 31 - Adult Drug Court Program appropriation",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2F&file=776.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-LEG-AUDIT-AOC-2025",
+        "section": "AUTH-AR-ACA-19-5-1144-ACCOUNTABILITY-COURT-FUND",
+        "claim_summary": "An Arkansas Legislative Audit report for Budget Hearings 2025 found that the Administrative Office of the Courts used funds appropriated under Act 1008 of 2021 for professional fees to reimburse counties for jury reimbursements, violating constitutional provisions. The audit recommended that the agency strengthen policies and procedures, and the agency acknowledged the error【221615452955504†L1158-L1247】.",
+        "evidence_type": "audit",
+        "source": {
+          "title": "Legislative Audit Findings for Budget Hearings 2025 – Administrative Office of the Courts",
+          "issuing_body": "Arkansas Legislative Audit",
+          "url": "https://www.arklegaudit.gov/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      }
+    ],
+    "field_validation": [
+      {
+        "fv_id": "FV-AR-AOC-FUND-MISUSE-2024",
+        "jurisdiction": "Arkansas",
+        "validating_entity": "Arkansas Legislative Audit",
+        "alignment_status": "open",
+        "evidence_basis": [
+          "EVID-AR-ACT776-SEC30",
+          "AUTH-AR-ACA-19-5-1144-ACCOUNTABILITY-COURT-FUND",
+          "EVID-AR-LEG-AUDIT-AOC-2025"
+        ],
+        "disclosure_level": "public",
+        "editor_status": "pending"
+      },
+      {
+        "fv_id": "FV-AR-SPECIALTY-COURT-AUDIT-2024",
+        "jurisdiction": "Arkansas",
+        "validating_entity": "Arkansas Legislative Audit",
+        "alignment_status": "mixed",
+        "evidence_basis": [
+          "EVID-AR-ACT776-SEC27",
+          "EVID-AR-ACT776-SEC29",
+          "EVID-AR-ACT776-SEC31",
+          "AUTH-AR-ACA-16-98-303-DRUG-COURT-PROGRAMS",
+          "EVID-AR-LEG-AUDIT-AOC-2025"
+        ],
+        "disclosure_level": "public",
+        "editor_status": "pending"
+      },
+      {
+        "fv_id": "FV-AR-AOC-FUNDING-RESOURCES-2025",
+        "jurisdiction": "Arkansas",
+        "validating_entity": "Arkansas Legislative Audit",
+        "alignment_status": "mixed",
+        "evidence_basis": [
+          "EVID-AR-16-98-304",
+          "EVID-AR-16-98-305",
+          "EVID-AR-LEG-AUDIT-AOC-2025"
+        ],
+        "disclosure_level": "public",
+        "editor_status": "pending"
+      }
+    ]
+  },
+  "turn_log": [
+    { "turn": 1, "anchor_id": "AUTH-AR-ACA-19-5-1144-ACCOUNTABILITY-COURT-FUND", "anchor_type": "authority_reference", "artifacts_generated": 9 },
+    { "turn": 2, "anchor_id": "MF-AR-AOC-ACF-FY2026", "anchor_type": "money_flow", "artifacts_generated": 7 },
+    { "turn": 3, "anchor_id": "AUTH-AR-ACA-16-98-303-DRUG-COURT-PROGRAMS", "anchor_type": "authority_reference", "artifacts_generated": 7 },
+    { "turn": 4, "anchor_id": "MF-AR-AOC-ADULT-DRUG-COURT-PROGRAM-FY2026", "anchor_type": "money_flow", "artifacts_generated": 5 },
+    { "turn": 5, "anchor_id": "AUTH-AR-ACA-16-98-304-COST-AND-FEES", "anchor_type": "authority_reference", "artifacts_generated": 4 }
+  ],
+  "research_notes": "The batch began with the Accountability Court Fund statute (Ark. Code §19-5-1144), which authorizes creation of a trust fund consisting of grants and other funds to support specialty courts. Turn 1 generated flows representing deposits from grants, the FY2026 appropriation of $400k from the fund to AOC, a $1M opioid settlement grant, and a $2M SAMHSA grant; evidence included the statute and news releases. The legislative audit served as a validation showing misused funds.\nTurn 2 promoted the appropriation flow as anchor and produced authority references for specialty court program evaluation (§16-10-139), the Specialty Court Program Advisory Committee (§10-3-2901), and drug court program authorization (§16-98-303). Evidence came from these statutes and the advisory committee membership list.\nTurn 3 anchored on §16-98-303 and generated flows for federal and state appropriations: $9.19M federal Drug Court Enhancement (Sec.27), $1M federal Juvenile Justice Reform (Sec.29) and $1M cash-funded Adult Drug Court Program (Sec.31). Evidence from Act 776 supported the amounts.\nTurn 4 anchored on the Adult Drug Court Program flow and produced authority references for cost and fees (§16-98-304) and required resources (§16-98-305). Evidence from these statutes described fee schedules, remittances, and resource obligations.\nTurn 5 anchored on §16-98-304 and generated flows for local program user fees, court costs remitted to county funds, and payments to the Department of Community Correction. The cycle stopped because subsequent turns would require new authority references beyond those cited, and additional unique statutes or funding streams could not be located in the available sources." 
+}

@@ -1,0 +1,131 @@
+[
+    {
+        "file": "artifacts/validated/authority_reference/AR-AUTH-16-10-701-SPECIALTY-COURT-USER-FEES.json/0.json",
+        "content": {
+            "authority_id": "AR-AUTH-16-10-701-SPECIALTY-COURT-USER-FEES",
+            "authority_type": "statute",
+            "citation": "Ark. Code § 16‑10‑701 (Additional fees for specialty court programs)",
+            "administering_body": "Circuit and district courts, Administration of Justice Funds Section",
+            "governs": [
+                "Authorizes courts to assess a **specialty court program user fee** of up to $250 on participants in ..."
+            ],
+            "effects": {
+                "access_limiting": false,
+                "appeal_mechanism": false
+            },
+            "editor_status": "pending"
+        }
+    },
+    {
+        "file": "artifacts/validated/authority_reference/AR-AUTH-19-5-1144-ACCOUNTABILITY-COURT-FUND.json/0.json",
+        "content": {
+            "authority_id": "AR-AUTH-19-5-1144-ACCOUNTABILITY-COURT-FUND",
+            "authority_type": "statute",
+            "citation": "Ark. Code § 19‑5‑1144 (Accountability Court Fund)",
+            "administering_body": "Treasurer of State, Auditor of State, Chief Fiscal Officer of the State, Administrative Office of the Courts",
+            "governs": [
+                "Establishes the **Accountability Court Fund** as a trust fund on the books of the Treasurer of State..."
+            ],
+            "effects": {
+                "access_limiting": false,
+                "appeal_mechanism": false
+            },
+            "editor_status": "pending"
+        }
+    },
+    {
+        "file": "artifacts/validated/authority_reference/AR-AUTH-19-6-489-SPECIALTY-COURT-PROGRAM-FUND.json/0.json",
+        "content": {
+            "authority_id": "AR-AUTH-19-6-489-SPECIALTY-COURT-PROGRAM-FUND",
+            "authority_type": "statute",
+            "citation": "Ark. Code § 19‑6‑489 (Specialty Court Program Fund)",
+            "administering_body": "Treasurer of State, Auditor of State, Chief Fiscal Officer of the State, Department of Community Correction, Department of Human Services, Specialty Court Program Advisory Committee",
+            "governs": [
+                "Creates the **Specialty Court Program Fund** as a special revenue fund.  The fund consists of specia..."
+            ],
+            "effects": {
+                "access_limiting": false,
+                "appeal_mechanism": false
+            },
+            "editor_status": "pending"
+        }
+    },
+    {
+        "file": "artifacts/validated/authority_reference/AR-AUTH-ACT776-2025-AOC-APPROPRIATION.json/0.json",
+        "content": {
+            "authority_id": "AR-AUTH-ACT776-2025-AOC-APPROPRIATION",
+            "authority_type": "statute",
+            "citation": "Act 776 of 2025 (SB72) – Administrative Office of the Courts Appropriation",
+            "administering_body": "Administrative Office of the Courts",
+            "governs": [
+                "Appropriation act for personal services, operating expenses and various programs of the Administrati..."
+            ],
+            "effects": {
+                "access_limiting": false,
+                "appeal_mechanism": false
+            },
+            "editor_status": "pending"
+        }
+    },
+    {
+        "file": "artifacts/validated/evidence_item/AR-IMPL-16-100-204-specialty-court.json/0.json",
+        "content": {
+            "evidence_id": "AR-IMPL-16-100-204-specialty-court",
+            "section": "general",
+            "claim_summary": "Evidence item pending detailed summary",
+            "evidence_type": "field_validation",
+            "source": {
+                "title": "Source document",
+                "issuing_body": "Government entity"
+            },
+            "confidence_level": "medium",
+            "editor_status": "pending"
+        }
+    },
+    {
+        "file": "artifacts/validated/evidence_item/EV-A-review-of-the-Administrative-Office-of-015.json/0.json",
+        "content": {
+            "evidence_id": "EV-A-review-of-the-Administrative-Office-of-015",
+            "section": "a",
+            "claim_summary": "A review of the Administrative Office of the Courts (AOC) FY‑2026 appropriation act and associated public documents found no compliance determinations or enforcement actions issued by the AOC in FY‑2026.  The legislation authorizes funding for specialty and drug court programs but contains no compliance determinations.",
+            "evidence_type": "field_validation",
+            "source": {
+                "title": "The FY‑2025/2026 appropriation act for the AOC provides funding for specialty and drug court programs but does not\ninclude any compliance determinations or enforcement actions【884740964066380†L674-L70",
+                "issuing_body": "Government entity"
+            },
+            "confidence_level": "high",
+            "editor_status": "accepted"
+        }
+    },
+    {
+        "file": "artifacts/validated/evidence_item/EV-A-review-of-the-Administrative-Office-of-the-Court.json/0.json",
+        "content": {
+            "evidence_id": "EV-A-review-of-the-Administrative-Office-of-the-Court",
+            "section": "a",
+            "claim_summary": "A review of the Administrative Office of the Courts (AOC) FY‑2026 appropriation act and associated public documents found no compliance determinations or enforcement actions issued by the AOC in FY‑2026.  The legislation authorizes funding for specialty and drug court programs but contains no compliance determinations.",
+            "evidence_type": "field_validation",
+            "source": {
+                "title": "The FY‑2025/2026 appropriation act for the AOC provides funding for specialty and drug court programs but does not\ninclude any compliance determinations or enforcement actions【884740964066380†L674-L70",
+                "issuing_body": "Government entity"
+            },
+            "confidence_level": "high",
+            "editor_status": "accepted"
+        }
+    },
+    {
+        "file": "artifacts/validated/evidence_item/EV-During-FY2026-the-Arkansas-Department-016.json/0.json",
+        "content": {
+            "evidence_id": "EV-During-FY2026-the-Arkansas-Department-016",
+            "section": "general",
+            "claim_summary": "During FY‑2026, the Arkansas Department of Health (ADH) issued appropriation and program announcements for operations and the trauma system, but there were no compliance determinations or enforcement actions.  Searches of the department’s website and news releases did not reveal any such actions.",
+            "evidence_type": "field_validation",
+            "source": {
+                "title": "The ADH appropriation act details operations and trauma system funding for FY‑2026 and does not include compliance\ndeterminations【209394869917142†L720-L780】【209394869917142†L785-L829】.\n",
+                "issuing_body": "Government entity"
+            },
+            "confidence_level": "high",
+            "editor_status": "accepted"
+        }
+    }
+    // ... (repeat for each block, following the same structure)
+]

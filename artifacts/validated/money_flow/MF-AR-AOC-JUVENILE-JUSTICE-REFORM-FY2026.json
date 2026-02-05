@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-AOC-JUVENILE-JUSTICE-REFORM-FY2026",
+  "source": "Federal funds (Juvenile Justice Reform)",
+  "intermediary": "None",
+  "destination": "Arkansas Administrative Office of the Courts",
+  "amount": 1000000,
+  "fund_type": "federal",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Act 776 of 2025, Section 29; Ark. Code Ann. § 16-98-303",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-ACA-19-5-1144-AUTHFLOW",
+  "_ingested_at": "2026-02-05T03:55:31.032811"
+}

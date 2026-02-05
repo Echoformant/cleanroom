@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-10-3-2901",
+  "section": "AUTH-AR-ACA-10-3-2901-SPECIALTY-COURT-ADVISORY-COMMITTEE",
+  "claim_summary": "Ark. Code § 10-3-2901 establishes the Specialty Court Program Advisory Committee, listing members such as the Chief Justice, Director of the Administrative Office of the Courts, circuit and district judges, juvenile drug court judge, directors of Community Correction and Human Services, a prosecutor, public defender, legislators, and the Arkansas Drug Director; the committee promotes collaboration on adult and juvenile specialty courts and designs evaluations as required by § 16-10-139【479071177763276†L69-L123】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code §10-3-2901 - Specialty Court Program Advisory Committee",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/title-10/chapter-3/subchapter-29/section-10-3-2901/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-ACA-19-5-1144-AUTHFLOW",
+  "_ingested_at": "2026-02-05T03:55:31.042795"
+}

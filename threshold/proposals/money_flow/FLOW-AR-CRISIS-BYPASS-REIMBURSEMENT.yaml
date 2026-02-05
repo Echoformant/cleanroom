@@ -1,0 +1,12 @@
+flow_id: "FLOW-AR-CRISIS-BYPASS-REIMBURSEMENT"
+source: "Health Benefit Plans / Commercial Insurers"
+intermediary: "N/A"
+destination: "Crisis Stabilization Units (CSUs) and Hospital Emergency Departments (EDs)"
+amount: 0
+fund_type: "state"
+fiscal_year: "2025-2026"
+restrictions:
+  medicaid: true
+  dhs_controlled: false
+statutory_basis: "Ark. Code Ann. § 23-99-1119 (as established by Act 389)"
+editor_status: "pending"

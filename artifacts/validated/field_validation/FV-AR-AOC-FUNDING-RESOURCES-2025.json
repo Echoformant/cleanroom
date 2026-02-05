@@ -1,0 +1,15 @@
+{
+  "fv_id": "FV-AR-AOC-FUNDING-RESOURCES-2025",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Legislative Audit",
+  "alignment_status": "mixed",
+  "evidence_basis": [
+    "EVID-AR-16-98-304",
+    "EVID-AR-16-98-305",
+    "EVID-AR-LEG-AUDIT-AOC-2025"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-ACA-19-5-1144-AUTHFLOW",
+  "_ingested_at": "2026-02-05T03:55:31.048008"
+}

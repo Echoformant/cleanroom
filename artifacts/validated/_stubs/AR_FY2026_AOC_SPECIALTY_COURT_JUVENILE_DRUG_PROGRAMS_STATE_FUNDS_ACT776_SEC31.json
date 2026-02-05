@@ -1,0 +1,21 @@
+{
+  "flow_id": "AR_FY2026_AOC_SPECIALTY_COURT_JUVENILE_DRUG_PROGRAMS_STATE_FUNDS_ACT776_SEC31",
+  "source": "[GAP STUB - source needed]",
+  "intermediary": "None",
+  "destination": "[GAP STUB - destination needed]",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "[GAP STUB - statutory basis needed]",
+  "editor_status": "pending",
+  "_gap_metadata": {
+    "generated_by": "gap_analyzer",
+    "gap_type": "INCOMPLETE_CHAIN",
+    "source_artifact": "AUTH-AR-SB472-S1-2015-ACCOUNTABILITY-COURT-PROGRAM",
+    "detected_at": "2026-02-04T18:51:29.698055+00:00"
+  }
+}

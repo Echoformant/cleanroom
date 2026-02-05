@@ -1,0 +1,17 @@
+{
+  "fv_id": "FV-GAP-AUTH-US-SAMHSA-SABG-PPW-5PCT-GUIDANCE",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "[GAP STUB - validating entity needed]",
+  "alignment_status": "open",
+  "evidence_basis": [
+    "AUTH-US-SAMHSA-SABG-PPW-5PCT-GUIDANCE"
+  ],
+  "disclosure_level": "restricted",
+  "editor_status": "pending",
+  "_gap_metadata": {
+    "generated_by": "gap_analyzer",
+    "gap_type": "MISSING_VALIDATION",
+    "source_artifact": "AUTH-US-SAMHSA-SABG-PPW-5PCT-GUIDANCE",
+    "detected_at": "2026-02-04T18:51:29.702158+00:00"
+  }
+}

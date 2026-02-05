@@ -1,0 +1,12 @@
+{
+  "gap_id": "GAP-NOVALIDATION-MF-SPECIALTY-COURTS-2025-2026",
+  "gap_type": "MISSING_VALIDATION",
+  "source_artifact": "MF-SPECIALTY-COURTS-2025-2026",
+  "source_category": "money_flow",
+  "source_field": null,
+  "target_reference": "[field_validation for MF-SPECIALTY-COURTS-2025-2026]",
+  "target_category": "field_validation",
+  "detected_at": "2026-02-04T18:51:29.702158+00:00",
+  "stub_generated": true,
+  "stub_path": "C:\\Threshold\\cleanroom\\artifacts\\validated\\_stubs\\FV-GAP-MF-SPECIALTY-COURTS-2025-2026.json"
+}

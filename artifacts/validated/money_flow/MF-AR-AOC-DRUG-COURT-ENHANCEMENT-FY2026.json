@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-AOC-DRUG-COURT-ENHANCEMENT-FY2026",
+  "source": "U.S. Department of Justice or federal funds designated by the Chief Fiscal Officer",
+  "intermediary": "None",
+  "destination": "Arkansas Administrative Office of the Courts",
+  "amount": 9190880,
+  "fund_type": "federal",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Act 776 of 2025, Section 27; Ark. Code Ann. § 16-98-303",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-ACA-19-5-1144-AUTHFLOW",
+  "_ingested_at": "2026-02-05T03:55:31.032297"
+}

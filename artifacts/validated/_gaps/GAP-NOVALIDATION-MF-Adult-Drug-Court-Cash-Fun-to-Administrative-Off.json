@@ -1,0 +1,12 @@
+{
+  "gap_id": "GAP-NOVALIDATION-MF-Adult-Drug-Court-Cash-Fun-to-Administrative-Off",
+  "gap_type": "MISSING_VALIDATION",
+  "source_artifact": "MF-Adult-Drug-Court-Cash-Fun-to-Administrative-Office-of-",
+  "source_category": "money_flow",
+  "source_field": null,
+  "target_reference": "[field_validation for MF-Adult-Drug-Court-Cash-Fun-to-Administrative-Office-of-]",
+  "target_category": "field_validation",
+  "detected_at": "2026-02-04T18:51:29.702158+00:00",
+  "stub_generated": true,
+  "stub_path": "C:\\Threshold\\cleanroom\\artifacts\\validated\\_stubs\\FV-GAP-MF-Adult-Drug-Court-Cash-Fun-to-Administ.json"
+}

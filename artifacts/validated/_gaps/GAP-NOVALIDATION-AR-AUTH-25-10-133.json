@@ -1,0 +1,12 @@
+{
+  "gap_id": "GAP-NOVALIDATION-AR-AUTH-25-10-133",
+  "gap_type": "MISSING_VALIDATION",
+  "source_artifact": "AR-AUTH-25-10-133",
+  "source_category": "authority_reference",
+  "source_field": null,
+  "target_reference": "[field_validation for AR-AUTH-25-10-133]",
+  "target_category": "field_validation",
+  "detected_at": "2026-02-04T18:51:29.702158+00:00",
+  "stub_generated": true,
+  "stub_path": "C:\\Threshold\\cleanroom\\artifacts\\validated\\_stubs\\FV-GAP-AR-AUTH-25-10-133.json"
+}

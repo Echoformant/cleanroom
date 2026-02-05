@@ -1,0 +1,8 @@
+fv_id: "FV-AR-CRISIS-BYPASS-OPEN-LANE"
+jurisdiction: "Arkansas"
+validating_entity: "Arkansas Insurance Commissioner"
+alignment_status: "open"
+evidence_basis:
+  - "EVID-AR-ACT389-SUMMARY"
+disclosure_level: "restricted"
+editor_status: "pending"

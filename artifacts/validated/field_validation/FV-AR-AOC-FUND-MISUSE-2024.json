@@ -1,0 +1,15 @@
+{
+  "fv_id": "FV-AR-AOC-FUND-MISUSE-2024",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Legislative Audit",
+  "alignment_status": "open",
+  "evidence_basis": [
+    "EVID-AR-ACT776-SEC30",
+    "AUTH-AR-ACA-19-5-1144-ACCOUNTABILITY-COURT-FUND",
+    "EVID-AR-LEG-AUDIT-AOC-2025"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-ACA-19-5-1144-AUTHFLOW",
+  "_ingested_at": "2026-02-05T03:55:31.047140"
+}

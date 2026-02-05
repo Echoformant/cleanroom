@@ -1,0 +1,12 @@
+{
+  "_instructions": "Replace this entire object with the batch response from the LLM",
+  "batch_id": "BATCH-AUTH-AR-ACA-19-5-1144",
+  "anchor_id": "AUTH-AR-ACA-19-5-1144-ACCOUNTABILITY-COURT-FUND",
+  "generated_at": "",
+  "artifacts": {
+    "money_flow": [],
+    "authority_reference": [],
+    "evidence_item": [],
+    "field_validation": []
+  }
+}

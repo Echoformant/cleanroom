@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-AG-OPIOID-GRANT",
+  "section": "MF-AR-OPIOID-SETTLEMENT-AOC-2025",
+  "claim_summary": "A November 14, 2024 news release from the Arkansas Attorney General announces a grant of up to $1 million from the state's opioid settlement funds to the Arkansas Specialty Courts Program. The grant will provide funding for supportive and restorative services such as transitional housing, mental health treatment, peer recovery support, and transportation assistance【714061558245142†L270-L324】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Attorney General Griffin Announces Grant from State Opioid Settlement Funds to Arkansas Specialty Courts Program",
+    "issuing_body": "Arkansas Attorney General's Office",
+    "url": "https://arkansasag.gov/news-release/attorney-general-griffin-announces-grant-from-state-opioid-settlement-funds-to-arkansas-specialty-courts-program/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-ACA-19-5-1144-AUTHFLOW",
+  "_ingested_at": "2026-02-05T03:55:31.041096"
+}

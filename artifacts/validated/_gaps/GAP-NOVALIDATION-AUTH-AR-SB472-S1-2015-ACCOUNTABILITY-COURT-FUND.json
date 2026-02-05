@@ -1,0 +1,12 @@
+{
+  "gap_id": "GAP-NOVALIDATION-AUTH-AR-SB472-S1-2015-ACCOUNTABILITY-COURT-FUND",
+  "gap_type": "MISSING_VALIDATION",
+  "source_artifact": "AUTH-AR-SB472-S1-2015-ACCOUNTABILITY-COURT-FUND",
+  "source_category": "authority_reference",
+  "source_field": null,
+  "target_reference": "[field_validation for AUTH-AR-SB472-S1-2015-ACCOUNTABILITY-COURT-FUND]",
+  "target_category": "field_validation",
+  "detected_at": "2026-02-04T18:51:29.702158+00:00",
+  "stub_generated": true,
+  "stub_path": "C:\\Threshold\\cleanroom\\artifacts\\validated\\_stubs\\FV-GAP-AUTH-AR-SB472-S1-2015-ACCOUNTABILITY-COU.json"
+}

@@ -1,0 +1,18 @@
+{
+  "authority_id": "AUTH-AR-ACA-16-10-139-SPECIALTY-COURT-PROGRAM",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 16-10-139",
+  "administering_body": "Arkansas Supreme Court; Arkansas Administrative Office of the Courts",
+  "governs": [
+    "Specialty court program evaluation and approval",
+    "Types of specialty courts (DWI/BWI, mental health, veterans, juvenile drug court, HOPE, domestic violence)",
+    "Evaluation formula and review by the Specialty Court Program Advisory Committee"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-ACA-19-5-1144-AUTHFLOW",
+  "_ingested_at": "2026-02-05T03:55:31.035927"
+}

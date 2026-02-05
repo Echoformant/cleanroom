@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-SAMHSA-ARHP-DRUGCOURT-2025-2029",
+  "source": "Substance Abuse and Mental Health Services Administration (SAMHSA)",
+  "intermediary": "Arkansas Rural Health Partnership",
+  "destination": "Adult Treatment Drug Courts in rural Arkansas",
+  "amount": 2000000,
+  "fund_type": "federal",
+  "fiscal_year": "2025-2029",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "SAMHSA grant to Arkansas Rural Health Partnership",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-ACA-19-5-1144-AUTHFLOW",
+  "_ingested_at": "2026-02-05T03:55:31.031750"
+}

@@ -1,0 +1,4 @@
+{
+  "_instructions": "Paste LLM response here, replacing this entire object. Expected structure: { slots: { category: { artifact: {...} } } }",
+  "slots": {}
+}

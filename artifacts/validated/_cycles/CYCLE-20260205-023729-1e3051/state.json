@@ -1,0 +1,13 @@
+{
+  "cycle_id": "CYCLE-20260205-023729-1e3051",
+  "created_at": "2026-02-05T08:37:29.764361+00:00",
+  "status": "active",
+  "current_turn": 1,
+  "current_anchor_category": "authority_reference",
+  "original_anchor_id": "AUTH-AR-ACA-19-5-1144-ACCOUNTABILITY-COURT-FUND",
+  "turns_completed": [],
+  "used_artifacts": [
+    "AUTH-AR-ACA-19-5-1144-ACCOUNTABILITY-COURT-FUND"
+  ],
+  "generated_artifacts": []
+}

@@ -1,0 +1,12 @@
+{
+  "gap_id": "GAP-NOVALIDATION-MF-Substance-Use-Prevention--to-Arkansas-Departmen",
+  "gap_type": "MISSING_VALIDATION",
+  "source_artifact": "MF-Substance-Use-Prevention--to-Arkansas-Department-of-Hu",
+  "source_category": "money_flow",
+  "source_field": null,
+  "target_reference": "[field_validation for MF-Substance-Use-Prevention--to-Arkansas-Department-of-Hu]",
+  "target_category": "field_validation",
+  "detected_at": "2026-02-04T18:51:29.702158+00:00",
+  "stub_generated": true,
+  "stub_path": "C:\\Threshold\\cleanroom\\artifacts\\validated\\_stubs\\FV-GAP-MF-Substance-Use-Prevention--to-Arkansas.json"
+}

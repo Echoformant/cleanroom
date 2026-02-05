@@ -1,0 +1,17 @@
+{
+  "fv_id": "FV-AR-SPECIALTY-COURT-AUDIT-2024",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Legislative Audit",
+  "alignment_status": "mixed",
+  "evidence_basis": [
+    "EVID-AR-ACT776-SEC27",
+    "EVID-AR-ACT776-SEC29",
+    "EVID-AR-ACT776-SEC31",
+    "AUTH-AR-ACA-16-98-303-DRUG-COURT-PROGRAMS",
+    "EVID-AR-LEG-AUDIT-AOC-2025"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-ACA-19-5-1144-AUTHFLOW",
+  "_ingested_at": "2026-02-05T03:55:31.047601"
+}

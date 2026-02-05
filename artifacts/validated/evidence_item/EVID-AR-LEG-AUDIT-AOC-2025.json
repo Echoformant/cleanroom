@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-LEG-AUDIT-AOC-2025",
+  "section": "AUTH-AR-ACA-19-5-1144-ACCOUNTABILITY-COURT-FUND",
+  "claim_summary": "An Arkansas Legislative Audit report for Budget Hearings 2025 found that the Administrative Office of the Courts used funds appropriated under Act 1008 of 2021 for professional fees to reimburse counties for jury reimbursements, violating constitutional provisions. The audit recommended that the agency strengthen policies and procedures, and the agency acknowledged the error【221615452955504†L1158-L1247】.",
+  "evidence_type": "audit",
+  "source": {
+    "title": "Legislative Audit Findings for Budget Hearings 2025 – Administrative Office of the Courts",
+    "issuing_body": "Arkansas Legislative Audit",
+    "url": "https://www.arklegaudit.gov/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-ACA-19-5-1144-AUTHFLOW",
+  "_ingested_at": "2026-02-05T03:55:31.046378"
+}

@@ -1,0 +1,18 @@
+{
+  "authority_id": "AUTH-AR-ACA-10-3-2901-SPECIALTY-COURT-ADVISORY-COMMITTEE",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 10-3-2901",
+  "administering_body": "Arkansas General Assembly; Specialty Court Program Advisory Committee",
+  "governs": [
+    "Creates the Specialty Court Program Advisory Committee",
+    "Defines membership including Chief Justice, AOC director, judges, directors of Community Correction and Human Services, prosecutor, public defender, legislators, and the Arkansas Drug Director",
+    "Promotes collaboration and designs evaluations for adult and juvenile specialty court programs"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-ACA-19-5-1144-AUTHFLOW",
+  "_ingested_at": "2026-02-05T03:55:31.036537"
+}

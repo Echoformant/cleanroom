@@ -1,0 +1,11 @@
+authority_id: "AUTH-AR-ACT389-2025-CRISIS-BYPASS"
+authority_type: "statute"
+citation: "Arkansas Act 389 of 2025 (HB 1275); Amending Ark. Code Ann. Title 23, Chapter 99"
+administering_body: "Arkansas Insurance Commissioner"
+governs:
+  - "Prohibits prior authorization or precertification for mental health crisis healthcare services."
+  - "Mandates coverage for services rendered at Crisis Stabilization Units (CSUs) and Hospital Emergency Departments (EDs)."
+effects:
+  access_limiting: false
+  appeal_mechanism: true
+editor_status: "pending"

@@ -1,0 +1,3 @@
+# Temporary Context Packet for Agent Initialization
+
+This directory contains...

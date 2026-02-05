@@ -1,0 +1,21 @@
+{
+  "flow_id": "AR_FY2026_DHS_DAABHS_SUBSTANCE_ABUSE_PREVENTION_STATE_FUNDS_ACT890_SEC8_ITEM34",
+  "source": "[GAP STUB - source needed]",
+  "intermediary": "None",
+  "destination": "[GAP STUB - destination needed]",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "[GAP STUB - statutory basis needed]",
+  "editor_status": "pending",
+  "_gap_metadata": {
+    "generated_by": "gap_analyzer",
+    "gap_type": "INCOMPLETE_CHAIN",
+    "source_artifact": "AUTH-AR-ACT58-2021-DHS-SUBSTANCE-ABUSE-PREVENTION-FUND-ESTABLISHMENT",
+    "detected_at": "2026-02-04T18:51:29.698055+00:00"
+  }
+}

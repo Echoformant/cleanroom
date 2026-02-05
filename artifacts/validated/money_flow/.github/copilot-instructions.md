@@ -1,0 +1,31 @@
+# Money Flow AI Guide
+## Data Model
+- **Scope**: This repo is a structured catalog of Arkansas public-finance flows; every entry is a single JSON object describing money moving between named government actors.
+- **Canonical example**: See [MF-AR-MEDICAID-PEER-ROUTING-2026.json](MF-AR-MEDICAID-PEER-ROUTING-2026.json) for the expected ordering, two-space indentation, and trailing newline.
+- **Fields**: Always emit `flow_id`, `source`, `intermediary`, `destination`, `amount`, `fund_type`, `fiscal_year`, `restrictions.medicaid`, `restrictions.dhs_controlled`, `statutory_basis`, `editor_status` in that order.
+- **Data types**: Keep `amount` as an integer number of USD dollars (no commas, decimals, or strings) and `fiscal_year` as a string that can hold ranges like `2025-2026`.
+- **Restrictions**: Only the boolean keys `medicaid` and `dhs_controlled` are supported; infer them from statute language (e.g., DHS-controlled special revenues flip to true in [MF-Behavioral-Health-Service-to-Division-of-Aging-Adult-B.json/0.json](MF-Behavioral-Health-Service-to-Division-of-Aging-Adult-B.json/0.json)).
+- **Fund type**: `fund_type` is `state` when appropriated by Arkansas even if federal reimbursements exist; use `federal` only when the inflow originates at US agencies (see [MF-AR-RHTP-HEART-2026.json](MF-AR-RHTP-HEART-2026.json)).
+- **Citations**: `statutory_basis` strings end with source citations using the `【docId†Lstart-Lend】` convention as shown in [MF-Accountability-Court-Fund-to-Administrative-Office-of--002.json/0.json](MF-Accountability-Court-Fund-to-Administrative-Office-of--002.json/0.json); keep Unicode dashes/section symbols when the source uses them.
+- **Unspecified appropriations**: Represent unknown dollar amounts as `0` and explain the uncertainty inside `statutory_basis` (see [MF-U.S.-Department-of-Transp-to-Administrative-Office-of-.json/0.json](MF-U.S.-Department-of-Transp-to-Administrative-Office-of-.json/0.json)).
+## File Organization
+- **Pretty vs source snapshots**: Curated files live at the repo root while ingestion snapshots live inside folders named `<flow_id>.yaml` or `<flow_id>.json` with minified `0.json` (e.g., compare [MF-AR-MEDICAID-PEER-ROUTING-2026.json](MF-AR-MEDICAID-PEER-ROUTING-2026.json) and [MF-AR-MEDICAID-PEER-ROUTING-2026.yaml/0.json](MF-AR-MEDICAID-PEER-ROUTING-2026.yaml/0.json)); always update both when editing.
+- **Batch staging**: New flows awaiting acceptance sit inside [mondey_flow_batch001.json](mondey_flow_batch001.json) (and future batch folders) as numbered fragments; when promoting them, copy the object, adjust `editor_status` to `accepted`, and move it to a standalone file.
+- **Derivative variants**: Suffixes like `--002` designate multiple flows that share a base name; never collapse or renumber them because downstream systems rely on stable `flow_id`s.
+- **Act-focused IDs**: Entries starting with `AR_FY...` trace Arkansas appropriation acts and usually flow through the Governor and Chief Fiscal Officer (see [AR_FY2026_ADH_OPERATIONS_ACT538_SEC8.json](AR_FY2026_ADH_OPERATIONS_ACT538_SEC8.json)).
+## Editing Workflow
+- **Authoring order**: Start by editing the numbered file inside the `.yaml/.json` folder, run validation, then paste the formatted version into the root file, updating `editor_status` (`pending` → `accepted`) once the citation is verified.
+- **Formatting**: Use two-space indents, keys in the canonical order, and blank-free minified copies for the folder version; VS Code's JSON formatter keeps both consistent.
+- **Validation**: There is no build system; rely on VS Code JSON diagnostics or run `pwsh -Command "Get-Content path | jq . > $null"` locally if you have `jq` installed to catch syntax errors.
+- **Diff hygiene**: Because files are tiny single objects, prefer editing via apply_patch to keep diffs focused and avoid reflowing long `statutory_basis` strings.
+## Domain Conventions
+- **Source/Intermediary/Destination**: Write the plain-language entity names (e.g., Governor, DHS division, named initiatives) exactly as statutes describe; if no pass-through exists, set `intermediary` to "None" rather than omitting it.
+- **Narrative tone**: `statutory_basis` should summarize the legal authority in complete sentences before the citation, optionally using escaped `\n` to break paragraphs as shown in [MF-Behavioral-Health-Service-to-Division-of-Aging-Adult-B.json/0.json](MF-Behavioral-Health-Service-to-Division-of-Aging-Adult-B.json/0.json).
+- **RHT proposals**: The Rural Health Transformation initiatives (HEART, PACT, RISE AR, THRIVE) all reference the Arkansas Senate summary; keep descriptions synchronized across [MF-AR-RHTP-HEART-2026.json](MF-AR-RHTP-HEART-2026.json), [MF-AR-RHTP-PACT-2026.json](MF-AR-RHTP-PACT-2026.json), [MF-AR-RHTP-RISEAR-2026.json](MF-AR-RHTP-RISEAR-2026.json), and [MF-AR-RHTP-THRIVE-2026.json](MF-AR-RHTP-THRIVE-2026.json).
+- **Medicaid routing**: When `medicaid` is true, confirm that the destination is a Medicaid-reimbursable service and cite the Medicaid manual (see [MF-AR-MEDICAID-PEER-ROUTING-2026.json](MF-AR-MEDICAID-PEER-ROUTING-2026.json)).
+- **DHS-controlled funds**: Toggle `dhs_controlled` to true for funds disbursed by DHS or its sub-divisions and false otherwise (contrast [MF-Behavioral-Health-Service-to-Division-of-Aging-Adult-B.json/0.json](MF-Behavioral-Health-Service-to-Division-of-Aging-Adult-B.json/0.json) vs [MF-Trauma-System-Fund-to-Arkansas-Department-of-He.json/0.json](MF-Trauma-System-Fund-to-Arkansas-Department-of-He.json/0.json)).
+- **Fiscal ranges**: Express biennia as `YYYY-YYYY` and longer proposals as multi-year ranges exactly as in the source documents (see [MF-AR-RHTP-HEART-2026.json](MF-AR-RHTP-HEART-2026.json)).
+## Common Tasks
+- **Adding a flow**: Choose a unique `flow_id`, drop a minified `0.json` inside a new `<flow_id>.yaml` folder, and add the formatted twin at the repo root; mirror the naming and citation style from the closest existing file.
+- **Updating a citation**: Edit only the `statutory_basis` string, keeping the evidence token stable unless the underlying PDF changes; never remove the line-range suffix.
+- **Reconciling duplicates**: Search for the `flow_id` substring before adding new entries to avoid colliding with staged batch items.
