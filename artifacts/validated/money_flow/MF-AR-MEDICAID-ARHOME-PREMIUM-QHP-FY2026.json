@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-MEDICAID-ARHOME-PREMIUM-QHP-FY2026",
+  "source": "Arkansas Department of Human Services – Division of Medical Services",
+  "intermediary": "None",
+  "destination": "Qualified Health Plan carriers",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": true,
+    "dhs_controlled": true
+  },
+  "statutory_basis": "ARHOME Section 1115 Demonstration approval letter and amendment – DHS pays QHP premiums averaging $577.62 per month for each enrollee【442060796995469†L2007-L2012】.",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:27.993731"
+}

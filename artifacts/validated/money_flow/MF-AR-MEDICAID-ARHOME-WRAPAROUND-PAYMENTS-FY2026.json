@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-MEDICAID-ARHOME-WRAPAROUND-PAYMENTS-FY2026",
+  "source": "Arkansas Department of Human Services – Division of Medical Services",
+  "intermediary": "None",
+  "destination": "Qualified Health Plan carriers",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": true,
+    "dhs_controlled": true
+  },
+  "statutory_basis": "ARHOME Section 1115 Demonstration amendment – DHS pays wrap‑around payments of $4.53 per month to QHPs for each enrollee, supplementing premium and cost‑sharing payments【442060796995469†L2007-L2012】.",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:27.994930"
+}

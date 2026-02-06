@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-MEDICAID-PASSE-CAPITATION-ARKANSAS-TOTAL-CARE-FY2026",
+  "source": "Arkansas Department of Human Services – Division of Medical Services",
+  "intermediary": "None",
+  "destination": "Arkansas Total Care (PASSE)",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": true,
+    "dhs_controlled": true
+  },
+  "statutory_basis": "Arkansas Medicaid Provider‑Led Organized Care Act (§ 20‑77‑2702) and PASSE regulations authorize DHS to pay actuarially sound capitation rates to PASSE entities; Arkansas Total Care enrolls 12,946 members【922699166651308†L119-L138】.",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:27.998098"
+}

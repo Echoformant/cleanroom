@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-PASSE-RISK-CORRIDOR",
+  "section": "MF-AR-MEDICAID-PASSE-RISK-CORRIDOR-RECOUPMENT-FY2026",
+  "claim_summary": "The PASSE quarterly report notes that a risk‑corridor mechanism allowed Arkansas Medicaid to reclaim $613 million from PASSE entities since 2019, guaranteeing savings for the state【922699166651308†L66-L72】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "PASSE Quarterly Report (2025)",
+    "issuing_body": "Arkansas Department of Human Services",
+    "url": "https://humanservices.arkansas.gov/wp-content/uploads/PASSE-quarterly-report.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:28.012891"
+}

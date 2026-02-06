@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ACA-20-47-201",
+  "section": "AUTH-AR-ACA-20-47-201",
+  "claim_summary": "Ark. Code §20-47-201 describes the policy for mental health services and directs the Division of Aging, Adult, and Behavioral Health Services to establish a system of services for persons with mental illness and reduce mental disabilities【111376278799503†L72-L96】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code §20-47-201 - Mental health services policy",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/title-20/chapter-47/section-20-47-201/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:36.010922"
+}

@@ -1,0 +1,19 @@
+{
+  "authority_id": "AUTH-AR-ACR-016-06-17-017-200",
+  "authority_type": "regulation",
+  "citation": "Ark. Admin. Code 016.06.17‑017 Section 200.000 – Provider‑led Arkansas Shared Savings Entity (PASSE) Program definitions",
+  "administering_body": "Arkansas Department of Human Services – Division of Medical Services",
+  "governs": [
+    "MF-AR-MEDICAID-PASSE-CAPITATION-ARKANSAS-TOTAL-CARE-FY2026",
+    "MF-AR-MEDICAID-PASSE-CAPITATION-CARESOURCE-FY2026",
+    "MF-AR-MEDICAID-PASSE-CAPITATION-EMPOWER-FY2026",
+    "MF-AR-MEDICAID-PASSE-CAPITATION-SUMMIT-FY2026"
+  ],
+  "effects": {
+    "access_limiting": true,
+    "appeal_mechanism": true
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:28.006468"
+}

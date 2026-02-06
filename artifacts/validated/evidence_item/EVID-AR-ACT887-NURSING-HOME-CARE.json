@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ACT887-NURSING-HOME-CARE",
+  "section": "MF-AR-PRIVATE-NURSING-HOME-FY2026",
+  "claim_summary": "Act 887 of 2025 §4 appropriates $1,048,963,434 for private nursing home care and $217,529,350 for public nursing home care under the Division of Medical Services.",
+  "evidence_type": "budget",
+  "source": {
+    "title": "Act 887 of 2025 – Nursing Home Care appropriations (Section 4)",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2Fact%2F2025R%2FPublic%2F&file=887.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-25-10-129-EXHAUSTIVE",
+  "_ingested_at": "2026-02-05T06:38:00.838256"
+}

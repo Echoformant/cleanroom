@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-AOC-OPIOID-SETTLEMENT-GRANT-2025",
+  "source": "Arkansas Attorney General’s Opioid Settlement Fund",
+  "intermediary": "None",
+  "destination": "Arkansas Specialty Courts Program (AOC)",
+  "amount": 1000000,
+  "fund_type": "settlement",
+  "fiscal_year": "2025-2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Code Ann. §19-5-1144; Attorney General press release announcing up to $1 million grant from opioid settlement funds to Arkansas Specialty Courts【359071365312792†L269-L293】",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.945522"
+}

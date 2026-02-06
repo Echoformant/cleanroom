@@ -1,0 +1,28 @@
+{
+  "authority_id": "AUTH-AR-ACT-538-2025",
+  "authority_type": "act",
+  "citation": "Act 538 of 2025 (Department of Health Appropriation)",
+  "administering_body": "Arkansas General Assembly / Department of Health",
+  "governs": [
+    "Appropriations for ADH operations, grants & aid, Kidney Disease Program, Breast Care Program, Infectious Disease Control, Trauma System, Health Building and Local Health Grant Trust, Nuclear Planning Grants, Emergency Medical Services, WIC Food Instruments, Infectious Diseases Testing, and Shared Services",
+    "MF-AR-ADH-GRANTS-AID-FY2026",
+    "MF-AR-ADH-KIDNEY-DISEASE-FY2026",
+    "MF-AR-ADH-BREAST-CARE-FY2026",
+    "MF-AR-ADH-INFECTIOUS-DISEASE-CONTROL-FY2026",
+    "MF-AR-ADH-TRAUMA-SYSTEM-FY2026",
+    "MF-AR-ADH-HEALTH-BUILDING-GRANTS-FY2026",
+    "MF-AR-ADH-NUCLEAR-PLANNING-FY2026",
+    "MF-AR-ADH-EMS-FY2026",
+    "MF-AR-ADH-WIC-FY2026",
+    "MF-AR-ADH-INFECTIOUS-DISEASES-TESTING-FY2026",
+    "MF-AR-ADH-SHARED-SERVICES-PAYING-FY2026",
+    "MF-AR-ADH-OPERATIONS-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.982409"
+}

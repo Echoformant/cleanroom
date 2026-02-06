@@ -1,0 +1,20 @@
+{
+  "authority_id": "AUTH-AR-ACA-16-98-303",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. §16-98-303",
+  "administering_body": "Arkansas Administrative Office of the Courts / Judicial districts",
+  "governs": [
+    "Authorization for judicial districts to establish drug court programs",
+    "Use of juvenile drug court programs in delinquency and family in need of services cases",
+    "Restriction on ordering services unless funding is available",
+    "MF-AR-AOC-ADULT-DRUG-COURT-PROGRAM-FY2026",
+    "MF-AR-AOC-JUVENILE-JUSTICE-REFORM-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": true
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-UNCAPPED-2026-02-05",
+  "_ingested_at": "2026-02-05T06:54:08.819409"
+}

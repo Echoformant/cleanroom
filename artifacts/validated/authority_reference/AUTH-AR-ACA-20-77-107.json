@@ -1,0 +1,20 @@
+{
+  "authority_id": "AUTH-AR-ACA-20-77-107",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 20‑77‑107 – Indigent medical care program and Medicaid authority",
+  "administering_body": "Arkansas Department of Human Services",
+  "governs": [
+    "MF-AR-MEDICAID-FFS-HOSPITAL-MEDICAL-SERVICES-FY2026",
+    "MF-AR-MEDICAID-FFS-PRESCRIPTION-DRUGS-FY2026",
+    "MF-AR-MEDICAID-FFS-PRIVATE-NURSING-HOME-FY2026",
+    "MF-AR-MEDICAID-FFS-PUBLIC-NURSING-HOME-FY2026",
+    "MF-AR-MEDICAID-FFS-ARKIDS-B-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": true
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:28.007363"
+}

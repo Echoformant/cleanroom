@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-ADH-NUCLEAR-PLANNING-FY2026",
+  "source": "Arkansas Nuclear Planning and Response Fund",
+  "intermediary": "None",
+  "destination": "Arkansas Department of Health – Nuclear Planning Grants",
+  "amount": 325000,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Code Ann. §20-7-109; Act 538 of 2025 §11 (Nuclear Planning Grants)【849297760235391†L861-L880】",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.949397"
+}

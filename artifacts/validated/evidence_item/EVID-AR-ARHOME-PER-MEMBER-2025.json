@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARHOME-PER-MEMBER-2025",
+  "section": "MF-AR-MEDICAID-ARHOME-PREMIUM-QHP-FY2026",
+  "claim_summary": "The Pathway to Prosperity amendment states that in January 2025 DHS will pay QHPs an average monthly premium of $577.62, advanced cost sharing reduction payments of $202.17 per month and wrap‑around payments of $4.53 per month for a total per‑member‑per‑month of $784.31【442060796995469†L2007-L2012】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Request to Amend the ARHOME Section 1115 Demonstration – Pathway to Prosperity",
+    "issuing_body": "Arkansas Department of Human Services",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demonstrations/downloads/ar-arhome-pa-pathwy-prspty-04102025.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:28.009013"
+}

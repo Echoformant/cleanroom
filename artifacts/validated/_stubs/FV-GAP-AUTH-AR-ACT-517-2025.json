@@ -1,0 +1,17 @@
+{
+  "fv_id": "FV-GAP-AUTH-AR-ACT-517-2025",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "[GAP STUB - validating entity needed]",
+  "alignment_status": "open",
+  "evidence_basis": [
+    "AUTH-AR-ACT-517-2025"
+  ],
+  "disclosure_level": "restricted",
+  "editor_status": "pending",
+  "_gap_metadata": {
+    "generated_by": "gap_analyzer",
+    "gap_type": "MISSING_VALIDATION",
+    "source_artifact": "AUTH-AR-ACT-517-2025",
+    "detected_at": "2026-02-05T17:08:11.590686+00:00"
+  }
+}

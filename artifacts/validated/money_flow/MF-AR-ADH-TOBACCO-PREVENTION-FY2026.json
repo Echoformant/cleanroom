@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-ADH-TOBACCO-PREVENTION-FY2026",
+  "source": "Arkansas Tobacco Settlement Funds",
+  "intermediary": "None",
+  "destination": "Arkansas Department of Health – Tobacco Prevention & Cessation Program",
+  "amount": 14593171,
+  "fund_type": "settlement",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Code Ann. §20-7-109; FY2025 legislative recommendation for Tobacco Prevention & Cessation Program funding【596707561005234†L40-L43】",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.951222"
+}

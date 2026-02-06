@@ -1,0 +1,25 @@
+{
+  "authority_id": "AUTH-AR-ACT-776-2025",
+  "authority_type": "act",
+  "citation": "Act 776 of 2025 (AOC Appropriation)",
+  "administering_body": "Arkansas General Assembly / Administrative Office of the Courts",
+  "governs": [
+    "Appropriations for specialty court programs, drug court enhancement, juvenile justice reform, accountability court fund, adult drug court program, specialty courts, Byrne JAG grant, and court technology initiative",
+    "MF-AR-AOC-SCP-FY2026",
+    "MF-AR-AOC-DRUG-COURT-ENHANCEMENT-FY2026",
+    "MF-AR-AOC-ADULT-TREATMENT-COURT-FY2026",
+    "MF-AR-AOC-JUVENILE-JUSTICE-REFORM-FY2026",
+    "MF-AR-AOC-ACCOUNTABILITY-COURT-FUND-FY2026",
+    "MF-AR-AOC-ADULT-DRUG-COURT-PROGRAM-FY2026",
+    "MF-AR-AOC-SPECIALTY-COURTS-FY2026",
+    "MF-AR-AOC-BYRNE-JAG-2026",
+    "MF-AR-AOC-COURT-TECHNOLOGY-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.981453"
+}

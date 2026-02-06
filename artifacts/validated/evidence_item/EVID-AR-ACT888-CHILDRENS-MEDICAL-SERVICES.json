@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ACT888-CHILDRENS-MEDICAL-SERVICES",
+  "section": "MF-AR-CHILDRENS-MEDICAL-SERVICES-STATE-FY2026",
+  "claim_summary": "Act 888 of 2025 §§8-9 appropriate $1,729,279 in state funds and $446,205 in federal funds for Children’s Medical Services under the Division of Developmental Disabilities Services.",
+  "evidence_type": "budget",
+  "source": {
+    "title": "Act 888 of 2025 – Children’s Medical Services appropriations (Sections 8-9)",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2Fact%2F2025R%2FPublic%2F&file=888.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-25-10-129-EXHAUSTIVE",
+  "_ingested_at": "2026-02-05T06:38:00.842146"
+}

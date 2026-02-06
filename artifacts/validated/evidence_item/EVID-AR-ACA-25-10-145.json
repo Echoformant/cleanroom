@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ACA-25-10-145",
+  "section": "AUTH-AR-ACA-25-10-145",
+  "claim_summary": "Ark. Code §25-10-145 assigns DPSQA responsibility for certifying, licensing, surveying long-term care providers, conducting quality assurance activities, and promulgating rules for surveys【139785835285337†L72-L98】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code §25-10-145 - Surveys by DHS",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/title-25/chapter-10/section-25-10-145/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:36.019792"
+}

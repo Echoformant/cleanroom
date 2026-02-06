@@ -1,0 +1,18 @@
+{
+  "authority_id": "AUTH-AR-ACA-20-47-201",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 20-47-201",
+  "administering_body": "Department of Human Services",
+  "governs": [
+    "MF-AR-DHS-OBHS-MENTAL-HEALTH-SERVICES-FY2026",
+    "MF-AR-DHS-OBHS-SUBSTANCE-ABUSE-TREATMENT-FY2026",
+    "MF-AR-DHS-OBHS-PSYCHIATRIC-HOSPITALS-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.985262"
+}

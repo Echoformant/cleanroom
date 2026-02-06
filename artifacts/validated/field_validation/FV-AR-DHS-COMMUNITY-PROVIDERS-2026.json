@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-DHS-COMMUNITY-PROVIDERS-2026",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Legislative Audit",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "EVID-AR-ACT888-COMMUNITY-PROVIDERS",
+    "AUTH-AR-ACT-888-2025"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-25-10-129-EXHAUSTIVE",
+  "_ingested_at": "2026-02-05T06:38:00.845895"
+}

@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-MEDICAID-PASSE-PREMIUM-TAX-MATCH-FY2026",
+  "source": "Premium tax on health insurance plans (2.5% tax collected by the Arkansas Insurance Department)",
+  "intermediary": "Arkansas Insurance Department",
+  "destination": "Arkansas Department of Human Services – Division of Medical Services",
+  "amount": 194000000,
+  "fund_type": "state",
+  "fiscal_year": "2025-2026",
+  "restrictions": {
+    "medicaid": true,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "PASSE quarterly report states that a 2.5% premium tax on health insurance plans has generated $194 million in non‑federal matching funds for Medicaid【922699166651308†L76-L82】.",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:28.000626"
+}

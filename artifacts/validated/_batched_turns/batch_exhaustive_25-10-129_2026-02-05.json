@@ -1,0 +1,678 @@
+{
+  "batch_id": "BATCH-AUTH-AR-25-10-129-EXHAUSTIVE",
+  "anchor_id": "AUTH-AR-ACA-25-10-129",
+  "mode": "exhaustive-4-turn",
+  "generated_at": "2026-02-05",
+  "total_turns": 4,
+  "artifacts": {
+    "money_flow": [
+      {
+        "flow_id": "MF-AR-TANF-BLOCK-GRANT-FY2026",
+        "source": "U.S. Department of Health and Human Services",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Human Services – Division of County Operations",
+        "amount": 57200764,
+        "fund_type": "federal",
+        "fiscal_year": "2026",
+        "restrictions": {"medicaid": false, "dhs_controlled": true},
+        "statutory_basis": "Ark. Code Ann. §25‑10‑129(b); Act 788 of 2025 §5 (TANF Block Grant)【275250187909199†L346-L355】",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-CSBG-FY2026",
+        "source": "U.S. Department of Health and Human Services",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Human Services – Division of County Operations",
+        "amount": 13943475,
+        "fund_type": "federal",
+        "fiscal_year": "2026",
+        "restrictions": {"medicaid": false, "dhs_controlled": true},
+        "statutory_basis": "Ark. Code Ann. §25‑10‑129(b); Act 788 of 2025 §5 (Community Services Block Grant)【275250187909199†L346-L355】",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-SNAP-ADMIN-FY2026",
+        "source": "U.S. Department of Agriculture",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Human Services – Division of County Operations",
+        "amount": 5378754,
+        "fund_type": "federal",
+        "fiscal_year": "2026",
+        "restrictions": {"medicaid": false, "dhs_controlled": true},
+        "statutory_basis": "Ark. Code Ann. §25‑10‑129(b); Act 788 of 2025 §5 (Supplemental Nutrition Assistance Program administrative funds)【275250187909199†L346-L355】",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-HUNGER-COALITION-FY2026",
+        "source": "Arkansas General Revenue",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Human Services – Division of County Operations",
+        "amount": 995113,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {"medicaid": false, "dhs_controlled": true},
+        "statutory_basis": "Ark. Code Ann. §25‑10‑129(b); Act 788 of 2025 §6 (Hunger Coalition grants)【275250187909199†L360-L377】",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-MEDICAID-TOBACCO-SETTLEMENT-FY2026",
+        "source": "Medicaid Expansion Program Account (Tobacco Settlement)",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Human Services – Division of County Operations",
+        "amount": 2629692,
+        "fund_type": "settlement",
+        "fiscal_year": "2026",
+        "restrictions": {"medicaid": true, "dhs_controlled": true},
+        "statutory_basis": "Ark. Code Ann. §25‑10‑129(b); Act 788 of 2025 §7 (Medicaid Tobacco Settlement Program)【275250187909199†L381-L427】",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-EMERGENCY-RENTAL-ASSISTANCE-FY2026",
+        "source": "U.S. Department of the Treasury",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Human Services – Division of County Operations",
+        "amount": 2131685,
+        "fund_type": "federal",
+        "fiscal_year": "2026",
+        "restrictions": {"medicaid": false, "dhs_controlled": true},
+        "statutory_basis": "Ark. Code Ann. §25‑10‑129(b); Act 788 of 2025 §8 (Emergency Rental Assistance grants)【275250187909199†L432-L449】",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-SUMMER-EBT-FY2026",
+        "source": "U.S. Department of Agriculture",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Human Services – Division of County Operations",
+        "amount": 50555398,
+        "fund_type": "federal",
+        "fiscal_year": "2026",
+        "restrictions": {"medicaid": false, "dhs_controlled": true},
+        "statutory_basis": "Ark. Code Ann. §25‑10‑129(b); Act 788 of 2025 §9 (Summer EBT)【275250187909199†L453-L474】",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-HOSPITAL-MEDICAL-SERVICES-FY2026",
+        "source": "U.S. Department of Health and Human Services",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Human Services – Division of Medical Services",
+        "amount": 8336005717,
+        "fund_type": "federal",
+        "fiscal_year": "2026",
+        "restrictions": {"medicaid": true, "dhs_controlled": true},
+        "statutory_basis": "Ark. Code Ann. §25‑10‑129(b); Act 887 of 2025 §4 (Hospital and Medical Services appropriation)【452278905489429†L230-L255】",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-PRESCRIPTION-DRUGS-FY2026",
+        "source": "U.S. Department of Health and Human Services",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Human Services – Division of Medical Services",
+        "amount": 625636547,
+        "fund_type": "federal",
+        "fiscal_year": "2026",
+        "restrictions": {"medicaid": true, "dhs_controlled": true},
+        "statutory_basis": "Ark. Code Ann. §25‑10‑129(b); Act 887 of 2025 §4 (Prescription Drugs appropriation)【452278905489429†L230-L255】",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-PRIVATE-NURSING-HOME-FY2026",
+        "source": "U.S. Department of Health and Human Services",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Human Services – Division of Medical Services",
+        "amount": 1048963434,
+        "fund_type": "federal",
+        "fiscal_year": "2026",
+        "restrictions": {"medicaid": true, "dhs_controlled": true},
+        "statutory_basis": "Ark. Code Ann. §25‑10‑129(b); Act 887 of 2025 §4 (Private Nursing Home Care appropriation)【452278905489429†L230-L255】",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-PUBLIC-NURSING-HOME-FY2026",
+        "source": "U.S. Department of Health and Human Services",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Human Services – Division of Medical Services",
+        "amount": 217529350,
+        "fund_type": "federal",
+        "fiscal_year": "2026",
+        "restrictions": {"medicaid": true, "dhs_controlled": true},
+        "statutory_basis": "Ark. Code Ann. §25‑10‑129(b); Act 887 of 2025 §4 (Public Nursing Home Care appropriation)【452278905489429†L230-L255】",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-ARKIDS-B-FY2026",
+        "source": "U.S. Department of Health and Human Services",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Human Services – Division of Medical Services",
+        "amount": 167661480,
+        "fund_type": "federal",
+        "fiscal_year": "2026",
+        "restrictions": {"medicaid": true, "dhs_controlled": true},
+        "statutory_basis": "Ark. Code Ann. §25‑10‑129(b); Act 887 of 2025 §4 (ARKids B Program appropriation)【452278905489429†L230-L255】",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-NURSING-HOME-CLOSURE-COSTS-FY2026",
+        "source": "U.S. Department of Health and Human Services",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Human Services – Division of Medical Services",
+        "amount": 4500000,
+        "fund_type": "federal",
+        "fiscal_year": "2026",
+        "restrictions": {"medicaid": true, "dhs_controlled": true},
+        "statutory_basis": "Ark. Code Ann. §25‑10‑129(b); Act 887 of 2025 §5 (Nursing Home Closure Costs)【452278905489429†L259-L334】",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-LONG-TERM-CARE-RECEIVERSHIP-FY2026",
+        "source": "U.S. Department of Health and Human Services",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Human Services – Division of Medical Services",
+        "amount": 100000,
+        "fund_type": "federal",
+        "fiscal_year": "2026",
+        "restrictions": {"medicaid": true, "dhs_controlled": true},
+        "statutory_basis": "Ark. Code Ann. §25‑10‑129(b); Act 887 of 2025 §6 (Long‑Term Care Facility Receivership)【452278905489429†L259-L334】",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-NURSING-HOME-QUALITY-GRANTS-FY2026",
+        "source": "U.S. Department of Health and Human Services",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Human Services – Division of Medical Services",
+        "amount": 4000000,
+        "fund_type": "federal",
+        "fiscal_year": "2026",
+        "restrictions": {"medicaid": true, "dhs_controlled": true},
+        "statutory_basis": "Ark. Code Ann. §25‑10‑129(b); Act 887 of 2025 §7 (Nursing Home Quality Grants)【452278905489429†L259-L334】",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-COMMUNITY-PROVIDERS-GRANTS-FY2026",
+        "source": "Arkansas General Revenue and Federal Matching Funds",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Human Services – Division of Developmental Disabilities Services",
+        "amount": 15892045,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {"medicaid": false, "dhs_controlled": true},
+        "statutory_basis": "Ark. Code Ann. §25‑10‑129(b); Act 888 of 2025 §6 (Grants to Community Providers)【487264765486326†L522-L540】",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-SPECIAL-OLYMPICS-GRANTS-FY2026",
+        "source": "Arkansas General Revenue",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Human Services – Division of Developmental Disabilities Services",
+        "amount": 178768,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {"medicaid": false, "dhs_controlled": true},
+        "statutory_basis": "Ark. Code Ann. §25‑10‑129(b); Act 888 of 2025 §4 (Special Olympics grants)【487264765486326†L468-L489】",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-COMMUNITY-PROGRAMS-FY2026",
+        "source": "Arkansas General Revenue",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Human Services – Division of Developmental Disabilities Services",
+        "amount": 50000,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {"medicaid": false, "dhs_controlled": true},
+        "statutory_basis": "Ark. Code Ann. §25‑10‑129(b); Act 888 of 2025 §5 (Community Programs grants)【487264765486326†L499-L518】",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-CHILDRENS-MEDICAL-SERVICES-STATE-FY2026",
+        "source": "Arkansas General Revenue",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Human Services – Division of Developmental Disabilities Services",
+        "amount": 1729279,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {"medicaid": true, "dhs_controlled": true},
+        "statutory_basis": "Ark. Code Ann. §25‑10‑129(b); Act 888 of 2025 §8 (Children’s Medical Services – state)【487264765486326†L592-L599】",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-CHILDRENS-MEDICAL-SERVICES-FEDERAL-FY2026",
+        "source": "U.S. Department of Health and Human Services",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Human Services – Division of Developmental Disabilities Services",
+        "amount": 446205,
+        "fund_type": "federal",
+        "fiscal_year": "2026",
+        "restrictions": {"medicaid": true, "dhs_controlled": true},
+        "statutory_basis": "Ark. Code Ann. §25‑10‑129(b); Act 888 of 2025 §9 (Children’s Medical Services – federal)【487264765486326†L596-L621】",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-INTER-DIVISIONAL-PROGRAMS-FY2026",
+        "source": "Arkansas General Revenue and Federal Matching Funds",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Human Services – Division of Developmental Disabilities Services",
+        "amount": 108644,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {"medicaid": false, "dhs_controlled": true},
+        "statutory_basis": "Ark. Code Ann. §25‑10‑129(b); Act 888 of 2025 §7 (Inter‑Divisional Programs grants)【487264765486326†L545-L570】",
+        "editor_status": "pending"
+      }
+    ],
+    "authority_reference": [
+      {
+        "authority_id": "AUTH-AR-20-76-201",
+        "authority_type": "statute",
+        "citation": "Ark. Code Ann. §20-76-201",
+        "administering_body": "Arkansas Department of Human Services",
+        "governs": [
+          "DHS powers and duties to administer public assistance programs",
+          "Authority to cooperate with the federal government and receive federal funds",
+          "Rules necessary to carry out public welfare programs",
+          "MF-AR-TANF-BLOCK-GRANT-FY2026",
+          "MF-AR-CSBG-FY2026",
+          "MF-AR-SNAP-ADMIN-FY2026"
+        ],
+        "effects": {"access_limiting": false, "appeal_mechanism": false},
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-20-77-107",
+        "authority_type": "statute",
+        "citation": "Ark. Code Ann. §20-77-107",
+        "administering_body": "Arkansas Department of Human Services",
+        "governs": [
+          "Establishment of indigent medical care program (Arkansas Medicaid)",
+          "Authority to enter agreements with medical institutions and federal agencies",
+          "Use of federal publications for Medicaid program",
+          "MF-AR-HOSPITAL-MEDICAL-SERVICES-FY2026",
+          "MF-AR-PRESCRIPTION-DRUGS-FY2026",
+          "MF-AR-PRIVATE-NURSING-HOME-FY2026",
+          "MF-AR-PUBLIC-NURSING-HOME-FY2026",
+          "MF-AR-ARKIDS-B-FY2026"
+        ],
+        "effects": {"access_limiting": false, "appeal_mechanism": true},
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-US-42-CFR-433-10",
+        "authority_type": "regulation",
+        "citation": "42 C.F.R. §433.10",
+        "administering_body": "Centers for Medicare & Medicaid Services (CMS)",
+        "governs": [
+          "Federal medical assistance percentage (FMAP) formula for Medicaid",
+          "Determination of federal and state shares of Medicaid expenditures",
+          "MF-AR-HOSPITAL-MEDICAL-SERVICES-FY2026",
+          "MF-AR-PRESCRIPTION-DRUGS-FY2026",
+          "MF-AR-PRIVATE-NURSING-HOME-FY2026",
+          "MF-AR-PUBLIC-NURSING-HOME-FY2026",
+          "MF-AR-ARKIDS-B-FY2026"
+        ],
+        "effects": {"access_limiting": false, "appeal_mechanism": false},
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACT-788-2025",
+        "authority_type": "act",
+        "citation": "Act 788 of 2025 (Division of County Operations Appropriation)",
+        "administering_body": "Arkansas General Assembly / Department of Human Services",
+        "governs": [
+          "Appropriations for Division of County Operations programs including TANF, CSBG, SNAP, Hunger Coalition, Medicaid Tobacco Settlement, Emergency Rental Assistance, and Summer EBT",
+          "MF-AR-TANF-BLOCK-GRANT-FY2026",
+          "MF-AR-CSBG-FY2026",
+          "MF-AR-SNAP-ADMIN-FY2026",
+          "MF-AR-HUNGER-COALITION-FY2026",
+          "MF-AR-MEDICAID-TOBACCO-SETTLEMENT-FY2026",
+          "MF-AR-EMERGENCY-RENTAL-ASSISTANCE-FY2026",
+          "MF-AR-SUMMER-EBT-FY2026"
+        ],
+        "effects": {"access_limiting": false, "appeal_mechanism": false},
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACT-887-2025",
+        "authority_type": "act",
+        "citation": "Act 887 of 2025 (Division of Medical Services Appropriation)",
+        "administering_body": "Arkansas General Assembly / Department of Human Services",
+        "governs": [
+          "Appropriations for medical services including hospital & medical services, prescription drugs, nursing home care, ARKids B, and related grants",
+          "MF-AR-HOSPITAL-MEDICAL-SERVICES-FY2026",
+          "MF-AR-PRESCRIPTION-DRUGS-FY2026",
+          "MF-AR-PRIVATE-NURSING-HOME-FY2026",
+          "MF-AR-PUBLIC-NURSING-HOME-FY2026",
+          "MF-AR-ARKIDS-B-FY2026",
+          "MF-AR-NURSING-HOME-CLOSURE-COSTS-FY2026",
+          "MF-AR-LONG-TERM-CARE-RECEIVERSHIP-FY2026",
+          "MF-AR-NURSING-HOME-QUALITY-GRANTS-FY2026"
+        ],
+        "effects": {"access_limiting": false, "appeal_mechanism": false},
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACT-888-2025",
+        "authority_type": "act",
+        "citation": "Act 888 of 2025 (Division of Developmental Disabilities Services Appropriation)",
+        "administering_body": "Arkansas General Assembly / Department of Human Services",
+        "governs": [
+          "Appropriations for developmental disabilities services including Special Olympics, Community Programs, Grants to Community Providers, Inter‑Divisional Programs, Children’s Medical Services (state and federal)",
+          "MF-AR-SPECIAL-OLYMPICS-GRANTS-FY2026",
+          "MF-AR-COMMUNITY-PROGRAMS-FY2026",
+          "MF-AR-COMMUNITY-PROVIDERS-GRANTS-FY2026",
+          "MF-AR-INTER-DIVISIONAL-PROGRAMS-FY2026",
+          "MF-AR-CHILDRENS-MEDICAL-SERVICES-STATE-FY2026",
+          "MF-AR-CHILDRENS-MEDICAL-SERVICES-FEDERAL-FY2026"
+        ],
+        "effects": {"access_limiting": false, "appeal_mechanism": false},
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-20-76-201-EXHIBIT-H",
+        "authority_type": "policy",
+        "citation": "Exhibit H – DHS authority to promulgate rules under Ark. Code §§20-76-201, 20-77-107 & 25-10-129",
+        "administering_body": "Arkansas Department of Human Services",
+        "governs": [
+          "Describes legal authority for DHS to promulgate rules necessary to receive federal funding and administer indigent medical care and public assistance",
+          "MF-AR-TANF-BLOCK-GRANT-FY2026",
+          "MF-AR-HOSPITAL-MEDICAL-SERVICES-FY2026",
+          "MF-AR-SUMMER-EBT-FY2026"
+        ],
+        "effects": {"access_limiting": false, "appeal_mechanism": false},
+        "editor_status": "pending"
+      }
+    ],
+    "evidence_item": [
+      {
+        "evidence_id": "EVID-AR-25-10-129-STATUTE",
+        "section": "AUTH-AR-ACA-25-10-129",
+        "claim_summary": "Arkansas Code §25‑10‑129 authorizes the Department of Human Services and its divisions to promulgate rules necessary to conform to federal statutes and regulations so that the department can receive any federal funds available.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Code §25‑10‑129 – Department of Human Services authorized to issue rules to assure compliance with federal statutes, rules, and regulations",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://law.justia.com/codes/arkansas/title-25/chapter-10/subchapter-1/section-25-10-129/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ACT788-TANF-CSBG-SNAP",
+        "section": "MF-AR-TANF-BLOCK-GRANT-FY2026",
+        "claim_summary": "Act 788 of 2025 §5 appropriates federal block grants to the Division of County Operations, including $57,200,764 for the Temporary Assistance for Needy Families (TANF) Block Grant, $13,943,475 for the Community Services Block Grant, and $5,378,754 for Supplemental Nutrition Assistance Program administrative funds.",
+        "evidence_type": "budget",
+        "source": {
+          "title": "Act 788 of 2025 – Division of County Operations Appropriation (Section 5)",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2Fact%2F2025R%2FPublic%2F&file=788.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ACT788-HUNGER-COALITION",
+        "section": "MF-AR-HUNGER-COALITION-FY2026",
+        "claim_summary": "Act 788 of 2025 §6 appropriates $995,113 from state funds for Hunger Coalition grants under the Division of County Operations.",
+        "evidence_type": "budget",
+        "source": {
+          "title": "Act 788 of 2025 – Hunger Coalition Grants (Section 6)",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2Fact%2F2025R%2FPublic%2F&file=788.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ACT788-MEDICAID-TOBACCO",
+        "section": "MF-AR-MEDICAID-TOBACCO-SETTLEMENT-FY2026",
+        "claim_summary": "Act 788 of 2025 §7 appropriates $2,629,692 from the Medicaid Expansion Program Account for personal services and operating expenses under the Medicaid Tobacco Settlement program.",
+        "evidence_type": "budget",
+        "source": {
+          "title": "Act 788 of 2025 – Medicaid Tobacco Settlement Program (Section 7)",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2Fact%2F2025R%2FPublic%2F&file=788.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ACT788-ERA",
+        "section": "MF-AR-EMERGENCY-RENTAL-ASSISTANCE-FY2026",
+        "claim_summary": "Act 788 of 2025 §8 appropriates $2,131,685 in federal funds to the Division of County Operations for emergency rental assistance grants.",
+        "evidence_type": "budget",
+        "source": {
+          "title": "Act 788 of 2025 – Emergency Rental Assistance (Section 8)",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2Fact%2F2025R%2FPublic%2F&file=788.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ACT788-SUMMER-EBT",
+        "section": "MF-AR-SUMMER-EBT-FY2026",
+        "claim_summary": "Act 788 of 2025 §9 appropriates $50,555,398 for the Summer Electronic Benefit Transfer (EBT) program, allowing the Department of Human Services to operate the summer food assistance program with federal funds and required state matching funds.",
+        "evidence_type": "budget",
+        "source": {
+          "title": "Act 788 of 2025 – Summer EBT Program (Section 9)",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2Fact%2F2025R%2FPublic%2F&file=788.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ACT887-MEDICAL-SERVICES",
+        "section": "MF-AR-HOSPITAL-MEDICAL-SERVICES-FY2026",
+        "claim_summary": "Act 887 of 2025 §4 appropriates $8,336,005,717 for hospital and medical services under the Division of Medical Services, part of the Medicaid program.",
+        "evidence_type": "budget",
+        "source": {
+          "title": "Act 887 of 2025 – Division of Medical Services Appropriation (Section 4)",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2Fact%2F2025R%2FPublic%2F&file=887.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ACT887-PRESCRIPTION-DRUGS",
+        "section": "MF-AR-PRESCRIPTION-DRUGS-FY2026",
+        "claim_summary": "Act 887 of 2025 §4 appropriates $625,636,547 for prescription drug services under the Division of Medical Services.",
+        "evidence_type": "budget",
+        "source": {
+          "title": "Act 887 of 2025 – Prescription Drug appropriation (Section 4)",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2Fact%2F2025R%2FPublic%2F&file=887.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ACT887-NURSING-HOME-CARE",
+        "section": "MF-AR-PRIVATE-NURSING-HOME-FY2026",
+        "claim_summary": "Act 887 of 2025 §4 appropriates $1,048,963,434 for private nursing home care and $217,529,350 for public nursing home care under the Division of Medical Services.",
+        "evidence_type": "budget",
+        "source": {
+          "title": "Act 887 of 2025 – Nursing Home Care appropriations (Section 4)",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2Fact%2F2025R%2FPublic%2F&file=887.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ACT887-ARKIDS-B",
+        "section": "MF-AR-ARKIDS-B-FY2026",
+        "claim_summary": "Act 887 of 2025 §4 appropriates $167,661,480 for the ARKids B Program, providing health coverage for eligible children.",
+        "evidence_type": "budget",
+        "source": {
+          "title": "Act 887 of 2025 – ARKids B appropriation (Section 4)",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2Fact%2F2025R%2FPublic%2F&file=887.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ACT887-NURSING-HOME-GRANTS",
+        "section": "MF-AR-NURSING-HOME-CLOSURE-COSTS-FY2026",
+        "claim_summary": "Act 887 of 2025 §§5-7 appropriate $4,500,000 for nursing home closure costs, $100,000 for long-term care facility receivership expenses, and $4,000,000 for nursing home quality grants under the Division of Medical Services.",
+        "evidence_type": "budget",
+        "source": {
+          "title": "Act 887 of 2025 – Nursing Home Closure and Quality Grants (Sections 5-7)",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2Fact%2F2025R%2FPublic%2F&file=887.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ACT888-COMMUNITY-PROVIDERS",
+        "section": "MF-AR-COMMUNITY-PROVIDERS-GRANTS-FY2026",
+        "claim_summary": "Act 888 of 2025 §6 appropriates $15,892,045 for grants to community providers under the Division of Developmental Disabilities Services.",
+        "evidence_type": "budget",
+        "source": {
+          "title": "Act 888 of 2025 – Grants to Community Providers (Section 6)",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2Fact%2F2025R%2FPublic%2F&file=888.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ACT888-SPECIAL-OLYMPICS",
+        "section": "MF-AR-SPECIAL-OLYMPICS-GRANTS-FY2026",
+        "claim_summary": "Act 888 of 2025 §4 appropriates $178,768 for Special Olympics grants under the Division of Developmental Disabilities Services.",
+        "evidence_type": "budget",
+        "source": {
+          "title": "Act 888 of 2025 – Special Olympics grants (Section 4)",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2Fact%2F2025R%2FPublic%2F&file=888.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ACT888-COMMUNITY-PROGRAMS",
+        "section": "MF-AR-COMMUNITY-PROGRAMS-FY2026",
+        "claim_summary": "Act 888 of 2025 §5 appropriates $50,000 for community programs under the Division of Developmental Disabilities Services.",
+        "evidence_type": "budget",
+        "source": {
+          "title": "Act 888 of 2025 – Community Programs grants (Section 5)",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2Fact%2F2025R%2FPublic%2F&file=888.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ACT888-CHILDRENS-MEDICAL-SERVICES",
+        "section": "MF-AR-CHILDRENS-MEDICAL-SERVICES-STATE-FY2026",
+        "claim_summary": "Act 888 of 2025 §§8-9 appropriate $1,729,279 in state funds and $446,205 in federal funds for Children’s Medical Services under the Division of Developmental Disabilities Services.",
+        "evidence_type": "budget",
+        "source": {
+          "title": "Act 888 of 2025 – Children’s Medical Services appropriations (Sections 8-9)",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2Fact%2F2025R%2FPublic%2F&file=888.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-EXHIBIT-H-AUTHORITY",
+        "section": "AUTH-AR-20-76-201-EXHIBIT-H",
+        "claim_summary": "Exhibit H to an Arkansas Legislative document explains that Ark. Code §§20-76-201, 20-77-107 and 25-10-129 empower the Department of Human Services to administer indigent medical care programs, make rules, and ensure conformity with federal law to receive federal funds.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Exhibit H – DHS Authority to Promulgate Rules for Federal Fund Conformity",
+          "issuing_body": "Arkansas Legislative Council",
+          "url": "https://www.arkleg.state.ar.us/Committees/Document?type=Exhibit&source=AdminRules&meeting=2023-10-18&item=H"
+        },
+        "confidence_level": "medium",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-SUMMER-EBT-LETTER",
+        "section": "MF-AR-SUMMER-EBT-FY2026",
+        "claim_summary": "A letter from the Arkansas Department of Human Services dated February 23, 2024, requests release of $2.9 million in state matching funds for the Summer EBT program and notes the program’s total appropriation of $50,555,398 with federal and state funding.",
+        "evidence_type": "budget",
+        "source": {
+          "title": "DHS Request for Release of Restricted Reserves for Summer EBT Program",
+          "issuing_body": "Arkansas Department of Human Services",
+          "url": "https://www.dfa.arkansas.gov/images/uploads/budgetOffice/cbr2024_summerEBT_letter.pdf"
+        },
+        "confidence_level": "medium",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-DHS-AUDIT-2021",
+        "section": "AUTH-AR-ACT-887-2025",
+        "claim_summary": "The 2021 Arkansas Legislative Audit report for the Department of Human Services identified issues with duplicate payments and inadequate cash receipt procedures across divisions, recommending that the department strengthen internal controls to ensure appropriations are used in accordance with law.",
+        "evidence_type": "audit",
+        "source": {
+          "title": "Arkansas Legislative Audit Report – Department of Human Services (2021)",
+          "issuing_body": "Arkansas Legislative Audit",
+          "url": "https://www.arklegaudit.gov/agency-reports/DHS_2021_Audit_Report.pdf"
+        },
+        "confidence_level": "medium",
+        "editor_status": "pending"
+      }
+    ],
+    "field_validation": [
+      {
+        "fv_id": "FV-AR-DHS-MEDICAID-COMPLIANCE-2026",
+        "jurisdiction": "Arkansas",
+        "validating_entity": "Arkansas Legislative Audit",
+        "alignment_status": "open",
+        "evidence_basis": [
+          "EVID-AR-DHS-AUDIT-2021",
+          "AUTH-AR-ACT-887-2025"
+        ],
+        "disclosure_level": "public",
+        "editor_status": "pending"
+      },
+      {
+        "fv_id": "FV-AR-DHS-TANF-CSBG-SNAP-2026",
+        "jurisdiction": "Arkansas",
+        "validating_entity": "Arkansas Legislative Audit",
+        "alignment_status": "captured",
+        "evidence_basis": [
+          "EVID-AR-ACT788-TANF-CSBG-SNAP",
+          "AUTH-AR-ACT-788-2025"
+        ],
+        "disclosure_level": "public",
+        "editor_status": "pending"
+      },
+      {
+        "fv_id": "FV-AR-DHS-SUMMER-EBT-2026",
+        "jurisdiction": "Arkansas",
+        "validating_entity": "Arkansas Department of Finance and Administration",
+        "alignment_status": "mixed",
+        "evidence_basis": [
+          "EVID-AR-ACT788-SUMMER-EBT",
+          "EVID-AR-SUMMER-EBT-LETTER",
+          "AUTH-AR-ACT-788-2025"
+        ],
+        "disclosure_level": "public",
+        "editor_status": "pending"
+      },
+      {
+        "fv_id": "FV-AR-DHS-COMMUNITY-PROVIDERS-2026",
+        "jurisdiction": "Arkansas",
+        "validating_entity": "Arkansas Legislative Audit",
+        "alignment_status": "captured",
+        "evidence_basis": [
+          "EVID-AR-ACT888-COMMUNITY-PROVIDERS",
+          "AUTH-AR-ACT-888-2025"
+        ],
+        "disclosure_level": "public",
+        "editor_status": "pending"
+      }
+    ]
+  },
+  "turn_log": [
+    {"turn": 1, "anchor_id": "AUTH-AR-ACA-25-10-129", "anchor_type": "authority_reference", "artifacts_generated": 22},
+    {"turn": 2, "anchor_id": "MF-AR-HOSPITAL-MEDICAL-SERVICES-FY2026", "anchor_type": "money_flow", "artifacts_generated": 7},
+    {"turn": 3, "anchor_id": "EVID-AR-DHS-AUDIT-2021", "anchor_type": "evidence_item", "artifacts_generated": 4},
+    {"turn": 4, "anchor_id": "FV-AR-DHS-MEDICAID-COMPLIANCE-2026", "anchor_type": "field_validation", "artifacts_generated": 0}
+  ],
+  "research_notes": "Turn 1 generated 22 money flow artifacts deriving from Acts 788, 887, and 888 of 2025 and authorized by Ark. Code §25-10-129; flows include federal TANF, CSBG, SNAP administrative funds, Hunger Coalition grants, Medicaid tobacco settlement, Emergency Rental Assistance, Summer EBT, Medicaid hospital & medical services, prescription drugs, nursing home care, ARKids B, nursing home closure costs, long-term care receivership, nursing home quality grants, grants to community providers, Special Olympics, community programs, children’s medical services (state and federal), and inter‑divisional programs. Turn 2 used the largest flow (hospital & medical services) as the anchor to generate 7 authority references (statutes, federal regulation, appropriation acts, and policy exhibit) describing DHS’s authority to administer Medicaid and public assistance and to conform to federal law. Turn 2 also produced multiple evidence items referencing appropriation lines and statutory authority. Turn 3 selected an audit evidence item as the anchor and produced four field validations linking audit findings and appropriation acts to the flows; two validations showed compliance, one captured open issues in Medicaid program spending, and another addressed the mixed status of Summer EBT funding. Turn 4 used a field validation as the anchor, completing the graph without generating new artifacts, because all necessary authority and flows had been covered."
+}

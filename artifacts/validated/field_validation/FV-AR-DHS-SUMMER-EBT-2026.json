@@ -1,0 +1,15 @@
+{
+  "fv_id": "FV-AR-DHS-SUMMER-EBT-2026",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Department of Finance and Administration",
+  "alignment_status": "mixed",
+  "evidence_basis": [
+    "EVID-AR-ACT788-SUMMER-EBT",
+    "EVID-AR-SUMMER-EBT-LETTER",
+    "AUTH-AR-ACT-788-2025"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-25-10-129-EXHAUSTIVE",
+  "_ingested_at": "2026-02-05T06:38:00.845218"
+}

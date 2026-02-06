@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-MEDICAID-FFS-PRIVATE-NURSING-HOME-FY2026",
+  "source": "Arkansas General Revenue Fund",
+  "intermediary": "None",
+  "destination": "Arkansas Department of Human Services – Division of Medical Services",
+  "amount": 1048963434,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": true,
+    "dhs_controlled": true
+  },
+  "statutory_basis": "Act 504 of 2025, Section 4 appropriates $1,048,963,434 for Private Nursing Home Care【847047080106534†L224-L233】; Ark. Code Ann. § 20‑77‑107 authorizes nursing home services.",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:28.002693"
+}

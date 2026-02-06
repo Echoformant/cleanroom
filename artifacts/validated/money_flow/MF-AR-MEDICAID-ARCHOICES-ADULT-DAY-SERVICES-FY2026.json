@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-MEDICAID-ARCHOICES-ADULT-DAY-SERVICES-FY2026",
+  "source": "Arkansas Department of Human Services – Division of Medical Services",
+  "intermediary": "None",
+  "destination": "Adult day health providers",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": true,
+    "dhs_controlled": true
+  },
+  "statutory_basis": "ARChoices waiver covers adult day services; rate is $10 per hour【415148646089510†L42-L149】.",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:27.997005"
+}

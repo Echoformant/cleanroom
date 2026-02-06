@@ -1,0 +1,18 @@
+{
+  "authority_id": "AUTH-AR-ACT-545-2025",
+  "authority_type": "act",
+  "citation": "Act 545 of 2025 (Department of Finance and Administration Appropriation)",
+  "administering_body": "Department of Finance and Administration",
+  "governs": [
+    "MF-AR-DFA-REVENUE-SERVICES-OPERATIONS-FY2026",
+    "MF-AR-DFA-REVENUE-DIVISION-MODERNIZATION-FY2026",
+    "MF-AR-DFA-CHILD-SUPPORT-ENFORCEMENT-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.987680"
+}

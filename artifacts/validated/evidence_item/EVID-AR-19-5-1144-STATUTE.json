@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-19-5-1144-STATUTE",
+  "section": "AUTH-AR-ACA-19-5-1144",
+  "claim_summary": "Arkansas Code §19‑5‑1144 creates the Accountability Court Fund and provides that the fund shall consist of grants from any person or federal government agency and other funds provided by law; the fund is used by the Administrative Office of the Courts for adult and juvenile specialty court programs based on a formula approved by the Legislative Council.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code §19‑5‑1144 – Accountability Court Fund",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/title-19/chapter-5/subchapter-11/section-19-5-1144/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.996745"
+}

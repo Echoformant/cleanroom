@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-AOC-NALOXONE-GRANT-2024",
+  "source": "U.S. Department of Justice",
+  "intermediary": "None",
+  "destination": "Arkansas Administrative Office of the Courts – Drug Courts",
+  "amount": 300000,
+  "fund_type": "federal",
+  "fiscal_year": "2025-2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Arkansas Administrative Office of the Courts distributed naloxone kits to courts using a $300,000 U.S. Department of Justice grant【413023292860776†L41-L54】",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.946182"
+}

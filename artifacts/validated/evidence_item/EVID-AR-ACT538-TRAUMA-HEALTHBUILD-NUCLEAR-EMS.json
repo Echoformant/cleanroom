@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ACT538-TRAUMA-HEALTHBUILD-NUCLEAR-EMS",
+  "section": "MF-AR-ADH-TRAUMA-SYSTEM-FY2026",
+  "claim_summary": "Act 538 of 2025 §§9–12 appropriate $26,215,247 for the trauma system including $24,237,291 in expenses【849297760235391†L795-L828】, $1,950,000 for the Health Building and Local Health Grant Trust【849297760235391†L833-L858】, $325,000 for Nuclear Planning Grants【849297760235391†L861-L880】, and $60,000 for Emergency Medical Services【849297760235391†L883-L920】.",
+  "evidence_type": "budget",
+  "source": {
+    "title": "Act 538 of 2025 – Department of Health Appropriation (Sections 9–12)",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2F&file=538.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:36.000460"
+}

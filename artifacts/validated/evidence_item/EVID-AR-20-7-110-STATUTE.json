@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-20-7-110-STATUTE",
+  "section": "AUTH-AR-ACA-20-7-110",
+  "claim_summary": "Arkansas Code §20‑7‑110 authorizes the State Board of Health to study and prevent diseases and to accept assistance from the federal government for public health programs.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code §20‑7‑110 – Study and prevention of diseases",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/title-20/subtitle-2/chapter-7/section-20-7-110/"
+  },
+  "confidence_level": "medium",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-UNCAPPED-2026-02-05",
+  "_ingested_at": "2026-02-05T06:54:08.835107"
+}

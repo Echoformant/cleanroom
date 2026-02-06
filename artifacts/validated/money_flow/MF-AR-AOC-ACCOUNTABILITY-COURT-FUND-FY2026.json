@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-AOC-ACCOUNTABILITY-COURT-FUND-FY2026",
+  "source": "Accountability Court Fund",
+  "intermediary": "None",
+  "destination": "Arkansas Administrative Office of the Courts",
+  "amount": 400000,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Code Ann. §19-5-1144; Act 776 of 2025 §30 (Accountability Court Fund appropriation)【283384439218215†L728-L738】",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.943264"
+}

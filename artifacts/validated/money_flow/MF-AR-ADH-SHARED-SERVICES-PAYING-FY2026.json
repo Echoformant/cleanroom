@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-ADH-SHARED-SERVICES-PAYING-FY2026",
+  "source": "Arkansas General Revenue",
+  "intermediary": "None",
+  "destination": "Arkansas Department of Health – Shared Services",
+  "amount": 425501,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Code Ann. §20-7-109; Act 538 of 2025 §1–3 establishing the Shared Services Paying Account and appropriating $425,501【849297760235391†L104-L140】",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.952305"
+}

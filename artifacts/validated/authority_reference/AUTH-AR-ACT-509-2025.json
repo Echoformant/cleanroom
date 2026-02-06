@@ -1,0 +1,18 @@
+{
+  "authority_id": "AUTH-AR-ACT-509-2025",
+  "authority_type": "act",
+  "citation": "Act 509 of 2025 (Department of Education Appropriation)",
+  "administering_body": "Arkansas Department of Education",
+  "governs": [
+    "MF-AR-ADE-PUBLIC-SCHOOL-FUND-FY2026",
+    "MF-AR-ADE-TEACHER-SALARY-SUPPORT-FY2026",
+    "MF-AR-ADE-TEXTBOOK-PURCHASE-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.989129"
+}

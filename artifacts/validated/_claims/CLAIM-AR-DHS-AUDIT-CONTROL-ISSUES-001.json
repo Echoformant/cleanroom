@@ -1,0 +1,21 @@
+{
+  "claim_id": "CLAIM-AR-DHS-AUDIT-CONTROL-ISSUES-001",
+  "claim_statement": "Legislative audit identified internal control deficiencies in DHS appropriation spending, including duplicate payments and inadequate cash receipt procedures.",
+  "claim_type": "compliance",
+  "authority_anchors": [
+    "AUTH-AR-ACT-887-2025"
+  ],
+  "money_anchors": [
+    "MF-AR-HOSPITAL-MEDICAL-SERVICES-FY2026",
+    "MF-AR-PRESCRIPTION-DRUGS-FY2026"
+  ],
+  "evidence_anchors": [
+    "EVID-AR-DHS-AUDIT-2021"
+  ],
+  "validation_anchors": [
+    "FV-AR-DHS-MEDICAID-COMPLIANCE-2026"
+  ],
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "created_at": "2026-02-05"
+}

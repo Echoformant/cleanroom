@@ -308,9 +308,103 @@ _stubs/cycle_CYCLE-20260204-125657-d5697b/
 
 ---
 
+### 4. find_orphans.py
+
+**Purpose:** Lists all orphan artifacts — those with no incoming or outgoing linkages.
+
+#### Usage
+
+```powershell
+# List all orphans by category
+python scripts/find_orphans.py
+```
+
+#### Output
+
+```
+ORPHAN ARTIFACTS
+================================================================================
+
+Total: 55 orphans
+
+money_flow (29 orphans):
+  - MF-AR-OPIOID-SETTLEMENT-FY2026
+  - MF-AR-FEDERAL-BLOCK-GRANT-2026
+  ...
+
+evidence_item (17 orphans):
+  - EVID-AR-ACT776-S15-APPROPRIATION-2026
+  ...
+```
+
+---
+
+### 5. quick_summary.py
+
+**Purpose:** Prints a quick overview of repository statistics.
+
+#### Usage
+
+```powershell
+python scripts/quick_summary.py
+```
+
+#### Output
+
+```
+CLEARLANE VALIDATED ARTIFACTS SUMMARY
+================================================================================
+Total Artifacts: 181
+Total Money Tracked: $10,659,714,946
+
+By Category:
+  money_flow: 85 artifacts
+  authority_reference: 41 artifacts
+  evidence_item: 44 artifacts
+  field_validation: 11 artifacts
+
+Linkage Health:
+  Total Linkages: 2,058
+  Orphan Artifacts: 55
+```
+
+---
+
+### 6. batch_ingest.py
+
+**Purpose:** Ingests batch artifact outputs from GPT Agent runs.
+
+#### Usage
+
+```powershell
+# Ingest a batch JSON file
+python scripts/batch_ingest.py path/to/agent_output.json
+
+# Preview only (no file writes)
+python scripts/batch_ingest.py path/to/agent_output.json --dry-run
+```
+
+#### Expected Input Format
+
+```json
+{
+  "batch_id": "BATCH-AUTH-AR-25-10-129-EXHAUSTIVE",
+  "artifacts": {
+    "money_flow": [...],
+    "authority_reference": [...],
+    "evidence_item": [...],
+    "field_validation": [...]
+  }
+}
+```
+
+---
+
 ## Future Enhancements
 
 - [ ] Mermaid/GraphViz visualization output
 - [ ] HTML report generation
 - [ ] Gap priority scoring (optional)
 - [ ] Claim Assembly validation
+- [ ] Schema validation on ingest
+- [ ] Dossier state snapshots

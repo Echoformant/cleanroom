@@ -6,7 +6,7 @@
   "source_field": null,
   "target_reference": "[field_validation for AUTH-AR-ACA-20-46-301-SUBSTANCE-ABUSE-PREVENTION-FUND]",
   "target_category": "field_validation",
-  "detected_at": "2026-02-04T18:51:29.702158+00:00",
+  "detected_at": "2026-02-05T17:08:11.590686+00:00",
   "stub_generated": true,
   "stub_path": "C:\\Threshold\\cleanroom\\artifacts\\validated\\_stubs\\FV-GAP-AUTH-AR-ACA-20-46-301-SUBSTANCE-ABUSE-PR.json"
 }

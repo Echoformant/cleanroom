@@ -1,0 +1,12 @@
+{
+  "gap_id": "GAP-NOVALIDATION-MF-AR-USER-FEES-DRUGCOURT-LOCAL-PROGRAM-FUND-FY202",
+  "gap_type": "MISSING_VALIDATION",
+  "source_artifact": "MF-AR-USER-FEES-DRUGCOURT-LOCAL-PROGRAM-FUND-FY2026",
+  "source_category": "money_flow",
+  "source_field": null,
+  "target_reference": "[field_validation for MF-AR-USER-FEES-DRUGCOURT-LOCAL-PROGRAM-FUND-FY2026]",
+  "target_category": "field_validation",
+  "detected_at": "2026-02-05T17:08:11.590686+00:00",
+  "stub_generated": true,
+  "stub_path": "C:\\Threshold\\cleanroom\\artifacts\\validated\\_stubs\\FV-GAP-MF-AR-USER-FEES-DRUGCOURT-LOCAL-PROGRAM-.json"
+}

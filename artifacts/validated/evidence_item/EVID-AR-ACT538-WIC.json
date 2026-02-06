@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ACT538-WIC",
+  "section": "MF-AR-ADH-WIC-FY2026",
+  "claim_summary": "Act 538 of 2025 §13 appropriates $60,000,000 for Women, Infants, and Children (WIC) food instruments【849297760235391†L925-L944】.",
+  "evidence_type": "budget",
+  "source": {
+    "title": "Act 538 of 2025 – Department of Health Appropriation (Section 13)",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2F&file=538.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:36.000938"
+}

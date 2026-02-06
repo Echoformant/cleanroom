@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-PASSE-REG-DEFINITIONS",
+  "section": "AUTH-AR-ACR-016-06-17-017-200",
+  "claim_summary": "The Arkansas Administrative Code defines a Provider‑Led Arkansas Shared Savings Entity (PASSE) as a risk‑based provider organization that is 51% owned by participating providers and includes a DD provider, a BH provider, a hospital organization, a physician practice and a pharmacist; the regulation requires PASSE entities to be licensed and demonstrate network adequacy【725762300732441†L74-L101】【725762300732441†L166-L176】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Ark. Admin. Code 016.06.17‑017 – Provider‑Led Arkansas Shared Savings Entity Program, Phase 1",
+    "issuing_body": "Arkansas Department of Human Services, Division of Medical Services",
+    "url": "https://www.law.cornell.edu/regulations/arkansas/016-06-17-Ark-Code-R-017"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:28.011639"
+}

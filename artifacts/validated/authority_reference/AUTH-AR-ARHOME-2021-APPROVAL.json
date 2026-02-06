@@ -1,0 +1,18 @@
+{
+  "authority_id": "AUTH-AR-ARHOME-2021-APPROVAL",
+  "authority_type": "waiver",
+  "citation": "CMS Approval Letter for Arkansas Health and Opportunity for ME (ARHOME) Section 1115 Demonstration (Dec. 21, 2021)",
+  "administering_body": "Centers for Medicare & Medicaid Services",
+  "governs": [
+    "MF-AR-MEDICAID-ARHOME-PREMIUM-QHP-FY2026",
+    "MF-AR-MEDICAID-ARHOME-CSR-PAYMENTS-FY2026",
+    "MF-AR-MEDICAID-ARHOME-WRAPAROUND-PAYMENTS-FY2026"
+  ],
+  "effects": {
+    "access_limiting": true,
+    "appeal_mechanism": true
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:28.004338"
+}

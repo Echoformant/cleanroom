@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ACA-25-43-1301",
+  "section": "AUTH-AR-ACA-25-43-1301",
+  "claim_summary": "Ark. Code §25-43-1301 creates the Department of Parks, Heritage, and Tourism as a cabinet-level department【516732010810389†L74-L77】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code §25-43-1301 - Department of Parks, Heritage and Tourism",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/title-25/chapter-43/section-25-43-1301/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:36.038130"
+}

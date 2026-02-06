@@ -1,0 +1,18 @@
+{
+  "authority_id": "AUTH-AR-ARHOME-PROSPERITY-AMENDMENT-2025",
+  "authority_type": "waiver",
+  "citation": "Request to Amend ARHOME Section 1115 Demonstration – Pathway to Prosperity (Jan. 28, 2025)",
+  "administering_body": "Arkansas Department of Human Services – Division of Medical Services",
+  "governs": [
+    "MF-AR-MEDICAID-ARHOME-PREMIUM-QHP-FY2026",
+    "MF-AR-MEDICAID-ARHOME-CSR-PAYMENTS-FY2026",
+    "MF-AR-MEDICAID-ARHOME-WRAPAROUND-PAYMENTS-FY2026"
+  ],
+  "effects": {
+    "access_limiting": true,
+    "appeal_mechanism": true
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:28.004910"
+}

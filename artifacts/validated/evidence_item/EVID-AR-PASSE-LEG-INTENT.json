@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-PASSE-LEG-INTENT",
+  "section": "AUTH-AR-ACA-20-77-2702",
+  "claim_summary": "Ark. Code Ann. § 20‑77‑2702 states that the Department of Human Services is authorized to utilize one or more organizations for providing health care services to Medicaid beneficiary populations and establishes a provider‑led organized care system intended to improve quality of care, reduce costs, reduce waste, and operate under federal guidelines【486099342356386†L74-L100】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code § 20‑77‑2702 – Legislative intent and purpose of the Medicaid Provider‑Led Organized Care Act",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/title-20/subtitle-5/chapter-77/subchapter-27/section-20-77-2702/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:28.011003"
+}

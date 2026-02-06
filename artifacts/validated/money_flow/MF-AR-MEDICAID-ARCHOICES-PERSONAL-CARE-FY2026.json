@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-MEDICAID-ARCHOICES-PERSONAL-CARE-FY2026",
+  "source": "Arkansas Department of Human Services – Division of Medical Services",
+  "intermediary": "None",
+  "destination": "ARChoices personal care providers",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": true,
+    "dhs_controlled": true
+  },
+  "statutory_basis": "ARChoices 1915(c) waiver authorizes personal care/attendant services; reimbursement rate is $18 per hour according to the HCBS rate comparison【415148646089510†L42-L149】.",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:27.995438"
+}

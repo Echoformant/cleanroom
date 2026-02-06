@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-AID-INSURANCE-REGULATION-OPERATIONS-FY2026",
+  "source": "Arkansas Insurance Premium Tax",
+  "intermediary": "None",
+  "destination": "Arkansas Insurance Department",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Code Ann. §23-61-103; Act 555 of 2025 [UNVERIFIED]",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.974470"
+}

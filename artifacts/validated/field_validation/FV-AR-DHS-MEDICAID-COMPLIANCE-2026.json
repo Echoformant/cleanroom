@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-DHS-MEDICAID-COMPLIANCE-2026",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Legislative Audit",
+  "alignment_status": "open",
+  "evidence_basis": [
+    "EVID-AR-DHS-AUDIT-2021",
+    "AUTH-AR-ACT-887-2025"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-25-10-129-EXHAUSTIVE",
+  "_ingested_at": "2026-02-05T06:38:00.844155"
+}

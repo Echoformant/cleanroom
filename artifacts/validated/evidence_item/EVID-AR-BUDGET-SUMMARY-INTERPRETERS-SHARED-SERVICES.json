@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-BUDGET-SUMMARY-INTERPRETERS-SHARED-SERVICES",
+  "section": "MF-AR-ADH-INTERPRETERS-DEAF-FY2026",
+  "claim_summary": "The same budget summary lists $25,000 for Interpreters for the Deaf and Hearing Impaired Program and $277,999 (rounded in act to $425,501) for the Shared Services Paying Account【596707561005234†L53-L58】.",
+  "evidence_type": "budget",
+  "source": {
+    "title": "Health Department Fiscal Year 2025 Legislative Recommendation",
+    "issuing_body": "Arkansas Bureau of Legislative Research",
+    "url": "https://webftp.blr.arkansas.gov/Home/FTPDocument?path=Assembly/2023/Agency%20Budget%20Summaries/2024F/9907.pdf"
+  },
+  "confidence_level": "medium",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:36.002541"
+}

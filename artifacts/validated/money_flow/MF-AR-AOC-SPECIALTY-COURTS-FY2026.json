@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-AOC-SPECIALTY-COURTS-FY2026",
+  "source": "State Central Services Fund",
+  "intermediary": "None",
+  "destination": "Arkansas Administrative Office of the Courts",
+  "amount": 4500000,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Code Ann. §19-5-1144; Act 776 of 2025 §32 (Specialty Courts appropriation)【283384439218215†L760-L776】",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.944068"
+}

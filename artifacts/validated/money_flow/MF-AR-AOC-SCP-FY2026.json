@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-AOC-SCP-FY2026",
+  "source": "Arkansas Specialty Court Program Fund",
+  "intermediary": "None",
+  "destination": "Arkansas Administrative Office of the Courts",
+  "amount": 300000,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Code Ann. §19-5-1144; Act 776 of 2025 §25 (Specialty Court Program Fund appropriation)【283384439218215†L631-L640】",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.941258"
+}

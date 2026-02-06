@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-16-98-303-STATUTE",
+  "section": "AUTH-AR-ACA-16-98-303",
+  "claim_summary": "Arkansas Code §16‑98‑303 authorizes each judicial district to establish drug court programs and allows juvenile drug court programs in delinquency or family‑in‑need‑of‑services cases; it states that services cannot be ordered unless appropriation and funding are available【390323063622848†L73-L98】【390323063622848†L100-L127】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code §16‑98‑303 – Drug court programs authorized",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/title-16/subtitle-6/chapter-98/subchapter-3/section-16-98-303/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-UNCAPPED-2026-02-05",
+  "_ingested_at": "2026-02-05T06:54:08.833519"
+}

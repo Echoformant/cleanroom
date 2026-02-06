@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ACT776-SEC34-35",
+  "section": "MF-AR-AOC-BYRNE-JAG-2026",
+  "claim_summary": "Act 776 of 2025 §34 appropriates $150,000 from federal funds designated by the Chief Fiscal Officer for the Byrne Justice Assistance Grant; §35 appropriates $4,027,500 in federal funds for the Court Technology Initiative【283384439218215†L799-L827】.",
+  "evidence_type": "budget",
+  "source": {
+    "title": "Act 776 of 2025 – AOC Appropriation (Sections 34–35)",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2F&file=776.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.998219"
+}

@@ -1,0 +1,18 @@
+{
+  "authority_id": "AUTH-AR-ACA-25-43-1301",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 25-43-1301",
+  "administering_body": "Department of Parks, Heritage and Tourism",
+  "governs": [
+    "MF-AR-ADPHT-STATE-PARKS-OPERATIONS-FY2026",
+    "MF-AR-ADPHT-HERITAGE-GRANTS-FY2026",
+    "MF-AR-ADPHT-TOURISM-MARKETING-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.996038"
+}

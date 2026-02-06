@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-EXHIBIT-H-AUTHORITY",
+  "section": "AUTH-AR-20-76-201-EXHIBIT-H",
+  "claim_summary": "Exhibit H to an Arkansas Legislative document explains that Ark. Code §§20-76-201, 20-77-107 and 25-10-129 empower the Department of Human Services to administer indigent medical care programs, make rules, and ensure conformity with federal law to receive federal funds.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Exhibit H – DHS Authority to Promulgate Rules for Federal Fund Conformity",
+    "issuing_body": "Arkansas Legislative Council",
+    "url": "https://www.arkleg.state.ar.us/Committees/Document?type=Exhibit&source=AdminRules&meeting=2023-10-18&item=H"
+  },
+  "confidence_level": "medium",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-25-10-129-EXHAUSTIVE",
+  "_ingested_at": "2026-02-05T06:38:00.842611"
+}

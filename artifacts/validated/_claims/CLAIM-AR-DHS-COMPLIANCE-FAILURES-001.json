@@ -1,0 +1,57 @@
+{
+  "claim_id": "CLAIM-AR-DHS-COMPLIANCE-FAILURES-001",
+  "claim_statement": "Based on factual evidence, DHS cannot be trusted to manage appropriated funds in accordance with law.",
+  "claim_type": "compliance",
+  "confidence": "high",
+  "generated_at": "2026-02-05",
+  "anchors": {
+    "authority": [
+      "AUTH-AR-ACT-887-2025",
+      "AUTH-AR-ACT-788-2025"
+    ],
+    "money_flow": [
+      "MF-AR-HOSPITAL-MEDICAL-SERVICES-FY2026",
+      "MF-AR-DHS-SUMMER-EBT-FY2026"
+    ],
+    "evidence": [
+      "EVID-AR-DHS-AUDIT-2021",
+      "EVID-AR-SUMMER-EBT-LETTER",
+      "EVID-AR-ACT788-SUMMER-EBT"
+    ],
+    "validation": [
+      "FV-AR-DHS-MEDICAID-COMPLIANCE-2026",
+      "FV-AR-DHS-SUMMER-EBT-2026",
+      "FV-AR-DHS-SABG-ALLOC-MIXED-001",
+      "FV-AR-IX-GAP-SUBG-20-PREVENTION-001"
+    ]
+  },
+  "supporting_facts": [
+    {
+      "fact": "Legislative audit identified duplicate payments and inadequate cash receipt procedures across DHS divisions",
+      "source": "EVID-AR-DHS-AUDIT-2021",
+      "weight": "primary"
+    },
+    {
+      "fact": "DHS Medicaid compliance status remains OPEN — control issues from 2021 audit not resolved",
+      "source": "FV-AR-DHS-MEDICAID-COMPLIANCE-2026",
+      "weight": "primary"
+    },
+    {
+      "fact": "DHS required release of restricted reserves from DFA for Summer EBT program — compliance status MIXED",
+      "source": "FV-AR-DHS-SUMMER-EBT-2026",
+      "weight": "supporting"
+    },
+    {
+      "fact": "SABG allocation tracking shows MIXED compliance status",
+      "source": "FV-AR-DHS-SABG-ALLOC-MIXED-001",
+      "weight": "supporting"
+    },
+    {
+      "fact": "Federal SUBG 20% prevention requirement tracking not documented — status OPEN",
+      "source": "FV-AR-IX-GAP-SUBG-20-PREVENTION-001",
+      "weight": "supporting"
+    }
+  ],
+  "pattern_summary": "Of 4 field validations examining DHS compliance: 0 captured, 2 open, 2 mixed. Zero clean compliance records.",
+  "editor_status": "accepted"
+}

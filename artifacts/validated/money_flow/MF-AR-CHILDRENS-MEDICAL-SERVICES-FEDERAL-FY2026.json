@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-CHILDRENS-MEDICAL-SERVICES-FEDERAL-FY2026",
+  "source": "U.S. Department of Health and Human Services",
+  "intermediary": "None",
+  "destination": "Arkansas Department of Human Services – Division of Developmental Disabilities Services",
+  "amount": 446205,
+  "fund_type": "federal",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": true,
+    "dhs_controlled": true
+  },
+  "statutory_basis": "Ark. Code Ann. §25‑10‑129(b); Act 888 of 2025 §9 (Children’s Medical Services – federal)【487264765486326†L596-L621】",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-25-10-129-EXHAUSTIVE",
+  "_ingested_at": "2026-02-05T06:38:00.827773"
+}

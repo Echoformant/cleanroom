@@ -441,7 +441,8 @@ def export_to_json(artifacts: Dict[str, dict], links: Dict[str, List[Tuple[str, 
             "category": info["category"],
             "label": artifact_id[:40] + "..." if len(artifact_id) > 40 else artifact_id,
             "link_count": link_count,
-            "is_orphan": link_count == 0
+            "is_orphan": link_count == 0,
+            "data": info["data"]  # Include full artifact data for dashboard
         })
     
     # Build edges array (deduplicated, one direction per relationship)

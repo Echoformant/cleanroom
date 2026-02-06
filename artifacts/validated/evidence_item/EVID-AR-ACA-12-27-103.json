@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ACA-12-27-103",
+  "section": "AUTH-AR-ACA-12-27-103",
+  "claim_summary": "Ark. Code §12-27-103 establishes the Division of Correction under the Board of Corrections and assigns it exclusive jurisdiction over care and custody of inmates and control over prison properties【383474023035326†L76-L92】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code §12-27-103 - Division of Correction",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/title-12/chapter-27/section-12-27-103/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:36.026500"
+}

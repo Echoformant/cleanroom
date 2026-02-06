@@ -1,0 +1,31 @@
+{
+  "authority_id": "AUTH-AR-ACA-20-76-201",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 20-76-201",
+  "administering_body": "Department of Human Services",
+  "governs": [
+    "MF-AR-DHS-MS-ARKIDS-B-FY2026",
+    "MF-AR-DHS-MS-HOSPITAL-MEDICAL-FY2026",
+    "MF-AR-DHS-MS-PRESCRIPTION-DRUGS-FY2026",
+    "MF-AR-DHS-MS-PRIVATE-NURSING-HOME-FY2026",
+    "MF-AR-DHS-MS-PUBLIC-NURSING-HOME-FY2026",
+    "MF-AR-DHS-MS-NURSING-HOME-QUALITY-GRANTS-FY2026",
+    "MF-AR-DHS-MS-OPERATIONS-FY2026",
+    "MF-AR-DHS-DCO-TANF-BLOCK-GRANT-FY2026",
+    "MF-AR-DHS-DCO-COMMUNITY-SERVICES-BLOCK-GRANT-FY2026",
+    "MF-AR-DHS-DCO-SNAP-ADMINISTRATIVE-FY2026",
+    "MF-AR-DHS-DCO-HUNGER-COALITION-FY2026",
+    "MF-AR-DHS-DCO-MEDICAID-TOBACCO-SETTLEMENT-FY2026",
+    "MF-AR-DHS-DCO-EMERGENCY-RENTAL-ASSISTANCE-FY2026",
+    "MF-AR-DHS-DCO-SUMMER-EBT-FY2026",
+    "MF-AR-DHS-DCO-OPERATIONS-FY2026",
+    "MF-AR-DHS-DCO-TANF-TRANSFER-TO-EDUCATION-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.984094"
+}

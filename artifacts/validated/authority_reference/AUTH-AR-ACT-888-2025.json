@@ -1,0 +1,22 @@
+{
+  "authority_id": "AUTH-AR-ACT-888-2025",
+  "authority_type": "act",
+  "citation": "Act 888 of 2025 (Division of Developmental Disabilities Services Appropriation)",
+  "administering_body": "Arkansas General Assembly / Department of Human Services",
+  "governs": [
+    "Appropriations for developmental disabilities services including Special Olympics, Community Programs, Grants to Community Providers, Inter‑Divisional Programs, Children’s Medical Services (state and federal)",
+    "MF-AR-SPECIAL-OLYMPICS-GRANTS-FY2026",
+    "MF-AR-COMMUNITY-PROGRAMS-FY2026",
+    "MF-AR-COMMUNITY-PROVIDERS-GRANTS-FY2026",
+    "MF-AR-INTER-DIVISIONAL-PROGRAMS-FY2026",
+    "MF-AR-CHILDRENS-MEDICAL-SERVICES-STATE-FY2026",
+    "MF-AR-CHILDRENS-MEDICAL-SERVICES-FEDERAL-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-25-10-129-EXHAUSTIVE",
+  "_ingested_at": "2026-02-05T06:38:00.831815"
+}

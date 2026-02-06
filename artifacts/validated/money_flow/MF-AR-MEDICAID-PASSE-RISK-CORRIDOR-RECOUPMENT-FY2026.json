@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-MEDICAID-PASSE-RISK-CORRIDOR-RECOUPMENT-FY2026",
+  "source": "Provider‑led Arkansas Shared Savings Entities",
+  "intermediary": "None",
+  "destination": "Arkansas Department of Human Services – Division of Medical Services",
+  "amount": 613000000,
+  "fund_type": "state",
+  "fiscal_year": "2019-2026",
+  "restrictions": {
+    "medicaid": true,
+    "dhs_controlled": true
+  },
+  "statutory_basis": "PASSE quarterly report notes that a risk‑corridor mechanism allowed Arkansas Medicaid to reclaim $613 million from PASSEs since 2019【922699166651308†L66-L72】.",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:28.001165"
+}

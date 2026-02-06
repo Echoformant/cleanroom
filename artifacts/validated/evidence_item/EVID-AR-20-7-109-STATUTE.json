@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-20-7-109-STATUTE",
+  "section": "AUTH-AR-ACA-20-7-109",
+  "claim_summary": "Arkansas Code §20‑7‑109 confers power on the State Board of Health to make necessary and reasonable rules for the protection of public health and the suppression and prevention of infectious diseases【154673048202175†L74-L85】 and notes that a patient cannot be removed from his or her home without consent【154673048202175†L91-L97】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code §20‑7‑109 – Authority to regulate public health – Exceptions",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/title-20/subtitle-2/chapter-7/subchapter-1/section-20-7-109/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:36.003989"
+}

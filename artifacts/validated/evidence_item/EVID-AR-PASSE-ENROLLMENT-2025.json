@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-PASSE-ENROLLMENT-2025",
+  "section": "MF-AR-MEDICAID-PASSE-CAPITATION-ARKANSAS-TOTAL-CARE-FY2026",
+  "claim_summary": "A PASSE quarterly report lists current enrollment: Arkansas Total Care 12,946 members; CareSource 5,267 members; Empower Healthcare Solutions 15,045 members; Summit Community Care 13,185 members【922699166651308†L119-L138】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "PASSE Quarterly Report (2025)",
+    "issuing_body": "Arkansas Department of Human Services",
+    "url": "https://humanservices.arkansas.gov/wp-content/uploads/PASSE-quarterly-report.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:28.012286"
+}

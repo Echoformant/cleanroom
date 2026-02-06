@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-ARHP-SAMHSA-GRANT-2024",
+  "source": "U.S. Substance Abuse and Mental Health Services Administration",
+  "intermediary": "Arkansas Rural Health Partnership",
+  "destination": "Drew County Adult Drug Court and Arkansas County Southern District Adult Specialty Court",
+  "amount": 2000000,
+  "fund_type": "federal",
+  "fiscal_year": "2025-2029",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Arkansas Rural Health Partnership announcement of a five‑year $2 million SAMHSA grant to expand peer recovery services for adult drug courts【169420258121405†L42-L73】",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-UNCAPPED-2026-02-05",
+  "_ingested_at": "2026-02-05T06:54:08.810274"
+}

@@ -1,0 +1,18 @@
+{
+  "authority_id": "AUTH-AR-ACA-12-8-101",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 12-8-101",
+  "administering_body": "Arkansas State Police",
+  "governs": [
+    "MF-AR-ASP-HIGHWAY-PATROL-OPERATIONS-FY2026",
+    "MF-AR-ASP-HIGHWAY-SAFETY-GRANTS-FY2026",
+    "MF-AR-ASP-CRIMINAL-INVESTIGATION-OPERATIONS-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.991621"
+}

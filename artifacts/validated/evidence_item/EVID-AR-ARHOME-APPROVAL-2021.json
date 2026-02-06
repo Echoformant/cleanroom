@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARHOME-APPROVAL-2021",
+  "section": "AUTH-AR-ARHOME-2021-APPROVAL",
+  "claim_summary": "CMS’s December 21, 2021 approval letter for the ARHOME demonstration authorizes premium assistance for individuals up to 133% FPL to purchase Qualified Health Plans, allows a 30‑day retroactive eligibility period and temporarily permits premiums up to 2% of income【118221702928095†L16-L39】【118221702928095†L66-L74】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "CMS Approval Letter – ARHOME Section 1115 Demonstration",
+    "issuing_body": "Centers for Medicare & Medicaid Services",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demonstrations/downloads/arworks-arhome-ca.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:28.009539"
+}

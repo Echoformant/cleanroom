@@ -1,0 +1,19 @@
+{
+  "authority_id": "AUTH-US-42-CFR-438-4",
+  "authority_type": "regulation",
+  "citation": "42 CFR § 438.4 – Actuarial soundness of capitation rates",
+  "administering_body": "Centers for Medicare & Medicaid Services",
+  "governs": [
+    "MF-AR-MEDICAID-PASSE-CAPITATION-ARKANSAS-TOTAL-CARE-FY2026",
+    "MF-AR-MEDICAID-PASSE-CAPITATION-CARESOURCE-FY2026",
+    "MF-AR-MEDICAID-PASSE-CAPITATION-EMPOWER-FY2026",
+    "MF-AR-MEDICAID-PASSE-CAPITATION-SUMMIT-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": true
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:28.006954"
+}

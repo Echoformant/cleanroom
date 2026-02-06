@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-MEDICAID-PASSE-CAPITATION-SUMMIT-FY2026",
+  "source": "Arkansas Department of Human Services – Division of Medical Services",
+  "intermediary": "None",
+  "destination": "Summit Community Care (PASSE)",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": true,
+    "dhs_controlled": true
+  },
+  "statutory_basis": "Medicaid Provider‑Led Organized Care Act and PASSE regulations authorize capitation payments; Summit Community Care enrolls 13,185 members【922699166651308†L119-L138】.",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:28.000008"
+}

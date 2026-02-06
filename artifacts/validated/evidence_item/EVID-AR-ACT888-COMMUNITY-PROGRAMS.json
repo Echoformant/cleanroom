@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ACT888-COMMUNITY-PROGRAMS",
+  "section": "MF-AR-COMMUNITY-PROGRAMS-FY2026",
+  "claim_summary": "Act 888 of 2025 §5 appropriates $50,000 for community programs under the Division of Developmental Disabilities Services.",
+  "evidence_type": "budget",
+  "source": {
+    "title": "Act 888 of 2025 – Community Programs grants (Section 5)",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2Fact%2F2025R%2FPublic%2F&file=888.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-25-10-129-EXHAUSTIVE",
+  "_ingested_at": "2026-02-05T06:38:00.841638"
+}

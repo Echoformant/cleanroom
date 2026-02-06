@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ACT504-OBHS-SUBSTANCE-ABUSE-TREATMENT",
+  "section": "MF-AR-DHS-OBHS-SUBSTANCE-ABUSE-TREATMENT-FY2026",
+  "claim_summary": "Act 504 of 2025 appropriates funds for the Substance Abuse Treatment program in FY2026 [UNVERIFIED - act text not accessed].",
+  "evidence_type": "budget",
+  "source": {
+    "title": "Act 504 of 2025 — Department of Human Services Appropriation",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2F&file=504.pdf"
+  },
+  "confidence_level": "low",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:36.009810"
+}

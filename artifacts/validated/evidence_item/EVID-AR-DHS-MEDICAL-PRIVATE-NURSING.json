@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-DHS-MEDICAL-PRIVATE-NURSING",
+  "section": "MF-AR-MEDICAID-FFS-PRIVATE-NURSING-HOME-FY2026",
+  "claim_summary": "The DHS budget summary shows $1,048,963,434 appropriated for private nursing home care【847047080106534†L224-L233】.",
+  "evidence_type": "budget",
+  "source": {
+    "title": "DHS – Medical Services Budget Summary (0710_dhs_dms_2025.pdf)",
+    "issuing_body": "Arkansas Department of Finance and Administration",
+    "url": "https://www.dfa.arkansas.gov/wp-content/uploads/0710_dhs_dms_2025.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:28.015655"
+}

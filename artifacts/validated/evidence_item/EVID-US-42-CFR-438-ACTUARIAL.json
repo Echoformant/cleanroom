@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-US-42-CFR-438-ACTUARIAL",
+  "section": "AUTH-US-42-CFR-438-4",
+  "claim_summary": "42 CFR § 438.4 requires that Medicaid capitation rates paid to managed care entities be actuarially sound, developed in accordance with rate development standards, reviewed and approved by CMS, and certified by an actuary【464634357740089†L79-L125】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "42 CFR § 438.4 – Actuarial soundness",
+    "issuing_body": "Centers for Medicare & Medicaid Services",
+    "url": "https://www.law.cornell.edu/cfr/text/42/438.4"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:28.013910"
+}

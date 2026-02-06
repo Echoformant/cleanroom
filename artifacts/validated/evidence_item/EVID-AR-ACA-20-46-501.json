@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ACA-20-46-501",
+  "section": "AUTH-AR-ACA-20-46-501",
+  "claim_summary": "Ark. Code §20-46-501 states that the Division of Behavioral Health Services shall provide intensive residential treatment services for adults with long-term severe mental illness【436567479200224†L73-L80】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code §20-46-501 - Intensive treatment for mental illness",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/title-20/chapter-46/section-20-46-501/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:36.011430"
+}

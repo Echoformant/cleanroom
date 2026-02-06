@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ACA-9-28-103",
+  "section": "AUTH-AR-ACA-9-28-103",
+  "claim_summary": "Ark. Code §9-28-103 lists the powers and duties of the Division of Children and Family Services, including coordinating communication, providing services to neglected children, investigating maltreatment, and ensuring children’s safety【795150814298067†L73-L90】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code §9-28-103 - DCFS powers and duties",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/title-9/chapter-28/section-9-28-103/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:36.013331"
+}

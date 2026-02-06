@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ACT887-NURSING-HOME-GRANTS",
+  "section": "MF-AR-NURSING-HOME-CLOSURE-COSTS-FY2026",
+  "claim_summary": "Act 887 of 2025 §§5-7 appropriate $4,500,000 for nursing home closure costs, $100,000 for long-term care facility receivership expenses, and $4,000,000 for nursing home quality grants under the Division of Medical Services.",
+  "evidence_type": "budget",
+  "source": {
+    "title": "Act 887 of 2025 – Nursing Home Closure and Quality Grants (Sections 5-7)",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2Fact%2F2025R%2FPublic%2F&file=887.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-25-10-129-EXHAUSTIVE",
+  "_ingested_at": "2026-02-05T06:38:00.839940"
+}

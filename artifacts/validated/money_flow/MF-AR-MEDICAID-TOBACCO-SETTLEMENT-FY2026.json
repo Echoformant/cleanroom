@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-MEDICAID-TOBACCO-SETTLEMENT-FY2026",
+  "source": "Medicaid Expansion Program Account (Tobacco Settlement)",
+  "intermediary": "None",
+  "destination": "Arkansas Department of Human Services – Division of County Operations",
+  "amount": 2629692,
+  "fund_type": "settlement",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": true,
+    "dhs_controlled": true
+  },
+  "statutory_basis": "Ark. Code Ann. §25‑10‑129(b); Act 788 of 2025 §7 (Medicaid Tobacco Settlement Program)【275250187909199†L381-L427】",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-25-10-129-EXHAUSTIVE",
+  "_ingested_at": "2026-02-05T06:38:00.819829"
+}

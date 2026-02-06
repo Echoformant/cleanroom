@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ACT788-MEDICAID-TOBACCO",
+  "section": "MF-AR-MEDICAID-TOBACCO-SETTLEMENT-FY2026",
+  "claim_summary": "Act 788 of 2025 §7 appropriates $2,629,692 from the Medicaid Expansion Program Account for personal services and operating expenses under the Medicaid Tobacco Settlement program.",
+  "evidence_type": "budget",
+  "source": {
+    "title": "Act 788 of 2025 – Medicaid Tobacco Settlement Program (Section 7)",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2Fact%2F2025R%2FPublic%2F&file=788.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-25-10-129-EXHAUSTIVE",
+  "_ingested_at": "2026-02-05T06:38:00.835549"
+}

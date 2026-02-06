@@ -1,0 +1,18 @@
+{
+  "authority_id": "AUTH-AR-ACA-6-11-105",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 6-11-105",
+  "administering_body": "Arkansas Department of Education",
+  "governs": [
+    "MF-AR-ADE-PUBLIC-SCHOOL-FUND-FY2026",
+    "MF-AR-ADE-TEACHER-SALARY-SUPPORT-FY2026",
+    "MF-AR-ADE-TEXTBOOK-PURCHASE-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.989664"
+}

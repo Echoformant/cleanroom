@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-ADH-TRAUMA-SYSTEM-FY2026",
+  "source": "Arkansas Public Health Fund",
+  "intermediary": "None",
+  "destination": "Arkansas Department of Health – Trauma System",
+  "amount": 24237291,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Code Ann. §20-7-109; Act 538 of 2025 §9 (Trauma System expenses)【849297760235391†L795-L828】",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.948482"
+}

@@ -1,0 +1,31 @@
+{
+  "authority_id": "AUTH-AR-ACA-20-7-109",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. §20-7-109",
+  "administering_body": "Arkansas Department of Health / State Board of Health",
+  "governs": [
+    "Authority of the State Board of Health to make necessary and reasonable rules to protect public health, prevent communicable diseases, and control chemical exposures【154673048202175†L74-L85】",
+    "Limitations on removing a patient from their home without consent【154673048202175†L91-L97】",
+    "MF-AR-ADH-GRANTS-AID-FY2026",
+    "MF-AR-ADH-KIDNEY-DISEASE-FY2026",
+    "MF-AR-ADH-BREAST-CARE-FY2026",
+    "MF-AR-ADH-INFECTIOUS-DISEASE-CONTROL-FY2026",
+    "MF-AR-ADH-TRAUMA-SYSTEM-FY2026",
+    "MF-AR-ADH-HEALTH-BUILDING-GRANTS-FY2026",
+    "MF-AR-ADH-NUCLEAR-PLANNING-FY2026",
+    "MF-AR-ADH-EMS-FY2026",
+    "MF-AR-ADH-WIC-FY2026",
+    "MF-AR-ADH-INFECTIOUS-DISEASES-TESTING-FY2026",
+    "MF-AR-ADH-TOBACCO-PREVENTION-FY2026",
+    "MF-AR-ADH-INTERPRETERS-DEAF-FY2026",
+    "MF-AR-ADH-SHARED-SERVICES-PAYING-FY2026",
+    "MF-AR-ADH-OPERATIONS-FY2026"
+  ],
+  "effects": {
+    "access_limiting": true,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.981955"
+}

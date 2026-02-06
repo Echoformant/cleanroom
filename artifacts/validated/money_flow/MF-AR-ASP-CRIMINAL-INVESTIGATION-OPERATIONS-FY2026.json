@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-ASP-CRIMINAL-INVESTIGATION-OPERATIONS-FY2026",
+  "source": "Arkansas General Revenue",
+  "intermediary": "None",
+  "destination": "Arkansas State Police",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Code Ann. §12-8-101; Act 562 of 2025 [UNVERIFIED]",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.973841"
+}

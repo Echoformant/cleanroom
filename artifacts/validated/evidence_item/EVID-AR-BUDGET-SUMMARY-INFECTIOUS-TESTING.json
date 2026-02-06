@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-BUDGET-SUMMARY-INFECTIOUS-TESTING",
+  "section": "MF-AR-ADH-INFECTIOUS-DISEASES-TESTING-FY2026",
+  "claim_summary": "The FY2025 legislative budget summary for the Department of Health notes that Infectious Diseases Testing Expenses increased by $197,036,486 due to receipt of a miscellaneous federal grant【596707561005234†L103-L117】.",
+  "evidence_type": "budget",
+  "source": {
+    "title": "Health Department Fiscal Year 2025 Legislative Recommendation",
+    "issuing_body": "Arkansas Bureau of Legislative Research",
+    "url": "https://webftp.blr.arkansas.gov/Home/FTPDocument?path=Assembly/2023/Agency%20Budget%20Summaries/2024F/9907.pdf"
+  },
+  "confidence_level": "medium",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:36.001538"
+}

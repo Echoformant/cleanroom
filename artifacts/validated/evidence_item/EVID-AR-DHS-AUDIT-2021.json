@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-DHS-AUDIT-2021",
+  "section": "AUTH-AR-ACT-887-2025",
+  "claim_summary": "The 2021 Arkansas Legislative Audit report for the Department of Human Services identified issues with duplicate payments and inadequate cash receipt procedures across divisions, recommending that the department strengthen internal controls to ensure appropriations are used in accordance with law.",
+  "evidence_type": "audit",
+  "source": {
+    "title": "Arkansas Legislative Audit Report – Department of Human Services (2021)",
+    "issuing_body": "Arkansas Legislative Audit",
+    "url": "https://www.arklegaudit.gov/agency-reports/DHS_2021_Audit_Report.pdf"
+  },
+  "confidence_level": "medium",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-25-10-129-EXHAUSTIVE",
+  "_ingested_at": "2026-02-05T06:38:00.843558"
+}

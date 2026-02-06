@@ -1,0 +1,12 @@
+{
+  "gap_id": "GAP-INCOMPLETE-EVID-AR-25-10-129-STATUTE-AUTH-AR-ACA-25-10-129",
+  "gap_type": "INCOMPLETE_CHAIN",
+  "source_artifact": "EVID-AR-25-10-129-STATUTE",
+  "source_category": "evidence_item",
+  "source_field": "section",
+  "target_reference": "AUTH-AR-ACA-25-10-129",
+  "target_category": "authority_reference",
+  "detected_at": "2026-02-05T17:08:11.569522+00:00",
+  "stub_generated": true,
+  "stub_path": "C:\\Threshold\\cleanroom\\artifacts\\validated\\_stubs\\AUTH-AR-ACA-25-10-129.json"
+}

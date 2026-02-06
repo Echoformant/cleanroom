@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-DHS-MS-PRIVATE-NURSING-HOME-FY2026",
+  "source": "Arkansas General Revenue",
+  "intermediary": "None",
+  "destination": "Department of Human Services - Division of Medical Services",
+  "amount": 1048963434,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": true,
+    "dhs_controlled": true
+  },
+  "statutory_basis": "Ark. Code Ann. §20-77-107; Act 887 of 2025 §4 (Private Nursing Home Care appropriation)",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.954780"
+}

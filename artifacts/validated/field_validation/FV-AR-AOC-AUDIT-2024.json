@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-AOC-AUDIT-2024",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Legislative Audit",
+  "alignment_status": "open",
+  "evidence_basis": [
+    "EVID-AR-ACT776-SEC27-29-31",
+    "AUTH-AR-ACT-776-2025"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:36.038776"
+}

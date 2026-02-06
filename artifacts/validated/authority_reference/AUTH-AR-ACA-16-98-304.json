@@ -1,0 +1,18 @@
+{
+  "authority_id": "AUTH-AR-ACA-16-98-304",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. §16-98-304",
+  "administering_body": "Arkansas Administrative Office of the Courts / Judicial districts",
+  "governs": [
+    "Assessment of costs and fees for adult and juvenile drug court participants",
+    "Credit of fees to county administration of justice fund or local drug court program fund",
+    "MF-AR-AOC-ADULT-DRUG-COURT-PROGRAM-FY2026"
+  ],
+  "effects": {
+    "access_limiting": true,
+    "appeal_mechanism": true
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-UNCAPPED-2026-02-05",
+  "_ingested_at": "2026-02-05T06:54:08.820012"
+}

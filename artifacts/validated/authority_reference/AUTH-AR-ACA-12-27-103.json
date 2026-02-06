@@ -1,0 +1,18 @@
+{
+  "authority_id": "AUTH-AR-ACA-12-27-103",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 12-27-103",
+  "administering_body": "Department of Correction",
+  "governs": [
+    "MF-AR-ADC-OPERATIONS-FY2026",
+    "MF-AR-ADC-PRISON-FARM-FY2026",
+    "MF-AR-ADC-EDUCATIONAL-WORK-PROGRAMS-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.990615"
+}

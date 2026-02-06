@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-SUMMER-EBT-LETTER",
+  "section": "MF-AR-SUMMER-EBT-FY2026",
+  "claim_summary": "A letter from the Arkansas Department of Human Services dated February 23, 2024, requests release of $2.9 million in state matching funds for the Summer EBT program and notes the program’s total appropriation of $50,555,398 with federal and state funding.",
+  "evidence_type": "budget",
+  "source": {
+    "title": "DHS Request for Release of Restricted Reserves for Summer EBT Program",
+    "issuing_body": "Arkansas Department of Human Services",
+    "url": "https://www.dfa.arkansas.gov/images/uploads/budgetOffice/cbr2024_summerEBT_letter.pdf"
+  },
+  "confidence_level": "medium",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-25-10-129-EXHAUSTIVE",
+  "_ingested_at": "2026-02-05T06:38:00.843074"
+}

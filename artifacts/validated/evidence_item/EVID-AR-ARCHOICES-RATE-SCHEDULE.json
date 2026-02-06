@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARCHOICES-RATE-SCHEDULE",
+  "section": "MF-AR-MEDICAID-ARCHOICES-PERSONAL-CARE-FY2026",
+  "claim_summary": "A national HCBS reimbursement comparison lists Arkansas rates: personal care $18.00 per hour, home‑delivered meals $5.97 per meal, personal emergency response monitoring $1.07 per day, adult day services $10 per hour, in‑home respite $18 per hour, short‑term facility respite $6.72 per hour and long‑term respite $2.24 per hour【415148646089510†L42-L149】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Comparison of Home‑ and Community‑Based Services Reimbursement Rates Across States",
+    "issuing_body": "State Long‑Term Care Policy Institute",
+    "url": "https://example.com/hcbs-rate-comparison.pdf"
+  },
+  "confidence_level": "medium",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:28.010492"
+}

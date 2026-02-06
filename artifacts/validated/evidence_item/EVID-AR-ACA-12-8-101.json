@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ACA-12-8-101",
+  "section": "AUTH-AR-ACA-12-8-101",
+  "claim_summary": "Ark. Code §12-8-101 creates the Division of Arkansas State Police to enforce motor vehicle and traffic laws and protect the state highway system【232907554848552†L74-L83】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code §12-8-101 - Creation of Arkansas State Police",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/title-12/chapter-8/section-12-8-101/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:36.028346"
+}

@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-ADH-BUDGET-COMPLIANCE-2026",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Legislative Audit",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "EVID-AR-ACT538-OPERATIONS-TOTAL",
+    "AUTH-AR-ACT-538-2025"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:36.039581"
+}

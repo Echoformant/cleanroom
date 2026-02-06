@@ -1,0 +1,19 @@
+{
+  "authority_id": "AUTH-AR-ACA-16-10-139",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. §16-10-139",
+  "administering_body": "Arkansas Supreme Court / Administrative Office of the Courts",
+  "governs": [
+    "Definition and evaluation of specialty court programs including drug courts, DWI courts, mental health courts, veterans courts, juvenile drug courts, HOPE courts, etc.",
+    "Requirement for approval by the Supreme Court and evaluation by the Specialty Court Program Advisory Committee",
+    "MF-AR-AOC-SCP-FY2026",
+    "MF-AR-AOC-DRUG-COURT-ENHANCEMENT-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": true
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-UNCAPPED-2026-02-05",
+  "_ingested_at": "2026-02-05T06:54:08.818873"
+}

@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ACT788-TANF-CSBG-SNAP",
+  "section": "MF-AR-TANF-BLOCK-GRANT-FY2026",
+  "claim_summary": "Act 788 of 2025 §5 appropriates federal block grants to the Division of County Operations, including $57,200,764 for the Temporary Assistance for Needy Families (TANF) Block Grant, $13,943,475 for the Community Services Block Grant, and $5,378,754 for Supplemental Nutrition Assistance Program administrative funds.",
+  "evidence_type": "budget",
+  "source": {
+    "title": "Act 788 of 2025 – Division of County Operations Appropriation (Section 5)",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2Fact%2F2025R%2FPublic%2F&file=788.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-25-10-129-EXHAUSTIVE",
+  "_ingested_at": "2026-02-05T06:38:00.834316"
+}

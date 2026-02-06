@@ -1,0 +1,18 @@
+{
+  "authority_id": "AUTH-AR-ACT-517-2025",
+  "authority_type": "act",
+  "citation": "Act 517 of 2025 (Department of Correction Appropriation)",
+  "administering_body": "Department of Correction",
+  "governs": [
+    "MF-AR-ADC-OPERATIONS-FY2026",
+    "MF-AR-ADC-PRISON-FARM-FY2026",
+    "MF-AR-ADC-EDUCATIONAL-WORK-PROGRAMS-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.990178"
+}

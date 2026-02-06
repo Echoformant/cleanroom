@@ -1,0 +1,19 @@
+{
+  "authority_id": "AUTH-AR-20-76-201-EXHIBIT-H",
+  "authority_type": "policy",
+  "citation": "Exhibit H – DHS authority to promulgate rules under Ark. Code §§20-76-201, 20-77-107 & 25-10-129",
+  "administering_body": "Arkansas Department of Human Services",
+  "governs": [
+    "Describes legal authority for DHS to promulgate rules necessary to receive federal funding and administer indigent medical care and public assistance",
+    "MF-AR-TANF-BLOCK-GRANT-FY2026",
+    "MF-AR-HOSPITAL-MEDICAL-SERVICES-FY2026",
+    "MF-AR-SUMMER-EBT-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-25-10-129-EXHAUSTIVE",
+  "_ingested_at": "2026-02-05T06:38:00.832611"
+}

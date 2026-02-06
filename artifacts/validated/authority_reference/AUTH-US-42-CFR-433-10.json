@@ -1,0 +1,20 @@
+{
+  "authority_id": "AUTH-US-42-CFR-433-10",
+  "authority_type": "regulation",
+  "citation": "42 CFR § 433.10 – Rates of Federal financial participation for Medicaid (FMAP)",
+  "administering_body": "Centers for Medicare & Medicaid Services",
+  "governs": [
+    "MF-AR-MEDICAID-FFS-HOSPITAL-MEDICAL-SERVICES-FY2026",
+    "MF-AR-MEDICAID-FFS-PRESCRIPTION-DRUGS-FY2026",
+    "MF-AR-MEDICAID-FFS-PRIVATE-NURSING-HOME-FY2026",
+    "MF-AR-MEDICAID-FFS-PUBLIC-NURSING-HOME-FY2026",
+    "MF-AR-MEDICAID-FFS-ARKIDS-B-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": true
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:28.008310"
+}

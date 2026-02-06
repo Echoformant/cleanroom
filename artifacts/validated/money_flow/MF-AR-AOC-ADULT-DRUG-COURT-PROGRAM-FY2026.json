@@ -1,6 +1,6 @@
 {
   "flow_id": "MF-AR-AOC-ADULT-DRUG-COURT-PROGRAM-FY2026",
-  "source": "Cash Fund deposits in State Treasury for Adult Drug Court Program",
+  "source": "AOC Cash Fund (State treasury deposit)",
   "intermediary": "None",
   "destination": "Arkansas Administrative Office of the Courts",
   "amount": 1000000,
@@ -10,8 +10,8 @@
     "medicaid": false,
     "dhs_controlled": false
   },
-  "statutory_basis": "Act 776 of 2025, Section 31; Ark. Code Ann. § 16-98-303",
+  "statutory_basis": "Ark. Code Ann. §19-5-1144; Act 776 of 2025 §31 (Adult Drug Court Program appropriation)【283384439218215†L739-L758】",
   "editor_status": "accepted",
-  "_ingested_from": "BATCH-AUTH-AR-ACA-19-5-1144-AUTHFLOW",
-  "_ingested_at": "2026-02-05T03:55:31.033346"
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.943659"
 }

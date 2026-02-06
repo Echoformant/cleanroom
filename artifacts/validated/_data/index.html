@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAMI Clearlane Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3"></script>
+    <style>
+        :root {
+            --nami-blue: #00467f;
+            --nami-green: #7ab800;
+            --nami-light: #e8f4f8;
+            --card-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            --success: #2e7d32;
+            --warning: #f57c00;
+            --error: #c62828;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        header {
+            background: var(--nami-blue);
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        header h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        
+        header .subtitle {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 4px;
+        }
+        
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .nami-badge {
+            background: var(--nami-green);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+        
+        .status-indicator {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+        }
+        
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #666;
+        }
+        
+        .status-dot.connected { background: var(--success); }
+        .status-dot.disconnected { background: var(--error); }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+        
+        /* Control Panel */
+        .control-panel {
+            background: white;
+            border-radius: 12px;
+            padding: 20px 30px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 30px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .control-panel h3 {
+            color: var(--nami-blue);
+            margin-right: 20px;
+            font-size: 1rem;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        .btn-primary {
+            background: var(--nami-blue);
+            color: white;
+        }
+        
+        .btn-primary:hover:not(:disabled) {
+            background: #003366;
+            transform: translateY(-1px);
+        }
+        
+        .btn-success {
+            background: var(--nami-green);
+            color: white;
+        }
+        
+        .btn-success:hover:not(:disabled) {
+            background: #6a9e00;
+        }
+        
+        .btn-secondary {
+            background: #e0e0e0;
+            color: #333;
+        }
+        
+        .btn-secondary:hover:not(:disabled) {
+            background: #d0d0d0;
+        }
+        
+        .spinner {
+            width: 16px;
+            height: 16px;
+            border: 2px solid transparent;
+            border-top-color: currentColor;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Stats Cards */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: var(--card-shadow);
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+        
+        .stat-card .number {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--nami-blue);
+        }
+        
+        .stat-card .label {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 8px;
+        }
+        
+        .stat-card.highlight {
+            background: var(--nami-blue);
+            color: white;
+        }
+        
+        .stat-card.highlight .number {
+            color: var(--nami-green);
+        }
+        
+        .stat-card.highlight .label {
+            color: rgba(255,255,255,0.8);
+        }
+        
+        /* Section Cards */
+        .section-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 30px;
+        }
+        
+        .section-card h2 {
+            font-size: 1.3rem;
+            color: var(--nami-blue);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section-card h2 .icon {
+            font-size: 1.5rem;
+        }
+        
+        /* Output Console */
+        .console {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.85rem;
+            max-height: 300px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+        
+        .console:empty::before {
+            content: 'Output will appear here...';
+            color: #666;
+        }
+        
+        .console .success { color: #6a9955; }
+        .console .error { color: #f14c4c; }
+        .console .info { color: #3794ff; }
+        .console .timestamp { color: #808080; }
+        
+        /* Sankey Diagram */
+        #sankey-container {
+            width: 100%;
+            overflow-x: auto;
+        }
+        
+        #sankey-chart {
+            min-width: 900px;
+        }
+        
+        .sankey-node rect {
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+        
+        .sankey-node rect:hover {
+            opacity: 0.8;
+        }
+        
+        .sankey-node text {
+            font-size: 11px;
+            font-weight: 500;
+            fill: #333;
+        }
+        
+        .sankey-link {
+            fill: none;
+            stroke-opacity: 0.4;
+            transition: stroke-opacity 0.2s;
+        }
+        
+        .sankey-link:hover {
+            stroke-opacity: 0.7;
+        }
+        
+        /* Flow Table */
+        .flow-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        
+        .flow-table th {
+            background: var(--nami-light);
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            color: var(--nami-blue);
+            border-bottom: 2px solid var(--nami-blue);
+        }
+        
+        .flow-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .flow-table tr:hover {
+            background: #f9f9f9;
+        }
+        
+        .amount {
+            font-weight: 600;
+            color: var(--nami-green);
+        }
+        
+        .amount.zero {
+            color: #999;
+            font-style: italic;
+        }
+        
+        .fund-badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .fund-badge.federal { background: #e3f2fd; color: #1565c0; }
+        .fund-badge.state { background: #e8f5e9; color: #2e7d32; }
+        .fund-badge.settlement { background: #fff3e0; color: #e65100; }
+        
+        /* Tabs */
+        .tab-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .tab-btn {
+            padding: 10px 20px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            font-size: 0.95rem;
+            color: #666;
+            border-radius: 8px 8px 0 0;
+            transition: all 0.2s;
+        }
+        
+        .tab-btn:hover {
+            background: var(--nami-light);
+        }
+        
+        .tab-btn.active {
+            background: var(--nami-blue);
+            color: white;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        /* Authority List */
+        .authority-list {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .authority-item {
+            border-left: 4px solid var(--nami-green);
+            padding: 15px 20px;
+            background: var(--nami-light);
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .authority-item .citation {
+            font-weight: 600;
+            color: var(--nami-blue);
+            font-size: 1rem;
+        }
+        
+        .authority-item .body {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 4px;
+        }
+        
+        /* Tooltip */
+        .tooltip {
+            position: absolute;
+            background: rgba(0,0,0,0.85);
+            color: white;
+            padding: 10px 14px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            pointer-events: none;
+            z-index: 1000;
+            max-width: 300px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        
+        .tooltip .title {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        /* Toast Notifications */
+        .toast-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 2000;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .toast {
+            padding: 15px 20px;
+            border-radius: 8px;
+            color: white;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            animation: slideIn 0.3s ease;
+        }
+        
+        .toast.success { background: var(--success); }
+        .toast.error { background: var(--error); }
+        .toast.info { background: var(--nami-blue); }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.85rem;
+        }
+        
+        footer a {
+            color: var(--nami-blue);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            .section-card {
+                padding: 20px;
+            }
+            
+            .control-panel {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>NAMI Clearlane Dashboard</h1>
+            <div class="subtitle">Arkansas Public Finance Validated Artifacts</div>
+        </div>
+        <div class="logo-area">
+            <div class="status-indicator">
+                <div class="status-dot" id="status-dot"></div>
+                <span id="status-text">Connecting...</span>
+            </div>
+            <span class="nami-badge">NAMI Arkansas</span>
+        </div>
+    </header>
+    
+    <div class="container">
+        <!-- Control Panel -->
+        <div class="control-panel">
+            <h3>⚡ Actions</h3>
+            <button class="btn btn-primary" id="btn-refresh" onclick="refreshData()">
+                <span>🔄</span> Refresh Data
+            </button>
+            <button class="btn btn-success" id="btn-analyze" onclick="runLinkageAnalyzer()">
+                <span>🔗</span> Run Linkage Analysis
+            </button>
+            <button class="btn btn-secondary" id="btn-gaps" onclick="runGapAnalyzer()">
+                <span>🔍</span> Detect Gaps
+            </button>
+            <button class="btn btn-secondary" id="btn-summary" onclick="runQuickSummary()">
+                <span>📊</span> Generate Report
+            </button>
+        </div>
+        
+        <!-- Stats Cards -->
+        <div class="stats-grid" id="stats-grid">
+            <div class="stat-card highlight">
+                <div class="number" id="total-artifacts">—</div>
+                <div class="label">Total Artifacts</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="total-flows">—</div>
+                <div class="label">Money Flows</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="total-authorities">—</div>
+                <div class="label">Legal Authorities</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="total-evidence">—</div>
+                <div class="label">Evidence Items</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="total-linkages">—</div>
+                <div class="label">Cross-References</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="total-amount">—</div>
+                <div class="label">Tracked Funding</div>
+            </div>
+        </div>
+        
+        <!-- Console Output -->
+        <div class="section-card" id="console-section" style="display:none;">
+            <h2><span class="icon">💻</span> Script Output</h2>
+            <div class="console" id="console-output"></div>
+        </div>
+        
+        <!-- Money Flow Sankey -->
+        <div class="section-card">
+            <h2><span class="icon">💰</span> Money Flow Visualization</h2>
+            <p style="color:#666; margin-bottom:20px; font-size:0.9rem;">
+                Funds flowing from sources through intermediaries to destinations. 
+                Wider bands = larger amounts. Hover for details.
+            </p>
+            <div id="sankey-container">
+                <svg id="sankey-chart"></svg>
+            </div>
+        </div>
+        
+        <!-- Tabbed Content -->
+        <div class="section-card">
+            <div class="tab-container">
+                <button class="tab-btn active" data-tab="flows">Money Flows</button>
+                <button class="tab-btn" data-tab="authorities">Legal Authorities</button>
+                <button class="tab-btn" data-tab="validations">Audit Findings</button>
+            </div>
+            
+            <div id="flows" class="tab-content active">
+                <table class="flow-table">
+                    <thead>
+                        <tr>
+                            <th>Source</th>
+                            <th>Destination</th>
+                            <th>Amount</th>
+                            <th>Fund Type</th>
+                            <th>Fiscal Year</th>
+                        </tr>
+                    </thead>
+                    <tbody id="flow-table-body">
+                    </tbody>
+                </table>
+            </div>
+            
+            <div id="authorities" class="tab-content">
+                <div class="authority-list" id="authority-list">
+                </div>
+            </div>
+            
+            <div id="validations" class="tab-content">
+                <div class="authority-list" id="validation-list">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        Operation NAMI Clearlane | 
+        Last updated: <span id="last-updated">—</span>
+    </footer>
+    
+    <div class="toast-container" id="toast-container"></div>
+    <div class="tooltip" id="tooltip" style="display:none;"></div>
+
+    <script>
+        // API Base URL - change this if needed
+        const API_BASE = window.location.origin;
+        
+        let graphData = null;
+        
+        // =============================================================
+        // Utility Functions
+        // =============================================================
+        
+        function showToast(message, type = 'info') {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = `toast ${type}`;
+            toast.textContent = message;
+            container.appendChild(toast);
+            
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                setTimeout(() => toast.remove(), 300);
+            }, 4000);
+        }
+        
+        function setLoading(buttonId, loading) {
+            const btn = document.getElementById(buttonId);
+            if (loading) {
+                btn.disabled = true;
+                btn.dataset.originalHtml = btn.innerHTML;
+                btn.innerHTML = '<div class="spinner"></div> Running...';
+            } else {
+                btn.disabled = false;
+                btn.innerHTML = btn.dataset.originalHtml;
+            }
+        }
+        
+        function formatCurrency(amount) {
+            if (amount >= 1e9) {
+                return '$' + (amount / 1e9).toFixed(1) + 'B';
+            } else if (amount >= 1e6) {
+                return '$' + (amount / 1e6).toFixed(1) + 'M';
+            } else if (amount >= 1e3) {
+                return '$' + (amount / 1e3).toFixed(0) + 'K';
+            }
+            return '$' + amount.toLocaleString();
+        }
+        
+        function showConsole(output, isError = false) {
+            const section = document.getElementById('console-section');
+            const console = document.getElementById('console-output');
+            section.style.display = 'block';
+            
+            const timestamp = new Date().toLocaleTimeString();
+            const className = isError ? 'error' : 'success';
+            console.innerHTML = `<span class="timestamp">[${timestamp}]</span>\n<span class="${className}">${escapeHtml(output)}</span>`;
+            
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        // =============================================================
+        // API Functions
+        // =============================================================
+        
+        async function checkConnection() {
+            try {
+                const response = await fetch(`${API_BASE}/api/health`);
+                if (response.ok) {
+                    document.getElementById('status-dot').className = 'status-dot connected';
+                    document.getElementById('status-text').textContent = 'Connected';
+                    return true;
+                }
+            } catch (e) {
+                document.getElementById('status-dot').className = 'status-dot disconnected';
+                document.getElementById('status-text').textContent = 'Disconnected';
+            }
+            return false;
+        }
+        
+        async function loadData() {
+            try {
+                const response = await fetch(`${API_BASE}/api/graph`);
+                if (!response.ok) throw new Error('Failed to load graph data');
+                graphData = await response.json();
+                renderDashboard();
+            } catch (err) {
+                console.error('Failed to load data:', err);
+                showToast('Failed to load data: ' + err.message, 'error');
+            }
+        }
+        
+        async function refreshData() {
+            setLoading('btn-refresh', true);
+            await loadData();
+            setLoading('btn-refresh', false);
+            showToast('Data refreshed', 'success');
+        }
+        
+        async function runLinkageAnalyzer() {
+            setLoading('btn-analyze', true);
+            try {
+                const response = await fetch(`${API_BASE}/api/run/linkage-analyzer`, { method: 'POST' });
+                const result = await response.json();
+                
+                if (result.success) {
+                    showToast('Linkage analysis complete!', 'success');
+                    showConsole(result.stdout);
+                    await loadData(); // Reload the updated data
+                } else {
+                    showToast('Analysis failed', 'error');
+                    showConsole(result.stderr || result.stdout, true);
+                }
+            } catch (err) {
+                showToast('Error: ' + err.message, 'error');
+            }
+            setLoading('btn-analyze', false);
+        }
+        
+        async function runGapAnalyzer() {
+            setLoading('btn-gaps', true);
+            try {
+                const response = await fetch(`${API_BASE}/api/run/gap-analyzer`, { method: 'POST' });
+                const result = await response.json();
+                
+                if (result.success) {
+                    showToast('Gap detection complete!', 'success');
+                    showConsole(result.stdout);
+                } else {
+                    showToast('Gap detection failed', 'error');
+                    showConsole(result.stderr || result.stdout, true);
+                }
+            } catch (err) {
+                showToast('Error: ' + err.message, 'error');
+            }
+            setLoading('btn-gaps', false);
+        }
+        
+        async function runQuickSummary() {
+            setLoading('btn-summary', true);
+            try {
+                const response = await fetch(`${API_BASE}/api/run/quick-summary`, { method: 'POST' });
+                const result = await response.json();
+                
+                if (result.success) {
+                    showToast('Report generated!', 'success');
+                    showConsole(result.stdout);
+                } else {
+                    showToast('Report failed', 'error');
+                    showConsole(result.stderr || result.stdout, true);
+                }
+            } catch (err) {
+                showToast('Error: ' + err.message, 'error');
+            }
+            setLoading('btn-summary', false);
+        }
+        
+        // =============================================================
+        // Rendering Functions
+        // =============================================================
+        
+        function renderDashboard() {
+            if (!graphData) return;
+            
+            const nodes = graphData.nodes;
+            
+            // Categorize nodes
+            const flows = nodes.filter(n => n.category === 'money_flow');
+            const authorities = nodes.filter(n => n.category === 'authority_reference');
+            const evidence = nodes.filter(n => n.category === 'evidence_item');
+            const validations = nodes.filter(n => n.category === 'field_validation');
+            
+            // Calculate total amount
+            const totalAmount = flows
+                .filter(f => f.data?.amount > 0)
+                .reduce((sum, f) => sum + (f.data?.amount || 0), 0);
+            
+            // Update stats
+            document.getElementById('total-artifacts').textContent = nodes.length;
+            document.getElementById('total-flows').textContent = flows.length;
+            document.getElementById('total-authorities').textContent = authorities.length;
+            document.getElementById('total-evidence').textContent = evidence.length;
+            document.getElementById('total-linkages').textContent = graphData.edges.length.toLocaleString();
+            document.getElementById('total-amount').textContent = formatCurrency(totalAmount);
+            document.getElementById('last-updated').textContent = new Date(graphData.metadata.generated_at).toLocaleString();
+            
+            // Render components
+            renderSankey(flows);
+            renderFlowTable(flows);
+            renderAuthorityList(authorities);
+            renderValidationList(validations);
+            
+            // Setup tabs
+            setupTabs();
+        }
+        
+        function renderSankey(flows) {
+            const validFlows = flows.filter(f => 
+                f.data?.source && f.data?.destination && 
+                f.data.source !== 'Unknown' && f.data.destination !== 'Unknown'
+            );
+            
+            if (validFlows.length === 0) {
+                document.getElementById('sankey-container').innerHTML = '<p style="color:#666;">No flow data available for visualization.</p>';
+                return;
+            }
+            
+            // Build unique nodes
+            const nodeNames = new Set();
+            validFlows.forEach(f => {
+                nodeNames.add(f.data.source);
+                if (f.data.intermediary && f.data.intermediary !== 'None') {
+                    nodeNames.add(f.data.intermediary);
+                }
+                nodeNames.add(f.data.destination);
+            });
+            
+            const sankeyNodes = Array.from(nodeNames).map(name => ({ name }));
+            const nodeIndex = {};
+            sankeyNodes.forEach((n, i) => nodeIndex[n.name] = i);
+            
+            // Build links
+            const sankeyLinks = [];
+            validFlows.forEach(f => {
+                const amount = f.data.amount || 100000;
+                const fundType = f.data.fund_type || 'state';
+                
+                if (f.data.intermediary && f.data.intermediary !== 'None') {
+                    sankeyLinks.push({
+                        source: nodeIndex[f.data.source],
+                        target: nodeIndex[f.data.intermediary],
+                        value: amount,
+                        fundType: fundType,
+                        flowId: f.id
+                    });
+                    sankeyLinks.push({
+                        source: nodeIndex[f.data.intermediary],
+                        target: nodeIndex[f.data.destination],
+                        value: amount,
+                        fundType: fundType,
+                        flowId: f.id
+                    });
+                } else {
+                    sankeyLinks.push({
+                        source: nodeIndex[f.data.source],
+                        target: nodeIndex[f.data.destination],
+                        value: amount,
+                        fundType: fundType,
+                        flowId: f.id
+                    });
+                }
+            });
+            
+            // Setup SVG
+            const width = 900;
+            const height = Math.max(500, sankeyNodes.length * 25);
+            const margin = { top: 20, right: 180, bottom: 20, left: 180 };
+            
+            const svg = d3.select('#sankey-chart')
+                .attr('width', width)
+                .attr('height', height);
+            
+            svg.selectAll('*').remove();
+            
+            // Create sankey generator
+            const sankey = d3.sankey()
+                .nodeWidth(20)
+                .nodePadding(12)
+                .extent([[margin.left, margin.top], [width - margin.right, height - margin.bottom]]);
+            
+            // Generate layout
+            const { nodes: layoutNodes, links: layoutLinks } = sankey({
+                nodes: sankeyNodes.map(d => Object.assign({}, d)),
+                links: sankeyLinks.map(d => Object.assign({}, d))
+            });
+            
+            // Color scale
+            const colorScale = {
+                'federal': '#1565c0',
+                'state': '#2e7d32',
+                'settlement': '#e65100'
+            };
+            
+            // Draw links
+            svg.append('g')
+                .selectAll('.sankey-link')
+                .data(layoutLinks)
+                .join('path')
+                .attr('class', 'sankey-link')
+                .attr('d', d3.sankeyLinkHorizontal())
+                .attr('stroke', d => colorScale[d.fundType] || '#888')
+                .attr('stroke-width', d => Math.max(1, d.width))
+                .on('mouseover', showLinkTooltip)
+                .on('mouseout', hideTooltip);
+            
+            // Draw nodes
+            const nodeGroup = svg.append('g')
+                .selectAll('.sankey-node')
+                .data(layoutNodes)
+                .join('g')
+                .attr('class', 'sankey-node')
+                .attr('transform', d => `translate(${d.x0},${d.y0})`);
+            
+            nodeGroup.append('rect')
+                .attr('height', d => d.y1 - d.y0)
+                .attr('width', d => d.x1 - d.x0)
+                .attr('fill', '#00467f')
+                .on('mouseover', showNodeTooltip)
+                .on('mouseout', hideTooltip);
+            
+            nodeGroup.append('text')
+                .attr('x', d => d.x0 < width / 2 ? -6 : (d.x1 - d.x0) + 6)
+                .attr('y', d => (d.y1 - d.y0) / 2)
+                .attr('dy', '0.35em')
+                .attr('text-anchor', d => d.x0 < width / 2 ? 'end' : 'start')
+                .text(d => truncate(d.name, 35));
+        }
+        
+        function truncate(str, len) {
+            return str.length > len ? str.slice(0, len) + '…' : str;
+        }
+        
+        function showLinkTooltip(event, d) {
+            const tooltip = document.getElementById('tooltip');
+            tooltip.innerHTML = `
+                <div class="title">${d.source.name} → ${d.target.name}</div>
+                <div>Amount: $${d.value.toLocaleString()}</div>
+                <div>Fund Type: ${d.fundType}</div>
+            `;
+            tooltip.style.display = 'block';
+            tooltip.style.left = (event.pageX + 10) + 'px';
+            tooltip.style.top = (event.pageY - 10) + 'px';
+        }
+        
+        function showNodeTooltip(event, d) {
+            const inflow = d.targetLinks.reduce((sum, l) => sum + l.value, 0);
+            const outflow = d.sourceLinks.reduce((sum, l) => sum + l.value, 0);
+            
+            const tooltip = document.getElementById('tooltip');
+            tooltip.innerHTML = `
+                <div class="title">${d.name}</div>
+                ${inflow > 0 ? `<div>Inflow: $${inflow.toLocaleString()}</div>` : ''}
+                ${outflow > 0 ? `<div>Outflow: $${outflow.toLocaleString()}</div>` : ''}
+            `;
+            tooltip.style.display = 'block';
+            tooltip.style.left = (event.pageX + 10) + 'px';
+            tooltip.style.top = (event.pageY - 10) + 'px';
+        }
+        
+        function hideTooltip() {
+            document.getElementById('tooltip').style.display = 'none';
+        }
+        
+        function renderFlowTable(flows) {
+            const tbody = document.getElementById('flow-table-body');
+            tbody.innerHTML = flows
+                .sort((a, b) => (b.data?.amount || 0) - (a.data?.amount || 0))
+                .map(f => {
+                    const d = f.data || {};
+                    const amountClass = d.amount === 0 ? 'amount zero' : 'amount';
+                    const amountText = d.amount === 0 ? 'Variable' : '$' + (d.amount || 0).toLocaleString();
+                    const fundClass = `fund-badge ${d.fund_type || 'state'}`;
+                    
+                    return `
+                        <tr>
+                            <td>${d.source || '—'}</td>
+                            <td>${d.destination || '—'}</td>
+                            <td class="${amountClass}">${amountText}</td>
+                            <td><span class="${fundClass}">${d.fund_type || 'state'}</span></td>
+                            <td>${d.fiscal_year || '—'}</td>
+                        </tr>
+                    `;
+                }).join('');
+        }
+        
+        function renderAuthorityList(authorities) {
+            const container = document.getElementById('authority-list');
+            container.innerHTML = authorities.map(a => {
+                const d = a.data || {};
+                const governs = Array.isArray(d.governs) ? d.governs.slice(0, 2).join('; ') : '';
+                
+                return `
+                    <div class="authority-item">
+                        <div class="citation">${d.citation || a.id}</div>
+                        <div class="body">Administered by: ${d.administering_body || 'Unknown'}</div>
+                        ${governs ? `<div class="body" style="margin-top:6px;">Governs: ${governs}</div>` : ''}
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        function renderValidationList(validations) {
+            const container = document.getElementById('validation-list');
+            
+            if (validations.length === 0) {
+                container.innerHTML = '<p style="color:#666;">No audit findings loaded.</p>';
+                return;
+            }
+            
+            const statusColor = {
+                'captured': '#2e7d32',
+                'open': '#c62828',
+                'mixed': '#f57c00'
+            };
+            
+            container.innerHTML = validations.map(v => {
+                const d = v.data || {};
+                const status = d.alignment_status || 'unknown';
+                const color = statusColor[status] || '#666';
+                
+                return `
+                    <div class="authority-item" style="border-color: ${color};">
+                        <div class="citation">${v.id}</div>
+                        <div class="body">Validating Entity: ${d.validating_entity || 'Unknown'}</div>
+                        <div class="body" style="color: ${color}; font-weight:600; margin-top:6px;">
+                            Status: ${status.toUpperCase()}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        function setupTabs() {
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                    
+                    btn.classList.add('active');
+                    document.getElementById(btn.dataset.tab).classList.add('active');
+                });
+            });
+        }
+        
+        // =============================================================
+        // Initialize
+        // =============================================================
+        
+        async function init() {
+            const connected = await checkConnection();
+            if (connected) {
+                await loadData();
+                showToast('Dashboard loaded', 'success');
+            } else {
+                showToast('Cannot connect to server. Start the API with: python server/api.py', 'error');
+            }
+        }
+        
+        init();
+        
+        // Refresh connection status every 30 seconds
+        setInterval(checkConnection, 30000);
+    </script>
+</body>
+</html>

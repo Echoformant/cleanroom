@@ -1,0 +1,20 @@
+{
+  "authority_id": "AUTH-AR-ACA-25-10-129",
+  "authority_type": "statute",
+  "citation": "[GAP STUB - citation needed]",
+  "administering_body": "[GAP STUB - administering body needed]",
+  "governs": [
+    "[GAP STUB - governs entries needed]"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "pending",
+  "_gap_metadata": {
+    "generated_by": "gap_analyzer",
+    "gap_type": "INCOMPLETE_CHAIN",
+    "source_artifact": "EVID-AR-25-10-129-STATUTE",
+    "detected_at": "2026-02-05T17:08:11.569522+00:00"
+  }
+}

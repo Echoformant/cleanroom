@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-ADH-EMS-FY2026",
+  "source": "Emergency Medical Services Revolving Fund",
+  "intermediary": "None",
+  "destination": "Arkansas Department of Health – Emergency Medical Services",
+  "amount": 60000,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Code Ann. §20-7-109; Act 538 of 2025 §12 (Emergency Medical Services appropriation)【849297760235391†L883-L920】",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.949842"
+}

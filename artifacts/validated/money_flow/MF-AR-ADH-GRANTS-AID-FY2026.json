@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-ADH-GRANTS-AID-FY2026",
+  "source": "Federal and State Funds (General Revenue and Federal Grants)",
+  "intermediary": "None",
+  "destination": "Arkansas Department of Health",
+  "amount": 22333487,
+  "fund_type": "federal",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Code Ann. §20-7-109; Act 538 of 2025 §3 item (06) ADH Grants & Aid【849297760235391†L760-L780】",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.946728"
+}

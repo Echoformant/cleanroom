@@ -1,0 +1,18 @@
+{
+  "authority_id": "AUTH-AR-ACA-15-4-209",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 15-4-209",
+  "administering_body": "Arkansas Economic Development Commission",
+  "governs": [
+    "MF-AR-AEDC-ECONOMIC-DEVELOPMENT-GRANTS-FY2026",
+    "MF-AR-AEDC-BUSINESS-INNOVATION-PROGRAM-FY2026",
+    "MF-AR-AEDC-MINORITY-AND-WOMEN-BUSINESS-SUPPORT-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.994783"
+}

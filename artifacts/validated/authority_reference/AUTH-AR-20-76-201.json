@@ -1,0 +1,21 @@
+{
+  "authority_id": "AUTH-AR-20-76-201",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. §20-76-201",
+  "administering_body": "Arkansas Department of Human Services",
+  "governs": [
+    "DHS powers and duties to administer public assistance programs",
+    "Authority to cooperate with the federal government and receive federal funds",
+    "Rules necessary to carry out public welfare programs",
+    "MF-AR-TANF-BLOCK-GRANT-FY2026",
+    "MF-AR-CSBG-FY2026",
+    "MF-AR-SNAP-ADMIN-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AUTH-AR-25-10-129-EXHAUSTIVE",
+  "_ingested_at": "2026-02-05T06:38:00.829073"
+}

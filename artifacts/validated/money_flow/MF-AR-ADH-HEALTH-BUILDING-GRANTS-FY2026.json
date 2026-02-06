@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-ADH-HEALTH-BUILDING-GRANTS-FY2026",
+  "source": "State Health Building and Local Health Grant Trust Fund",
+  "intermediary": "None",
+  "destination": "Arkansas Department of Health – Health Building and Local Health Grant Program",
+  "amount": 1950000,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Code Ann. §20-7-109; Act 538 of 2025 §10 (Health Building & Local Health Grant Trust)【849297760235391†L833-L858】",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.948977"
+}

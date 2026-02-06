@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-NALOXONE-GRANT",
+  "section": "MF-AR-AOC-NALOXONE-GRANT-2024",
+  "claim_summary": "A June 27, 2024 Arkansas Advocate article reports that the Administrative Office of the Courts distributed naloxone kits to drug courts using a $300,000 U.S. Department of Justice grant【413023292860776†L41-L54】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas drug courts receive opioid settlement funding and federal grant for naloxone kits",
+    "issuing_body": "Arkansas Advocate",
+    "url": "https://arkansasadvocate.com/2024/06/27/arkansas-drug-courts-receive-opioid-settlement-funding/"
+  },
+  "confidence_level": "medium",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
+  "_ingested_at": "2026-02-05T07:23:35.999124"
+}

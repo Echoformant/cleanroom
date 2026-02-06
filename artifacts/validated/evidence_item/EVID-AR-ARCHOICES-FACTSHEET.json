@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARCHOICES-FACTSHEET",
+  "section": "AUTH-AR-1915C-ARCHOICES-0195R06",
+  "claim_summary": "CMS’s waiver factsheet for ARChoices in Homecare states that the 1915(c) waiver (0195.R06.00) serves individuals aged 65 or 21–64 with disabilities and provides services such as adult day health, respite, attendant care, environmental modifications, home‑delivered meals and personal emergency response systems【470571601175406†L317-L325】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Section 1915(c) Waiver Factsheet – AR Choices in Homecare (0195.R06.00)",
+    "issuing_body": "Centers for Medicare & Medicaid Services",
+    "url": "https://www.medicaid.gov/medicaid/section-1915-c-home-and-community-based-services/1915-c-waiver-authorities/index.html"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-MEDICAID-WAIVERS-EXHAUSTIVE-2026-02-05",
+  "_ingested_at": "2026-02-05T11:14:28.010058"
+}
