@@ -1,4 +1,5 @@
 # AGENT_RUN: Deep Research Artifact Extraction
+
 ## Mode: Extract Maximum Artifacts from Research Content
 
 **Purpose:** When you have deep research results (web search, PDF analysis, database lookups), use this template to extract the maximum number of schema-compliant artifacts.
@@ -53,6 +54,7 @@ For each piece of information, ask:
 ## ARTIFACT SCHEMAS
 
 ### authority_reference
+
 ```json
 {
   "authority_id": "AUTH-{JURISDICTION}-{TYPE}-{IDENTIFIER}",
@@ -69,12 +71,14 @@ For each piece of information, ask:
 ```
 
 **ID Pattern Examples:**
+
 - `AUTH-AR-ACA-20-77-107` — Arkansas Code Annotated
 - `AUTH-US-42-CFR-438` — Federal regulation
 - `AUTH-AR-ARORP-BYLAWS-2024` — Organization bylaws
 - `AUTH-US-SAMHSA-MHBG-REQUIREMENTS` — Federal grant requirements
 
 ### money_flow
+
 ```json
 {
   "flow_id": "MF-{JURISDICTION}-{PROGRAM/SOURCE}-{DESCRIPTION}-{FY}",
@@ -94,11 +98,13 @@ For each piece of information, ask:
 ```
 
 **ID Pattern Examples:**
+
 - `MF-AR-ARORP-SAMHSA-MHBG-SUBGRANT-FY2026` — Federal grant to org
 - `MF-AR-ARORP-MEMBERSHIP-DUES-FY2026` — Fee revenue
 - `MF-AR-ARORP-TO-LOCALPROVIDER-TRAINING-FY2026` — Pass-through
 
 ### evidence_item
+
 ```json
 {
   "evidence_id": "EVID-{JURISDICTION}-{SOURCE}-{DESCRIPTION}",
@@ -116,11 +122,13 @@ For each piece of information, ask:
 ```
 
 **ID Pattern Examples:**
+
 - `EVID-AR-ARORP-990-GRANTSRECEIVED-2023` — 990 extract
 - `EVID-AR-ARORP-ANNUALREPORT-2024` — Annual report
 - `EVID-AR-ARORP-DHS-CONTRACT-2025` — Contract evidence
 
 ### field_validation
+
 ```json
 {
   "fv_id": "FV-{JURISDICTION}-{ENTITY}-{FINDING}-{YEAR}",
@@ -139,7 +147,8 @@ For each piece of information, ask:
 
 When researching an organization (like ARORP), extract:
 
-### From 990 Forms:
+### From 990 Forms
+
 - Total revenue → note in evidence
 - Government grants received → `money_flow` (source: federal/state agency, dest: org)
 - Program service revenue → `money_flow` (source: payers, dest: org)
@@ -147,18 +156,21 @@ When researching an organization (like ARORP), extract:
 - Officer compensation → note in evidence
 - Program accomplishments → `evidence_item`
 
-### From Websites/About Pages:
+### From Websites/About Pages
+
 - Mission statement → `evidence_item`
 - Board of directors → `authority_reference` (governance structure)
 - Programs offered → `evidence_item` per program
 - Partner organizations → potential linked artifacts
 
-### From State Databases:
+### From State Databases
+
 - State contracts → `money_flow`
 - Grants received → `money_flow`
 - Compliance records → `field_validation`
 
-### From Federal Sources:
+### From Federal Sources
+
 - Federal grant awards → `money_flow` + `evidence_item`
 - Grant requirements → `authority_reference`
 - Compliance reviews → `field_validation`
@@ -168,6 +180,7 @@ When researching an organization (like ARORP), extract:
 ## CROSS-REFERENCING
 
 Link artifacts to each other:
+
 - `money_flow.statutory_basis` → references `authority_reference`
 - `evidence_item.section` → points to artifact it supports
 - `field_validation.evidence_basis` → lists supporting evidence/authority
@@ -202,6 +215,7 @@ Return a single JSON object with ALL extracted artifacts:
 ## EXTRACTION CHECKLIST
 
 Before submitting:
+
 - [ ] Every grant mentioned → money_flow
 - [ ] Every statute/regulation cited → authority_reference  
 - [ ] Every document referenced → evidence_item
@@ -219,12 +233,14 @@ Before submitting:
 If researching Arkansas Recovery Organizations and Providers (ARORP), look for:
 
 **Authorities:**
+
 - State behavioral health statutes (ACA 20-47, 20-64)
 - DHS OBHS certification requirements
 - SAMHSA MHBG/SABG requirements
 - Peer support specialist certification rules
 
 **Money Flows:**
+
 - SAMHSA block grant pass-throughs
 - DHS OBHS contracts
 - State appropriations for peer services
@@ -232,6 +248,7 @@ If researching Arkansas Recovery Organizations and Providers (ARORP), look for:
 - Membership dues
 
 **Evidence:**
+
 - 990 tax returns (if nonprofit)
 - Annual reports
 - DHS contract documents
@@ -239,6 +256,7 @@ If researching Arkansas Recovery Organizations and Providers (ARORP), look for:
 - Board meeting minutes
 
 **Validations:**
+
 - Legislative audit findings
 - DHS compliance reviews
 - Federal OIG audits

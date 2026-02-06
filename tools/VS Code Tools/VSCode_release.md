@@ -39,7 +39,8 @@ Terminal tools now have better lifecycle controls (timeouts, background mode, ki
 ## **Workbench & Productivity**
 The new integrated browser lets you run, test, and debug web apps without leaving VS Code.
 Workspace restore behavior, settings visibility, and profile import are more flexible.
-Output and Problems panels have stronger filtering and organization tools.
+Output and Problems panels have stronger 
+filtering and organization tools.
 
 ## **Terminal Enhancements**
 More reliable command execution and better handling of interactive input.

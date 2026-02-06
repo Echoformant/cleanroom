@@ -27,14 +27,19 @@ This repo catalogs validated artifacts from Arkansas state government appropriat
 ### Field Conventions by Type
 
 **Money Flow** (`MF-*`):
-- Field order: `flow_id`, `source`, `intermediary`, `destination`, `amount`, `fund_type`, `fiscal_year`, `restrictions.medicaid`, `restrictions.dhs_controlled`, `statutory_basis`, `editor_status`
+- Field order: `flow_id`, `source`, `intermediary`, `destination`, `amount`, `fund_type`, `fiscal_year`, `restrictions.medicaid`, `restrictions.dhs_controlled`, `statutory_basis`, `statutory_basis_refs`, `editor_status`
 - `amount`: integer USD (no commas/decimals); use `0` for unspecified with explanation in `statutory_basis`
 - `fund_type`: `"state"` for AR-appropriated (even with federal match); `"federal"` only for direct US inflows
 - `intermediary`: `"None"` when no pass-through exists (never omit)
+- `fiscal_year`: Use format `"FY2026"` for single years; `"FY2025-2026"` for biennia (always include "FY" prefix)
+- `statutory_basis`: Human-readable text citation (e.g., "Ark. Code § 20-77-107")
+- `statutory_basis_refs`: Array of authority/evidence IDs that this flow cites (e.g., `["AUTH-AR-ACA-20-77-107", "EVID-AR-ACT776-S25"]`) — enables bidirectional graph traversal
 - Canonical: [MF-AR-MEDICAID-PEER-ROUTING-2026.json](money_flow/MF-AR-MEDICAID-PEER-ROUTING-2026.json)
 
 **Authority Reference** (`AR-AUTH-*`, `AUTH-*`):
-- Fields: `authority_id`, `authority_type` (`statute`|`regulation`|`act`), `citation`, `administering_body`, `governs[]`, `effects`, `editor_status`
+- Fields: `authority_id`, `authority_type`, `citation`, `administering_body`, `governs[]`, `effects`, `editor_status`
+- `authority_type`: `statute` | `regulation` | `act` | `administrative` | `court_order` | `mou` | `settlement`
+  - Use `administrative` for desk-level authorities (director positions, committees, delegation chains)
 - Match citation style to source (preserve Unicode dashes/section symbols §)
 - Example: [AR-AUTH-20-77-107.json](authority_reference/AR-AUTH-20-77-107.json)
 
@@ -69,7 +74,8 @@ This repo catalogs validated artifacts from Arkansas state government appropriat
 - **Medicaid flows**: Set `restrictions.medicaid: true` only when destination is Medicaid-reimbursable; cite DHS OBHS Provider Manual
 - **DHS-controlled**: `restrictions.dhs_controlled: true` for funds disbursed by DHS or sub-divisions
 - **RHTP proposals** (HEART, PACT, RISE AR, THRIVE): Keep descriptions synchronized across all four files; reference Arkansas Senate summaries
-- **Fiscal years**: Single year as `"2026"`; biennia as `"2025-2026"`; multi-year ranges verbatim from source
+- **Fiscal years**: Always use `"FY2026"` format (include "FY" prefix); biennia as `"FY2025-2026"`; multi-year ranges as `"FY2022-2038"`
+- **Desk-level authority**: When mapping organizational hierarchies, create `authority_type: "administrative"` artifacts for positions, committees, and delegation chains (e.g., `AUTH-AR-DHS-OSAMH-DIRECTOR`, `AUTH-AR-DHS-PEER-ADVISORY-COMMITTEE`)
 
 ## Artifact Linkage
 
@@ -80,8 +86,7 @@ Artifacts reference each other through several fields. The [linkage_analyzer.py]
 | `section→flow` | evidence_item.section | money_flow |
 | `evidence_basis→` | field_validation.evidence_basis[] | evidence_item, authority_reference |
 | `governs→` | authority_reference.governs[] | money_flow |
-| `statutory_basis→` | money_flow.statutory_basis | authority_reference, evidence_item |
-
+| `statutory_basis→` | money_flow.statutory_basis | authority_reference, evidence_item || `statutory_basis_refs→` | money_flow.statutory_basis_refs[] | authority_reference, evidence_item |
 **Usage:**
 ```powershell
 # Show all linkages ranked by volume (most connected first)
