@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-6-1-101-AUDIT-REQUIREMENTS",
+  "section": "AUTH-AR-ACA-6-1-101",
+  "claim_summary": "Ark. Code §6-1-101 requires Arkansas Legislative Audit or a licensed independent accountant to audit publicly funded educational institutions and review compliance with school finance laws, teacher salary statutes, and other requirements including deposit and investment of funds",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code §6-1-101 – Review of audit report by board",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/2024/title-6/subtitle-1/chapter-1/subchapter-1/section-6-1-101/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-06",
+  "_ingested_at": "2026-02-06T03:05:22.647162"
+}

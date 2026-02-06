@@ -1,0 +1,16 @@
+{
+  "authority_id": "AUTH-AR-ACA-19-4-101",
+  "authority_type": "statute",
+  "citation": "Ark. Code § 19-4-101",
+  "administering_body": "Department of Finance and Administration",
+  "governs": [
+    "MF-AR-BUDGET-PROCESS-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-06",
+  "_ingested_at": "2026-02-06T03:05:22.639829"
+}

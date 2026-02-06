@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-ARCHOICES-PERS-SYSTEM-FY2026",
+  "source": "Medicaid Home- and Community-Based Services",
+  "intermediary": "None",
+  "destination": "Personal Emergency Response System providers",
+  "amount": 0,
+  "fund_type": "federal",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": true,
+    "dhs_controlled": true
+  },
+  "statutory_basis": "HCBS rate schedule – Personal emergency response monitoring reimbursed at $1.07 per day【415148646089510†L42-L149】",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.771535"
+}

@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-CONSTITUTION-ART16-SEC3",
+  "section": "AUTH-AR-CONSTITUTION-ART16-SEC3",
+  "claim_summary": "Section 3 of Article 16 prohibits making profit from public moneys or using them for purposes not authorized by law, and provides disqualification from office as part of the penalty【285412081107099†L51-L55】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Constitution Article 16 § 3",
+    "issuing_body": "State of Arkansas",
+    "url": "https://law.justia.com/constitution/arkansas/article-16/section-3/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.778832"
+}

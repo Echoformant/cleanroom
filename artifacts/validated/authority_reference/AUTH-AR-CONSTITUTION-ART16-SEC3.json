@@ -1,0 +1,18 @@
+{
+  "authority_id": "AUTH-AR-CONSTITUTION-ART16-SEC3",
+  "authority_type": "constitution",
+  "citation": "Ark. Const. art. 16, § 3",
+  "administering_body": "State of Arkansas",
+  "governs": [
+    "MF-AR-GENERAL-REVENUE-DISTRIBUTION-FY2026",
+    "MF-AR-COUNTY-AID-FUND-DISTRIBUTION-FY2026",
+    "MF-AR-COURT-FINES-TO-JUSTICE-FUND-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.772758"
+}

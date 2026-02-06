@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-COURT-FINES-TO-JUSTICE-FUND-FY2026",
+  "source": "Circuit court fines",
+  "intermediary": "County officials",
+  "destination": "State Administration of Justice Fund",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2025-2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Code Ann. § 16-13-709(a)(1)(A)-(C) – fines collected shall be disbursed to the State Administration of Justice Fund and other funds【734638216646988†L76-L83】",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.766943"
+}

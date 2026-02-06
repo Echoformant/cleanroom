@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-PROCUREMENT-LAW-DEFINITIONS",
+  "section": "AUTH-AR-PROCUREMENT-LAW-19-11-203",
+  "claim_summary": "Arkansas’s procurement law defines an \"agency procurement official\" as a person authorized by a state agency to enter into and administer contracts in accordance with procedures prescribed by the procurement law【465596296648831†L70-L77】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code § 19-11-203 - Definitions",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/title-19/chapter-11/subchapter-2/section-19-11-203/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.785651"
+}

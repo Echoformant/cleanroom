@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-QSF-ORDER-PDF-2022-06-13",
+  "section": "AUTH-AR-QSF-ORDER-CRITTENDEN-18CV-22-355-2022-06-13",
+  "claim_summary": "Court order establishes Arkansas Opioids Qualified Settlement Fund, appoints Fund Administrator and Custodial Bank, and references governing MOU and tax treatment under IRC 468B and Treas. Reg. 1.468B-1.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Order Establishing the Arkansas Opioids Qualified Settlement Fund (PDF)",
+    "issuing_body": "Crittenden County Circuit Court (Arkansas)",
+    "url": "https://www.arorp.org/wp-content/uploads/2022/11/2022-06-13-Order-Establishing-QSF.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-EXTRACTION-2026-02-06",
+  "_ingested_at": "2026-02-06T02:53:39.629073"
+}

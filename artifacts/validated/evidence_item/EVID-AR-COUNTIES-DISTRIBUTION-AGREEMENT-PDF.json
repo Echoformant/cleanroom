@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-COUNTIES-DISTRIBUTION-AGREEMENT-PDF",
+  "section": "AUTH-AR-COUNTIES-DISTRIBUTION-AGREEMENT",
+  "claim_summary": "Counties Distribution Agreement references the Arkansas Opioids MOU and one-third allocation rule and describes distribution mechanics for county shares (exhibits omitted in hosted version).",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Counties Distribution Agreement (PDF, without exhibits)",
+    "issuing_body": "Arkansas counties (party to agreement)",
+    "url": "https://www.arorp.org/wp-content/uploads/2022/11/Counties-Distribution-Agreement-without-exhibits.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-EXTRACTION-2026-02-06",
+  "_ingested_at": "2026-02-06T02:53:39.629603"
+}

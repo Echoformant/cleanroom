@@ -1,0 +1,16 @@
+{
+  "authority_id": "AUTH-AR-CONST-ART16-SEC12",
+  "authority_type": "constitution",
+  "citation": "Ark. Const. Art. 16, § 12",
+  "administering_body": "Arkansas State Treasury",
+  "governs": [
+    "MF-AR-CONSTITUTION-APPROPRIATION-COMPLIANCE-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-06",
+  "_ingested_at": "2026-02-06T03:05:22.638510"
+}

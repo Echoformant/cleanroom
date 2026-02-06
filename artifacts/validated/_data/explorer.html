@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAMI Clearlane Explorer</title>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3"></script>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style>
+        :root {
+            --bg-dark: #0d1117;
+            --bg-card: #161b22;
+            --bg-hover: #21262d;
+            --border: #30363d;
+            --text: #c9d1d9;
+            --text-muted: #8b949e;
+            --accent-blue: #58a6ff;
+            --accent-green: #3fb950;
+            --accent-purple: #a371f7;
+            --accent-orange: #d29922;
+            --accent-red: #f85149;
+            --money-flow: #3fb950;
+            --authority: #58a6ff;
+            --evidence: #a371f7;
+            --validation: #d29922;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        header {
+            background: var(--bg-card);
+            padding: 12px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo { 
+            font-size: 1.3rem; 
+            font-weight: 600;
+            color: var(--accent-green);
+        }
+        .logo span { color: var(--text-muted); font-weight: 400; }
+        
+        .header-stats {
+            display: flex;
+            gap: 25px;
+            font-size: 0.85rem;
+        }
+        .stat { color: var(--text-muted); }
+        .stat strong { color: var(--accent-blue); }
+        
+        .toolbar {
+            background: var(--bg-card);
+            padding: 10px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .toolbar-group {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        
+        .toolbar-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+        
+        button {
+            background: var(--bg-hover);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: all 0.2s;
+        }
+        button:hover { border-color: var(--accent-blue); }
+        button.active { 
+            background: var(--accent-blue); 
+            color: var(--bg-dark);
+            border-color: var(--accent-blue);
+        }
+        
+        select, input[type="text"], input[type="number"] {
+            background: var(--bg-hover);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 6px 10px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+        }
+        select:focus, input:focus { outline: none; border-color: var(--accent-blue); }
+        
+        .main-container {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+        
+        .sidebar {
+            width: 280px;
+            background: var(--bg-card);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .sidebar-section {
+            padding: 15px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .sidebar-title {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        
+        .filter-group {
+            margin-bottom: 12px;
+        }
+        
+        .filter-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+            display: block;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.8rem;
+            cursor: pointer;
+        }
+        
+        .checkbox-item input { cursor: pointer; }
+        
+        .color-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        
+        .saved-views {
+            flex: 1;
+            overflow-y: auto;
+            padding: 10px 15px;
+        }
+        
+        .saved-view-item {
+            background: var(--bg-hover);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 10px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .saved-view-item:hover { border-color: var(--accent-blue); }
+        .saved-view-item .name { font-size: 0.85rem; margin-bottom: 4px; }
+        .saved-view-item .meta { font-size: 0.7rem; color: var(--text-muted); }
+        .saved-view-item .delete { 
+            float: right; 
+            color: var(--accent-red); 
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+        
+        .graph-area {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        #graph-canvas {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .detail-panel {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 380px;
+            max-height: calc(100% - 20px);
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+            display: none;
+        }
+        .detail-panel.visible { display: flex; flex-direction: column; }
+        
+        .detail-header {
+            padding: 15px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+        .detail-title {
+            font-size: 0.9rem;
+            color: var(--accent-green);
+            word-break: break-all;
+            flex: 1;
+        }
+        
+        .detail-close {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 1.2rem;
+            padding: 0;
+        }
+        .detail-close:hover { color: var(--accent-red); }
+        
+        .detail-body {
+            padding: 15px;
+            overflow-y: auto;
+            flex: 1;
+        }
+        
+        .detail-field {
+            margin-bottom: 12px;
+        }
+        .detail-field-label {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-bottom: 2px;
+        }
+        .detail-field-value {
+            font-size: 0.85rem;
+            color: var(--text);
+        }
+        .detail-field-value.amount {
+            color: var(--accent-green);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .connections-list {
+            border-top: 1px solid var(--border);
+            padding: 15px;
+        }
+        .connections-title {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .connection-item {
+            font-size: 0.8rem;
+            padding: 6px 8px;
+            margin-bottom: 4px;
+            background: var(--bg-hover);
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .connection-item:hover { background: var(--border); }
+        
+        .legend {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 10px 15px;
+            display: flex;
+            gap: 15px;
+            font-size: 0.75rem;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .status-bar {
+            background: var(--bg-card);
+            border-top: 1px solid var(--border);
+            padding: 6px 20px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .amount-slider {
+            width: 150px;
+        }
+        
+        #save-dialog {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            z-index: 1000;
+            display: none;
+        }
+        #save-dialog.visible { display: block; }
+        #save-dialog h3 { margin-bottom: 15px; }
+        #save-dialog input { width: 100%; margin-bottom: 15px; }
+        #save-dialog .buttons { display: flex; gap: 10px; justify-content: flex-end; }
+        
+        .overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 999;
+            display: none;
+        }
+        .overlay.visible { display: block; }
+        
+        .search-box {
+            position: relative;
+        }
+        #search-input {
+            width: 250px;
+            padding-left: 30px;
+        }
+        .search-icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+        }
+        
+        #search-results {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 300px;
+            max-height: 300px;
+            overflow-y: auto;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            margin-top: 4px;
+            display: none;
+            z-index: 100;
+        }
+        #search-results.visible { display: block; }
+        .search-result-item {
+            padding: 8px 12px;
+            cursor: pointer;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.8rem;
+        }
+        .search-result-item:hover { background: var(--bg-hover); }
+        .search-result-item .cat { 
+            font-size: 0.65rem; 
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">NAMI Clearlane <span>Explorer</span></div>
+        <div class="header-stats">
+            <div class="stat">Nodes: <strong id="node-count">0</strong></div>
+            <div class="stat">Edges: <strong id="edge-count">0</strong></div>
+            <div class="stat">Visible: <strong id="visible-count">0</strong></div>
+        </div>
+    </header>
+    
+    <div class="toolbar">
+        <div class="toolbar-group">
+            <span class="toolbar-label">View:</span>
+            <button id="view-force" class="active" onclick="setView('force')">Network</button>
+            <button id="view-hierarchical" onclick="setView('hierarchical')">Hierarchy</button>
+            <button id="view-radial" onclick="setView('radial')">Radial</button>
+            <button id="view-sankey" onclick="setView('sankey')">Sankey</button>
+        </div>
+        
+        <div class="toolbar-group search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-input" placeholder="Search artifacts...">
+            <div id="search-results"></div>
+        </div>
+        
+        <div class="toolbar-group" style="margin-left: auto;">
+            <button onclick="saveView()">💾 Save View</button>
+            <button onclick="exportPNG()">📷 Export PNG</button>
+            <button onclick="exportJSON()">📦 Export Data</button>
+        </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-title">Filter by Category</div>
+                <div class="checkbox-group">
+                    <label class="checkbox-item">
+                        <input type="checkbox" id="filter-money_flow" checked onchange="applyFilters()">
+                        <span class="color-dot" style="background: var(--money-flow)"></span>
+                        Money Flow
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" id="filter-authority_reference" checked onchange="applyFilters()">
+                        <span class="color-dot" style="background: var(--authority)"></span>
+                        Authority
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" id="filter-evidence_item" checked onchange="applyFilters()">
+                        <span class="color-dot" style="background: var(--evidence)"></span>
+                        Evidence
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" id="filter-field_validation" checked onchange="applyFilters()">
+                        <span class="color-dot" style="background: var(--validation)"></span>
+                        Validation
+                    </label>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-title">Filter by Amount</div>
+                <div class="filter-group">
+                    <label class="filter-label">Minimum Amount ($)</label>
+                    <input type="number" id="filter-amount-min" value="0" onchange="applyFilters()" style="width: 100%">
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Maximum Amount ($)</label>
+                    <input type="number" id="filter-amount-max" value="999999999999" onchange="applyFilters()" style="width: 100%">
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-title">Filter by Connections</div>
+                <div class="filter-group">
+                    <label class="filter-label">Min Connections</label>
+                    <input type="number" id="filter-connections" value="0" min="0" onchange="applyFilters()" style="width: 100%">
+                </div>
+                <label class="checkbox-item">
+                    <input type="checkbox" id="filter-orphans" onchange="applyFilters()">
+                    Show Orphans Only
+                </label>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-title">Filter by Text</div>
+                <input type="text" id="filter-text" placeholder="Filter by ID/source/dest..." onkeyup="applyFilters()" style="width: 100%">
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-title">Saved Views</div>
+            </div>
+            <div class="saved-views" id="saved-views-list">
+                <!-- Saved views will be populated here -->
+            </div>
+        </div>
+        
+        <div class="graph-area">
+            <div id="graph-canvas"></div>
+            
+            <div class="legend">
+                <div class="legend-item">
+                    <span class="color-dot" style="background: var(--money-flow)"></span>
+                    Money Flow
+                </div>
+                <div class="legend-item">
+                    <span class="color-dot" style="background: var(--authority)"></span>
+                    Authority
+                </div>
+                <div class="legend-item">
+                    <span class="color-dot" style="background: var(--evidence)"></span>
+                    Evidence
+                </div>
+                <div class="legend-item">
+                    <span class="color-dot" style="background: var(--validation)"></span>
+                    Validation
+                </div>
+            </div>
+            
+            <div class="detail-panel" id="detail-panel">
+                <div class="detail-header">
+                    <div class="detail-title" id="detail-title"></div>
+                    <button class="detail-close" onclick="closeDetail()">×</button>
+                </div>
+                <div class="detail-body" id="detail-body"></div>
+                <div class="connections-list" id="connections-list">
+                    <div class="connections-title">Connections</div>
+                    <div id="connections-items"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="status-bar">
+        <span id="status-text">Loading...</span>
+        <span id="data-timestamp"></span>
+    </div>
+    
+    <div class="overlay" id="overlay" onclick="closeSaveDialog()"></div>
+    <div id="save-dialog">
+        <h3>Save Current View</h3>
+        <input type="text" id="view-name" placeholder="View name...">
+        <div class="buttons">
+            <button onclick="closeSaveDialog()">Cancel</button>
+            <button onclick="confirmSaveView()" style="background: var(--accent-blue); color: var(--bg-dark);">Save</button>
+        </div>
+    </div>
+
+<script>
+// Global state
+let graphData = null;
+let filteredNodes = [];
+let filteredEdges = [];
+let network = null;
+let currentView = 'force';
+let savedViews = JSON.parse(localStorage.getItem('nami-saved-views') || '[]');
+
+const COLORS = {
+    money_flow: '#3fb950',
+    authority_reference: '#58a6ff',
+    evidence_item: '#a371f7',
+    field_validation: '#d29922'
+};
+
+// Load data
+async function loadData() {
+    try {
+        const response = await fetch('artifacts_graph.json');
+        graphData = await response.json();
+        document.getElementById('node-count').textContent = graphData.nodes.length;
+        document.getElementById('edge-count').textContent = graphData.edges.length;
+        document.getElementById('data-timestamp').textContent = 
+            `Generated: ${new Date(graphData.metadata.generated_at).toLocaleString()}`;
+        document.getElementById('status-text').textContent = 'Ready';
+        applyFilters();
+        renderSavedViews();
+    } catch (e) {
+        document.getElementById('status-text').textContent = 'Error loading data: ' + e.message;
+    }
+}
+
+// Apply filters
+function applyFilters() {
+    if (!graphData) return;
+    
+    const catFilters = {
+        money_flow: document.getElementById('filter-money_flow').checked,
+        authority_reference: document.getElementById('filter-authority_reference').checked,
+        evidence_item: document.getElementById('filter-evidence_item').checked,
+        field_validation: document.getElementById('filter-field_validation').checked
+    };
+    
+    const amountMin = parseInt(document.getElementById('filter-amount-min').value) || 0;
+    const amountMax = parseInt(document.getElementById('filter-amount-max').value) || Infinity;
+    const minConnections = parseInt(document.getElementById('filter-connections').value) || 0;
+    const orphansOnly = document.getElementById('filter-orphans').checked;
+    const textFilter = document.getElementById('filter-text').value.toLowerCase();
+    
+    filteredNodes = graphData.nodes.filter(node => {
+        // Category filter
+        if (!catFilters[node.category]) return false;
+        
+        // Amount filter (for money_flow only)
+        if (node.category === 'money_flow' && node.data.amount !== undefined) {
+            if (node.data.amount < amountMin || node.data.amount > amountMax) return false;
+        }
+        
+        // Connection filter
+        if (node.link_count < minConnections) return false;
+        
+        // Orphan filter
+        if (orphansOnly && !node.is_orphan) return false;
+        
+        // Text filter
+        if (textFilter) {
+            const searchText = JSON.stringify(node).toLowerCase();
+            if (!searchText.includes(textFilter)) return false;
+        }
+        
+        return true;
+    });
+    
+    const nodeIds = new Set(filteredNodes.map(n => n.id));
+    filteredEdges = graphData.edges.filter(e => 
+        nodeIds.has(e.source) && nodeIds.has(e.target)
+    );
+    
+    document.getElementById('visible-count').textContent = filteredNodes.length;
+    renderGraph();
+}
+
+// Render graph based on current view
+function renderGraph() {
+    if (currentView === 'sankey') {
+        renderSankey();
+    } else {
+        renderNetwork();
+    }
+}
+
+// Render vis-network
+function renderNetwork() {
+    const container = document.getElementById('graph-canvas');
+    container.innerHTML = '';
+    
+    const nodes = new vis.DataSet(filteredNodes.map(node => ({
+        id: node.id,
+        label: node.id.length > 30 ? node.id.substring(0, 30) + '...' : node.id,
+        color: {
+            background: COLORS[node.category],
+            border: COLORS[node.category],
+            highlight: { background: '#fff', border: COLORS[node.category] }
+        },
+        shape: node.category === 'money_flow' ? 'dot' : 
+               node.category === 'authority_reference' ? 'diamond' :
+               node.category === 'evidence_item' ? 'square' : 'triangle',
+        size: Math.min(10 + (node.link_count || 0) * 2, 40),
+        font: { color: '#c9d1d9', size: 10 },
+        title: node.id
+    })));
+    
+    const edges = new vis.DataSet(filteredEdges.map((edge, i) => ({
+        id: i,
+        from: edge.source,
+        to: edge.target,
+        color: { color: '#30363d', highlight: '#58a6ff' },
+        arrows: 'to',
+        smooth: { type: 'continuous' }
+    })));
+    
+    let options = {
+        physics: {
+            enabled: true,
+            barnesHut: {
+                gravitationalConstant: -3000,
+                centralGravity: 0.3,
+                springLength: 100
+            },
+            stabilization: { iterations: 150 }
+        },
+        interaction: {
+            hover: true,
+            tooltipDelay: 200
+        }
+    };
+    
+    if (currentView === 'hierarchical') {
+        options.layout = {
+            hierarchical: {
+                direction: 'UD',
+                sortMethod: 'hubsize',
+                levelSeparation: 100,
+                nodeSpacing: 150
+            }
+        };
+        options.physics = false;
+    } else if (currentView === 'radial') {
+        // For radial, we use physics but with central gravity
+        options.physics = {
+            enabled: true,
+            barnesHut: {
+                gravitationalConstant: -5000,
+                centralGravity: 0.8,
+                springLength: 150
+            }
+        };
+    }
+    
+    network = new vis.Network(container, { nodes, edges }, options);
+    
+    network.on('click', function(params) {
+        if (params.nodes.length > 0) {
+            showDetail(params.nodes[0]);
+        }
+    });
+    
+    document.getElementById('status-text').textContent = 
+        `Showing ${filteredNodes.length} nodes, ${filteredEdges.length} edges`;
+}
+
+// Render Sankey diagram (money flows only)
+function renderSankey() {
+    const container = document.getElementById('graph-canvas');
+    container.innerHTML = '';
+    
+    const moneyFlows = filteredNodes.filter(n => n.category === 'money_flow' && n.data.amount > 0);
+    
+    if (moneyFlows.length === 0) {
+        container.innerHTML = '<div style="padding: 50px; text-align: center; color: var(--text-muted);">No money flows with amounts to display. Enable Money Flow filter and ensure amount filters include values.</div>';
+        return;
+    }
+    
+    // Build Sankey data
+    const nodeNames = new Set();
+    moneyFlows.forEach(flow => {
+        nodeNames.add(flow.data.source);
+        if (flow.data.intermediary && flow.data.intermediary !== 'None') {
+            nodeNames.add(flow.data.intermediary);
+        }
+        nodeNames.add(flow.data.destination);
+    });
+    
+    const nodeIndex = {};
+    const sankeyNodes = Array.from(nodeNames).map((name, i) => {
+        nodeIndex[name] = i;
+        return { name };
+    });
+    
+    const sankeyLinks = [];
+    moneyFlows.forEach(flow => {
+        if (flow.data.intermediary && flow.data.intermediary !== 'None') {
+            sankeyLinks.push({
+                source: nodeIndex[flow.data.source],
+                target: nodeIndex[flow.data.intermediary],
+                value: flow.data.amount,
+                flow_id: flow.id
+            });
+            sankeyLinks.push({
+                source: nodeIndex[flow.data.intermediary],
+                target: nodeIndex[flow.data.destination],
+                value: flow.data.amount,
+                flow_id: flow.id
+            });
+        } else {
+            sankeyLinks.push({
+                source: nodeIndex[flow.data.source],
+                target: nodeIndex[flow.data.destination],
+                value: flow.data.amount,
+                flow_id: flow.id
+            });
+        }
+    });
+    
+    const width = container.clientWidth;
+    const height = container.clientHeight;
+    
+    const svg = d3.select(container)
+        .append('svg')
+        .attr('width', width)
+        .attr('height', height);
+    
+    const sankey = d3.sankey()
+        .nodeWidth(15)
+        .nodePadding(10)
+        .extent([[20, 20], [width - 20, height - 20]]);
+    
+    const { nodes: sNodes, links: sLinks } = sankey({
+        nodes: sankeyNodes.map(d => Object.assign({}, d)),
+        links: sankeyLinks.map(d => Object.assign({}, d))
+    });
+    
+    // Links
+    svg.append('g')
+        .selectAll('path')
+        .data(sLinks)
+        .join('path')
+        .attr('d', d3.sankeyLinkHorizontal())
+        .attr('stroke', '#3fb950')
+        .attr('stroke-opacity', 0.4)
+        .attr('stroke-width', d => Math.max(1, d.width))
+        .attr('fill', 'none')
+        .style('cursor', 'pointer')
+        .on('click', (event, d) => showDetail(d.flow_id))
+        .append('title')
+        .text(d => `$${d.value.toLocaleString()}`);
+    
+    // Nodes
+    svg.append('g')
+        .selectAll('rect')
+        .data(sNodes)
+        .join('rect')
+        .attr('x', d => d.x0)
+        .attr('y', d => d.y0)
+        .attr('height', d => d.y1 - d.y0)
+        .attr('width', d => d.x1 - d.x0)
+        .attr('fill', '#58a6ff')
+        .attr('opacity', 0.8);
+    
+    // Labels
+    svg.append('g')
+        .selectAll('text')
+        .data(sNodes)
+        .join('text')
+        .attr('x', d => d.x0 < width / 2 ? d.x1 + 6 : d.x0 - 6)
+        .attr('y', d => (d.y1 + d.y0) / 2)
+        .attr('dy', '0.35em')
+        .attr('text-anchor', d => d.x0 < width / 2 ? 'start' : 'end')
+        .attr('fill', '#c9d1d9')
+        .attr('font-size', '10px')
+        .text(d => d.name.length > 30 ? d.name.substring(0, 30) + '...' : d.name);
+    
+    document.getElementById('status-text').textContent = 
+        `Sankey: ${moneyFlows.length} flows, $${moneyFlows.reduce((s,f) => s + f.data.amount, 0).toLocaleString()} total`;
+}
+
+// Set view mode
+function setView(view) {
+    currentView = view;
+    document.querySelectorAll('.toolbar button').forEach(b => b.classList.remove('active'));
+    document.getElementById('view-' + view).classList.add('active');
+    renderGraph();
+}
+
+// Show artifact detail
+function showDetail(nodeId) {
+    const node = graphData.nodes.find(n => n.id === nodeId);
+    if (!node) return;
+    
+    document.getElementById('detail-title').textContent = node.id;
+    
+    const body = document.getElementById('detail-body');
+    let html = `<div class="detail-field">
+        <div class="detail-field-label">Category</div>
+        <div class="detail-field-value">${node.category}</div>
+    </div>`;
+    
+    if (node.data) {
+        if (node.data.amount !== undefined) {
+            html += `<div class="detail-field">
+                <div class="detail-field-label">Amount</div>
+                <div class="detail-field-value amount">$${node.data.amount.toLocaleString()}</div>
+            </div>`;
+        }
+        
+        Object.entries(node.data).forEach(([key, value]) => {
+            if (key === 'amount') return;
+            html += `<div class="detail-field">
+                <div class="detail-field-label">${key}</div>
+                <div class="detail-field-value">${typeof value === 'object' ? JSON.stringify(value) : value}</div>
+            </div>`;
+        });
+    }
+    
+    body.innerHTML = html;
+    
+    // Connections
+    const connections = graphData.edges
+        .filter(e => e.source === nodeId || e.target === nodeId)
+        .map(e => e.source === nodeId ? e.target : e.source);
+    
+    const connItems = document.getElementById('connections-items');
+    connItems.innerHTML = connections.slice(0, 20).map(id => {
+        const linked = graphData.nodes.find(n => n.id === id);
+        return `<div class="connection-item" onclick="showDetail('${id}')">
+            <span class="color-dot" style="background: ${COLORS[linked?.category] || '#888'}"></span>
+            ${id.length > 40 ? id.substring(0, 40) + '...' : id}
+        </div>`;
+    }).join('');
+    
+    if (connections.length > 20) {
+        connItems.innerHTML += `<div style="font-size: 0.7rem; color: var(--text-muted); padding: 8px;">+${connections.length - 20} more connections</div>`;
+    }
+    
+    document.getElementById('detail-panel').classList.add('visible');
+    
+    // Highlight in network
+    if (network && currentView !== 'sankey') {
+        network.selectNodes([nodeId]);
+    }
+}
+
+function closeDetail() {
+    document.getElementById('detail-panel').classList.remove('visible');
+    if (network) network.unselectAll();
+}
+
+// Search
+document.getElementById('search-input').addEventListener('input', function() {
+    const query = this.value.toLowerCase();
+    const resultsDiv = document.getElementById('search-results');
+    
+    if (query.length < 2) {
+        resultsDiv.classList.remove('visible');
+        return;
+    }
+    
+    const matches = graphData.nodes
+        .filter(n => n.id.toLowerCase().includes(query) || 
+                     JSON.stringify(n.data).toLowerCase().includes(query))
+        .slice(0, 10);
+    
+    resultsDiv.innerHTML = matches.map(n => `
+        <div class="search-result-item" onclick="focusNode('${n.id}')">
+            <div>${n.id}</div>
+            <div class="cat">${n.category}</div>
+        </div>
+    `).join('');
+    
+    resultsDiv.classList.add('visible');
+});
+
+document.getElementById('search-input').addEventListener('blur', function() {
+    setTimeout(() => document.getElementById('search-results').classList.remove('visible'), 200);
+});
+
+function focusNode(nodeId) {
+    document.getElementById('search-results').classList.remove('visible');
+    document.getElementById('search-input').value = '';
+    showDetail(nodeId);
+    if (network && currentView !== 'sankey') {
+        network.focus(nodeId, { scale: 1.5, animation: true });
+    }
+}
+
+// Save/Load Views
+function saveView() {
+    document.getElementById('overlay').classList.add('visible');
+    document.getElementById('save-dialog').classList.add('visible');
+    document.getElementById('view-name').focus();
+}
+
+function closeSaveDialog() {
+    document.getElementById('overlay').classList.remove('visible');
+    document.getElementById('save-dialog').classList.remove('visible');
+}
+
+function confirmSaveView() {
+    const name = document.getElementById('view-name').value.trim();
+    if (!name) return;
+    
+    const viewConfig = {
+        id: Date.now(),
+        name: name,
+        savedAt: new Date().toISOString(),
+        view: currentView,
+        filters: {
+            categories: {
+                money_flow: document.getElementById('filter-money_flow').checked,
+                authority_reference: document.getElementById('filter-authority_reference').checked,
+                evidence_item: document.getElementById('filter-evidence_item').checked,
+                field_validation: document.getElementById('filter-field_validation').checked
+            },
+            amountMin: document.getElementById('filter-amount-min').value,
+            amountMax: document.getElementById('filter-amount-max').value,
+            minConnections: document.getElementById('filter-connections').value,
+            orphansOnly: document.getElementById('filter-orphans').checked,
+            textFilter: document.getElementById('filter-text').value
+        },
+        nodeCount: filteredNodes.length
+    };
+    
+    savedViews.push(viewConfig);
+    localStorage.setItem('nami-saved-views', JSON.stringify(savedViews));
+    
+    closeSaveDialog();
+    document.getElementById('view-name').value = '';
+    renderSavedViews();
+}
+
+function renderSavedViews() {
+    const container = document.getElementById('saved-views-list');
+    
+    if (savedViews.length === 0) {
+        container.innerHTML = '<div style="font-size: 0.8rem; color: var(--text-muted); padding: 10px;">No saved views yet</div>';
+        return;
+    }
+    
+    container.innerHTML = savedViews.map(v => `
+        <div class="saved-view-item" onclick="loadView(${v.id})">
+            <span class="delete" onclick="event.stopPropagation(); deleteView(${v.id})">×</span>
+            <div class="name">${v.name}</div>
+            <div class="meta">${v.view} • ${v.nodeCount} nodes • ${new Date(v.savedAt).toLocaleDateString()}</div>
+        </div>
+    `).join('');
+}
+
+function loadView(viewId) {
+    const view = savedViews.find(v => v.id === viewId);
+    if (!view) return;
+    
+    // Restore filters
+    document.getElementById('filter-money_flow').checked = view.filters.categories.money_flow;
+    document.getElementById('filter-authority_reference').checked = view.filters.categories.authority_reference;
+    document.getElementById('filter-evidence_item').checked = view.filters.categories.evidence_item;
+    document.getElementById('filter-field_validation').checked = view.filters.categories.field_validation;
+    document.getElementById('filter-amount-min').value = view.filters.amountMin;
+    document.getElementById('filter-amount-max').value = view.filters.amountMax;
+    document.getElementById('filter-connections').value = view.filters.minConnections;
+    document.getElementById('filter-orphans').checked = view.filters.orphansOnly;
+    document.getElementById('filter-text').value = view.filters.textFilter;
+    
+    // Restore view type
+    setView(view.view);
+    applyFilters();
+}
+
+function deleteView(viewId) {
+    savedViews = savedViews.filter(v => v.id !== viewId);
+    localStorage.setItem('nami-saved-views', JSON.stringify(savedViews));
+    renderSavedViews();
+}
+
+// Export functions
+function exportPNG() {
+    if (currentView === 'sankey') {
+        const svg = document.querySelector('#graph-canvas svg');
+        if (!svg) return;
+        
+        const serializer = new XMLSerializer();
+        const svgStr = serializer.serializeToString(svg);
+        const img = new Image();
+        const canvas = document.createElement('canvas');
+        canvas.width = svg.clientWidth * 2;
+        canvas.height = svg.clientHeight * 2;
+        const ctx = canvas.getContext('2d');
+        ctx.scale(2, 2);
+        
+        img.onload = function() {
+            ctx.fillStyle = '#0d1117';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.drawImage(img, 0, 0);
+            const link = document.createElement('a');
+            link.download = 'nami-sankey-' + new Date().toISOString().split('T')[0] + '.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        };
+        img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgStr)));
+    } else if (network) {
+        const canvas = network.canvas.frame.canvas;
+        const link = document.createElement('a');
+        link.download = 'nami-graph-' + new Date().toISOString().split('T')[0] + '.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+    }
+}
+
+function exportJSON() {
+    const exportData = {
+        exported_at: new Date().toISOString(),
+        view: currentView,
+        filters: {
+            categories: {
+                money_flow: document.getElementById('filter-money_flow').checked,
+                authority_reference: document.getElementById('filter-authority_reference').checked,
+                evidence_item: document.getElementById('filter-evidence_item').checked,
+                field_validation: document.getElementById('filter-field_validation').checked
+            }
+        },
+        nodes: filteredNodes,
+        edges: filteredEdges,
+        stats: {
+            total_nodes: filteredNodes.length,
+            total_edges: filteredEdges.length,
+            total_amount: filteredNodes
+                .filter(n => n.category === 'money_flow')
+                .reduce((s, n) => s + (n.data.amount || 0), 0)
+        }
+    };
+    
+    const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+    const link = document.createElement('a');
+    link.download = 'nami-export-' + new Date().toISOString().split('T')[0] + '.json';
+    link.href = URL.createObjectURL(blob);
+    link.click();
+}
+
+// Initialize
+loadData();
+</script>
+</body>
+</html>

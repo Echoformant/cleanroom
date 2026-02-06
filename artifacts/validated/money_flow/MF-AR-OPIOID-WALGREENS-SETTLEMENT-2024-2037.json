@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-OPIOID-WALGREENS-SETTLEMENT-2024-2037",
+  "source": "Walgreens Opioid Settlement",
+  "intermediary": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+  "destination": "State of Arkansas; Arkansas counties; Arkansas cities/towns",
+  "amount": 48000000,
+  "fund_type": "settlement",
+  "fiscal_year": "2024-2037",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "AUTH-US-OPIOID-SETTLEMENT-WALGREENS; 15 payments from 2024-2037",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-DEEP-RESEARCH-2026-02-06",
+  "_ingested_at": "2026-02-06T03:19:14.791685"
+}

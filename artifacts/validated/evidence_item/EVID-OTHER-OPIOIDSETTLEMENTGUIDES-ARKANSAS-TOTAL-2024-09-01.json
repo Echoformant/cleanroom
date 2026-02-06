@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-OTHER-OPIOIDSETTLEMENTGUIDES-ARKANSAS-TOTAL-2024-09-01",
+  "section": "SETTLEMENT_TOTALS_CONTEXT",
+  "claim_summary": "OpioidSettlementGuides community guide page reports a rounded total funds figure for Arkansas opioid settlements ($227.70 million) and provides a transparency-oriented overview (secondary source).",
+  "evidence_type": "annual_report",
+  "source": {
+    "title": "Arkansas' Opioid Settlements (Community Guide)",
+    "issuing_body": "OpioidSettlementGuides.com",
+    "url": "https://www.opioidsettlementguides.com/arkansas"
+  },
+  "confidence_level": "low",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-EXTRACTION-2026-02-06",
+  "_ingested_at": "2026-02-06T02:53:39.633641"
+}

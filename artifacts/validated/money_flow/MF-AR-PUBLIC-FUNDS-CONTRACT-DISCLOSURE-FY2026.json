@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-PUBLIC-FUNDS-CONTRACT-DISCLOSURE-FY2026",
+  "source": "Various state entities",
+  "intermediary": "None",
+  "destination": "Arkansas General Assembly members (information access)",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Proposed Ark. Code § 19-1-101 requiring contracts funded by public funds be available to legislators",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-06",
+  "_ingested_at": "2026-02-06T03:05:22.634073"
+}

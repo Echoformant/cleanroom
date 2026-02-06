@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-US-26-CFR-1-468B-1-TEXT",
+  "section": "AUTH-US-26-CFR-1-468B-1",
+  "claim_summary": "Federal regulation text for 26 CFR 1.468B-1 defining Qualified Settlement Funds, referenced by Arkansas QSF order.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "26 CFR § 1.468B-1",
+    "issuing_body": "United States (CFR as published via Cornell LII)",
+    "url": "https://www.law.cornell.edu/cfr/text/26/1.468B-1"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-EXTRACTION-2026-02-06",
+  "_ingested_at": "2026-02-06T02:53:39.632595"
+}

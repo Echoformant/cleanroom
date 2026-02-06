@@ -1,0 +1,16 @@
+{
+  "authority_id": "AUTH-AR-ACA-6-1-101",
+  "authority_type": "statute",
+  "citation": "Ark. Code § 6-1-101",
+  "administering_body": "Arkansas State Board of Education",
+  "governs": [
+    "MF-AR-EDUCATION-AUDIT-COMPLIANCE-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": true
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-06",
+  "_ingested_at": "2026-02-06T03:05:22.641144"
+}

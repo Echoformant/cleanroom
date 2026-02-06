@@ -1,0 +1,17 @@
+{
+  "authority_id": "AUTH-AR-ACA-19-5-602-COUNTY-AID",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 19-5-602",
+  "administering_body": "Arkansas Treasurer of State",
+  "governs": [
+    "MF-AR-COUNTY-AID-FUND-DISTRIBUTION-FY2026",
+    "MF-AR-COUNTY-AID-PULASKI-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.774586"
+}

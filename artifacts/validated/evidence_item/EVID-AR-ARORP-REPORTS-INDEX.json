@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-REPORTS-INDEX",
+  "section": "ARORP_REPORTING_SOURCES",
+  "claim_summary": "ARORP publishes Annual Reports and Quarterly Reports via its official Reports page.",
+  "evidence_type": "annual_report",
+  "source": {
+    "title": "Annual & Quarterly Reports",
+    "issuing_body": "Arkansas Opioid Recovery Partnership (ARORP)",
+    "url": "https://www.arorp.org/quarterly-reports/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-EXTRACTION-2026-02-06",
+  "_ingested_at": "2026-02-06T02:53:39.626747"
+}

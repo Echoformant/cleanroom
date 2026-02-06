@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-FUNDING-GUIDELINES-PAGE",
+  "section": "AUTH-AR-ARORP-FUNDING-GUIDELINES",
+  "claim_summary": "ARORP publishes funding guidelines requiring letters of support for proposals not submitted by the Partnership Director and stating that noncompliance may result in funding termination.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Funding Opportunities (includes ARORP Funding Guidelines)",
+    "issuing_body": "Arkansas Opioid Recovery Partnership (ARORP)",
+    "url": "https://www.arorp.org/funding-opportunities/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-EXTRACTION-2026-02-06",
+  "_ingested_at": "2026-02-06T02:53:39.630685"
+}

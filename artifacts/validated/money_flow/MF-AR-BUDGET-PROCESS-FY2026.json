@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-BUDGET-PROCESS-FY2026",
+  "source": "State revenue",
+  "intermediary": "Department of Finance and Administration",
+  "destination": "State agencies via annual appropriations",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Code § 19-4-101 establishing the General Accounting and Budgetary Procedures Law",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-06",
+  "_ingested_at": "2026-02-06T03:05:22.634579"
+}

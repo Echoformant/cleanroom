@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-COUNTY-AID-AUDIT-2024",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Legislative Audit",
+  "alignment_status": "open",
+  "evidence_basis": [
+    "EVID-AR-COUNTY-AID-19-5-602",
+    "AUTH-AR-ACA-19-5-602-COUNTY-AID"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.787082"
+}

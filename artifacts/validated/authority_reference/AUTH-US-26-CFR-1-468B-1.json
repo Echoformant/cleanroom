@@ -1,0 +1,17 @@
+{
+  "authority_id": "AUTH-US-26-CFR-1-468B-1",
+  "authority_type": "federal_requirement",
+  "citation": "26 CFR § 1.468B-1 (Qualified settlement funds) (Cornell LII): https://www.law.cornell.edu/cfr/text/26/1.468B-1",
+  "administering_body": "Internal Revenue Service (United States)",
+  "governs": [
+    "AUTH-AR-QSF-ORDER-CRITTENDEN-18CV-22-355-2022-06-13",
+    "MF-AR-QSF-INFLOW-SETTLEMENT-AMOUNTS-2022-2040"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-EXTRACTION-2026-02-06",
+  "_ingested_at": "2026-02-06T02:53:39.617825"
+}

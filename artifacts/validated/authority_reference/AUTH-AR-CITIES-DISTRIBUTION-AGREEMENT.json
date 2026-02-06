@@ -1,0 +1,16 @@
+{
+  "authority_id": "AUTH-AR-CITIES-DISTRIBUTION-AGREEMENT",
+  "authority_type": "policy",
+  "citation": "Cities Distribution Agreement (PDF hosted by ARORP): https://www.arorp.org/wp-content/uploads/2022/11/Cities-Distribution-Agreement-without-exhibits.pdf",
+  "administering_body": "Arkansas cities and towns (party to agreement)",
+  "governs": [
+    "MF-AR-QSF-TO-CITIES-SETTLEMENT-DISTRIBUTION-2022-2040"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-EXTRACTION-2026-02-06",
+  "_ingested_at": "2026-02-06T02:53:39.618848"
+}

@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-EMERGENCY-RELOCATION-GOVERNMENT-FY2026",
+  "source": "State of Arkansas",
+  "intermediary": "Governor's Office",
+  "destination": "Emergency temporary location operations",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Code §25-1-101 allows the Governor to declare an emergency temporary location for the seat of government during emergencies",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-06",
+  "_ingested_at": "2026-02-06T03:05:22.635709"
+}

@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-ARORP-TRANSPARENCY-EVALUATION-WYSAC-2024",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Wyoming Survey and Analysis Center (WYSAC)",
+  "alignment_status": "open",
+  "evidence_basis": [
+    "EVID-AR-AAC-ARORP-UPDATES-OPIOID-SETTLEMENT-FUNDS",
+    "EVID-AR-ARORP-ANNUAL-EVALUATION-REPORT-2024"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-EXTRACTION-2026-02-06",
+  "_ingested_at": "2026-02-06T02:53:39.634420"
+}

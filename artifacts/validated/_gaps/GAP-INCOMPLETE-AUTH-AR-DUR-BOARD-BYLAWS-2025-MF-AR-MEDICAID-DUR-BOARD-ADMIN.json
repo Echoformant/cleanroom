@@ -1,0 +1,12 @@
+{
+  "gap_id": "GAP-INCOMPLETE-AUTH-AR-DUR-BOARD-BYLAWS-2025-MF-AR-MEDICAID-DUR-BOARD-ADMIN",
+  "gap_type": "INCOMPLETE_CHAIN",
+  "source_artifact": "AUTH-AR-DUR-BOARD-BYLAWS-2025",
+  "source_category": "authority_reference",
+  "source_field": "governs[0]",
+  "target_reference": "MF-AR-MEDICAID-DUR-BOARD-ADMIN-FY2026",
+  "target_category": "money_flow",
+  "detected_at": "2026-02-06T07:53:20.907474+00:00",
+  "stub_generated": true,
+  "stub_path": "C:\\Threshold\\cleanroom\\artifacts\\validated\\_stubs\\MF-AR-MEDICAID-DUR-BOARD-ADMIN-FY2026.json"
+}

@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-DUR-BOARD-BYLAWS",
+  "section": "AUTH-AR-DUR-BOARD-BYLAWS-2025",
+  "claim_summary": "The Medicaid DUR Board bylaws describe the board’s legal authority under 42 U.S.C. § 1396r–8(g)(3) and 42 CFR § 456.716, establish board composition (five physicians, seven or eight pharmacists, and PASSE representatives), and note that members must be appointed by the Medicaid Director and adhere to conflict-of-interest rules【259783752909853†L52-L102】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Medicaid Drug Utilization Review Board Bylaws (July 2025)",
+    "issuing_body": "Arkansas Department of Human Services, Division of Medical Services",
+    "url": "https://ar.primetherapeutics.com/documents/d/arkansas/dur-board-bylaws-final-july_2025"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.781910"
+}

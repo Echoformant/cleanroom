@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-CONSTITUTION-ART16-SEC12",
+  "section": "AUTH-AR-CONSTITUTION-ART16-SEC12",
+  "claim_summary": "Section 12 requires that no money be paid from the treasury until appropriated by law and only according to that appropriation【220066534343937†L49-L53】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Constitution Article 16 § 12",
+    "issuing_body": "State of Arkansas",
+    "url": "https://law.justia.com/constitution/arkansas/article-16/section-12/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.779982"
+}

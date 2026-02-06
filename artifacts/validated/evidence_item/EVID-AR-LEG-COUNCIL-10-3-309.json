@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-LEG-COUNCIL-10-3-309",
+  "section": "AUTH-AR-LEGISLATIVE-COUNCIL-REVIEW",
+  "claim_summary": "Arkansas Code § 10-3-309 establishes legislative review and approval of state agency rules; its purpose is to correct abuses of rulemaking authority and ensure rules conform to legislative intent【921706310567219†L73-L83】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code § 10-3-309 - Review and approval of state agency rules",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/title-10/chapter-3/subchapter-3/section-10-3-309/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.785136"
+}

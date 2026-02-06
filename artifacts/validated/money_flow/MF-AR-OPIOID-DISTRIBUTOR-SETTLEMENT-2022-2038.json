@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-OPIOID-DISTRIBUTOR-SETTLEMENT-2022-2038",
+  "source": "Distributor Settlement (AmerisourceBergen, Cardinal Health, McKesson)",
+  "intermediary": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+  "destination": "State of Arkansas; Arkansas counties; Arkansas cities/towns",
+  "amount": 177500000,
+  "fund_type": "settlement",
+  "fiscal_year": "2022-2038",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "AUTH-US-OPIOID-SETTLEMENT-DISTRIBUTOR; 18 payments from 2022-2038",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-DEEP-RESEARCH-2026-02-06",
+  "_ingested_at": "2026-02-06T03:19:14.790153"
+}

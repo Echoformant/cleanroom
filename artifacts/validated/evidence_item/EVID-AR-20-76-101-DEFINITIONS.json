@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-20-76-101-DEFINITIONS",
+  "section": "AUTH-AR-ACA-20-76-101",
+  "claim_summary": "Ark. Code §20-76-101 defines terms such as assessment services, date of enrollment, diversion from assistance, education or training, employment assistance, extended support services, medical assistance (Medicaid), and the Temporary Assistance for Needy Families Program for the purposes of social services programs",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code §20-76-101 – Definitions",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/2024/title-20/subtitle-5/chapter-76/subchapter-1/section-20-76-101/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-06",
+  "_ingested_at": "2026-02-06T03:05:22.647816"
+}

@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-AR-OPIOIDS-MOU-PDF",
+  "section": "AUTH-AR-OPIOIDS-MOU-EXECUTED-JUL-2021",
+  "claim_summary": "Executed Arkansas Opioids Memorandum of Understanding (MOU) document governing allocation and use framework for opioid settlement and bankruptcy funds in Arkansas.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Opioids MOU (Executed July 2021) (PDF)",
+    "issuing_body": "MOU signatories (State of Arkansas; Arkansas counties; Arkansas cities/towns)",
+    "url": "https://www.arorp.org/wp-content/uploads/2022/11/Arkansas-Opioids-MOU-Executed-July-2021.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-EXTRACTION-2026-02-06",
+  "_ingested_at": "2026-02-06T02:53:39.628482"
+}

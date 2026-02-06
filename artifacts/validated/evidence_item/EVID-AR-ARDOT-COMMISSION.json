@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARDOT-COMMISSION",
+  "section": "AUTH-AR-ARDOT-COMMISSION",
+  "claim_summary": "The Arkansas Department of Transportation’s commission page lists the commissioners: Chairman Philip Taldo, Vice Chairman Keith Gibson, and members Marie Holder, David Haak and Jerry L. Halsey, Jr., along with key administrative staff【390677520982801†L40-L49】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Commission – Arkansas Department of Transportation",
+    "issuing_body": "Arkansas Department of Transportation",
+    "url": "https://ardot.gov/commission/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.782428"
+}

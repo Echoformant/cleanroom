@@ -1,0 +1,19 @@
+{
+  "authority_id": "AUTH-AR-PASSE-PROGRAM",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 20-77-103 and state PASSE program agreements",
+  "administering_body": "Arkansas Department of Human Services",
+  "governs": [
+    "MF-AR-PASSE-CAPITATION-ARKANSAS-TOTAL-CARE-FY2026",
+    "MF-AR-PASSE-CAPITATION-EMPOWER-FY2026",
+    "MF-AR-PASSE-CAPITATION-SUMMIT-FY2026",
+    "MF-AR-PASSE-CAPITATION-CARESOURCE-FY2026"
+  ],
+  "effects": {
+    "access_limiting": true,
+    "appeal_mechanism": true
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.776809"
+}

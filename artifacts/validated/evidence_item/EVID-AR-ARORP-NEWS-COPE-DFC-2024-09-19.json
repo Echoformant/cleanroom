@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-NEWS-COPE-DFC-2024-09-19",
+  "section": "MF-AR-ARORP-TO-COALITIONS-COPE-TRAINING-2024",
+  "claim_summary": "ARORP reports an initial $536607 investment supporting 13 COPE coalitions for training to prepare Drug-Free Communities grant applications; reports that seven coalitions received DFC grants at $125000 per year for five years ($625000 each).",
+  "evidence_type": "annual_report",
+  "source": {
+    "title": "Arkansas coalitions receive nearly $4.4 million for substance use prevention",
+    "issuing_body": "Arkansas Opioid Recovery Partnership (ARORP)",
+    "url": "https://www.arorp.org/arkansas-coalitions-receive-nearly-4-4-million-for-substance-use-prevention/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-EXTRACTION-2026-02-06",
+  "_ingested_at": "2026-02-06T02:53:39.631141"
+}

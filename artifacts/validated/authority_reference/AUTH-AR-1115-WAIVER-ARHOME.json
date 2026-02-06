@@ -1,0 +1,16 @@
+{
+  "authority_id": "AUTH-AR-1115-WAIVER-ARHOME",
+  "authority_type": "waiver",
+  "citation": "Arkansas Health and Opportunity for Me (ARHOME) 1115 Demonstration Waiver",
+  "administering_body": "Arkansas Department of Human Services",
+  "governs": [
+    "MF-AR-ARHOME-PREMIUM-ASSISTANCE-FY2026"
+  ],
+  "effects": {
+    "access_limiting": true,
+    "appeal_mechanism": true
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.776387"
+}

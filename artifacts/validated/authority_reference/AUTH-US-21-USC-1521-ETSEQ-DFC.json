@@ -1,0 +1,16 @@
+{
+  "authority_id": "AUTH-US-21-USC-1521-ETSEQ-DFC",
+  "authority_type": "federal_requirement",
+  "citation": "21 U.S.C. Chapter 20, Subchapter II, Part A (Drug-Free Communities Support Program) (U.S. Code House): https://uscode.house.gov/view.xhtml?edition=prelim&path=%2Fprelim%40title21%2Fchapter20%2Fsubchapter2%2FpartA",
+  "administering_body": "Office of National Drug Control Policy (ONDCP) and Substance Abuse and Mental Health Services Administration (SAMHSA) (as referenced in U.S. Code definitions)",
+  "governs": [
+    "MF-US-ONDCP-DFC-GRANT-TO-COPE-COALITIONS-2024"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-EXTRACTION-2026-02-06",
+  "_ingested_at": "2026-02-06T02:53:39.619739"
+}

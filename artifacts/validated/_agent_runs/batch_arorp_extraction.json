@@ -1,0 +1,483 @@
+{
+  "batch_id": "BATCH-ARORP-EXTRACTION-2026-02-06",
+  "mode": "deep-research-extraction",
+  "subject": "ARORP (Arkansas Opioid Recovery Partnership)",
+  "generated_at": "2026-02-06",
+  "source_summary": "Primary sources from ARORP's official website (About, Funding Guidelines, News, Reports), ARORP-hosted governing PDFs (Arkansas Opioids MOU, QSF court order, Distribution Agreements), Association of Arkansas Counties (AAC) reporting on ARORP operations and distributions, and federal legal authorities (U.S. Code for DFC; IRC/CFR for QSF). Supplemental context from ACHI and OpioidSettlementGuides.",
+  "total_artifacts": 23,
+  "artifacts": {
+    "authority_reference": [
+      {
+        "authority_id": "AUTH-AR-OPIOIDS-MOU-EXECUTED-JUL-2021",
+        "authority_type": "policy",
+        "citation": "Arkansas Opioids Memorandum of Understanding (Executed July 2021) (PDF hosted by ARORP): https://www.arorp.org/wp-content/uploads/2022/11/Arkansas-Opioids-MOU-Executed-July-2021.pdf",
+        "administering_body": "State of Arkansas, Arkansas counties, and Arkansas cities/towns (MOU signatories)",
+        "governs": [
+          "MF-AR-OPIOID-SETTLEMENT-ALLOCATION-ONE_THIRD_SPLIT-2022-2040",
+          "MF-AR-QSF-TO-COUNTIES-SETTLEMENT-DISTRIBUTION-2022-2040",
+          "MF-AR-QSF-TO-CITIES-SETTLEMENT-DISTRIBUTION-2022-2040",
+          "MF-AR-QSF-TO-STATE-SETTLEMENT-DISTRIBUTION-2022-2040",
+          "MF-AR-ARORP-SETTLEMENT-DISTRIBUTION-ALL_COUNTIES-2022-2024"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-QSF-ORDER-CRITTENDEN-18CV-22-355-2022-06-13",
+        "authority_type": "policy",
+        "citation": "Order Establishing the Arkansas Opioids Qualified Settlement Fund, Appointing the Fund Administrator, and Appointing the Custodial Bank (Crittenden County Circuit Court, Case No. 18CV-22-355, filed June 13 2022) (PDF hosted by ARORP): https://www.arorp.org/wp-content/uploads/2022/11/2022-06-13-Order-Establishing-QSF.pdf",
+        "administering_body": "Crittenden County Circuit Court (Arkansas)",
+        "governs": [
+          "MF-AR-QSF-INFLOW-SETTLEMENT-AMOUNTS-2022-2040",
+          "MF-AR-QSF-TO-COUNTIES-SETTLEMENT-DISTRIBUTION-2022-2040",
+          "MF-AR-QSF-TO-CITIES-SETTLEMENT-DISTRIBUTION-2022-2040"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-US-IRC-26-USC-468B",
+        "authority_type": "federal_requirement",
+        "citation": "26 U.S.C. § 468B (Special rules for designated settlement funds) (Cornell LII): https://www.law.cornell.edu/uscode/text/26/468B",
+        "administering_body": "Internal Revenue Service (United States)",
+        "governs": [
+          "AUTH-AR-QSF-ORDER-CRITTENDEN-18CV-22-355-2022-06-13",
+          "MF-AR-QSF-INFLOW-SETTLEMENT-AMOUNTS-2022-2040"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-US-26-CFR-1-468B-1",
+        "authority_type": "federal_requirement",
+        "citation": "26 CFR § 1.468B-1 (Qualified settlement funds) (Cornell LII): https://www.law.cornell.edu/cfr/text/26/1.468B-1",
+        "administering_body": "Internal Revenue Service (United States)",
+        "governs": [
+          "AUTH-AR-QSF-ORDER-CRITTENDEN-18CV-22-355-2022-06-13",
+          "MF-AR-QSF-INFLOW-SETTLEMENT-AMOUNTS-2022-2040"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-COUNTIES-DISTRIBUTION-AGREEMENT",
+        "authority_type": "policy",
+        "citation": "Counties Distribution Agreement (PDF hosted by ARORP): https://www.arorp.org/wp-content/uploads/2022/11/Counties-Distribution-Agreement-without-exhibits.pdf",
+        "administering_body": "Arkansas counties (party to agreement)",
+        "governs": [
+          "MF-AR-QSF-TO-COUNTIES-SETTLEMENT-DISTRIBUTION-2022-2040"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-CITIES-DISTRIBUTION-AGREEMENT",
+        "authority_type": "policy",
+        "citation": "Cities Distribution Agreement (PDF hosted by ARORP): https://www.arorp.org/wp-content/uploads/2022/11/Cities-Distribution-Agreement-without-exhibits.pdf",
+        "administering_body": "Arkansas cities and towns (party to agreement)",
+        "governs": [
+          "MF-AR-QSF-TO-CITIES-SETTLEMENT-DISTRIBUTION-2022-2040"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ARORP-FUNDING-GUIDELINES",
+        "authority_type": "policy",
+        "citation": "ARORP Funding Guidelines (webpage): https://www.arorp.org/funding-opportunities/",
+        "administering_body": "Arkansas Opioid Recovery Partnership (ARORP)",
+        "governs": [
+          "MF-AR-ARORP-TO-WYSAC-DATA_SYSTEM-2024",
+          "MF-AR-ARORP-TO-COALITIONS-COPE-TRAINING-2024",
+          "MF-AR-ARORP-NALOXONE-CREDIT-DISBURSEMENT-2022-2024"
+        ],
+        "effects": {
+          "access_limiting": true,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-US-21-USC-1521-ETSEQ-DFC",
+        "authority_type": "federal_requirement",
+        "citation": "21 U.S.C. Chapter 20, Subchapter II, Part A (Drug-Free Communities Support Program) (U.S. Code House): https://uscode.house.gov/view.xhtml?edition=prelim&path=%2Fprelim%40title21%2Fchapter20%2Fsubchapter2%2FpartA",
+        "administering_body": "Office of National Drug Control Policy (ONDCP) and Substance Abuse and Mental Health Services Administration (SAMHSA) (as referenced in U.S. Code definitions)",
+        "governs": [
+          "MF-US-ONDCP-DFC-GRANT-TO-COPE-COALITIONS-2024"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      }
+    ],
+    "money_flow": [
+      {
+        "flow_id": "MF-AR-OPIOID-SETTLEMENT-ALLOCATION-ONE_THIRD_SPLIT-2022-2040",
+        "source": "Opioid settlement payments allocated to Arkansas (multiple settlements/bankruptcies referenced by Arkansas Opioids MOU)",
+        "intermediary": "None",
+        "destination": "State of Arkansas; Arkansas counties; Arkansas cities/towns (each one-third allocation)",
+        "amount": 0,
+        "fund_type": "settlement",
+        "fiscal_year": "2022-2040",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "AUTH-AR-OPIOIDS-MOU-EXECUTED-JUL-2021",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-QSF-INFLOW-SETTLEMENT-AMOUNTS-2022-2040",
+        "source": "Settling Pharmaceutical Supply Chain Participants (as referenced in QSF court order)",
+        "intermediary": "None",
+        "destination": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+        "amount": 0,
+        "fund_type": "settlement",
+        "fiscal_year": "2022-2040",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "AUTH-AR-QSF-ORDER-CRITTENDEN-18CV-22-355-2022-06-13",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-QSF-TO-COUNTIES-SETTLEMENT-DISTRIBUTION-2022-2040",
+        "source": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+        "intermediary": "None",
+        "destination": "Arkansas counties (as defined/covered by Arkansas Opioids MOU and Counties Distribution Agreement)",
+        "amount": 0,
+        "fund_type": "settlement",
+        "fiscal_year": "2022-2040",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "AUTH-AR-QSF-ORDER-CRITTENDEN-18CV-22-355-2022-06-13",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-QSF-TO-CITIES-SETTLEMENT-DISTRIBUTION-2022-2040",
+        "source": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+        "intermediary": "None",
+        "destination": "Arkansas cities and towns (as defined/covered by Arkansas Opioids MOU and Cities Distribution Agreement)",
+        "amount": 0,
+        "fund_type": "settlement",
+        "fiscal_year": "2022-2040",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "AUTH-AR-QSF-ORDER-CRITTENDEN-18CV-22-355-2022-06-13",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-ARORP-SETTLEMENT-DISTRIBUTION-ALL_COUNTIES-2022-2024",
+        "source": "Arkansas Opioid Recovery Partnership (ARORP) (operational disbursement program referenced by AAC)",
+        "intermediary": "None",
+        "destination": "Arkansas counties (all 75 counties referenced by AAC)",
+        "amount": 0,
+        "fund_type": "settlement",
+        "fiscal_year": "2022-2024",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "AUTH-AR-OPIOIDS-MOU-EXECUTED-JUL-2021",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-ARORP-TO-WYSAC-DATA_SYSTEM-2024",
+        "source": "Arkansas Opioid Recovery Partnership (ARORP)",
+        "intermediary": "None",
+        "destination": "Wyoming Survey and Analysis Center (WYSAC)",
+        "amount": 398087,
+        "fund_type": "settlement",
+        "fiscal_year": "2024",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "AUTH-AR-ARORP-FUNDING-GUIDELINES",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-ARORP-TO-COALITIONS-COPE-TRAINING-2024",
+        "source": "Arkansas Opioid Recovery Partnership (ARORP)",
+        "intermediary": "None",
+        "destination": "13 COPE coalitions (Coalition Partnership Empowerment project participants)",
+        "amount": 536607,
+        "fund_type": "settlement",
+        "fiscal_year": "2024",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "AUTH-AR-ARORP-FUNDING-GUIDELINES",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-US-ONDCP-DFC-GRANT-TO-COPE-COALITIONS-2024",
+        "source": "Office of National Drug Control Policy (ONDCP) (Drug-Free Communities Support Program)",
+        "intermediary": "None",
+        "destination": "Seven Arkansas COPE coalitions (listed in ARORP news release)",
+        "amount": 4375000,
+        "fund_type": "federal",
+        "fiscal_year": "2024",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "AUTH-US-21-USC-1521-ETSEQ-DFC",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-ARORP-NALOXONE-CREDIT-DISBURSEMENT-2022-2024",
+        "source": "Arkansas Opioid Recovery Partnership (ARORP) (Arkansas Naloxone Bank credit/disbursement model described by AAC)",
+        "intermediary": "None",
+        "destination": "Community organizations and law enforcement (Naloxone Community Hero projects referenced by AAC)",
+        "amount": 0,
+        "fund_type": "settlement",
+        "fiscal_year": "2022-2024",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "AUTH-AR-ARORP-FUNDING-GUIDELINES",
+        "editor_status": "pending"
+      }
+    ],
+    "evidence_item": [
+      {
+        "evidence_id": "EVID-AR-ARORP-ABOUT-ENTITY-DEFINITION",
+        "section": "ARORP_BASELINE_DEFINITION",
+        "claim_summary": "ARORP describes itself as the Arkansas Opioid Recovery Partnership and states it was created in 2022 by the Arkansas Municipal League and the Association of Arkansas Counties.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "About Us",
+          "issuing_body": "Arkansas Opioid Recovery Partnership (ARORP)",
+          "url": "https://www.arorp.org/about/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-REPORTS-INDEX",
+        "section": "ARORP_REPORTING_SOURCES",
+        "claim_summary": "ARORP publishes Annual Reports and Quarterly Reports via its official Reports page.",
+        "evidence_type": "annual_report",
+        "source": {
+          "title": "Annual & Quarterly Reports",
+          "issuing_body": "Arkansas Opioid Recovery Partnership (ARORP)",
+          "url": "https://www.arorp.org/quarterly-reports/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-ANNUAL-EVALUATION-REPORT-2024",
+        "section": "EVIDENCE_SUPPORTS_ARORP_OPERATIONS_AND_SPENDING_2024",
+        "claim_summary": "ARORP published an annual evaluation report for calendar year 2024 describing program categories and evaluation components (process, transparency, outcomes).",
+        "evidence_type": "annual_report",
+        "source": {
+          "title": "ARORP Annual Evaluation Report for 2024 (PDF)",
+          "issuing_body": "Arkansas Opioid Recovery Partnership (ARORP) (report hosted on ARORP site)",
+          "url": "https://www.arorp.org/wp-content/uploads/2025/05/ARORP-Annual-Report-for-202463.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-AAC-ARORP-UPDATES-OPIOID-SETTLEMENT-FUNDS",
+        "section": "MF-AR-ARORP-SETTLEMENT-DISTRIBUTION-ALL_COUNTIES-2022-2024",
+        "claim_summary": "AAC states ARORP has operated since November 2022 (formed by AML and AAC) and reports ARORP distributed more than $26.3 million to all 75 counties; reports naloxone disbursements and a WYSAC funding amount of $398087 for a data system and evaluation work.",
+        "evidence_type": "annual_report",
+        "source": {
+          "title": "Updates on ARORP opioid settlement funds",
+          "issuing_body": "Association of Arkansas Counties (AAC)",
+          "url": "https://www.arcounties.org/media/articles/updates-on-arorp-opioid-settlement-funds/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-AR-OPIOIDS-MOU-PDF",
+        "section": "AUTH-AR-OPIOIDS-MOU-EXECUTED-JUL-2021",
+        "claim_summary": "Executed Arkansas Opioids Memorandum of Understanding (MOU) document governing allocation and use framework for opioid settlement and bankruptcy funds in Arkansas.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Opioids MOU (Executed July 2021) (PDF)",
+          "issuing_body": "MOU signatories (State of Arkansas; Arkansas counties; Arkansas cities/towns)",
+          "url": "https://www.arorp.org/wp-content/uploads/2022/11/Arkansas-Opioids-MOU-Executed-July-2021.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-QSF-ORDER-PDF-2022-06-13",
+        "section": "AUTH-AR-QSF-ORDER-CRITTENDEN-18CV-22-355-2022-06-13",
+        "claim_summary": "Court order establishes Arkansas Opioids Qualified Settlement Fund, appoints Fund Administrator and Custodial Bank, and references governing MOU and tax treatment under IRC 468B and Treas. Reg. 1.468B-1.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Order Establishing the Arkansas Opioids Qualified Settlement Fund (PDF)",
+          "issuing_body": "Crittenden County Circuit Court (Arkansas)",
+          "url": "https://www.arorp.org/wp-content/uploads/2022/11/2022-06-13-Order-Establishing-QSF.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-COUNTIES-DISTRIBUTION-AGREEMENT-PDF",
+        "section": "AUTH-AR-COUNTIES-DISTRIBUTION-AGREEMENT",
+        "claim_summary": "Counties Distribution Agreement references the Arkansas Opioids MOU and one-third allocation rule and describes distribution mechanics for county shares (exhibits omitted in hosted version).",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Counties Distribution Agreement (PDF, without exhibits)",
+          "issuing_body": "Arkansas counties (party to agreement)",
+          "url": "https://www.arorp.org/wp-content/uploads/2022/11/Counties-Distribution-Agreement-without-exhibits.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-CITIES-DISTRIBUTION-AGREEMENT-PDF",
+        "section": "AUTH-AR-CITIES-DISTRIBUTION-AGREEMENT",
+        "claim_summary": "Cities Distribution Agreement references the Arkansas Opioids MOU and one-third allocation rule and describes distribution mechanics for city/town shares (exhibits omitted in hosted version).",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Cities Distribution Agreement (PDF, without exhibits)",
+          "issuing_body": "Arkansas cities and towns (party to agreement)",
+          "url": "https://www.arorp.org/wp-content/uploads/2022/11/Cities-Distribution-Agreement-without-exhibits.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-FUNDING-GUIDELINES-PAGE",
+        "section": "AUTH-AR-ARORP-FUNDING-GUIDELINES",
+        "claim_summary": "ARORP publishes funding guidelines requiring letters of support for proposals not submitted by the Partnership Director and stating that noncompliance may result in funding termination.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Funding Opportunities (includes ARORP Funding Guidelines)",
+          "issuing_body": "Arkansas Opioid Recovery Partnership (ARORP)",
+          "url": "https://www.arorp.org/funding-opportunities/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-NEWS-COPE-DFC-2024-09-19",
+        "section": "MF-AR-ARORP-TO-COALITIONS-COPE-TRAINING-2024",
+        "claim_summary": "ARORP reports an initial $536607 investment supporting 13 COPE coalitions for training to prepare Drug-Free Communities grant applications; reports that seven coalitions received DFC grants at $125000 per year for five years ($625000 each).",
+        "evidence_type": "annual_report",
+        "source": {
+          "title": "Arkansas coalitions receive nearly $4.4 million for substance use prevention",
+          "issuing_body": "Arkansas Opioid Recovery Partnership (ARORP)",
+          "url": "https://www.arorp.org/arkansas-coalitions-receive-nearly-4-4-million-for-substance-use-prevention/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-US-USCODE-DFC-PART-A",
+        "section": "AUTH-US-21-USC-1521-ETSEQ-DFC",
+        "claim_summary": "U.S. Code House provides text for 21 U.S.C. Chapter 20 Subchapter II Part A describing the Drug-Free Communities Support Program framework and definitions referencing ONDCP and SAMHSA roles.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "U.S. Code: Part A—Drug-Free Communities Support Program",
+          "issuing_body": "Office of the Law Revision Counsel (U.S. House of Representatives) (U.S. Code publication)",
+          "url": "https://uscode.house.gov/view.xhtml?edition=prelim&path=%2Fprelim%40title21%2Fchapter20%2Fsubchapter2%2FpartA"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-US-IRC-468B-TEXT",
+        "section": "AUTH-US-IRC-26-USC-468B",
+        "claim_summary": "Federal statute text for 26 U.S.C. 468B governing designated settlement funds, referenced by Arkansas QSF order.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "26 U.S.C. § 468B",
+          "issuing_body": "United States (U.S. Code as published via Cornell LII)",
+          "url": "https://www.law.cornell.edu/uscode/text/26/468B"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-US-26-CFR-1-468B-1-TEXT",
+        "section": "AUTH-US-26-CFR-1-468B-1",
+        "claim_summary": "Federal regulation text for 26 CFR 1.468B-1 defining Qualified Settlement Funds, referenced by Arkansas QSF order.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "26 CFR § 1.468B-1",
+          "issuing_body": "United States (CFR as published via Cornell LII)",
+          "url": "https://www.law.cornell.edu/cfr/text/26/1.468B-1"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ACHI-OPIOID-SETTLEMENT-PRINCIPLES-2022-08",
+        "section": "MF-AR-OPIOID-SETTLEMENT-ALLOCATION-ONE_THIRD_SPLIT-2022-2040",
+        "claim_summary": "ACHI policy brief discusses Arkansas opioid settlement expectations (including an approximate $216 million figure and payment horizon beginning late 2022 or 2023) and notes the MOU allocation framework.",
+        "evidence_type": "annual_report",
+        "source": {
+          "title": "Principles to Guide Spending of Opioid Settlement Funds (PDF)",
+          "issuing_body": "Arkansas Center for Health Improvement (ACHI)",
+          "url": "https://achi.net/wp-content/uploads/2022/08/220621A_Opioid-Settlement.pdf"
+        },
+        "confidence_level": "medium",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-OTHER-OPIOIDSETTLEMENTGUIDES-ARKANSAS-TOTAL-2024-09-01",
+        "section": "SETTLEMENT_TOTALS_CONTEXT",
+        "claim_summary": "OpioidSettlementGuides community guide page reports a rounded total funds figure for Arkansas opioid settlements ($227.70 million) and provides a transparency-oriented overview (secondary source).",
+        "evidence_type": "annual_report",
+        "source": {
+          "title": "Arkansas' Opioid Settlements (Community Guide)",
+          "issuing_body": "OpioidSettlementGuides.com",
+          "url": "https://www.opioidsettlementguides.com/arkansas"
+        },
+        "confidence_level": "low",
+        "editor_status": "pending"
+      }
+    ],
+    "field_validation": [
+      {
+        "fv_id": "FV-AR-ARORP-TRANSPARENCY-EVALUATION-WYSAC-2024",
+        "jurisdiction": "Arkansas",
+        "validating_entity": "Wyoming Survey and Analysis Center (WYSAC)",
+        "alignment_status": "open",
+        "evidence_basis": [
+          "EVID-AR-AAC-ARORP-UPDATES-OPIOID-SETTLEMENT-FUNDS",
+          "EVID-AR-ARORP-ANNUAL-EVALUATION-REPORT-2024"
+        ],
+        "disclosure_level": "public",
+        "editor_status": "pending"
+      }
+    ]
+  },
+  "extraction_notes": "Known gaps from the provided sources: (1) exact ledger-grade totals for settlement inflows to Arkansas and exact amounts distributed by ARORP beyond narrative phrasing (e.g., 'more than $26.3 million') require either an ARORP transparency report/ledger export or QSF disbursement statements; (2) recipient-level award tables for ARORP-funded projects were not extracted here because the specific project list/table pages were not captured in the provided research excerpt; (3) denial lists, denial counts, appeal mechanisms, and audit findings were not evidenced in the captured sources; ARORP navigation indicates 'Denial Reports' and 'Transparency Reports' sections exist, but individual denial/audit documents were not included in the excerpted set; (4) naloxone disbursement totals in AAC reporting include cents and were preserved in evidence but the money_flow amount is set to 0 to avoid rounding/truncation."
+}

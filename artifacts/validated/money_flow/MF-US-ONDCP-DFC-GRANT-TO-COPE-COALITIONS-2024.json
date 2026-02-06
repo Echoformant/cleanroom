@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-US-ONDCP-DFC-GRANT-TO-COPE-COALITIONS-2024",
+  "source": "Office of National Drug Control Policy (ONDCP) (Drug-Free Communities Support Program)",
+  "intermediary": "None",
+  "destination": "Seven Arkansas COPE coalitions (listed in ARORP news release)",
+  "amount": 4375000,
+  "fund_type": "federal",
+  "fiscal_year": "2024",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "AUTH-US-21-USC-1521-ETSEQ-DFC",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-EXTRACTION-2026-02-06",
+  "_ingested_at": "2026-02-06T02:53:39.624163"
+}

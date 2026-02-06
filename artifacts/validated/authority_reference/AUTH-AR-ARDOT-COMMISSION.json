@@ -1,0 +1,17 @@
+{
+  "authority_id": "AUTH-AR-ARDOT-COMMISSION",
+  "authority_type": "policy",
+  "citation": "Arkansas Department of Transportation Commission membership listing (2025)",
+  "administering_body": "Arkansas Department of Transportation",
+  "governs": [
+    "MF-AR-HIGHWAY-FUND-ARDOT-FY2026",
+    "MF-AR-HIGHWAY-REVENUE-DISTRIBUTION-COUNTIES-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.775950"
+}

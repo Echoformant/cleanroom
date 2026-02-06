@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-AAC-AUDIT-ARORP-ADMIN-2024",
+  "section": "FV-AR-ARORP-TRANSPARENCY-EVALUATION-WYSAC-2024",
+  "claim_summary": "AAC 2024 financial audit shows ARORP administrative expenses of $74,186 and salaries/taxes/benefits of $243,790 (total program expenses $317,976)",
+  "evidence_type": "audit",
+  "source": {
+    "title": "Association of Arkansas Counties 2024 Financial Audit",
+    "issuing_body": "Association of Arkansas Counties (AAC)",
+    "url": "https://www.arcounties.org/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-DEEP-RESEARCH-2026-02-06",
+  "_ingested_at": "2026-02-06T03:19:14.797219"
+}

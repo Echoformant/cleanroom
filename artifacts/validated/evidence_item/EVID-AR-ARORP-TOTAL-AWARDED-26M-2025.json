@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-TOTAL-AWARDED-26M-2025",
+  "section": "MF-AR-ARORP-SETTLEMENT-DISTRIBUTION-ALL_COUNTIES-2022-2024",
+  "claim_summary": "ARORP awarded more than $26.3 million to 142 projects across all 75 counties by mid-2025, funding 384 recovery beds, 26 prevention/education programs, 11 overdose response teams, 35 peer recovery specialists, and 60,000 naloxone kits",
+  "evidence_type": "annual_report",
+  "source": {
+    "title": "ARORP 2024 Annual Evaluation Report and AAC reporting",
+    "issuing_body": "Arkansas Opioid Recovery Partnership (ARORP)",
+    "url": "https://www.arorp.org/quarterly-reports/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-DEEP-RESEARCH-2026-02-06",
+  "_ingested_at": "2026-02-06T03:19:14.796360"
+}

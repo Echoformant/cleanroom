@@ -1,0 +1,16 @@
+{
+  "authority_id": "AUTH-US-OPIOID-SETTLEMENT-DISTRIBUTOR",
+  "authority_type": "settlement",
+  "citation": "National Opioid Settlement - Distributor Settlement (AmerisourceBergen, Cardinal Health, McKesson): https://nationalopioidofficialsettlement.com",
+  "administering_body": "National Opioid Settlement Administrator",
+  "governs": [
+    "MF-AR-OPIOID-DISTRIBUTOR-SETTLEMENT-2022-2038"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-DEEP-RESEARCH-2026-02-06",
+  "_ingested_at": "2026-02-06T03:19:14.785114"
+}

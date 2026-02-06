@@ -1,0 +1,17 @@
+{
+  "fv_id": "FV-GAP-AUTH-AR-CONSTITUTION-ART16-SEC12",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "[GAP STUB - validating entity needed]",
+  "alignment_status": "open",
+  "evidence_basis": [
+    "AUTH-AR-CONSTITUTION-ART16-SEC12"
+  ],
+  "disclosure_level": "restricted",
+  "editor_status": "pending",
+  "_gap_metadata": {
+    "generated_by": "gap_analyzer",
+    "gap_type": "MISSING_VALIDATION",
+    "source_artifact": "AUTH-AR-CONSTITUTION-ART16-SEC12",
+    "detected_at": "2026-02-06T07:53:20.938371+00:00"
+  }
+}

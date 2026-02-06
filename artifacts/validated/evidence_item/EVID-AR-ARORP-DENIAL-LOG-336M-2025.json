@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-DENIAL-LOG-336M-2025",
+  "section": "AUTH-AR-ARORP-FUNDING-GUIDELINES",
+  "claim_summary": "ARORP denial log (October 2025) shows 247 denied proposals requesting approximately $336 million; reasons include missing local approvals, budgets not tied to opioid abatement, proposals that supplant existing programs, and lack of evaluation plans",
+  "evidence_type": "policy",
+  "source": {
+    "title": "ARORP Denial Log (spreadsheet)",
+    "issuing_body": "Arkansas Opioid Recovery Partnership (ARORP)",
+    "url": "https://www.arorp.org/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-DEEP-RESEARCH-2026-02-06",
+  "_ingested_at": "2026-02-06T03:19:14.796827"
+}

@@ -1,0 +1,18 @@
+{
+  "authority_id": "AUTH-AR-ARORP-FUNDING-GUIDELINES",
+  "authority_type": "policy",
+  "citation": "ARORP Funding Guidelines (webpage): https://www.arorp.org/funding-opportunities/",
+  "administering_body": "Arkansas Opioid Recovery Partnership (ARORP)",
+  "governs": [
+    "MF-AR-ARORP-TO-WYSAC-DATA_SYSTEM-2024",
+    "MF-AR-ARORP-TO-COALITIONS-COPE-TRAINING-2024",
+    "MF-AR-ARORP-NALOXONE-CREDIT-DISBURSEMENT-2022-2024"
+  ],
+  "effects": {
+    "access_limiting": true,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-EXTRACTION-2026-02-06",
+  "_ingested_at": "2026-02-06T02:53:39.619352"
+}

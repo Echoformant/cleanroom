@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-RECIDIVISM-REPORTING-FY2026",
+  "source": "Arkansas Department of Corrections",
+  "intermediary": "None",
+  "destination": "Arkansas Crime Information Center (recidivism report generation)",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Code §12-1-101 defines recidivism and requires entities that make recidivism reports to use the definition provided",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-06",
+  "_ingested_at": "2026-02-06T03:05:22.637826"
+}

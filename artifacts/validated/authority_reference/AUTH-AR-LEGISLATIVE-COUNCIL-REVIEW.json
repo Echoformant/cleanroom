@@ -1,0 +1,14 @@
+{
+  "authority_id": "AUTH-AR-LEGISLATIVE-COUNCIL-REVIEW",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 10-3-309",
+  "administering_body": "Arkansas Legislative Council",
+  "governs": [],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": true
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.777718"
+}

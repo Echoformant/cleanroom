@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-20-47-101-REPEALED",
+  "section": "AUTH-AR-ACA-20-47-101",
+  "claim_summary": "Ark. Code §20-47-101 (formerly requiring peace officers to arrest insane or drunken persons) was repealed by Act 423 of 2017",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code §20-47-101 – [Repealed]",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/2024/title-20/subtitle-3/chapter-47/subchapter-1/section-20-47-101/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-06",
+  "_ingested_at": "2026-02-06T03:05:22.649186"
+}

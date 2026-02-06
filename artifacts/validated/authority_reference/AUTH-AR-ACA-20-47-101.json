@@ -1,0 +1,14 @@
+{
+  "authority_id": "AUTH-AR-ACA-20-47-101",
+  "authority_type": "statute",
+  "citation": "Ark. Code § 20-47-101 (repealed)",
+  "administering_body": "Arkansas law enforcement officers",
+  "governs": [],
+  "effects": {
+    "access_limiting": true,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-06",
+  "_ingested_at": "2026-02-06T03:05:22.642940"
+}

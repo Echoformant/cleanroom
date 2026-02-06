@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-US-USCODE-DFC-PART-A",
+  "section": "AUTH-US-21-USC-1521-ETSEQ-DFC",
+  "claim_summary": "U.S. Code House provides text for 21 U.S.C. Chapter 20 Subchapter II Part A describing the Drug-Free Communities Support Program framework and definitions referencing ONDCP and SAMHSA roles.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "U.S. Code: Part A—Drug-Free Communities Support Program",
+    "issuing_body": "Office of the Law Revision Counsel (U.S. House of Representatives) (U.S. Code publication)",
+    "url": "https://uscode.house.gov/view.xhtml?edition=prelim&path=%2Fprelim%40title21%2Fchapter20%2Fsubchapter2%2FpartA"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-EXTRACTION-2026-02-06",
+  "_ingested_at": "2026-02-06T02:53:39.631649"
+}

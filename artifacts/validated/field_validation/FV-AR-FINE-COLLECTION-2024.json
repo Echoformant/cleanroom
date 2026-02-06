@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-FINE-COLLECTION-2024",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Legislative Audit",
+  "alignment_status": "mixed",
+  "evidence_basis": [
+    "EVID-AR-COURT-FINES-16-13-709",
+    "AUTH-AR-ACA-16-13-709-FINE-DISTRIBUTION"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.787533"
+}

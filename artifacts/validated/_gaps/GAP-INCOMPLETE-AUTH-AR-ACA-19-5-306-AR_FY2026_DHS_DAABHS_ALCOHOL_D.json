@@ -6,7 +6,7 @@
   "source_field": "governs[0]",
   "target_reference": "AR_FY2026_DHS_DAABHS_ALCOHOL_DRUG_ABUSE_COORD_COUNCIL_STATE_FUNDS_ACT890_SEC8_ITEM33",
   "target_category": "money_flow",
-  "detected_at": "2026-02-05T17:08:11.569522+00:00",
+  "detected_at": "2026-02-06T07:53:20.907474+00:00",
   "stub_generated": true,
   "stub_path": "C:\\Threshold\\cleanroom\\artifacts\\validated\\_stubs\\AR_FY2026_DHS_DAABHS_ALCOHOL_DRUG_ABUSE_COORD_COUNCIL_STATE_FUNDS_ACT890_SEC8_ITEM33.json"
 }

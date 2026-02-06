@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-19-4-101-TITLE",
+  "section": "AUTH-AR-ACA-19-4-101",
+  "claim_summary": "Ark. Code §19-4-101 names the chapter the 'General Accounting and Budgetary Procedures Law', establishing statewide budgeting procedures",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code §19-4-101 – General Accounting and Budgetary Procedures Law",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/2024/title-19/chapter-4/section-19-4-101/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-06",
+  "_ingested_at": "2026-02-06T03:05:22.645436"
+}

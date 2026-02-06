@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-COURT-FINES-16-13-709",
+  "section": "AUTH-AR-ACA-16-13-709-FINE-DISTRIBUTION",
+  "claim_summary": "Section 16-13-709 directs that fines collected each month in circuit court be disbursed to the State Administration of Justice Fund, county administration of justice fund, and appropriate county fund or state agency【734638216646988†L76-L83】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code § 16-13-709 - Responsibility for collection",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/title-16/subtitle-2/chapter-13/subchapter-7/section-16-13-709/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.781359"
+}

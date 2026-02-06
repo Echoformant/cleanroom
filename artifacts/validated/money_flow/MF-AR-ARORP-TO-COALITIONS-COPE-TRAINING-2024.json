@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-ARORP-TO-COALITIONS-COPE-TRAINING-2024",
+  "source": "Arkansas Opioid Recovery Partnership (ARORP)",
+  "intermediary": "None",
+  "destination": "13 COPE coalitions (Coalition Partnership Empowerment project participants)",
+  "amount": 536607,
+  "fund_type": "settlement",
+  "fiscal_year": "2024",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "AUTH-AR-ARORP-FUNDING-GUIDELINES",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-EXTRACTION-2026-02-06",
+  "_ingested_at": "2026-02-06T02:53:39.623644"
+}

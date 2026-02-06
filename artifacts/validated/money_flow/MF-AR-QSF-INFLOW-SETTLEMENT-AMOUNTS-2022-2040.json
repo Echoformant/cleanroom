@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-QSF-INFLOW-SETTLEMENT-AMOUNTS-2022-2040",
+  "source": "Settling Pharmaceutical Supply Chain Participants (as referenced in QSF court order)",
+  "intermediary": "None",
+  "destination": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+  "amount": 0,
+  "fund_type": "settlement",
+  "fiscal_year": "2022-2040",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "AUTH-AR-QSF-ORDER-CRITTENDEN-18CV-22-355-2022-06-13",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-EXTRACTION-2026-02-06",
+  "_ingested_at": "2026-02-06T02:53:39.620809"
+}

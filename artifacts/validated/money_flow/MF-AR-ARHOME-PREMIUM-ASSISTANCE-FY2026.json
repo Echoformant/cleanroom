@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-ARHOME-PREMIUM-ASSISTANCE-FY2026",
+  "source": "Medicaid Expansion Funds (federal and state match)",
+  "intermediary": "Qualified Health Plan carriers",
+  "destination": "Health insurance premiums for ARHOME beneficiaries",
+  "amount": 0,
+  "fund_type": "federal",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": true,
+    "dhs_controlled": true
+  },
+  "statutory_basis": "CMS ARHOME 1115 Demonstration approval letter dated Dec. 21, 2021 – authorizes premium assistance for expansion population【118221702928095†L16-L39】",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.768371"
+}

@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-AG-TO-CHILDRENS-HOSPITAL-OPIOID-RESEARCH-2023",
+  "source": "Arkansas Attorney General (State's one-third settlement share)",
+  "intermediary": "None",
+  "destination": "Arkansas Children's Hospital - National Center for Opioid Research & Clinical Effectiveness",
+  "amount": 50000000,
+  "fund_type": "settlement",
+  "fiscal_year": "2023",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "AG Tim Griffin allocation from state opioid settlement share",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-DEEP-RESEARCH-2026-02-06",
+  "_ingested_at": "2026-02-06T03:19:14.795080"
+}

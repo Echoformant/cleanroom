@@ -1,0 +1,16 @@
+{
+  "authority_id": "AUTH-US-OPIOID-SETTLEMENT-ALLERGAN",
+  "authority_type": "settlement",
+  "citation": "Allergan Opioid Settlement Agreement: https://nationalopioidofficialsettlement.com",
+  "administering_body": "National Opioid Settlement Administrator",
+  "governs": [
+    "MF-AR-OPIOID-ALLERGAN-SETTLEMENT-2024-2030"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-DEEP-RESEARCH-2026-02-06",
+  "_ingested_at": "2026-02-06T03:19:14.789045"
+}

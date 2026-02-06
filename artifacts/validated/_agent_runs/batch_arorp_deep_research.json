@@ -1,0 +1,284 @@
+{
+  "batch_id": "BATCH-ARORP-DEEP-RESEARCH-2026-02-06",
+  "mode": "deep-research-extraction",
+  "subject": "ARORP Deep Research - Settlement Payment Schedules",
+  "generated_at": "2026-02-06",
+  "source_summary": "ChatGPT Deep Research on ARORP using nationalopioidofficialsettlement.com payment schedules, AAC financial audits, WYSAC transparency evaluations, and court documents",
+  "total_artifacts": 24,
+  "artifacts": {
+    "authority_reference": [
+      {
+        "authority_id": "AUTH-US-OPIOID-SETTLEMENT-DISTRIBUTOR",
+        "authority_type": "settlement",
+        "citation": "National Opioid Settlement - Distributor Settlement (AmerisourceBergen, Cardinal Health, McKesson): https://nationalopioidofficialsettlement.com",
+        "administering_body": "National Opioid Settlement Administrator",
+        "governs": ["MF-AR-OPIOID-DISTRIBUTOR-SETTLEMENT-2022-2038"],
+        "effects": {"access_limiting": false, "appeal_mechanism": false},
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-US-OPIOID-SETTLEMENT-JANSSEN",
+        "authority_type": "settlement",
+        "citation": "National Opioid Settlement - Janssen/Johnson & Johnson Settlement: https://nationalopioidofficialsettlement.com",
+        "administering_body": "National Opioid Settlement Administrator",
+        "governs": ["MF-AR-OPIOID-JANSSEN-SETTLEMENT-2022-2031"],
+        "effects": {"access_limiting": false, "appeal_mechanism": false},
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-US-OPIOID-SETTLEMENT-CVS",
+        "authority_type": "settlement",
+        "citation": "CVS Opioid Settlement Agreement: https://nationalopioidofficialsettlement.com",
+        "administering_body": "National Opioid Settlement Administrator",
+        "governs": ["MF-AR-OPIOID-CVS-SETTLEMENT-2024-2032"],
+        "effects": {"access_limiting": false, "appeal_mechanism": false},
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-US-OPIOID-SETTLEMENT-WALGREENS",
+        "authority_type": "settlement",
+        "citation": "Walgreens Opioid Settlement Agreement: https://nationalopioidofficialsettlement.com",
+        "administering_body": "National Opioid Settlement Administrator",
+        "governs": ["MF-AR-OPIOID-WALGREENS-SETTLEMENT-2024-2037"],
+        "effects": {"access_limiting": false, "appeal_mechanism": false},
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-US-OPIOID-SETTLEMENT-WALMART",
+        "authority_type": "settlement",
+        "citation": "Walmart Opioid Settlement Agreement: https://nationalopioidofficialsettlement.com",
+        "administering_body": "National Opioid Settlement Administrator",
+        "governs": ["MF-AR-OPIOID-WALMART-SETTLEMENT-2024"],
+        "effects": {"access_limiting": false, "appeal_mechanism": false},
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-US-OPIOID-SETTLEMENT-KROGER",
+        "authority_type": "settlement",
+        "citation": "Kroger Opioid Settlement Agreement: https://nationalopioidofficialsettlement.com",
+        "administering_body": "National Opioid Settlement Administrator",
+        "governs": ["MF-AR-OPIOID-KROGER-SETTLEMENT-2025-2034"],
+        "effects": {"access_limiting": false, "appeal_mechanism": false},
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-US-OPIOID-SETTLEMENT-TEVA",
+        "authority_type": "settlement",
+        "citation": "Teva Opioid Settlement Agreement: https://nationalopioidofficialsettlement.com",
+        "administering_body": "National Opioid Settlement Administrator",
+        "governs": ["MF-AR-OPIOID-TEVA-SETTLEMENT-2024-2035"],
+        "effects": {"access_limiting": false, "appeal_mechanism": false},
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-US-OPIOID-SETTLEMENT-ALLERGAN",
+        "authority_type": "settlement",
+        "citation": "Allergan Opioid Settlement Agreement: https://nationalopioidofficialsettlement.com",
+        "administering_body": "National Opioid Settlement Administrator",
+        "governs": ["MF-AR-OPIOID-ALLERGAN-SETTLEMENT-2024-2030"],
+        "effects": {"access_limiting": false, "appeal_mechanism": false},
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-19-8-303",
+        "authority_type": "statute",
+        "citation": "Ark. Code Ann. § 19-8-303 (Local government association definition)",
+        "administering_body": "Arkansas General Assembly",
+        "governs": ["AUTH-AR-OPIOIDS-MOU-EXECUTED-JUL-2021"],
+        "effects": {"access_limiting": false, "appeal_mechanism": false},
+        "editor_status": "pending"
+      }
+    ],
+    "money_flow": [
+      {
+        "flow_id": "MF-AR-OPIOID-DISTRIBUTOR-SETTLEMENT-2022-2038",
+        "source": "Distributor Settlement (AmerisourceBergen, Cardinal Health, McKesson)",
+        "intermediary": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+        "destination": "State of Arkansas; Arkansas counties; Arkansas cities/towns",
+        "amount": 177500000,
+        "fund_type": "settlement",
+        "fiscal_year": "2022-2038",
+        "restrictions": {"medicaid": false, "dhs_controlled": false},
+        "statutory_basis": "AUTH-US-OPIOID-SETTLEMENT-DISTRIBUTOR; 18 payments from 2022-2038",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-OPIOID-JANSSEN-SETTLEMENT-2022-2031",
+        "source": "Janssen/Johnson & Johnson Settlement",
+        "intermediary": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+        "destination": "State of Arkansas; Arkansas counties; Arkansas cities/towns",
+        "amount": 41400000,
+        "fund_type": "settlement",
+        "fiscal_year": "2022-2031",
+        "restrictions": {"medicaid": false, "dhs_controlled": false},
+        "statutory_basis": "AUTH-US-OPIOID-SETTLEMENT-JANSSEN; 6 payments including accelerated payments",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-OPIOID-CVS-SETTLEMENT-2024-2032",
+        "source": "CVS Opioid Settlement",
+        "intermediary": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+        "destination": "State of Arkansas; Arkansas counties; Arkansas cities/towns",
+        "amount": 44200000,
+        "fund_type": "settlement",
+        "fiscal_year": "2024-2032",
+        "restrictions": {"medicaid": false, "dhs_controlled": false},
+        "statutory_basis": "AUTH-US-OPIOID-SETTLEMENT-CVS; 10 payments from 2024-2032",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-OPIOID-WALGREENS-SETTLEMENT-2024-2037",
+        "source": "Walgreens Opioid Settlement",
+        "intermediary": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+        "destination": "State of Arkansas; Arkansas counties; Arkansas cities/towns",
+        "amount": 48000000,
+        "fund_type": "settlement",
+        "fiscal_year": "2024-2037",
+        "restrictions": {"medicaid": false, "dhs_controlled": false},
+        "statutory_basis": "AUTH-US-OPIOID-SETTLEMENT-WALGREENS; 15 payments from 2024-2037",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-OPIOID-WALMART-SETTLEMENT-2024",
+        "source": "Walmart Opioid Settlement",
+        "intermediary": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+        "destination": "State of Arkansas; Arkansas counties; Arkansas cities/towns",
+        "amount": 25000000,
+        "fund_type": "settlement",
+        "fiscal_year": "2024",
+        "restrictions": {"medicaid": false, "dhs_controlled": false},
+        "statutory_basis": "AUTH-US-OPIOID-SETTLEMENT-WALMART; lump-sum payment in 2024",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-OPIOID-KROGER-SETTLEMENT-2025-2034",
+        "source": "Kroger Opioid Settlement",
+        "intermediary": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+        "destination": "State of Arkansas; Arkansas counties; Arkansas cities/towns",
+        "amount": 13600000,
+        "fund_type": "settlement",
+        "fiscal_year": "2025-2034",
+        "restrictions": {"medicaid": false, "dhs_controlled": false},
+        "statutory_basis": "AUTH-US-OPIOID-SETTLEMENT-KROGER; 11 payments from 2025-2034",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-OPIOID-TEVA-SETTLEMENT-2024-2035",
+        "source": "Teva Opioid Settlement",
+        "intermediary": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+        "destination": "State of Arkansas; Arkansas counties; Arkansas cities/towns",
+        "amount": 36500000,
+        "fund_type": "settlement",
+        "fiscal_year": "2024-2035",
+        "restrictions": {"medicaid": false, "dhs_controlled": false},
+        "statutory_basis": "AUTH-US-OPIOID-SETTLEMENT-TEVA; 13 payments from 2024-2035",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-OPIOID-ALLERGAN-SETTLEMENT-2024-2030",
+        "source": "Allergan Opioid Settlement",
+        "intermediary": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+        "destination": "State of Arkansas; Arkansas counties; Arkansas cities/towns",
+        "amount": 20100000,
+        "fund_type": "settlement",
+        "fiscal_year": "2024-2030",
+        "restrictions": {"medicaid": false, "dhs_controlled": false},
+        "statutory_basis": "AUTH-US-OPIOID-SETTLEMENT-ALLERGAN; 7 payments from 2024-2030",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-AG-TO-CHILDRENS-HOSPITAL-OPIOID-RESEARCH-2023",
+        "source": "Arkansas Attorney General (State's one-third settlement share)",
+        "intermediary": "None",
+        "destination": "Arkansas Children's Hospital - National Center for Opioid Research & Clinical Effectiveness",
+        "amount": 50000000,
+        "fund_type": "settlement",
+        "fiscal_year": "2023",
+        "restrictions": {"medicaid": false, "dhs_controlled": false},
+        "statutory_basis": "AG Tim Griffin allocation from state opioid settlement share",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-ARORP-TO-HOPE-MOVEMENT-2023-2024",
+        "source": "Arkansas Opioid Recovery Partnership (ARORP)",
+        "intermediary": "None",
+        "destination": "Hope Movement family support program",
+        "amount": 1011030,
+        "fund_type": "settlement",
+        "fiscal_year": "2023-2024",
+        "restrictions": {"medicaid": false, "dhs_controlled": false},
+        "statutory_basis": "AUTH-AR-ARORP-FUNDING-GUIDELINES",
+        "editor_status": "pending"
+      }
+    ],
+    "evidence_item": [
+      {
+        "evidence_id": "EVID-AR-ARORP-TOTAL-AWARDED-26M-2025",
+        "section": "MF-AR-ARORP-SETTLEMENT-DISTRIBUTION-ALL_COUNTIES-2022-2024",
+        "claim_summary": "ARORP awarded more than $26.3 million to 142 projects across all 75 counties by mid-2025, funding 384 recovery beds, 26 prevention/education programs, 11 overdose response teams, 35 peer recovery specialists, and 60,000 naloxone kits",
+        "evidence_type": "annual_report",
+        "source": {
+          "title": "ARORP 2024 Annual Evaluation Report and AAC reporting",
+          "issuing_body": "Arkansas Opioid Recovery Partnership (ARORP)",
+          "url": "https://www.arorp.org/quarterly-reports/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-DENIAL-LOG-336M-2025",
+        "section": "AUTH-AR-ARORP-FUNDING-GUIDELINES",
+        "claim_summary": "ARORP denial log (October 2025) shows 247 denied proposals requesting approximately $336 million; reasons include missing local approvals, budgets not tied to opioid abatement, proposals that supplant existing programs, and lack of evaluation plans",
+        "evidence_type": "policy",
+        "source": {
+          "title": "ARORP Denial Log (spreadsheet)",
+          "issuing_body": "Arkansas Opioid Recovery Partnership (ARORP)",
+          "url": "https://www.arorp.org/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-AAC-AUDIT-ARORP-ADMIN-2024",
+        "section": "FV-AR-ARORP-TRANSPARENCY-EVALUATION-WYSAC-2024",
+        "claim_summary": "AAC 2024 financial audit shows ARORP administrative expenses of $74,186 and salaries/taxes/benefits of $243,790 (total program expenses $317,976)",
+        "evidence_type": "audit",
+        "source": {
+          "title": "Association of Arkansas Counties 2024 Financial Audit",
+          "issuing_body": "Association of Arkansas Counties (AAC)",
+          "url": "https://www.arcounties.org/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-WYSAC-TRANSPARENCY-SCORE-12-16-2024",
+        "section": "FV-AR-ARORP-TRANSPARENCY-EVALUATION-WYSAC-2024",
+        "claim_summary": "Wyoming Survey & Analysis Center scored ARORP 12 out of 16 on transparency in 2024, praising availability of award lists but criticizing lack of published meeting agendas, decision-making criteria, and board member biographies",
+        "evidence_type": "audit",
+        "source": {
+          "title": "WYSAC Transparency Evaluation 2024",
+          "issuing_body": "Wyoming Survey & Analysis Center (WYSAC)",
+          "url": "https://www.arorp.org/quarterly-reports/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-US-NATIONAL-SETTLEMENT-PAYMENT-SCHEDULES",
+        "section": "SETTLEMENT_TOTALS_CONTEXT",
+        "claim_summary": "National Opioid Settlement website publishes state-by-state payment schedules showing Arkansas slated to receive over $406 million from eight major settlements (Distributor, Janssen, Teva, Allergan, CVS, Walgreens, Walmart, Kroger)",
+        "evidence_type": "policy",
+        "source": {
+          "title": "State Payment Schedules",
+          "issuing_body": "National Opioid Settlement Administrator",
+          "url": "https://nationalopioidofficialsettlement.com"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      }
+    ],
+    "field_validation": []
+  },
+  "extraction_notes": "This batch supplements the earlier ARORP extraction with specific settlement payment amounts and timelines from nationalopioidofficialsettlement.com, AAC financial audit details, WYSAC transparency scores, and the AG's $50M allocation to Arkansas Children's Hospital."
+}

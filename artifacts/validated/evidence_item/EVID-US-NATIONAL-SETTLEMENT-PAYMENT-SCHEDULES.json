@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-US-NATIONAL-SETTLEMENT-PAYMENT-SCHEDULES",
+  "section": "SETTLEMENT_TOTALS_CONTEXT",
+  "claim_summary": "National Opioid Settlement website publishes state-by-state payment schedules showing Arkansas slated to receive over $406 million from eight major settlements (Distributor, Janssen, Teva, Allergan, CVS, Walgreens, Walmart, Kroger)",
+  "evidence_type": "policy",
+  "source": {
+    "title": "State Payment Schedules",
+    "issuing_body": "National Opioid Settlement Administrator",
+    "url": "https://nationalopioidofficialsettlement.com"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-DEEP-RESEARCH-2026-02-06",
+  "_ingested_at": "2026-02-06T03:19:14.798443"
+}

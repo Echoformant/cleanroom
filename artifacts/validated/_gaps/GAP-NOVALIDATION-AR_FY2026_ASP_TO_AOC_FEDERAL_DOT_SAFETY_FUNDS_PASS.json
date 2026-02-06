@@ -6,7 +6,7 @@
   "source_field": null,
   "target_reference": "[field_validation for AR_FY2026_ASP_TO_AOC_FEDERAL_DOT_SAFETY_FUNDS_PASS_THROUGH_ACT776_SEC36]",
   "target_category": "field_validation",
-  "detected_at": "2026-02-05T17:08:11.590686+00:00",
+  "detected_at": "2026-02-06T07:53:20.938371+00:00",
   "stub_generated": true,
   "stub_path": "C:\\Threshold\\cleanroom\\artifacts\\validated\\_stubs\\FV-GAP-AR_FY2026_ASP_TO_AOC_FEDERAL_DOT_SAFETY_.json"
 }

@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-12-1-101-RECIDIVISM",
+  "section": "AUTH-AR-ACA-12-1-101",
+  "claim_summary": "Ark. Code §12-1-101 defines recidivism as a criminal act resulting in rearrest, reconviction, or return to incarceration within three years of release and requires entities submitting recidivism reports to use this definition",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code §12-1-101 – Recidivism reporting",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/2014/title-12/subtitle-1/chapter-1/section-12-1-101/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-06",
+  "_ingested_at": "2026-02-06T03:05:22.649795"
+}

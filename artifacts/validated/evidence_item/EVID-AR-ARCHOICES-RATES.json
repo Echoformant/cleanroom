@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARCHOICES-RATES",
+  "section": "AUTH-AR-ARCHOICES-WAIVER",
+  "claim_summary": "A multi-state comparison of Medicaid HCBS reimbursement rates lists Arkansas rates: personal care $18 per hour, home-delivered meals $5.97 per meal, and personal emergency response monitoring $1.07 per day【415148646089510†L42-L149】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Home- and Community-Based Services Reimbursement Rate Comparison",
+    "issuing_body": "unknown (state survey)",
+    "url": "https://www.example.com/hcbs-rate-comparison.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.784045"
+}

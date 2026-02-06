@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-CONSTITUTION-ART16-SEC11",
+  "section": "AUTH-AR-CONSTITUTION-ART16-SEC11",
+  "claim_summary": "Section 11 states that no tax shall be levied except pursuant to law, each tax law must state the object of the tax, and revenues from a tax must be used only for that purpose【245433829553952†L51-L53】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Constitution Article 16 § 11",
+    "issuing_body": "State of Arkansas",
+    "url": "https://law.justia.com/constitution/arkansas/article-16/section-11/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.779446"
+}

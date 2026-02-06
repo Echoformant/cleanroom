@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-19-5-602-COUNTY-AID",
+  "section": "MF-AR-COUNTY-AID-FUND-DISTRIBUTION-FY2026",
+  "claim_summary": "Ark. Code §19-5-602 creates the County Aid Fund, funded by general revenue and highway user imposts; it shall be distributed to counties with 75% equal share and 25% by population; audited by Legislative Audit",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code §19-5-602 – County Aid Fund",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/2024/title-19/chapter-5/section-19-5-602/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-06",
+  "_ingested_at": "2026-02-06T03:05:22.645912"
+}

@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARHOME-CMS-LETTER",
+  "section": "AUTH-AR-1115-WAIVER-ARHOME",
+  "claim_summary": "CMS’s December 21, 2021 ARHOME 1115 waiver approval letter authorizes Arkansas to use premium assistance for Medicaid beneficiaries up to 133% of the federal poverty level to purchase qualified health plan coverage, limit retroactive eligibility to 30 days, and temporarily charge premiums up to 2% of income until December 31, 2022【118221702928095†L16-L39】.",
+  "evidence_type": "cms_approval",
+  "source": {
+    "title": "ARHOME Demonstration Approval Letter",
+    "issuing_body": "Centers for Medicare & Medicaid Services",
+    "url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-approvals/arhome"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.783006"
+}

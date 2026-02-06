@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-ARORP-SETTLEMENT-DISTRIBUTION-ALL_COUNTIES-2022-2024",
+  "source": "Arkansas Opioid Recovery Partnership (ARORP) (operational disbursement program referenced by AAC)",
+  "intermediary": "None",
+  "destination": "Arkansas counties (all 75 counties referenced by AAC)",
+  "amount": 0,
+  "fund_type": "settlement",
+  "fiscal_year": "2022-2024",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "AUTH-AR-OPIOIDS-MOU-EXECUTED-JUL-2021",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-EXTRACTION-2026-02-06",
+  "_ingested_at": "2026-02-06T02:53:39.622555"
+}

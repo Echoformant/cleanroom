@@ -1,0 +1,16 @@
+{
+  "authority_id": "AUTH-AR-ACA-16-13-709-FINE-DISTRIBUTION",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 16-13-709",
+  "administering_body": "County officials and Department of Finance and Administration",
+  "governs": [
+    "MF-AR-COURT-FINES-TO-JUSTICE-FUND-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.774970"
+}

@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-COUNTY-AID-19-5-602",
+  "section": "AUTH-AR-ACA-19-5-602-COUNTY-AID",
+  "claim_summary": "Section 19-5-602 establishes the County Aid Fund, consisting of general and special revenues, and requires distribution of general revenues with 75% divided equally among the 75 counties and 25% based on population【949553513461219†L87-L100】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code § 19-5-602 - County Aid Fund",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/title-19/chapter-5/subchapter-6/section-19-5-602/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.780916"
+}

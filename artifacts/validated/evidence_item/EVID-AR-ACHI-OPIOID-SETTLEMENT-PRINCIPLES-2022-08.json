@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ACHI-OPIOID-SETTLEMENT-PRINCIPLES-2022-08",
+  "section": "MF-AR-OPIOID-SETTLEMENT-ALLOCATION-ONE_THIRD_SPLIT-2022-2040",
+  "claim_summary": "ACHI policy brief discusses Arkansas opioid settlement expectations (including an approximate $216 million figure and payment horizon beginning late 2022 or 2023) and notes the MOU allocation framework.",
+  "evidence_type": "annual_report",
+  "source": {
+    "title": "Principles to Guide Spending of Opioid Settlement Funds (PDF)",
+    "issuing_body": "Arkansas Center for Health Improvement (ACHI)",
+    "url": "https://achi.net/wp-content/uploads/2022/08/220621A_Opioid-Settlement.pdf"
+  },
+  "confidence_level": "medium",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-EXTRACTION-2026-02-06",
+  "_ingested_at": "2026-02-06T02:53:39.633074"
+}

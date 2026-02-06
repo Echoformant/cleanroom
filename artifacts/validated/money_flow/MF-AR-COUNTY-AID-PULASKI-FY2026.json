@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-COUNTY-AID-PULASKI-FY2026",
+  "source": "County Aid Fund",
+  "intermediary": "State Treasury",
+  "destination": "Pulaski County",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2025-2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Code Ann. § 19-5-602(c)(1)(A)-(B) – county receives equal share plus population-based share【949553513461219†L87-L100】",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.772093"
+}

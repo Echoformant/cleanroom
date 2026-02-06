@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-CONSTITUTION-ART16-SEC13",
+  "section": "AUTH-AR-CONSTITUTION-ART16-SEC13",
+  "claim_summary": "Section 13 authorizes any citizen to sue to protect against illegal exactions【752443152901368†L51-L53】.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Constitution Article 16 § 13",
+    "issuing_body": "State of Arkansas",
+    "url": "https://law.justia.com/constitution/arkansas/article-16/section-13/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.780445"
+}

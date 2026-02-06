@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-CONSTITUTION-APPROPRIATION-COMPLIANCE-FY2026",
+  "source": "Arkansas General Assembly",
+  "intermediary": "None",
+  "destination": "Various state agencies",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Const. Art. 16, § 12 (No money paid from treasury without appropriation)",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-06",
+  "_ingested_at": "2026-02-06T03:05:22.633325"
+}

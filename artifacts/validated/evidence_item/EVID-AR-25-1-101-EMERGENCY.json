@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-25-1-101-EMERGENCY",
+  "section": "AUTH-AR-ACA-25-1-101",
+  "claim_summary": "Ark. Code §25-1-101 states that whenever a due to enemy attack or threat it is imprudent or impossible to conduct affairs of state at the normal location, the Governor may declare an emergency temporary location for the seat of government and acts performed there are valid",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code §25-1-101 – Emergency relocation of seat of government",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://law.justia.com/codes/arkansas/2024/title-25/chapter-1/subchapter-1/section-25-1-101/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-06",
+  "_ingested_at": "2026-02-06T03:05:22.646503"
+}

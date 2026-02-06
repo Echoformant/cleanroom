@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-ARORP-NALOXONE-CREDIT-DISBURSEMENT-2022-2024",
+  "source": "Arkansas Opioid Recovery Partnership (ARORP) (Arkansas Naloxone Bank credit/disbursement model described by AAC)",
+  "intermediary": "None",
+  "destination": "Community organizations and law enforcement (Naloxone Community Hero projects referenced by AAC)",
+  "amount": 0,
+  "fund_type": "settlement",
+  "fiscal_year": "2022-2024",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "AUTH-AR-ARORP-FUNDING-GUIDELINES",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-EXTRACTION-2026-02-06",
+  "_ingested_at": "2026-02-06T02:53:39.625113"
+}

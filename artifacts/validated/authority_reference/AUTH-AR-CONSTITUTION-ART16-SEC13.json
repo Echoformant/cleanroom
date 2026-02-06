@@ -1,0 +1,14 @@
+{
+  "authority_id": "AUTH-AR-CONSTITUTION-ART16-SEC13",
+  "authority_type": "constitution",
+  "citation": "Ark. Const. art. 16, § 13",
+  "administering_body": "State of Arkansas",
+  "governs": [],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": true
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.774140"
+}

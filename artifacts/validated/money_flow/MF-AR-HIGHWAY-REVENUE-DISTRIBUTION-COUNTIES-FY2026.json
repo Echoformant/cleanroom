@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-HIGHWAY-REVENUE-DISTRIBUTION-COUNTIES-FY2026",
+  "source": "State Highway Revenues",
+  "intermediary": "State Treasury",
+  "destination": "Arkansas counties and municipalities",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2025-2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Code Ann. § 27-70-201 et seq.; § 19-5-602(b)(2) – special revenues derived from highway user imposts are distributed as authorized by law【949553513461219†L74-L83】",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.767837"
+}

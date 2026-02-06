@@ -1,0 +1,18 @@
+{
+  "authority_id": "AUTH-AR-ARCHOICES-WAIVER",
+  "authority_type": "waiver",
+  "citation": "ARChoices Home and Community-Based Services Waiver (0195.R06.00)",
+  "administering_body": "Arkansas Department of Human Services",
+  "governs": [
+    "MF-AR-ARCHOICES-PERSONAL-CARE-FY2026",
+    "MF-AR-ARCHOICES-HOME-MEALS-FY2026",
+    "MF-AR-ARCHOICES-PERS-SYSTEM-FY2026"
+  ],
+  "effects": {
+    "access_limiting": true,
+    "appeal_mechanism": true
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.777180"
+}

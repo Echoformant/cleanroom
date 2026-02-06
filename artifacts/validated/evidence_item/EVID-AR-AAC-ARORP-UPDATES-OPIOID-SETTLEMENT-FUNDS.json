@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-AAC-ARORP-UPDATES-OPIOID-SETTLEMENT-FUNDS",
+  "section": "MF-AR-ARORP-SETTLEMENT-DISTRIBUTION-ALL_COUNTIES-2022-2024",
+  "claim_summary": "AAC states ARORP has operated since November 2022 (formed by AML and AAC) and reports ARORP distributed more than $26.3 million to all 75 counties; reports naloxone disbursements and a WYSAC funding amount of $398087 for a data system and evaluation work.",
+  "evidence_type": "annual_report",
+  "source": {
+    "title": "Updates on ARORP opioid settlement funds",
+    "issuing_body": "Association of Arkansas Counties (AAC)",
+    "url": "https://www.arcounties.org/media/articles/updates-on-arorp-opioid-settlement-funds/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-ARORP-EXTRACTION-2026-02-06",
+  "_ingested_at": "2026-02-06T02:53:39.627978"
+}

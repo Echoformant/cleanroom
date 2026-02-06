@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-DUR-BOARD-COMPLIANCE-2025",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Centers for Medicare & Medicaid Services",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "EVID-AR-DUR-BOARD-BYLAWS",
+    "AUTH-AR-DUR-BOARD-BYLAWS-2025"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.787998"
+}

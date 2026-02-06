@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-PASSE-REPORT",
+  "section": "AUTH-AR-PASSE-PROGRAM",
+  "claim_summary": "The PASSE quarterly report notes that Arkansas pays PASSE organizations capitation rates that must be actuarially sound and reviewed by CMS【922699166651308†L36-L47】, and that the risk corridor arrangement has allowed the state to reclaim $613 million and a 2.5% premium tax has generated $194 million in nonfederal match since 2019【922699166651308†L66-L82】.",
+  "evidence_type": "audit",
+  "source": {
+    "title": "PASSE Quarterly Report to Arkansas Legislative Council (2025)",
+    "issuing_body": "Arkansas Department of Human Services",
+    "url": "https://humanservices.arkansas.gov/wp-content/uploads/passe-quarterly-report-2025.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
+  "_ingested_at": "2026-02-06T02:57:21.783538"
+}
