@@ -1,0 +1,13 @@
+{
+  "authority_id": "AUTH-AR-OSAMH-DRUG-DIRECTOR-FISHER",
+  "authority_type": "administrative",
+  "citation": "ARORP article: Governor of Arkansas elects new Drug Director (Feb. 17, 2023)",
+  "administering_body": "Office of State Drug Director (OSAMH)",
+  "governs": [
+    "AUTH-AR-OSAMH-APR-Program"
+  ],
+  "effects": "On February 17, 2023 Governor Sarah Huckabee Sanders announced that Thomas Fisher, a former Department of Justice and DEA official, would serve as Arkansas’s new Drug Director. Fisher will succeed Boyce Hamlet and oversee the state’s drug policies while continuing collaboration with former Drug Director Kirk Lane【883227464789966†L75-L87】.",
+  "editor_status": "accepted",
+  "_ingested_from": "dhs_medicaid_peer_chain_20260207",
+  "_ingested_at": "2026-02-07T00:20:39.714214"
+}

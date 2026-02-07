@@ -1,0 +1,14 @@
+{
+  "authority_id": "AUTH-AR-20-64-1001",
+  "authority_type": "statute",
+  "citation": "Ark. Code § 20‑64‑1001 (Arkansas Drug Director)",
+  "administering_body": "Office of Substance Abuse and Mental Health (OSAMH)",
+  "governs": [
+    "AUTH-AR-OSAMH-DRUG-DIRECTOR-LANE",
+    "AUTH-AR-OSAMH-DRUG-DIRECTOR-FISHER"
+  ],
+  "effects": "Creates the position of Arkansas Drug Director within OSAMH; the director, appointed by the governor, coordinates alcohol and drug programs and performs financial monitoring of drug task forces【888369347257430†L74-L103】.",
+  "editor_status": "accepted",
+  "_ingested_from": "dhs_medicaid_peer_chain_20260207",
+  "_ingested_at": "2026-02-07T00:20:39.706376"
+}

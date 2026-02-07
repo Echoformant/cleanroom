@@ -6,7 +6,7 @@
   "source_field": "section",
   "target_reference": "AUTH-AR-ACA-25-10-129",
   "target_category": "authority_reference",
-  "detected_at": "2026-02-06T07:53:20.907474+00:00",
-  "stub_generated": true,
-  "stub_path": "C:\\Threshold\\cleanroom\\artifacts\\validated\\_stubs\\AUTH-AR-ACA-25-10-129.json"
+  "detected_at": "2026-02-07T06:20:56.118533+00:00",
+  "stub_generated": false,
+  "stub_path": null
 }

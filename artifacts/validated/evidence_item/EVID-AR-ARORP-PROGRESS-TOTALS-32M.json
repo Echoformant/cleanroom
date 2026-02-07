@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-PROGRESS-TOTALS-32M",
+  "section": "MF-AR-ARORP-TOTAL-FUNDED-32M-2022-2026",
+  "claim_summary": "ARORP Progress page: Funding Totals $32,971,144.38; Naloxone Amount $2,397,541.93",
+  "evidence_type": "budget",
+  "source": {
+    "document": "Progress Map / Funding Totals",
+    "url": "https://www.arorp.org/progress/",
+    "retrieved": "2026-02-06"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.405214"
+}

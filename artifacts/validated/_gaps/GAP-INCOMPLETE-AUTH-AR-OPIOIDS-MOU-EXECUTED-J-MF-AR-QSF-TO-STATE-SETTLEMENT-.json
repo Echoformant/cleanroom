@@ -1,0 +1,12 @@
+{
+  "gap_id": "GAP-INCOMPLETE-AUTH-AR-OPIOIDS-MOU-EXECUTED-J-MF-AR-QSF-TO-STATE-SETTLEMENT-",
+  "gap_type": "INCOMPLETE_CHAIN",
+  "source_artifact": "AUTH-AR-OPIOIDS-MOU-EXECUTED-JUL-2021",
+  "source_category": "authority_reference",
+  "source_field": "governs[3]",
+  "target_reference": "MF-AR-QSF-TO-STATE-SETTLEMENT-DISTRIBUTION-2022-2040",
+  "target_category": "money_flow",
+  "detected_at": "2026-02-07T06:20:56.118533+00:00",
+  "stub_generated": false,
+  "stub_path": null
+}

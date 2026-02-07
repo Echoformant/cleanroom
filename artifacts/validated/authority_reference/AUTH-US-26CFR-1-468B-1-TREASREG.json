@@ -1,0 +1,13 @@
+{
+  "authority_id": "AUTH-US-26CFR-1-468B-1-TREASREG",
+  "authority_type": "regulation",
+  "citation": "Treas. Reg. section 1.468B-1 (Qualified Settlement Funds)",
+  "administering_body": "U.S. Department of the Treasury",
+  "governs": [
+    "AUTH-AR-QSF-ORDER-18CV-22-355"
+  ],
+  "effects": "Treasury regulations implementing IRC section 468B for QSFs",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.398507"
+}

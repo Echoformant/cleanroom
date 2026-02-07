@@ -1,0 +1,12 @@
+{
+  "gap_id": "GAP-NOVALIDATION-MF-AR-OPIOID-DISTRIBUTOR-SETTLEMENT-2022-2038",
+  "gap_type": "MISSING_VALIDATION",
+  "source_artifact": "MF-AR-OPIOID-DISTRIBUTOR-SETTLEMENT-2022-2038",
+  "source_category": "money_flow",
+  "source_field": null,
+  "target_reference": "[field_validation for MF-AR-OPIOID-DISTRIBUTOR-SETTLEMENT-2022-2038]",
+  "target_category": "field_validation",
+  "detected_at": "2026-02-07T06:20:56.157418+00:00",
+  "stub_generated": false,
+  "stub_path": null
+}

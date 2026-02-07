@@ -1,0 +1,22 @@
+{
+  "flow_id": "MF-AR-ARORP-142-PROJECTS-26M-2024H1",
+  "source": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+  "intermediary": "Arkansas Opioid Recovery Partnership (ARORP)",
+  "destination": "142 funded projects across all 75 counties (per AAC)",
+  "amount": 26000000,
+  "fund_type": "state",
+  "fiscal_year": "FY2024",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false,
+    "opioid_abatement": true
+  },
+  "statutory_basis": "Arkansas Opioids MOU; Distributors Settlement Exhibit E",
+  "statutory_basis_refs": [
+    "AUTH-AR-OPIOIDS-MOU-2021-07",
+    "AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E"
+  ],
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.396323"
+}

@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-PROJECT-CADCA-TRAINING",
+  "section": "MF-AR-ARORP-TO-CADCA-TRAINING-FY2023",
+  "claim_summary": "Project ARORP22-005: CADCA $385,745 for Arkansas City/County Officials Training",
+  "evidence_type": "budget",
+  "source": {
+    "document": "CADCA Training",
+    "url": "https://www.arorp.org/project/cadca-training/",
+    "retrieved": "2026-02-06"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.412888"
+}

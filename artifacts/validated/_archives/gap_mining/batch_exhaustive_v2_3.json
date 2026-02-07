@@ -1,0 +1,1250 @@
+{
+  "batch_id": "BATCH-EXHAUSTIVE-V2-2026-02-06",
+  "mode": "exhaustive-v2",
+  "generated_at": "2026-02-06",
+  "total_artifacts": 47,
+  "total_anchors_processed": 15,
+  "artifacts": {
+    "money_flow": [
+      {
+        "flow_id": "MF-AR-CONSTITUTION-APPROPRIATION-COMPLIANCE-FY2026",
+        "source": "Arkansas General Assembly",
+        "intermediary": "None",
+        "destination": "Various state agencies",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Ark. Const. Art. 16, \u00a7 12 (No money paid from treasury without appropriation)",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-PUBLIC-FUNDS-CONTRACT-DISCLOSURE-FY2026",
+        "source": "Various state entities",
+        "intermediary": "None",
+        "destination": "Arkansas General Assembly members (information access)",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Proposed Ark. Code \u00a7 19-1-101 requiring contracts funded by public funds be available to legislators",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-BUDGET-PROCESS-FY2026",
+        "source": "State revenue",
+        "intermediary": "Department of Finance and Administration",
+        "destination": "State agencies via annual appropriations",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Ark. Code \u00a7 19-4-101 establishing the General Accounting and Budgetary Procedures Law",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-COUNTY-AID-FUND-DISTRIBUTION-FY2026",
+        "source": "General revenues and special revenues derived from highway user imposts",
+        "intermediary": "Treasurer of State",
+        "destination": "75 counties of Arkansas",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Ark. Code \u00a719-5-602 establishes the County Aid Fund with distribution formula (75% equal share, 25% by population) and audit requirements",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-EMERGENCY-RELOCATION-GOVERNMENT-FY2026",
+        "source": "State of Arkansas",
+        "intermediary": "Governor's Office",
+        "destination": "Emergency temporary location operations",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Ark. Code \u00a725-1-101 allows the Governor to declare an emergency temporary location for the seat of government during emergencies",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-EDUCATION-AUDIT-COMPLIANCE-FY2026",
+        "source": "Arkansas Legislative Audit",
+        "intermediary": "None",
+        "destination": "Publicly funded educational institutions",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Ark. Code \u00a76-1-101 requires audits of publicly funded educational institutions and review of compliance with specific finance laws and teacher pay provisions",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-TANF-TEA-PROGRAM-FY2026",
+        "source": "Federal Temporary Assistance for Needy Families (TANF) block grant",
+        "intermediary": "Arkansas Department of Human Services",
+        "destination": "Transitional Employment Assistance Program beneficiaries",
+        "amount": 0,
+        "fund_type": "federal",
+        "fiscal_year": "2025-2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": true
+        },
+        "statutory_basis": "Ark. Code \u00a720-76-101 defines terms relating to public assistance programs including the Transitional Employment Assistance Program, which is funded by TANF block grants and state maintenance of effort",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-STATE-HOSPITAL-SERVICES-FY2026",
+        "source": "Arkansas General Assembly",
+        "intermediary": "None",
+        "destination": "Arkansas State Hospital and affiliated agencies",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Ark. Code \u00a720-46-101 directs the State Board of Health and the Board of Trustees of the University of Arkansas to work with the Arkansas State Hospital to implement mental health services and objectives",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-RECIDIVISM-REPORTING-FY2026",
+        "source": "Arkansas Department of Corrections",
+        "intermediary": "None",
+        "destination": "Arkansas Crime Information Center (recidivism report generation)",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Ark. Code \u00a712-1-101 defines recidivism and requires entities that make recidivism reports to use the definition provided",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-GENERAL-APPROPRIATION-OPERATIONS-FY2026",
+        "source": "Constitutional Officers Fund",
+        "intermediary": "None",
+        "destination": "Executive, Legislative, and Judicial branches of government",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2025-2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Act 1 of 2025 appropriates funds from the Constitutional Officers Fund to pay for salaries and expenses of various state agencies, including the executive, legislative, and judicial branches",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-GENERAL-REVENUE-DIST-GENERAL-FUND-FY2026",
+        "source": "State general revenue collections",
+        "intermediary": "Treasurer of State",
+        "destination": "General Revenue Fund Account",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Ark. Code \u00a719-6-201 et seq. and the Revenue Stabilization Law provide for distribution of state general revenue collections into various fund accounts, including the General Revenue Fund",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-GENERAL-REVENUE-DIST-COUNTY-AID-FY2026",
+        "source": "State general revenue collections",
+        "intermediary": "Treasurer of State",
+        "destination": "County Aid Fund",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Ark. Code \u00a719-5-602 requires distribution of general revenue to the County Aid Fund",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-HIGHWAY-FUND-DIST-ARDOT-FY2026",
+        "source": "Highway revenues (motor fuel taxes, user fees)",
+        "intermediary": "Treasurer of State",
+        "destination": "Arkansas Department of Transportation (ARDOT)",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Ark. Const. Art. 16, \u00a7 11 and state highway laws allocate motor fuel tax revenues to the State Highway and Transportation Department Fund",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-HIGHWAY-FUND-DIST-COUNTY-ROAD-FY2026",
+        "source": "Highway revenues",
+        "intermediary": "Treasurer of State",
+        "destination": "County Highway Funds",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "State highway revenue laws distribute a portion of fuel taxes to counties for road maintenance",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-EDUCATION-FOUNDATION-FUND-K12-FY2026",
+        "source": "Public School Fund (state foundation funding)",
+        "intermediary": "Department of Education Division of Elementary and Secondary Education",
+        "destination": "Arkansas school districts",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Public School Funding Act of 2003 (\u00a7 6-20-2301 et seq.) establishes the foundation funding formula to distribute state funds to school districts based on average daily membership and other factors",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-HIGHER-ED-UNIV-APPROPRIATION-FY2026",
+        "source": "Higher Education Grants and Tuition income",
+        "intermediary": "Arkansas Division of Higher Education",
+        "destination": "University of Arkansas System and Arkansas State University System",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Ark. Code \u00a76-61-222 authorizes the Arkansas Higher Education Coordinating Board to allocate state appropriations to institutions of higher education",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-CORRECTIONS-GENERAL-FY2026",
+        "source": "Arkansas General Revenue Fund",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Corrections",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Act 517 of 2025 \u00a7 operations; Ark. Code Ann. \u00a7 12-27-103",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-CORRECTIONS-COMMUNITY-FY2026",
+        "source": "Arkansas General Revenue Fund",
+        "intermediary": "None",
+        "destination": "Arkansas Division of Community Correction",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Act 517 of 2025 \u00a7 operations; Ark. Code Ann. \u00a7 12-27-103",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-STATE-EMPLOYEE-HEALTH-PREMIUMS-FY2026",
+        "source": "Participating state agencies and school districts",
+        "intermediary": "Department of Transformation and Shared Services - Employee Benefits Division",
+        "destination": "State and Public School Life and Health Insurance Program",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Ark. Code Ann. \u00a7 21-5-414(b)",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-FEDERAL-FUNDS-MEDICAID-FMAP-FY2026",
+        "source": "U.S. Department of Health and Human Services",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Human Services - Division of Medical Services",
+        "amount": 0,
+        "fund_type": "federal",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": true,
+          "dhs_controlled": true
+        },
+        "statutory_basis": "42 U.S.C. \u00a7 1396d; Ark. Code Ann. \u00a7 20-76-101",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-FEDERAL-FUNDS-TRANSPORTATION-FY2026",
+        "source": "Federal Highway Administration",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Transportation",
+        "amount": 0,
+        "fund_type": "federal",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "23 U.S.C. \u00a7 104; Ark. Code Ann. \u00a7 27-70-207",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-FEDERAL-FUNDS-EDUCATION-TITLE-I-FY2026",
+        "source": "U.S. Department of Education",
+        "intermediary": "None",
+        "destination": "Arkansas Department of Education",
+        "amount": 0,
+        "fund_type": "federal",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "20 U.S.C. \u00a7 6301; Ark. Code Ann. \u00a7 6-20-2301",
+        "editor_status": "pending"
+      }
+    ],
+    "authority_reference": [
+      {
+        "authority_id": "AUTH-AR-CONST-ART16-SEC12",
+        "authority_type": "constitution",
+        "citation": "Ark. Const. Art. 16, \u00a7 12",
+        "administering_body": "Arkansas State Treasury",
+        "governs": [
+          "MF-AR-CONSTITUTION-APPROPRIATION-COMPLIANCE-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-CONST-ART16-SEC3",
+        "authority_type": "constitution",
+        "citation": "Ark. Const. Art. 16, \u00a7 3",
+        "administering_body": "Arkansas State Treasury",
+        "governs": [],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": true
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-19-1-101-CONTRACTS",
+        "authority_type": "statute",
+        "citation": "Ark. Code \u00a7 19-1-101 (proposal on contracts paid with public funds)",
+        "administering_body": "Arkansas Legislative Council",
+        "governs": [
+          "MF-AR-PUBLIC-FUNDS-CONTRACT-DISCLOSURE-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-19-4-101",
+        "authority_type": "statute",
+        "citation": "Ark. Code \u00a7 19-4-101",
+        "administering_body": "Department of Finance and Administration",
+        "governs": [
+          "MF-AR-BUDGET-PROCESS-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-19-5-602",
+        "authority_type": "statute",
+        "citation": "Ark. Code \u00a7 19-5-602 (County Aid Fund)",
+        "administering_body": "Treasurer of State",
+        "governs": [
+          "MF-AR-COUNTY-AID-FUND-DISTRIBUTION-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-25-1-101",
+        "authority_type": "statute",
+        "citation": "Ark. Code \u00a7 25-1-101 (Emergency relocation of seat of government)",
+        "administering_body": "Governor of Arkansas",
+        "governs": [],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-6-1-101",
+        "authority_type": "statute",
+        "citation": "Ark. Code \u00a7 6-1-101",
+        "administering_body": "Arkansas State Board of Education",
+        "governs": [
+          "MF-AR-EDUCATION-AUDIT-COMPLIANCE-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": true
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-20-76-101",
+        "authority_type": "statute",
+        "citation": "Ark. Code \u00a7 20-76-101",
+        "administering_body": "Arkansas Department of Human Services",
+        "governs": [
+          "MF-AR-TANF-TEA-PROGRAM-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": true
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-20-46-101",
+        "authority_type": "statute",
+        "citation": "Ark. Code \u00a7 20-46-101",
+        "administering_body": "State Board of Health and Board of Trustees of the University of Arkansas",
+        "governs": [
+          "MF-AR-STATE-HOSPITAL-SERVICES-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": true
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-20-47-101",
+        "authority_type": "statute",
+        "citation": "Ark. Code \u00a7 20-47-101 (repealed)",
+        "administering_body": "Arkansas law enforcement officers",
+        "governs": [],
+        "effects": {
+          "access_limiting": true,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-12-1-101",
+        "authority_type": "statute",
+        "citation": "Ark. Code \u00a7 12-1-101",
+        "administering_body": "Arkansas Crime Information Center",
+        "governs": [
+          "MF-AR-RECIDIVISM-REPORTING-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACT-1-2025",
+        "authority_type": "act",
+        "citation": "Act 1 of 2025 (General Appropriation Act)",
+        "administering_body": "Arkansas General Assembly",
+        "governs": [
+          "MF-AR-GENERAL-APPROPRIATION-OPERATIONS-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-19-5-101",
+        "authority_type": "statute",
+        "citation": "Ark. Code \u00a7 19-5-101 (Revenue Stabilization Law)",
+        "administering_body": "Department of Finance and Administration",
+        "governs": [
+          "MF-AR-GENERAL-REVENUE-DIST-GENERAL-FUND-FY2026",
+          "MF-AR-GENERAL-REVENUE-DIST-COUNTY-AID-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-STATE-HIGHWAY-FUND-LAWS",
+        "authority_type": "statute",
+        "citation": "Ark. Code \u00a7\u00a7 27-70-206 et seq. (Highway Revenue Distribution)",
+        "administering_body": "Arkansas Department of Transportation",
+        "governs": [
+          "MF-AR-HIGHWAY-FUND-DIST-ARDOT-FY2026",
+          "MF-AR-HIGHWAY-FUND-DIST-COUNTY-ROAD-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-6-20-2301",
+        "authority_type": "statute",
+        "citation": "Ark. Code \u00a7 6-20-2301 et seq. (Public School Funding Act of 2003)",
+        "administering_body": "Arkansas Division of Elementary and Secondary Education",
+        "governs": [
+          "MF-AR-EDUCATION-FOUNDATION-FUND-K12-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-6-61-222",
+        "authority_type": "statute",
+        "citation": "Ark. Code \u00a7 6-61-222 (Higher Education Coordinating Board \u2013 Authority to allocate appropriations)",
+        "administering_body": "Arkansas Division of Higher Education",
+        "governs": [
+          "MF-AR-HIGHER-ED-UNIV-APPROPRIATION-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-12-27-103",
+        "authority_type": "statute",
+        "citation": "Ark. Code Ann. \u00a7 12-27-103",
+        "administering_body": "Arkansas Department of Corrections",
+        "governs": [
+          "MF-AR-CORRECTIONS-GENERAL-FY2026",
+          "MF-AR-CORRECTIONS-COMMUNITY-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACT-517-2025",
+        "authority_type": "act",
+        "citation": "Act 517 of 2025 (Department of Corrections Appropriation)",
+        "administering_body": "Arkansas Department of Corrections",
+        "governs": [
+          "MF-AR-CORRECTIONS-GENERAL-FY2026",
+          "MF-AR-CORRECTIONS-COMMUNITY-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-21-5-414",
+        "authority_type": "statute",
+        "citation": "Ark. Code Ann. \u00a7 21-5-414(b)",
+        "administering_body": "Department of Transformation and Shared Services",
+        "governs": [
+          "MF-AR-STATE-EMPLOYEE-HEALTH-PREMIUMS-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-US-SSA-1396D",
+        "authority_type": "statute",
+        "citation": "42 U.S.C. \u00a7 1396d",
+        "administering_body": "Centers for Medicare & Medicaid Services",
+        "governs": [
+          "MF-AR-FEDERAL-FUNDS-MEDICAID-FMAP-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-US-FHWA-23-104",
+        "authority_type": "statute",
+        "citation": "23 U.S.C. \u00a7 104",
+        "administering_body": "Federal Highway Administration",
+        "governs": [
+          "MF-AR-FEDERAL-FUNDS-TRANSPORTATION-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-US-DOE-6301",
+        "authority_type": "statute",
+        "citation": "20 U.S.C. \u00a7 6301",
+        "administering_body": "U.S. Department of Education",
+        "governs": [
+          "MF-AR-FEDERAL-FUNDS-EDUCATION-TITLE-I-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      }
+    ],
+    "evidence_item": [
+      {
+        "evidence_id": "EVID-AR-CONST-ART16-SEC12-APPROPRIATION",
+        "section": "AUTH-AR-CONST-ART16-SEC12",
+        "claim_summary": "Section 12 requires that no money shall be paid out of the state treasury until appropriated by law and only in accordance with that appropriation",
+        "evidence_type": "constitutional",
+        "source": {
+          "title": "Arkansas Constitution Article 16 Section 12",
+          "issuing_body": "Arkansas Constitution",
+          "url": "https://law.justia.com/constitution/arkansas/article-16/section-12"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ISP-2021-107-CONTRACTS",
+        "section": "AUTH-AR-ACA-19-1-101-CONTRACTS",
+        "claim_summary": "The interim study proposal 2021-107 for Ark. Code \u00a719-1-101 requires entities using public funds for contracts to make contract details available to the General Assembly.",
+        "evidence_type": "legislative",
+        "source": {
+          "title": "Interim Study Proposal 2021-107 \u2013 Contracts funded by public funds",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://arkleg.state.ar.us/Home/FTPDocument?path=%2FAssembly%2FMeeting+Attachments%2F010%2F4879%2FG1.+Interim+Study+Proposal+%E2%80%93+An+Act+Concerning+Contracts+funded+by+Public+Funds++.pdf"
+        },
+        "confidence_level": "medium",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-19-4-101-TITLE",
+        "section": "AUTH-AR-ACA-19-4-101",
+        "claim_summary": "Ark. Code \u00a719-4-101 names the chapter the 'General Accounting and Budgetary Procedures Law', establishing statewide budgeting procedures",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Code \u00a719-4-101 \u2013 General Accounting and Budgetary Procedures Law",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://law.justia.com/codes/arkansas/2024/title-19/chapter-4/section-19-4-101/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-19-5-602-COUNTY-AID",
+        "section": "MF-AR-COUNTY-AID-FUND-DISTRIBUTION-FY2026",
+        "claim_summary": "Ark. Code \u00a719-5-602 creates the County Aid Fund, funded by general revenue and highway user imposts; it shall be distributed to counties with 75% equal share and 25% by population; audited by Legislative Audit",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Code \u00a719-5-602 \u2013 County Aid Fund",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://law.justia.com/codes/arkansas/2024/title-19/chapter-5/section-19-5-602/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-25-1-101-EMERGENCY",
+        "section": "AUTH-AR-ACA-25-1-101",
+        "claim_summary": "Ark. Code \u00a725-1-101 states that whenever a due to enemy attack or threat it is imprudent or impossible to conduct affairs of state at the normal location, the Governor may declare an emergency temporary location for the seat of government and acts performed there are valid",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Code \u00a725-1-101 \u2013 Emergency relocation of seat of government",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://law.justia.com/codes/arkansas/2024/title-25/chapter-1/subchapter-1/section-25-1-101/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-6-1-101-AUDIT-REQUIREMENTS",
+        "section": "AUTH-AR-ACA-6-1-101",
+        "claim_summary": "Ark. Code \u00a76-1-101 requires Arkansas Legislative Audit or a licensed independent accountant to audit publicly funded educational institutions and review compliance with school finance laws, teacher salary statutes, and other requirements including deposit and investment of funds",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Code \u00a76-1-101 \u2013 Review of audit report by board",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://law.justia.com/codes/arkansas/2024/title-6/subtitle-1/chapter-1/subchapter-1/section-6-1-101/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-20-76-101-DEFINITIONS",
+        "section": "AUTH-AR-ACA-20-76-101",
+        "claim_summary": "Ark. Code \u00a720-76-101 defines terms such as assessment services, date of enrollment, diversion from assistance, education or training, employment assistance, extended support services, medical assistance (Medicaid), and the Temporary Assistance for Needy Families Program for the purposes of social services programs",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Code \u00a720-76-101 \u2013 Definitions",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://law.justia.com/codes/arkansas/2024/title-20/subtitle-5/chapter-76/subchapter-1/section-20-76-101/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-20-46-101-IMPLEMENTATION",
+        "section": "AUTH-AR-ACA-20-46-101",
+        "claim_summary": "Ark. Code \u00a720-46-101 authorizes and directs the State Board of Health and the Board of Trustees of the University of Arkansas to collaborate with the Arkansas State Hospital to implement mental health services and objectives",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Code \u00a720-46-101 \u2013 Implementation",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://law.justia.com/codes/arkansas/2024/title-20/subtitle-3/chapter-46/subchapter-1/section-20-46-101/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-20-47-101-REPEALED",
+        "section": "AUTH-AR-ACA-20-47-101",
+        "claim_summary": "Ark. Code \u00a720-47-101 (formerly requiring peace officers to arrest insane or drunken persons) was repealed by Act 423 of 2017",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Code \u00a720-47-101 \u2013 [Repealed]",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://law.justia.com/codes/arkansas/2024/title-20/subtitle-3/chapter-47/subchapter-1/section-20-47-101/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-12-1-101-RECIDIVISM",
+        "section": "AUTH-AR-ACA-12-1-101",
+        "claim_summary": "Ark. Code \u00a712-1-101 defines recidivism as a criminal act resulting in rearrest, reconviction, or return to incarceration within three years of release and requires entities submitting recidivism reports to use this definition",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Code \u00a712-1-101 \u2013 Recidivism reporting",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://law.justia.com/codes/arkansas/2014/title-12/subtitle-1/chapter-1/section-12-1-101/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ACT1-2025-GENERAL-APPROPRIATION",
+        "section": "AUTH-AR-ACT-1-2025",
+        "claim_summary": "Act 1 of 2025, the General Appropriation Act, allocates funds from the Constitutional Officers Fund to pay salaries and expenses of the executive, legislative, and judicial branches for fiscal years 2025-2026",
+        "evidence_type": "budget",
+        "source": {
+          "title": "General Appropriation Act for the 2025-2026 Fiscal Year (Act 1)",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://www.arkleg.state.ar.us/Bills/Detail?id=HB1002&ddBienniumSession=2025/2025R"
+        },
+        "confidence_level": "low",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-REVENUE-STABILIZATION-DISTRIBUTION",
+        "section": "MF-AR-GENERAL-REVENUE-DIST-GENERAL-FUND-FY2026",
+        "claim_summary": "The Revenue Stabilization Law directs the Treasurer to distribute general revenue collections to various fund accounts including the General Revenue Fund and County Aid Fund",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Revenue Stabilization Law (Ark. Code \u00a7\u00a719-5-101 et seq.)",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://law.justia.com/codes/arkansas/2024/title-19/chapter-5/"
+        },
+        "confidence_level": "low",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-HIGHWAY-DISTRIBUTION",
+        "section": "MF-AR-HIGHWAY-FUND-DIST-ARDOT-FY2026",
+        "claim_summary": "Arkansas highway revenue statutes allocate portions of motor fuel taxes to the State Highway and Transportation Department Fund and to county and city road funds",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Highway Revenue Distribution Statutes",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://law.justia.com/codes/arkansas/"
+        },
+        "confidence_level": "low",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-6-20-2301-FOUNDATION-FUNDING",
+        "section": "MF-AR-EDUCATION-FOUNDATION-FUND-K12-FY2026",
+        "claim_summary": "The Public School Funding Act of 2003 (Ark. Code \u00a76-20-2301 et seq.) sets the state foundation funding for K-12 education, distributing funds to school districts based on student enrollment and other factors",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Public School Funding Act of 2003",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://law.justia.com/codes/arkansas/2024/title-6/chapter-20/subchapter-23/"
+        },
+        "confidence_level": "low",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-6-61-222-HIGHER-ED-ALLOCATIONS",
+        "section": "MF-AR-HIGHER-ED-UNIV-APPROPRIATION-FY2026",
+        "claim_summary": "Ark. Code \u00a76-61-222 empowers the Arkansas Higher Education Coordinating Board to allocate state appropriations among public colleges and universities",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Code \u00a76-61-222 \u2013 Powers and duties of the Higher Education Coordinating Board",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://law.justia.com/codes/arkansas/"
+        },
+        "confidence_level": "low",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ACT517-CORRECTIONS-OPERATIONS",
+        "section": "MF-AR-CORRECTIONS-GENERAL-FY2026",
+        "claim_summary": "Act 517 of 2025 appropriates state general revenue funds for the operations of the Arkansas Department of Corrections and the Division of Community Correction; the exact amounts were not accessed [UNVERIFIED]",
+        "evidence_type": "budget",
+        "source": {
+          "title": "Act 517 of 2025 \u2013 Department of Corrections Appropriation",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2F&file=517.pdf"
+        },
+        "confidence_level": "low",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-12-27-103-CORRECTIONS-POWERS",
+        "section": "AUTH-AR-ACA-12-27-103",
+        "claim_summary": "Ark. Code \u00a7 12-27-103 establishes the Division of Correction and grants it exclusive jurisdiction over the care and custody of inmates, management of correctional facilities, and operation of classification and treatment programs\u3010383474023035326\u2020L76-L92\u3011.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Code \u00a7 12-27-103 - Division of Correction powers",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://law.justia.com/codes/arkansas/2024/title-12/section-12-27-103/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-21-5-414-CONTRIBUTIONS",
+        "section": "AUTH-AR-ACA-21-5-414",
+        "claim_summary": "Ark. Code \u00a7 21-5-414(b) requires participating entities to make monthly contributions equal to the number of budgeted state employee positions multiplied by the monthly contribution authorized by the Chief Fiscal Officer to defray the cost of life and health benefits for state employees\u3010323591194100921\u2020L74-L85\u3011.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Code \u00a7 21-5-414 - State contributions generally",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://law.justia.com/codes/arkansas/2024/title-21/section-21-5-414/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-STATE-EMP-HEALTH-APPROPRIATION",
+        "section": "MF-AR-STATE-EMPLOYEE-HEALTH-PREMIUMS-FY2026",
+        "claim_summary": "The annual appropriation act for cabinet departments and independent agencies includes funding for state employee health insurance contributions; however the specific amounts were not accessible [UNVERIFIED]",
+        "evidence_type": "budget",
+        "source": {
+          "title": "FY25 AOP for Cabinet Departments and Independent Agencies",
+          "issuing_body": "Arkansas Department of Finance and Administration",
+          "url": "https://www.dfa.arkansas.gov/wp-content/uploads/FY25_AOP_for_Cabinet_Departments_and_Independent_Agencies.pdf"
+        },
+        "confidence_level": "low",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-US-SSA-1396D-FMAP",
+        "section": "AUTH-US-SSA-1396D",
+        "claim_summary": "Section 1396d of the Social Security Act authorizes federal matching payments to states for medical assistance, establishing the federal medical assistance percentage (FMAP) for Medicaid.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "42 U.S.C. \u00a7 1396d - Federal medical assistance percentage",
+          "issuing_body": "U.S. Congress",
+          "url": "https://www.govinfo.gov/content/pkg/USCODE-2010-title42/html/USCODE-2010-title42-chap7-subchapXIX-sec1396d.htm"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-US-FHWA-23-104-APPORTIONMENT",
+        "section": "AUTH-US-FHWA-23-104",
+        "claim_summary": "23 U.S.C. \u00a7 104 provides for the apportionment of federal highway funding from the Highway Trust Fund to states for the National Highway System, surface transportation programs, and other initiatives.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "23 U.S.C. \u00a7 104 - Apportionment",
+          "issuing_body": "U.S. Congress",
+          "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title23-section104"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-US-DOE-6301-TITLE-I",
+        "section": "AUTH-US-DOE-6301",
+        "claim_summary": "20 U.S.C. \u00a7 6301 states the purpose of Title I of the Elementary and Secondary Education Act (ESEA) to ensure that all children have a fair, equitable, and significant opportunity to obtain a high-quality education and reach proficiency on state academic assessments.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "20 U.S.C. \u00a7 6301 - Statement of purpose",
+          "issuing_body": "U.S. Congress",
+          "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title20-section6301"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-FED-GRANTS-UNVERIFIED",
+        "section": "MF-AR-FEDERAL-FUNDS-MASTER-FY2026",
+        "claim_summary": "Arkansas receives substantial federal funding including Medicaid FMAP, federal highway funds, and federal education grants; specific amounts for FY2026 were not accessed [UNVERIFIED]",
+        "evidence_type": "budget",
+        "source": {
+          "title": "Federal Grants to Arkansas \u2013 Summary",
+          "issuing_body": "Arkansas Department of Finance and Administration",
+          "url": "https://www.dfa.arkansas.gov"
+        },
+        "confidence_level": "low",
+        "editor_status": "pending"
+      }
+    ],
+    "field_validation": []
+  },
+  "anchor_log": [
+    {
+      "turn": 1,
+      "anchor_id": "AUTH-AR-CONSTITUTION-ARTICLE-16",
+      "anchor_type": "authority_reference",
+      "new_auth_created": 2,
+      "new_flow_created": 1,
+      "new_evidence_created": 1,
+      "new_validation_created": 0,
+      "queued_anchors": [
+        "AUTH-AR-CONST-ART16-SEC12",
+        "AUTH-AR-CONST-ART16-SEC3",
+        "MF-AR-CONSTITUTION-APPROPRIATION-COMPLIANCE-FY2026"
+      ]
+    },
+    {
+      "turn": 2,
+      "anchor_id": "AUTH-AR-ACA-19-1-101",
+      "anchor_type": "authority_reference",
+      "new_auth_created": 1,
+      "new_flow_created": 1,
+      "new_evidence_created": 1,
+      "new_validation_created": 0,
+      "queued_anchors": [
+        "AUTH-AR-ACA-19-1-101-CONTRACTS",
+        "MF-AR-PUBLIC-FUNDS-CONTRACT-DISCLOSURE-FY2026"
+      ]
+    },
+    {
+      "turn": 3,
+      "anchor_id": "AUTH-AR-ACA-19-4-101",
+      "anchor_type": "authority_reference",
+      "new_auth_created": 1,
+      "new_flow_created": 1,
+      "new_evidence_created": 1,
+      "new_validation_created": 0,
+      "queued_anchors": [
+        "AUTH-AR-ACA-19-4-101",
+        "MF-AR-BUDGET-PROCESS-FY2026"
+      ]
+    },
+    {
+      "turn": 4,
+      "anchor_id": "AUTH-AR-ACA-19-5-101",
+      "anchor_type": "authority_reference",
+      "new_auth_created": 1,
+      "new_flow_created": 1,
+      "new_evidence_created": 1,
+      "new_validation_created": 0,
+      "queued_anchors": [
+        "AUTH-AR-ACA-19-5-602",
+        "MF-AR-COUNTY-AID-FUND-DISTRIBUTION-FY2026"
+      ]
+    },
+    {
+      "turn": 5,
+      "anchor_id": "AUTH-AR-ACA-25-1-101",
+      "anchor_type": "authority_reference",
+      "new_auth_created": 1,
+      "new_flow_created": 1,
+      "new_evidence_created": 1,
+      "new_validation_created": 0,
+      "queued_anchors": [
+        "AUTH-AR-ACA-25-1-101",
+        "MF-AR-EMERGENCY-RELOCATION-GOVERNMENT-FY2026"
+      ]
+    },
+    {
+      "turn": 6,
+      "anchor_id": "AUTH-AR-ACA-6-1-101",
+      "anchor_type": "authority_reference",
+      "new_auth_created": 1,
+      "new_flow_created": 1,
+      "new_evidence_created": 1,
+      "new_validation_created": 0,
+      "queued_anchors": [
+        "AUTH-AR-ACA-6-1-101",
+        "MF-AR-EDUCATION-AUDIT-COMPLIANCE-FY2026"
+      ]
+    },
+    {
+      "turn": 7,
+      "anchor_id": "AUTH-AR-ACA-20-76-101",
+      "anchor_type": "authority_reference",
+      "new_auth_created": 1,
+      "new_flow_created": 1,
+      "new_evidence_created": 1,
+      "new_validation_created": 0,
+      "queued_anchors": [
+        "AUTH-AR-ACA-20-76-101",
+        "MF-AR-TANF-TEA-PROGRAM-FY2026"
+      ]
+    },
+    {
+      "turn": 8,
+      "anchor_id": "AUTH-AR-ACA-20-46-101",
+      "anchor_type": "authority_reference",
+      "new_auth_created": 1,
+      "new_flow_created": 1,
+      "new_evidence_created": 1,
+      "new_validation_created": 0,
+      "queued_anchors": [
+        "AUTH-AR-ACA-20-46-101",
+        "MF-AR-STATE-HOSPITAL-SERVICES-FY2026"
+      ]
+    },
+    {
+      "turn": 9,
+      "anchor_id": "AUTH-AR-ACA-20-47-101",
+      "anchor_type": "authority_reference",
+      "new_auth_created": 1,
+      "new_flow_created": 0,
+      "new_evidence_created": 1,
+      "new_validation_created": 0,
+      "queued_anchors": [
+        "AUTH-AR-ACA-20-47-101"
+      ]
+    },
+    {
+      "turn": 10,
+      "anchor_id": "AUTH-AR-ACA-12-1-101",
+      "anchor_type": "authority_reference",
+      "new_auth_created": 1,
+      "new_flow_created": 1,
+      "new_evidence_created": 1,
+      "new_validation_created": 0,
+      "queued_anchors": [
+        "AUTH-AR-ACA-12-1-101",
+        "MF-AR-RECIDIVISM-REPORTING-FY2026"
+      ]
+    },
+    {
+      "turn": 11,
+      "anchor_id": "AUTH-AR-ACT-1-2025",
+      "anchor_type": "authority_reference",
+      "new_auth_created": 1,
+      "new_flow_created": 1,
+      "new_evidence_created": 1,
+      "new_validation_created": 0,
+      "queued_anchors": [
+        "AUTH-AR-ACT-1-2025",
+        "MF-AR-GENERAL-APPROPRIATION-OPERATIONS-FY2026"
+      ]
+    },
+    {
+      "turn": 12,
+      "anchor_id": "MF-AR-GENERAL-REVENUE-DISTRIBUTION-FY2026",
+      "anchor_type": "money_flow",
+      "new_auth_created": 1,
+      "new_flow_created": 2,
+      "new_evidence_created": 1,
+      "new_validation_created": 0,
+      "queued_anchors": [
+        "AUTH-AR-ACA-19-5-101",
+        "MF-AR-GENERAL-REVENUE-DIST-GENERAL-FUND-FY2026",
+        "MF-AR-GENERAL-REVENUE-DIST-COUNTY-AID-FY2026"
+      ]
+    },
+    {
+      "turn": 13,
+      "anchor_id": "MF-AR-HIGHWAY-FUND-DISTRIBUTION-FY2026",
+      "anchor_type": "money_flow",
+      "new_auth_created": 1,
+      "new_flow_created": 2,
+      "new_evidence_created": 1,
+      "new_validation_created": 0,
+      "queued_anchors": [
+        "AUTH-AR-STATE-HIGHWAY-FUND-LAWS",
+        "MF-AR-HIGHWAY-FUND-DIST-ARDOT-FY2026",
+        "MF-AR-HIGHWAY-FUND-DIST-COUNTY-ROAD-FY2026"
+      ]
+    },
+    {
+      "turn": 14,
+      "anchor_id": "MF-AR-EDUCATION-FOUNDATION-FUNDING-FY2026",
+      "anchor_type": "money_flow",
+      "new_auth_created": 1,
+      "new_flow_created": 1,
+      "new_evidence_created": 1,
+      "new_validation_created": 0,
+      "queued_anchors": [
+        "AUTH-AR-ACA-6-20-2301",
+        "MF-AR-EDUCATION-FOUNDATION-FUND-K12-FY2026"
+      ]
+    },
+    {
+      "turn": 15,
+      "anchor_id": "MF-AR-HIGHER-ED-APPROPRIATION-FY2026",
+      "anchor_type": "money_flow",
+      "new_auth_created": 1,
+      "new_flow_created": 1,
+      "new_evidence_created": 1,
+      "new_validation_created": 0,
+      "queued_anchors": [
+        "AUTH-AR-ACA-6-61-222",
+        "MF-AR-HIGHER-ED-UNIV-APPROPRIATION-FY2026"
+      ]
+    },
+    {
+      "turn": 16,
+      "anchor_id": "MF-AR-CORRECTIONS-OPERATIONS-FY2026",
+      "anchor_type": "money_flow",
+      "new_auth_created": 2,
+      "new_flow_created": 2,
+      "new_evidence_created": 2,
+      "new_validation_created": 0,
+      "queued_anchors": [
+        "AUTH-AR-ACA-12-27-103",
+        "AUTH-AR-ACT-517-2025",
+        "MF-AR-CORRECTIONS-GENERAL-FY2026",
+        "MF-AR-CORRECTIONS-COMMUNITY-FY2026"
+      ]
+    },
+    {
+      "turn": 17,
+      "anchor_id": "MF-AR-STATE-EMPLOYEE-BENEFITS-FY2026",
+      "anchor_type": "money_flow",
+      "new_auth_created": 1,
+      "new_flow_created": 1,
+      "new_evidence_created": 2,
+      "new_validation_created": 0,
+      "queued_anchors": [
+        "AUTH-AR-ACA-21-5-414",
+        "MF-AR-STATE-EMPLOYEE-HEALTH-PREMIUMS-FY2026"
+      ]
+    },
+    {
+      "turn": 18,
+      "anchor_id": "MF-AR-FEDERAL-FUNDS-MASTER-FY2026",
+      "anchor_type": "money_flow",
+      "new_auth_created": 3,
+      "new_flow_created": 3,
+      "new_evidence_created": 4,
+      "new_validation_created": 0,
+      "queued_anchors": [
+        "AUTH-US-SSA-1396D",
+        "AUTH-US-FHWA-23-104",
+        "AUTH-US-DOE-6301",
+        "MF-AR-FEDERAL-FUNDS-MEDICAID-FMAP-FY2026",
+        "MF-AR-FEDERAL-FUNDS-TRANSPORTATION-FY2026",
+        "MF-AR-FEDERAL-FUNDS-EDUCATION-TITLE-I-FY2026"
+      ]
+    }
+  ],
+  "seeds_processed": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true,
+    "12": true,
+    "13": true,
+    "14": true,
+    "15": true,
+    "16": true,
+    "17": true,
+    "18": true,
+    "19": false,
+    "20": false,
+    "21": false,
+    "22": false,
+    "23": false,
+    "24": false,
+    "25": false,
+    "26": false,
+    "27": false,
+    "28": false,
+    "29": false,
+    "30": false
+  },
+  "domains_covered": {
+    "constitutional_finance": true,
+    "treasury": true,
+    "appropriations": true,
+    "education": true,
+    "health_human_services": true,
+    "public_safety": true,
+    "infrastructure": true,
+    "federal_grants": true,
+    "local_government": false,
+    "governance": false,
+    "audit_compliance": false,
+    "tobacco_settlement": false,
+    "insurance_tax": false,
+    "lottery": false
+  },
+  "final_queue_state": {
+    "remaining": [],
+    "used": [],
+    "zero_count": 0
+  },
+  "completion_status": "PARTIAL",
+  "research_notes": "Partial dataset due to time and complexity; processed some seeds."
+}

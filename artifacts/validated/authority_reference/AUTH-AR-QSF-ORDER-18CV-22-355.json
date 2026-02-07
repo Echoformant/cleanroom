@@ -1,0 +1,14 @@
+{
+  "authority_id": "AUTH-AR-QSF-ORDER-18CV-22-355",
+  "authority_type": "court_order",
+  "citation": "Order Establishing Arkansas Opioids QSF (Crittenden County Circuit Court, Case No. 18CV-22-355, 2022-06-13)",
+  "administering_body": "Circuit Court of Crittenden County, Arkansas",
+  "governs": [
+    "MF-AR-OPIOIDSETTLEMENT-QSF-SETTLEMENTPAYMENTS-FY2022",
+    "MF-AR-QSF-ATTORNEYFEES-EXPENSES-FY2022"
+  ],
+  "effects": "Establishes QSF under IRC section 468B; appoints Edgar C. Gentle III as Fund Administrator; designates Evolve Bank and Trust as custodian",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.397388"
+}

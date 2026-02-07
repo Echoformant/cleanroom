@@ -1,0 +1,21 @@
+{
+  "flow_id": "MF-AR-MEDICAID-PEER-2026",
+  "source": "State and federal Medicaid funds",
+  "intermediary": "Arkansas DHS Division of Medical Services",
+  "destination": "Certified Peer Support Specialists and providers",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "FY2026",
+  "restrictions": {
+    "medicaid": true,
+    "dhs_controlled": true
+  },
+  "statutory_basis": "Ark. Code §§ 20-77-107, 20-64-602(b)(19)",
+  "statutory_basis_refs": [
+    "AUTH-AR-20-77-107",
+    "AUTH-AR-20-64-602-19"
+  ],
+  "editor_status": "accepted",
+  "_ingested_from": "dhs_medicaid_peer_chain_20260207",
+  "_ingested_at": "2026-02-07T00:20:39.703422"
+}

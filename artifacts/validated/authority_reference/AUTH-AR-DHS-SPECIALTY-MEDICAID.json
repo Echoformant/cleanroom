@@ -1,0 +1,14 @@
+{
+  "authority_id": "AUTH-AR-DHS-SPECIALTY-MEDICAID",
+  "authority_type": "administrative",
+  "citation": "Meet the Secretary page – description of Melissa Weatherton’s role",
+  "administering_body": "Specialty Medicaid Services (DHS)",
+  "governs": [
+    "AUTH-AR-DAABHS-DIRECTOR",
+    "AUTH-AR-OSAMH-DIRECTOR"
+  ],
+  "effects": "Melissa Weatherton serves as Director of Specialty Medicaid Services. She oversees specialty Medicaid programs with a focus on the Division of Developmental Disabilities Services, Division of Aging, Adult and Behavioral Health Services, and Office of Substance Abuse and Mental Health【776702696406669†L891-L899】.",
+  "editor_status": "accepted",
+  "_ingested_from": "dhs_medicaid_peer_chain_20260207",
+  "_ingested_at": "2026-02-07T00:20:39.713132"
+}

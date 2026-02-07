@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-EXHIBIT-E-PDF",
+  "section": "AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E",
+  "claim_summary": "Distributors Settlement Exhibit E lists opioid remediation core strategies and approved uses",
+  "evidence_type": "policy",
+  "source": {
+    "document": "Distributors Settlement Exhibit E Abatement",
+    "url": "https://www.arorp.org/wp-content/uploads/2022/11/Distrbutors-Settlement-Exhibit-E-Abatement.pdf",
+    "retrieved": "2026-02-06"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.404052"
+}

@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-ARORP-PROPOSAL-DENIALS",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Opioid Recovery Partnership (ARORP)",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "EVID-AR-ARORP-DENIAL-LOG-PDF",
+    "AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.417025"
+}

@@ -1,0 +1,13 @@
+{
+  "authority_id": "AUTH-AR-20-46-301",
+  "authority_type": "statute",
+  "citation": "Ark. Code § 20‑46‑301 (Division of Aging, Adult, and Behavioral Health Services)",
+  "administering_body": "Division of Aging, Adult, and Behavioral Health Services (DAABHS)",
+  "governs": [
+    "AUTH-AR-DAABHS-DIRECTOR"
+  ],
+  "effects": "Creates and empowers the Division of Aging, Adult, and Behavioral Health Services within DHS to operate mental health clinics and centers, provide mental health education programs, and lease employees to community mental health centers【884820613071200†L75-L88】.",
+  "editor_status": "accepted",
+  "_ingested_from": "dhs_medicaid_peer_chain_20260207",
+  "_ingested_at": "2026-02-07T00:20:39.705267"
+}

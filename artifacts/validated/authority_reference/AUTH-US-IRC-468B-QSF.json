@@ -1,0 +1,13 @@
+{
+  "authority_id": "AUTH-US-IRC-468B-QSF",
+  "authority_type": "statute",
+  "citation": "Internal Revenue Code section 468B (Qualified Settlement Funds)",
+  "administering_body": "United States Congress; Internal Revenue Service",
+  "governs": [
+    "AUTH-AR-QSF-ORDER-18CV-22-355"
+  ],
+  "effects": "Federal statutory basis for qualified settlement fund tax treatment",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.397935"
+}

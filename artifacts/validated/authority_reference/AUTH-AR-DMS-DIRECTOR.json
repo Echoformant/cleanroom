@@ -1,0 +1,14 @@
+{
+  "authority_id": "AUTH-AR-DMS-DIRECTOR",
+  "authority_type": "administrative",
+  "citation": "Get to Know Director Pitman page – biography of Elizabeth Pitman",
+  "administering_body": "Division of Medical Services (DMS)",
+  "governs": [
+    "MF-AR-MEDICAID-PEER-2026",
+    "AUTH-AR-PROVIDER-ENROLLMENT"
+  ],
+  "effects": "Elizabeth Pitman serves as Director of the Division of Medical Services for the Medicaid program. She manages Medicaid operations, including managed care programs, claims processing, contracts and the fee‑for‑service program【91964929200516†L874-L879】.",
+  "editor_status": "accepted",
+  "_ingested_from": "dhs_medicaid_peer_chain_20260207",
+  "_ingested_at": "2026-02-07T00:20:39.710301"
+}

@@ -1,0 +1,12 @@
+{
+  "gap_id": "GAP-NOVALIDATION-AUTH-AR-OSAMH-APR-Program",
+  "gap_type": "MISSING_VALIDATION",
+  "source_artifact": "AUTH-AR-OSAMH-APR-Program",
+  "source_category": "authority_reference",
+  "source_field": null,
+  "target_reference": "[field_validation for AUTH-AR-OSAMH-APR-Program]",
+  "target_category": "field_validation",
+  "detected_at": "2026-02-07T06:20:56.157418+00:00",
+  "stub_generated": false,
+  "stub_path": null
+}

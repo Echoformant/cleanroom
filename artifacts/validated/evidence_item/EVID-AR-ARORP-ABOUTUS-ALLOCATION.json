@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-ABOUTUS-ALLOCATION",
+  "section": "MF-AR-COUNTIES-POOLING-ARORP-FY2022",
+  "claim_summary": "ARORP About Us: partnership formed by cities/counties to pool settlement funds; MOU allocates 1/3 each",
+  "evidence_type": "policy",
+  "source": {
+    "document": "About Us",
+    "url": "https://www.arorp.org/about-us/",
+    "retrieved": "2026-02-06"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.404601"
+}

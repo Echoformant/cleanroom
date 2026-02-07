@@ -1,0 +1,20 @@
+{
+  "flow_id": "MF-AR-QSF-ATTORNEYFEES-EXPENSES-FY2022",
+  "source": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+  "intermediary": "None",
+  "destination": "Counsel for Plaintiffs (attorney fees and expenses)",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "FY2022",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "QSF Court Order 18CV-22-355",
+  "statutory_basis_refs": [
+    "AUTH-AR-QSF-ORDER-18CV-22-355"
+  ],
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.387285"
+}

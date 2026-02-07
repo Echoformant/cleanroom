@@ -1,0 +1,20 @@
+{
+  "flow_id": "MF-AR-COUNTIES-POOLING-ARORP-FY2022",
+  "source": "Arkansas counties (collectively)",
+  "intermediary": "Association of Arkansas Counties (AAC)",
+  "destination": "Arkansas Opioid Recovery Partnership (ARORP)",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "FY2022",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Counties Distribution Agreement 2022-09-19",
+  "statutory_basis_refs": [
+    "AUTH-AR-COUNTIES-DISTRIBUTION-AGREEMENT-2022"
+  ],
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.387702"
+}

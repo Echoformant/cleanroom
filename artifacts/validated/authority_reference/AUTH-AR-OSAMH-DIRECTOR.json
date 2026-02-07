@@ -1,0 +1,16 @@
+{
+  "authority_id": "AUTH-AR-OSAMH-DIRECTOR",
+  "authority_type": "administrative",
+  "citation": "Get to Know Director Stone page – biography of OSAMH director Paula Stone",
+  "administering_body": "Office of Substance Abuse and Mental Health (OSAMH)",
+  "governs": [
+    "AUTH-AR-OSAMH-APR-Program",
+    "AUTH-AR-OSAMH-APAC",
+    "AUTH-AR-OSAMH-DRUG-DIRECTOR-LANE",
+    "AUTH-AR-OSAMH-DRUG-DIRECTOR-FISHER"
+  ],
+  "effects": "Paula Stone serves as Director of OSAMH. She oversees the state’s public mental health system, the state’s forensic system, federal grant programs aimed at preventing and treating substance use disorder, and the team that leads the Arkansas State Hospital【517013002479678†L877-L889】.",
+  "editor_status": "accepted",
+  "_ingested_from": "dhs_medicaid_peer_chain_20260207",
+  "_ingested_at": "2026-02-07T00:20:39.709045"
+}

@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-ANNUAL-EVAL-2024",
+  "section": "FV-AR-ARORP-ANNUAL-EVAL-2024",
+  "claim_summary": "Annual Evaluation Report (Feb 2025) by WYSAC: 2024 process, transparency, outcome data including naloxone kits, people served",
+  "evidence_type": "audit",
+  "source": {
+    "document": "ARORP Annual Evaluation Report February 2025",
+    "url": "https://www.arorp.org/wp-content/uploads/2025/05/ARORP-Annual-Report-for-202463.pdf",
+    "retrieved": "2026-02-06"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.405906"
+}

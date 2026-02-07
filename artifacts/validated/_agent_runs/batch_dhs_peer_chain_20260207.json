@@ -1,0 +1,382 @@
+{
+  "batch_id": "dhs_medicaid_peer_chain_20260207",
+  "generated_at": "2026-02-07T03:52:23.271294Z",
+  "mode": "focused_authority_chain",
+  "total_turns": 1,
+  "artifacts": {
+    "money_flow": [
+      {
+        "flow_id": "MF-AR-MEDICAID-PEER-2026",
+        "source": "State and federal Medicaid funds",
+        "intermediary": "Arkansas DHS Division of Medical Services",
+        "destination": "Certified Peer Support Specialists and providers",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "FY2026",
+        "restrictions": {
+          "medicaid": true,
+          "dhs_controlled": true
+        },
+        "statutory_basis": "Ark. Code \u00a7\u00a7 20-77-107, 20-64-602(b)(19)",
+        "statutory_basis_refs": [
+          "AUTH-AR-20-77-107",
+          "AUTH-AR-20-64-602-19"
+        ],
+        "editor_status": "pending"
+      }
+    ],
+    "authority_reference": [
+      {
+        "authority_id": "AUTH-AR-20-77-107",
+        "authority_type": "statute",
+        "citation": "Ark. Code \u00a7 20-77-107 (Indigent Medical Care Program)",
+        "administering_body": "Department of Human Services (DHS)",
+        "governs": [
+          "MF-AR-MEDICAID-PEER-2026"
+        ],
+        "effects": "Authorizes DHS to establish and maintain an indigent medical care program and allows the DHS secretary to enter agreements with public and private entities to provide medical care to indigent persons and make rules for the program\u3010684936796028014\u2020L73-L98\u3011.",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-20-77-135",
+        "authority_type": "statute",
+        "citation": "Ark. Code \u00a7 20-77-135 (Peer support specialist background checks)",
+        "administering_body": "Department of Human Services (DHS)",
+        "governs": [
+          "MF-AR-MEDICAID-PEER-2026"
+        ],
+        "effects": "Prevents DHS from disqualifying or excluding an individual from the Medicaid program based solely on a non\u2011violent criminal conviction if the individual is a certified peer support specialist; requires due process in the certification process\u3010977612311711223\u2020L72-L97\u3011.",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-20-46-301",
+        "authority_type": "statute",
+        "citation": "Ark. Code \u00a7 20\u201146\u2011301 (Division of Aging, Adult, and Behavioral Health Services)",
+        "administering_body": "Division of Aging, Adult, and Behavioral Health Services (DAABHS)",
+        "governs": [
+          "AUTH-AR-DAABHS-DIRECTOR"
+        ],
+        "effects": "Creates and empowers the Division of Aging, Adult, and Behavioral Health Services within DHS to operate mental health clinics and centers, provide mental health education programs, and lease employees to community mental health centers\u3010884820613071200\u2020L75-L88\u3011.",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-20-64-602-19",
+        "authority_type": "statute",
+        "citation": "Ark. Code \u00a7 20\u201164\u2011602(b)(19) (Standards for alcohol and drug abuse programs)",
+        "administering_body": "Division of Aging, Adult, and Behavioral Health Services / Office of Substance Abuse and Mental Health (OSAMH)",
+        "governs": [
+          "AUTH-AR-OSAMH-APR-Program",
+          "AUTH-AR-OSAMH-APAC"
+        ],
+        "effects": "Authorizes the division to develop and promulgate standards and rules for accrediting, certifying, and licensing alcohol and drug abuse prevention, treatment and rehabilitation programs\u3010720090630275044\u2020L160-L200\u3011.",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-20-64-1001",
+        "authority_type": "statute",
+        "citation": "Ark. Code \u00a7 20\u201164\u20111001 (Arkansas Drug Director)",
+        "administering_body": "Office of Substance Abuse and Mental Health (OSAMH)",
+        "governs": [
+          "AUTH-AR-OSAMH-DRUG-DIRECTOR-LANE",
+          "AUTH-AR-OSAMH-DRUG-DIRECTOR-FISHER"
+        ],
+        "effects": "Creates the position of Arkansas Drug Director within OSAMH; the director, appointed by the governor, coordinates alcohol and drug programs and performs financial monitoring of drug task forces\u3010888369347257430\u2020L74-L103\u3011.",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-25-10-129",
+        "authority_type": "statute",
+        "citation": "Ark. Code \u00a7 25\u201110\u2011129 (Rulemaking authority)",
+        "administering_body": "Department of Human Services (DHS)",
+        "governs": [
+          "AUTH-AR-DHS-SECRETARY",
+          "AUTH-AR-DMS-DIRECTOR",
+          "AUTH-AR-DAABHS-DIRECTOR"
+        ],
+        "effects": "Empowers DHS and its divisions to promulgate rules and adopt federal requirements necessary to receive federal funding, recognizing that the department must operate within changing federal laws\u301012071825929807\u2020L72-L103\u3011.",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-OSAMH-APR-Program",
+        "authority_type": "administrative",
+        "citation": "Peer Training and Certification page \u2013 description of the Arkansas Peer Recovery Program (APRP)",
+        "administering_body": "Office of Substance Abuse and Mental Health (OSAMH)",
+        "governs": [
+          "MF-AR-MEDICAID-PEER-2026",
+          "AUTH-AR-OSAMH-APAC",
+          "AUTH-AR-APAC-CHAIR"
+        ],
+        "effects": "OSAMH administers the Arkansas Peer Recovery Program, a three\u2011tier credentialing process (core, advanced, supervisor) designed to produce highly trained peer workers. The program is carried out with a DHS\u2011approved accrediting entity and is authorized by Ark. Code \u00a7 20\u201164\u2011602(b)(19). Certification involves classroom education, on\u2011the\u2011job training and mentorship\u3010702168819522465\u2020L870-L882\u3011.",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-OSAMH-APAC",
+        "authority_type": "administrative",
+        "citation": "Arkansas Peer Advisory Committee page \u2013 description of APAC\u2019s role",
+        "administering_body": "Office of Substance Abuse and Mental Health / Arkansas Peer Advisory Committee (APAC)",
+        "governs": [
+          "AUTH-AR-APAC-CHAIR"
+        ],
+        "effects": "APAC serves as a key resource for OSAMH on peer recovery matters. Members include the DHS Office of Recovery and up to 15 community stakeholders who are certified peer workers. APAC evaluates and approves the eligibility of peer recovery supervisors prior to certification testing and approves continuing education hours required for peer workers\u3010755787514605201\u2020L880-L888\u3011.",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-OSAMH-DIRECTOR",
+        "authority_type": "administrative",
+        "citation": "Get to Know Director Stone page \u2013 biography of OSAMH director Paula Stone",
+        "administering_body": "Office of Substance Abuse and Mental Health (OSAMH)",
+        "governs": [
+          "AUTH-AR-OSAMH-APR-Program",
+          "AUTH-AR-OSAMH-APAC",
+          "AUTH-AR-OSAMH-DRUG-DIRECTOR-LANE",
+          "AUTH-AR-OSAMH-DRUG-DIRECTOR-FISHER"
+        ],
+        "effects": "Paula Stone serves as Director of OSAMH. She oversees the state\u2019s public mental health system, the state\u2019s forensic system, federal grant programs aimed at preventing and treating substance use disorder, and the team that leads the Arkansas State Hospital\u3010517013002479678\u2020L877-L889\u3011.",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-DAABHS-DIRECTOR",
+        "authority_type": "administrative",
+        "citation": "Get to Know Director Hill page \u2013 biography of Jay Hill",
+        "administering_body": "Division of Aging, Adult, and Behavioral Health Services (DAABHS)",
+        "governs": [
+          "AUTH-AR-OSAMH-DIRECTOR"
+        ],
+        "effects": "Jay Hill serves as the director of DAABHS. He oversees programs that promote the health, safety and independence of older Arkansans and adults with disabilities. Hill began working at DHS at the Arkansas Health Center in 2006, became its director in 2011 and accepted his current position in 2017\u301056897009336872\u2020L871-L878\u3011.",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-DMS-DIRECTOR",
+        "authority_type": "administrative",
+        "citation": "Get to Know Director Pitman page \u2013 biography of Elizabeth Pitman",
+        "administering_body": "Division of Medical Services (DMS)",
+        "governs": [
+          "MF-AR-MEDICAID-PEER-2026",
+          "AUTH-AR-PROVIDER-ENROLLMENT"
+        ],
+        "effects": "Elizabeth Pitman serves as Director of the Division of Medical Services for the Medicaid program. She manages Medicaid operations, including managed care programs, claims processing, contracts and the fee\u2011for\u2011service program\u301091964929200516\u2020L874-L879\u3011.",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-DHS-SECRETARY",
+        "authority_type": "administrative",
+        "citation": "Meet the Secretary page \u2013 biography of Janet Mann",
+        "administering_body": "Department of Human Services (DHS)",
+        "governs": [
+          "AUTH-AR-DMS-DIRECTOR",
+          "AUTH-AR-DAABHS-DIRECTOR",
+          "AUTH-AR-DHS-DEPUTY-OPS",
+          "AUTH-AR-DHS-SPECIALTY-MEDICAID"
+        ],
+        "effects": "Janet Mann is the Secretary of DHS and also the State Medicaid Director. With over twenty years of experience in healthcare and healthcare finance, she provides executive leadership for the department and previously served as Deputy Secretary for Programs and Director of DMS\u3010776702696406669\u2020L865-L871\u3011.",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-DHS-DEPUTY-OPS",
+        "authority_type": "administrative",
+        "citation": "Meet the Secretary page \u2013 description of Misty Eubanks\u2019s role",
+        "administering_body": "Department of Human Services (DHS)",
+        "governs": [
+          "AUTH-AR-DMS-DIRECTOR",
+          "AUTH-AR-PROVIDER-ENROLLMENT"
+        ],
+        "effects": "Misty Eubanks serves as Deputy Secretary for Operations and Budget. She manages DHS operations and budget and has held roles such as Chief Financial Officer, Chief Procurement Officer and Privacy Officer\u3010776702696406669\u2020L878-L887\u3011.",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-DHS-SPECIALTY-MEDICAID",
+        "authority_type": "administrative",
+        "citation": "Meet the Secretary page \u2013 description of Melissa Weatherton\u2019s role",
+        "administering_body": "Specialty Medicaid Services (DHS)",
+        "governs": [
+          "AUTH-AR-DAABHS-DIRECTOR",
+          "AUTH-AR-OSAMH-DIRECTOR"
+        ],
+        "effects": "Melissa Weatherton serves as Director of Specialty Medicaid Services. She oversees specialty Medicaid programs with a focus on the Division of Developmental Disabilities Services, Division of Aging, Adult and Behavioral Health Services, and Office of Substance Abuse and Mental Health\u3010776702696406669\u2020L891-L899\u3011.",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-OSAMH-DRUG-DIRECTOR-LANE",
+        "authority_type": "administrative",
+        "citation": "News release: Arkansas Drug Director changing job (July 27, 2022)",
+        "administering_body": "Office of State Drug Director (OSAMH)",
+        "governs": [
+          "AUTH-AR-OSAMH-APR-Program"
+        ],
+        "effects": "Kirk Lane served as Arkansas Drug Director from 2017 until August 2022. Appointed by Governor Asa Hutchinson, he coordinated statewide efforts to prevent substance abuse, launched the Arkansas Naloxone Program and led peer recovery initiatives. His resignation announcement noted that he had been at the forefront of overdose prevention and peer recovery programs\u301023235813013277\u2020L853-L889\u3011.",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-OSAMH-DRUG-DIRECTOR-FISHER",
+        "authority_type": "administrative",
+        "citation": "ARORP article: Governor of Arkansas elects new Drug Director (Feb. 17, 2023)",
+        "administering_body": "Office of State Drug Director (OSAMH)",
+        "governs": [
+          "AUTH-AR-OSAMH-APR-Program"
+        ],
+        "effects": "On February 17, 2023 Governor Sarah Huckabee Sanders announced that Thomas Fisher, a former Department of Justice and DEA official, would serve as Arkansas\u2019s new Drug Director. Fisher will succeed Boyce Hamlet and oversee the state\u2019s drug policies while continuing collaboration with former Drug Director Kirk Lane\u3010883227464789966\u2020L75-L87\u3011.",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-BILLING-PeerSupport",
+        "authority_type": "regulation",
+        "citation": "Empower Behavioral Health Handbook (2026) \u2013 Peer Support section",
+        "administering_body": "Arkansas Medicaid (DMS) / Empower PASSE",
+        "governs": [
+          "MF-AR-MEDICAID-PEER-2026"
+        ],
+        "effects": "Sets billing codes and limits for peer support services: code H0038 UC U4 for peer support and H0038 U4 for telephonic peer support; one unit equals 15 minutes; daily maximum 8 units; annual limit 104 units without an extension of benefits; service available for members aged 18 and over and must be delivered by a Certified Peer Support Specialist\u3010818410471609231\u2020L1320-L1333\u3011.",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-PROVIDER-ENROLLMENT",
+        "authority_type": "administrative",
+        "citation": "Provider Enrollment page \u2013 instructions for enrolling as an Arkansas Medicaid provider",
+        "administering_body": "Division of Medical Services (DMS)",
+        "governs": [
+          "MF-AR-MEDICAID-PEER-2026"
+        ],
+        "effects": "The Provider Enrollment Unit manages enrollment for Arkansas Medicaid providers. Providers must complete an online application and may call (501) 376\u20112211 or (800) 457\u20114454 for assistance. Certain high\u2011risk providers are required to undergo fingerprint\u2011based background checks. Providers must report National Provider Identifier numbers and re\u2011enroll every five years\u3010273577708421788\u2020L998-L1053\u3011.",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-APAC-CHAIR",
+        "authority_type": "administrative",
+        "citation": "APAC page \u2013 biography of Casey Copeland, APAC chair",
+        "administering_body": "Arkansas Peer Advisory Committee (APAC)",
+        "governs": [],
+        "effects": "Casey Copeland, a person in long\u2011term recovery, serves as the chair of the Arkansas Peer Advisory Committee and as Director of Recovery Services for the State of Arkansas. He plays a key role in creating, managing and rolling out peer recovery programs statewide and leads the committee that evaluates peer recovery supervisors and continuing education\u3010755787514605201\u2020L905-L929\u3011.",
+        "editor_status": "pending"
+      }
+    ],
+    "evidence_item": [
+      {
+        "evidence_id": "EVID-1",
+        "source_url": "https://law.justia.com/codes/arkansas/2023/title-20/subtitle-4/chapter-77/section-20-77-107",
+        "description": "Authorizes DHS to establish indigent medical care program and gives secretary authority to make agreements\u3010684936796028014\u2020L73-L98\u3011"
+      },
+      {
+        "evidence_id": "EVID-2",
+        "source_url": "https://law.justia.com/codes/arkansas/2023/title-20/subtitle-4/chapter-77/section-20-77-135",
+        "description": "Prevents DHS from disqualifying peer support specialists based on non\u2011violent criminal convictions\u3010977612311711223\u2020L72-L97\u3011"
+      },
+      {
+        "evidence_id": "EVID-3",
+        "source_url": "https://law.justia.com/codes/arkansas/2023/title-20/subtitle-3/chapter-46/subchapter-3/section-20-46-301",
+        "description": "Creates DAABHS and authorizes mental health clinics and education programs\u3010884820613071200\u2020L75-L88\u3011"
+      },
+      {
+        "evidence_id": "EVID-4",
+        "source_url": "https://law.justia.com/codes/arkansas/2023/title-20/subtitle-5/chapter-64/subchapter-6/section-20-64-602",
+        "description": "Authorizes development of standards for accrediting and certifying alcohol and drug abuse programs\u3010720090630275044\u2020L160-L200\u3011"
+      },
+      {
+        "evidence_id": "EVID-5",
+        "source_url": "https://law.justia.com/codes/arkansas/2023/title-20/subtitle-5/chapter-64/subchapter-10/section-20-64-1001",
+        "description": "Creates the Arkansas Drug Director and outlines duties to coordinate programs and monitor funding\u3010888369347257430\u2020L74-L103\u3011"
+      },
+      {
+        "evidence_id": "EVID-6",
+        "source_url": "https://law.justia.com/codes/arkansas/2023/title-25/subtitle-2/chapter-10/subchapter-1/section-25-10-129",
+        "description": "Authorizes DHS to promulgate rules necessary to comply with federal law and obtain funding\u301012071825929807\u2020L72-L103\u3011"
+      },
+      {
+        "evidence_id": "EVID-7",
+        "source_url": "https://humanservices.arkansas.gov/divisions-shared-services/shared-services/office-of-substance-abuse-and-mental-health/arkansas-peer-recovery/peer-training-and-certification/",
+        "description": "Describes Arkansas Peer Recovery Program as a three\u2011tier credentialing process administered by OSAMH with a DHS\u2011approved accrediting entity\u3010702168819522465\u2020L870-L882\u3011"
+      },
+      {
+        "evidence_id": "EVID-8",
+        "source_url": "https://humanservices.arkansas.gov/divisions-shared-services/shared-services/office-of-substance-abuse-and-mental-health/arkansas-peer-recovery/arkansas-peer-advisory-commitee/",
+        "description": "APAC serves as a key resource for OSAMH; members evaluate eligibility of peer recovery supervisors and approve continuing education hours\u3010755787514605201\u2020L880-L888\u3011"
+      },
+      {
+        "evidence_id": "EVID-9",
+        "source_url": "https://humanservices.arkansas.gov/divisions-shared-services/shared-services/office-of-substance-abuse-and-mental-health/get-to-know-director-stone/",
+        "description": "Paula Stone oversees the state\u2019s public mental health system, forensic system, federal grant programs and the Arkansas State Hospital\u3010517013002479678\u2020L877-L889\u3011"
+      },
+      {
+        "evidence_id": "EVID-10",
+        "source_url": "https://humanservices.arkansas.gov/divisions-shared-services/aging-adult-behavioral-health-services/daabhs-director/",
+        "description": "Jay Hill leads DAABHS and oversees programs promoting health and independence for older Arkansans and adults with disabilities\u301056897009336872\u2020L871-L878\u3011"
+      },
+      {
+        "evidence_id": "EVID-11",
+        "source_url": "https://humanservices.arkansas.gov/divisions-shared-services/medical-services/get-to-know-director-pitman/",
+        "description": "Elizabeth Pitman manages Medicaid operations including managed care, claims processing, contracts and fee\u2011for\u2011service\u301091964929200516\u2020L874-L879\u3011"
+      },
+      {
+        "evidence_id": "EVID-12",
+        "source_url": "https://humanservices.arkansas.gov/about-dhs/meet-the-secretary/",
+        "description": "Janet Mann serves as Secretary of DHS and State Medicaid Director; she previously served as Deputy Secretary for Programs and DMS Director\u3010776702696406669\u2020L865-L871\u3011"
+      },
+      {
+        "evidence_id": "EVID-13",
+        "source_url": "https://humanservices.arkansas.gov/about-dhs/meet-the-secretary/",
+        "description": "Misty Eubanks serves as Deputy Secretary for Operations and Budget, managing DHS operations and budget\u3010776702696406669\u2020L878-L887\u3011"
+      },
+      {
+        "evidence_id": "EVID-14",
+        "source_url": "https://humanservices.arkansas.gov/about-dhs/meet-the-secretary/",
+        "description": "Melissa Weatherton oversees specialty Medicaid programs focusing on DDS, DAABHS and OSAMH\u3010776702696406669\u2020L891-L899\u3011"
+      },
+      {
+        "evidence_id": "EVID-15",
+        "source_url": "https://humanservices.arkansas.gov/news/arkansas-drug-director-changing-job-will-oversee-distribution-of-city-county-opioid-settlement-funds/",
+        "description": "Announcement that Kirk Lane resigns as Arkansas Drug Director; he coordinated statewide substance abuse programs and peer recovery initiatives\u301023235813013277\u2020L853-L889\u3011"
+      },
+      {
+        "evidence_id": "EVID-16",
+        "source_url": "https://www.arorp.org/governor-of-arkansas-elects-new-drug-director/",
+        "description": "Governor Sarah Huckabee Sanders announced that Thomas Fisher would become the new Drug Director, succeeding Boyce Hamlet and collaborating with Kirk Lane\u3010883227464789966\u2020L75-L87\u3011"
+      },
+      {
+        "evidence_id": "EVID-17",
+        "source_url": "https://getempowerhealth.com/wp-content/uploads/2025/11/Empower-Behavioral-Health-Handbook-2026-1.pdf",
+        "description": "Peer support services use code H0038 UC U4 (in\u2011person) and H0038 U4 (telephonic); one unit equals 15 minutes; daily max 8 units; annual limit 104 units\u3010818410471609231\u2020L1320-L1333\u3011"
+      },
+      {
+        "evidence_id": "EVID-18",
+        "source_url": "https://humanservices.arkansas.gov/divisions-shared-services/medical-services/provider-enrollment/",
+        "description": "Provider Enrollment Unit offers assistance via phone and manages applications; certain high\u2011risk providers must undergo fingerprint\u2011based background checks; providers must re\u2011enroll every five years\u3010273577708421788\u2020L998-L1053\u3011"
+      },
+      {
+        "evidence_id": "EVID-19",
+        "source_url": "https://humanservices.arkansas.gov/divisions-shared-services/shared-services/office-of-substance-abuse-and-mental-health/arkansas-peer-recovery/arkansas-peer-advisory-commitee/",
+        "description": "Casey Copeland chairs the Arkansas Peer Advisory Committee and serves as Director of Recovery Services for Arkansas; he leads creation and management of peer recovery programs\u3010755787514605201\u2020L905-L929\u3011"
+      }
+    ],
+    "field_validation": [
+      {
+        "validation_id": "VAL-1",
+        "target_id": "MF-AR-MEDICAID-PEER-2026",
+        "field": "source",
+        "rule": "must not be empty"
+      },
+      {
+        "validation_id": "VAL-2",
+        "target_id": "AUTH-AR-20-77-107",
+        "field": "citation",
+        "rule": "must reference Arkansas Code"
+      },
+      {
+        "validation_id": "VAL-3",
+        "target_id": "AUTH-AR-OSAMH-APR-Program",
+        "field": "effects",
+        "rule": "must describe tiered credentialing and role of OSAMH"
+      },
+      {
+        "validation_id": "VAL-4",
+        "target_id": "AUTH-AR-BILLING-PeerSupport",
+        "field": "effects",
+        "rule": "must include code H0038 and unit limits"
+      },
+      {
+        "validation_id": "VAL-5",
+        "target_id": "AUTH-AR-OSAMH-APAC",
+        "field": "administering_body",
+        "rule": "must include APAC and OSAMH"
+      }
+    ]
+  }
+}

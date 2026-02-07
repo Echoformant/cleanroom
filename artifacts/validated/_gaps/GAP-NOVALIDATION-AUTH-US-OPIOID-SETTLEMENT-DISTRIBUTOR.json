@@ -1,0 +1,12 @@
+{
+  "gap_id": "GAP-NOVALIDATION-AUTH-US-OPIOID-SETTLEMENT-DISTRIBUTOR",
+  "gap_type": "MISSING_VALIDATION",
+  "source_artifact": "AUTH-US-OPIOID-SETTLEMENT-DISTRIBUTOR",
+  "source_category": "authority_reference",
+  "source_field": null,
+  "target_reference": "[field_validation for AUTH-US-OPIOID-SETTLEMENT-DISTRIBUTOR]",
+  "target_category": "field_validation",
+  "detected_at": "2026-02-07T06:20:56.157418+00:00",
+  "stub_generated": false,
+  "stub_path": null
+}

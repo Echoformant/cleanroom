@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-TRANSPARENCY-DESIGN-2025",
+  "section": "FV-AR-ARORP-TRANSPARENCY-EVAL-2025",
+  "claim_summary": "WYSAC Transparency Evaluation Design (Jan 2025): scoring methodology for 12 elements in four areas",
+  "evidence_type": "audit",
+  "source": {
+    "document": "Updated Transparency Evaluation Design January 2025",
+    "url": "https://arorp.org/wp-content/uploads/2025/04/Updated-Transparency-Evaluation-Design-January-2025.pdf",
+    "retrieved": "2026-02-06"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.407119"
+}

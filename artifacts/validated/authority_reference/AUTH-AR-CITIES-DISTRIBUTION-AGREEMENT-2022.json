@@ -1,0 +1,13 @@
+{
+  "authority_id": "AUTH-AR-CITIES-DISTRIBUTION-AGREEMENT-2022",
+  "authority_type": "mou",
+  "citation": "Arkansas Opioids MOU Cities Distribution Agreement (signed 2022-09-19)",
+  "administering_body": "Arkansas Municipal League (AML)",
+  "governs": [
+    "MF-AR-CITIES-POOLING-ARORP-FY2022"
+  ],
+  "effects": "Directs cities to pool settlement funds through ARORP for abatement programming",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.399673"
+}

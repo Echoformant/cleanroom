@@ -1,0 +1,13 @@
+{
+  "authority_id": "AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E",
+  "authority_type": "settlement",
+  "citation": "Distributors Settlement Agreement, Exhibit E: List of Opioid Remediation Uses (Final 3.25.22)",
+  "administering_body": "Distributors Settlement Agreement parties (national)",
+  "governs": [
+    "MF-AR-ARORP-TOTAL-FUNDED-32M-2022-2026"
+  ],
+  "effects": "Defines permissible opioid remediation uses including naloxone, MAT, prevention, warm hand-off",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.400277"
+}

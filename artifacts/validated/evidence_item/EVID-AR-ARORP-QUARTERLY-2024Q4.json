@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-QUARTERLY-2024Q4",
+  "section": "MF-AR-ARORP-APPROVED-28M-THROUGH-2024Q4",
+  "claim_summary": "Quarterly Brief Oct-Dec 2024: Approved $28,709,240.94; Denied $293,585,523.42; Sentinel $484,813.60 for TruNarc",
+  "evidence_type": "budget",
+  "source": {
+    "document": "ARORP Quarterly Brief Oct-Dec 2024",
+    "url": "https://www.arorp.org/wp-content/uploads/2025/04/ARORP-2024-4th-QR.pdf",
+    "retrieved": "2026-02-06"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.406443"
+}

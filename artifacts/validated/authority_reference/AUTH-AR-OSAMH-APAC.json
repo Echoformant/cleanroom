@@ -1,0 +1,13 @@
+{
+  "authority_id": "AUTH-AR-OSAMH-APAC",
+  "authority_type": "administrative",
+  "citation": "Arkansas Peer Advisory Committee page – description of APAC’s role",
+  "administering_body": "Office of Substance Abuse and Mental Health / Arkansas Peer Advisory Committee (APAC)",
+  "governs": [
+    "AUTH-AR-APAC-CHAIR"
+  ],
+  "effects": "APAC serves as a key resource for OSAMH on peer recovery matters. Members include the DHS Office of Recovery and up to 15 community stakeholders who are certified peer workers. APAC evaluates and approves the eligibility of peer recovery supervisors prior to certification testing and approves continuing education hours required for peer workers【755787514605201†L880-L888】.",
+  "editor_status": "accepted",
+  "_ingested_from": "dhs_medicaid_peer_chain_20260207",
+  "_ingested_at": "2026-02-07T00:20:39.708356"
+}

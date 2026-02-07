@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-TRANSPARENCY-BRIEF-FEB-2025",
+  "section": "FV-AR-ARORP-TRANSPARENCY-EVAL-2025",
+  "claim_summary": "Transparency Brief Feb 2025: third round scoring, all 12 elements easily found and understood",
+  "evidence_type": "audit",
+  "source": {
+    "document": "ARORP Transparency Evaluation Brief February 2025",
+    "url": "https://www.arorp.org/wp-content/uploads/2025/04/ARORP-Transparency-Evaluation-Brief-February-2025.pdf",
+    "retrieved": "2026-02-06"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.407550"
+}

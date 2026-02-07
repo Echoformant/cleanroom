@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-DENIAL-LOG-PDF",
+  "section": "FV-AR-ARORP-PROPOSAL-DENIALS",
+  "claim_summary": "ARORP Denial Log: denied proposals with project numbers, applicants, reasons, amounts; lack of abatement nexus, Exhibit E conflicts",
+  "evidence_type": "policy",
+  "source": {
+    "document": "ARORP Denial Log",
+    "url": "https://www.arorp.org/wp-content/uploads/2024/06/ARORP-Denial-Log-1.pdf",
+    "retrieved": "2026-02-06"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.408401"
+}

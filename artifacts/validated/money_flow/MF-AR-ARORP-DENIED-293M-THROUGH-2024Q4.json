@@ -1,0 +1,20 @@
+{
+  "flow_id": "MF-AR-ARORP-DENIED-293M-THROUGH-2024Q4",
+  "source": "Applicants to ARORP (requested amounts)",
+  "intermediary": "None",
+  "destination": "ARORP (denied applications aggregate through Dec 2024)",
+  "amount": 293585523,
+  "fund_type": "state",
+  "fiscal_year": "FY2024",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "ARORP Denial Log; Distributors Settlement Exhibit E restrictions",
+  "statutory_basis_refs": [
+    "AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E"
+  ],
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.395896"
+}

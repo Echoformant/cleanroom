@@ -1,0 +1,15 @@
+{
+  "authority_id": "AUTH-AR-25-10-129",
+  "authority_type": "statute",
+  "citation": "Ark. Code § 25‑10‑129 (Rulemaking authority)",
+  "administering_body": "Department of Human Services (DHS)",
+  "governs": [
+    "AUTH-AR-DHS-SECRETARY",
+    "AUTH-AR-DMS-DIRECTOR",
+    "AUTH-AR-DAABHS-DIRECTOR"
+  ],
+  "effects": "Empowers DHS and its divisions to promulgate rules and adopt federal requirements necessary to receive federal funding, recognizing that the department must operate within changing federal laws【12071825929807†L72-L103】.",
+  "editor_status": "accepted",
+  "_ingested_from": "dhs_medicaid_peer_chain_20260207",
+  "_ingested_at": "2026-02-07T00:20:39.706999"
+}

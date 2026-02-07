@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-PROJECT-JOHN316",
+  "section": "MF-AR-ARORP-TO-JOHN316-WOMENS-HOUSING-FY2023",
+  "claim_summary": "John 3:16 Ministries $2,357,912.10 for Womens Housing Expansion (2023-2033)",
+  "evidence_type": "budget",
+  "source": {
+    "document": "John 3:16 Womens Housing",
+    "url": "https://www.arorp.org/project/john-316-housing-expansion/",
+    "retrieved": "2026-02-06"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.411190"
+}

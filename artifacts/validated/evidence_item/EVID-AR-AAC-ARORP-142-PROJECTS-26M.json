@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-AAC-ARORP-142-PROJECTS-26M",
+  "section": "MF-AR-ARORP-142-PROJECTS-26M-2024H1",
+  "claim_summary": "AAC article: ARORP operational since Nov 2022; funded 142 projects in all 75 counties; $26 million total",
+  "evidence_type": "budget",
+  "source": {
+    "document": "Updates on ARORP opioid settlement funds",
+    "url": "https://www.arcounties.org/media/articles/updates-on-arorp-opioid-settlement-funds/",
+    "retrieved": "2026-02-06"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.409017"
+}

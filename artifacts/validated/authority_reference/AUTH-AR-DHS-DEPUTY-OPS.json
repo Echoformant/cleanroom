@@ -1,0 +1,14 @@
+{
+  "authority_id": "AUTH-AR-DHS-DEPUTY-OPS",
+  "authority_type": "administrative",
+  "citation": "Meet the Secretary page – description of Misty Eubanks’s role",
+  "administering_body": "Department of Human Services (DHS)",
+  "governs": [
+    "AUTH-AR-DMS-DIRECTOR",
+    "AUTH-AR-PROVIDER-ENROLLMENT"
+  ],
+  "effects": "Misty Eubanks serves as Deputy Secretary for Operations and Budget. She manages DHS operations and budget and has held roles such as Chief Financial Officer, Chief Procurement Officer and Privacy Officer【776702696406669†L878-L887】.",
+  "editor_status": "accepted",
+  "_ingested_from": "dhs_medicaid_peer_chain_20260207",
+  "_ingested_at": "2026-02-07T00:20:39.711311"
+}

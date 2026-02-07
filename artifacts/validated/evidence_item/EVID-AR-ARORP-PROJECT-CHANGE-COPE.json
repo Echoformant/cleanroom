@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-PROJECT-CHANGE-COPE",
+  "section": "MF-AR-ARORP-TO-CHANGE-COPE-FY2025",
+  "claim_summary": "Project ARORP25-448: C.H.A.N.G.E. $25,000 for COPE project (2025)",
+  "evidence_type": "budget",
+  "source": {
+    "document": "C.H.A.N.G.E. COPE",
+    "url": "https://www.arorp.org/project/changing-hearts-and-navigating-great-endings-c-h-a-n-g-e-2/",
+    "retrieved": "2026-02-06"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.412317"
+}

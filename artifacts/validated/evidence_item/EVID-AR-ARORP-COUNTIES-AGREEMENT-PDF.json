@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-COUNTIES-AGREEMENT-PDF",
+  "section": "AUTH-AR-COUNTIES-DISTRIBUTION-AGREEMENT-2022",
+  "claim_summary": "Signed Counties Distribution Agreement (2022-09-19) governing counties participation in ARORP",
+  "evidence_type": "policy",
+  "source": {
+    "document": "MOU Counties Distribution Agreement Signed",
+    "url": "https://www.arorp.org/wp-content/uploads/2024/06/MOU-Counties-Distribution-Agreement-Signed.pdf",
+    "retrieved": "2026-02-06"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.403067"
+}

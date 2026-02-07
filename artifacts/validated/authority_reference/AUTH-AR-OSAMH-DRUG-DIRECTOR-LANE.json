@@ -1,0 +1,13 @@
+{
+  "authority_id": "AUTH-AR-OSAMH-DRUG-DIRECTOR-LANE",
+  "authority_type": "administrative",
+  "citation": "News release: Arkansas Drug Director changing job (July 27, 2022)",
+  "administering_body": "Office of State Drug Director (OSAMH)",
+  "governs": [
+    "AUTH-AR-OSAMH-APR-Program"
+  ],
+  "effects": "Kirk Lane served as Arkansas Drug Director from 2017 until August 2022. Appointed by Governor Asa Hutchinson, he coordinated statewide efforts to prevent substance abuse, launched the Arkansas Naloxone Program and led peer recovery initiatives. His resignation announcement noted that he had been at the forefront of overdose prevention and peer recovery programs【23235813013277†L853-L889】.",
+  "editor_status": "accepted",
+  "_ingested_from": "dhs_medicaid_peer_chain_20260207",
+  "_ingested_at": "2026-02-07T00:20:39.713617"
+}

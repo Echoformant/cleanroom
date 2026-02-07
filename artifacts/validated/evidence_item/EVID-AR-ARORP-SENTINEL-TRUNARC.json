@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-SENTINEL-TRUNARC",
+  "section": "MF-AR-ARORP-TO-THERMOFISHER-TRUNARC-FY2024",
+  "claim_summary": "ARORP Sentinel Project: TruNarc handheld analyzers deployed for law enforcement drug detection",
+  "evidence_type": "policy",
+  "source": {
+    "document": "ARORP Sentinel Project",
+    "url": "https://www.arorp.org/arorp-sentinel-project-thermo-fisher-scientific/",
+    "retrieved": "2026-02-06"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.414422"
+}

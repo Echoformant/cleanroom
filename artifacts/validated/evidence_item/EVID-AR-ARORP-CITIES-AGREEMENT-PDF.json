@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-CITIES-AGREEMENT-PDF",
+  "section": "AUTH-AR-CITIES-DISTRIBUTION-AGREEMENT-2022",
+  "claim_summary": "Signed Cities Distribution Agreement (2022-09-19) governing cities participation in ARORP",
+  "evidence_type": "policy",
+  "source": {
+    "document": "MOU Cities Distribution Agreement",
+    "url": "https://www.arorp.org/wp-content/uploads/2024/06/MOU-Cities-Distribution-Agreement.pdf",
+    "retrieved": "2026-02-06"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.403601"
+}

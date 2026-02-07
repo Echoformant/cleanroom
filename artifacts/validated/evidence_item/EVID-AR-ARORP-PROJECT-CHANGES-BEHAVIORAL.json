@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-PROJECT-CHANGES-BEHAVIORAL",
+  "section": "MF-AR-ARORP-TO-CHANGES-BEHAVIORAL-HEALTH-FY2024",
+  "claim_summary": "Project ARORP24-282: Changes Behavioral Health $381,138.92 for Washington County Addiction Recovery Resource Center",
+  "evidence_type": "budget",
+  "source": {
+    "document": "Washington County Addiction Recovery Resource Center",
+    "url": "https://www.arorp.org/project/2-5-2-4-washington-county-addiction-recovery-resource-center/",
+    "retrieved": "2026-02-06"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.409536"
+}

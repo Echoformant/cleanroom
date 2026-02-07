@@ -1,0 +1,21 @@
+{
+  "flow_id": "MF-AR-ARORP-TO-CADCA-TRAINING-FY2023",
+  "source": "Arkansas Opioid Recovery Partnership (ARORP)",
+  "intermediary": "None",
+  "destination": "CADCA (Arkansas City and County Officials Training)",
+  "amount": 385745,
+  "fund_type": "state",
+  "fiscal_year": "FY2023",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false,
+    "opioid_abatement": true
+  },
+  "statutory_basis": "Distributors Settlement Exhibit E; ARORP22-005",
+  "statutory_basis_refs": [
+    "AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E"
+  ],
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.393153"
+}

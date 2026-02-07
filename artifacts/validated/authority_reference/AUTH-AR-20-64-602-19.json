@@ -1,0 +1,14 @@
+{
+  "authority_id": "AUTH-AR-20-64-602-19",
+  "authority_type": "statute",
+  "citation": "Ark. Code § 20‑64‑602(b)(19) (Standards for alcohol and drug abuse programs)",
+  "administering_body": "Division of Aging, Adult, and Behavioral Health Services / Office of Substance Abuse and Mental Health (OSAMH)",
+  "governs": [
+    "AUTH-AR-OSAMH-APR-Program",
+    "AUTH-AR-OSAMH-APAC"
+  ],
+  "effects": "Authorizes the division to develop and promulgate standards and rules for accrediting, certifying, and licensing alcohol and drug abuse prevention, treatment and rehabilitation programs【720090630275044†L160-L200】.",
+  "editor_status": "accepted",
+  "_ingested_from": "dhs_medicaid_peer_chain_20260207",
+  "_ingested_at": "2026-02-07T00:20:39.705778"
+}

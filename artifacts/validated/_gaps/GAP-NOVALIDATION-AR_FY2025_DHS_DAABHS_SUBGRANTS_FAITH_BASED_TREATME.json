@@ -6,7 +6,7 @@
   "source_field": null,
   "target_reference": "[field_validation for AR_FY2025_DHS_DAABHS_SUBGRANTS_FAITH_BASED_TREATMENT_INITIATIVES_FEDERAL_FUNDS_GRANTS_REVIEW_2025_02_26]",
   "target_category": "field_validation",
-  "detected_at": "2026-02-06T07:53:20.938371+00:00",
-  "stub_generated": true,
-  "stub_path": "C:\\Threshold\\cleanroom\\artifacts\\validated\\_stubs\\FV-GAP-AR_FY2025_DHS_DAABHS_SUBGRANTS_FAITH_BAS.json"
+  "detected_at": "2026-02-07T06:20:56.157418+00:00",
+  "stub_generated": false,
+  "stub_path": null
 }

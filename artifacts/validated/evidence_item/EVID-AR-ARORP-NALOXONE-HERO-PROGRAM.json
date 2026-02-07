@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-NALOXONE-HERO-PROGRAM",
+  "section": "MF-AR-ARORP-NALOXONE-TOTAL-2M-2022-2026",
+  "claim_summary": "ARORP created Arkansas Naloxone Bank in 2022; HERO program provides credit for naloxone and training",
+  "evidence_type": "policy",
+  "source": {
+    "document": "Learn More: Naloxone Community Hero Project",
+    "url": "https://www.arorp.org/learn-more-naloxone-community-hero-project/",
+    "retrieved": "2026-02-06"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.414829"
+}

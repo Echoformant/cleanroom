@@ -1,0 +1,644 @@
+{
+  "batch_id": "deep_research_arorp_20260206",
+  "generated_at": "2026-02-06T08:00:00Z",
+  "mode": "deep_research",
+  "total_turns": 1,
+  "artifacts": {
+    "money_flow": [
+      {
+        "flow_id": "MF-AR-OPIOIDSETTLEMENT-QSF-SETTLEMENTPAYMENTS-FY2022",
+        "source": "Settling pharmaceutical supply chain participants (Janssen, McKesson, Cardinal Health, AmerisourceBergen)",
+        "intermediary": "None",
+        "destination": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+        "amount": 0,
+        "fund_type": "federal",
+        "fiscal_year": "FY2022",
+        "restrictions": {"medicaid": false, "dhs_controlled": false},
+        "statutory_basis": "QSF Court Order 18CV-22-355",
+        "statutory_basis_refs": ["AUTH-AR-QSF-ORDER-18CV-22-355"],
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-QSF-DISTRIBUTION-COUNTIES-FY2022",
+        "source": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+        "intermediary": "None",
+        "destination": "Arkansas counties (collectively)",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "FY2022",
+        "restrictions": {"medicaid": false, "dhs_controlled": false},
+        "statutory_basis": "QSF Court Order; Arkansas Opioids MOU",
+        "statutory_basis_refs": ["AUTH-AR-QSF-ORDER-18CV-22-355", "AUTH-AR-OPIOIDS-MOU-2021-07"],
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-QSF-DISTRIBUTION-CITIES-FY2022",
+        "source": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+        "intermediary": "None",
+        "destination": "Arkansas cities and towns (collectively)",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "FY2022",
+        "restrictions": {"medicaid": false, "dhs_controlled": false},
+        "statutory_basis": "QSF Court Order; Arkansas Opioids MOU",
+        "statutory_basis_refs": ["AUTH-AR-QSF-ORDER-18CV-22-355", "AUTH-AR-OPIOIDS-MOU-2021-07"],
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-QSF-DISTRIBUTION-STATE-FY2022",
+        "source": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+        "intermediary": "None",
+        "destination": "State of Arkansas",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "FY2022",
+        "restrictions": {"medicaid": false, "dhs_controlled": false},
+        "statutory_basis": "Arkansas Opioids MOU",
+        "statutory_basis_refs": ["AUTH-AR-OPIOIDS-MOU-2021-07"],
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-QSF-ATTORNEYFEES-EXPENSES-FY2022",
+        "source": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+        "intermediary": "None",
+        "destination": "Counsel for Plaintiffs (attorney fees and expenses)",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "FY2022",
+        "restrictions": {"medicaid": false, "dhs_controlled": false},
+        "statutory_basis": "QSF Court Order 18CV-22-355",
+        "statutory_basis_refs": ["AUTH-AR-QSF-ORDER-18CV-22-355"],
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-COUNTIES-POOLING-ARORP-FY2022",
+        "source": "Arkansas counties (collectively)",
+        "intermediary": "Association of Arkansas Counties (AAC)",
+        "destination": "Arkansas Opioid Recovery Partnership (ARORP)",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "FY2022",
+        "restrictions": {"medicaid": false, "dhs_controlled": false},
+        "statutory_basis": "Counties Distribution Agreement 2022-09-19",
+        "statutory_basis_refs": ["AUTH-AR-COUNTIES-DISTRIBUTION-AGREEMENT-2022"],
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-CITIES-POOLING-ARORP-FY2022",
+        "source": "Arkansas cities and towns (collectively)",
+        "intermediary": "Arkansas Municipal League (AML)",
+        "destination": "Arkansas Opioid Recovery Partnership (ARORP)",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "FY2022",
+        "restrictions": {"medicaid": false, "dhs_controlled": false},
+        "statutory_basis": "Cities Distribution Agreement 2022-09-19",
+        "statutory_basis_refs": ["AUTH-AR-CITIES-DISTRIBUTION-AGREEMENT-2022"],
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-ARORP-TOTAL-FUNDED-32M-2022-2026",
+        "source": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+        "intermediary": "Arkansas Opioid Recovery Partnership (ARORP)",
+        "destination": "All ARORP funded project recipients (aggregate)",
+        "amount": 32971144,
+        "fund_type": "state",
+        "fiscal_year": "FY2022-2026",
+        "restrictions": {"medicaid": false, "dhs_controlled": false, "opioid_abatement": true},
+        "statutory_basis": "Arkansas Opioids MOU; Distributors Settlement Exhibit E",
+        "statutory_basis_refs": ["AUTH-AR-OPIOIDS-MOU-2021-07", "AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E"],
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-ARORP-NALOXONE-TOTAL-2M-2022-2026",
+        "source": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+        "intermediary": "Arkansas Opioid Recovery Partnership (ARORP)",
+        "destination": "Naloxone procurement/distribution (aggregate)",
+        "amount": 2397542,
+        "fund_type": "state",
+        "fiscal_year": "FY2022-2026",
+        "restrictions": {"medicaid": false, "dhs_controlled": false, "opioid_abatement": true},
+        "statutory_basis": "Distributors Settlement Exhibit E",
+        "statutory_basis_refs": ["AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E"],
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-ARORP-TO-CHANGES-BEHAVIORAL-HEALTH-FY2024",
+        "source": "Arkansas Opioid Recovery Partnership (ARORP)",
+        "intermediary": "None",
+        "destination": "Changes Behavioral Health, LLC (Washington County Addiction Recovery Resource Center)",
+        "amount": 381139,
+        "fund_type": "state",
+        "fiscal_year": "FY2024-2025",
+        "restrictions": {"medicaid": false, "dhs_controlled": false, "opioid_abatement": true},
+        "statutory_basis": "Distributors Settlement Exhibit E; ARORP24-282",
+        "statutory_basis_refs": ["AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E"],
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-ARORP-TO-AR-PHARMACISTS-UNDER100-FY2024",
+        "source": "Arkansas Opioid Recovery Partnership (ARORP)",
+        "intermediary": "None",
+        "destination": "Arkansas Pharmacists Association (Under 100 project)",
+        "amount": 78585,
+        "fund_type": "state",
+        "fiscal_year": "FY2023-2024",
+        "restrictions": {"medicaid": false, "dhs_controlled": false, "opioid_abatement": true},
+        "statutory_basis": "Distributors Settlement Exhibit E; ARORP23-177",
+        "statutory_basis_refs": ["AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E"],
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-ARORP-TO-HOT-SPRINGS-SCHOOL-FY2024",
+        "source": "Arkansas Opioid Recovery Partnership (ARORP)",
+        "intermediary": "None",
+        "destination": "Hot Springs School District (Prevention Recovery Program)",
+        "amount": 237794,
+        "fund_type": "state",
+        "fiscal_year": "FY2023-2025",
+        "restrictions": {"medicaid": false, "dhs_controlled": false, "opioid_abatement": true},
+        "statutory_basis": "Distributors Settlement Exhibit E; ARORP23-185",
+        "statutory_basis_refs": ["AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E"],
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-ARORP-TO-JOHN316-WOMENS-HOUSING-FY2023",
+        "source": "Arkansas Opioid Recovery Partnership (ARORP)",
+        "intermediary": "None",
+        "destination": "John 3:16 Ministries (Women's Housing Expansion)",
+        "amount": 2357912,
+        "fund_type": "state",
+        "fiscal_year": "FY2023-2033",
+        "restrictions": {"medicaid": false, "dhs_controlled": false, "opioid_abatement": true},
+        "statutory_basis": "Distributors Settlement Exhibit E",
+        "statutory_basis_refs": ["AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E"],
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-ARORP-TO-BRIDGING-GAPS-COPE-FY2024",
+        "source": "Arkansas Opioid Recovery Partnership (ARORP)",
+        "intermediary": "None",
+        "destination": "Bridging the Gaps (COPE project)",
+        "amount": 25000,
+        "fund_type": "state",
+        "fiscal_year": "FY2023-2024",
+        "restrictions": {"medicaid": false, "dhs_controlled": false, "opioid_abatement": true},
+        "statutory_basis": "Distributors Settlement Exhibit E; ARORP23-068",
+        "statutory_basis_refs": ["AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E"],
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-ARORP-TO-CHANGE-COPE-FY2025",
+        "source": "Arkansas Opioid Recovery Partnership (ARORP)",
+        "intermediary": "None",
+        "destination": "C.H.A.N.G.E. (COPE project)",
+        "amount": 25000,
+        "fund_type": "state",
+        "fiscal_year": "FY2025",
+        "restrictions": {"medicaid": false, "dhs_controlled": false, "opioid_abatement": true},
+        "statutory_basis": "Distributors Settlement Exhibit E; ARORP25-448",
+        "statutory_basis_refs": ["AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E"],
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-ARORP-TO-CADCA-TRAINING-FY2023",
+        "source": "Arkansas Opioid Recovery Partnership (ARORP)",
+        "intermediary": "None",
+        "destination": "CADCA (Arkansas City and County Officials Training)",
+        "amount": 385745,
+        "fund_type": "state",
+        "fiscal_year": "FY2023",
+        "restrictions": {"medicaid": false, "dhs_controlled": false, "opioid_abatement": true},
+        "statutory_basis": "Distributors Settlement Exhibit E; ARORP22-005",
+        "statutory_basis_refs": ["AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E"],
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-ARORP-TO-CADCA-CAN-FY2025",
+        "source": "Arkansas Opioid Recovery Partnership (ARORP)",
+        "intermediary": "None",
+        "destination": "CADCA (Community Advocate Network Project)",
+        "amount": 284600,
+        "fund_type": "state",
+        "fiscal_year": "FY2025-2026",
+        "restrictions": {"medicaid": false, "dhs_controlled": false, "opioid_abatement": true},
+        "statutory_basis": "Distributors Settlement Exhibit E; ARORP25-468",
+        "statutory_basis_refs": ["AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E"],
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-ARORP-TO-UNION-RESCUE-HERO-FY2025",
+        "source": "Arkansas Opioid Recovery Partnership (ARORP)",
+        "intermediary": "None",
+        "destination": "Union Rescue Mission (Naloxone HERO credit)",
+        "amount": 3552,
+        "fund_type": "state",
+        "fiscal_year": "FY2025",
+        "restrictions": {"medicaid": false, "dhs_controlled": false, "opioid_abatement": true},
+        "statutory_basis": "Distributors Settlement Exhibit E; ARORP25-431",
+        "statutory_basis_refs": ["AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E"],
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-ARORP-TO-THERMOFISHER-TRUNARC-FY2024",
+        "source": "Arkansas Opioid Recovery Partnership (ARORP)",
+        "intermediary": "None",
+        "destination": "Thermo Fisher Scientific (TruNarc handheld analyzers for Sentinel awards)",
+        "amount": 484814,
+        "fund_type": "state",
+        "fiscal_year": "FY2024",
+        "restrictions": {"medicaid": false, "dhs_controlled": false, "opioid_abatement": true},
+        "statutory_basis": "Distributors Settlement Exhibit E",
+        "statutory_basis_refs": ["AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E"],
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-ARORP-APPROVED-28M-THROUGH-2024Q4",
+        "source": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+        "intermediary": "Arkansas Opioid Recovery Partnership (ARORP)",
+        "destination": "All approved ARORP projects (aggregate through Dec 2024)",
+        "amount": 28709241,
+        "fund_type": "state",
+        "fiscal_year": "FY2024",
+        "restrictions": {"medicaid": false, "dhs_controlled": false, "opioid_abatement": true},
+        "statutory_basis": "Arkansas Opioids MOU; Distributors Settlement Exhibit E",
+        "statutory_basis_refs": ["AUTH-AR-OPIOIDS-MOU-2021-07", "AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E"],
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-ARORP-DENIED-293M-THROUGH-2024Q4",
+        "source": "Applicants to ARORP (requested amounts)",
+        "intermediary": "None",
+        "destination": "ARORP (denied applications aggregate through Dec 2024)",
+        "amount": 293585523,
+        "fund_type": "state",
+        "fiscal_year": "FY2024",
+        "restrictions": {"medicaid": false, "dhs_controlled": false},
+        "statutory_basis": "ARORP Denial Log; Distributors Settlement Exhibit E restrictions",
+        "statutory_basis_refs": ["AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E"],
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-ARORP-142-PROJECTS-26M-2024H1",
+        "source": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+        "intermediary": "Arkansas Opioid Recovery Partnership (ARORP)",
+        "destination": "142 funded projects across all 75 counties (per AAC)",
+        "amount": 26000000,
+        "fund_type": "state",
+        "fiscal_year": "FY2024",
+        "restrictions": {"medicaid": false, "dhs_controlled": false, "opioid_abatement": true},
+        "statutory_basis": "Arkansas Opioids MOU; Distributors Settlement Exhibit E",
+        "statutory_basis_refs": ["AUTH-AR-OPIOIDS-MOU-2021-07", "AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E"],
+        "editor_status": "pending"
+      }
+    ],
+    "authority_reference": [
+      {
+        "authority_id": "AUTH-AR-OPIOIDS-MOU-2021-07",
+        "authority_type": "mou",
+        "citation": "Arkansas Opioids Memorandum of Understanding (Executed July 2021)",
+        "administering_body": "State of Arkansas; Association of Arkansas Counties; Arkansas Municipal League",
+        "governs": ["MF-AR-QSF-DISTRIBUTION-COUNTIES-FY2022", "MF-AR-QSF-DISTRIBUTION-CITIES-FY2022", "MF-AR-QSF-DISTRIBUTION-STATE-FY2022"],
+        "effects": "Allocates opioid settlement funds 1/3 each to state, counties, cities; requires abatement use",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-QSF-ORDER-18CV-22-355",
+        "authority_type": "court_order",
+        "citation": "Order Establishing Arkansas Opioids QSF (Crittenden County Circuit Court, Case No. 18CV-22-355, 2022-06-13)",
+        "administering_body": "Circuit Court of Crittenden County, Arkansas",
+        "governs": ["MF-AR-OPIOIDSETTLEMENT-QSF-SETTLEMENTPAYMENTS-FY2022", "MF-AR-QSF-ATTORNEYFEES-EXPENSES-FY2022"],
+        "effects": "Establishes QSF under IRC section 468B; appoints Edgar C. Gentle III as Fund Administrator; designates Evolve Bank and Trust as custodian",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-US-IRC-468B-QSF",
+        "authority_type": "statute",
+        "citation": "Internal Revenue Code section 468B (Qualified Settlement Funds)",
+        "administering_body": "United States Congress; Internal Revenue Service",
+        "governs": ["AUTH-AR-QSF-ORDER-18CV-22-355"],
+        "effects": "Federal statutory basis for qualified settlement fund tax treatment",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-US-26CFR-1-468B-1-TREASREG",
+        "authority_type": "regulation",
+        "citation": "Treas. Reg. section 1.468B-1 (Qualified Settlement Funds)",
+        "administering_body": "U.S. Department of the Treasury",
+        "governs": ["AUTH-AR-QSF-ORDER-18CV-22-355"],
+        "effects": "Treasury regulations implementing IRC section 468B for QSFs",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-COUNTIES-DISTRIBUTION-AGREEMENT-2022",
+        "authority_type": "mou",
+        "citation": "Arkansas Opioids MOU Counties Distribution Agreement (signed 2022-09-19)",
+        "administering_body": "Association of Arkansas Counties (AAC)",
+        "governs": ["MF-AR-COUNTIES-POOLING-ARORP-FY2022"],
+        "effects": "Directs counties to pool settlement funds through ARORP for abatement programming",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-CITIES-DISTRIBUTION-AGREEMENT-2022",
+        "authority_type": "mou",
+        "citation": "Arkansas Opioids MOU Cities Distribution Agreement (signed 2022-09-19)",
+        "administering_body": "Arkansas Municipal League (AML)",
+        "governs": ["MF-AR-CITIES-POOLING-ARORP-FY2022"],
+        "effects": "Directs cities to pool settlement funds through ARORP for abatement programming",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E",
+        "authority_type": "settlement",
+        "citation": "Distributors Settlement Agreement, Exhibit E: List of Opioid Remediation Uses (Final 3.25.22)",
+        "administering_body": "Distributors Settlement Agreement parties (national)",
+        "governs": ["MF-AR-ARORP-TOTAL-FUNDED-32M-2022-2026"],
+        "effects": "Defines permissible opioid remediation uses including naloxone, MAT, prevention, warm hand-off",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-US-DATA-2000",
+        "authority_type": "act",
+        "citation": "Drug Addiction Treatment Act of 2000 (DATA 2000)",
+        "administering_body": "United States Congress",
+        "governs": [],
+        "effects": "Referenced in Distributors Settlement Exhibit E for MAT expansion",
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-US-CDC-OPIOID-GUIDELINE-2016",
+        "authority_type": "regulation",
+        "citation": "CDC Guideline for Prescribing Opioids for Chronic Pain (2016)",
+        "administering_body": "Centers for Disease Control and Prevention (CDC)",
+        "governs": [],
+        "effects": "Referenced in Distributors Settlement Exhibit E for prescribing guidelines",
+        "editor_status": "pending"
+      }
+    ],
+    "evidence_item": [
+      {
+        "evidence_id": "EVID-AR-ARORP-MOU-EXECUTED-2021-PDF",
+        "section": "AUTH-AR-OPIOIDS-MOU-2021-07",
+        "claim_summary": "Executed Arkansas Opioids MOU (July 2021) describing settlement fund sharing among State, counties, and cities",
+        "evidence_type": "policy",
+        "source": {"document": "Arkansas Opioids MOU Executed July 2021", "url": "https://www.arorp.org/wp-content/uploads/2024/06/Arkansas-Opioids-MOU-Executed-July-2021.pdf", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-QSF-ORDER-2022-PDF",
+        "section": "AUTH-AR-QSF-ORDER-18CV-22-355",
+        "claim_summary": "Court order establishing QSF under IRC section 468B, appointing Edgar Gentle III as Administrator, Evolve Bank as custodian",
+        "evidence_type": "policy",
+        "source": {"document": "2022-06-13 Order Establishing QSF", "url": "https://www.arorp.org/wp-content/uploads/2022/11/2022-06-13-Order-Establishing-QSF.pdf", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-COUNTIES-AGREEMENT-PDF",
+        "section": "AUTH-AR-COUNTIES-DISTRIBUTION-AGREEMENT-2022",
+        "claim_summary": "Signed Counties Distribution Agreement (2022-09-19) governing counties participation in ARORP",
+        "evidence_type": "policy",
+        "source": {"document": "MOU Counties Distribution Agreement Signed", "url": "https://www.arorp.org/wp-content/uploads/2024/06/MOU-Counties-Distribution-Agreement-Signed.pdf", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-CITIES-AGREEMENT-PDF",
+        "section": "AUTH-AR-CITIES-DISTRIBUTION-AGREEMENT-2022",
+        "claim_summary": "Signed Cities Distribution Agreement (2022-09-19) governing cities participation in ARORP",
+        "evidence_type": "policy",
+        "source": {"document": "MOU Cities Distribution Agreement", "url": "https://www.arorp.org/wp-content/uploads/2024/06/MOU-Cities-Distribution-Agreement.pdf", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-EXHIBIT-E-PDF",
+        "section": "AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E",
+        "claim_summary": "Distributors Settlement Exhibit E lists opioid remediation core strategies and approved uses",
+        "evidence_type": "policy",
+        "source": {"document": "Distributors Settlement Exhibit E Abatement", "url": "https://www.arorp.org/wp-content/uploads/2022/11/Distrbutors-Settlement-Exhibit-E-Abatement.pdf", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-ABOUTUS-ALLOCATION",
+        "section": "MF-AR-COUNTIES-POOLING-ARORP-FY2022",
+        "claim_summary": "ARORP About Us: partnership formed by cities/counties to pool settlement funds; MOU allocates 1/3 each",
+        "evidence_type": "policy",
+        "source": {"document": "About Us", "url": "https://www.arorp.org/about-us/", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-PROGRESS-TOTALS-32M",
+        "section": "MF-AR-ARORP-TOTAL-FUNDED-32M-2022-2026",
+        "claim_summary": "ARORP Progress page: Funding Totals $32,971,144.38; Naloxone Amount $2,397,541.93",
+        "evidence_type": "budget",
+        "source": {"document": "Progress Map / Funding Totals", "url": "https://www.arorp.org/progress/", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-ANNUAL-EVAL-2024",
+        "section": "FV-AR-ARORP-ANNUAL-EVAL-2024",
+        "claim_summary": "Annual Evaluation Report (Feb 2025) by WYSAC: 2024 process, transparency, outcome data including naloxone kits, people served",
+        "evidence_type": "audit",
+        "source": {"document": "ARORP Annual Evaluation Report February 2025", "url": "https://www.arorp.org/wp-content/uploads/2025/05/ARORP-Annual-Report-for-202463.pdf", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-QUARTERLY-2024Q4",
+        "section": "MF-AR-ARORP-APPROVED-28M-THROUGH-2024Q4",
+        "claim_summary": "Quarterly Brief Oct-Dec 2024: Approved $28,709,240.94; Denied $293,585,523.42; Sentinel $484,813.60 for TruNarc",
+        "evidence_type": "budget",
+        "source": {"document": "ARORP Quarterly Brief Oct-Dec 2024", "url": "https://www.arorp.org/wp-content/uploads/2025/04/ARORP-2024-4th-QR.pdf", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-TRANSPARENCY-DESIGN-2025",
+        "section": "FV-AR-ARORP-TRANSPARENCY-EVAL-2025",
+        "claim_summary": "WYSAC Transparency Evaluation Design (Jan 2025): scoring methodology for 12 elements in four areas",
+        "evidence_type": "audit",
+        "source": {"document": "Updated Transparency Evaluation Design January 2025", "url": "https://arorp.org/wp-content/uploads/2025/04/Updated-Transparency-Evaluation-Design-January-2025.pdf", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-TRANSPARENCY-BRIEF-FEB-2025",
+        "section": "FV-AR-ARORP-TRANSPARENCY-EVAL-2025",
+        "claim_summary": "Transparency Brief Feb 2025: third round scoring, all 12 elements easily found and understood",
+        "evidence_type": "audit",
+        "source": {"document": "ARORP Transparency Evaluation Brief February 2025", "url": "https://www.arorp.org/wp-content/uploads/2025/04/ARORP-Transparency-Evaluation-Brief-February-2025.pdf", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-TRANSPARENCY-BRIEF-JAN-2024",
+        "section": "FV-AR-ARORP-TRANSPARENCY-EVAL-2024",
+        "claim_summary": "Transparency Brief Jan 2024: scoring 16 elements by three reviewers using present/absent methodology",
+        "evidence_type": "audit",
+        "source": {"document": "ARORP Transparency Evaluation Brief January 2024", "url": "https://www.arorp.org/wp-content/uploads/2025/04/ARORP-Transparency-Evaluation-Brief-January-2024-Final57.pdf", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-DENIAL-LOG-PDF",
+        "section": "FV-AR-ARORP-PROPOSAL-DENIALS",
+        "claim_summary": "ARORP Denial Log: denied proposals with project numbers, applicants, reasons, amounts; lack of abatement nexus, Exhibit E conflicts",
+        "evidence_type": "policy",
+        "source": {"document": "ARORP Denial Log", "url": "https://www.arorp.org/wp-content/uploads/2024/06/ARORP-Denial-Log-1.pdf", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-AAC-ARORP-142-PROJECTS-26M",
+        "section": "MF-AR-ARORP-142-PROJECTS-26M-2024H1",
+        "claim_summary": "AAC article: ARORP operational since Nov 2022; funded 142 projects in all 75 counties; $26 million total",
+        "evidence_type": "budget",
+        "source": {"document": "Updates on ARORP opioid settlement funds", "url": "https://www.arcounties.org/media/articles/updates-on-arorp-opioid-settlement-funds/", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-PROJECT-CHANGES-BEHAVIORAL",
+        "section": "MF-AR-ARORP-TO-CHANGES-BEHAVIORAL-HEALTH-FY2024",
+        "claim_summary": "Project ARORP24-282: Changes Behavioral Health $381,138.92 for Washington County Addiction Recovery Resource Center",
+        "evidence_type": "budget",
+        "source": {"document": "Washington County Addiction Recovery Resource Center", "url": "https://www.arorp.org/project/2-5-2-4-washington-county-addiction-recovery-resource-center/", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-PROJECT-UNDER100",
+        "section": "MF-AR-ARORP-TO-AR-PHARMACISTS-UNDER100-FY2024",
+        "claim_summary": "Project ARORP23-177: Arkansas Pharmacists Association $78,584.77 for Under 100 project",
+        "evidence_type": "budget",
+        "source": {"document": "Under 100", "url": "https://www.arorp.org/project/under-100/", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-PROJECT-HOT-SPRINGS",
+        "section": "MF-AR-ARORP-TO-HOT-SPRINGS-SCHOOL-FY2024",
+        "claim_summary": "Project ARORP23-185: Hot Springs School District $237,793.60 for Prevention Recovery Program",
+        "evidence_type": "budget",
+        "source": {"document": "Hot Springs School District Prevention Recovery Program", "url": "https://www.arorp.org/project/hot-springs-school-based-peer/", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-PROJECT-JOHN316",
+        "section": "MF-AR-ARORP-TO-JOHN316-WOMENS-HOUSING-FY2023",
+        "claim_summary": "John 3:16 Ministries $2,357,912.10 for Womens Housing Expansion (2023-2033)",
+        "evidence_type": "budget",
+        "source": {"document": "John 3:16 Womens Housing", "url": "https://www.arorp.org/project/john-316-housing-expansion/", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-PROJECT-BRIDGING-GAPS",
+        "section": "MF-AR-ARORP-TO-BRIDGING-GAPS-COPE-FY2024",
+        "claim_summary": "Project ARORP23-068: Bridging the Gaps $25,000 for COPE project",
+        "evidence_type": "budget",
+        "source": {"document": "Bridging the Gaps COPE", "url": "https://www.arorp.org/project/bridging-the-gaps/", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-PROJECT-CHANGE-COPE",
+        "section": "MF-AR-ARORP-TO-CHANGE-COPE-FY2025",
+        "claim_summary": "Project ARORP25-448: C.H.A.N.G.E. $25,000 for COPE project (2025)",
+        "evidence_type": "budget",
+        "source": {"document": "C.H.A.N.G.E. COPE", "url": "https://www.arorp.org/project/changing-hearts-and-navigating-great-endings-c-h-a-n-g-e-2/", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-PROJECT-CADCA-TRAINING",
+        "section": "MF-AR-ARORP-TO-CADCA-TRAINING-FY2023",
+        "claim_summary": "Project ARORP22-005: CADCA $385,745 for Arkansas City/County Officials Training",
+        "evidence_type": "budget",
+        "source": {"document": "CADCA Training", "url": "https://www.arorp.org/project/cadca-training/", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-PROJECT-CADCA-CAN",
+        "section": "MF-AR-ARORP-TO-CADCA-CAN-FY2025",
+        "claim_summary": "Project ARORP25-468: CADCA $284,600 for Community Advocate Network",
+        "evidence_type": "budget",
+        "source": {"document": "Community Advocate Network", "url": "https://www.arorp.org/project/cadca-community-advocate-network-can-project/", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-PROJECT-UNION-RESCUE-HERO",
+        "section": "MF-AR-ARORP-TO-UNION-RESCUE-HERO-FY2025",
+        "claim_summary": "Project ARORP25-431: Union Rescue Mission $3,552 Naloxone HERO credit",
+        "evidence_type": "budget",
+        "source": {"document": "Union Rescue Mission 2025 HERO", "url": "https://www.arorp.org/project/union-rescue-mission-hero-2025/", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-SENTINEL-TRUNARC",
+        "section": "MF-AR-ARORP-TO-THERMOFISHER-TRUNARC-FY2024",
+        "claim_summary": "ARORP Sentinel Project: TruNarc handheld analyzers deployed for law enforcement drug detection",
+        "evidence_type": "policy",
+        "source": {"document": "ARORP Sentinel Project", "url": "https://www.arorp.org/arorp-sentinel-project-thermo-fisher-scientific/", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-ARORP-NALOXONE-HERO-PROGRAM",
+        "section": "MF-AR-ARORP-NALOXONE-TOTAL-2M-2022-2026",
+        "claim_summary": "ARORP created Arkansas Naloxone Bank in 2022; HERO program provides credit for naloxone and training",
+        "evidence_type": "policy",
+        "source": {"document": "Learn More: Naloxone Community Hero Project", "url": "https://www.arorp.org/learn-more-naloxone-community-hero-project/", "retrieved": "2026-02-06"},
+        "confidence_level": "high",
+        "editor_status": "pending"
+      }
+    ],
+    "field_validation": [
+      {
+        "fv_id": "FV-AR-ARORP-ANNUAL-EVAL-2024",
+        "jurisdiction": "Arkansas",
+        "validating_entity": "Wyoming Survey & Analysis Center (WYSAC)",
+        "alignment_status": "mixed",
+        "evidence_basis": ["EVID-AR-ARORP-ANNUAL-EVAL-2024"],
+        "disclosure_level": "public",
+        "editor_status": "pending"
+      },
+      {
+        "fv_id": "FV-AR-ARORP-TRANSPARENCY-EVAL-2024",
+        "jurisdiction": "Arkansas",
+        "validating_entity": "Transparency evaluation reviewers (per Jan 2024 brief)",
+        "alignment_status": "mixed",
+        "evidence_basis": ["EVID-AR-ARORP-TRANSPARENCY-BRIEF-JAN-2024"],
+        "disclosure_level": "public",
+        "editor_status": "pending"
+      },
+      {
+        "fv_id": "FV-AR-ARORP-TRANSPARENCY-EVAL-2025",
+        "jurisdiction": "Arkansas",
+        "validating_entity": "Wyoming Survey & Analysis Center (WYSAC)",
+        "alignment_status": "captured",
+        "evidence_basis": ["EVID-AR-ARORP-TRANSPARENCY-DESIGN-2025", "EVID-AR-ARORP-TRANSPARENCY-BRIEF-FEB-2025"],
+        "disclosure_level": "public",
+        "editor_status": "pending"
+      },
+      {
+        "fv_id": "FV-AR-ARORP-PROPOSAL-DENIALS",
+        "jurisdiction": "Arkansas",
+        "validating_entity": "Arkansas Opioid Recovery Partnership (ARORP)",
+        "alignment_status": "captured",
+        "evidence_basis": ["EVID-AR-ARORP-DENIAL-LOG-PDF", "AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E"],
+        "disclosure_level": "public",
+        "editor_status": "pending"
+      }
+    ]
+  }
+}

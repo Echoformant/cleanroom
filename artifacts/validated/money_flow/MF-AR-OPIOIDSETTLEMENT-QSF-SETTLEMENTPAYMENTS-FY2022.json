@@ -1,0 +1,20 @@
+{
+  "flow_id": "MF-AR-OPIOIDSETTLEMENT-QSF-SETTLEMENTPAYMENTS-FY2022",
+  "source": "Settling pharmaceutical supply chain participants (Janssen, McKesson, Cardinal Health, AmerisourceBergen)",
+  "intermediary": "None",
+  "destination": "Arkansas Opioids Qualified Settlement Fund (QSF)",
+  "amount": 0,
+  "fund_type": "federal",
+  "fiscal_year": "FY2022",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "QSF Court Order 18CV-22-355",
+  "statutory_basis_refs": [
+    "AUTH-AR-QSF-ORDER-18CV-22-355"
+  ],
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.384194"
+}

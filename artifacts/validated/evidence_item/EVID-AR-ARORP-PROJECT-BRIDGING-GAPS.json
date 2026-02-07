@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-PROJECT-BRIDGING-GAPS",
+  "section": "MF-AR-ARORP-TO-BRIDGING-GAPS-COPE-FY2024",
+  "claim_summary": "Project ARORP23-068: Bridging the Gaps $25,000 for COPE project",
+  "evidence_type": "budget",
+  "source": {
+    "document": "Bridging the Gaps COPE",
+    "url": "https://www.arorp.org/project/bridging-the-gaps/",
+    "retrieved": "2026-02-06"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.411736"
+}

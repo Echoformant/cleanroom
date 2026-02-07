@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-PROJECT-HOT-SPRINGS",
+  "section": "MF-AR-ARORP-TO-HOT-SPRINGS-SCHOOL-FY2024",
+  "claim_summary": "Project ARORP23-185: Hot Springs School District $237,793.60 for Prevention Recovery Program",
+  "evidence_type": "budget",
+  "source": {
+    "document": "Hot Springs School District Prevention Recovery Program",
+    "url": "https://www.arorp.org/project/hot-springs-school-based-peer/",
+    "retrieved": "2026-02-06"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.410585"
+}

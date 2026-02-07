@@ -19,9 +19,49 @@ This folder stores the instruction files (prompts) designed to be pasted into GP
 
 ## Files
 
+### Focused Batch Runs (Priority Order)
+
+| File | Priority | Est. Time | Description |
+|------|----------|-----------|-------------|
+| `AGENT_RUN_BATCH_DHS_PEER_CHAIN.md` | **HIGHEST** | 45-60m | DHS→Medicaid→Peer authority chain |
+| `AGENT_RUN_BATCH_KIRK_LANE_PROFILE.md` | HIGH | 45-60m | Complete Kirk Lane position mapping |
+| `AGENT_RUN_BATCH_FEDERAL_AUTHORITIES.md` | HIGH | 30-45m | Federal statute/regulation backfill |
+| `AGENT_RUN_BATCH_990_ARORP_PREP.md` | HIGH | 30-45m | EIN manifest for ARORP recipients |
+| `AGENT_RUN_BATCH_SPECIALTY_COURTS.md` | MED-HIGH | 30-45m | AOC pathway (non-DHS alternative) |
+| `AGENT_RUN_BATCH_RHTP_PROPOSALS.md` | MEDIUM | 30-45m | Four Senate healthcare proposals |
+
+### Exhaustive Cycling Runs
+
 | File | Description |
 |------|-------------|
-| `AGENT_RUN_EXHAUSTIVE_25-10-129.md` | 4-turn exhaustive cycle anchored on `AUTH-AR-ACA-25-10-129` (DHS Federal Fund Conformity) |
+| `AGENT_RUN_V2_SEEDS_11-20.md` | Seeds 11-20 exhaustive cycling |
+| `AGENT_RUN_V2_SEEDS_21-30.md` | Seeds 21-30 exhaustive cycling |
+| `AGENT_RUN_EXHAUSTIVE_25-10-129.md` | DHS Federal Fund Conformity anchor |
+| `AGENT_RUN_EXHAUSTIVE_CYCLING_V2.md` | V2 cycling methodology |
+| `AGENT_RUN_EXHAUSTIVE_FULL_GRAPH.md` | Full graph exploration |
+| `AGENT_RUN_EXHAUSTIVE_MEDICAID_WAIVERS.md` | Medicaid waiver focus |
+
+### Gap Fill Runs
+
+| File | Description |
+|------|-------------|
+| `AGENT_RUN_GAP_FILL_VALIDATIONS.md` | Create missing field_validations |
+| `AGENT_RUN_GAP_FILL_ORPHANS.md` | Triage 59 orphan artifacts |
+
+### Other
+
+| File | Description |
+|------|-------------|
+| `AGENT_RUN_ARORP_DOSSIER.md` | ARORP/Kirk Lane cluster (largely complete) |
+| `AGENT_RUN_DHS_DESK_MAPPING.md` | DHS internal hierarchy |
+| `AGENT_RUN_AGENCY_SWEEP.md` | Agency profile mapping |
+| `AGENT_RUN_DEEP_RESEARCH_EXTRACTION.md` | Deep research → batch format |
+
+---
+
+## Logs
+
+Run logs are stored in `_logs/` folder. See `_logs/README.md` for format.
 
 ---
 

@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-PROJECT-UNDER100",
+  "section": "MF-AR-ARORP-TO-AR-PHARMACISTS-UNDER100-FY2024",
+  "claim_summary": "Project ARORP23-177: Arkansas Pharmacists Association $78,584.77 for Under 100 project",
+  "evidence_type": "budget",
+  "source": {
+    "document": "Under 100",
+    "url": "https://www.arorp.org/project/under-100/",
+    "retrieved": "2026-02-06"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.410056"
+}

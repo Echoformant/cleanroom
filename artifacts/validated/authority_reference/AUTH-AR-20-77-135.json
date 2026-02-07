@@ -1,0 +1,13 @@
+{
+  "authority_id": "AUTH-AR-20-77-135",
+  "authority_type": "statute",
+  "citation": "Ark. Code § 20-77-135 (Peer support specialist background checks)",
+  "administering_body": "Department of Human Services (DHS)",
+  "governs": [
+    "MF-AR-MEDICAID-PEER-2026"
+  ],
+  "effects": "Prevents DHS from disqualifying or excluding an individual from the Medicaid program based solely on a non‑violent criminal conviction if the individual is a certified peer support specialist; requires due process in the certification process【977612311711223†L72-L97】.",
+  "editor_status": "accepted",
+  "_ingested_from": "dhs_medicaid_peer_chain_20260207",
+  "_ingested_at": "2026-02-07T00:20:39.704756"
+}

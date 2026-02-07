@@ -1,0 +1,13 @@
+{
+  "authority_id": "AUTH-AR-PROVIDER-ENROLLMENT",
+  "authority_type": "administrative",
+  "citation": "Provider Enrollment page – instructions for enrolling as an Arkansas Medicaid provider",
+  "administering_body": "Division of Medical Services (DMS)",
+  "governs": [
+    "MF-AR-MEDICAID-PEER-2026"
+  ],
+  "effects": "The Provider Enrollment Unit manages enrollment for Arkansas Medicaid providers. Providers must complete an online application and may call (501) 376‑2211 or (800) 457‑4454 for assistance. Certain high‑risk providers are required to undergo fingerprint‑based background checks. Providers must report National Provider Identifier numbers and re‑enroll every five years【273577708421788†L998-L1053】.",
+  "editor_status": "accepted",
+  "_ingested_from": "dhs_medicaid_peer_chain_20260207",
+  "_ingested_at": "2026-02-07T00:20:39.715344"
+}

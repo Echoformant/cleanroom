@@ -1,0 +1,13 @@
+{
+  "authority_id": "AUTH-AR-BILLING-PeerSupport",
+  "authority_type": "regulation",
+  "citation": "Empower Behavioral Health Handbook (2026) – Peer Support section",
+  "administering_body": "Arkansas Medicaid (DMS) / Empower PASSE",
+  "governs": [
+    "MF-AR-MEDICAID-PEER-2026"
+  ],
+  "effects": "Sets billing codes and limits for peer support services: code H0038 UC U4 for peer support and H0038 U4 for telephonic peer support; one unit equals 15 minutes; daily maximum 8 units; annual limit 104 units without an extension of benefits; service available for members aged 18 and over and must be delivered by a Certified Peer Support Specialist【818410471609231†L1320-L1333】.",
+  "editor_status": "accepted",
+  "_ingested_from": "dhs_medicaid_peer_chain_20260207",
+  "_ingested_at": "2026-02-07T00:20:39.714678"
+}

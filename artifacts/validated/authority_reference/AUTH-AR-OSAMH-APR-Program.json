@@ -1,0 +1,15 @@
+{
+  "authority_id": "AUTH-AR-OSAMH-APR-Program",
+  "authority_type": "administrative",
+  "citation": "Peer Training and Certification page – description of the Arkansas Peer Recovery Program (APRP)",
+  "administering_body": "Office of Substance Abuse and Mental Health (OSAMH)",
+  "governs": [
+    "MF-AR-MEDICAID-PEER-2026",
+    "AUTH-AR-OSAMH-APAC",
+    "AUTH-AR-APAC-CHAIR"
+  ],
+  "effects": "OSAMH administers the Arkansas Peer Recovery Program, a three‑tier credentialing process (core, advanced, supervisor) designed to produce highly trained peer workers. The program is carried out with a DHS‑approved accrediting entity and is authorized by Ark. Code § 20‑64‑602(b)(19). Certification involves classroom education, on‑the‑job training and mentorship【702168819522465†L870-L882】.",
+  "editor_status": "accepted",
+  "_ingested_from": "dhs_medicaid_peer_chain_20260207",
+  "_ingested_at": "2026-02-07T00:20:39.707604"
+}

@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-TRANSPARENCY-BRIEF-JAN-2024",
+  "section": "FV-AR-ARORP-TRANSPARENCY-EVAL-2024",
+  "claim_summary": "Transparency Brief Jan 2024: scoring 16 elements by three reviewers using present/absent methodology",
+  "evidence_type": "audit",
+  "source": {
+    "document": "ARORP Transparency Evaluation Brief January 2024",
+    "url": "https://www.arorp.org/wp-content/uploads/2025/04/ARORP-Transparency-Evaluation-Brief-January-2024-Final57.pdf",
+    "retrieved": "2026-02-06"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.407985"
+}

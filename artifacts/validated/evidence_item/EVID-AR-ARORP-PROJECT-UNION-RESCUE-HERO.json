@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-ARORP-PROJECT-UNION-RESCUE-HERO",
+  "section": "MF-AR-ARORP-TO-UNION-RESCUE-HERO-FY2025",
+  "claim_summary": "Project ARORP25-431: Union Rescue Mission $3,552 Naloxone HERO credit",
+  "evidence_type": "budget",
+  "source": {
+    "document": "Union Rescue Mission 2025 HERO",
+    "url": "https://www.arorp.org/project/union-rescue-mission-hero-2025/",
+    "retrieved": "2026-02-06"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "deep_research_arorp_20260206",
+  "_ingested_at": "2026-02-06T21:13:02.413936"
+}
