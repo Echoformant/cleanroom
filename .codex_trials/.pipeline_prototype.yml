@@ -1,0 +1,11 @@
+# Prototype pipeline for Codex experimentation
+# This file is not used in production.
+# Codex may modify this freely.
+
+stages:
+  - prototype
+
+prototype_job:
+  stage: prototype
+  script:
+    - echo "Codex prototype lane active"
