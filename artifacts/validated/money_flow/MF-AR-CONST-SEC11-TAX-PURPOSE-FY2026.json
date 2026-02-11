@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-CONST-SEC11-TAX-PURPOSE-FY2026",
+  "source": "Taxpayers",
+  "intermediary": "State Treasury",
+  "destination": "Designated Purpose Funds",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Arkansas Constitution art. 16 § 11",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.399129"
+}

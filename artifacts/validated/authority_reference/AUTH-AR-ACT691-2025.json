@@ -1,0 +1,52 @@
+{
+  "authority_id": "AUTH-AR-ACT691-2025",
+  "authority_type": "act",
+  "citation": "Act 691 of 2025 (Arkansas)",
+  "title": "Specialty Court Program Act Amendments",
+  "effective_date": "2025",
+  "administering_body": "Arkansas Supreme Court / Administrative Office of the Courts",
+  "governs": [
+    "MF-AR-SPECIALTY-COURT-USER-FEE",
+    "MF-AR-SPECIALTY-COURT-FUND-DISTRIBUTION",
+    "MF-AR-OPIOID-SETTLEMENT-AG-SPECIALTY-COURTS"
+  ],
+  "key_provisions": {
+    "approval_requirement": "Specialty court programs must be approved by Arkansas Supreme Court in administrative plan under Admin Orders 14 and 18",
+    "fee_authority": "Court may not assess $250 specialty court user fee if program not approved or no longer meets approval criteria",
+    "specialty_court_types": [
+      "drug court",
+      "Swift/HOPE-type programs",
+      "DWI/BWI specialty court",
+      "mental health court",
+      "veterans treatment court",
+      "juvenile drug court",
+      "family treatment specialty court"
+    ],
+    "user_fee_amount": 250,
+    "user_fee_destination": "State Treasury, credited to Specialty Court Program Fund",
+    "aoc_contracting_authority": "AOC Director may contract for qualified attorneys as specialty-court team members",
+    "carryforward": "Unspent AOC appropriations may be retained and distributed as supplemental funding for specialty court support/administration and restorative/rehabilitative services",
+    "formula_funding": "AOC oversees disbursement based on formula developed by AOC, reviewed by SCPAC, approved by Arkansas Legislative Council",
+    "treatment_ordering_conditions": [
+      "appropriation has been made",
+      "funding is available",
+      "positions have been authorized"
+    ]
+  },
+  "decision_authorities": {
+    "approval": "Arkansas Supreme Court + SCPAC",
+    "appropriations": "Arkansas General Assembly",
+    "fund_distribution": "AOC (formula-based, SCPAC review, Legislative Council approval)",
+    "local_funds": "County Quorum Courts",
+    "opioid_settlement_state": "Attorney General",
+    "opioid_settlement_local": "ARORP (Arkansas Opioid Recovery Partnership)"
+  },
+  "references": [
+    "AUTH-AR-SUPREME-COURT-ADMIN-ORDER-14",
+    "AUTH-AR-SUPREME-COURT-ADMIN-ORDER-18",
+    "AUTH-AR-SCPAC",
+    "AUTH-AR-ARORP"
+  ],
+  "effects": "Establishes approval-based gating for specialty court funding; ties fee collection to Supreme Court approval; authorizes AOC contracting and carryforward; requires formula-based distribution with multi-body oversight",
+  "editor_status": "accepted"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "State appropriation from the Specialty Court Program Fund to the Administrative Office of the Courts (AOC) for FY\u00a02026. Act\u00a0776 (2025\u20112026) appropriates $300,000 from the fund to pay costs associated with the specialty court program and provide assistance to the Specialty Court Advisory Committee.",
+  "source": "Act\u00a0776\u20112025, \u00a7\u00a025",
+  "amount": 300000,
+  "fiscal_year": "FY\u00a02026",
+  "destination": "Administrative Office of the Courts (specialty court program and advisory committee)",
+  "evidence": [
+    "\u3010993523828842590\u2020L631-L741\u3011"
+  ],
+  "flow_id": "MF-AR-SPPROGRAM-FY2026"
+}

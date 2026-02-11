@@ -1,0 +1,13 @@
+{
+  "authority_id": "AUTH-AR-SB472-S1-2015-ACCOUNTABILITY",
+  "authority_type": "act",
+  "citation": "2015 Criminal Justice Reform Act (SB 472, § 41)",
+  "administering_body": "Arkansas Department of Community Correction and Administrative Office of the Courts",
+  "governs": [
+    "MF-AR-SPECIALTY-COURT-PROGRAM-FUND"
+  ],
+  "effects": "Section 41 of the 2015 Criminal Justice Reform Act (SB 472) creates the Accountability Court Fund as a trust fund consisting of grants or other funds.  The fund is used by the Department of Community Correction to support specialty court programs as defined by § 16‑10‑139【407800006528432†L3261-L3283】.  Subsequent sections of the Act amend Title 19 and Title 16 to create the Specialty Court Program Fund and require that user fees collected from specialty‑court participants be used for treatment services, program evaluation and crisis intervention for specialty court programs【407800006528432†L3292-L3419】.  The Act establishes accountability and funding mechanisms for specialty courts statewide.",
+  "editor_status": "accepted",
+  "_ingested_from": "new_artifacts.json",
+  "_ingested_at": "2026-02-10T12:51:39.220018"
+}

@@ -1,0 +1,14 @@
+{
+  "flow_id": "MF-AR-WIOA-ONE-STOP-INFRASTRUCTURE-FUNDING-FY2024",
+  "source": "WIOA one-stop partner programs and state funds",
+  "intermediary": "Local Workforce Development Boards",
+  "destination": "Arkansas Workforce Centers (one-stop system)",
+  "amount": 0,
+  "fund_type": "federal-state",
+  "fiscal_year": "2024",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Workforce Innovation and Opportunity Act \u00a7121 and Arkansas Division of Workforce Services Issuance PY 23-05 MOU Template"
+}

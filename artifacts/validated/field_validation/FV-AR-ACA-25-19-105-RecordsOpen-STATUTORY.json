@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-ACA-25-19-105-RecordsOpen-STATUTORY",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Legislature",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "Arkansas Code §25-19-105",
+    "The Arkansas Freedom of Information Act provides that all public records are open to inspection and copying by any citizen during regular business hours【628739949745494†L71-L112】"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "field_validations.json",
+  "_ingested_at": "2026-02-10T12:51:51.323779"
+}

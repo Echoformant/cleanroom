@@ -1,15 +1,14 @@
 {
   "evidence_id": "EVID-AR-25-10-129-STATUTE",
   "section": "AUTH-AR-ACA-25-10-129",
-  "claim_summary": "Arkansas Code §25‑10‑129 authorizes the Department of Human Services and its divisions to promulgate rules necessary to conform to federal statutes and regulations so that the department can receive any federal funds available.",
+  "claim_summary": "Arkansas Code § 25‑10‑129 authorizes the Department of Human Services to promulgate rules necessary to conform to federal statutes, rules and regulations affecting programs it administers.  The General Assembly intends that DHS utilize federal funding to the fullest extent and recognizes that federal requirements change frequently.  The statute empowers the department to adopt federal provisions by rule so that the state’s welfare, medical assistance and other programs remain eligible for federal funding【796504054028413†L72-L103】.",
   "evidence_type": "policy",
   "source": {
-    "title": "Arkansas Code §25‑10‑129 – Department of Human Services authorized to issue rules to assure compliance with federal statutes, rules, and regulations",
-    "issuing_body": "Arkansas General Assembly",
+    "document": "Arkansas Code Annotated",
     "url": "https://law.justia.com/codes/arkansas/title-25/chapter-10/subchapter-1/section-25-10-129/"
   },
   "confidence_level": "high",
   "editor_status": "accepted",
-  "_ingested_from": "BATCH-AUTH-AR-25-10-129-EXHAUSTIVE",
-  "_ingested_at": "2026-02-05T06:38:00.833493"
+  "_ingested_from": "new_artifacts.json",
+  "_ingested_at": "2026-02-10T12:51:39.220562"
 }

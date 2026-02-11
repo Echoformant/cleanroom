@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-BOARD-OF-FINANCE-INVESTMENT-POLICY-FY2026",
+  "source": "State Treasury funds",
+  "intermediary": "State Board of Finance",
+  "destination": "Investment portfolio",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Arkansas Code § 19-3-704",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.286049"
+}

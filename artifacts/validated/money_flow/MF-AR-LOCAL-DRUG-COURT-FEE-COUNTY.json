@@ -1,0 +1,23 @@
+{
+  "flow_id": "MF-AR-LOCAL-DRUG-COURT-FEE-COUNTY",
+  "source": "Drug Court Program Participants (local fees)",
+  "intermediary": "None",
+  "destination": "County Drug Court Program Fund",
+  "amount": 0,
+  "amount_note": "Local program user fees; amount varies by county/program",
+  "fund_type": "state",
+  "fiscal_year": "FY2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "appropriating_authority": "County Quorum Court",
+  "allowable_uses": [
+    "Benefit of drug court program",
+    "Administration of drug court program"
+  ],
+  "statutory_basis": "Act 691 of 2025",
+  "statutory_basis_refs": ["AUTH-AR-ACT691-2025"],
+  "notes": "Local elected officials via quorum court budgeting decide allocations; separate from state-level Specialty Court Program Fund",
+  "editor_status": "accepted"
+}

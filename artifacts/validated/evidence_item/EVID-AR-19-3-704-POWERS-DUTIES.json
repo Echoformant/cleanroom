@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-19-3-704-POWERS-DUTIES",
+  "section": "AUTH-AR-ACA-19-3-704",
+  "claim_summary": "Arkansas Code § 19-3-704 directs the State Board of Finance to establish, maintain, and enforce policies for the management and investment of State Treasury funds, including recordkeeping, collateralization, investment policies, liquidity requirements, and qualifications and ethical standards for employees handling State Treasury funds.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code § 19-3-704 (Powers and duties)",
+    "issuing_body": "State of Arkansas",
+    "url": "https://law.justia.com/codes/arkansas/title-19/chapter-3/subchapter-7/section-19-3-704/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.301563"
+}

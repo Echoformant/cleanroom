@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-MF-AOC-Dispute-ConferenceTravel-APPROPRIATION",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Legislative Audit",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "SB72 Section 5 (Dispute Resolution Commission)",
+    "Section 5 appropriation lists: Conference and travel appropriation is $15,000【177322595904317†L298-L317】"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "field_validations.json",
+  "_ingested_at": "2026-02-10T12:51:51.340210"
+}

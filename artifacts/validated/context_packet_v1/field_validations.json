@@ -1,0 +1,1384 @@
+{
+  "field_validation": [
+    {
+      "fv_id": "FV-AR-ACA-19-12-107-FundCreation-STATUTORY",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislature",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "Arkansas Code \u00a719-12-107",
+        "Section 19-12-107 creates the Arkansas Healthy Century Trust Fund on the books of the State Treasurer, Auditor, and Chief Fiscal Officer and places it under the administration of the State Board of Finance\u3010501832390530729\u2020L74-L118\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-ACA-19-12-107-PerpetualTrust-STATUTORY",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislature",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "Arkansas Code \u00a719-12-107",
+        "The statute states that the Arkansas Healthy Century Trust Fund is a perpetual trust with the principal to be preserved and invested; only investment earnings may be used\u3010501832390530729\u2020L74-L118\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-ACA-19-12-107-AuthorizedUses-STATUTORY",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislature",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "Arkansas Code \u00a719-12-107",
+        "Section 19-12-107 explains that investment earnings from the Arkansas Healthy Century Trust Fund may be used for responsibilities under \u00a719\u201112\u2011103 or health\u2011related programs and that the principal can be appropriated by law for health\u2011related purposes\u3010501832390530729\u2020L74-L118\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-ACA-19-12-108-FundCreation-STATUTORY",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislature",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "Arkansas Code \u00a719-12-108",
+        "The statute creates the Tobacco Settlement Program Fund on the books of the Treasurer, Auditor and Chief Fiscal Officer and directs the State Board of Finance to administer it\u3010949500341886125\u2020L74-L116\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-ACA-19-12-108-TargetedNeedsPercent-STATUTORY",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislature",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "Arkansas Code \u00a719-12-108",
+        "Section 19-12-108 provides that 15.8% of deposits in the Tobacco Settlement Program Fund go to the Targeted State Needs Program account\u3010949500341886125\u2020L74-L116\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-ACA-19-12-108-BiosciencesMedicaidPercents-STATUTORY",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislature",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "Arkansas Code \u00a719-12-108",
+        "The statute states that 22.8% of Tobacco Settlement Program Fund deposits are distributed to the Arkansas Biosciences Institute Program and 34.2% are distributed to the Medicaid Expansion Program account\u3010949500341886125\u2020L74-L116\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-ACA-19-12-116-ProgramEstablishment-STATUTORY",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislature",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "Arkansas Code \u00a719-12-116",
+        "Section 19-12-116 directs the Department of Human Services to establish a Medicaid Expansion Program as part of the Arkansas Medicaid Program\u3010377346295156413\u2020L74-L100\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-ACA-19-12-116-CoverageExpansion-STATUTORY",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislature",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "Arkansas Code \u00a719-12-116",
+        "The Medicaid Expansion Program expands coverage and benefits for pregnant women and adults aged 19\u201364 and 65 and older\u3010377346295156413\u2020L74-L100\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-ACA-19-12-116-HomeCommunityServices-STATUTORY",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislature",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "Arkansas Code \u00a719-12-116",
+        "The statute provides home and community\u2011based services for individuals with intellectual and developmental disabilities under the Medicaid Expansion Program\u3010377346295156413\u2020L74-L100\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-ACA-19-12-102-Definition-BiosciencesInstitute-STATUTORY",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislature",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "Arkansas Code \u00a719-12-102",
+        "The definitions section defines the \"Arkansas Biosciences Institute Program\" and its role in distributing tobacco settlement proceeds\u3010703598692190882\u2020L73-L92\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-ACA-19-12-102-Definition-HealthyCenturyTrust-STATUTORY",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislature",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "Arkansas Code \u00a719-12-102",
+        "Section 19-12-102 defines the \"Arkansas Healthy Century Trust Fund\" and references its creation under \u00a719-12-107\u3010703598692190882\u2020L73-L92\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-ACA-19-12-102-Definition-MedicaidExpansionAccount-STATUTORY",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislature",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "Arkansas Code \u00a719-12-102",
+        "The definitions include the \"Medicaid Expansion Program Account\" that receives a portion of tobacco settlement funds\u3010703598692190882\u2020L73-L92\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-ACA-19-12-102-Definition-CommissionFund-STATUTORY",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislature",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "Arkansas Code \u00a719-12-102",
+        "Section 19-12-102 defines the Arkansas Tobacco Settlement Commission Fund, which supports the commission\u2019s operations\u3010703598692190882\u2020L73-L92\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-ACA-19-12-102-Definition-ChapterTerms-STATUTORY",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislature",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "Arkansas Code \u00a719-12-102",
+        "The definitions section defines key terms used in the Tobacco Settlement Proceeds Act, such as the Commission and various program accounts\u3010703598692190882\u2020L73-L92\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-ACA-19-12-101-TitleName-STATUTORY",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislature",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "Arkansas Code \u00a719-12-101",
+        "Section 19-12-101 states that this chapter may be cited as the Tobacco Settlement Proceeds Act\u3010281429877317169\u2020L72-L76\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-ACA-25-19-105-RecordsOpen-STATUTORY",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislature",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "Arkansas Code \u00a725-19-105",
+        "The Arkansas Freedom of Information Act provides that all public records are open to inspection and copying by any citizen during regular business hours\u3010628739949745494\u2020L71-L112\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-ACA-25-19-105-Requests-STATUTORY",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislature",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "Arkansas Code \u00a725-19-105",
+        "Requests for public records may be made in person, by telephone, fax, mail, or email and custodians must provide access in a reasonable time\u3010628739949745494\u2020L71-L112\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-ACA-25-19-105-Exemptions-STATUTORY",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislature",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "Arkansas Code \u00a725-19-105",
+        "The statute lists exemptions to disclosure, such as records pertaining to incarcerated felons and other categories protected by law\u3010628739949745494\u2020L71-L112\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-ACA-25-19-105-ResponseTime-STATUTORY",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislature",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "Arkansas Code \u00a725-19-105",
+        "Custodians must respond to FOIA requests within a reasonable time and may charge the actual costs of copying the records\u3010628739949745494\u2020L71-L112\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-ACA-25-19-105-NonCompliancePenalties-STATUTORY",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislature",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "Arkansas Code \u00a725-19-105",
+        "Failure to provide access to public records can result in awards of attorney\u2019s fees and other penalties under the Freedom of Information Act\u3010628739949745494\u2020L71-L112\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-OTP-MedicareEnrollment-COMPLIANCE-2024",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "CMS (Centers for Medicare & Medicaid)",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "42 C.F.R. \u00a7424.67",
+        "Medicare payment for opioid treatment services requires a program to enroll as an Opioid Treatment Program (OTP) and meet Medicare enrollment requirements\u3010829416069198872\u2020L80-L140\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-OTP-AuthorizedProvidersList-COMPLIANCE-2024",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "CMS (Centers for Medicare & Medicaid)",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "42 C.F.R. \u00a7424.67",
+        "The regulation requires OTPs to maintain and submit lists of physicians and pharmacists authorized to prescribe or dispense covered controlled substances\u3010829416069198872\u2020L80-L140\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-OTP-ApplicationFeeAndScreening-COMPLIANCE-2024",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "CMS (Centers for Medicare & Medicaid)",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "42 C.F.R. \u00a7424.67",
+        "Opioid Treatment Programs must pay the application fee and undergo high\u2011risk level screening to enroll in Medicare\u3010829416069198872\u2020L80-L140\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-OTP-SAMHSACertification-COMPLIANCE-2024",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "SAMHSA",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "42 C.F.R. \u00a7424.67",
+        "The regulation mandates that an OTP must have a current certification by SAMHSA under 42 C.F.R. \u00a78.11; provisional certifications do not meet the requirement\u3010829416069198872\u2020L80-L140\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-QSF-EstablishmentByAuthority-STATUTORY",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Internal Revenue Service",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "26 C.F.R. \u00a71.468B-1",
+        "A qualified settlement fund must be established by or approved by a governmental authority and remain under the authority\u2019s continuing jurisdiction\u3010147710822878547\u2020L97-L123\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-QSF-PurposeRequirements-STATUTORY",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Internal Revenue Service",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "26 C.F.R. \u00a71.468B-1",
+        "The regulation requires that a qualified settlement fund be created to resolve or satisfy claims resulting from events such as torts, breaches of contract, or violations of law\u3010147710822878547\u2020L97-L123\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-QSF-AssetSegregation-STATUTORY",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Internal Revenue Service",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "26 C.F.R. \u00a71.468B-1",
+        "Assets of a qualified settlement fund must be physically segregated from the transferor\u2019s assets, meaning they are not commingled with other property\u3010147710822878547\u2020L97-L123\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-ADH-SharedServices-RegularSalaries-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "HB1092 (Shared Services appropriation)",
+        "The Department of Health Shared Services paying account appropriation lists: Regular salaries appropriation is $225,306\u3010224719140428588\u2020L92-L115\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-ADH-SharedServices-PersonalServicesMatching-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "HB1092 (Shared Services appropriation)",
+        "The Department of Health Shared Services paying account appropriation lists: Personal services matching appropriation is $52,693\u3010224719140428588\u2020L92-L115\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-ADH-SharedServices-OperatingExpense-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "HB1092 (Shared Services appropriation)",
+        "The Department of Health Shared Services paying account appropriation lists: Operating expenses appropriation is $0\u3010224719140428588\u2020L92-L115\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-ADH-SharedServices-ConferenceTravel-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "HB1092 (Shared Services appropriation)",
+        "The Department of Health Shared Services paying account appropriation lists: Conference and travel appropriation is $0\u3010224719140428588\u2020L92-L115\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-ADH-SharedServices-ProfessionalFees-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "HB1092 (Shared Services appropriation)",
+        "The Department of Health Shared Services paying account appropriation lists: Professional fees appropriation is $0\u3010224719140428588\u2020L92-L115\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-ADH-SharedServices-CapitalOutlay-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "HB1092 (Shared Services appropriation)",
+        "The Department of Health Shared Services paying account appropriation lists: Capital outlay appropriation is $0\u3010224719140428588\u2020L92-L115\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-ADH-SharedServices-DataProcessing-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "HB1092 (Shared Services appropriation)",
+        "The Department of Health Shared Services paying account appropriation lists: Data processing appropriation is $0\u3010224719140428588\u2020L92-L115\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-ADH-SharedServices-Total-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "HB1092 (Shared Services appropriation)",
+        "The Department of Health Shared Services paying account appropriation lists: Total appropriation is $277,999\u3010224719140428588\u2020L92-L115\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-Operations-RegularSalaries-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 3 (Operations)",
+        "Section 3 appropriation for Administrative Office of the Courts operations lists: Regular salaries appropriation is $3,873,747\u3010177322595904317\u2020L216-L239\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-Operations-ExtraHelp-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 3 (Operations)",
+        "Section 3 appropriation for Administrative Office of the Courts operations lists: Extra help appropriation is $5,000\u3010177322595904317\u2020L216-L239\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-Operations-PersonalServicesMatching-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 3 (Operations)",
+        "Section 3 appropriation for Administrative Office of the Courts operations lists: Personal services matching appropriation is $1,260,512\u3010177322595904317\u2020L216-L239\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-Operations-OperatingExpense-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 3 (Operations)",
+        "Section 3 appropriation for Administrative Office of the Courts operations lists: Operating expense appropriation is $619,627\u3010177322595904317\u2020L216-L239\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-Operations-ConferenceTravel-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 3 (Operations)",
+        "Section 3 appropriation for Administrative Office of the Courts operations lists: Conference and travel appropriation is $35,000\u3010177322595904317\u2020L216-L239\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-Operations-ProfessionalFees-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 3 (Operations)",
+        "Section 3 appropriation for Administrative Office of the Courts operations lists: Professional fees appropriation is $45,000\u3010177322595904317\u2020L216-L239\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-Operations-CapitalOutlay-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 3 (Operations)",
+        "Section 3 appropriation for Administrative Office of the Courts operations lists: Capital outlay appropriation is $164,500\u3010177322595904317\u2020L216-L239\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-Operations-DataProcessing-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 3 (Operations)",
+        "Section 3 appropriation for Administrative Office of the Courts operations lists: Data processing appropriation is $0\u3010177322595904317\u2020L216-L239\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-Operations-JudicialEducation-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 3 (Operations)",
+        "Section 3 appropriation for Administrative Office of the Courts operations lists: Judicial education appropriation is $400,000\u3010177322595904317\u2020L216-L239\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-Operations-CourtInterpreterFees-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 3 (Operations)",
+        "Section 3 appropriation for Administrative Office of the Courts operations lists: Court interpreter fees appropriation is $519,350\u3010177322595904317\u2020L216-L239\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-Operations-Total-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 3 (Operations)",
+        "Section 3 appropriation for Administrative Office of the Courts operations lists: Total appropriation is $6,922,736\u3010177322595904317\u2020L216-L239\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-Dispute-RegularSalaries-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 5 (Dispute Resolution Commission)",
+        "Section 5 appropriation lists: Regular salaries appropriation is $223,578\u3010177322595904317\u2020L298-L317\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-Dispute-PersonalServicesMatching-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 5 (Dispute Resolution Commission)",
+        "Section 5 appropriation lists: Personal services matching appropriation is $75,116\u3010177322595904317\u2020L298-L317\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-Dispute-OperatingExpense-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 5 (Dispute Resolution Commission)",
+        "Section 5 appropriation lists: Operating expense appropriation is $35,514\u3010177322595904317\u2020L298-L317\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-Dispute-ConferenceTravel-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 5 (Dispute Resolution Commission)",
+        "Section 5 appropriation lists: Conference and travel appropriation is $15,000\u3010177322595904317\u2020L298-L317\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-Dispute-ProfessionalFees-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 5 (Dispute Resolution Commission)",
+        "Section 5 appropriation lists: Professional fees appropriation is $31,604\u3010177322595904317\u2020L298-L317\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-Dispute-CapitalOutlay-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 5 (Dispute Resolution Commission)",
+        "Section 5 appropriation lists: Capital outlay appropriation is $0\u3010177322595904317\u2020L298-L317\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-Dispute-DataProcessing-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 5 (Dispute Resolution Commission)",
+        "Section 5 appropriation lists: Data processing appropriation is $0\u3010177322595904317\u2020L298-L317\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-Dispute-Grants-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 5 (Dispute Resolution Commission)",
+        "Section 5 appropriation lists: Alternative Dispute Resolution Grants appropriation is $25,000\u3010177322595904317\u2020L298-L317\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-Dispute-Total-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 5 (Dispute Resolution Commission)",
+        "Section 5 appropriation lists: Total appropriation is $405,812\u3010177322595904317\u2020L298-L317\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-ADR-Cash-OperatingExpense-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 6 (ADR Commission - Cash)",
+        "Section 6 appropriation lists: Operating expense appropriation is $125,000\u3010177322595904317\u2020L342-L354\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-ADR-Cash-ConferenceTravel-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 6 (ADR Commission - Cash)",
+        "Section 6 appropriation lists: Conference and travel appropriation is $30,000\u3010177322595904317\u2020L342-L354\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-ADR-Cash-ProfessionalFees-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 6 (ADR Commission - Cash)",
+        "Section 6 appropriation lists: Professional fees appropriation is $120,000\u3010177322595904317\u2020L342-L354\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-ADR-Cash-CapitalOutlay-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 6 (ADR Commission - Cash)",
+        "Section 6 appropriation lists: Capital outlay appropriation is $0\u3010177322595904317\u2020L342-L354\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-ADR-Cash-DataProcessing-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 6 (ADR Commission - Cash)",
+        "Section 6 appropriation lists: Data processing appropriation is $0\u3010177322595904317\u2020L342-L354\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-ADR-Cash-Total-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 6 (ADR Commission - Cash)",
+        "Section 6 appropriation lists: Total appropriation is $275,000\u3010177322595904317\u2020L342-L354\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-HearingVisual-AuxiliaryAids-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 7 (Hearing & Visual Impairments)",
+        "Section 7 appropriates $10,000 for auxiliary aids for persons with hearing and visual impairments\u3010177322595904317\u2020L359-L389\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-DistJudgesEducation-OperatingExpense-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 8 (District Judges continuing education)",
+        "Section 8 appropriation lists: Operating expense appropriation is $60,000\u3010177322595904317\u2020L409-L421\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-DistJudgesEducation-ConferenceTravel-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 8 (District Judges continuing education)",
+        "Section 8 appropriation lists: Conference and travel appropriation is $20,000\u3010177322595904317\u2020L409-L421\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-DistJudgesEducation-ProfessionalFees-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 8 (District Judges continuing education)",
+        "Section 8 appropriation lists: Professional fees appropriation is $0\u3010177322595904317\u2020L409-L421\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-DistJudgesEducation-CapitalOutlay-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 8 (District Judges continuing education)",
+        "Section 8 appropriation lists: Capital outlay appropriation is $0\u3010177322595904317\u2020L409-L421\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-DistJudgesEducation-DataProcessing-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 8 (District Judges continuing education)",
+        "Section 8 appropriation lists: Data processing appropriation is $0\u3010177322595904317\u2020L409-L421\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-DistJudgesEducation-Total-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 8 (District Judges continuing education)",
+        "Section 8 appropriation lists: Total appropriation is $80,000\u3010177322595904317\u2020L409-L421\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-DependencyNeglect-RegularSalaries-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 10 (Division of Dependency\u2011Neglect representation)",
+        "Section 10 appropriation lists: Regular salaries appropriation is $3,307,962\u3010177322595904317\u2020L488-L508\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-DependencyNeglect-PersonalServicesMatching-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 10 (Division of Dependency\u2011Neglect representation)",
+        "Section 10 appropriation lists: Personal services matching appropriation is $1,060,799\u3010177322595904317\u2020L488-L508\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-DependencyNeglect-OperatingExpense-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 10 (Division of Dependency\u2011Neglect representation)",
+        "Section 10 appropriation lists: Operating expense appropriation is $566,514\u3010177322595904317\u2020L488-L508\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-DependencyNeglect-ConferenceTravel-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 10 (Division of Dependency\u2011Neglect representation)",
+        "Section 10 appropriation lists: Conference and travel appropriation is $10,000\u3010177322595904317\u2020L488-L508\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-DependencyNeglect-ProfessionalFees-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 10 (Division of Dependency\u2011Neglect representation)",
+        "Section 10 appropriation lists: Professional fees appropriation is $1,405,816\u3010177322595904317\u2020L488-L508\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-DependencyNeglect-CapitalOutlay-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 10 (Division of Dependency\u2011Neglect representation)",
+        "Section 10 appropriation lists: Capital outlay appropriation is $0\u3010177322595904317\u2020L488-L508\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-DependencyNeglect-DataProcessing-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 10 (Division of Dependency\u2011Neglect representation)",
+        "Section 10 appropriation lists: Data processing appropriation is $0\u3010177322595904317\u2020L488-L508\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-DependencyNeglect-LocalCASA-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 10 (Division of Dependency\u2011Neglect representation)",
+        "Section 10 appropriation lists: Local CASA program grants appropriation is $1,750,000\u3010177322595904317\u2020L488-L508\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-DependencyNeglect-AdLitemFees-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 10 (Division of Dependency\u2011Neglect representation)",
+        "Section 10 appropriation lists: Attorney ad litem fees/reimbursements appropriation is $396,750\u3010177322595904317\u2020L488-L508\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-DependencyNeglect-Total-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 10 (Division of Dependency\u2011Neglect representation)",
+        "Section 10 appropriation lists: Total appropriation is $8,497,841\u3010177322595904317\u2020L488-L508\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-CourtAutomation-RegularSalaries-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 12 (Court Automation)",
+        "Section 12 appropriation lists: Regular salaries appropriation is $3,598,673\u3010177322595904317\u2020L616-L660\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-CourtAutomation-PersonalServicesMatching-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 12 (Court Automation)",
+        "Section 12 appropriation lists: Personal services matching appropriation is $1,167,176\u3010177322595904317\u2020L616-L660\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-CourtAutomation-OperatingExpense-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 12 (Court Automation)",
+        "Section 12 appropriation lists: Operating expense appropriation is $2,450,000\u3010177322595904317\u2020L616-L660\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-CourtAutomation-ConferenceTravel-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 12 (Court Automation)",
+        "Section 12 appropriation lists: Conference and travel appropriation is $25,000\u3010177322595904317\u2020L616-L660\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-CourtAutomation-ProfessionalFees-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 12 (Court Automation)",
+        "Section 12 appropriation lists: Professional fees appropriation is $50,000\u3010177322595904317\u2020L616-L660\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-CourtAutomation-CapitalOutlay-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 12 (Court Automation)",
+        "Section 12 appropriation lists: Capital outlay appropriation is $801,590\u3010177322595904317\u2020L616-L660\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-CourtAutomation-DataProcessing-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 12 (Court Automation)",
+        "Section 12 appropriation lists: Data processing appropriation is $0\u3010177322595904317\u2020L616-L660\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-CourtAutomation-Total-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 12 (Court Automation)",
+        "Section 12 appropriation lists: Total appropriation is $8,092,439\u3010177322595904317\u2020L616-L660\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-CourtAutomationCash-OperatingExpense-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 13 (Court Automation - Cash)",
+        "Section 13 appropriation lists: Operating expense appropriation is $150,000\u3010177322595904317\u2020L681-L699\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-CourtAutomationCash-ConferenceTravel-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 13 (Court Automation - Cash)",
+        "Section 13 appropriation lists: Conference and travel appropriation is $0\u3010177322595904317\u2020L681-L699\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-CourtAutomationCash-ProfessionalFees-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 13 (Court Automation - Cash)",
+        "Section 13 appropriation lists: Professional fees appropriation is $0\u3010177322595904317\u2020L681-L699\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-CourtAutomationCash-CapitalOutlay-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 13 (Court Automation - Cash)",
+        "Section 13 appropriation lists: Capital outlay appropriation is $0\u3010177322595904317\u2020L681-L699\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-CourtAutomationCash-DataProcessing-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 13 (Court Automation - Cash)",
+        "Section 13 appropriation lists: Data processing appropriation is $0\u3010177322595904317\u2020L681-L699\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-CourtAutomationCash-Total-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 13 (Court Automation - Cash)",
+        "Section 13 appropriation lists: Total appropriation is $150,000\u3010177322595904317\u2020L681-L699\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-DistrictJudgesClerksEducation-OperatingExpense-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 14 (District Court Judges & Clerks Continuing Education)",
+        "Section 14 appropriation lists: Operating expense appropriation is $100,000\u3010177322595904317\u2020L733-L745\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-DistrictJudgesClerksEducation-ConferenceTravel-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 14 (District Court Judges & Clerks Continuing Education)",
+        "Section 14 appropriation lists: Conference and travel appropriation is $10,000\u3010177322595904317\u2020L733-L745\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-DistrictJudgesClerksEducation-ProfessionalFees-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 14 (District Court Judges & Clerks Continuing Education)",
+        "Section 14 appropriation lists: Professional fees appropriation is $10,000\u3010177322595904317\u2020L733-L745\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-DistrictJudgesClerksEducation-CapitalOutlay-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 14 (District Court Judges & Clerks Continuing Education)",
+        "Section 14 appropriation lists: Capital outlay appropriation is $0\u3010177322595904317\u2020L733-L745\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-DistrictJudgesClerksEducation-DataProcessing-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 14 (District Court Judges & Clerks Continuing Education)",
+        "Section 14 appropriation lists: Data processing appropriation is $0\u3010177322595904317\u2020L733-L745\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-DistrictJudgesClerksEducation-Total-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 14 (District Court Judges & Clerks Continuing Education)",
+        "Section 14 appropriation lists: Total appropriation is $120,000\u3010177322595904317\u2020L733-L745\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-CourtImprovementProgram-RegularSalaries-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 16 (Court Improvement Program - Federal)",
+        "Section 16 appropriation lists: Regular salaries appropriation is $67,947\u3010177322595904317\u2020L789-L819\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-CourtImprovementProgram-PersonalServicesMatching-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 16 (Court Improvement Program - Federal)",
+        "Section 16 appropriation lists: Personal services matching appropriation is $23,527\u3010177322595904317\u2020L789-L819\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-CourtImprovementProgram-OperatingExpense-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 16 (Court Improvement Program - Federal)",
+        "Section 16 appropriation lists: Operating expense appropriation is $350,000\u3010177322595904317\u2020L789-L819\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-CourtImprovementProgram-ConferenceTravel-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 16 (Court Improvement Program - Federal)",
+        "Section 16 appropriation lists: Conference and travel appropriation is $150,000\u3010177322595904317\u2020L789-L819\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-CourtImprovementProgram-ProfessionalFees-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 16 (Court Improvement Program - Federal)",
+        "Section 16 appropriation lists: Professional fees appropriation is $30,000\u3010177322595904317\u2020L789-L819\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-CourtImprovementProgram-CapitalOutlay-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 16 (Court Improvement Program - Federal)",
+        "Section 16 appropriation lists: Capital outlay appropriation is $0\u3010177322595904317\u2020L789-L819\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-CourtImprovementProgram-DataProcessing-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 16 (Court Improvement Program - Federal)",
+        "Section 16 appropriation lists: Data processing appropriation is $0\u3010177322595904317\u2020L789-L819\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-CourtImprovementProgram-Grants-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 16 (Court Improvement Program - Federal)",
+        "Section 16 appropriation lists: Dependency neglect grants appropriation is $140,000\u3010177322595904317\u2020L789-L819\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-CourtImprovementProgram-Total-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 16 (Court Improvement Program - Federal)",
+        "Section 16 appropriation lists: Total appropriation is $761,474\u3010177322595904317\u2020L789-L819\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-AccessVisitation-RegularSalaries-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 18 (Access & Visitation Mediation - Federal)",
+        "Section 18 appropriation lists: Regular salaries appropriation is $43,010\u3010177322595904317\u2020L865-L885\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-AccessVisitation-PersonalServicesMatching-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 18 (Access & Visitation Mediation - Federal)",
+        "Section 18 appropriation lists: Personal services matching appropriation is $17,933\u3010177322595904317\u2020L865-L885\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-AccessVisitation-OperatingExpense-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 18 (Access & Visitation Mediation - Federal)",
+        "Section 18 appropriation lists: Operating expense appropriation is $10,000\u3010177322595904317\u2020L865-L885\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-AccessVisitation-ConferenceTravel-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 18 (Access & Visitation Mediation - Federal)",
+        "Section 18 appropriation lists: Conference and travel appropriation is $0\u3010177322595904317\u2020L865-L885\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-AccessVisitation-ProfessionalFees-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 18 (Access & Visitation Mediation - Federal)",
+        "Section 18 appropriation lists: Professional fees appropriation is $85,000\u3010177322595904317\u2020L865-L885\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-AccessVisitation-CapitalOutlay-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 18 (Access & Visitation Mediation - Federal)",
+        "Section 18 appropriation lists: Capital outlay appropriation is $0\u3010177322595904317\u2020L865-L885\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-AccessVisitation-DataProcessing-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 18 (Access & Visitation Mediation - Federal)",
+        "Section 18 appropriation lists: Data processing appropriation is $0\u3010177322595904317\u2020L865-L885\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AOC-AccessVisitation-Total-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "SB72 Section 18 (Access & Visitation Mediation - Federal)",
+        "Section 18 appropriation lists: Total appropriation is $155,943\u3010177322595904317\u2020L865-L885\u3011"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    }
+  ]
+}

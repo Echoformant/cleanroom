@@ -81,10 +81,18 @@
         #graph-container {
             flex: 1;
             position: relative;
+            min-height: 500px;
+            overflow: hidden;
         }
         #graph {
             width: 100%;
             height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
         }
         #info-panel {
             position: absolute;
@@ -185,6 +193,8 @@
         </div>
         
         <label><input type="checkbox" id="hide-orphans"> Hide orphans</label>
+        <label><input type="checkbox" id="show-labels"> Show labels</label>
+        <label>Min links: <input type="range" id="min-links" min="0" max="20" value="5" style="width:80px"><span id="min-links-val">5</span></label>
     </div>
     
     <div id="graph-container">
@@ -230,7 +240,7 @@
             allNodes = data.nodes.map(n => ({
                 id: n.id,
                 label: n.label,
-                title: n.id,
+                title: n.id + ' (' + n.link_count + ' links)',
                 color: {
                     background: COLORS[n.category] || '#666',
                     border: COLORS[n.category] || '#666',
@@ -239,7 +249,7 @@
                 category: n.category,
                 link_count: n.link_count,
                 is_orphan: n.is_orphan,
-                size: Math.max(10, Math.min(40, 10 + n.link_count * 2)),
+                size: Math.max(8, Math.min(50, 8 + n.link_count * 3)),
                 font: { color: '#eee', size: 10 }
             }));
 
@@ -258,18 +268,26 @@
 
         function renderGraph() {
             const filters = getFilters();
+            const showLabels = document.getElementById('show-labels').checked;
             
             const visibleNodes = allNodes.filter(n => {
                 if (!filters.categories.includes(n.category)) return false;
                 if (filters.hideOrphans && n.is_orphan) return false;
+                if (n.link_count < filters.minLinks) return false;
                 if (filters.search && !n.id.toLowerCase().includes(filters.search.toLowerCase())) return false;
                 return true;
-            });
+            }).map(n => ({
+                ...n,
+                label: showLabels ? n.label : ''
+            }));
 
             const visibleNodeIds = new Set(visibleNodes.map(n => n.id));
             const visibleEdges = allEdges.filter(e => 
                 visibleNodeIds.has(e.from) && visibleNodeIds.has(e.to)
             );
+            
+            document.getElementById('node-count').textContent = visibleNodes.length + ' / ' + allNodes.length;
+            document.getElementById('edge-count').textContent = visibleEdges.length + ' / ' + allEdges.length;
 
             const container = document.getElementById('graph');
             const options = {
@@ -281,15 +299,21 @@
                     width: 1,
                     selectionWidth: 2
                 },
+                layout: {
+                    improvedLayout: false,
+                    randomSeed: 42
+                },
                 physics: {
                     solver: 'forceAtlas2Based',
                     forceAtlas2Based: {
-                        gravitationalConstant: -50,
-                        centralGravity: 0.01,
-                        springLength: 100,
-                        springConstant: 0.08
+                        gravitationalConstant: -30,
+                        centralGravity: 0.015,
+                        springLength: 80,
+                        springConstant: 0.1,
+                        damping: 0.5
                     },
-                    stabilization: { iterations: 150 }
+                    stabilization: { iterations: 50, fit: true },
+                    maxVelocity: 30
                 },
                 interaction: {
                     hover: true,
@@ -317,6 +341,7 @@
             return {
                 categories,
                 hideOrphans: document.getElementById('hide-orphans').checked,
+                minLinks: parseInt(document.getElementById('min-links').value) || 0,
                 search: document.getElementById('search').value
             };
         }
@@ -374,6 +399,11 @@
             cb.addEventListener('change', renderGraph);
         });
         document.getElementById('hide-orphans').addEventListener('change', renderGraph);
+        document.getElementById('show-labels').addEventListener('change', renderGraph);
+        document.getElementById('min-links').addEventListener('input', function() {
+            document.getElementById('min-links-val').textContent = this.value;
+            renderGraph();
+        });
         document.getElementById('search').addEventListener('input', debounce(renderGraph, 300));
 
         function debounce(func, wait) {

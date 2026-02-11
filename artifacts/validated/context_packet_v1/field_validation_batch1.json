@@ -1,0 +1,598 @@
+{
+  "field_validation": [
+    {
+      "fv_id": "FV-AR-MF-ACCOUNTABILITY-COURT-FUND-2025-2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Administrative Office of the Courts / Supreme Court",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-ACCOUNTABILITY-COURT-FUND-2025-2026",
+        "AUTH-AR-ACT776-2025-AOC"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-Accountability-Court-Fund-to-Administrative-Office-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Administrative Office of the Courts / Supreme Court",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-Accountability-Court-Fund-to-Administrative-Office",
+        "AUTH-AR-ACT776-2025-AOC"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-Adult-Drug-Court-Cash-Fund-to-Administrative-Office-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Administrative Office of the Courts / Supreme Court",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-Adult-Drug-Court-Cash-Fund-to-Administrative-Office",
+        "AUTH-AR-ACT776-2025-AOC"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ACF-DEPOSIT-2025-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Administrative Office of the Courts / Supreme Court",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ACF-DEPOSIT-2025",
+        "AUTH-AR-ACT776-2025-AOC"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADC-EDUCATIONAL-WORK-PROGRAMS-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Correction / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ADC-EDUCATIONAL-WORK-PROGRAMS-FY2026",
+        "AUTH-AR-ACT790-2025-ADC"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADC-OPERATIONS-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Correction / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ADC-OPERATIONS-FY2026",
+        "AUTH-AR-ACT790-2025-ADC"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADC-PRISON-FARM-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Correction / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ADC-PRISON-FARM-FY2026",
+        "AUTH-AR-ACT790-2025-ADC"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADE-PUBLIC-SCHOOL-FUND-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Education / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ADE-PUBLIC-SCHOOL-FUND-FY2026",
+        "AUTH-AR-ACT1010-2025-ADE"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADE-TEACHER-SALARY-SUPPORT-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Education / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ADE-TEACHER-SALARY-SUPPORT-FY2026",
+        "AUTH-AR-ACT1010-2025-ADE"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADE-TEXTBOOK-PURCHASE-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Education / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ADE-TEXTBOOK-PURCHASE-FY2026",
+        "AUTH-AR-ACT1010-2025-ADE"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADH-BREAST-CARE-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Health / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ADH-BREAST-CARE-FY2026",
+        "AUTH-AR-ACT538-2025-ADH"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADH-EMS-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Health / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ADH-EMS-FY2026",
+        "AUTH-AR-ACT538-2025-ADH"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADH-GRANTS-AID-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Health / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ADH-GRANTS-AID-FY2026",
+        "AUTH-AR-ACT538-2025-ADH"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADH-HEALTH-BUILDING-GRANTS-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Health / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ADH-HEALTH-BUILDING-GRANTS-FY2026",
+        "AUTH-AR-ACT538-2025-ADH"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADH-INFECTIOUS-DISEASE-CONTROL-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Health / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ADH-INFECTIOUS-DISEASE-CONTROL-FY2026",
+        "AUTH-AR-ACT538-2025-ADH"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADH-INFECTIOUS-DISEASES-TESTING-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Health / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ADH-INFECTIOUS-DISEASES-TESTING-FY2026",
+        "AUTH-AR-ACT538-2025-ADH"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADH-INTERPRETERS-DEAF-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Health / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ADH-INTERPRETERS-DEAF-FY2026",
+        "AUTH-AR-ACT538-2025-ADH"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADH-KIDNEY-DISEASE-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Health / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ADH-KIDNEY-DISEASE-FY2026",
+        "AUTH-AR-ACT538-2025-ADH"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADH-NUCLEAR-PLANNING-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Health / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ADH-NUCLEAR-PLANNING-FY2026",
+        "AUTH-AR-ACT538-2025-ADH"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADH-OPERATIONS-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Health / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ADH-OPERATIONS-FY2026",
+        "AUTH-AR-ACT538-2025-ADH"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADH-SHARED-SERVICES-PAYING-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Health / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ADH-SHARED-SERVICES-PAYING-FY2026",
+        "AUTH-AR-ACT538-2025-ADH"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADH-TOBACCO-PREVENTION-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Health / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ADH-TOBACCO-PREVENTION-FY2026",
+        "AUTH-AR-ACT538-2025-ADH"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADH-TRAUMA-SYSTEM-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Health / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ADH-TRAUMA-SYSTEM-FY2026",
+        "AUTH-AR-ACT538-2025-ADH"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADH-WIC-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Health / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ADH-WIC-FY2026",
+        "AUTH-AR-ACT538-2025-ADH"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADLL-APPRENTICESHIP-PROGRAM-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Labor and Licensing / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ADLL-APPRENTICESHIP-PROGRAM-FY2026",
+        "AUTH-AR-ACT184-2025-ADLL"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADLL-LABOR-STANDARDS-ENFORCEMENT-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Labor and Licensing / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ADLL-LABOR-STANDARDS-ENFORCEMENT-FY2026",
+        "AUTH-AR-ACT184-2025-ADLL"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADLL-LICENSING-BOARD-OPERATIONS-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Labor and Licensing / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-ADLL-LICENSING-BOARD-OPERATIONS-FY2026",
+        "AUTH-AR-ACT1005-2025-ADLL"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADPHT-HERITAGE-GRANTS-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Parks, Heritage and Tourism / Legislative Audit",
+      "alignment_status": "open",
+      "evidence_basis": [
+        "MF-AR-ADPHT-HERITAGE-GRANTS-FY2026"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADPHT-STATE-PARKS-OPERATIONS-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Parks, Heritage and Tourism / Legislative Audit",
+      "alignment_status": "open",
+      "evidence_basis": [
+        "MF-AR-ADPHT-STATE-PARKS-OPERATIONS-FY2026"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ADPHT-TOURISM-MARKETING-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Department of Parks, Heritage and Tourism / Legislative Audit",
+      "alignment_status": "open",
+      "evidence_basis": [
+        "MF-AR-ADPHT-TOURISM-MARKETING-FY2026"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-AEDC-BUSINESS-INNOVATION-PROGRAM-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Economic Development Commission / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-AEDC-BUSINESS-INNOVATION-PROGRAM-FY2026",
+        "AUTH-AR-ACT608-2025-DeptCommerce"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-AEDC-ECONOMIC-DEVELOPMENT-GRANTS-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Economic Development Commission / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-AEDC-ECONOMIC-DEVELOPMENT-GRANTS-FY2026",
+        "AUTH-AR-ACT608-2025-DeptCommerce"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-AEDC-MINORITY-AND-WOMEN-BUSINESS-SUPPORT-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Economic Development Commission / Legislative Audit",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-AEDC-MINORITY-AND-WOMEN-BUSINESS-SUPPORT-FY2026",
+        "AUTH-AR-ACT608-2025-DeptCommerce"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-AG-TO-CHILDRENS-HOSPITAL-OPIOID-RESEARCH-2024-GRANT-TRACKING",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Attorney General / Legislative Audit",
+      "alignment_status": "open",
+      "evidence_basis": [
+        "MF-AR-AG-TO-CHILDRENS-HOSPITAL-OPIOID-RESEARCH-2024",
+        "ARORP-TRANSPARENCY-REPORT-2025"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-AID-CONSUMER-EDUCATION-PROGRAM-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Insurance Department / Legislative Audit",
+      "alignment_status": "open",
+      "evidence_basis": [
+        "MF-AR-AID-CONSUMER-EDUCATION-PROGRAM-FY2026"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-AID-INSURANCE-FRAUD-INVESTIGATION-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Insurance Department / Legislative Audit",
+      "alignment_status": "open",
+      "evidence_basis": [
+        "MF-AR-AID-INSURANCE-FRAUD-INVESTIGATION-FY2026"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-AID-INSURANCE-REGULATION-OPERATIONS-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Arkansas Insurance Department / Legislative Audit",
+      "alignment_status": "open",
+      "evidence_basis": [
+        "MF-AR-AID-INSURANCE-REGULATION-OPERATIONS-FY2026"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-AOC-ACCOUNTABILITY-COURT-FUND-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Administrative Office of the Courts / Supreme Court",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-AOC-ACCOUNTABILITY-COURT-FUND-FY2026",
+        "AUTH-AR-ACT776-2025-AOC"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-AOC-ACF-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Administrative Office of the Courts / Supreme Court",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-AOC-ACF-FY2026",
+        "AUTH-AR-ACT776-2025-AOC"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-AOC-ADULT-DRUG-COURT-PROGRAM-FY2026-APPROPRIATION",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "Administrative Office of the Courts / Supreme Court",
+      "alignment_status": "captured",
+      "evidence_basis": [
+        "MF-AR-AOC-ADULT-DRUG-COURT-PROGRAM-FY2026",
+        "AUTH-AR-ACT776-2025-AOC"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ARORP-142-PROJECTS-26M-2024H1-GRANT-TRACKING",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "ARORP Transparency / Attorney General / Legislative Audit",
+      "alignment_status": "mixed",
+      "evidence_basis": [
+        "MF-AR-ARORP-142-PROJECTS-26M-2024H1",
+        "ARORP-TRANSPARENCY-REPORT-2025"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ARORP-APPROVED-28M-THROUGH-2024Q4-GRANT-TRACKING",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "ARORP Transparency / Attorney General / Legislative Audit",
+      "alignment_status": "mixed",
+      "evidence_basis": [
+        "MF-AR-ARORP-APPROVED-28M-THROUGH-2024Q4",
+        "ARORP-TRANSPARENCY-REPORT-2025"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ARORP-DENIED-293M-THROUGH-2024Q4-GRANT-TRACKING",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "ARORP Transparency / Attorney General / Legislative Audit",
+      "alignment_status": "mixed",
+      "evidence_basis": [
+        "MF-AR-ARORP-DENIED-293M-THROUGH-2024Q4",
+        "ARORP-TRANSPARENCY-REPORT-2025"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ARORP-NALOXONE-TOTAL-2M-2022-2026-GRANT-TRACKING",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "ARORP Transparency / Attorney General / Legislative Audit",
+      "alignment_status": "mixed",
+      "evidence_basis": [
+        "MF-AR-ARORP-NALOXONE-TOTAL-2M-2022-2026",
+        "ARORP-TRANSPARENCY-REPORT-2025"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ARORP-TO-AR-PHARMACISTS-UNDER100-FY2024-GRANT-TRACKING",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "ARORP Transparency / Attorney General / Legislative Audit",
+      "alignment_status": "mixed",
+      "evidence_basis": [
+        "MF-AR-ARORP-TO-AR-PHARMACISTS-UNDER100-FY2024",
+        "ARORP-TRANSPARENCY-REPORT-2025"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ARORP-TO-BRIDGING-GAPS-COPE-FY2024-GRANT-TRACKING",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "ARORP Transparency / Attorney General / Legislative Audit",
+      "alignment_status": "mixed",
+      "evidence_basis": [
+        "MF-AR-ARORP-TO-BRIDGING-GAPS-COPE-FY2024",
+        "ARORP-TRANSPARENCY-REPORT-2025"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ARORP-TO-CADCA-CAN-FY2025-GRANT-TRACKING",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "ARORP Transparency / Attorney General / Legislative Audit",
+      "alignment_status": "mixed",
+      "evidence_basis": [
+        "MF-AR-ARORP-TO-CADCA-CAN-FY2025",
+        "ARORP-TRANSPARENCY-REPORT-2025"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ARORP-TO-CADCA-TRAINING-FY2023-GRANT-TRACKING",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "ARORP Transparency / Attorney General / Legislative Audit",
+      "alignment_status": "mixed",
+      "evidence_basis": [
+        "MF-AR-ARORP-TO-CADCA-TRAINING-FY2023",
+        "ARORP-TRANSPARENCY-REPORT-2025"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ARORP-TO-CHANGE-COPE-FY2025-GRANT-TRACKING",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "ARORP Transparency / Attorney General / Legislative Audit",
+      "alignment_status": "mixed",
+      "evidence_basis": [
+        "MF-AR-ARORP-TO-CHANGE-COPE-FY2025",
+        "ARORP-TRANSPARENCY-REPORT-2025"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    },
+    {
+      "fv_id": "FV-AR-MF-AR-ARORP-TO-CHANGES-BEHAVIORAL-HEALTH-FY2024-GRANT-TRACKING",
+      "jurisdiction": "Arkansas",
+      "validating_entity": "ARORP Transparency / Attorney General / Legislative Audit",
+      "alignment_status": "mixed",
+      "evidence_basis": [
+        "MF-AR-ARORP-TO-CHANGES-BEHAVIORAL-HEALTH-FY2024",
+        "ARORP-TRANSPARENCY-REPORT-2025"
+      ],
+      "disclosure_level": "public",
+      "editor_status": "pending"
+    }
+  ]
+}

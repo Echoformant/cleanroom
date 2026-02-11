@@ -1,0 +1,153 @@
+{
+  "authority_reference": [
+    {
+      "authority_id": "AUTH-AR-ACA-19-5-1011-DRUG-COURT-ENHANCEMENT",
+      "authority_type": "appropriation",
+      "citation": "Act 776 of 2025, § 27",
+      "administering_body": "Administrative Office of the Courts",
+      "governs": ["MF-AR-AOC-DRUG-COURT-ENHANCEMENT"],
+      "effects": "Section 27 of Act 776 (2025) appropriates federal funds to the Administrative Office of the Courts for drug court enhancement.  It allocates more than $9 million for FY 2026, covering operating expenses, travel and training, professional fees, grants and aid, and an adult treatment court program【556692708300381†L661-L679】.  This appropriation ensures the AOC has resources to support adult and juvenile specialty courts through the Drug Court Enhancement program.",
+      "editor_status": "pending"
+    },
+    {
+      "authority_id": "AUTH-AR-ACA-19-5-1033-CRIME-VICTIMS-REPARATIONS",
+      "authority_type": "statute",
+      "citation": "Ark. Code Ann. § 16‑90‑717",
+      "administering_body": "Crime Victims Reparations Board",
+      "governs": ["MF-AR-CRIME-VICTIMS-REPARATIONS"],
+      "effects": "Arkansas Code § 16‑90‑717 creates the Crime Victims Reparations Revolving Fund.  The statute provides that a continuing fund is established in the State Treasury for the Crime Victims Reparations Board.  All moneys received from any source and all interest earned remain in the fund.  The Board may budget and expend the moneys to implement the crime‑victim reparations program and the sexual‑assault statutes【759199032674464†L72-L83】.",
+      "editor_status": "pending"
+    },
+    {
+      "authority_id": "AUTH-AR-ACA-19-5-1144-ACCOUNTABILITY-COURT-FUND",
+      "authority_type": "statute",
+      "citation": "Ark. Code Ann. § 19‑5‑1144",
+      "administering_body": "Administrative Office of the Courts",
+      "governs": ["MF-AR-AOC-ACCOUNTABILITY-COURT-FUND"],
+      "effects": "Section 19‑5‑1144 establishes the Accountability Court Fund on the books of the State Treasurer, Auditor of State and Chief Fiscal Officer.  The fund consists of grants or other funds received.  It is to be used by the Administrative Office of the Courts for adult and juvenile specialty court programs according to a formula developed by the Arkansas Judicial Council and approved by the Legislative Council【5346883730037†L70-L83】.  The fund provides dedicated support for specialty courts such as drug courts and veterans courts.",
+      "editor_status": "pending"
+    },
+    {
+      "authority_id": "AUTH-AR-ACA-19-5-1146-ADULT-DRUG-COURT-EXPENSE",
+      "authority_type": "appropriation",
+      "citation": "Act 776 of 2025, § 31",
+      "administering_body": "Administrative Office of the Courts",
+      "governs": ["MF-AR-AOC-ADULT-DRUG-COURT-EXPENSE"],
+      "effects": "Section 31 of Act 776 (2025) provides an appropriation of one million dollars from a cash fund to the Administrative Office of the Courts to pay adult drug‑court expenses for FY 2026【556692708300381†L739-L758】.  The appropriation may be used for operating expenses, travel and training, professional fees, and grants and aid to support adult drug‑court programs throughout Arkansas.",
+      "editor_status": "pending"
+    },
+    {
+      "authority_id": "AUTH-AR-ACA-19-5-1147-SPECIALTY-COURT-STATE-CENTRAL",
+      "authority_type": "appropriation",
+      "citation": "Act 776 of 2025, § 32",
+      "administering_body": "Administrative Office of the Courts",
+      "governs": ["MF-AR-AOC-SPECIALTY-COURT-STATE-CENTRAL"],
+      "effects": "Section 32 of Act 776 (2025) appropriates $4.5 million from the State Central Services Fund to the Administrative Office of the Courts for specialty court programs in FY 2026【556692708300381†L760-L776】.  These funds are available for operating expenses, professional fees and services, and grants and aid to counties and municipalities, ensuring adequate support for specialty courts such as drug‑, veteran‑ and mental‑health treatment courts across the state.",
+      "editor_status": "pending"
+    },
+    {
+      "authority_id": "AUTH-AR-ACA-19-5-1148-COURT-TECHNOLOGY-IMPROVEMENT",
+      "authority_type": "act",
+      "citation": "Act 328 of 2009 (Court Technology Improvement Act)",
+      "administering_body": "Administrative Office of the Courts",
+      "governs": ["MF-AR-AOC-COURT-TECHNOLOGY-IMPROVEMENT"],
+      "effects": "The Court Technology Improvement Act of 2009 (HB 1353, enacted as Act 328) authorizes the Arkansas Supreme Court, through the Administrative Office of the Courts, to design, purchase, implement and operate a comprehensive automated court management system.  The Act makes the system self‑supporting by requiring that all funding be generated through use of the system rather than general revenue and is known as the \"Court Technology Improvement Act of 2009\"【877678106644158†L67-L118】.  It amends statutes governing credit‑card payments and collection of fines to enable electronic payments and supports a fee structure that funds court technology improvements【877678106644158†L67-L118】.",
+      "editor_status": "pending"
+    },
+    {
+      "authority_id": "AUTH-AR-ACA-19-5-304-COMMUNITY-CORRECTION",
+      "authority_type": "statute",
+      "citation": "Ark. Code Ann. § 19‑5‑302 (Department of Community Correction Fund Account)",
+      "administering_body": "Arkansas Department of Community Correction",
+      "governs": ["MF-AR-DCC-COMMUNITY-CORRECTION-FUND"],
+      "effects": "In the State General Government Fund account statute, § 19‑5‑302(12) creates the Department of Community Correction Fund Account.  The account consists of general revenues and non‑revenue income derived from probation, parole and community correction program services, along with other funds provided by law.  Moneys in the account are to be used for the maintenance, operation and improvement of the Department of Community Correction【134496210289864†L278-L290】.  This fund supports community‑based corrections and probation services.",
+      "editor_status": "pending"
+    },
+    {
+      "authority_id": "AUTH-AR-ACA-19-5-306",
+      "authority_type": "statute",
+      "citation": "Ark. Code Ann. § 19‑5‑306",
+      "administering_body": "Arkansas Department of Human Services",
+      "governs": ["MF-AR-DHS-BEHAVIORAL-HEALTH"],
+      "effects": "Section 19‑5‑306 establishes the Department of Human Services Fund and its various fund accounts.  For example, the Behavioral Health Services Fund Account within this section is used for the maintenance and operation of the Division of Aging, Adult, and Behavioral Health Services.  The account consists of general revenues, nonrevenue income derived from services, federal reimbursement funds, paying patient fees, and matching funds【645878655316602†L70-L94】.  The provision ensures that DHS has a dedicated fund structure to support behavioral health and other human‑services programs.",
+      "editor_status": "pending"
+    },
+    {
+      "authority_id": "AUTH-AR-ACA-20-46-301-SUBSTANCE",
+      "authority_type": "statute",
+      "citation": "Ark. Code Ann. § 20‑46‑601",
+      "administering_body": "Arkansas Department of Human Services – Division of Aging, Adult, and Behavioral Health Services",
+      "governs": ["MF-AR-DAABHS-SUBSTANCE-PROGRAM"],
+      "effects": "Subchapter 6 of Title 20, Chapter 46 establishes a program for persons suffering from mental illness and substance abuse.  The General Assembly finds that individuals with mental illness and substance abuse disorders contribute to violence and declares the purpose of the program is to provide long‑term treatment and case management services.  The Department of Human Services must provide secure residential treatment facilities, community‑based crisis intervention centers, and clinical assessment and review to ensure that clients addicted to drugs or alcohol receive necessary services【375383183012027†L72-L95】.  This statute authorizes DAABHS to manage substance‑abuse treatment programs for high‑risk individuals.",
+      "editor_status": "pending"
+    },
+    {
+      "authority_id": "AUTH-AR-ACA-20-76-201-ACCOUNTABILITY",
+      "authority_type": "statute",
+      "citation": "Ark. Code Ann. § 20‑76‑201",
+      "administering_body": "Arkansas Department of Human Services",
+      "governs": ["MF-AR-DHS-ACCOUNTABILITY"],
+      "effects": "Arkansas Code § 20‑76‑201 sets forth the powers and duties of the Department of Human Services.  The department is charged with administering public assistance and child‑welfare activities, cooperating with public and private agencies, developing performance standards for welfare programs, conducting research and studies, and adopting and operating automated statewide benefit delivery and information systems【703909242863726†L73-L100】【703909242863726†L140-L151】.  These provisions authorize DHS to implement accountability measures and data systems to improve program management and compliance.",
+      "editor_status": "pending"
+    },
+    {
+      "authority_id": "AUTH-AR-ACT58-2021-DHS-SUBSTANCE",
+      "authority_type": "act",
+      "citation": "Act 58 of 2021",
+      "administering_body": "Administrative Office of the Courts and Specialty Court Program Advisory Committee",
+      "governs": ["MF-AR-AOC-SPECIALTY-COURT-PROGRAM"],
+      "effects": "Act 58 of 2021 amends Ark. Code § 16‑10‑139 to define \"specialty court program\" to include pre‑adjudication programs, drug courts, Swift and Certain Accountability programs, and veterans treatment or DWI specialty courts.  It directs the Specialty Court Program Advisory Committee to evaluate programs using nationally recognized standards, ensure resources are directed to high‑risk, high‑need offenders, require evidence‑based practices, and ensure that specialty courts address substance dependency and mental‑health issues among participants【30507785040088†L39-L104】.  The Act expands authority for DHS and the courts to operate specialty court programs that prioritize treatment for substance use disorders.",
+      "editor_status": "pending"
+    },
+    {
+      "authority_id": "AUTH-AR-ACT776-2025-AOC-APPROPRIATION",
+      "authority_type": "appropriation",
+      "citation": "Act 776 of 2025",
+      "administering_body": "Administrative Office of the Courts",
+      "governs": ["MF-AR-AOC-APPROPRIATION"],
+      "effects": "Act 776 of 2025 is an appropriation act for the Administrative Office of the Courts for FY 2026.  In addition to general operating appropriations, specific sections provide funding for drug court enhancement, accountability court programs, adult drug‑court expenses and specialty courts【556692708300381†L661-L679】【556692708300381†L739-L776】.  These appropriations ensure that the AOC has resources for court operations, specialty court programs, and associated support services.",
+      "editor_status": "pending"
+    },
+    {
+      "authority_id": "AUTH-AR-DUR-BOARD-BYLAWS-2025",
+      "authority_type": "policy",
+      "citation": "Drug Utilization Review (DUR) Board Bylaws (revised July 2025)",
+      "administering_body": "Arkansas Medicaid – Drug Utilization Review Board",
+      "governs": ["MF-AR-DHS-DUR-BOARD"],
+      "effects": "The July 2025 bylaws of the Arkansas Drug Utilization Review Board explain that the board is established under 42 U.S.C. § 1396r‑8(g)(3) and 42 C.F.R. § 456.716.  The board’s mission is to ensure safe, effective and clinically‑sound pharmaceutical care for Medicaid beneficiaries.  Membership includes physicians, pharmacists and other professionals appointed by the governor, and members must be free of conflicts of interest.  The bylaws require the board to review clinical evidence, develop drug‑use criteria, monitor patterns of utilization and make recommendations to the Division of Medical Services to improve patient outcomes【674902515603826†L11-L40】【674902515603826†L52-L85】.  These policies govern how the board reviews medications and manages formularies.",
+      "editor_status": "pending"
+    },
+    {
+      "authority_id": "AUTH-AR-OPIOIDS-MOU-EXECUTED-JULY-2021",
+      "authority_type": "memorandum",
+      "citation": "Arkansas Opioids Memorandum of Understanding (executed July 2021)",
+      "administering_body": "Arkansas Opioid Recovery Partnership (ARORP) and parties to the MOU",
+      "governs": ["MF-AR-OPIOID-SETTLEMENT-FUND"],
+      "effects": "In July 2021, Governor Asa Hutchinson, Attorney General Leslie Rutledge, Association of Arkansas Counties Executive Director Chris Villines and Arkansas Municipal League Director Mark Hayes signed the Arkansas Opioids Memorandum of Understanding.  The MOU provides that the state, counties and cities will equally share Arkansas’s opioid settlement funds and directs that the money be used for evidence‑based strategies to abate the opioid epidemic【332936500398358†L144-L148】.  The MOU establishes funding allocations and joint administration through the Arkansas Opioid Recovery Partnership.",
+      "editor_status": "pending"
+    },
+    {
+      "authority_id": "AUTH-AR-SB472-S1-2015-ACCOUNTABILITY",
+      "authority_type": "act",
+      "citation": "2015 Criminal Justice Reform Act (SB 472, § 41)",
+      "administering_body": "Arkansas Department of Community Correction and Administrative Office of the Courts",
+      "governs": ["MF-AR-SPECIALTY-COURT-PROGRAM-FUND"],
+      "effects": "Section 41 of the 2015 Criminal Justice Reform Act (SB 472) creates the Accountability Court Fund as a trust fund consisting of grants or other funds.  The fund is used by the Department of Community Correction to support specialty court programs as defined by § 16‑10‑139【407800006528432†L3261-L3283】.  Subsequent sections of the Act amend Title 19 and Title 16 to create the Specialty Court Program Fund and require that user fees collected from specialty‑court participants be used for treatment services, program evaluation and crisis intervention for specialty court programs【407800006528432†L3292-L3419】.  The Act establishes accountability and funding mechanisms for specialty courts statewide.",
+      "editor_status": "pending"
+    }
+  ],
+  "evidence_item": [
+    {
+      "evidence_id": "EVID-AR-25-10-129-STATUTE",
+      "section": "AUTH-AR-ACA-25-10-129",
+      "claim_summary": "Arkansas Code § 25‑10‑129 authorizes the Department of Human Services to promulgate rules necessary to conform to federal statutes, rules and regulations affecting programs it administers.  The General Assembly intends that DHS utilize federal funding to the fullest extent and recognizes that federal requirements change frequently.  The statute empowers the department to adopt federal provisions by rule so that the state’s welfare, medical assistance and other programs remain eligible for federal funding【796504054028413†L72-L103】.",
+      "evidence_type": "policy",
+      "source": {
+        "document": "Arkansas Code Annotated",
+        "url": "https://law.justia.com/codes/arkansas/title-25/chapter-10/subchapter-1/section-25-10-129/"
+      },
+      "confidence_level": "high",
+      "editor_status": "pending"
+    }
+  ]
+}

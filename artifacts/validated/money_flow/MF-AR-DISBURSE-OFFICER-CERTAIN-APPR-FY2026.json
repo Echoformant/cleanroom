@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-DISBURSE-OFFICER-CERTAIN-APPR-FY2026",
+  "source": "Appropriations for circuit judges, prosecuting attorneys, retired judges, and lieutenant governor",
+  "intermediary": "Auditor of State",
+  "destination": "Circuit judges, prosecuting attorneys, retired judges, and the lieutenant governor",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Code Ann. § 19-4-402",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.287962"
+}

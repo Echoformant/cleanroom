@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Graph Test</title>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style>
+        body { margin: 0; background: #1a1a2e; color: #eee; font-family: sans-serif; }
+        #info { padding: 10px; }
+        #graph { width: 100%; height: 600px; border: 1px solid #333; }
+    </style>
+</head>
+<body>
+    <div id="info">Loading...</div>
+    <div id="graph"></div>
+    <script>
+        async function init() {
+            try {
+                const response = await fetch('artifacts_graph.json');
+                const data = await response.json();
+                
+                // Filter to only well-connected nodes
+                const minLinks = 5;
+                const filtered = data.nodes.filter(n => n.link_count >= minLinks);
+                const nodeIds = new Set(filtered.map(n => n.id));
+                const edges = data.edges.filter(e => nodeIds.has(e.source) && nodeIds.has(e.target));
+                
+                document.getElementById('info').textContent = 
+                    `Showing ${filtered.length} nodes (of ${data.nodes.length}) with ${minLinks}+ links, ${edges.length} edges`;
+                
+                const nodes = filtered.map(n => ({
+                    id: n.id,
+                    label: n.label.substring(0, 20),
+                    title: n.id,
+                    color: n.category === 'authority_reference' ? '#e94560' :
+                           n.category === 'money_flow' ? '#4ecca3' :
+                           n.category === 'evidence_item' ? '#f39c12' : '#9b59b6'
+                }));
+                
+                const visEdges = edges.map((e, i) => ({
+                    id: i,
+                    from: e.source,
+                    to: e.target,
+                    color: '#556677'
+                }));
+                
+                const container = document.getElementById('graph');
+                new vis.Network(container, {
+                    nodes: new vis.DataSet(nodes),
+                    edges: new vis.DataSet(visEdges)
+                }, {
+                    layout: { improvedLayout: false },
+                    physics: {
+                        solver: 'forceAtlas2Based',
+                        forceAtlas2Based: {
+                            gravitationalConstant: -20,
+                            centralGravity: 0.01,
+                            springLength: 50
+                        },
+                        stabilization: { iterations: 30 }
+                    }
+                });
+                
+            } catch (err) {
+                document.getElementById('info').textContent = 'Error: ' + err.message;
+            }
+        }
+        init();
+    </script>
+</body>
+</html>

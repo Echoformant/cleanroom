@@ -1,0 +1,33 @@
+{
+  "flow_id": "MF-AR-OPIOID-SETTLEMENT-AG-SPECIALTY-COURTS",
+  "source": "Arkansas Attorney General - State Opioid Settlement Share",
+  "intermediary": "Administrative Office of the Courts (AOC)",
+  "destination": "Approved Specialty Court Programs",
+  "amount": 1000000,
+  "amount_note": "Up to $1 million grant approved Nov 2024; disbursed on case-by-case basis per specialty court judge request",
+  "fund_type": "state",
+  "fiscal_year": "FY2025",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "allowable_uses": [
+    "Transitional housing",
+    "Mental health treatment and recovery",
+    "Substance treatment and recovery",
+    "Community mentors/peer recovery supports",
+    "Transportation"
+  ],
+  "settlement_structure": {
+    "state_share": "One-third to state (managed by AG)",
+    "municipal_share": "One-third to municipalities (via ARORP)",
+    "county_share": "One-third to counties (via ARORP)"
+  },
+  "statutory_basis": "Opioid settlement agreements; AG Griffin approval Nov 2024",
+  "statutory_basis_refs": ["AUTH-AR-ACT691-2025", "AUTH-AR-ARORP"],
+  "evidence_refs": [
+    "EVID-AR-AG-OPIOID-SETTLEMENT-SPECIALTY-COURT-2024-NOV",
+    "EVID-AR-AOC-OPIOID-AWARD-2024-FEB"
+  ],
+  "editor_status": "accepted"
+}

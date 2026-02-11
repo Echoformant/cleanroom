@@ -1,0 +1,23 @@
+{
+  "entity_id": "ENTITY-AR-AG-OPIOID-FUND",
+  "entity_type": "office",
+  "name": "Attorney General - State Opioid Settlement Fund",
+  "abbreviation": "AG Opioid Fund",
+  "parent": "ENTITY-AR-ATTORNEY-GENERAL",
+  "children": [],
+  "controls_funding": {
+    "state_share": "One-third of Arkansas opioid settlement funds"
+  },
+  "authorities": ["AUTH-AR-ARORP"],
+  "controls": [
+    "MF-AR-OPIOID-SETTLEMENT-AG-SPECIALTY-COURTS"
+  ],
+  "current_officer": "Tim Griffin (as of 2024)",
+  "grant_authority": "AG can approve grants from state share for opioid abatement purposes including specialty court support",
+  "fiscal_agent": true,
+  "contact": {
+    "website": "https://arkansasag.gov/"
+  },
+  "notes": "Manages state share (one-third) of opioid settlement funds; has approved $1M+ grants for specialty courts via AOC",
+  "editor_status": "accepted"
+}

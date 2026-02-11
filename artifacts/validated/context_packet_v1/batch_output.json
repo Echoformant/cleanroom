@@ -1,0 +1,149 @@
+{
+  "batch_id": "specialty_courts_chain_20260209",
+  "generated_at": "2026-02-09T00:00:00Z",
+  "mode": "focused_authority_chain",
+  "total_turns": 1,
+  "artifacts": {
+    "money_flow": [
+      {
+        "id": "MF-AR-SPPROGRAM-FY2026",
+        "description": "State appropriation from the Specialty Court Program Fund to the Administrative Office of the Courts (AOC) for FY 2026. Act 776 (2025‑2026) appropriates $300,000 from the fund to pay costs associated with the specialty court program and provide assistance to the Specialty Court Advisory Committee.",
+        "source": "Act 776‑2025, § 25",
+        "amount": 300000,
+        "fiscal_year": "FY 2026",
+        "destination": "Administrative Office of the Courts (specialty court program and advisory committee)",
+        "evidence": ["【993523828842590†L631-L741】"]
+      },
+      {
+        "id": "MF-AR-ACCOUNTABILITY-FUND-FY2026",
+        "description": "State appropriation from the Accountability Court Fund to the AOC for FY 2026. Act 776 appropriates $400,000 from the Accountability Court Fund for operating expenses and grants/aid to adult and juvenile specialty courts.  The Accountability Court Fund is a trust fund created by Ark. Code §19‑5‑1144 consisting of grants and other funds and is used by the AOC for specialty courts.",
+        "source": "Ark. Code §19‑5‑1144; Act 776‑2025, § 30",
+        "amount": 400000,
+        "fiscal_year": "FY 2026",
+        "destination": "Administrative Office of the Courts (operating expenses and grants for specialty courts)",
+        "evidence": ["【611122552283660†L70-L82】", "【993523828842590†L631-L741】"]
+      },
+      {
+        "id": "MF-AR-ADULT-DRUG-COURT-FUNDING",
+        "description": "State and federal appropriations for adult drug court programs. Act 776 includes a $1,000,000 state appropriation for adult drug court expenses and a $9,190,880 federal appropriation for drug court enhancement.",
+        "source": "Act 776‑2025, §§ 27 & 31",
+        "amount": 10190880,
+        "fiscal_year": "FY 2026",
+        "destination": "Adult drug court programs (AOC)",
+        "evidence": ["【993523828842590†L631-L741】"]
+      },
+      {
+        "id": "MF-AR-MENTAL-HEALTH-COURT-FEES",
+        "description": "Collection of court costs, treatment fees, supervision fees, drug testing fees and other program fees from participants in mental‑health specialty courts.  Fees are credited to a local mental‑health specialty court program fund and used for administration of the program.",
+        "source": "Ark. Code §16‑100‑209",
+        "amount": null,
+        "fiscal_year": null,
+        "destination": "Local mental‑health specialty court program fund",
+        "evidence": ["【835229682456435†L74-L117】"]
+      },
+      {
+        "id": "MF-AR-SAMHSA-ATC-VETERANS",
+        "description": "Funding for the Second Judicial District Veterans Diversion Program.  The program was implemented in 2015 using SAMHSA’s Adult Treatment Court Collaborative funding and later received Bureau of Justice Assistance (BJA) grants to enhance services.",
+        "source": "SAMHSA Adult Treatment Court Collaborative; BJA grant (court plan addendum)",
+        "amount": null,
+        "fiscal_year": "2015 onward",
+        "destination": "Second Judicial District Veterans Diversion Program",
+        "evidence": ["【581215623174875†L8-L33】"]
+      },
+      {
+        "id": "MF-AR-SAMHSA-ARHP-PEER-GRANT",
+        "description": "Five‑year, $2 million SAMHSA grant to the Arkansas Rural Health Partnership (ARHP) to expand peer recovery support services in adult treatment drug courts.  The grant funds training for peer recovery specialists, supports job assistance, housing, transportation and other resources and aims to integrate peer support into court programs.",
+        "source": "SAMHSA grant award (ARHP press release)",
+        "amount": 2000000,
+        "fiscal_year": "2024–2029 (grant period)",
+        "destination": "ARHP peer recovery initiative with adult treatment drug courts",
+        "evidence": ["【165071006859232†L47-L90】"]
+      }
+    ],
+    "authority_reference": [
+      {
+        "id": "AUTH-AR-ACA-19-5-1144",
+        "description": "Creates the Accountability Court Fund as a trust fund on the state’s books.  The fund consists of grants and other funds and is used by the AOC for adult and juvenile specialty court programs based on a formula developed by the Judicial Council, reviewed by the Specialty Court Program Advisory Committee and approved by the Legislative Council.",
+        "authority": "Ark. Code §19‑5‑1144",
+        "evidence": ["【611122552283660†L70-L82】"]
+      },
+      {
+        "id": "AUTH-AR-ACA-16-10-139",
+        "description": "Defines a ‘specialty court program’ to include drug courts, DWI/BWI courts, mental‑health courts, veterans treatment courts, juvenile drug courts, HOPE courts and other Supreme‑Court‑approved programs.  Requires that programs be included in the judicial circuit’s administrative plan under Administrative Orders 14 and 18 and be approved by the Supreme Court.  Establishes the Specialty Court Program Advisory Committee and mandates regular evaluation of programs.",
+        "authority": "Ark. Code §16‑10‑139",
+        "evidence": ["【739363082375584†L74-L121】"]
+      },
+      {
+        "id": "AUTH-AR-ACA-16-98-303",
+        "description": "Authorizes drug court programs in each judicial district.  Programs must be approved under §16‑10‑139, and judges may not order services unless appropriation, funding and positions have been authorized.  Establishes the Division of Drug Court Programs within the AOC and a Drug Court Coordinator to manage statewide programs and disburse funds.",
+        "authority": "Ark. Code §16‑98‑303",
+        "evidence": ["【96179282029359†L220-L244】"]
+      },
+      {
+        "id": "AUTH-AR-ACA-16-100-203",
+        "description": "Authorizes mental‑health specialty courts.  These courts offer judicial monitoring of intensive mental‑health treatment and enforce strict supervision.  Creation of a mental‑health court requires approval through the judicial circuit’s administrative plan; the program must incorporate treatment integration, non‑adversarial approach, early risk assessment, coordinated strategies among court and providers, and frequent drug testing.",
+        "authority": "Ark. Code §16‑100‑203",
+        "evidence": ["【701442702927480†L75-L86】", "【484672650857361†L75-L103】"]
+      },
+      {
+        "id": "AUTH-AR-SC-ADMIN-ORDER-14",
+        "description": "Administrative Order 14 (as amended) governs the administration of circuit courts.  It recognizes specialty courts as special dockets within circuit courts and requires that any specialty program be described in the circuit’s administrative plan and approved by the Supreme Court before implementation.  District court plans must be appended to the circuit plan and approved by the Supreme Court.",
+        "authority": "Arkansas Supreme Court Administrative Order No. 14 (2012 amendments)",
+        "evidence": ["【980162645954935†L100-L107】", "【980162645954935†L70-L77】"]
+      }
+    ],
+    "evidence_item": [
+      {
+        "id": "EVID-AR-MHC-HANDBOOK-PEERSUPPORT",
+        "description": "The Benton County mental‑health court participant handbook requires participants in the two‑week orientation to attend three orientation sessions and **one peer support meeting per week**, along with community support meetings.  This demonstrates that peer support meetings are a built‑in requirement of mental‑health specialty court programming.",
+        "source": "Benton County Mental Health Court Outpatient Handbook (2025)",
+        "quote": "Attend 3 orientation sessions and 1 Peer Support meeting per week ... Attend Community support meetings no less than two times per week 【896764406014482†L380-L390】",
+        "evidence": ["【896764406014482†L380-L390】"]
+      },
+      {
+        "id": "EVID-AR-ARHP-PEER-GRANT",
+        "description": "A news release from the Arkansas Rural Health Partnership (ARHP) announces a five‑year, $2 million grant from SAMHSA to expand peer recovery support services in collaboration with adult treatment drug courts.  The grant provides training and resources, offers job assistance, housing and transportation support, reduces stigma and builds support groups.  Judges note that peer recovery specialists bring valuable lived experience and the grant will sustain and expand peer support in court settings.",
+        "source": "Arkansas Rural Health Partnership news release (Nov 18 2024)",
+"quote": "The Arkansas Rural Health Partnership's new five‑year, $2M project ... offers training and resources ... providing transportation for healthcare appointments and advocating for better local infrastructure ... Peer Recovery Specialists bring invaluable lived experience and understanding to the courtroom ... this five-year grant is a significant step towards establishing a sustainable and impactful program 【165071006859232†L47-L90】",
+        "evidence": ["【165071006859232†L47-L90】"]
+      },
+      {
+        "id": "EVID-AR-ADDENDUM-VETERANS-DIVERSION",
+        "description": "An addendum to the Second Judicial District administrative plan explains that the Veterans Diversion Program was implemented in 2015 through SAMHSA’s Adult Treatment Court Collaborative funding.  Local partners collaborated to address veterans’ needs.  The program also secured a Bureau of Justice Assistance grant to enhance services and operates a voluntary pre‑conviction, post‑plea program with intensive supervision and mandatory treatment.",
+        "source": "Addendum to the 2020 Plan of the Second Judicial District (Veterans Diversion Program)",
+"quote": "Through funding from the Substance Abuse and Mental Health Services Administration's (SAMHSA) Adult Treatment Court Collaborative Funding, the Arkansas Second Judicial District Veterans Diversion Program was implemented in 2015 ... funding was recently obtained through the Bureau of Justice Assistance's Adult Drug Court Discretionary Funding to enhance the services provided by the court 【581215623174875†L8-L33】",
+        "evidence": ["【581215623174875†L8-L33】"]
+      },
+      {
+        "id": "EVID-AR-BJA-GRANT-FOR-TREATMENT-COURTS",
+        "description": "A Bureau of Justice Assistance (BJA) fact sheet explains that under the Adult Treatment Court and Veterans Treatment Court Grant Programs, BJA provides financial grants and assistance to build treatment court capacity and increase participation among appropriate target populations.  BJA maximizes criminal‑justice and treatment resources through partnerships with the Substance Abuse and Mental Health Services Administration and the U.S. Department of Veterans Affairs.",
+        "source": "Drug Treatment Courts factsheet (U.S. Department of Justice, May 2025)",
+        "quote": "Under the Adult Treatment Court and Veterans Treatment Court Grant Programs, the Bureau of Justice Assistance (BJA) provides financial grants and other assistance to build treatment court capacity ... BJA maximizes criminal justice and treatment resources via partnerships including the Substance Abuse and Mental Health Services Administration and the U.S. Department of Veterans Affairs 【389866317699674†L63-L74】",
+        "evidence": ["【389866317699674†L63-L74】"]
+      }
+    ],
+    "field_validation": [
+      {
+        "id": "FIELD-AR-PEER-CERTIFICATION",
+        "field": "Certification requirement for peer workers",
+        "value": "Peer recovery specialists providing services in specialty courts must hold certification from a DHS‑approved accrediting entity through the Arkansas Peer Recovery Program and cannot be disqualified from Medicaid participation if their offense is non‑violent and they obtained certification after the offense.",
+        "evidence": ["【728475309478904†L868-L878】", "【883941841050032†L72-L91】"],
+        "notes": "The Arkansas Peer Recovery Program provides a three‑tier credentialing process administered by the DHS Office of Substance Abuse and Mental Health; certification is authorized by Ark. Code §20‑64‑602(b)(19).  Ark. Code §20‑77‑135 prevents DHS from disqualifying a peer support specialist from Medicaid if certified by an accredited organization approved by the Arkansas Alcohol and Drug Abuse Coordinating Council and the offense is non‑violent." 
+      },
+      {
+        "id": "FIELD-AR-NON-DHS-PATHWAY",
+        "field": "Non‑DHS funding and authority",
+        "value": "Arkansas specialty courts operate under the judiciary (AOC) rather than the Department of Human Services.  Programs must be included in a judicial circuit’s administrative plan and approved by the Supreme Court; they are funded through legislative appropriations (Specialty Court Program Fund and Accountability Court Fund), federal grants and local fees rather than Medicaid.",
+        "evidence": ["【739363082375584†L74-L121】", "【980162645954935†L100-L107】", "【611122552283660†L70-L82】", "【993523828842590†L631-L741】"],
+        "notes": "Statutes and administrative orders show that specialty court programs are approved by the Supreme Court and overseen by the Specialty Court Program Advisory Committee.  Appropriation acts provide direct funding to the AOC, indicating that specialty courts bypass DHS/Medicaid funding streams." 
+      },
+      {
+        "id": "FIELD-AR-PEER-SUPPORT-ALLOWED",
+        "field": "Peer support services in specialty courts",
+        "value": "Specialty court programs incorporate peer support into their service delivery.  Mental‑health court handbooks require participants to attend peer support meetings, and federal grants (e.g., SAMHSA grant to ARHP) fund peer recovery specialists for adult drug courts.",
+        "evidence": ["【896764406014482†L380-L390】", "【165071006859232†L76-L90】"],
+        "notes": "The mental‑health court orientation in Benton County mandates peer support meetings, demonstrating programmatic reliance on peer support.  The ARHP grant emphasises deploying Peer Recovery Specialists within court programs, confirming that peer support services are not only allowed but actively integrated and federally funded." 
+      }
+    ]
+  }
+}

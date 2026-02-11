@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-FMG-19-4-206-CONSERVATION",
+  "section": "AUTH-AR-ACA-19-4-206",
+  "claim_summary": "Arkansas Code § 19-4-206 requires outgoing constitutional or elective officials to conserve appropriations so that a proportionate amount of available appropriations and funds remains for their successors during the remainder of the fiscal year. It prohibits officials from issuing vouchers that exceed the proportion of their service and allows the Governor to authorize exceptions during emergencies.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "State of Arkansas Financial Management Guide (July 2023)",
+    "issuing_body": "Department of Finance and Administration",
+    "url": "https://asbvi.ade.arkansas.gov/Files/State-of-Arkansas-Financial-Management-Guide-Updated-July-2023_20241119182944.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.302062"
+}

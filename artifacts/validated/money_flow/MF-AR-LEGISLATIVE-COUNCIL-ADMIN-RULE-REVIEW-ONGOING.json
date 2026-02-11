@@ -1,0 +1,14 @@
+{
+  "flow_id": "MF-AR-LEGISLATIVE-COUNCIL-ADMIN-RULE-REVIEW-ONGOING",
+  "source": "Arkansas state agencies and boards",
+  "intermediary": "Administrative Rules Subcommittee of the Arkansas Legislative Council",
+  "destination": "Arkansas Legislative Council (rule approval)",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "ongoing",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "AUTH-AR-LEGISLATIVE-COUNCIL-REVIEW"
+}

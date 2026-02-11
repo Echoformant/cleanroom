@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-APPROPRIATION-CONSERVATION-FY2026",
+  "source": "Outgoing constitutional officer's agency appropriations",
+  "intermediary": "None",
+  "destination": "Successor constitutional officer's agency",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Ark. Code Ann. § 19-4-206",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.286516"
+}

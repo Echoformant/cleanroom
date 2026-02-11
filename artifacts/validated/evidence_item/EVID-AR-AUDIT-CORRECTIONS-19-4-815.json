@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-AUDIT-CORRECTIONS-19-4-815",
+  "section": "AUTH-AR-ACA-19-4-815",
+  "claim_summary": "A 2021 Arkansas Legislative Audit of the Department of Corrections reported that the agency failed to maintain vendor invoices supporting purchases as required by Ark. Code § 19-4-815, exposing the agency to questions about the legitimacy of those purchases and leading auditors to recommend establishing procedures to maintain proper documentation and comply with cash receipt rules.",
+  "evidence_type": "audit",
+  "source": {
+    "title": "Department of Corrections Annual Financial Report (June 30, 2021)",
+    "issuing_body": "Arkansas Legislative Audit",
+    "url": "https://arklegaudit.gov/downloadReport.php?id=SAC990321"
+  },
+  "confidence_level": "medium",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.305528"
+}

@@ -1,0 +1,25 @@
+{
+  "authority_id": "AUTH-AR-ARORP",
+  "authority_type": "administrative",
+  "citation": "Arkansas Opioid Recovery Partnership Agreement",
+  "title": "Arkansas Opioid Recovery Partnership",
+  "administering_body": "ARORP (county/municipal collective)",
+  "controls_share": "Two-thirds of Arkansas opioid settlement funds (one-third municipalities, one-third counties)",
+  "proposal_requirements": [
+    "Mayor or county judge signature required",
+    "Evidence-based opioid abatement strategy",
+    "Demonstrated need"
+  ],
+  "review_process": [
+    "ARORP staff review",
+    "Advisory board review",
+    "Executive leadership approval",
+    "Opioids Qualified Settlement Fund administrator process"
+  ],
+  "governs": [
+    "MF-AR-OPIOID-SETTLEMENT-ARORP-COUNTIES",
+    "MF-AR-OPIOID-SETTLEMENT-ARORP-MUNICIPALITIES"
+  ],
+  "effects": "Manages local government share of opioid settlement funds; requires proposal process for specialty court or other opioid abatement uses",
+  "editor_status": "accepted"
+}

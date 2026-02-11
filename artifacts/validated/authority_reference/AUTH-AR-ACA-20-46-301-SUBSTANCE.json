@@ -1,0 +1,13 @@
+{
+  "authority_id": "AUTH-AR-ACA-20-46-301-SUBSTANCE",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 20‑46‑601",
+  "administering_body": "Arkansas Department of Human Services – Division of Aging, Adult, and Behavioral Health Services",
+  "governs": [
+    "MF-AR-DAABHS-SUBSTANCE-PROGRAM"
+  ],
+  "effects": "Subchapter 6 of Title 20, Chapter 46 establishes a program for persons suffering from mental illness and substance abuse.  The General Assembly finds that individuals with mental illness and substance abuse disorders contribute to violence and declares the purpose of the program is to provide long‑term treatment and case management services.  The Department of Human Services must provide secure residential treatment facilities, community‑based crisis intervention centers, and clinical assessment and review to ensure that clients addicted to drugs or alcohol receive necessary services【375383183012027†L72-L95】.  This statute authorizes DAABHS to manage substance‑abuse treatment programs for high‑risk individuals.",
+  "editor_status": "accepted",
+  "_ingested_from": "new_artifacts.json",
+  "_ingested_at": "2026-02-10T12:51:39.216978"
+}

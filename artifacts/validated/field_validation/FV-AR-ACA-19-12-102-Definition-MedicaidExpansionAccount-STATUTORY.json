@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-ACA-19-12-102-Definition-MedicaidExpansionAccount-STATUTORY",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Legislature",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "Arkansas Code §19-12-102",
+    "The definitions include the \"Medicaid Expansion Program Account\" that receives a portion of tobacco settlement funds【703598692190882†L73-L92】"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "field_validations.json",
+  "_ingested_at": "2026-02-10T12:51:51.322218"
+}

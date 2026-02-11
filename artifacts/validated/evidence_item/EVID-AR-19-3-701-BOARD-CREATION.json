@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-19-3-701-BOARD-CREATION",
+  "section": "AUTH-AR-ACA-19-3-701",
+  "claim_summary": "Arkansas Code § 19-3-701 creates the State Board of Finance and specifies its membership, including the Governor, Treasurer of State, Auditor of State, Bank Commissioner, and other financial experts, with the Governor serving as Chair and the Treasurer of State as secretary and disbursing agent.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code § 19-3-701 (State Board of Finance – Creation and members)",
+    "issuing_body": "State of Arkansas",
+    "url": "https://law.justia.com/codes/arkansas/title-19/chapter-3/subchapter-7/section-19-3-701/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.300987"
+}

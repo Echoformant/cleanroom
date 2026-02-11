@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-MF-AR-ARORP-DENIED-293M-THROUGH-2024Q4-GRANT-TRACKING",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "ARORP Transparency / Attorney General / Legislative Audit",
+  "alignment_status": "mixed",
+  "evidence_basis": [
+    "MF-AR-ARORP-DENIED-293M-THROUGH-2024Q4",
+    "ARORP-TRANSPARENCY-REPORT-2025"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "field_validation_batch1.json",
+  "_ingested_at": "2026-02-10T12:51:51.392950"
+}

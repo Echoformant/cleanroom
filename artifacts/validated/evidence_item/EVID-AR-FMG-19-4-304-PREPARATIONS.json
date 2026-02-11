@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-FMG-19-4-304-PREPARATIONS",
+  "section": "AUTH-AR-ACA-19-4-304",
+  "claim_summary": "Section 19-4-304 directs the Secretary of the Department of Finance and Administration to issue budget information forms and instructions after July 1 of each even‑numbered year. These forms, approved by the Legislative Council, include the Governor’s budget policy letter establishing spending limits, policy priorities, and economic outlook. The section authorizes the Chief Fiscal Officer to collect budget information from agencies and prepare recommendations when agencies fail to provide requested data.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "State of Arkansas Financial Management Guide (July 2023)",
+    "issuing_body": "Department of Finance and Administration",
+    "url": "https://asbvi.ade.arkansas.gov/Files/State-of-Arkansas-Financial-Management-Guide-Updated-July-2023_20241119182944.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.303304"
+}

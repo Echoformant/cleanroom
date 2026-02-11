@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-ACA-19-12-108-FundCreation-STATUTORY",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Legislature",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "Arkansas Code §19-12-108",
+    "The statute creates the Tobacco Settlement Program Fund on the books of the Treasurer, Auditor and Chief Fiscal Officer and directs the State Board of Finance to administer it【949500341886125†L74-L116】"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "field_validations.json",
+  "_ingested_at": "2026-02-10T12:51:51.318379"
+}

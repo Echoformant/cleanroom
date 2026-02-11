@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-MF-AR-ADH-EMS-FY2026-APPROPRIATION",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Department of Health / Legislative Audit",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "MF-AR-ADH-EMS-FY2026",
+    "AUTH-AR-ACT538-2025-ADH"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "field_validation_batch1.json",
+  "_ingested_at": "2026-02-10T12:51:51.377588"
+}

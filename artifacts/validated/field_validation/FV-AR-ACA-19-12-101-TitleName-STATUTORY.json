@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-ACA-19-12-101-TitleName-STATUTORY",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Legislature",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "Arkansas Code §19-12-101",
+    "Section 19-12-101 states that this chapter may be cited as the Tobacco Settlement Proceeds Act【281429877317169†L72-L76】"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "field_validations.json",
+  "_ingested_at": "2026-02-10T12:51:51.323468"
+}

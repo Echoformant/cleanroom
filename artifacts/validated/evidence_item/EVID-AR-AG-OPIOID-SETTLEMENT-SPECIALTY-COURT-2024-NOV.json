@@ -1,0 +1,17 @@
+{
+  "evidence_id": "EVID-AR-AG-OPIOID-SETTLEMENT-SPECIALTY-COURT-2024-NOV",
+  "evidence_type": "policy",
+  "section": "AG Griffin Opioid Settlement Grant to Specialty Courts",
+  "claim_summary": "AG Tim Griffin approved grant of up to $1 million from state opioid settlement funds for specialty courts, disbursed through AOC on case-by-case basis per specialty court judge request. Allowable uses include transitional housing, mental health/substance treatment, peer recovery supports, and transportation.",
+  "source": {
+    "type": "news_report",
+    "outlet": "KATV",
+    "date": "November 2024",
+    "url": "https://katv.com/"
+  },
+  "confidence_level": "high",
+  "supports": [
+    "MF-AR-OPIOID-SETTLEMENT-AG-SPECIALTY-COURTS"
+  ],
+  "editor_status": "accepted"
+}

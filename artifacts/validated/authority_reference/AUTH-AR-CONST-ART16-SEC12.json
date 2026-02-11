@@ -1,16 +1,16 @@
 {
   "authority_id": "AUTH-AR-CONST-ART16-SEC12",
   "authority_type": "constitution",
-  "citation": "Ark. Const. Art. 16, § 12",
-  "administering_body": "Arkansas State Treasury",
+  "citation": "Arkansas Constitution Article 16 Section 12",
+  "administering_body": "General Assembly",
   "governs": [
-    "MF-AR-CONSTITUTION-APPROPRIATION-COMPLIANCE-FY2026"
+    "MF-AR-CONST-SEC12-TREASURY-DISBURSEMENT-FY2026"
   ],
   "effects": {
-    "access_limiting": false,
+    "access_limiting": true,
     "appeal_mechanism": false
   },
   "editor_status": "accepted",
-  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-06",
-  "_ingested_at": "2026-02-06T03:05:22.638510"
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.401630"
 }

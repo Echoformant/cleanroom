@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-OTP-ApplicationFeeAndScreening-COMPLIANCE-2024",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "CMS (Centers for Medicare & Medicaid)",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "42 C.F.R. §424.67",
+    "Opioid Treatment Programs must pay the application fee and undergo high‑risk level screening to enroll in Medicare【829416069198872†L80-L140】"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "field_validations.json",
+  "_ingested_at": "2026-02-10T12:51:51.326973"
+}

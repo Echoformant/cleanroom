@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-CONST-SEC12-APPROPRIATION-REQUIRED",
+  "section": "AUTH-AR-CONST-ART16-SEC12",
+  "claim_summary": "Article 16 Section 12 of the Arkansas Constitution states that no money shall be paid out of the treasury until it has been appropriated by law and only in accordance with that appropriation.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Constitution of the State of Arkansas of 1874",
+    "issuing_body": "State of Arkansas",
+    "url": "https://www.garlandcounty.org/DocumentCenter/View/197/Arkansas-Constitution-1874-PDF"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.403621"
+}

@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkansas Public Finance Navigator — NAMI Clearlane</title>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f1419;
+            color: #e7e9ea;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1a1f26 0%, #16213e 100%);
+            padding: 16px 24px;
+            border-bottom: 2px solid #e94560;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-left { display: flex; align-items: center; gap: 16px; }
+        h1 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            background: linear-gradient(90deg, #e94560, #4ecca3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle { font-size: 0.75rem; color: #666; }
+        .stats-bar {
+            display: flex;
+            gap: 24px;
+            font-size: 0.85rem;
+        }
+        .stat { display: flex; flex-direction: column; align-items: center; }
+        .stat-value { font-size: 1.4rem; font-weight: 700; color: #4ecca3; }
+        .stat-label { font-size: 0.7rem; color: #666; text-transform: uppercase; }
+        
+        /* Main Layout */
+        .main-container {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            width: 280px;
+            background: #1a1f26;
+            border-right: 1px solid #2d3748;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+        .sidebar-section {
+            padding: 16px;
+            border-bottom: 1px solid #2d3748;
+        }
+        .sidebar-section h3 {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+        
+        /* Search */
+        #search {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #2d3748;
+            border-radius: 6px;
+            background: #0f1419;
+            color: #e7e9ea;
+            font-size: 0.9rem;
+        }
+        #search:focus {
+            outline: none;
+            border-color: #4ecca3;
+            box-shadow: 0 0 0 3px rgba(78, 204, 163, 0.2);
+        }
+        
+        /* Filter Groups */
+        .filter-group {
+            margin-bottom: 16px;
+        }
+        .filter-group-title {
+            font-size: 0.8rem;
+            color: #aaa;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .filter-toggle {
+            font-size: 0.7rem;
+            color: #4ecca3;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .filter-items {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .filter-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+        .filter-item:hover { background: #2d3748; }
+        .filter-item input { display: none; }
+        .filter-item.checked { background: rgba(78, 204, 163, 0.15); }
+        .filter-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        .filter-label {
+            font-size: 0.8rem;
+            flex: 1;
+        }
+        .filter-count {
+            font-size: 0.7rem;
+            color: #666;
+            background: #2d3748;
+            padding: 2px 6px;
+            border-radius: 10px;
+        }
+        
+        /* Quick Filters */
+        .quick-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .quick-btn {
+            padding: 6px 12px;
+            font-size: 0.75rem;
+            border: 1px solid #2d3748;
+            border-radius: 20px;
+            background: transparent;
+            color: #aaa;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .quick-btn:hover { border-color: #4ecca3; color: #4ecca3; }
+        .quick-btn.active { background: #4ecca3; color: #0f1419; border-color: #4ecca3; }
+        
+        /* Graph Container */
+        .graph-area {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+        #graph {
+            width: 100%;
+            height: 100%;
+        }
+        
+        /* Info Panel */
+        #info-panel {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 380px;
+            max-height: calc(100% - 32px);
+            background: rgba(26, 31, 38, 0.98);
+            border: 1px solid #2d3748;
+            border-radius: 12px;
+            display: none;
+            flex-direction: column;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+        }
+        #info-panel.visible { display: flex; }
+        .panel-header {
+            padding: 16px;
+            border-bottom: 1px solid #2d3748;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .panel-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #4ecca3;
+            word-break: break-all;
+            flex: 1;
+            margin-right: 12px;
+        }
+        .panel-category {
+            font-size: 0.7rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .panel-body {
+            padding: 16px;
+            overflow-y: auto;
+            flex: 1;
+        }
+        .panel-field {
+            margin-bottom: 12px;
+        }
+        .panel-field-label {
+            font-size: 0.7rem;
+            color: #666;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+        .panel-field-value {
+            font-size: 0.85rem;
+            color: #e7e9ea;
+        }
+        .panel-field-value.highlight { color: #4ecca3; font-weight: 600; }
+        .panel-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 12px;
+        }
+        .panel-tag {
+            font-size: 0.7rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            background: #2d3748;
+            color: #aaa;
+        }
+        .panel-tag.federal { background: #1e3a5f; color: #5dade2; }
+        .panel-tag.state { background: #2d4a3e; color: #58d68d; }
+        .panel-links {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #2d3748;
+        }
+        .panel-links-title {
+            font-size: 0.75rem;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .panel-link-item {
+            padding: 8px;
+            margin: 4px 0;
+            background: #0f1419;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.15s;
+        }
+        .panel-link-item:hover { background: #2d3748; }
+        .panel-link-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        .close-btn {
+            background: none;
+            border: none;
+            color: #666;
+            font-size: 1.5rem;
+            cursor: pointer;
+            line-height: 1;
+        }
+        .close-btn:hover { color: #e94560; }
+        
+        /* Focus Mode Banner */
+        .focus-banner {
+            position: absolute;
+            top: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(233, 69, 96, 0.95);
+            color: #fff;
+            padding: 8px 24px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            display: none;
+            align-items: center;
+            gap: 12px;
+        }
+        .focus-banner.visible { display: flex; }
+        .focus-banner button {
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        /* Loading */
+        #loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid #2d3748;
+            border-top: 3px solid #4ecca3;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 16px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        
+        /* Tooltips */
+        .tooltip {
+            position: absolute;
+            background: #1a1f26;
+            border: 1px solid #2d3748;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            pointer-events: none;
+            z-index: 1000;
+            max-width: 300px;
+        }
+        
+        /* Path Finder */
+        .path-finder-section .path-input-group {
+            margin-bottom: 8px;
+        }
+        .path-finder-section label {
+            display: block;
+            font-size: 0.75rem;
+            color: #8899a6;
+            margin-bottom: 4px;
+        }
+        .path-finder-section input {
+            width: 100%;
+            padding: 8px 10px;
+            background: #1a1f26;
+            border: 1px solid #2d3748;
+            border-radius: 6px;
+            color: #e7e9ea;
+            font-size: 0.85rem;
+        }
+        .path-buttons {
+            display: flex;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        .path-buttons button {
+            flex: 1;
+            padding: 8px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+        #find-path-btn {
+            background: #4ecca3;
+            color: #0f1419;
+        }
+        #clear-path-btn {
+            background: #2d3748;
+            color: #e7e9ea;
+        }
+        .path-result {
+            margin-top: 10px;
+            padding: 8px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            display: none;
+        }
+        .path-result.success {
+            display: block;
+            background: rgba(78, 204, 163, 0.1);
+            border: 1px solid #4ecca3;
+        }
+        .path-result.error {
+            display: block;
+            background: rgba(233, 69, 96, 0.1);
+            border: 1px solid #e94560;
+        }
+        .path-step {
+            padding: 4px 0;
+            border-bottom: 1px solid #2d3748;
+        }
+        .path-step:last-child { border-bottom: none; }
+        .path-step-arrow { color: #4ecca3; margin: 0 4px; }
+        
+        /* Question Interface */
+        .question-section .question-input-wrapper {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 10px;
+        }
+        .question-section input {
+            flex: 1;
+            padding: 8px 10px;
+            background: #1a1f26;
+            border: 1px solid #2d3748;
+            border-radius: 6px;
+            color: #e7e9ea;
+            font-size: 0.85rem;
+        }
+        #ask-btn {
+            padding: 8px 12px;
+            background: #4ecca3;
+            color: #0f1419;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+        .quick-questions {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .question-btn {
+            background: rgba(78, 204, 163, 0.1);
+            border: 1px solid rgba(78, 204, 163, 0.3);
+            border-radius: 6px;
+            padding: 8px 10px;
+            color: #e7e9ea;
+            font-size: 0.75rem;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .question-btn:hover {
+            background: rgba(78, 204, 163, 0.2);
+            border-color: #4ecca3;
+        }
+        .question-result {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            display: none;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .question-result.visible {
+            display: block;
+            background: rgba(78, 204, 163, 0.05);
+            border: 1px solid #2d3748;
+        }
+        .question-result h4 {
+            margin: 0 0 8px 0;
+            color: #4ecca3;
+            font-size: 0.85rem;
+        }
+        .question-result-item {
+            padding: 4px 0;
+            border-bottom: 1px solid #1a1f26;
+            cursor: pointer;
+        }
+        .question-result-item:hover { color: #4ecca3; }
+        .question-result-item:last-child { border-bottom: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div>
+                <h1>Arkansas Public Finance Navigator</h1>
+                <div class="subtitle">Operation NAMI Clearlane — Artifact Relationship Explorer</div>
+            </div>
+        </div>
+        <div class="stats-bar">
+            <div class="stat">
+                <div class="stat-value" id="visible-nodes">—</div>
+                <div class="stat-label">Visible</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="total-nodes">—</div>
+                <div class="stat-label">Total Artifacts</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="visible-edges">—</div>
+                <div class="stat-label">Connections</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="money-tracked">—</div>
+                <div class="stat-label">$ Tracked</div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="sidebar-section">
+                <h3>Search</h3>
+                <input type="text" id="search" placeholder="Search by ID, name, citation...">
+            </div>
+            
+            <div class="sidebar-section question-section">
+                <h3>Ask a Question</h3>
+                <div class="question-input-wrapper">
+                    <input type="text" id="question-input" placeholder="e.g., What governs drug courts?">
+                    <button id="ask-btn" onclick="askQuestion()">Ask</button>
+                </div>
+                <div class="quick-questions">
+                    <button class="question-btn" onclick="quickQuestion('authorities-drug-courts')">What authorities govern drug courts?</button>
+                    <button class="question-btn" onclick="quickQuestion('samhsa-money')">Where does SAMHSA money go?</button>
+                    <button class="question-btn" onclick="quickQuestion('medicaid-flows')">Show Medicaid money flows</button>
+                    <button class="question-btn" onclick="quickQuestion('dhs-controlled')">What does DHS control?</button>
+                </div>
+                <div id="question-result" class="question-result"></div>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>Quick Views</h3>
+                <div class="quick-filters">
+                    <button class="quick-btn" data-view="all">All</button>
+                    <button class="quick-btn" data-view="federal">Federal Only</button>
+                    <button class="quick-btn" data-view="state">State Only</button>
+                    <button class="quick-btn" data-view="money">Money Flows</button>
+                    <button class="quick-btn" data-view="medicaid">Medicaid</button>
+                    <button class="quick-btn" data-view="specialty-court">Specialty Courts</button>
+                    <button class="quick-btn" data-view="high-value">High Value ($1M+)</button>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>Artifact Types</h3>
+                <div class="filter-group">
+                    <div class="filter-items" id="category-filters">
+                        <label class="filter-item checked" data-cat="authority_reference">
+                            <input type="checkbox" checked>
+                            <div class="filter-dot" style="background: #e94560;"></div>
+                            <span class="filter-label">Authority Reference</span>
+                            <span class="filter-count" id="count-auth">0</span>
+                        </label>
+                        <label class="filter-item checked" data-cat="money_flow">
+                            <input type="checkbox" checked>
+                            <div class="filter-dot" style="background: #4ecca3;"></div>
+                            <span class="filter-label">Money Flow</span>
+                            <span class="filter-count" id="count-mf">0</span>
+                        </label>
+                        <label class="filter-item checked" data-cat="evidence_item">
+                            <input type="checkbox" checked>
+                            <div class="filter-dot" style="background: #f39c12;"></div>
+                            <span class="filter-label">Evidence Item</span>
+                            <span class="filter-count" id="count-ev">0</span>
+                        </label>
+                        <label class="filter-item checked" data-cat="field_validation">
+                            <input type="checkbox" checked>
+                            <div class="filter-dot" style="background: #9b59b6;"></div>
+                            <span class="filter-label">Field Validation</span>
+                            <span class="filter-count" id="count-fv">0</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>Authority Jurisdiction</h3>
+                <div class="filter-group">
+                    <div class="filter-items" id="jurisdiction-filters">
+                        <label class="filter-item checked" data-jurisdiction="federal">
+                            <input type="checkbox" checked>
+                            <div class="filter-dot" style="background: #5dade2;"></div>
+                            <span class="filter-label">Federal</span>
+                            <span class="filter-count" id="count-federal">0</span>
+                        </label>
+                        <label class="filter-item checked" data-jurisdiction="state">
+                            <input type="checkbox" checked>
+                            <div class="filter-dot" style="background: #58d68d;"></div>
+                            <span class="filter-label">State</span>
+                            <span class="filter-count" id="count-state">0</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>Authority Source</h3>
+                <div class="filter-group">
+                    <div class="filter-items" id="source-type-filters">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>Agency / Entity</h3>
+                <div class="filter-group">
+                    <div class="filter-items" id="agency-filters">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar-section path-finder-section">
+                <h3>Path Finder</h3>
+                <div class="path-input-group">
+                    <label>From:</label>
+                    <input type="text" id="path-from" placeholder="Start node ID or search...">
+                </div>
+                <div class="path-input-group">
+                    <label>To:</label>
+                    <input type="text" id="path-to" placeholder="End node ID or search...">
+                </div>
+                <div class="path-buttons">
+                    <button id="find-path-btn" onclick="findPath()">Find Path</button>
+                    <button id="clear-path-btn" onclick="clearPath()">Clear</button>
+                </div>
+                <div id="path-result" class="path-result"></div>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>Display Options</h3>
+                <div class="filter-items">
+                    <label class="filter-item" id="hide-orphans-toggle">
+                        <input type="checkbox" id="hide-orphans">
+                        <span class="filter-label">Hide unconnected artifacts</span>
+                    </label>
+                    <label class="filter-item" id="show-labels-toggle">
+                        <input type="checkbox" id="show-labels">
+                        <span class="filter-label">Show node labels</span>
+                    </label>
+                    <label class="filter-item" id="physics-toggle">
+                        <input type="checkbox" id="physics" checked>
+                        <span class="filter-label">Enable physics simulation</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="graph-area">
+            <div id="loading">
+                <div class="spinner"></div>
+                <div>Loading artifact graph...</div>
+            </div>
+            <div id="graph"></div>
+            
+            <div class="focus-banner" id="focus-banner">
+                <span>Focused on: <strong id="focus-target"></strong></span>
+                <button onclick="exitFocusMode()">Exit Focus</button>
+            </div>
+            
+            <div id="info-panel">
+                <div class="panel-header">
+                    <div>
+                        <div class="panel-title" id="panel-title"></div>
+                        <div class="panel-category" id="panel-category"></div>
+                    </div>
+                    <button class="close-btn" onclick="closePanel()">×</button>
+                </div>
+                <div class="panel-body" id="panel-body"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Colors
+        const COLORS = {
+            authority_reference: '#e94560',
+            money_flow: '#4ecca3',
+            evidence_item: '#f39c12',
+            field_validation: '#9b59b6'
+        };
+        
+        const JURISDICTION_COLORS = {
+            federal: '#5dade2',
+            state: '#58d68d'
+        };
+
+        // State
+        let network = null;
+        let allNodes = [];
+        let allEdges = [];
+        let graphData = null;
+        let authorityClassifications = {};
+        let focusedNode = null;
+        let focusedNeighbors = new Set();
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', async () => {
+            await loadData();
+            setupEventListeners();
+        });
+
+        async function loadData() {
+            try {
+                // Load graph data
+                const graphResponse = await fetch('artifacts_graph.json');
+                graphData = await graphResponse.json();
+                
+                // Load authority classifications
+                try {
+                    const classResponse = await fetch('authority_classifications.json');
+                    const classData = await classResponse.json();
+                    authorityClassifications = classData.classifications;
+                    updateClassificationCounts(classData.stats);
+                } catch (e) {
+                    console.warn('Authority classifications not found, using defaults');
+                }
+                
+                buildGraph(graphData);
+                updateStats();
+                document.getElementById('loading').style.display = 'none';
+            } catch (err) {
+                document.getElementById('loading').innerHTML = 
+                    '<div style="color: #e94560;">Error loading data: ' + err.message + '</div>';
+            }
+        }
+
+        function updateClassificationCounts(stats) {
+            if (stats.jurisdiction) {
+                document.getElementById('count-federal').textContent = stats.jurisdiction.federal || 0;
+                document.getElementById('count-state').textContent = stats.jurisdiction.state || 0;
+            }
+            
+            // Build source type filters dynamically
+            if (stats.source_type) {
+                const container = document.getElementById('source-type-filters');
+                container.innerHTML = '';
+                
+                const sortedTypes = Object.entries(stats.source_type)
+                    .sort((a, b) => b[1] - a[1])
+                    .slice(0, 8); // Top 8
+                
+                sortedTypes.forEach(([type, count]) => {
+                    if (type === 'unknown') return;
+                    const label = document.createElement('label');
+                    label.className = 'filter-item checked';
+                    label.dataset.sourceType = type;
+                    label.innerHTML = `
+                        <input type="checkbox" checked>
+                        <span class="filter-label">${type}</span>
+                        <span class="filter-count">${count}</span>
+                    `;
+                    label.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        label.classList.toggle('checked');
+                        label.querySelector('input').checked = label.classList.contains('checked');
+                        applyFilters();
+                    });
+                    container.appendChild(label);
+                });
+            }
+            
+            // Build agency filters dynamically
+            if (stats.issuing_body) {
+                const container = document.getElementById('agency-filters');
+                container.innerHTML = '';
+                
+                const sortedAgencies = Object.entries(stats.issuing_body)
+                    .sort((a, b) => b[1] - a[1])
+                    .slice(0, 10); // Top 10
+                
+                sortedAgencies.forEach(([agency, count]) => {
+                    if (agency === 'Unknown') return;
+                    const label = document.createElement('label');
+                    label.className = 'filter-item checked';
+                    label.dataset.agency = agency;
+                    label.innerHTML = `
+                        <input type="checkbox" checked>
+                        <span class="filter-label">${agency}</span>
+                        <span class="filter-count">${count}</span>
+                    `;
+                    label.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        label.classList.toggle('checked');
+                        label.querySelector('input').checked = label.classList.contains('checked');
+                        applyFilters();
+                    });
+                    container.appendChild(label);
+                });
+            }
+        }
+
+        function buildGraph(data) {
+            // Calculate counts
+            const counts = { auth: 0, mf: 0, ev: 0, fv: 0 };
+            let totalMoney = 0;
+            
+            allNodes = data.nodes.map(n => {
+                // Count by category
+                if (n.category === 'authority_reference') counts.auth++;
+                else if (n.category === 'money_flow') counts.mf++;
+                else if (n.category === 'evidence_item') counts.ev++;
+                else if (n.category === 'field_validation') counts.fv++;
+                
+                // Get classification for authorities
+                const classification = authorityClassifications[n.id] || {};
+                
+                // Calculate money for money_flows
+                let amount = 0;
+                if (n.category === 'money_flow' && n.data && n.data.amount) {
+                    amount = parseInt(n.data.amount) || 0;
+                    totalMoney += amount;
+                }
+                
+                return {
+                    id: n.id,
+                    label: n.label || n.id.split('-').pop(),
+                    title: buildTooltip(n, classification),
+                    color: getNodeColor(n, classification),
+                    category: n.category,
+                    link_count: n.link_count || 0,
+                    is_orphan: n.is_orphan,
+                    size: getNodeSize(n, amount),
+                    font: { color: '#e7e9ea', size: 9 },
+                    data: n.data,
+                    classification: classification,
+                    amount: amount
+                };
+            });
+
+            allEdges = data.edges.map((e, i) => ({
+                id: i,
+                from: e.source,
+                to: e.target,
+                title: e.type,
+                color: { color: '#334455', highlight: '#4ecca3', opacity: 0.6 },
+                arrows: { to: { enabled: true, scaleFactor: 0.5 } },
+                smooth: { type: 'continuous', roundness: 0.3 }
+            }));
+
+            // Update counts
+            document.getElementById('count-auth').textContent = counts.auth;
+            document.getElementById('count-mf').textContent = counts.mf;
+            document.getElementById('count-ev').textContent = counts.ev;
+            document.getElementById('count-fv').textContent = counts.fv;
+            document.getElementById('total-nodes').textContent = allNodes.length;
+            document.getElementById('money-tracked').textContent = formatMoney(totalMoney);
+
+            renderGraph();
+        }
+
+        function getNodeColor(node, classification) {
+            const baseColor = COLORS[node.category] || '#666';
+            
+            // For authorities, use jurisdiction color as border
+            if (node.category === 'authority_reference' && classification.jurisdiction) {
+                return {
+                    background: baseColor,
+                    border: JURISDICTION_COLORS[classification.jurisdiction] || baseColor,
+                    highlight: { background: '#fff', border: baseColor }
+                };
+            }
+            
+            return {
+                background: baseColor,
+                border: baseColor,
+                highlight: { background: '#fff', border: baseColor }
+            };
+        }
+
+        function getNodeSize(node, amount) {
+            // Base size on link count
+            let size = Math.max(10, Math.min(40, 10 + (node.link_count || 0) * 2));
+            
+            // For money flows, also factor in amount
+            if (node.category === 'money_flow' && amount > 0) {
+                const amountFactor = Math.log10(amount + 1) * 3;
+                size = Math.max(size, amountFactor);
+            }
+            
+            return size;
+        }
+
+        function buildTooltip(node, classification) {
+            let html = `<strong>${node.id}</strong><br/>`;
+            html += `Category: ${node.category}<br/>`;
+            html += `Links: ${node.link_count || 0}<br/>`;
+            
+            if (classification.jurisdiction) {
+                html += `Jurisdiction: ${classification.jurisdiction}<br/>`;
+            }
+            if (classification.source_type) {
+                html += `Type: ${classification.source_type}<br/>`;
+            }
+            if (node.data && node.data.amount) {
+                html += `Amount: $${parseInt(node.data.amount).toLocaleString()}<br/>`;
+            }
+            
+            return html;
+        }
+
+        function formatMoney(amount) {
+            if (amount >= 1e9) return '$' + (amount / 1e9).toFixed(1) + 'B';
+            if (amount >= 1e6) return '$' + (amount / 1e6).toFixed(1) + 'M';
+            if (amount >= 1e3) return '$' + (amount / 1e3).toFixed(0) + 'K';
+            return '$' + amount;
+        }
+
+        function getNodeAgency(node) {
+            // For authorities, use issuing_body from classification
+            if (node.category === 'authority_reference' && node.classification?.issuing_body) {
+                return node.classification.issuing_body;
+            }
+            
+            // For money flows, check source/destination/administering fields
+            if (node.data) {
+                const parts = [];
+                if (node.data.source) parts.push(node.data.source);
+                if (node.data.destination) parts.push(node.data.destination);
+                if (node.data.administering_body) parts.push(node.data.administering_body);
+                if (node.data.intermediary && node.data.intermediary !== 'None') {
+                    parts.push(node.data.intermediary);
+                }
+                if (parts.length > 0) return parts.join(' ');
+            }
+            
+            // Check ID for agency patterns
+            const id = node.id.toUpperCase();
+            if (id.includes('DHS')) return 'DHS';
+            if (id.includes('AOC')) return 'AOC';
+            if (id.includes('SAMHSA')) return 'SAMHSA';
+            if (id.includes('DOJ')) return 'DOJ';
+            
+            return null;
+        }
+
+        function renderGraph() {
+            const filters = getFilters();
+            
+            let visibleNodes = allNodes.filter(n => {
+                // Category filter
+                if (!filters.categories.includes(n.category)) return false;
+                
+                // Orphan filter
+                if (filters.hideOrphans && n.is_orphan) return false;
+                
+                // Search filter
+                if (filters.search) {
+                    const search = filters.search.toLowerCase();
+                    const matchId = n.id.toLowerCase().includes(search);
+                    const matchData = n.data && JSON.stringify(n.data).toLowerCase().includes(search);
+                    if (!matchId && !matchData) return false;
+                }
+                
+                // Jurisdiction filter (for authorities)
+                if (n.category === 'authority_reference') {
+                    const jurisdiction = n.classification?.jurisdiction || 'state';
+                    if (!filters.jurisdictions.includes(jurisdiction)) return false;
+                    
+                    // Source type filter
+                    const sourceType = n.classification?.source_type || 'unknown';
+                    if (filters.sourceTypes.length > 0 && !filters.sourceTypes.includes(sourceType)) return false;
+                }
+                
+                // Agency filter - check if node relates to any selected agency
+                if (filters.agencies.length > 0) {
+                    const nodeAgency = getNodeAgency(n);
+                    // If we can't determine agency, include by default
+                    if (nodeAgency && !filters.agencies.some(a => nodeAgency.includes(a))) {
+                        return false;
+                    }
+                }
+                
+                // Focus mode
+                if (focusedNode && !focusedNeighbors.has(n.id) && n.id !== focusedNode) {
+                    return false;
+                }
+                
+                return true;
+            });
+
+            // Apply quick view filters
+            if (filters.quickView) {
+                visibleNodes = applyQuickView(visibleNodes, filters.quickView);
+            }
+
+            const visibleNodeIds = new Set(visibleNodes.map(n => n.id));
+            const visibleEdges = allEdges.filter(e => 
+                visibleNodeIds.has(e.from) && visibleNodeIds.has(e.to)
+            );
+
+            // Update stats
+            document.getElementById('visible-nodes').textContent = visibleNodes.length;
+            document.getElementById('visible-edges').textContent = visibleEdges.length;
+
+            // Configure vis.js
+            const container = document.getElementById('graph');
+            const options = {
+                nodes: {
+                    shape: 'dot',
+                    borderWidth: 3,
+                    shadow: true
+                },
+                edges: {
+                    width: 1,
+                    selectionWidth: 2,
+                    shadow: false
+                },
+                physics: {
+                    enabled: filters.physics,
+                    stabilization: { iterations: 100 },
+                    barnesHut: {
+                        gravitationalConstant: -3000,
+                        springLength: 150,
+                        damping: 0.3
+                    }
+                },
+                interaction: {
+                    hover: true,
+                    tooltipDelay: 200,
+                    navigationButtons: true,
+                    keyboard: true
+                }
+            };
+
+            // Build or update network
+            if (network) {
+                network.setData({
+                    nodes: new vis.DataSet(visibleNodes.map(n => ({
+                        ...n,
+                        label: filters.showLabels ? n.label : ''
+                    }))),
+                    edges: new vis.DataSet(visibleEdges)
+                });
+            } else {
+                network = new vis.Network(container, {
+                    nodes: new vis.DataSet(visibleNodes.map(n => ({
+                        ...n,
+                        label: filters.showLabels ? n.label : ''
+                    }))),
+                    edges: new vis.DataSet(visibleEdges)
+                }, options);
+
+                // Event handlers
+                network.on('click', handleNodeClick);
+                network.on('doubleClick', handleDoubleClick);
+            }
+        }
+
+        function getFilters() {
+            const categories = [];
+            document.querySelectorAll('#category-filters .filter-item.checked').forEach(el => {
+                categories.push(el.dataset.cat);
+            });
+
+            const jurisdictions = [];
+            document.querySelectorAll('#jurisdiction-filters .filter-item.checked').forEach(el => {
+                jurisdictions.push(el.dataset.jurisdiction);
+            });
+
+            const sourceTypes = [];
+            document.querySelectorAll('#source-type-filters .filter-item.checked').forEach(el => {
+                sourceTypes.push(el.dataset.sourceType);
+            });
+
+            const agencies = [];
+            document.querySelectorAll('#agency-filters .filter-item.checked').forEach(el => {
+                agencies.push(el.dataset.agency);
+            });
+
+            return {
+                categories,
+                jurisdictions,
+                sourceTypes,
+                agencies,
+                hideOrphans: document.getElementById('hide-orphans').checked,
+                showLabels: document.getElementById('show-labels').checked,
+                physics: document.getElementById('physics').checked,
+                search: document.getElementById('search').value.trim(),
+                quickView: document.querySelector('.quick-btn.active')?.dataset.view
+            };
+        }
+
+        function applyQuickView(nodes, view) {
+            switch (view) {
+                case 'federal':
+                    return nodes.filter(n => 
+                        n.category !== 'authority_reference' || 
+                        n.classification?.jurisdiction === 'federal'
+                    );
+                case 'state':
+                    return nodes.filter(n => 
+                        n.category !== 'authority_reference' || 
+                        n.classification?.jurisdiction === 'state'
+                    );
+                case 'money':
+                    return nodes.filter(n => n.category === 'money_flow');
+                case 'medicaid':
+                    return nodes.filter(n => 
+                        n.id.toLowerCase().includes('medicaid') ||
+                        (n.data && JSON.stringify(n.data).toLowerCase().includes('medicaid'))
+                    );
+                case 'specialty-court':
+                    return nodes.filter(n => 
+                        n.id.toLowerCase().includes('court') ||
+                        n.id.toLowerCase().includes('drug') ||
+                        (n.data && JSON.stringify(n.data).toLowerCase().includes('specialty court'))
+                    );
+                case 'high-value':
+                    return nodes.filter(n => 
+                        n.category !== 'money_flow' || n.amount >= 1000000
+                    );
+                default:
+                    return nodes;
+            }
+        }
+
+        function handleNodeClick(params) {
+            if (params.nodes.length === 0) {
+                closePanel();
+                return;
+            }
+            
+            const nodeId = params.nodes[0];
+            const node = allNodes.find(n => n.id === nodeId);
+            if (!node) return;
+            
+            showInfoPanel(node);
+        }
+
+        function handleDoubleClick(params) {
+            if (params.nodes.length === 0) return;
+            
+            const nodeId = params.nodes[0];
+            enterFocusMode(nodeId);
+        }
+
+        function enterFocusMode(nodeId) {
+            focusedNode = nodeId;
+            focusedNeighbors = new Set([nodeId]);
+            
+            // Find all connected nodes
+            allEdges.forEach(e => {
+                if (e.from === nodeId) focusedNeighbors.add(e.to);
+                if (e.to === nodeId) focusedNeighbors.add(e.from);
+            });
+            
+            document.getElementById('focus-target').textContent = nodeId;
+            document.getElementById('focus-banner').classList.add('visible');
+            
+            applyFilters();
+        }
+
+        function exitFocusMode() {
+            focusedNode = null;
+            focusedNeighbors.clear();
+            document.getElementById('focus-banner').classList.remove('visible');
+            applyFilters();
+        }
+
+        function showInfoPanel(node) {
+            const panel = document.getElementById('info-panel');
+            const title = document.getElementById('panel-title');
+            const category = document.getElementById('panel-category');
+            const body = document.getElementById('panel-body');
+            
+            title.textContent = node.id;
+            category.textContent = node.category.replace('_', ' ');
+            category.style.background = COLORS[node.category];
+            category.style.color = '#fff';
+            
+            let html = '';
+            
+            // Classification tags for authorities
+            if (node.category === 'authority_reference' && node.classification) {
+                html += '<div class="panel-tags">';
+                if (node.classification.jurisdiction) {
+                    html += `<span class="panel-tag ${node.classification.jurisdiction}">${node.classification.jurisdiction}</span>`;
+                }
+                if (node.classification.source_type) {
+                    html += `<span class="panel-tag">${node.classification.source_type}</span>`;
+                }
+                if (node.classification.issuing_body) {
+                    html += `<span class="panel-tag">${node.classification.issuing_body}</span>`;
+                }
+                html += '</div>';
+            }
+            
+            // Basic fields
+            html += `
+                <div class="panel-field">
+                    <div class="panel-field-label">Connections</div>
+                    <div class="panel-field-value highlight">${node.link_count} links</div>
+                </div>
+            `;
+            
+            // Money flow amount
+            if (node.amount > 0) {
+                html += `
+                    <div class="panel-field">
+                        <div class="panel-field-label">Amount</div>
+                        <div class="panel-field-value highlight">$${node.amount.toLocaleString()}</div>
+                    </div>
+                `;
+            }
+            
+            // Data fields
+            if (node.data) {
+                const displayFields = ['citation', 'statutory_basis', 'source', 'destination', 
+                                       'administering_body', 'claim_summary', 'alignment_status'];
+                displayFields.forEach(field => {
+                    if (node.data[field]) {
+                        html += `
+                            <div class="panel-field">
+                                <div class="panel-field-label">${field.replace(/_/g, ' ')}</div>
+                                <div class="panel-field-value">${node.data[field]}</div>
+                            </div>
+                        `;
+                    }
+                });
+            }
+            
+            // Connected nodes
+            const connections = [];
+            allEdges.forEach(e => {
+                if (e.from === node.id) {
+                    const target = allNodes.find(n => n.id === e.to);
+                    if (target) connections.push({ node: target, type: e.title, direction: 'out' });
+                }
+                if (e.to === node.id) {
+                    const source = allNodes.find(n => n.id === e.from);
+                    if (source) connections.push({ node: source, type: e.title, direction: 'in' });
+                }
+            });
+            
+            if (connections.length > 0) {
+                html += `<div class="panel-links">`;
+                html += `<div class="panel-links-title">${connections.length} Connected Artifacts</div>`;
+                connections.slice(0, 15).forEach(conn => {
+                    const arrow = conn.direction === 'out' ? '→' : '←';
+                    html += `
+                        <div class="panel-link-item" onclick="focusNode('${conn.node.id}')">
+                            <div class="panel-link-dot" style="background: ${COLORS[conn.node.category]}"></div>
+                            <span>${arrow} ${conn.node.id}</span>
+                        </div>
+                    `;
+                });
+                if (connections.length > 15) {
+                    html += `<div style="font-size:0.75rem;color:#666;padding:8px;">+${connections.length - 15} more...</div>`;
+                }
+                html += '</div>';
+            }
+            
+            // Action buttons
+            html += `
+                <div style="margin-top: 16px; display: flex; gap: 8px;">
+                    <button onclick="enterFocusMode('${node.id}')" 
+                            style="flex:1; padding:8px; background:#4ecca3; color:#0f1419; border:none; border-radius:6px; cursor:pointer;">
+                        Focus View
+                    </button>
+                </div>
+            `;
+            
+            body.innerHTML = html;
+            panel.classList.add('visible');
+        }
+
+        function focusNode(nodeId) {
+            network.selectNodes([nodeId]);
+            const node = allNodes.find(n => n.id === nodeId);
+            if (node) showInfoPanel(node);
+            network.focus(nodeId, { scale: 1.5, animation: true });
+        }
+
+        function closePanel() {
+            document.getElementById('info-panel').classList.remove('visible');
+        }
+
+        function applyFilters() {
+            renderGraph();
+        }
+
+        function updateStats() {
+            // Already handled in buildGraph
+        }
+
+        function setupEventListeners() {
+            // Category filter toggles
+            document.querySelectorAll('#category-filters .filter-item').forEach(el => {
+                el.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    el.classList.toggle('checked');
+                    el.querySelector('input').checked = el.classList.contains('checked');
+                    applyFilters();
+                });
+            });
+
+            // Jurisdiction filter toggles
+            document.querySelectorAll('#jurisdiction-filters .filter-item').forEach(el => {
+                el.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    el.classList.toggle('checked');
+                    el.querySelector('input').checked = el.classList.contains('checked');
+                    applyFilters();
+                });
+            });
+
+            // Display option toggles
+            ['hide-orphans', 'show-labels', 'physics'].forEach(id => {
+                document.getElementById(id).addEventListener('change', applyFilters);
+            });
+
+            // Search
+            let searchTimeout;
+            document.getElementById('search').addEventListener('input', () => {
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(applyFilters, 300);
+            });
+
+            // Quick view buttons
+            document.querySelectorAll('.quick-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const wasActive = btn.classList.contains('active');
+                    document.querySelectorAll('.quick-btn').forEach(b => b.classList.remove('active'));
+                    if (!wasActive) btn.classList.add('active');
+                    applyFilters();
+                });
+            });
+        }
+
+        // Path Finder Functions
+        let currentPath = [];
+        
+        function findPath() {
+            const fromInput = document.getElementById('path-from').value.trim().toLowerCase();
+            const toInput = document.getElementById('path-to').value.trim().toLowerCase();
+            const resultDiv = document.getElementById('path-result');
+            
+            if (!fromInput || !toInput) {
+                resultDiv.innerHTML = 'Please enter both start and end nodes';
+                resultDiv.className = 'path-result error';
+                return;
+            }
+            
+            // Find matching nodes
+            const fromNode = allNodes.find(n => 
+                n.id.toLowerCase().includes(fromInput) || 
+                (n.data && JSON.stringify(n.data).toLowerCase().includes(fromInput))
+            );
+            const toNode = allNodes.find(n => 
+                n.id.toLowerCase().includes(toInput) || 
+                (n.data && JSON.stringify(n.data).toLowerCase().includes(toInput))
+            );
+            
+            if (!fromNode) {
+                resultDiv.innerHTML = `No node found matching "${fromInput}"`;
+                resultDiv.className = 'path-result error';
+                return;
+            }
+            if (!toNode) {
+                resultDiv.innerHTML = `No node found matching "${toInput}"`;
+                resultDiv.className = 'path-result error';
+                return;
+            }
+            
+            // BFS to find shortest path
+            const path = bfsPath(fromNode.id, toNode.id);
+            
+            if (!path) {
+                resultDiv.innerHTML = `No path found between ${fromNode.id} and ${toNode.id}`;
+                resultDiv.className = 'path-result error';
+                return;
+            }
+            
+            currentPath = path;
+            highlightPath(path);
+            
+            // Show result
+            let html = `<strong>Path found (${path.length} steps):</strong><br/>`;
+            path.forEach((nodeId, i) => {
+                html += `<div class="path-step">${i + 1}. ${nodeId}`;
+                if (i < path.length - 1) html += '<span class="path-step-arrow"> →</span>';
+                html += '</div>';
+            });
+            resultDiv.innerHTML = html;
+            resultDiv.className = 'path-result success';
+        }
+        
+        function bfsPath(startId, endId) {
+            // Build adjacency list (treating graph as undirected for path finding)
+            const adjacency = {};
+            allNodes.forEach(n => adjacency[n.id] = []);
+            allEdges.forEach(e => {
+                if (adjacency[e.from]) adjacency[e.from].push(e.to);
+                if (adjacency[e.to]) adjacency[e.to].push(e.from);
+            });
+            
+            // BFS
+            const queue = [[startId]];
+            const visited = new Set([startId]);
+            
+            while (queue.length > 0) {
+                const path = queue.shift();
+                const current = path[path.length - 1];
+                
+                if (current === endId) return path;
+                
+                const neighbors = adjacency[current] || [];
+                for (const neighbor of neighbors) {
+                    if (!visited.has(neighbor)) {
+                        visited.add(neighbor);
+                        queue.push([...path, neighbor]);
+                    }
+                }
+            }
+            
+            return null; // No path found
+        }
+        
+        function highlightPath(path) {
+            if (!network) return;
+            
+            // Focus on path nodes
+            const pathSet = new Set(path);
+            
+            // Update node colors to highlight path
+            const updatedNodes = allNodes.map(n => {
+                const isOnPath = pathSet.has(n.id);
+                return {
+                    ...n,
+                    color: isOnPath ? { 
+                        background: '#fff', 
+                        border: COLORS[n.category],
+                        highlight: { background: '#fff', border: COLORS[n.category] }
+                    } : {
+                        background: COLORS[n.category],
+                        border: COLORS[n.category],
+                        opacity: 0.2
+                    },
+                    size: isOnPath ? n.size * 1.5 : n.size * 0.7
+                };
+            });
+            
+            // Update edge colors to highlight path edges
+            const updatedEdges = allEdges.map(e => {
+                const fromIdx = path.indexOf(e.from);
+                const toIdx = path.indexOf(e.to);
+                const isOnPath = fromIdx >= 0 && toIdx >= 0 && Math.abs(fromIdx - toIdx) === 1;
+                return {
+                    ...e,
+                    color: isOnPath ? { color: '#4ecca3', opacity: 1 } : { color: '#334455', opacity: 0.1 },
+                    width: isOnPath ? 4 : 1
+                };
+            });
+            
+            network.setData({
+                nodes: new vis.DataSet(updatedNodes),
+                edges: new vis.DataSet(updatedEdges)
+            });
+            
+            // Fit view to show path
+            network.fit({ nodes: path, animation: true });
+        }
+        
+        function clearPath() {
+            currentPath = [];
+            document.getElementById('path-from').value = '';
+            document.getElementById('path-to').value = '';
+            document.getElementById('path-result').className = 'path-result';
+            document.getElementById('path-result').innerHTML = '';
+            applyFilters(); // Re-render normal view
+        }
+
+        // Question Interface Functions
+        function askQuestion() {
+            const question = document.getElementById('question-input').value.trim().toLowerCase();
+            if (!question) return;
+            
+            const resultDiv = document.getElementById('question-result');
+            let matchingNodes = [];
+            let title = '';
+            
+            // Parse common question patterns
+            if (question.includes('govern') || question.includes('authority') || question.includes('authorities')) {
+                // Looking for authorities
+                const subjects = extractSubjects(question);
+                matchingNodes = findAuthoritiesFor(subjects);
+                title = `Authorities for: ${subjects.join(', ')}`;
+            } else if (question.includes('money') || question.includes('fund') || question.includes('flow')) {
+                // Looking for money flows
+                const subjects = extractSubjects(question);
+                matchingNodes = findMoneyFlowsFor(subjects);
+                title = `Money flows for: ${subjects.join(', ')}`;
+            } else if (question.includes('control') || question.includes('manage')) {
+                // What does X control
+                const subjects = extractSubjects(question);
+                matchingNodes = findControlledBy(subjects);
+                title = `Controlled by: ${subjects.join(', ')}`;
+            } else if (question.includes('where') && question.includes('go')) {
+                // Where does X money go
+                const subjects = extractSubjects(question);
+                matchingNodes = findDestinationsFor(subjects);
+                title = `Destinations for: ${subjects.join(', ')}`;
+            } else {
+                // Generic search
+                matchingNodes = allNodes.filter(n => 
+                    n.id.toLowerCase().includes(question) ||
+                    (n.data && JSON.stringify(n.data).toLowerCase().includes(question))
+                );
+                title = `Results for: "${question}"`;
+            }
+            
+            displayQuestionResults(matchingNodes, title);
+        }
+        
+        function quickQuestion(type) {
+            const resultDiv = document.getElementById('question-result');
+            let matchingNodes = [];
+            let title = '';
+            
+            switch(type) {
+                case 'authorities-drug-courts':
+                    matchingNodes = allNodes.filter(n => 
+                        n.category === 'authority_reference' && (
+                            n.id.toLowerCase().includes('court') ||
+                            n.id.toLowerCase().includes('drug') ||
+                            (n.data && JSON.stringify(n.data).toLowerCase().match(/drug.?court|specialty.?court/))
+                        )
+                    );
+                    title = 'Authorities governing drug/specialty courts';
+                    break;
+                    
+                case 'samhsa-money':
+                    matchingNodes = allNodes.filter(n => 
+                        n.id.toLowerCase().includes('samhsa') ||
+                        (n.data && JSON.stringify(n.data).toLowerCase().includes('samhsa'))
+                    );
+                    title = 'SAMHSA-related artifacts';
+                    break;
+                    
+                case 'medicaid-flows':
+                    matchingNodes = allNodes.filter(n => 
+                        n.category === 'money_flow' && (
+                            n.id.toLowerCase().includes('medicaid') ||
+                            (n.data && (n.data.restrictions?.medicaid || 
+                                JSON.stringify(n.data).toLowerCase().includes('medicaid')))
+                        )
+                    );
+                    title = 'Medicaid money flows';
+                    break;
+                    
+                case 'dhs-controlled':
+                    matchingNodes = allNodes.filter(n => 
+                        n.id.toLowerCase().includes('dhs') ||
+                        (n.data && JSON.stringify(n.data).toLowerCase().includes('dhs')) ||
+                        (n.classification && n.classification.issuing_body === 'DHS')
+                    );
+                    title = 'DHS-controlled artifacts';
+                    break;
+            }
+            
+            displayQuestionResults(matchingNodes, title);
+        }
+        
+        function extractSubjects(question) {
+            // Extract key subjects from the question
+            const keywords = ['drug court', 'specialty court', 'medicaid', 'samhsa', 
+                              'dhs', 'aoc', 'doj', 'peer', 'opioid', 'treatment'];
+            const found = keywords.filter(k => question.includes(k));
+            
+            // Also extract any capitalized terms
+            const words = question.split(/\s+/);
+            
+            return found.length > 0 ? found : words.filter(w => w.length > 3);
+        }
+        
+        function findAuthoritiesFor(subjects) {
+            return allNodes.filter(n => {
+                if (n.category !== 'authority_reference') return false;
+                const text = (n.id + ' ' + JSON.stringify(n.data || {})).toLowerCase();
+                return subjects.some(s => text.includes(s));
+            });
+        }
+        
+        function findMoneyFlowsFor(subjects) {
+            return allNodes.filter(n => {
+                if (n.category !== 'money_flow') return false;
+                const text = (n.id + ' ' + JSON.stringify(n.data || {})).toLowerCase();
+                return subjects.some(s => text.includes(s));
+            });
+        }
+        
+        function findControlledBy(subjects) {
+            return allNodes.filter(n => {
+                const text = (n.id + ' ' + JSON.stringify(n.data || {})).toLowerCase();
+                return subjects.some(s => text.includes(s));
+            });
+        }
+        
+        function findDestinationsFor(subjects) {
+            // Find money flows where source matches subjects
+            return allNodes.filter(n => {
+                if (n.category !== 'money_flow') return false;
+                const source = (n.data?.source || '').toLowerCase();
+                return subjects.some(s => source.includes(s));
+            });
+        }
+        
+        function displayQuestionResults(nodes, title) {
+            const resultDiv = document.getElementById('question-result');
+            
+            if (nodes.length === 0) {
+                resultDiv.innerHTML = '<em>No matching artifacts found</em>';
+                resultDiv.className = 'question-result visible';
+                return;
+            }
+            
+            let html = `<h4>${title} (${nodes.length})</h4>`;
+            nodes.slice(0, 15).forEach(n => {
+                html += `<div class="question-result-item" onclick="focusNode('${n.id}')">${n.id}</div>`;
+            });
+            if (nodes.length > 15) {
+                html += `<div style="color:#666;font-style:italic;">+${nodes.length - 15} more...</div>`;
+            }
+            
+            resultDiv.innerHTML = html;
+            resultDiv.className = 'question-result visible';
+            
+            // Also highlight these nodes on the graph
+            highlightQuestionResults(nodes.map(n => n.id));
+        }
+        
+        function highlightQuestionResults(nodeIds) {
+            const nodeSet = new Set(nodeIds);
+            
+            // Find all edges connecting the result nodes
+            const relevantEdges = allEdges.filter(e => nodeSet.has(e.from) || nodeSet.has(e.to));
+            
+            // Temporarily enter a focus-like mode for results
+            focusedNode = null;
+            focusedNeighbors = nodeSet;
+            
+            // Add connected neighbors to view
+            relevantEdges.forEach(e => {
+                focusedNeighbors.add(e.from);
+                focusedNeighbors.add(e.to);
+            });
+            
+            document.getElementById('focus-banner').classList.add('visible');
+            document.getElementById('focus-target').textContent = `${nodeIds.length} results`;
+            
+            applyFilters();
+        }
+    </script>
+</body>
+</html>

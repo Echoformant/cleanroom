@@ -1,0 +1,34 @@
+{
+  "entity_id": "ENTITY-AR-SCPAC",
+  "entity_type": "committee",
+  "name": "Specialty Court Program Advisory Committee",
+  "abbreviation": "SCPAC",
+  "parent": "ENTITY-AR-SUPREME-COURT",
+  "children": [],
+  "membership": [
+    "Chief Justice (or designee)",
+    "AOC Director",
+    "Specialty court judges",
+    "DCC leadership",
+    "DHS leadership",
+    "Prosecutor representative",
+    "Public defender representative",
+    "Legislative members",
+    "Arkansas Drug Director"
+  ],
+  "authorities": ["AUTH-AR-SCPAC", "AUTH-AR-ACT691-2025"],
+  "controls": [],
+  "reviews": ["MF-AR-SPECIALTY-COURT-FUND-DISTRIBUTION"],
+  "functions": [
+    "Evaluate specialty court programs",
+    "Refer findings to Supreme Court",
+    "Establish uniform evaluation process",
+    "Promulgate rules (subject to Supreme Court approval)",
+    "Review AOC funding formulas"
+  ],
+  "fiscal_agent": false,
+  "contact": {
+    "website": "https://www.arcourts.gov/administration/specialty-courts"
+  },
+  "editor_status": "accepted"
+}

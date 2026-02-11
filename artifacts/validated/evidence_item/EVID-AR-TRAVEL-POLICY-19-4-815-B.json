@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-TRAVEL-POLICY-19-4-815-B",
+  "section": "AUTH-AR-ACA-19-4-815",
+  "claim_summary": "The Arkansas state travel policy explains that administrative heads must keep on file original supporting documents and receipts for travel expenses, subject to audit. It notes that documents may be stored in microform or electronic form under Ark. Code § 19-4-815(b) if approved by the Division of Legislative Audit.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Department of Finance and Administration Travel Policy (Sept. 15, 2023)",
+    "issuing_body": "Department of Finance and Administration Office of Accounting",
+    "url": "https://travel.uark.edu/_resources/documents/travel_policy_9-15-23.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.306049"
+}

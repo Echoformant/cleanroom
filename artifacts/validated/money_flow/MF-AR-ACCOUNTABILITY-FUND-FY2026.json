@@ -1,0 +1,12 @@
+{
+  "description": "State appropriation from the Accountability Court Fund to the AOC for FY\u00a02026. Act\u00a0776 appropriates $400,000 from the Accountability Court Fund for operating expenses and grants/aid to adult and juvenile specialty courts.  The Accountability Court Fund is a trust fund created by Ark.\u00a0Code \u00a719\u20115\u20111144 consisting of grants and other funds and is used by the AOC for specialty courts.",
+  "source": "Ark.\u00a0Code \u00a719\u20115\u20111144; Act\u00a0776\u20112025, \u00a7\u00a030",
+  "amount": 400000,
+  "fiscal_year": "FY\u00a02026",
+  "destination": "Administrative Office of the Courts (operating expenses and grants for specialty courts)",
+  "evidence": [
+    "\u3010611122552283660\u2020L70-L82\u3011",
+    "\u3010993523828842590\u2020L631-L741\u3011"
+  ],
+  "flow_id": "MF-AR-ACCOUNTABILITY-FUND-FY2026"
+}

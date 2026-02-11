@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-MF-AOC-CourtImprovementProgram-ProfessionalFees-APPROPRIATION",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Legislative Audit",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "SB72 Section 16 (Court Improvement Program - Federal)",
+    "Section 16 appropriation lists: Professional fees appropriation is $30,000【177322595904317†L789-L819】"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "field_validations.json",
+  "_ingested_at": "2026-02-10T12:51:51.366170"
+}

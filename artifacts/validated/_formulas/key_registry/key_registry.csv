@@ -1,0 +1,7 @@
+entity_name,uei,ein,assistance_listing,state_fund_code,duns_legacy,aka_names,status,source_of_truth,valid_from,valid_to
+"NAMI Arkansas Inc",,71-0499465,,,,"NAMI AR|National Alliance on Mental Illness - Arkansas",active,"Editor: [pending]",2024-07-01,
+"Arkansas Department of Human Services",,,93.958|93.959|93.778,DHS-DAABHS-GR|DHS-OBHS-MEDICAID,,"DHS|AR DHS",active,"Editor: [pending]",2020-01-01,
+"Arkansas Administrative Office of the Courts",,,16.585|16.838,AOC-SPC-ACCT|AOC-SPECIALTY-COURT-FUND,,"AOC|AR Courts",active,"Editor: [pending]",2020-01-01,
+"Arkansas Recovery Peer and Recovery Organization Project",,,93.243,DHS-ARORP,,"ARORP",active,"Editor: [pending]",2022-01-01,
+"Arkansas Department of Finance and Administration",,,,DFA-TREASURY|DFA-OSP,,"DFA|AR DFA",active,"Editor: [pending]",2020-01-01,
+"Arkansas Opioid Recovery Partnership",,,,OPIOID-SETTLEMENT-FUND|STATE-OPIOID-RESPONSE,,"Opioid Settlement|SOR Arkansas",active,"Editor: [pending]",2022-01-01,

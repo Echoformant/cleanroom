@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-QSF-PurposeRequirements-STATUTORY",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Internal Revenue Service",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "26 C.F.R. §1.468B-1",
+    "The regulation requires that a qualified settlement fund be created to resolve or satisfy claims resulting from events such as torts, breaches of contract, or violations of law【147710822878547†L97-L123】"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "field_validations.json",
+  "_ingested_at": "2026-02-10T12:51:51.328644"
+}

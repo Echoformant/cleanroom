@@ -1,0 +1,28 @@
+{
+  "flow_id": "MF-AR-SPECIALTY-COURT-FUND-DISTRIBUTION",
+  "source": "State Treasury - Specialty Court Program Fund",
+  "intermediary": "Administrative Office of the Courts (AOC)",
+  "destination": "Approved Specialty Court Programs (statewide)",
+  "amount": 0,
+  "amount_note": "Formula-based distribution; amount varies by appropriation and program count",
+  "fund_type": "state",
+  "fiscal_year": "FY2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "distribution_formula": {
+    "developed_by": "AOC",
+    "reviewed_by": "SCPAC",
+    "approved_by": "Arkansas Legislative Council"
+  },
+  "allowable_uses": [
+    "Treatment services",
+    "Evaluations",
+    "Specialty court program support/administration",
+    "Restorative/rehabilitative services to participants"
+  ],
+  "statutory_basis": "Act 691 of 2025; Ark. Code § 16-98-303",
+  "statutory_basis_refs": ["AUTH-AR-ACT691-2025", "AUTH-AR-SCPAC"],
+  "editor_status": "accepted"
+}

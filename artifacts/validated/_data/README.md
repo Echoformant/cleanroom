@@ -85,3 +85,30 @@ This exports:
 
 - [server/README.md](../server/README.md) — API server documentation
 - [scripts/README.md](../scripts/README.md) — Analysis script documentation
+
+---
+
+## Current Statistics (2026-02-10)
+
+| Metric | Value |
+|--------|-------|
+| Total Artifacts | 937 |
+| Total Linkages | 7,414 |
+| Orphan Artifacts | 198 |
+| Money Flows | 265 |
+| Authority References | 181 |
+| Evidence Items | 286 |
+| Field Validations | 205 |
+
+---
+
+## Quick Start
+
+```powershell
+# Start static server
+cd c:\Threshold\cleanroom\artifacts\validated\_data
+python -m http.server 8080
+
+# Open graph viewer
+Start-Process "http://localhost:8080/graph_viewer.html"
+```

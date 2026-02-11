@@ -1,0 +1,14 @@
+{
+  "authority_id": "AUTH-AR-CONST-ART16-SEC4",
+  "authority_type": "constitution",
+  "citation": "Arkansas Constitution Article 16 Section 4",
+  "administering_body": "General Assembly",
+  "governs": [],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.402005"
+}

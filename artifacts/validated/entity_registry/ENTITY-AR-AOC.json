@@ -1,0 +1,31 @@
+{
+  "entity_id": "ENTITY-AR-AOC",
+  "entity_type": "agency",
+  "name": "Administrative Office of the Courts",
+  "abbreviation": "AOC",
+  "parent": "ENTITY-AR-SUPREME-COURT",
+  "children": [
+    "ENTITY-AR-AOC-SPECIALTY-COURT-COORDINATOR"
+  ],
+  "authorities": ["AUTH-AR-ACT691-2025", "AUTH-AR-SC-ADMIN-ORDER-14"],
+  "controls": [
+    "MF-AR-SPECIALTY-COURT-FUND-DISTRIBUTION",
+    "MF-AR-OPIOID-SETTLEMENT-AG-SPECIALTY-COURTS"
+  ],
+  "functions": [
+    "Statewide drug court coordination",
+    "Maintain statewide drug court information system (SCALES)",
+    "Training for specialty court judges and staff",
+    "Develop funding distribution formulas",
+    "Disburse appropriated funds to specialty courts",
+    "Contract for specialty court team attorneys",
+    "Collect monthly data from specialty courts"
+  ],
+  "fiscal_agent": true,
+  "medicaid_provider": false,
+  "contact": {
+    "website": "https://www.arcourts.gov/administration"
+  },
+  "notes": "Central administrator for specialty court funding; distribution formulas reviewed by SCPAC and approved by Legislative Council",
+  "editor_status": "accepted"
+}

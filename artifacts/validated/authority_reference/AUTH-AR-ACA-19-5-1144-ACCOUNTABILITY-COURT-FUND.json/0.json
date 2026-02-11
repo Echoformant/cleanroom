@@ -1,18 +1,13 @@
 {
   "authority_id": "AUTH-AR-ACA-19-5-1144-ACCOUNTABILITY-COURT-FUND",
   "authority_type": "statute",
-  "citation": "Ark. Code Ann. § 19-5-1144",
-  "administering_body": "Arkansas Administrative Office of the Courts (AOC)",
+  "citation": "Ark. Code Ann. § 19‑5‑1144",
+  "administering_body": "Administrative Office of the Courts",
   "governs": [
-    "Accountability Court Fund composition and distribution",
-    "MF-AR-ACF-DEPOSIT-2025",
-    "MF-AR-AOC-ACF-FY2026"
+    "MF-AR-AOC-ACCOUNTABILITY-COURT-FUND"
   ],
-  "effects": {
-    "access_limiting": false,
-    "appeal_mechanism": false
-  },
+  "effects": "Section 19‑5‑1144 establishes the Accountability Court Fund on the books of the State Treasurer, Auditor of State and Chief Fiscal Officer.  The fund consists of grants or other funds received.  It is to be used by the Administrative Office of the Courts for adult and juvenile specialty court programs according to a formula developed by the Arkansas Judicial Council and approved by the Legislative Council【5346883730037†L70-L83】.  The fund provides dedicated support for specialty courts such as drug courts and veterans courts.",
   "editor_status": "accepted",
-  "_ingested_from": "BATCH-AUTH-AR-ACA-19-5-1144-AUTHFLOW",
-  "_ingested_at": "2026-02-05T03:55:31.035448"
+  "_ingested_from": "new_artifacts.json",
+  "_ingested_at": "2026-02-10T12:51:39.213342"
 }

@@ -1,1 +1,13 @@
-{"authority_id":"AUTH-AR-ACA-19-5-306","authority_type":"statute","citation":"Arkansas Code Annotated §19-5-306","administering_body":"NOT_PROVIDED_IN_THREAD","governs":["AR_FY2026_DHS_DAABHS_ALCOHOL_DRUG_ABUSE_COORD_COUNCIL_STATE_FUNDS_ACT890_SEC8_ITEM33"],"effects":{"access_limiting":false,"appeal_mechanism":false},"editor_status":"pending"}
+{
+  "authority_id": "AUTH-AR-ACA-19-5-306",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 19‑5‑306",
+  "administering_body": "Arkansas Department of Human Services",
+  "governs": [
+    "MF-AR-DHS-BEHAVIORAL-HEALTH"
+  ],
+  "effects": "Section 19‑5‑306 establishes the Department of Human Services Fund and its various fund accounts.  For example, the Behavioral Health Services Fund Account within this section is used for the maintenance and operation of the Division of Aging, Adult, and Behavioral Health Services.  The account consists of general revenues, nonrevenue income derived from services, federal reimbursement funds, paying patient fees, and matching funds【645878655316602†L70-L94】.  The provision ensures that DHS has a dedicated fund structure to support behavioral health and other human‑services programs.",
+  "editor_status": "accepted",
+  "_ingested_from": "new_artifacts.json",
+  "_ingested_at": "2026-02-10T12:51:39.216508"
+}

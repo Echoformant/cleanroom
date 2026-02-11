@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-MF-AOC-Operations-OperatingExpense-APPROPRIATION",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Legislative Audit",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "SB72 Section 3 (Operations)",
+    "Section 3 appropriation for Administrative Office of the Courts operations lists: Operating expense appropriation is $619,627【177322595904317†L216-L239】"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "field_validations.json",
+  "_ingested_at": "2026-02-10T12:51:51.334312"
+}

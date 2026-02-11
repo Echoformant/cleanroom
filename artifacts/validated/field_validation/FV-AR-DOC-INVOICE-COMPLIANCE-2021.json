@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-DOC-INVOICE-COMPLIANCE-2021",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Legislative Audit",
+  "alignment_status": "open",
+  "evidence_basis": [
+    "EVID-AR-AUDIT-CORRECTIONS-19-4-815",
+    "AUTH-AR-ACA-19-4-815"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.308473"
+}

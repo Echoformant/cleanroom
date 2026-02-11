@@ -48,6 +48,14 @@ This folder stores the instruction files (prompts) designed to be pasted into GP
 | `AGENT_RUN_GAP_FILL_VALIDATIONS.md` | Create missing field_validations |
 | `AGENT_RUN_GAP_FILL_ORPHANS.md` | Triage 59 orphan artifacts |
 
+### Playbooks (Methodologies with Schema Definitions)
+
+| File | Topic | Description |
+|------|-------|-------------|
+| `playbook_opioid_settlement_tracing.md` | Opioid $ | Full audit methodology for tracing settlement dollars source→service with deterministic linkage keys, Exhibit E mapping, MOU capture, and reconciliation workflow |
+
+**Playbook Format:** YAML front matter + detailed schema specs + workflow steps + starter stubs. Designed for scanning and batch execution.
+
 ### Other
 
 | File | Description |

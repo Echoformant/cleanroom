@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-19-2-101-RECEIPTS",
+  "section": "AUTH-AR-ACA-19-2-101",
+  "claim_summary": "Arkansas Code § 19-2-101 requires certain state officials such as the Secretary of State, Insurance Commissioner, and Commissioner of State Lands to issue receipts for all moneys coming into the State Treasury and to deposit them daily with the Treasurer of State.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Code § 19-2-101 (Receipts for all funds coming into State Treasury)",
+    "issuing_body": "State of Arkansas",
+    "url": "https://law.justia.com/codes/arkansas/title-19/chapter-2/subchapter-1/section-19-2-101/"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.300389"
+}

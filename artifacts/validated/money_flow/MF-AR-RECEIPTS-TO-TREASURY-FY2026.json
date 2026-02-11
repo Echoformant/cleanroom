@@ -1,0 +1,17 @@
+{
+  "flow_id": "MF-AR-RECEIPTS-TO-TREASURY-FY2026",
+  "source": "State departments (Secretary of State, Insurance Commissioner, etc.)",
+  "intermediary": "None",
+  "destination": "Treasurer of State",
+  "amount": 0,
+  "fund_type": "state",
+  "fiscal_year": "2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "statutory_basis": "Arkansas Code § 19-2-101",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.285101"
+}

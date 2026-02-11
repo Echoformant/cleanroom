@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-CONST-SEC11-TAX-LEVY-PURPOSE",
+  "section": "AUTH-AR-CONST-ART16-SEC11",
+  "claim_summary": "Article 16 Section 11 of the Arkansas Constitution requires that taxes be levied pursuant to law, state the purpose distinctly, and prohibits using tax proceeds for other purposes.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Constitution of the State of Arkansas of 1874",
+    "issuing_body": "State of Arkansas",
+    "url": "https://www.garlandcounty.org/DocumentCenter/View/197/Arkansas-Constitution-1874-PDF"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.402936"
+}

@@ -1,0 +1,13 @@
+{
+  "fv_id": "FV-AR-LA-SEC12-COMPLIANCE-2025",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Legislative Audit",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "EVID-AR-CONST-SEC12-APPROPRIATION-REQUIRED"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.405361"
+}

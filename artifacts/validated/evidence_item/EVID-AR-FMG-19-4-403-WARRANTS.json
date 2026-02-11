@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-FMG-19-4-403-WARRANTS",
+  "section": "AUTH-AR-ACA-19-4-403",
+  "claim_summary": "Section 19-4-403 requires the Auditor of State to issue warrants for payment of vouchers submitted by the Chief Fiscal Officer only after verifying that provisions of the State Accounting and Budgetary Procedures Law have been followed and allows the auditor to conduct preaudit examinations of vouchers.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "State of Arkansas Financial Management Guide (July 2023)",
+    "issuing_body": "Department of Finance and Administration",
+    "url": "https://asbvi.ade.arkansas.gov/Files/State-of-Arkansas-Financial-Management-Guide-Updated-July-2023_20241119182944.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.304316"
+}

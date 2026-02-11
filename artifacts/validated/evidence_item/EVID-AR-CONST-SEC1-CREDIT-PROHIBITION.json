@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-CONST-SEC1-CREDIT-PROHIBITION",
+  "section": "AUTH-AR-CONST-ART16-SEC1",
+  "claim_summary": "Article 16 Section 1 prohibits the state and local governments from lending credit or issuing interest-bearing evidences of indebtedness except as authorized for existing debts.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Article 16, Arkansas Constitution - Ballotpedia",
+    "issuing_body": "Ballotpedia",
+    "url": "https://ballotpedia.org/Article_16,_Arkansas_Constitution"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.404707"
+}

@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-ACA-19-12-116-ProgramEstablishment-STATUTORY",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Legislature",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "Arkansas Code §19-12-116",
+    "Section 19-12-116 directs the Department of Human Services to establish a Medicaid Expansion Program as part of the Arkansas Medicaid Program【377346295156413†L74-L100】"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "field_validations.json",
+  "_ingested_at": "2026-02-10T12:51:51.319678"
+}

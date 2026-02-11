@@ -1,0 +1,16 @@
+{
+  "authority_id": "AUTH-AR-ACA-19-1-101",
+  "authority_type": "statute",
+  "citation": "Arkansas Code § 19-1-101 (Contracts paid for with public funds, proposed 2021)",
+  "administering_body": "General Assembly",
+  "governs": [
+    "MF-AR-PUBLIC-FUNDS-CONTRACT-TRANSPARENCY-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": true
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.292521"
+}

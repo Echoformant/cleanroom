@@ -1,0 +1,11 @@
+{
+  "description": "Collection of court costs, treatment fees, supervision fees, drug testing fees and other program fees from participants in mental\u2011health specialty courts.  Fees are credited to a local mental\u2011health specialty court program fund and used for administration of the program.",
+  "source": "Ark.\u00a0Code \u00a716\u2011100\u2011209",
+  "amount": null,
+  "fiscal_year": null,
+  "destination": "Local mental\u2011health specialty court program fund",
+  "evidence": [
+    "\u3010835229682456435\u2020L74-L117\u3011"
+  ],
+  "flow_id": "MF-AR-MENTAL-HEALTH-COURT-FEES"
+}

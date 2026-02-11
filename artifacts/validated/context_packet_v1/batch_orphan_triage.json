@@ -1,0 +1,58 @@
+{
+  "updates": [
+    {
+      "artifact_id": "AUTH-AR-LEGISLATIVE-COUNCIL-REVIEW",
+      "add_governs": [
+        "MF-AR-LEGISLATIVE-COUNCIL-ADMIN-RULE-REVIEW-ONGOING"
+      ]
+    },
+    {
+      "artifact_id": "EVID-US-USCODE-DFC-PART-A",
+      "set_section": "MF-US-ONDCP-DFC-GRANT-TO-COPE-COALITIONS-2024"
+    },
+    {
+      "artifact_id": "EVID-AR-MOU-WIOA",
+      "set_section": "MF-AR-WIOA-ONE-STOP-INFRASTRUCTURE-FUNDING-FY2024"
+    },
+    {
+      "artifact_id": "EVID-AR-ISP-2021-107-CONTRACTS",
+      "set_section": "MF-AR-PUBLIC-FUNDS-CONTRACT-DISCLOSURE-FY2026"
+    },
+    {
+      "artifact_id": "FV-GAP-AUTH-AR-LEGISLATIVE-COUNCIL-REVIEW",
+      "set_validating_entity": "Administrative Rules Subcommittee of the Arkansas Legislative Council",
+      "remove_fields": ["_gap_metadata"]
+    }
+  ],
+  "new_artifacts": [
+    {
+      "flow_id": "MF-AR-LEGISLATIVE-COUNCIL-ADMIN-RULE-REVIEW-ONGOING",
+      "source": "Arkansas state agencies and boards",
+      "intermediary": "Administrative Rules Subcommittee of the Arkansas Legislative Council",
+      "destination": "Arkansas Legislative Council (rule approval)",
+      "amount": 0,
+      "fund_type": "state",
+      "fiscal_year": "ongoing",
+      "restrictions": {
+        "medicaid": false,
+        "dhs_controlled": false
+      },
+      "statutory_basis": "AUTH-AR-LEGISLATIVE-COUNCIL-REVIEW"
+    },
+    {
+      "flow_id": "MF-AR-WIOA-ONE-STOP-INFRASTRUCTURE-FUNDING-FY2024",
+      "source": "WIOA one-stop partner programs and state funds",
+      "intermediary": "Local Workforce Development Boards",
+      "destination": "Arkansas Workforce Centers (one-stop system)",
+      "amount": 0,
+      "fund_type": "federal-state",
+      "fiscal_year": "2024",
+      "restrictions": {
+        "medicaid": false,
+        "dhs_controlled": false
+      },
+      "statutory_basis": "Workforce Innovation and Opportunity Act §121 and Arkansas Division of Workforce Services Issuance PY 23-05 MOU Template"
+    }
+  ],
+  "delete_candidates": []
+}

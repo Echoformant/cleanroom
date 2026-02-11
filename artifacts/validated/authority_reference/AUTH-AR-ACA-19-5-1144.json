@@ -1,23 +1,8 @@
 {
-  "authority_id": "AUTH-AR-ACA-19-5-1144",
-  "authority_type": "statute",
-  "citation": "Ark. Code Ann. §19-5-1144",
-  "administering_body": "Arkansas Administrative Office of the Courts",
-  "governs": [
-    "Accountability Court Fund deposits and distributions",
-    "Operation of specialty courts including drug courts, DWI courts, veterans courts, mental health courts, and juvenile drug courts",
-    "MF-AR-AOC-SCP-FY2026",
-    "MF-AR-AOC-DRUG-COURT-ENHANCEMENT-FY2026",
-    "MF-AR-AOC-JUVENILE-JUSTICE-REFORM-FY2026",
-    "MF-AR-AOC-ACCOUNTABILITY-COURT-FUND-FY2026",
-    "MF-AR-AOC-ADULT-DRUG-COURT-PROGRAM-FY2026",
-    "MF-AR-AOC-SPECIALTY-COURTS-FY2026"
+  "description": "Creates the Accountability Court Fund as a trust fund on the state\u2019s books.  The fund consists of grants and other funds and is used by the AOC for adult and juvenile specialty court programs based on a formula developed by the Judicial Council, reviewed by the Specialty Court Program Advisory Committee and approved by the Legislative Council.",
+  "authority": "Ark.\u00a0Code \u00a719\u20115\u20111144",
+  "evidence": [
+    "\u3010611122552283660\u2020L70-L82\u3011"
   ],
-  "effects": {
-    "access_limiting": false,
-    "appeal_mechanism": false
-  },
-  "editor_status": "accepted",
-  "_ingested_from": "BATCH-AGENCY-SWEEP-2026-02-05",
-  "_ingested_at": "2026-02-05T07:23:35.980826"
+  "authority_id": "AUTH-AR-ACA-19-5-1144"
 }

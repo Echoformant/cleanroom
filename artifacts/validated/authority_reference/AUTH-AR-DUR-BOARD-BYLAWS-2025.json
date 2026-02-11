@@ -1,19 +1,13 @@
 {
   "authority_id": "AUTH-AR-DUR-BOARD-BYLAWS-2025",
-  "authority_type": "regulation",
-  "citation": "Arkansas Medicaid DUR Board Bylaws (July 2025)",
-  "administering_body": "Arkansas Department of Human Services, Division of Medical Services",
+  "authority_type": "policy",
+  "citation": "Drug Utilization Review (DUR) Board Bylaws (revised July 2025)",
+  "administering_body": "Arkansas Medicaid – Drug Utilization Review Board",
   "governs": [
-    "MF-AR-MEDICAID-DUR-BOARD-ADMIN-FY2026",
-    "MF-AR-ARCHOICES-PERSONAL-CARE-FY2026",
-    "MF-AR-ARCHOICES-HOME-MEALS-FY2026",
-    "MF-AR-ARCHOICES-PERS-SYSTEM-FY2026"
+    "MF-AR-DHS-DUR-BOARD"
   ],
-  "effects": {
-    "access_limiting": true,
-    "appeal_mechanism": true
-  },
+  "effects": "The July 2025 bylaws of the Arkansas Drug Utilization Review Board explain that the board is established under 42 U.S.C. § 1396r‑8(g)(3) and 42 C.F.R. § 456.716.  The board’s mission is to ensure safe, effective and clinically‑sound pharmaceutical care for Medicaid beneficiaries.  Membership includes physicians, pharmacists and other professionals appointed by the governor, and members must be free of conflicts of interest.  The bylaws require the board to review clinical evidence, develop drug‑use criteria, monitor patterns of utilization and make recommendations to the Division of Medical Services to improve patient outcomes【674902515603826†L11-L40】【674902515603826†L52-L85】.  These policies govern how the board reviews medications and manages formularies.",
   "editor_status": "accepted",
-  "_ingested_from": "BATCH-EXHAUSTIVE-FULL-GRAPH-2026-02-06",
-  "_ingested_at": "2026-02-06T02:57:21.775462"
+  "_ingested_from": "new_artifacts.json",
+  "_ingested_at": "2026-02-10T12:51:39.219152"
 }

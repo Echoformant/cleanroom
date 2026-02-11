@@ -1,0 +1,16 @@
+{
+  "authority_id": "AUTH-AR-ACA-19-2-101",
+  "authority_type": "statute",
+  "citation": "Arkansas Code § 19-2-101 (Duty to issue receipts for all funds coming into the State Treasury)",
+  "administering_body": "Department of Finance and Administration",
+  "governs": [
+    "MF-AR-RECEIPTS-TO-TREASURY-FY2026"
+  ],
+  "effects": {
+    "access_limiting": false,
+    "appeal_mechanism": false
+  },
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.293044"
+}

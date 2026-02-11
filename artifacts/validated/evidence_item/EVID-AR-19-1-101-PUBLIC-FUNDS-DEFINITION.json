@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-19-1-101-PUBLIC-FUNDS-DEFINITION",
+  "section": "AUTH-AR-ACA-19-1-101",
+  "claim_summary": "A proposed 2021 addition to Arkansas Code § 19-1-101 defines 'public funds' broadly and requires contracts paid for with public funds, and related information, to be available to any member of the General Assembly.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Interim Study Proposal 2021-107 (Contracts paid for with public funds)",
+    "issuing_body": "Arkansas General Assembly",
+    "url": "https://arkleg.state.ar.us/Home/FTPDocument?path=%2FAssembly%2FInterim%20Study%20Proposal%20and%20Resolution%2FISP-2021-107.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.299880"
+}

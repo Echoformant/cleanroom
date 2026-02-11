@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-MF-AOC-CourtAutomation-Total-APPROPRIATION",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Legislative Audit",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "SB72 Section 12 (Court Automation)",
+    "Section 12 appropriation lists: Total appropriation is $8,092,439【177322595904317†L616-L660】"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "field_validations.json",
+  "_ingested_at": "2026-02-10T12:51:51.357672"
+}

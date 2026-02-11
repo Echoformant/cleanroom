@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-BUDGET-PROCESS-FISCAL-SESSION",
+  "section": "MF-AR-LEGISLATIVE-BUDGET-HEARINGS-FY2026",
+  "claim_summary": "The Arkansas Budget and Appropriation Process document notes that the General Assembly convenes in fiscal session at noon on the second Monday in February when the primary election is held in May and on the second Wednesday in April when the primary is in March. Joint rules require appropriation bills to be filed no later than the fifteenth day of the fiscal session, with extensions requiring a two‑thirds vote. The fiscal session may last up to thirty days and may be extended once by up to fifteen days with a three‑fourths vote of the General Assembly.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "Arkansas Budget and Appropriation Process",
+    "issuing_body": "Fiscal Services Division, Arkansas General Assembly",
+    "url": "https://levin-center.org/wp-content/uploads/2024/07/Arkansas-Appropriation-and-Budget-Process.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.304886"
+}

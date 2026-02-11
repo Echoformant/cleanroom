@@ -1,0 +1,256 @@
+{
+  "batch_id": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "mode": "exhaustive-v2",
+  "generated_at": "2026-02-09",
+  "total_artifacts": 15,
+  "total_anchors_processed": 1,
+  "artifacts": {
+    "money_flow": [
+      {
+        "flow_id": "MF-AR-CONST-SEC1-DEBT-PROHIBITION-FY2026",
+        "source": "State Government",
+        "intermediary": "None",
+        "destination": "Debt Service Providers",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Arkansas Constitution art. 16 \u00a7 1",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-CONST-SEC2-DEBT-PAYMENT-FY2026",
+        "source": "General Revenue Fund",
+        "intermediary": "None",
+        "destination": "State Debt Holders",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Arkansas Constitution art. 16 \u00a7 2",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-CONST-SEC11-TAX-PURPOSE-FY2026",
+        "source": "Taxpayers",
+        "intermediary": "State Treasury",
+        "destination": "Designated Purpose Funds",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Arkansas Constitution art. 16 \u00a7 11",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-CONST-SEC12-TREASURY-DISBURSEMENT-FY2026",
+        "source": "State Treasury",
+        "intermediary": "None",
+        "destination": "State Agencies",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Arkansas Constitution art. 16 \u00a7 12",
+        "editor_status": "pending"
+      }
+    ],
+    "authority_reference": [
+      {
+        "authority_id": "AUTH-AR-CONST-ART16-SEC1",
+        "authority_type": "constitution",
+        "citation": "Arkansas Constitution Article 16 Section 1",
+        "administering_body": "General Assembly",
+        "governs": [
+          "MF-AR-CONST-SEC1-DEBT-PROHIBITION-FY2026"
+        ],
+        "effects": {
+          "access_limiting": true,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-CONST-ART16-SEC2",
+        "authority_type": "constitution",
+        "citation": "Arkansas Constitution Article 16 Section 2",
+        "administering_body": "General Assembly",
+        "governs": [
+          "MF-AR-CONST-SEC2-DEBT-PAYMENT-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-CONST-ART16-SEC11",
+        "authority_type": "constitution",
+        "citation": "Arkansas Constitution Article 16 Section 11",
+        "administering_body": "General Assembly",
+        "governs": [
+          "MF-AR-CONST-SEC11-TAX-PURPOSE-FY2026"
+        ],
+        "effects": {
+          "access_limiting": true,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-CONST-ART16-SEC12",
+        "authority_type": "constitution",
+        "citation": "Arkansas Constitution Article 16 Section 12",
+        "administering_body": "General Assembly",
+        "governs": [
+          "MF-AR-CONST-SEC12-TREASURY-DISBURSEMENT-FY2026"
+        ],
+        "effects": {
+          "access_limiting": true,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-CONST-ART16-SEC4",
+        "authority_type": "constitution",
+        "citation": "Arkansas Constitution Article 16 Section 4",
+        "administering_body": "General Assembly",
+        "governs": [],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-CONST-ART16-SEC5",
+        "authority_type": "constitution",
+        "citation": "Arkansas Constitution Article 16 Section 5",
+        "administering_body": "General Assembly",
+        "governs": [],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      }
+    ],
+    "evidence_item": [
+      {
+        "evidence_id": "EVID-AR-CONST-SEC11-TAX-LEVY-PURPOSE",
+        "section": "AUTH-AR-CONST-ART16-SEC11",
+        "claim_summary": "Article 16 Section 11 of the Arkansas Constitution requires that taxes be levied pursuant to law, state the purpose distinctly, and prohibits using tax proceeds for other purposes.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Constitution of the State of Arkansas of 1874",
+          "issuing_body": "State of Arkansas",
+          "url": "https://www.garlandcounty.org/DocumentCenter/View/197/Arkansas-Constitution-1874-PDF"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-CONST-SEC12-APPROPRIATION-REQUIRED",
+        "section": "AUTH-AR-CONST-ART16-SEC12",
+        "claim_summary": "Article 16 Section 12 of the Arkansas Constitution states that no money shall be paid out of the treasury until it has been appropriated by law and only in accordance with that appropriation.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Constitution of the State of Arkansas of 1874",
+          "issuing_body": "State of Arkansas",
+          "url": "https://www.garlandcounty.org/DocumentCenter/View/197/Arkansas-Constitution-1874-PDF"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-CONST-SEC2-DEBT-PAYMENT",
+        "section": "AUTH-AR-CONST-ART16-SEC2",
+        "claim_summary": "Article 16 Section 2 directs the General Assembly to provide for payment of all just and legal debts of the state.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Article 16, Arkansas Constitution - Ballotpedia",
+          "issuing_body": "Ballotpedia",
+          "url": "https://ballotpedia.org/Article_16,_Arkansas_Constitution"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-CONST-SEC1-CREDIT-PROHIBITION",
+        "section": "AUTH-AR-CONST-ART16-SEC1",
+        "claim_summary": "Article 16 Section 1 prohibits the state and local governments from lending credit or issuing interest-bearing evidences of indebtedness except as authorized for existing debts.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Article 16, Arkansas Constitution - Ballotpedia",
+          "issuing_body": "Ballotpedia",
+          "url": "https://ballotpedia.org/Article_16,_Arkansas_Constitution"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      }
+    ],
+    "field_validation": [
+      {
+        "fv_id": "FV-AR-LA-SEC12-COMPLIANCE-2025",
+        "jurisdiction": "Arkansas",
+        "validating_entity": "Legislative Audit",
+        "alignment_status": "captured",
+        "evidence_basis": [
+          "EVID-AR-CONST-SEC12-APPROPRIATION-REQUIRED"
+        ],
+        "disclosure_level": "public",
+        "editor_status": "pending"
+      }
+    ]
+  },
+  "anchor_log": [
+    {
+      "turn": 1,
+      "anchor_id": "AUTH-AR-CONSTITUTION-ARTICLE-16",
+      "anchor_type": "authority_reference",
+      "new_auth_created": 6,
+      "new_flow_created": 4,
+      "new_evidence_created": 4,
+      "new_validation_created": 1,
+      "queued_anchors": [
+        "AUTH-AR-CONST-ART16-SEC1",
+        "AUTH-AR-CONST-ART16-SEC2",
+        "AUTH-AR-CONST-ART16-SEC11",
+        "AUTH-AR-CONST-ART16-SEC12",
+        "AUTH-AR-CONST-ART16-SEC4",
+        "AUTH-AR-CONST-ART16-SEC5",
+        "MF-AR-CONST-SEC1-DEBT-PROHIBITION-FY2026",
+        "MF-AR-CONST-SEC2-DEBT-PAYMENT-FY2026",
+        "MF-AR-CONST-SEC11-TAX-PURPOSE-FY2026",
+        "MF-AR-CONST-SEC12-TREASURY-DISBURSEMENT-FY2026"
+      ]
+    }
+  ],
+  "seeds_processed": {
+    "1": true
+  },
+  "domains_covered": {
+    "constitutional_finance": true
+  },
+  "final_queue_state": {
+    "remaining": [],
+    "used": [],
+    "zero_count": 0
+  },
+  "completion_status": "IN_PROGRESS",
+  "research_notes": "Partial execution"
+}

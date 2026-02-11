@@ -1,0 +1,22 @@
+{
+  "flow_id": "MF-AR-SPECIALTY-COURT-USER-FEE",
+  "source": "Specialty Court Program Participants",
+  "intermediary": "Circuit/District Courts",
+  "destination": "State Treasury - Specialty Court Program Fund",
+  "amount": 0,
+  "amount_note": "Up to $250 per participant; total volume depends on program enrollment",
+  "fund_type": "state",
+  "fiscal_year": "FY2026",
+  "restrictions": {
+    "medicaid": false,
+    "dhs_controlled": false
+  },
+  "conditions": [
+    "Court must operate approved specialty court program",
+    "Program must be approved by Arkansas Supreme Court in administrative plan",
+    "Approval under Administrative Orders 14 and 18"
+  ],
+  "statutory_basis": "Act 691 of 2025; Ark. Code § 16-98-303",
+  "statutory_basis_refs": ["AUTH-AR-ACT691-2025"],
+  "editor_status": "accepted"
+}

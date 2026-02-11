@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-MF-Accountability-Court-Fund-to-Administrative-Office-APPROPRIATION",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Administrative Office of the Courts / Supreme Court",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "MF-Accountability-Court-Fund-to-Administrative-Office",
+    "AUTH-AR-ACT776-2025-AOC"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "field_validation_batch1.json",
+  "_ingested_at": "2026-02-10T12:51:51.373120"
+}

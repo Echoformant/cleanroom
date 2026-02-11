@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-MF-AOC-DistrictJudgesClerksEducation-OperatingExpense-APPROPRIATION",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Legislative Audit",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "SB72 Section 14 (District Court Judges & Clerks Continuing Education)",
+    "Section 14 appropriation lists: Operating expense appropriation is $100,000【177322595904317†L733-L745】"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "field_validations.json",
+  "_ingested_at": "2026-02-10T12:51:51.361242"
+}

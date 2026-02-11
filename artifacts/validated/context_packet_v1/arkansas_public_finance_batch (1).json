@@ -1,0 +1,786 @@
+{
+  "batch_id": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "mode": "exhaustive-v2",
+  "generated_at": "2026-02-09",
+  "total_artifacts": 49,
+  "total_anchors_processed": 3,
+  "artifacts": {
+    "money_flow": [
+      {
+        "flow_id": "MF-AR-CONST-SEC1-DEBT-PROHIBITION-FY2026",
+        "source": "State Government",
+        "intermediary": "None",
+        "destination": "Debt Service Providers",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Arkansas Constitution art. 16 \u00a7 1",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-CONST-SEC2-DEBT-PAYMENT-FY2026",
+        "source": "General Revenue Fund",
+        "intermediary": "None",
+        "destination": "State Debt Holders",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Arkansas Constitution art. 16 \u00a7 2",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-CONST-SEC11-TAX-PURPOSE-FY2026",
+        "source": "Taxpayers",
+        "intermediary": "State Treasury",
+        "destination": "Designated Purpose Funds",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Arkansas Constitution art. 16 \u00a7 11",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-CONST-SEC12-TREASURY-DISBURSEMENT-FY2026",
+        "source": "State Treasury",
+        "intermediary": "None",
+        "destination": "State Agencies",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Arkansas Constitution art. 16 \u00a7 12",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-PUBLIC-FUNDS-CONTRACT-TRANSPARENCY-FY2026",
+        "source": "Public entities using public funds",
+        "intermediary": "None",
+        "destination": "Members of the General Assembly (information)",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Arkansas Code \u00a7 19-1-101",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-RECEIPTS-TO-TREASURY-FY2026",
+        "source": "State departments (Secretary of State, Insurance Commissioner, etc.)",
+        "intermediary": "None",
+        "destination": "Treasurer of State",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Arkansas Code \u00a7 19-2-101",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-STATE-BOARD-OF-FINANCE-STIPENDS-FY2026",
+        "source": "Appropriation to Treasurer of State",
+        "intermediary": "None",
+        "destination": "State Board of Finance members",
+        "amount": 100,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Arkansas Code \u00a7 19-3-701",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-BOARD-OF-FINANCE-INVESTMENT-POLICY-FY2026",
+        "source": "State Treasury funds",
+        "intermediary": "State Board of Finance",
+        "destination": "Investment portfolio",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Arkansas Code \u00a7 19-3-704",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-APPROPRIATION-CONSERVATION-FY2026",
+        "source": "Outgoing constitutional officer's agency appropriations",
+        "intermediary": "None",
+        "destination": "Successor constitutional officer's agency",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Ark. Code Ann. \u00a7 19-4-206",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-CFO-BUDGET-PLANNING-FY2026",
+        "source": "State General Revenue Fund",
+        "intermediary": "Department of Finance and Administration",
+        "destination": "Chief Fiscal Officer operations and budget planning functions",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Ark. Code Ann. \u00a7 19-4-301",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-LEGISLATIVE-BUDGET-HEARINGS-FY2026",
+        "source": "State funds appropriated for budget preparation and hearings",
+        "intermediary": "Department of Finance and Administration; Legislative Council",
+        "destination": "Agencies and Legislative Joint Budget Committee for budget forms and hearings",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Ark. Code Ann. \u00a7 19-4-304; Arkansas Constitution Art. 5 \u00a75 & \u00a717",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-DISBURSE-OFFICER-CERTAIN-APPR-FY2026",
+        "source": "Appropriations for circuit judges, prosecuting attorneys, retired judges, and lieutenant governor",
+        "intermediary": "Auditor of State",
+        "destination": "Circuit judges, prosecuting attorneys, retired judges, and the lieutenant governor",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Ark. Code Ann. \u00a7 19-4-402",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-WARRANT-ISSUANCE-FY2026",
+        "source": "State appropriations approved by Chief Fiscal Officer",
+        "intermediary": "Auditor of State",
+        "destination": "Vendors or employees receiving payment",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Ark. Code Ann. \u00a7 19-4-403",
+        "editor_status": "pending"
+      },
+      {
+        "flow_id": "MF-AR-AGENCY-SUPPORTING-DOCUMENTATION-FY2026",
+        "source": "State agencies and boards",
+        "intermediary": "None",
+        "destination": "Payments requiring supporting documentation and receipts",
+        "amount": 0,
+        "fund_type": "state",
+        "fiscal_year": "2026",
+        "restrictions": {
+          "medicaid": false,
+          "dhs_controlled": false
+        },
+        "statutory_basis": "Ark. Code Ann. \u00a7 19-4-815",
+        "editor_status": "pending"
+      }
+    ],
+    "authority_reference": [
+      {
+        "authority_id": "AUTH-AR-CONST-ART16-SEC1",
+        "authority_type": "constitution",
+        "citation": "Arkansas Constitution Article 16 Section 1",
+        "administering_body": "General Assembly",
+        "governs": [
+          "MF-AR-CONST-SEC1-DEBT-PROHIBITION-FY2026"
+        ],
+        "effects": {
+          "access_limiting": true,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-CONST-ART16-SEC2",
+        "authority_type": "constitution",
+        "citation": "Arkansas Constitution Article 16 Section 2",
+        "administering_body": "General Assembly",
+        "governs": [
+          "MF-AR-CONST-SEC2-DEBT-PAYMENT-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-CONST-ART16-SEC11",
+        "authority_type": "constitution",
+        "citation": "Arkansas Constitution Article 16 Section 11",
+        "administering_body": "General Assembly",
+        "governs": [
+          "MF-AR-CONST-SEC11-TAX-PURPOSE-FY2026"
+        ],
+        "effects": {
+          "access_limiting": true,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-CONST-ART16-SEC12",
+        "authority_type": "constitution",
+        "citation": "Arkansas Constitution Article 16 Section 12",
+        "administering_body": "General Assembly",
+        "governs": [
+          "MF-AR-CONST-SEC12-TREASURY-DISBURSEMENT-FY2026"
+        ],
+        "effects": {
+          "access_limiting": true,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-CONST-ART16-SEC4",
+        "authority_type": "constitution",
+        "citation": "Arkansas Constitution Article 16 Section 4",
+        "administering_body": "General Assembly",
+        "governs": [],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-CONST-ART16-SEC5",
+        "authority_type": "constitution",
+        "citation": "Arkansas Constitution Article 16 Section 5",
+        "administering_body": "General Assembly",
+        "governs": [],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-19-1-101",
+        "authority_type": "statute",
+        "citation": "Arkansas Code \u00a7 19-1-101 (Contracts paid for with public funds, proposed 2021)",
+        "administering_body": "General Assembly",
+        "governs": [
+          "MF-AR-PUBLIC-FUNDS-CONTRACT-TRANSPARENCY-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": true
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-19-2-101",
+        "authority_type": "statute",
+        "citation": "Arkansas Code \u00a7 19-2-101 (Duty to issue receipts for all funds coming into the State Treasury)",
+        "administering_body": "Department of Finance and Administration",
+        "governs": [
+          "MF-AR-RECEIPTS-TO-TREASURY-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-19-3-701",
+        "authority_type": "statute",
+        "citation": "Arkansas Code \u00a7 19-3-701 (State Board of Finance \u2013 Creation and membership)",
+        "administering_body": "State Board of Finance",
+        "governs": [
+          "MF-AR-STATE-BOARD-OF-FINANCE-STIPENDS-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-19-3-704",
+        "authority_type": "statute",
+        "citation": "Arkansas Code \u00a7 19-3-704 (Powers and duties of the State Board of Finance)",
+        "administering_body": "State Board of Finance",
+        "governs": [
+          "MF-AR-BOARD-OF-FINANCE-INVESTMENT-POLICY-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-19-4-206",
+        "authority_type": "statute",
+        "citation": "Ark. Code Ann. \u00a7 19-4-206",
+        "administering_body": "Chief Fiscal Officer; Auditor of State",
+        "governs": [
+          "MF-AR-APPROPRIATION-CONSERVATION-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-19-4-301",
+        "authority_type": "statute",
+        "citation": "Ark. Code Ann. \u00a7 19-4-301",
+        "administering_body": "Department of Finance and Administration",
+        "governs": [
+          "MF-AR-CFO-BUDGET-PLANNING-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-19-4-304",
+        "authority_type": "statute",
+        "citation": "Ark. Code Ann. \u00a7 19-4-304",
+        "administering_body": "Department of Finance and Administration",
+        "governs": [
+          "MF-AR-LEGISLATIVE-BUDGET-HEARINGS-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-19-4-402",
+        "authority_type": "statute",
+        "citation": "Ark. Code Ann. \u00a7 19-4-402",
+        "administering_body": "Auditor of State",
+        "governs": [
+          "MF-AR-DISBURSE-OFFICER-CERTAIN-APPR-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-19-4-403",
+        "authority_type": "statute",
+        "citation": "Ark. Code Ann. \u00a7 19-4-403",
+        "administering_body": "Auditor of State",
+        "governs": [
+          "MF-AR-WARRANT-ISSUANCE-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      },
+      {
+        "authority_id": "AUTH-AR-ACA-19-4-815",
+        "authority_type": "statute",
+        "citation": "Ark. Code Ann. \u00a7 19-4-815",
+        "administering_body": "Administrative heads of agencies; Division of Legislative Audit",
+        "governs": [
+          "MF-AR-AGENCY-SUPPORTING-DOCUMENTATION-FY2026"
+        ],
+        "effects": {
+          "access_limiting": false,
+          "appeal_mechanism": false
+        },
+        "editor_status": "pending"
+      }
+    ],
+    "evidence_item": [
+      {
+        "evidence_id": "EVID-AR-CONST-SEC11-TAX-LEVY-PURPOSE",
+        "section": "AUTH-AR-CONST-ART16-SEC11",
+        "claim_summary": "Article 16 Section 11 of the Arkansas Constitution requires that taxes be levied pursuant to law, state the purpose distinctly, and prohibits using tax proceeds for other purposes.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Constitution of the State of Arkansas of 1874",
+          "issuing_body": "State of Arkansas",
+          "url": "https://www.garlandcounty.org/DocumentCenter/View/197/Arkansas-Constitution-1874-PDF"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-CONST-SEC12-APPROPRIATION-REQUIRED",
+        "section": "AUTH-AR-CONST-ART16-SEC12",
+        "claim_summary": "Article 16 Section 12 of the Arkansas Constitution states that no money shall be paid out of the treasury until it has been appropriated by law and only in accordance with that appropriation.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Constitution of the State of Arkansas of 1874",
+          "issuing_body": "State of Arkansas",
+          "url": "https://www.garlandcounty.org/DocumentCenter/View/197/Arkansas-Constitution-1874-PDF"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-CONST-SEC2-DEBT-PAYMENT",
+        "section": "AUTH-AR-CONST-ART16-SEC2",
+        "claim_summary": "Article 16 Section 2 directs the General Assembly to provide for payment of all just and legal debts of the state.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Article 16, Arkansas Constitution - Ballotpedia",
+          "issuing_body": "Ballotpedia",
+          "url": "https://ballotpedia.org/Article_16,_Arkansas_Constitution"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-CONST-SEC1-CREDIT-PROHIBITION",
+        "section": "AUTH-AR-CONST-ART16-SEC1",
+        "claim_summary": "Article 16 Section 1 prohibits the state and local governments from lending credit or issuing interest-bearing evidences of indebtedness except as authorized for existing debts.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Article 16, Arkansas Constitution - Ballotpedia",
+          "issuing_body": "Ballotpedia",
+          "url": "https://ballotpedia.org/Article_16,_Arkansas_Constitution"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-19-1-101-PUBLIC-FUNDS-DEFINITION",
+        "section": "AUTH-AR-ACA-19-1-101",
+        "claim_summary": "A proposed 2021 addition to Arkansas Code \u00a7 19-1-101 defines 'public funds' broadly and requires contracts paid for with public funds, and related information, to be available to any member of the General Assembly.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Interim Study Proposal 2021-107 (Contracts paid for with public funds)",
+          "issuing_body": "Arkansas General Assembly",
+          "url": "https://arkleg.state.ar.us/Home/FTPDocument?path=%2FAssembly%2FInterim%20Study%20Proposal%20and%20Resolution%2FISP-2021-107.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-19-2-101-RECEIPTS",
+        "section": "AUTH-AR-ACA-19-2-101",
+        "claim_summary": "Arkansas Code \u00a7 19-2-101 requires certain state officials such as the Secretary of State, Insurance Commissioner, and Commissioner of State Lands to issue receipts for all moneys coming into the State Treasury and to deposit them daily with the Treasurer of State.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Code \u00a7 19-2-101 (Receipts for all funds coming into State Treasury)",
+          "issuing_body": "State of Arkansas",
+          "url": "https://law.justia.com/codes/arkansas/title-19/chapter-2/subchapter-1/section-19-2-101/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-19-3-701-BOARD-CREATION",
+        "section": "AUTH-AR-ACA-19-3-701",
+        "claim_summary": "Arkansas Code \u00a7 19-3-701 creates the State Board of Finance and specifies its membership, including the Governor, Treasurer of State, Auditor of State, Bank Commissioner, and other financial experts, with the Governor serving as Chair and the Treasurer of State as secretary and disbursing agent.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Code \u00a7 19-3-701 (State Board of Finance \u2013 Creation and members)",
+          "issuing_body": "State of Arkansas",
+          "url": "https://law.justia.com/codes/arkansas/title-19/chapter-3/subchapter-7/section-19-3-701/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-19-3-704-POWERS-DUTIES",
+        "section": "AUTH-AR-ACA-19-3-704",
+        "claim_summary": "Arkansas Code \u00a7 19-3-704 directs the State Board of Finance to establish, maintain, and enforce policies for the management and investment of State Treasury funds, including recordkeeping, collateralization, investment policies, liquidity requirements, and qualifications and ethical standards for employees handling State Treasury funds.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Code \u00a7 19-3-704 (Powers and duties)",
+          "issuing_body": "State of Arkansas",
+          "url": "https://law.justia.com/codes/arkansas/title-19/chapter-3/subchapter-7/section-19-3-704/"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-FMG-19-4-206-CONSERVATION",
+        "section": "AUTH-AR-ACA-19-4-206",
+        "claim_summary": "Arkansas Code \u00a7 19-4-206 requires outgoing constitutional or elective officials to conserve appropriations so that a proportionate amount of available appropriations and funds remains for their successors during the remainder of the fiscal year. It prohibits officials from issuing vouchers that exceed the proportion of their service and allows the Governor to authorize exceptions during emergencies.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "State of Arkansas Financial Management Guide (July 2023)",
+          "issuing_body": "Department of Finance and Administration",
+          "url": "https://asbvi.ade.arkansas.gov/Files/State-of-Arkansas-Financial-Management-Guide-Updated-July-2023_20241119182944.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-FMG-19-4-301-DUTIES",
+        "section": "AUTH-AR-ACA-19-4-301",
+        "claim_summary": "Arkansas Code \u00a7 19-4-301 outlines the duties of the Chief Fiscal Officer, including assisting the Governor or Governor\u2011elect in preparing a comprehensive program and financial plan, developing procedures for decision\u2011making information, assisting agencies with goals and budget requests, providing information to the General Assembly, and monitoring actual expenditures versus approved budgets.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "State of Arkansas Financial Management Guide (July 2023)",
+          "issuing_body": "Department of Finance and Administration",
+          "url": "https://asbvi.ade.arkansas.gov/Files/State-of-Arkansas-Financial-Management-Guide-Updated-July-2023_20241119182944.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-FMG-19-4-304-PREPARATIONS",
+        "section": "AUTH-AR-ACA-19-4-304",
+        "claim_summary": "Section 19-4-304 directs the Secretary of the Department of Finance and Administration to issue budget information forms and instructions after July 1 of each even\u2011numbered year. These forms, approved by the Legislative Council, include the Governor\u2019s budget policy letter establishing spending limits, policy priorities, and economic outlook. The section authorizes the Chief Fiscal Officer to collect budget information from agencies and prepare recommendations when agencies fail to provide requested data.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "State of Arkansas Financial Management Guide (July 2023)",
+          "issuing_body": "Department of Finance and Administration",
+          "url": "https://asbvi.ade.arkansas.gov/Files/State-of-Arkansas-Financial-Management-Guide-Updated-July-2023_20241119182944.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-FMG-19-4-402-DISBURSING",
+        "section": "AUTH-AR-ACA-19-4-402",
+        "claim_summary": "Section 19-4-402 states that the Auditor of State serves as the disbursing officer for appropriations made for circuit judges, prosecuting attorneys, retired circuit and chancery judges, and the lieutenant governor.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "State of Arkansas Financial Management Guide (July 2023)",
+          "issuing_body": "Department of Finance and Administration",
+          "url": "https://asbvi.ade.arkansas.gov/Files/State-of-Arkansas-Financial-Management-Guide-Updated-July-2023_20241119182944.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-FMG-19-4-403-WARRANTS",
+        "section": "AUTH-AR-ACA-19-4-403",
+        "claim_summary": "Section 19-4-403 requires the Auditor of State to issue warrants for payment of vouchers submitted by the Chief Fiscal Officer only after verifying that provisions of the State Accounting and Budgetary Procedures Law have been followed and allows the auditor to conduct preaudit examinations of vouchers.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "State of Arkansas Financial Management Guide (July 2023)",
+          "issuing_body": "Department of Finance and Administration",
+          "url": "https://asbvi.ade.arkansas.gov/Files/State-of-Arkansas-Financial-Management-Guide-Updated-July-2023_20241119182944.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-BUDGET-PROCESS-FISCAL-SESSION",
+        "section": "MF-AR-LEGISLATIVE-BUDGET-HEARINGS-FY2026",
+        "claim_summary": "The Arkansas Budget and Appropriation Process document notes that the General Assembly convenes in fiscal session at noon on the second Monday in February when the primary election is held in May and on the second Wednesday in April when the primary is in March. Joint rules require appropriation bills to be filed no later than the fifteenth day of the fiscal session, with extensions requiring a two\u2011thirds vote. The fiscal session may last up to thirty days and may be extended once by up to fifteen days with a three\u2011fourths vote of the General Assembly.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Budget and Appropriation Process",
+          "issuing_body": "Fiscal Services Division, Arkansas General Assembly",
+          "url": "https://levin-center.org/wp-content/uploads/2024/07/Arkansas-Appropriation-and-Budget-Process.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-AUDIT-CORRECTIONS-19-4-815",
+        "section": "AUTH-AR-ACA-19-4-815",
+        "claim_summary": "A 2021 Arkansas Legislative Audit of the Department of Corrections reported that the agency failed to maintain vendor invoices supporting purchases as required by Ark. Code \u00a7 19-4-815, exposing the agency to questions about the legitimacy of those purchases and leading auditors to recommend establishing procedures to maintain proper documentation and comply with cash receipt rules.",
+        "evidence_type": "audit",
+        "source": {
+          "title": "Department of Corrections Annual Financial Report (June 30, 2021)",
+          "issuing_body": "Arkansas Legislative Audit",
+          "url": "https://arklegaudit.gov/downloadReport.php?id=SAC990321"
+        },
+        "confidence_level": "medium",
+        "editor_status": "pending"
+      },
+      {
+        "evidence_id": "EVID-AR-TRAVEL-POLICY-19-4-815-B",
+        "section": "AUTH-AR-ACA-19-4-815",
+        "claim_summary": "The Arkansas state travel policy explains that administrative heads must keep on file original supporting documents and receipts for travel expenses, subject to audit. It notes that documents may be stored in microform or electronic form under Ark. Code \u00a7 19-4-815(b) if approved by the Division of Legislative Audit.",
+        "evidence_type": "policy",
+        "source": {
+          "title": "Arkansas Department of Finance and Administration Travel Policy (Sept. 15, 2023)",
+          "issuing_body": "Department of Finance and Administration Office of Accounting",
+          "url": "https://travel.uark.edu/_resources/documents/travel_policy_9-15-23.pdf"
+        },
+        "confidence_level": "high",
+        "editor_status": "pending"
+      }
+    ],
+    "field_validation": [
+      {
+        "fv_id": "FV-AR-LA-SEC12-COMPLIANCE-2025",
+        "jurisdiction": "Arkansas",
+        "validating_entity": "Legislative Audit",
+        "alignment_status": "captured",
+        "evidence_basis": [
+          "EVID-AR-CONST-SEC12-APPROPRIATION-REQUIRED"
+        ],
+        "disclosure_level": "public",
+        "editor_status": "pending"
+      },
+      {
+        "fv_id": "FV-AR-BOF-COMPLIANCE-2024",
+        "jurisdiction": "Arkansas",
+        "validating_entity": "Legislative Audit",
+        "alignment_status": "captured",
+        "evidence_basis": [
+          "EVID-AR-19-3-704-POWERS-DUTIES"
+        ],
+        "disclosure_level": "public",
+        "editor_status": "pending"
+      },
+      {
+        "fv_id": "FV-AR-DOC-INVOICE-COMPLIANCE-2021",
+        "jurisdiction": "Arkansas",
+        "validating_entity": "Arkansas Legislative Audit",
+        "alignment_status": "open",
+        "evidence_basis": [
+          "EVID-AR-AUDIT-CORRECTIONS-19-4-815",
+          "AUTH-AR-ACA-19-4-815"
+        ],
+        "disclosure_level": "public",
+        "editor_status": "pending"
+      }
+    ]
+  },
+  "anchor_log": [
+    {
+      "turn": 1,
+      "anchor_id": "AUTH-AR-CONSTITUTION-ARTICLE-16",
+      "anchor_type": "authority_reference",
+      "new_auth_created": 6,
+      "new_flow_created": 4,
+      "new_evidence_created": 4,
+      "new_validation_created": 1,
+      "queued_anchors": [
+        "AUTH-AR-CONST-ART16-SEC1",
+        "AUTH-AR-CONST-ART16-SEC2",
+        "AUTH-AR-CONST-ART16-SEC11",
+        "AUTH-AR-CONST-ART16-SEC12",
+        "AUTH-AR-CONST-ART16-SEC4",
+        "AUTH-AR-CONST-ART16-SEC5",
+        "MF-AR-CONST-SEC1-DEBT-PROHIBITION-FY2026",
+        "MF-AR-CONST-SEC2-DEBT-PAYMENT-FY2026",
+        "MF-AR-CONST-SEC11-TAX-PURPOSE-FY2026",
+        "MF-AR-CONST-SEC12-TREASURY-DISBURSEMENT-FY2026"
+      ]
+    },
+    {
+      "turn": 2,
+      "anchor_id": "AUTH-AR-ACA-19-1-101",
+      "anchor_type": "authority_reference",
+      "new_auth_created": 4,
+      "new_flow_created": 4,
+      "new_evidence_created": 4,
+      "new_validation_created": 1,
+      "queued_anchors": [
+        "AUTH-AR-ACA-19-1-101",
+        "AUTH-AR-ACA-19-2-101",
+        "AUTH-AR-ACA-19-3-701",
+        "AUTH-AR-ACA-19-3-704",
+        "MF-AR-PUBLIC-FUNDS-CONTRACT-TRANSPARENCY-FY2026",
+        "MF-AR-RECEIPTS-TO-TREASURY-FY2026",
+        "MF-AR-STATE-BOARD-OF-FINANCE-STIPENDS-FY2026",
+        "MF-AR-BOARD-OF-FINANCE-INVESTMENT-POLICY-FY2026"
+      ]
+    },
+    {
+      "turn": 3,
+      "anchor_id": "AUTH-AR-ACA-19-4-101",
+      "anchor_type": "authority_reference",
+      "new_auth_created": 6,
+      "new_flow_created": 6,
+      "new_evidence_created": 8,
+      "new_validation_created": 1,
+      "queued_anchors": [
+        "AUTH-AR-ACA-19-4-206",
+        "AUTH-AR-ACA-19-4-301",
+        "AUTH-AR-ACA-19-4-304",
+        "AUTH-AR-ACA-19-4-402",
+        "AUTH-AR-ACA-19-4-403",
+        "AUTH-AR-ACA-19-4-815",
+        "MF-AR-APPROPRIATION-CONSERVATION-FY2026",
+        "MF-AR-CFO-BUDGET-PLANNING-FY2026",
+        "MF-AR-LEGISLATIVE-BUDGET-HEARINGS-FY2026",
+        "MF-AR-DISBURSE-OFFICER-CERTAIN-APPR-FY2026",
+        "MF-AR-WARRANT-ISSUANCE-FY2026",
+        "MF-AR-AGENCY-SUPPORTING-DOCUMENTATION-FY2026"
+      ]
+    }
+  ],
+  "seeds_processed": {
+    "1": true,
+    "2": true,
+    "3": true
+  },
+  "domains_covered": {
+    "constitutional_finance": true,
+    "treasury": true,
+    "appropriations": true
+  },
+  "final_queue_state": {
+    "remaining": [
+      "AUTH-AR-ACA-19-4-206",
+      "AUTH-AR-ACA-19-4-301",
+      "AUTH-AR-ACA-19-4-304",
+      "AUTH-AR-ACA-19-4-402",
+      "AUTH-AR-ACA-19-4-403",
+      "AUTH-AR-ACA-19-4-815",
+      "MF-AR-APPROPRIATION-CONSERVATION-FY2026",
+      "MF-AR-CFO-BUDGET-PLANNING-FY2026",
+      "MF-AR-LEGISLATIVE-BUDGET-HEARINGS-FY2026",
+      "MF-AR-DISBURSE-OFFICER-CERTAIN-APPR-FY2026",
+      "MF-AR-WARRANT-ISSUANCE-FY2026",
+      "MF-AR-AGENCY-SUPPORTING-DOCUMENTATION-FY2026"
+    ],
+    "used": [
+      "AUTH-AR-ACA-19-4-101"
+    ],
+    "zero_count": 0
+  },
+  "completion_status": "IN_PROGRESS",
+  "research_notes": "Partial execution"
+}

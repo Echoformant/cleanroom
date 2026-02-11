@@ -1,0 +1,102 @@
+# Key Registry — Authoritative Entity Records
+# Format: CLE/WELL lineage (editor + timestamps)
+# Normalization: UPPERCASE codes, Title Case names
+
+- entity_name: "NAMI Arkansas Inc"
+  uei: null  # TODO: lookup in SAM.gov
+  ein: "71-0499465"
+  assistance_listing: []
+  state_fund_code: []
+  duns_legacy: null
+  aka_names:
+    - "NAMI AR"
+    - "National Alliance on Mental Illness - Arkansas"
+  status: active
+  source_of_truth: "Editor: [pending] • Evidence: [pending]"
+  valid_from: "2024-07-01"
+  valid_to: null
+
+- entity_name: "Arkansas Department of Human Services"
+  uei: null  # TODO: lookup
+  ein: null
+  assistance_listing:
+    - "93.958"  # SABG
+    - "93.959"  # MHBG
+    - "93.778"  # Medicaid
+  state_fund_code:
+    - "DHS-DAABHS-GR"
+    - "DHS-OBHS-MEDICAID"
+  duns_legacy: null
+  aka_names:
+    - "DHS"
+    - "AR DHS"
+  status: active
+  source_of_truth: "Editor: [pending] • Evidence: DFA/USAspending"
+  valid_from: "2020-01-01"
+  valid_to: null
+
+- entity_name: "Arkansas Administrative Office of the Courts"
+  uei: null
+  ein: null
+  assistance_listing:
+    - "16.585"  # DCTAT
+    - "16.838"  # Comprehensive Opioid
+  state_fund_code:
+    - "AOC-SPC-ACCT"
+    - "AOC-SPECIALTY-COURT-FUND"
+  duns_legacy: null
+  aka_names:
+    - "AOC"
+    - "AR Courts"
+  status: active
+  source_of_truth: "Editor: [pending] • Evidence: Act 776/USAspending"
+  valid_from: "2020-01-01"
+  valid_to: null
+
+- entity_name: "Arkansas Recovery Peer and Recovery Organization Project"
+  uei: null
+  ein: null
+  assistance_listing:
+    - "93.243"  # SAMHSA grants
+  state_fund_code:
+    - "DHS-ARORP"
+  duns_legacy: null
+  aka_names:
+    - "ARORP"
+    - "Arkansas Recovery Oriented"
+  status: active
+  source_of_truth: "Editor: [pending] • Evidence: SAMHSA/DHS"
+  valid_from: "2022-01-01"
+  valid_to: null
+
+- entity_name: "Arkansas Department of Finance and Administration"
+  uei: null
+  ein: null
+  assistance_listing: []
+  state_fund_code:
+    - "DFA-TREASURY"
+    - "DFA-OSP"
+  duns_legacy: null
+  aka_names:
+    - "DFA"
+    - "AR DFA"
+  status: active
+  source_of_truth: "Editor: [pending] • Evidence: State ledgers"
+  valid_from: "2020-01-01"
+  valid_to: null
+
+- entity_name: "Arkansas Opioid Recovery Partnership"
+  uei: null
+  ein: null
+  assistance_listing: []
+  state_fund_code:
+    - "OPIOID-SETTLEMENT-FUND"
+    - "STATE-OPIOID-RESPONSE"
+  duns_legacy: null
+  aka_names:
+    - "Opioid Settlement"
+    - "SOR Arkansas"
+  status: active
+  source_of_truth: "Editor: [pending] • Evidence: Settlement docs"
+  valid_from: "2022-01-01"
+  valid_to: null

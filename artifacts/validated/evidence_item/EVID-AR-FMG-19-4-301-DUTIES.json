@@ -1,0 +1,15 @@
+{
+  "evidence_id": "EVID-AR-FMG-19-4-301-DUTIES",
+  "section": "AUTH-AR-ACA-19-4-301",
+  "claim_summary": "Arkansas Code § 19-4-301 outlines the duties of the Chief Fiscal Officer, including assisting the Governor or Governor‑elect in preparing a comprehensive program and financial plan, developing procedures for decision‑making information, assisting agencies with goals and budget requests, providing information to the General Assembly, and monitoring actual expenditures versus approved budgets.",
+  "evidence_type": "policy",
+  "source": {
+    "title": "State of Arkansas Financial Management Guide (July 2023)",
+    "issuing_body": "Department of Finance and Administration",
+    "url": "https://asbvi.ade.arkansas.gov/Files/State-of-Arkansas-Financial-Management-Guide-Updated-July-2023_20241119182944.pdf"
+  },
+  "confidence_level": "high",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.302727"
+}

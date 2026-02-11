@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-ACA-25-19-105-ResponseTime-STATUTORY",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Legislature",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "Arkansas Code §25-19-105",
+    "Custodians must respond to FOIA requests within a reasonable time and may charge the actual costs of copying the records【628739949745494†L71-L112】"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "field_validations.json",
+  "_ingested_at": "2026-02-10T12:51:51.325213"
+}

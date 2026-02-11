@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-ACA-25-19-105-Requests-STATUTORY",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Legislature",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "Arkansas Code §25-19-105",
+    "Requests for public records may be made in person, by telephone, fax, mail, or email and custodians must provide access in a reasonable time【628739949745494†L71-L112】"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "field_validations.json",
+  "_ingested_at": "2026-02-10T12:51:51.324320"
+}

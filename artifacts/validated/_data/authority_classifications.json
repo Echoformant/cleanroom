@@ -1,0 +1,1521 @@
+{
+  "classifications": {
+    "AR-ACA-16-100-204-mental-health-court": {
+      "authority_id": "AR-ACA-16-100-204-mental-health-court",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "AOC",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AR-AUTH-16-10-701-SPECIALTY-COURT-USER-FEES": {
+      "authority_id": "AR-AUTH-16-10-701-SPECIALTY-COURT-USER-FEES",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Circuit and district courts, Administration of Justice Funds Section",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AR-AUTH-19-5-1144-ACCOUNTABILITY-COURT-FUND": {
+      "authority_id": "AR-AUTH-19-5-1144-ACCOUNTABILITY-COURT-FUND",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "AOC",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AR-AUTH-19-6-489-SPECIALTY-COURT-PROGRAM-FUND": {
+      "authority_id": "AR-AUTH-19-6-489-SPECIALTY-COURT-PROGRAM-FUND",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AR-AUTH-20-77-107": {
+      "authority_id": "AR-AUTH-20-77-107",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 2
+    },
+    "AR-AUTH-25-10-129": {
+      "authority_id": "AR-AUTH-25-10-129",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 2
+    },
+    "AR-AUTH-25-10-131": {
+      "authority_id": "AR-AUTH-25-10-131",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AR-AUTH-25-10-133": {
+      "authority_id": "AR-AUTH-25-10-133",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AR-AUTH-ACT776-2025-AOC-APPROPRIATION": {
+      "authority_id": "AR-AUTH-ACT776-2025-AOC-APPROPRIATION",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "AOC",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-1115-WAIVER-ARHOME": {
+      "authority_id": "AUTH-AR-1115-WAIVER-ARHOME",
+      "jurisdiction": "state",
+      "source_type": "waiver",
+      "issuing_body": "DHS",
+      "original_type": "waiver",
+      "governs_count": 1
+    },
+    "AUTH-AR-1915C-ARCHOICES-0195R06": {
+      "authority_id": "AUTH-AR-1915C-ARCHOICES-0195R06",
+      "jurisdiction": "state",
+      "source_type": "waiver",
+      "issuing_body": "DHS",
+      "original_type": "waiver",
+      "governs_count": 5
+    },
+    "AUTH-AR-20-46-301": {
+      "authority_id": "AUTH-AR-20-46-301",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Division of Aging, Adult, and Behavioral Health Services (DAABHS)",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-20-64-1001": {
+      "authority_id": "AUTH-AR-20-64-1001",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Office of Substance Abuse and Mental Health (OSAMH)",
+      "original_type": "statute",
+      "governs_count": 2
+    },
+    "AUTH-AR-20-64-602-19": {
+      "authority_id": "AUTH-AR-20-64-602-19",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Division of Aging, Adult, and Behavioral Health Services / Office of Substance Abuse and Mental Health (OSAMH)",
+      "original_type": "statute",
+      "governs_count": 2
+    },
+    "AUTH-AR-20-76-201-EXHIBIT-H": {
+      "authority_id": "AUTH-AR-20-76-201-EXHIBIT-H",
+      "jurisdiction": "state",
+      "source_type": "policy",
+      "issuing_body": "DHS",
+      "original_type": "policy",
+      "governs_count": 4
+    },
+    "AUTH-AR-20-76-201": {
+      "authority_id": "AUTH-AR-20-76-201",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 6
+    },
+    "AUTH-AR-20-77-107": {
+      "authority_id": "AUTH-AR-20-77-107",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-20-77-135": {
+      "authority_id": "AUTH-AR-20-77-135",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-25-10-129": {
+      "authority_id": "AUTH-AR-25-10-129",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACA-10-3-2901-SPECIALTY-COURT-ADVISORY-COMMITTEE": {
+      "authority_id": "AUTH-AR-ACA-10-3-2901-SPECIALTY-COURT-ADVISORY-COMMITTEE",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "General Assembly",
+      "original_type": "statute",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACA-10-3-2901": {
+      "authority_id": "AUTH-AR-ACA-10-3-2901",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Specialty Court Program Advisory Committee",
+      "original_type": "statute",
+      "governs_count": 4
+    },
+    "AUTH-AR-ACA-12-1-101": {
+      "authority_id": "AUTH-AR-ACA-12-1-101",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Arkansas Crime Information Center",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-12-27-103": {
+      "authority_id": "AUTH-AR-ACA-12-27-103",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Department of Correction",
+      "original_type": "statute",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACA-12-8-101": {
+      "authority_id": "AUTH-AR-ACA-12-8-101",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Arkansas State Police",
+      "original_type": "statute",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACA-15-4-209": {
+      "authority_id": "AUTH-AR-ACA-15-4-209",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Arkansas Economic Development Commission",
+      "original_type": "statute",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACA-16-10-139-SPECIALTY-COURT-PROGRAM": {
+      "authority_id": "AUTH-AR-ACA-16-10-139-SPECIALTY-COURT-PROGRAM",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "AOC",
+      "original_type": "statute",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACA-16-10-139": {
+      "authority_id": "AUTH-AR-ACA-16-10-139",
+      "jurisdiction": "state",
+      "source_type": "unknown",
+      "issuing_body": "Unknown",
+      "original_type": "",
+      "governs_count": 0
+    },
+    "AUTH-AR-ACA-16-100-203": {
+      "authority_id": "AUTH-AR-ACA-16-100-203",
+      "jurisdiction": "state",
+      "source_type": "unknown",
+      "issuing_body": "Unknown",
+      "original_type": "",
+      "governs_count": 0
+    },
+    "AUTH-AR-ACA-16-13-709-FINE-DISTRIBUTION": {
+      "authority_id": "AUTH-AR-ACA-16-13-709-FINE-DISTRIBUTION",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "County officials and Department of Finance and Administration",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-16-98-303-DRUG-COURT-PROGRAMS": {
+      "authority_id": "AUTH-AR-ACA-16-98-303-DRUG-COURT-PROGRAMS",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "AOC",
+      "original_type": "statute",
+      "governs_count": 4
+    },
+    "AUTH-AR-ACA-16-98-303": {
+      "authority_id": "AUTH-AR-ACA-16-98-303",
+      "jurisdiction": "state",
+      "source_type": "unknown",
+      "issuing_body": "Unknown",
+      "original_type": "",
+      "governs_count": 0
+    },
+    "AUTH-AR-ACA-16-98-304-COST-AND-FEES": {
+      "authority_id": "AUTH-AR-ACA-16-98-304-COST-AND-FEES",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Drug court judges; Court clerks; County treasury; Arkansas Department of Community Correction",
+      "original_type": "statute",
+      "governs_count": 4
+    },
+    "AUTH-AR-ACA-16-98-304": {
+      "authority_id": "AUTH-AR-ACA-16-98-304",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "AOC",
+      "original_type": "statute",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACA-16-98-305-REQUIRED-RESOURCES": {
+      "authority_id": "AUTH-AR-ACA-16-98-305-REQUIRED-RESOURCES",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACA-19-1-101-CONTRACTS": {
+      "authority_id": "AUTH-AR-ACA-19-1-101-CONTRACTS",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Arkansas Legislative Council",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-1-101": {
+      "authority_id": "AUTH-AR-ACA-19-1-101",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "General Assembly",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-2-101": {
+      "authority_id": "AUTH-AR-ACA-19-2-101",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Department of Finance and Administration",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-3-701": {
+      "authority_id": "AUTH-AR-ACA-19-3-701",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "State Board of Finance",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-3-704": {
+      "authority_id": "AUTH-AR-ACA-19-3-704",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "State Board of Finance",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-4-101": {
+      "authority_id": "AUTH-AR-ACA-19-4-101",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Department of Finance and Administration",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-4-206": {
+      "authority_id": "AUTH-AR-ACA-19-4-206",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Chief Fiscal Officer; Auditor of State",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-4-301": {
+      "authority_id": "AUTH-AR-ACA-19-4-301",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Department of Finance and Administration",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-4-304": {
+      "authority_id": "AUTH-AR-ACA-19-4-304",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Department of Finance and Administration",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-4-402": {
+      "authority_id": "AUTH-AR-ACA-19-4-402",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Auditor of State",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-4-403": {
+      "authority_id": "AUTH-AR-ACA-19-4-403",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Auditor of State",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-4-815": {
+      "authority_id": "AUTH-AR-ACA-19-4-815",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Administrative heads of agencies; Division of Legislative Audit",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-5-1011-DRUG-COURT-ENHANCEMENT-SPECIALTY-COURT-PROGRAM-FUND": {
+      "authority_id": "AUTH-AR-ACA-19-5-1011-DRUG-COURT-ENHANCEMENT-SPECIALTY-COURT-PROGRAM-FUND",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "AOC",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-5-1011-DRUG-COURT-ENHANCEMENT": {
+      "authority_id": "AUTH-AR-ACA-19-5-1011-DRUG-COURT-ENHANCEMENT",
+      "jurisdiction": "state",
+      "source_type": "act",
+      "issuing_body": "AOC",
+      "original_type": "appropriation",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-5-1033-CRIME-VICTIMS-REPARATIONS-REVOLVING-FUND": {
+      "authority_id": "AUTH-AR-ACA-19-5-1033-CRIME-VICTIMS-REPARATIONS-REVOLVING-FUND",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "NOT_PROVIDED_IN_THREAD",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-5-1033-CRIME-VICTIMS-REPARATIONS": {
+      "authority_id": "AUTH-AR-ACA-19-5-1033-CRIME-VICTIMS-REPARATIONS",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Crime Victims Reparations Board",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-5-1144-ACCOUNTABILITY-COURT-FUND": {
+      "authority_id": "AUTH-AR-ACA-19-5-1144-ACCOUNTABILITY-COURT-FUND",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "AOC",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-5-1144": {
+      "authority_id": "AUTH-AR-ACA-19-5-1144",
+      "jurisdiction": "state",
+      "source_type": "unknown",
+      "issuing_body": "Unknown",
+      "original_type": "",
+      "governs_count": 0
+    },
+    "AUTH-AR-ACA-19-5-1146-ADULT-DRUG-COURT-EXPENSE-CASH-FUND": {
+      "authority_id": "AUTH-AR-ACA-19-5-1146-ADULT-DRUG-COURT-EXPENSE-CASH-FUND",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "AOC",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-5-1146-ADULT-DRUG-COURT-EXPENSE": {
+      "authority_id": "AUTH-AR-ACA-19-5-1146-ADULT-DRUG-COURT-EXPENSE",
+      "jurisdiction": "state",
+      "source_type": "act",
+      "issuing_body": "AOC",
+      "original_type": "appropriation",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-5-1147-SPECIALTY-COURT-STATE-CENTRAL-SERVICES-FUND": {
+      "authority_id": "AUTH-AR-ACA-19-5-1147-SPECIALTY-COURT-STATE-CENTRAL-SERVICES-FUND",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "AOC",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-5-1147-SPECIALTY-COURT-STATE-CENTRAL": {
+      "authority_id": "AUTH-AR-ACA-19-5-1147-SPECIALTY-COURT-STATE-CENTRAL",
+      "jurisdiction": "state",
+      "source_type": "act",
+      "issuing_body": "AOC",
+      "original_type": "appropriation",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-5-1148-COURT-TECHNOLOGY-IMPROVEMENT-FUND": {
+      "authority_id": "AUTH-AR-ACA-19-5-1148-COURT-TECHNOLOGY-IMPROVEMENT-FUND",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "AOC",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-5-1148-COURT-TECHNOLOGY-IMPROVEMENT": {
+      "authority_id": "AUTH-AR-ACA-19-5-1148-COURT-TECHNOLOGY-IMPROVEMENT",
+      "jurisdiction": "state",
+      "source_type": "act",
+      "issuing_body": "AOC",
+      "original_type": "act",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-5-304-COMMUNITY-CORRECTION-REVOLVING-FUND": {
+      "authority_id": "AUTH-AR-ACA-19-5-304-COMMUNITY-CORRECTION-REVOLVING-FUND",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "NOT_PROVIDED_IN_THREAD",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-5-304-COMMUNITY-CORRECTION": {
+      "authority_id": "AUTH-AR-ACA-19-5-304-COMMUNITY-CORRECTION",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Arkansas Department of Community Correction",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-5-306": {
+      "authority_id": "AUTH-AR-ACA-19-5-306",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-5-602-COUNTY-AID": {
+      "authority_id": "AUTH-AR-ACA-19-5-602-COUNTY-AID",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Arkansas Treasurer of State",
+      "original_type": "statute",
+      "governs_count": 2
+    },
+    "AUTH-AR-ACA-19-5-602": {
+      "authority_id": "AUTH-AR-ACA-19-5-602",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Treasurer of State",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-19-8-303": {
+      "authority_id": "AUTH-AR-ACA-19-8-303",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "General Assembly",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-20-46-101": {
+      "authority_id": "AUTH-AR-ACA-20-46-101",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "State Board of Health and Board of Trustees of the University of Arkansas",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-20-46-301-SUBSTANCE-ABUSE-PREVENTION-FUND": {
+      "authority_id": "AUTH-AR-ACA-20-46-301-SUBSTANCE-ABUSE-PREVENTION-FUND",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-20-46-301-SUBSTANCE": {
+      "authority_id": "AUTH-AR-ACA-20-46-301-SUBSTANCE",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-20-46-501": {
+      "authority_id": "AUTH-AR-ACA-20-46-501",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACA-20-47-101": {
+      "authority_id": "AUTH-AR-ACA-20-47-101",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Arkansas law enforcement officers",
+      "original_type": "statute",
+      "governs_count": 0
+    },
+    "AUTH-AR-ACA-20-47-201": {
+      "authority_id": "AUTH-AR-ACA-20-47-201",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACA-20-7-109": {
+      "authority_id": "AUTH-AR-ACA-20-7-109",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Arkansas Department of Health / State Board of Health",
+      "original_type": "statute",
+      "governs_count": 16
+    },
+    "AUTH-AR-ACA-20-7-110": {
+      "authority_id": "AUTH-AR-ACA-20-7-110",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Arkansas Department of Health / State Board of Health",
+      "original_type": "statute",
+      "governs_count": 5
+    },
+    "AUTH-AR-ACA-20-7-111": {
+      "authority_id": "AUTH-AR-ACA-20-7-111",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Arkansas Department of Health / State Board of Health",
+      "original_type": "statute",
+      "governs_count": 5
+    },
+    "AUTH-AR-ACA-20-76-101": {
+      "authority_id": "AUTH-AR-ACA-20-76-101",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-20-76-201-ACCOUNTABILITY-COURT-PROGRAM": {
+      "authority_id": "AUTH-AR-ACA-20-76-201-ACCOUNTABILITY-COURT-PROGRAM",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "AOC",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-20-76-201-ACCOUNTABILITY": {
+      "authority_id": "AUTH-AR-ACA-20-76-201-ACCOUNTABILITY",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-20-76-201": {
+      "authority_id": "AUTH-AR-ACA-20-76-201",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 16
+    },
+    "AUTH-AR-ACA-20-77-107": {
+      "authority_id": "AUTH-AR-ACA-20-77-107",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 5
+    },
+    "AUTH-AR-ACA-20-77-2702": {
+      "authority_id": "AUTH-AR-ACA-20-77-2702",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 6
+    },
+    "AUTH-AR-ACA-23-61-103": {
+      "authority_id": "AUTH-AR-ACA-23-61-103",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Arkansas Insurance Department",
+      "original_type": "statute",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACA-25-1-101": {
+      "authority_id": "AUTH-AR-ACA-25-1-101",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Governor",
+      "original_type": "statute",
+      "governs_count": 0
+    },
+    "AUTH-AR-ACA-25-10-145": {
+      "authority_id": "AUTH-AR-ACA-25-10-145",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACA-25-43-1101": {
+      "authority_id": "AUTH-AR-ACA-25-43-1101",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Department of Labor and Licensing",
+      "original_type": "statute",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACA-25-43-1301": {
+      "authority_id": "AUTH-AR-ACA-25-43-1301",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Department of Parks, Heritage and Tourism",
+      "original_type": "statute",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACA-25-8-101": {
+      "authority_id": "AUTH-AR-ACA-25-8-101",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Department of Finance and Administration",
+      "original_type": "statute",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACA-6-1-101": {
+      "authority_id": "AUTH-AR-ACA-6-1-101",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Arkansas State Board of Education",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACA-6-11-105": {
+      "authority_id": "AUTH-AR-ACA-6-11-105",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Arkansas Department of Education",
+      "original_type": "statute",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACA-9-28-103": {
+      "authority_id": "AUTH-AR-ACA-9-28-103",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACR-016-06-17-017-200": {
+      "authority_id": "AUTH-AR-ACR-016-06-17-017-200",
+      "jurisdiction": "state",
+      "source_type": "regulation",
+      "issuing_body": "DHS",
+      "original_type": "regulation",
+      "governs_count": 4
+    },
+    "AUTH-AR-ACT-504-2025": {
+      "authority_id": "AUTH-AR-ACT-504-2025",
+      "jurisdiction": "state",
+      "source_type": "act",
+      "issuing_body": "DHS",
+      "original_type": "act",
+      "governs_count": 5
+    },
+    "AUTH-AR-ACT-509-2025": {
+      "authority_id": "AUTH-AR-ACT-509-2025",
+      "jurisdiction": "state",
+      "source_type": "act",
+      "issuing_body": "Arkansas Department of Education",
+      "original_type": "act",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACT-517-2025": {
+      "authority_id": "AUTH-AR-ACT-517-2025",
+      "jurisdiction": "state",
+      "source_type": "act",
+      "issuing_body": "Department of Correction",
+      "original_type": "act",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACT-525-2025": {
+      "authority_id": "AUTH-AR-ACT-525-2025",
+      "jurisdiction": "state",
+      "source_type": "act",
+      "issuing_body": "Arkansas Economic Development Commission",
+      "original_type": "act",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACT-533-2025": {
+      "authority_id": "AUTH-AR-ACT-533-2025",
+      "jurisdiction": "state",
+      "source_type": "act",
+      "issuing_body": "Department of Parks, Heritage and Tourism",
+      "original_type": "act",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACT-538-2025": {
+      "authority_id": "AUTH-AR-ACT-538-2025",
+      "jurisdiction": "state",
+      "source_type": "act",
+      "issuing_body": "General Assembly",
+      "original_type": "act",
+      "governs_count": 13
+    },
+    "AUTH-AR-ACT-545-2025": {
+      "authority_id": "AUTH-AR-ACT-545-2025",
+      "jurisdiction": "state",
+      "source_type": "act",
+      "issuing_body": "Department of Finance and Administration",
+      "original_type": "act",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACT-555-2025": {
+      "authority_id": "AUTH-AR-ACT-555-2025",
+      "jurisdiction": "state",
+      "source_type": "act",
+      "issuing_body": "Arkansas Insurance Department",
+      "original_type": "act",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACT-558-2025": {
+      "authority_id": "AUTH-AR-ACT-558-2025",
+      "jurisdiction": "state",
+      "source_type": "act",
+      "issuing_body": "Department of Labor and Licensing",
+      "original_type": "act",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACT-562-2025": {
+      "authority_id": "AUTH-AR-ACT-562-2025",
+      "jurisdiction": "state",
+      "source_type": "act",
+      "issuing_body": "Arkansas State Police",
+      "original_type": "act",
+      "governs_count": 3
+    },
+    "AUTH-AR-ACT-776-2025": {
+      "authority_id": "AUTH-AR-ACT-776-2025",
+      "jurisdiction": "state",
+      "source_type": "act",
+      "issuing_body": "AOC",
+      "original_type": "act",
+      "governs_count": 10
+    },
+    "AUTH-AR-ACT-788-2025": {
+      "authority_id": "AUTH-AR-ACT-788-2025",
+      "jurisdiction": "state",
+      "source_type": "act",
+      "issuing_body": "DHS",
+      "original_type": "act",
+      "governs_count": 9
+    },
+    "AUTH-AR-ACT-887-2025": {
+      "authority_id": "AUTH-AR-ACT-887-2025",
+      "jurisdiction": "state",
+      "source_type": "act",
+      "issuing_body": "DHS",
+      "original_type": "act",
+      "governs_count": 16
+    },
+    "AUTH-AR-ACT-888-2025": {
+      "authority_id": "AUTH-AR-ACT-888-2025",
+      "jurisdiction": "state",
+      "source_type": "act",
+      "issuing_body": "DHS",
+      "original_type": "act",
+      "governs_count": 7
+    },
+    "AUTH-AR-ACT58-2021-DHS-SUBSTANCE-ABUSE-PREVENTION-FUND-ESTABLISHMENT": {
+      "authority_id": "AUTH-AR-ACT58-2021-DHS-SUBSTANCE-ABUSE-PREVENTION-FUND-ESTABLISHMENT",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACT58-2021-DHS-SUBSTANCE": {
+      "authority_id": "AUTH-AR-ACT58-2021-DHS-SUBSTANCE",
+      "jurisdiction": "state",
+      "source_type": "act",
+      "issuing_body": "DHS",
+      "original_type": "act",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACT776-2025-AOC-APPROPRIATION": {
+      "authority_id": "AUTH-AR-ACT776-2025-AOC-APPROPRIATION",
+      "jurisdiction": "state",
+      "source_type": "act",
+      "issuing_body": "AOC",
+      "original_type": "appropriation",
+      "governs_count": 1
+    },
+    "AUTH-AR-ACT776-2025-AOC-APPROPRIATIONS-SPECIAL-LANGUAGE": {
+      "authority_id": "AUTH-AR-ACT776-2025-AOC-APPROPRIATIONS-SPECIAL-LANGUAGE",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "AOC",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-APAC-CHAIR": {
+      "authority_id": "AUTH-AR-APAC-CHAIR",
+      "jurisdiction": "state",
+      "source_type": "administrative",
+      "issuing_body": "Arkansas Peer Advisory Committee (APAC)",
+      "original_type": "administrative",
+      "governs_count": 0
+    },
+    "AUTH-AR-ARCHOICES-WAIVER": {
+      "authority_id": "AUTH-AR-ARCHOICES-WAIVER",
+      "jurisdiction": "state",
+      "source_type": "waiver",
+      "issuing_body": "DHS",
+      "original_type": "waiver",
+      "governs_count": 3
+    },
+    "AUTH-AR-ARDOT-COMMISSION": {
+      "authority_id": "AUTH-AR-ARDOT-COMMISSION",
+      "jurisdiction": "state",
+      "source_type": "policy",
+      "issuing_body": "Arkansas Department of Transportation",
+      "original_type": "policy",
+      "governs_count": 2
+    },
+    "AUTH-AR-ARHOME-2021-APPROVAL": {
+      "authority_id": "AUTH-AR-ARHOME-2021-APPROVAL",
+      "jurisdiction": "state",
+      "source_type": "waiver",
+      "issuing_body": "CMS",
+      "original_type": "waiver",
+      "governs_count": 3
+    },
+    "AUTH-AR-ARHOME-PROSPERITY-AMENDMENT-2025": {
+      "authority_id": "AUTH-AR-ARHOME-PROSPERITY-AMENDMENT-2025",
+      "jurisdiction": "state",
+      "source_type": "waiver",
+      "issuing_body": "DHS",
+      "original_type": "waiver",
+      "governs_count": 3
+    },
+    "AUTH-AR-ARORP-FUNDING-GUIDELINES": {
+      "authority_id": "AUTH-AR-ARORP-FUNDING-GUIDELINES",
+      "jurisdiction": "state",
+      "source_type": "policy",
+      "issuing_body": "Arkansas Opioid Recovery Partnership (ARORP)",
+      "original_type": "policy",
+      "governs_count": 3
+    },
+    "AUTH-AR-BILLING-PeerSupport": {
+      "authority_id": "AUTH-AR-BILLING-PeerSupport",
+      "jurisdiction": "state",
+      "source_type": "regulation",
+      "issuing_body": "Arkansas Medicaid (DMS) / Empower PASSE",
+      "original_type": "regulation",
+      "governs_count": 1
+    },
+    "AUTH-AR-CITIES-DISTRIBUTION-AGREEMENT-2022": {
+      "authority_id": "AUTH-AR-CITIES-DISTRIBUTION-AGREEMENT-2022",
+      "jurisdiction": "state",
+      "source_type": "mou",
+      "issuing_body": "Arkansas Municipal League (AML)",
+      "original_type": "mou",
+      "governs_count": 1
+    },
+    "AUTH-AR-CITIES-DISTRIBUTION-AGREEMENT": {
+      "authority_id": "AUTH-AR-CITIES-DISTRIBUTION-AGREEMENT",
+      "jurisdiction": "state",
+      "source_type": "policy",
+      "issuing_body": "Arkansas cities and towns (party to agreement)",
+      "original_type": "policy",
+      "governs_count": 1
+    },
+    "AUTH-AR-CONST-ART16-SEC1": {
+      "authority_id": "AUTH-AR-CONST-ART16-SEC1",
+      "jurisdiction": "state",
+      "source_type": "constitution",
+      "issuing_body": "General Assembly",
+      "original_type": "constitution",
+      "governs_count": 1
+    },
+    "AUTH-AR-CONST-ART16-SEC11": {
+      "authority_id": "AUTH-AR-CONST-ART16-SEC11",
+      "jurisdiction": "state",
+      "source_type": "constitution",
+      "issuing_body": "General Assembly",
+      "original_type": "constitution",
+      "governs_count": 1
+    },
+    "AUTH-AR-CONST-ART16-SEC12": {
+      "authority_id": "AUTH-AR-CONST-ART16-SEC12",
+      "jurisdiction": "state",
+      "source_type": "constitution",
+      "issuing_body": "General Assembly",
+      "original_type": "constitution",
+      "governs_count": 1
+    },
+    "AUTH-AR-CONST-ART16-SEC2": {
+      "authority_id": "AUTH-AR-CONST-ART16-SEC2",
+      "jurisdiction": "state",
+      "source_type": "constitution",
+      "issuing_body": "General Assembly",
+      "original_type": "constitution",
+      "governs_count": 1
+    },
+    "AUTH-AR-CONST-ART16-SEC3": {
+      "authority_id": "AUTH-AR-CONST-ART16-SEC3",
+      "jurisdiction": "state",
+      "source_type": "constitution",
+      "issuing_body": "Constitution",
+      "original_type": "constitution",
+      "governs_count": 0
+    },
+    "AUTH-AR-CONST-ART16-SEC4": {
+      "authority_id": "AUTH-AR-CONST-ART16-SEC4",
+      "jurisdiction": "state",
+      "source_type": "constitution",
+      "issuing_body": "General Assembly",
+      "original_type": "constitution",
+      "governs_count": 0
+    },
+    "AUTH-AR-CONST-ART16-SEC5": {
+      "authority_id": "AUTH-AR-CONST-ART16-SEC5",
+      "jurisdiction": "state",
+      "source_type": "constitution",
+      "issuing_body": "General Assembly",
+      "original_type": "constitution",
+      "governs_count": 0
+    },
+    "AUTH-AR-CONSTITUTION-ART16-SEC11": {
+      "authority_id": "AUTH-AR-CONSTITUTION-ART16-SEC11",
+      "jurisdiction": "state",
+      "source_type": "constitution",
+      "issuing_body": "Constitution",
+      "original_type": "constitution",
+      "governs_count": 1
+    },
+    "AUTH-AR-CONSTITUTION-ART16-SEC12": {
+      "authority_id": "AUTH-AR-CONSTITUTION-ART16-SEC12",
+      "jurisdiction": "state",
+      "source_type": "constitution",
+      "issuing_body": "Constitution",
+      "original_type": "constitution",
+      "governs_count": 1
+    },
+    "AUTH-AR-CONSTITUTION-ART16-SEC13": {
+      "authority_id": "AUTH-AR-CONSTITUTION-ART16-SEC13",
+      "jurisdiction": "state",
+      "source_type": "constitution",
+      "issuing_body": "Constitution",
+      "original_type": "constitution",
+      "governs_count": 0
+    },
+    "AUTH-AR-CONSTITUTION-ART16-SEC3": {
+      "authority_id": "AUTH-AR-CONSTITUTION-ART16-SEC3",
+      "jurisdiction": "state",
+      "source_type": "constitution",
+      "issuing_body": "Constitution",
+      "original_type": "constitution",
+      "governs_count": 3
+    },
+    "AUTH-AR-COUNTIES-DISTRIBUTION-AGREEMENT-2022": {
+      "authority_id": "AUTH-AR-COUNTIES-DISTRIBUTION-AGREEMENT-2022",
+      "jurisdiction": "state",
+      "source_type": "mou",
+      "issuing_body": "Association of Arkansas Counties (AAC)",
+      "original_type": "mou",
+      "governs_count": 1
+    },
+    "AUTH-AR-COUNTIES-DISTRIBUTION-AGREEMENT": {
+      "authority_id": "AUTH-AR-COUNTIES-DISTRIBUTION-AGREEMENT",
+      "jurisdiction": "state",
+      "source_type": "policy",
+      "issuing_body": "Arkansas counties (party to agreement)",
+      "original_type": "policy",
+      "governs_count": 1
+    },
+    "AUTH-AR-DAABHS-DIRECTOR": {
+      "authority_id": "AUTH-AR-DAABHS-DIRECTOR",
+      "jurisdiction": "state",
+      "source_type": "administrative",
+      "issuing_body": "Division of Aging, Adult, and Behavioral Health Services (DAABHS)",
+      "original_type": "administrative",
+      "governs_count": 1
+    },
+    "AUTH-AR-DHS-DEPUTY-OPS": {
+      "authority_id": "AUTH-AR-DHS-DEPUTY-OPS",
+      "jurisdiction": "state",
+      "source_type": "administrative",
+      "issuing_body": "DHS",
+      "original_type": "administrative",
+      "governs_count": 2
+    },
+    "AUTH-AR-DHS-SECRETARY": {
+      "authority_id": "AUTH-AR-DHS-SECRETARY",
+      "jurisdiction": "state",
+      "source_type": "administrative",
+      "issuing_body": "DHS",
+      "original_type": "administrative",
+      "governs_count": 4
+    },
+    "AUTH-AR-DHS-SPECIALTY-MEDICAID": {
+      "authority_id": "AUTH-AR-DHS-SPECIALTY-MEDICAID",
+      "jurisdiction": "state",
+      "source_type": "administrative",
+      "issuing_body": "DHS",
+      "original_type": "administrative",
+      "governs_count": 2
+    },
+    "AUTH-AR-DMS-DIRECTOR": {
+      "authority_id": "AUTH-AR-DMS-DIRECTOR",
+      "jurisdiction": "state",
+      "source_type": "administrative",
+      "issuing_body": "Division of Medical Services (DMS)",
+      "original_type": "administrative",
+      "governs_count": 2
+    },
+    "AUTH-AR-DUR-BOARD-BYLAWS-2025": {
+      "authority_id": "AUTH-AR-DUR-BOARD-BYLAWS-2025",
+      "jurisdiction": "state",
+      "source_type": "policy",
+      "issuing_body": "Arkansas Medicaid \u2013 Drug Utilization Review Board",
+      "original_type": "policy",
+      "governs_count": 1
+    },
+    "AUTH-AR-LEGISLATIVE-COUNCIL-REVIEW": {
+      "authority_id": "AUTH-AR-LEGISLATIVE-COUNCIL-REVIEW",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Arkansas Legislative Council",
+      "original_type": "statute",
+      "governs_count": 2
+    },
+    "AUTH-AR-OPIOIDS-MOU-2021-07": {
+      "authority_id": "AUTH-AR-OPIOIDS-MOU-2021-07",
+      "jurisdiction": "state",
+      "source_type": "mou",
+      "issuing_body": "State of Arkansas; Association of Arkansas Counties; Arkansas Municipal League",
+      "original_type": "mou",
+      "governs_count": 3
+    },
+    "AUTH-AR-OPIOIDS-MOU-EXECUTED-JUL-2021": {
+      "authority_id": "AUTH-AR-OPIOIDS-MOU-EXECUTED-JUL-2021",
+      "jurisdiction": "state",
+      "source_type": "policy",
+      "issuing_body": "State of Arkansas, Arkansas counties, and Arkansas cities/towns (MOU signatories)",
+      "original_type": "policy",
+      "governs_count": 5
+    },
+    "AUTH-AR-OPIOIDS-MOU-EXECUTED-JULY-2021": {
+      "authority_id": "AUTH-AR-OPIOIDS-MOU-EXECUTED-JULY-2021",
+      "jurisdiction": "state",
+      "source_type": "mou",
+      "issuing_body": "Arkansas Opioid Recovery Partnership (ARORP) and parties to the MOU",
+      "original_type": "memorandum",
+      "governs_count": 1
+    },
+    "AUTH-AR-OSAMH-APAC": {
+      "authority_id": "AUTH-AR-OSAMH-APAC",
+      "jurisdiction": "state",
+      "source_type": "administrative",
+      "issuing_body": "Office of Substance Abuse and Mental Health / Arkansas Peer Advisory Committee (APAC)",
+      "original_type": "administrative",
+      "governs_count": 1
+    },
+    "AUTH-AR-OSAMH-APR-Program": {
+      "authority_id": "AUTH-AR-OSAMH-APR-Program",
+      "jurisdiction": "state",
+      "source_type": "administrative",
+      "issuing_body": "Office of Substance Abuse and Mental Health (OSAMH)",
+      "original_type": "administrative",
+      "governs_count": 3
+    },
+    "AUTH-AR-OSAMH-DIRECTOR": {
+      "authority_id": "AUTH-AR-OSAMH-DIRECTOR",
+      "jurisdiction": "state",
+      "source_type": "administrative",
+      "issuing_body": "Office of Substance Abuse and Mental Health (OSAMH)",
+      "original_type": "administrative",
+      "governs_count": 4
+    },
+    "AUTH-AR-OSAMH-DRUG-DIRECTOR-FISHER": {
+      "authority_id": "AUTH-AR-OSAMH-DRUG-DIRECTOR-FISHER",
+      "jurisdiction": "state",
+      "source_type": "administrative",
+      "issuing_body": "Office of State Drug Director (OSAMH)",
+      "original_type": "administrative",
+      "governs_count": 1
+    },
+    "AUTH-AR-OSAMH-DRUG-DIRECTOR-LANE": {
+      "authority_id": "AUTH-AR-OSAMH-DRUG-DIRECTOR-LANE",
+      "jurisdiction": "state",
+      "source_type": "administrative",
+      "issuing_body": "Office of State Drug Director (OSAMH)",
+      "original_type": "administrative",
+      "governs_count": 1
+    },
+    "AUTH-AR-PASSE-PROGRAM": {
+      "authority_id": "AUTH-AR-PASSE-PROGRAM",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "DHS",
+      "original_type": "statute",
+      "governs_count": 4
+    },
+    "AUTH-AR-PROCUREMENT-LAW-19-11-203": {
+      "authority_id": "AUTH-AR-PROCUREMENT-LAW-19-11-203",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "Arkansas Office of State Procurement",
+      "original_type": "statute",
+      "governs_count": 0
+    },
+    "AUTH-AR-PROVIDER-ENROLLMENT": {
+      "authority_id": "AUTH-AR-PROVIDER-ENROLLMENT",
+      "jurisdiction": "state",
+      "source_type": "administrative",
+      "issuing_body": "Division of Medical Services (DMS)",
+      "original_type": "administrative",
+      "governs_count": 1
+    },
+    "AUTH-AR-QSF-ORDER-18CV-22-355": {
+      "authority_id": "AUTH-AR-QSF-ORDER-18CV-22-355",
+      "jurisdiction": "state",
+      "source_type": "court_order",
+      "issuing_body": "Circuit Court of Crittenden County, Arkansas",
+      "original_type": "court_order",
+      "governs_count": 2
+    },
+    "AUTH-AR-QSF-ORDER-CRITTENDEN-18CV-22-355-2022-06-13": {
+      "authority_id": "AUTH-AR-QSF-ORDER-CRITTENDEN-18CV-22-355-2022-06-13",
+      "jurisdiction": "state",
+      "source_type": "policy",
+      "issuing_body": "Crittenden County Circuit Court (Arkansas)",
+      "original_type": "policy",
+      "governs_count": 3
+    },
+    "AUTH-AR-SB472-S1-2015-ACCOUNTABILITY-COURT-FUND": {
+      "authority_id": "AUTH-AR-SB472-S1-2015-ACCOUNTABILITY-COURT-FUND",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "AOC",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-SB472-S1-2015-ACCOUNTABILITY-COURT-PROGRAM": {
+      "authority_id": "AUTH-AR-SB472-S1-2015-ACCOUNTABILITY-COURT-PROGRAM",
+      "jurisdiction": "state",
+      "source_type": "statute",
+      "issuing_body": "AOC",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-AR-SB472-S1-2015-ACCOUNTABILITY": {
+      "authority_id": "AUTH-AR-SB472-S1-2015-ACCOUNTABILITY",
+      "jurisdiction": "state",
+      "source_type": "act",
+      "issuing_body": "AOC",
+      "original_type": "act",
+      "governs_count": 1
+    },
+    "AUTH-AR-SC-ADMIN-ORDER-14": {
+      "authority_id": "AUTH-AR-SC-ADMIN-ORDER-14",
+      "jurisdiction": "state",
+      "source_type": "unknown",
+      "issuing_body": "Unknown",
+      "original_type": "",
+      "governs_count": 0
+    },
+    "AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E": {
+      "authority_id": "AUTH-NA-DISTRIBUTORS-SETTLEMENT-EXHIBIT-E",
+      "jurisdiction": "state",
+      "source_type": "settlement",
+      "issuing_body": "Distributors Settlement Agreement parties (national)",
+      "original_type": "settlement",
+      "governs_count": 1
+    },
+    "AUTH-US-21-USC-1521-ETSEQ-DFC": {
+      "authority_id": "AUTH-US-21-USC-1521-ETSEQ-DFC",
+      "jurisdiction": "federal",
+      "source_type": "regulation",
+      "issuing_body": "SAMHSA",
+      "original_type": "federal_requirement",
+      "governs_count": 1
+    },
+    "AUTH-US-26-CFR-1-468B-1": {
+      "authority_id": "AUTH-US-26-CFR-1-468B-1",
+      "jurisdiction": "federal",
+      "source_type": "regulation",
+      "issuing_body": "Federal Agency",
+      "original_type": "federal_requirement",
+      "governs_count": 2
+    },
+    "AUTH-US-26CFR-1-468B-1-TREASREG": {
+      "authority_id": "AUTH-US-26CFR-1-468B-1-TREASREG",
+      "jurisdiction": "federal",
+      "source_type": "regulation",
+      "issuing_body": "Federal Agency",
+      "original_type": "regulation",
+      "governs_count": 1
+    },
+    "AUTH-US-34USC-10152-BYRNE-JAG": {
+      "authority_id": "AUTH-US-34USC-10152-BYRNE-JAG",
+      "jurisdiction": "federal",
+      "source_type": "statute",
+      "issuing_body": "US Congress",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-US-42-CFR-433-10": {
+      "authority_id": "AUTH-US-42-CFR-433-10",
+      "jurisdiction": "federal",
+      "source_type": "regulation",
+      "issuing_body": "CMS",
+      "original_type": "regulation",
+      "governs_count": 5
+    },
+    "AUTH-US-42-CFR-438-4": {
+      "authority_id": "AUTH-US-42-CFR-438-4",
+      "jurisdiction": "federal",
+      "source_type": "regulation",
+      "issuing_body": "CMS",
+      "original_type": "regulation",
+      "governs_count": 4
+    },
+    "AUTH-US-42USC-300X-14-SABG-PRIMARY-PREVENTION-20PCT": {
+      "authority_id": "AUTH-US-42USC-300X-14-SABG-PRIMARY-PREVENTION-20PCT",
+      "jurisdiction": "federal",
+      "source_type": "statute",
+      "issuing_body": "SAMHSA",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-US-42USC-300X-24B-SABG-PPW-5PCT": {
+      "authority_id": "AUTH-US-42USC-300X-24B-SABG-PPW-5PCT",
+      "jurisdiction": "federal",
+      "source_type": "statute",
+      "issuing_body": "SAMHSA",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-US-42USC-300X-38-PABG": {
+      "authority_id": "AUTH-US-42USC-300X-38-PABG",
+      "jurisdiction": "federal",
+      "source_type": "statute",
+      "issuing_body": "SAMHSA",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-US-CDC-OPIOID-GUIDELINE-2016": {
+      "authority_id": "AUTH-US-CDC-OPIOID-GUIDELINE-2016",
+      "jurisdiction": "federal",
+      "source_type": "regulation",
+      "issuing_body": "Centers for Disease Control and Prevention (CDC)",
+      "original_type": "regulation",
+      "governs_count": 0
+    },
+    "AUTH-US-DATA-2000": {
+      "authority_id": "AUTH-US-DATA-2000",
+      "jurisdiction": "federal",
+      "source_type": "act",
+      "issuing_body": "United States Congress",
+      "original_type": "act",
+      "governs_count": 0
+    },
+    "AUTH-US-IRC-26-USC-468B": {
+      "authority_id": "AUTH-US-IRC-26-USC-468B",
+      "jurisdiction": "federal",
+      "source_type": "regulation",
+      "issuing_body": "US Congress",
+      "original_type": "federal_requirement",
+      "governs_count": 2
+    },
+    "AUTH-US-IRC-468B-QSF": {
+      "authority_id": "AUTH-US-IRC-468B-QSF",
+      "jurisdiction": "federal",
+      "source_type": "statute",
+      "issuing_body": "United States Congress; Internal Revenue Service",
+      "original_type": "statute",
+      "governs_count": 1
+    },
+    "AUTH-US-OPIOID-SETTLEMENT-ALLERGAN": {
+      "authority_id": "AUTH-US-OPIOID-SETTLEMENT-ALLERGAN",
+      "jurisdiction": "federal",
+      "source_type": "settlement",
+      "issuing_body": "National Opioid Settlement Administrator",
+      "original_type": "settlement",
+      "governs_count": 1
+    },
+    "AUTH-US-OPIOID-SETTLEMENT-CVS": {
+      "authority_id": "AUTH-US-OPIOID-SETTLEMENT-CVS",
+      "jurisdiction": "federal",
+      "source_type": "settlement",
+      "issuing_body": "National Opioid Settlement Administrator",
+      "original_type": "settlement",
+      "governs_count": 1
+    },
+    "AUTH-US-OPIOID-SETTLEMENT-DISTRIBUTOR": {
+      "authority_id": "AUTH-US-OPIOID-SETTLEMENT-DISTRIBUTOR",
+      "jurisdiction": "federal",
+      "source_type": "settlement",
+      "issuing_body": "National Opioid Settlement Administrator",
+      "original_type": "settlement",
+      "governs_count": 1
+    },
+    "AUTH-US-OPIOID-SETTLEMENT-JANSSEN": {
+      "authority_id": "AUTH-US-OPIOID-SETTLEMENT-JANSSEN",
+      "jurisdiction": "federal",
+      "source_type": "settlement",
+      "issuing_body": "National Opioid Settlement Administrator",
+      "original_type": "settlement",
+      "governs_count": 1
+    },
+    "AUTH-US-OPIOID-SETTLEMENT-KROGER": {
+      "authority_id": "AUTH-US-OPIOID-SETTLEMENT-KROGER",
+      "jurisdiction": "federal",
+      "source_type": "settlement",
+      "issuing_body": "National Opioid Settlement Administrator",
+      "original_type": "settlement",
+      "governs_count": 1
+    },
+    "AUTH-US-OPIOID-SETTLEMENT-TEVA": {
+      "authority_id": "AUTH-US-OPIOID-SETTLEMENT-TEVA",
+      "jurisdiction": "federal",
+      "source_type": "settlement",
+      "issuing_body": "National Opioid Settlement Administrator",
+      "original_type": "settlement",
+      "governs_count": 1
+    },
+    "AUTH-US-OPIOID-SETTLEMENT-WALGREENS": {
+      "authority_id": "AUTH-US-OPIOID-SETTLEMENT-WALGREENS",
+      "jurisdiction": "federal",
+      "source_type": "settlement",
+      "issuing_body": "National Opioid Settlement Administrator",
+      "original_type": "settlement",
+      "governs_count": 1
+    },
+    "AUTH-US-OPIOID-SETTLEMENT-WALMART": {
+      "authority_id": "AUTH-US-OPIOID-SETTLEMENT-WALMART",
+      "jurisdiction": "federal",
+      "source_type": "settlement",
+      "issuing_body": "National Opioid Settlement Administrator",
+      "original_type": "settlement",
+      "governs_count": 1
+    },
+    "AUTH-US-SAMHSA-PABG-SET-ASIDE-METHODOLOGY-GUIDANCE": {
+      "authority_id": "AUTH-US-SAMHSA-PABG-SET-ASIDE-METHODOLOGY-GUIDANCE",
+      "jurisdiction": "federal",
+      "source_type": "policy",
+      "issuing_body": "SAMHSA",
+      "original_type": "policy",
+      "governs_count": 1
+    },
+    "AUTH-US-SAMHSA-SABG-PPW-5PCT-GUIDANCE": {
+      "authority_id": "AUTH-US-SAMHSA-SABG-PPW-5PCT-GUIDANCE",
+      "jurisdiction": "federal",
+      "source_type": "policy",
+      "issuing_body": "SAMHSA",
+      "original_type": "policy",
+      "governs_count": 1
+    },
+    "AUTH-US-SAMHSA-SABG-PRIMARY-PREVENTION-20PCT-GUIDANCE": {
+      "authority_id": "AUTH-US-SAMHSA-SABG-PRIMARY-PREVENTION-20PCT-GUIDANCE",
+      "jurisdiction": "federal",
+      "source_type": "policy",
+      "issuing_body": "SAMHSA",
+      "original_type": "policy",
+      "governs_count": 1
+    },
+    "FED-REG-45-CFR-96-124-SUBG": {
+      "authority_id": "FED-REG-45-CFR-96-124-SUBG",
+      "jurisdiction": "federal",
+      "source_type": "regulation",
+      "issuing_body": "SAMHSA",
+      "original_type": "regulation",
+      "governs_count": 1
+    }
+  },
+  "stats": {
+    "jurisdiction": {
+      "state": 154,
+      "federal": 25
+    },
+    "source_type": {
+      "statute": 89,
+      "waiver": 5,
+      "policy": 11,
+      "unknown": 5,
+      "act": 22,
+      "regulation": 10,
+      "administrative": 12,
+      "mou": 4,
+      "constitution": 11,
+      "court_order": 1,
+      "settlement": 9
+    },
+    "issuing_body": {
+      "AOC": 22,
+      "Circuit and district courts, Administration of Justice Funds Section": 1,
+      "DHS": 38,
+      "Division of Aging, Adult, and Behavioral Health Services (DAABHS)": 2,
+      "Office of Substance Abuse and Mental Health (OSAMH)": 3,
+      "Division of Aging, Adult, and Behavioral Health Services / Office of Substance Abuse and Mental Health (OSAMH)": 1,
+      "General Assembly": 10,
+      "Specialty Court Program Advisory Committee": 1,
+      "Arkansas Crime Information Center": 1,
+      "Department of Correction": 2,
+      "Arkansas State Police": 2,
+      "Arkansas Economic Development Commission": 2,
+      "Unknown": 5,
+      "County officials and Department of Finance and Administration": 1,
+      "Drug court judges; Court clerks; County treasury; Arkansas Department of Community Correction": 1,
+      "Arkansas Legislative Council": 2,
+      "Department of Finance and Administration": 6,
+      "State Board of Finance": 2,
+      "Chief Fiscal Officer; Auditor of State": 1,
+      "Auditor of State": 2,
+      "Administrative heads of agencies; Division of Legislative Audit": 1,
+      "NOT_PROVIDED_IN_THREAD": 2,
+      "Crime Victims Reparations Board": 1,
+      "Arkansas Department of Community Correction": 1,
+      "Arkansas Treasurer of State": 1,
+      "Treasurer of State": 1,
+      "State Board of Health and Board of Trustees of the University of Arkansas": 1,
+      "Arkansas law enforcement officers": 1,
+      "Arkansas Department of Health / State Board of Health": 3,
+      "Arkansas Insurance Department": 2,
+      "Governor": 1,
+      "Department of Labor and Licensing": 2,
+      "Department of Parks, Heritage and Tourism": 2,
+      "Arkansas State Board of Education": 1,
+      "Arkansas Department of Education": 2,
+      "Arkansas Peer Advisory Committee (APAC)": 1,
+      "Arkansas Department of Transportation": 1,
+      "CMS": 3,
+      "Arkansas Opioid Recovery Partnership (ARORP)": 1,
+      "Arkansas Medicaid (DMS) / Empower PASSE": 1,
+      "Arkansas Municipal League (AML)": 1,
+      "Arkansas cities and towns (party to agreement)": 1,
+      "Constitution": 5,
+      "Association of Arkansas Counties (AAC)": 1,
+      "Arkansas counties (party to agreement)": 1,
+      "Division of Medical Services (DMS)": 2,
+      "Arkansas Medicaid \u2013 Drug Utilization Review Board": 1,
+      "State of Arkansas; Association of Arkansas Counties; Arkansas Municipal League": 1,
+      "State of Arkansas, Arkansas counties, and Arkansas cities/towns (MOU signatories)": 1,
+      "Arkansas Opioid Recovery Partnership (ARORP) and parties to the MOU": 1,
+      "Office of Substance Abuse and Mental Health / Arkansas Peer Advisory Committee (APAC)": 1,
+      "Office of State Drug Director (OSAMH)": 2,
+      "Arkansas Office of State Procurement": 1,
+      "Circuit Court of Crittenden County, Arkansas": 1,
+      "Crittenden County Circuit Court (Arkansas)": 1,
+      "Distributors Settlement Agreement parties (national)": 1,
+      "SAMHSA": 8,
+      "Federal Agency": 2,
+      "US Congress": 2,
+      "Centers for Disease Control and Prevention (CDC)": 1,
+      "United States Congress": 1,
+      "United States Congress; Internal Revenue Service": 1,
+      "National Opioid Settlement Administrator": 8
+    }
+  },
+  "total": 179
+}

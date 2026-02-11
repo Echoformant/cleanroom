@@ -1,0 +1,31 @@
+{
+  "authority_id": "AUTH-AR-SCPAC",
+  "authority_type": "administrative",
+  "citation": "Ark. Code § 16-98-302; Act 691 of 2025",
+  "title": "Specialty Court Program Advisory Committee",
+  "administering_body": "Arkansas Supreme Court",
+  "membership": [
+    "Chief Justice (or designee)",
+    "AOC Director",
+    "Specialty court judges",
+    "Division of Community Correction leadership",
+    "Department of Human Services leadership",
+    "Prosecutor representative",
+    "Public defender representative",
+    "Legislative members",
+    "Arkansas Drug Director"
+  ],
+  "functions": [
+    "Evaluate specialty court programs",
+    "Refer evaluation findings to Supreme Court",
+    "Establish uniform evaluation process",
+    "Promulgate rules (approved by Supreme Court)",
+    "Review AOC funding distribution formulas",
+    "Ensure evaluations reflect nationally recognized peer-reviewed standards"
+  ],
+  "governs": [
+    "MF-AR-SPECIALTY-COURT-FUND-DISTRIBUTION"
+  ],
+  "effects": "Serves as evaluation and advisory gatekeeper for specialty court approval and funding formulas; bridges judicial, executive, and legislative oversight",
+  "editor_status": "accepted"
+}

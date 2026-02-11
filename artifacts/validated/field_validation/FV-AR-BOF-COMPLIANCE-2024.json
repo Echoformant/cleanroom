@@ -1,0 +1,13 @@
+{
+  "fv_id": "FV-AR-BOF-COMPLIANCE-2024",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Legislative Audit",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "EVID-AR-19-3-704-POWERS-DUTIES"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "BATCH-EXHAUSTIVE-V2-2026-02-09",
+  "_ingested_at": "2026-02-10T12:50:36.307846"
+}

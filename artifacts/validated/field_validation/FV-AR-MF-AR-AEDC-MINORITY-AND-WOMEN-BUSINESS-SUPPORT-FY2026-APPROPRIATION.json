@@ -1,0 +1,14 @@
+{
+  "fv_id": "FV-AR-MF-AR-AEDC-MINORITY-AND-WOMEN-BUSINESS-SUPPORT-FY2026-APPROPRIATION",
+  "jurisdiction": "Arkansas",
+  "validating_entity": "Arkansas Economic Development Commission / Legislative Audit",
+  "alignment_status": "captured",
+  "evidence_basis": [
+    "MF-AR-AEDC-MINORITY-AND-WOMEN-BUSINESS-SUPPORT-FY2026",
+    "AUTH-AR-ACT608-2025-DeptCommerce"
+  ],
+  "disclosure_level": "public",
+  "editor_status": "accepted",
+  "_ingested_from": "field_validation_batch1.json",
+  "_ingested_at": "2026-02-10T12:51:51.388134"
+}

@@ -1,0 +1,21 @@
+{
+  "evidence_id": "EVID-AR-AOC-OPIOID-AWARD-2024-FEB",
+  "evidence_type": "policy",
+  "section": "AOC Distribution of Opioid Settlement Funds to Drug Courts",
+  "claim_summary": "AOC awarded $1 million in opioid settlement funding to Arkansas's 45 drug courts in Feb-May 2024. Specialty court judges have discretion to use funds for restorative services for participants.",
+  "source": {
+    "type": "news_report",
+    "outlet": "News From The States",
+    "date": "February-May 2024",
+    "url": "https://newsfromthestates.com/"
+  },
+  "confidence_level": "high",
+  "supports": [
+    "MF-AR-OPIOID-SETTLEMENT-AG-SPECIALTY-COURTS"
+  ],
+  "related_data": {
+    "drug_court_count": 45,
+    "total_amount": 1000000
+  },
+  "editor_status": "accepted"
+}

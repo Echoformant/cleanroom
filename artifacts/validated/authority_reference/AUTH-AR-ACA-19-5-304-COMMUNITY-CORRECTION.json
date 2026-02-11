@@ -1,0 +1,13 @@
+{
+  "authority_id": "AUTH-AR-ACA-19-5-304-COMMUNITY-CORRECTION",
+  "authority_type": "statute",
+  "citation": "Ark. Code Ann. § 19‑5‑302 (Department of Community Correction Fund Account)",
+  "administering_body": "Arkansas Department of Community Correction",
+  "governs": [
+    "MF-AR-DCC-COMMUNITY-CORRECTION-FUND"
+  ],
+  "effects": "In the State General Government Fund account statute, § 19‑5‑302(12) creates the Department of Community Correction Fund Account.  The account consists of general revenues and non‑revenue income derived from probation, parole and community correction program services, along with other funds provided by law.  Moneys in the account are to be used for the maintenance, operation and improvement of the Department of Community Correction【134496210289864†L278-L290】.  This fund supports community‑based corrections and probation services.",
+  "editor_status": "accepted",
+  "_ingested_from": "new_artifacts.json",
+  "_ingested_at": "2026-02-10T12:51:39.215527"
+}
